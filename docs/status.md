@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session o: tavern VWF bug and shop glyph set done; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session p: card subtitle overrun fixed, to-do 8; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -13,6 +13,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
   Grid strings (menus/windows/menus_c): edit `script/grid_specs.tsv`, put the ids in `work/tl/rvNN.tsv` (rows from
   `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
+- **Session 2026-11-23p (phase 8, card subtitles):** **To-do 8 done.** The C6 card printer ends a message only at a
+  line whose last word is 」/』 (`C6:DDE7`); 3 cards written 『』 in JP (290540 card_02, 24DC68 card_59, 24EC3E
+  table index 59, no warp scene) had become `'Title'` and ran on into the next message (card_02 showed 290558).
+  Now 「Title」 (drawn `"`); 2 two-line subtitles shortened (292CC4 card_04 "The Kingdom at Sunset", 293C0A "Power
+  of Darkness, Again"). Test `test_card_subtitles_end_on_a_printer_stop` (stop code + one line). All 52 card scenes
+  read clean (`work/qa/cards2/sub.png`, `sub_2.png`). Probe `tools/lua/bufwrites.lua` (per-frame writes to the
+  window tile halves). **Disk:** C: was full (0 B): emu.py leaves a 95 MB `_mesen` copy per run (1375 of them);
+  removed, 67 GB free; after any tour run `find work -name _mesen -prune -exec rm -rf {} +` (gotcha logged).
+  check 54 passed, lint 0, smoke ok. Tour states/sheets predate this build: re-run the full tour before the gate.
 - **Session 2026-11-23o (phase 8):** (a) **Tavern fixed**: `C1Run` (menu strings, VWF mode 2) shared `!PX` with
   engine A and left it at the menu's width; a dialogue box whose start `$3729` equalled `LAST` (0 after a cold warp)
   kept that PX and began at the right edge. C1Run now saves/restores PX (`asm/vwf.asm`); `work/qa/w_tav_en2` shows
@@ -60,7 +69,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
   (5) name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
   and add it to `script/default_names.tsv` like ソード/テティス. (6) status "Gdr 男" value still JP (polish line).
-  (7) camp_items shows 倉庫 (storage tab) in JP and "Itm1": same as to-do 2. (8) cards 02/51/53-ish: dialogue
+  (7) camp_items shows 倉庫 (storage tab) in JP and "Itm1": same as to-do 2. (8) **done in session p** (printer stop code). Old note: cards 02/51/53-ish: dialogue
   typed over the card subtitle area overlaps it ("to be thrown away!" eturn'"): compare with `work/qa/tour_jp`
   (same scene names) before fixing; card_31 title graphic "Anicient Weapon" (check whether the JP card has it).
   (9) textcover: no `build/strings.tsv` and no multi-message runner yet (the `msg` scene shows one message per

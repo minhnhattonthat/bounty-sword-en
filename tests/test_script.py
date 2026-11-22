@@ -179,3 +179,16 @@ def test_english_moves_master_pointers(rom, files):
     slots = read_slots(out)
     nxt = f["master_1E0000.json"][4]
     assert slots[nxt["slots"][0]] & 0x3FFFFF == int(nxt["id"], 16) + 2
+
+
+def test_card_subtitles_end_on_a_printer_stop(rom):
+    """The C6 printer (card subtitle) stops only at a line end whose last word is 」 ($0037) or 』 ($0406)
+    (C6:DDE7); any other last character runs it on into the next message (card_02 showed 290558 under the title)."""
+    from marker import card_slots
+    owner = {i: e for es in load().values() for e in es for i in e.get("slots", [])}
+    for s in card_slots(rom):
+        e = owner[s]
+        for field in ("jp", "en"):
+            assert e[field].rstrip("\n").split("\n")[-1].endswith(("」", "』")), (e["id"], field, e[field])
+        # only line 1 is centred (C6:D383 hook); a second line starts at the box's left edge
+        assert "\n" not in e["en"].rstrip("\n"), (e["id"], e["en"])
