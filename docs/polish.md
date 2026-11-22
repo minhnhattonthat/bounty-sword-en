@@ -66,7 +66,9 @@
   small-time bounty chaser!" vs 2739F0/282FAB/285D57 "Mister Bounty Chaser" / "Mister Coward Bounty Chaser": pick
   the capitalised mock title everywhere
 - [ ] Engine B rows (shop box, ceremony) are one char a cell: narrow letters leave gaps ("Wel come", "Qui t"); centre narrow glyphs in their cell for engine B or pack it like C1Run (session r tour)
-- [ ] jp_left (release gate) still finds 8 JP unit names in bank C4 outside the battle_setup parser: 044E40 スカルナイト,
+- [x] (done, session ae: a whole-ROM scan for op 16/64 + a 6-word name found 11 such records, among them 043F2F
+  海兵隊長 and 04E8B3 ロブン; all 11 written in English through `script/default_names.tsv`; jp_left 0)
+  jp_left (release gate) still finds 8 JP unit names in bank C4 outside the battle_setup parser: 044E40 スカルナイト,
   044F91 盗賊のボス, 04695D ルーネ, 04E3C6 アジャックス, 04E861 アテナ, 04E875 ツキカゲ, 04E88B マウザー, 04E89F ファウスト.
   C4:E85C.. is a linked list of 0x14-byte records (`NN 62 xx ptr24-next 64 slot` + 6-word name + 0000 pad); 044E40 /
   044F91 sit in battle-setup-like records (`... 16 14` / `... 03 E9 02` then the name). Find the reader

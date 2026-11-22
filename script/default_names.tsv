@@ -270,3 +270,16 @@
 475CA	6	少年	Boy	battle-setup name override, scenario 113
 475E3	6	大賢者	Archsage	battle-setup name override, scenario 114
 475FC	6	大賢者	Archsage	battle-setup name override, scenario 115
+# Op 16 (slot, 6-word name) records outside any scenario the battle_setup parser reaches (found by a whole-ROM scan
+# for op 16/64 + a 6-word kana name, session ae; jp_left had reported the C4 ones).
+43F2F	6	海兵隊長	Captain	op-16 name record outside the parsed scenarios (C4:3F2D)
+44E40	6	スカルナイト	Skull	op-16 name record outside the parsed scenarios (C4:4E3E)
+44F91	6	盗賊のボス	Boss	op-16 name record outside the parsed scenarios (C4:4F8F)
+4695F	6	ルーネ	Rune	op-16 name record outside the parsed scenarios (C4:695D)
+# Op 64 (slot, 6-word name) records: C4:E85C.. is a chain `62 xx ptr24-next` + `64 slot name`; C4:E3CA follows `5B 02`.
+4E3CC	6	アジャックス	Ajax	op-64 name record (C4:E3CA)
+4E863	6	アテナ	Athena	op-64 name record, C4:E85C chain
+4E877	6	ツキカゲ	Tsukikage	op-64 name record, C4:E85C chain
+4E88B	6	マウザー	Mauser	op-64 name record, C4:E85C chain
+4E89F	6	ファウスト	Faust	op-64 name record, C4:E85C chain
+4E8B3	6	ロブン	Robun	op-64 name record, C4:E85C chain
