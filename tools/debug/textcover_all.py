@@ -107,6 +107,10 @@ def main():
         subprocess.run(py + [str(DEBUG / "msgcover.py"), str(a.rom), "--out", str(out / "master"), "--side",
                              str(report()), "--shots"])
         speakers(a.rom, out, report())
+        # sessions aa and ac: the first side job printed "side_a: nothing to do" with 47 engine A side lines
+        # unshown in the report (cause not found); the same call afterwards shows them all, so run it once more
+        subprocess.run(py + [str(DEBUG / "msgcover.py"), str(a.rom), "--out", str(out / "master"), "--side",
+                             str(report()), "--shots"])
     sys.exit(subprocess.run(cmd).returncode)
 
 

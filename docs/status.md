@@ -2,14 +2,16 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session ab: build **d7d9d1892cb6**. On it: stress gate
-  `qa_gate.py check work/qa/stress/manifest.tsv work/qa/verdicts_stress` exit 0, inkbox row retreat_confirm ok.
-  The tour gate and textcover ran on f3fd66b97f7d (session aa) and must be **re-run on this build**: two ROM
-  changes since, 01C578 retreat box text and the C6:EF1A name-entry default. **Next: (1) re-tour + `qa_gate.py
-  init/check` + `textcover_all.py` + `inkbox_all.py --shoot` (12 rows) on this build; (2) inkbox row
-  "Promote? OK No" (01D38D) still missing, leads below; (3) to-do 3 shop lines read in game (warp keys after
-  SCENE_OK are still ignored in shops and battle menus: use inkbox_all's THEN_KEYS two-stage form, or a state
-  run); (4) the engine B level-up / stat-up lines (1DF0CF.., polish.md) were read but never seen on screen**).
+- **Phase:** 9. Release: next (phase 8 done-when met in session ac on build **d7d9d1892cb6**: smoke ok, tour
+  147/147 + `qa_gate.py check` exit 0, inkbox 12/12, stress gate exit 0 (session ab), textcover 0 failing).
+  Non-gate leftovers from phase 8, do if cheap: inkbox row "Promote? OK No" (01D38D, leads in session ab);
+  shop lines read in game (THEN_KEYS two-stage form); engine B level-up / stat-up lines (1DF0CF..) seen on screen.
+- **Session 2026-11-23ac (phase 8 close):** full re-tour on d7d9d1892cb6 `work/qa/tour` 147/147 ok, 13 sheets read
+  in an own read-only pass (all ok, same notes as aa: `work/qa/verdicts/tour_d7d9d1892cb6.tsv`), gate exit 0.
+  `inkbox_all.py --shoot` 12/12 ok. `textcover_all.py` again ended 47 failing with "side_a: nothing to do"
+  (second time; cause still unknown, the report did list the 47 engine A side lines); the same `msgcover.py
+  --side` by hand: 47/47 ok, report **3545/3574 shown, 29 waived, 0 failing**. textcover_all.py now runs the
+  side job a second time at the end. Smoke ok, check green.
 - **Session 2026-11-23ab (phase 8, stress saves + Retreat box):** (a) **Gold found**: `$7FFCB0` u16 (save slot
   +7E5); session aa had searched for 1006 because the box was misread; it reads "100G". Also mapped: hero
   gear +420 and Pack +450 (`docs/re/debug.md`). `save.py edit --gold/--gear/--pack`. (b) New
