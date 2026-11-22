@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session m: shop box measured and every shop line fitted; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session n: shop freeze fixed in the warp, shop lines read in game; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -15,16 +15,29 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
 - **Phase 8 to do (carried from phase 7, graphics text):** (1) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる
   武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): find how the layout words in 01D1F5 place its 32 glyph tiles on
-  the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`; (2) widen the 2-cell
+  the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`. Seen JP on screen
+  (`work/qa/shopproof/sheet.png`): header 武器屋1/道具屋1, nameplates 武器屋の主人/道具屋の娘 (の shared, 娘 1 cell),
+  sell screen 誰が売る？ 倉庫 装備品 所持品. Glyph order (index 0-31): 買う売るやめる武器屋道具屋？娘　誰が何を装備品所持品と話すの主人;
+  01D33B looks like 2-row tilemaps where glyph k<16 = tiles C0+k / D0+k and k>=16 = E0+(k-16) / F0+(k-16)
+  (`e0 e1 c0 c1 cd / f0 f1 d0 d1 dd` = 誰が買う？). The header/nameplate tiles are not stored as byte runs (only
+  chance hits at 1C7BF/1D20A): they are built by code; trace the writes to the BG tilemap (Lua on_write on VRAM or
+  the WRAM tilemap buffer) on `town_weapon_shop`. (2) widen the 2-cell
   menu slices that force abbreviations (polish line "Menu grid strings"; e.g. 01D31B "Wp.Etc Gear Item Binx").
   (3) shop dialogue box: **done in session m** except the in-game read of the buy/sell lines. Measured 20 cells
   (ruler build, `work/qa/w_shopruler`); lint `batches.SHOP` (rows <= 20 cells, `{FF0E:n}` = n cells, `{FF06}`
   variables at their longest English: item 16, price 5, unit name 9; no more rows than the JP shows), test
   `test_shop_rows_fit_the_20_cell_portrait_box`; `{FF0E:n}` is now a free layout code like `{FF01}`; 24 lines
-  rewritten (rv05). **Blocker for the in-game read:** after the `town_weapon_shop` warp the shop ignores input
-  once the greeting is up (original ROM too: `work/qa/w_shopbuy_jp`; and from `work/states/town_weapon_shop.mss`
-  with `play.py`, `work/play/shop`), so Buy/Sell can't be driven. Find what the warp leaves unset (the scene's
-  own route presses A at +500; maybe a menu/input flag), fix the scene, then read every shop line in game.
+  rewritten (rv05). **Session n:** the "ignored input" was a freeze: after a scenario-select warp the sound CPU
+  never echoes a command and `C2:F59F` spins at `C2:F5A2` on port $2141 (joypad polling stops; original ROM too).
+  `warp.lua` now nudges it (APU_NUDGE: after 4000 polls it sets the wait counter $D9 to the port value; debug only).
+  New scenes `town_tavern`, `shop_buy`, `shop_sell`, `shop_trade` all reach SCENE_OK. Read in game: a 20-cell row
+  followed by `{FF01}` wraps twice, so 1AFD1A's Yes/No drew over row 1 ("TradeYes: 1NoG."); lint now requires
+  <= 19 cells before `{FF01}` (test added), 11 rows fixed (rv06), trade-in confirm now right (`work/qa/w_shopx`).
+  Still to read in game: buy price confirm (1AF6A0), can't-equip (1AF738), equip-now, sell confirm, bags/storage
+  full (needs a full inventory: stress save). Minor: price var prints right-aligned ("Trade-in:  144G").
+  **Tavern** (`work/qa/warp/town_tavern/proof.png`): Thetis's box shows `"What'll we` starting at the right edge
+  and `e do? Sword"` cut on row 2: compare with the JP (`emu.py rom/... --script tools/debug/warp.lua --var
+  "SCENE='town_tavern'"`) before fixing; it may be the tavern choice text (と話す screen).
   (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
   (5) name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
   and add it to `script/default_names.tsv` like ソード/テティス. (6) status "Gdr 男" value still JP (polish line).
@@ -39,6 +52,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (original, same scene names). Proof sheets at full scale: `sheet.py "work/qa/tour/*/proof.png" --div 1 --cols 4
   --max 12 --out work/qa/tour/sheets/sheet.png` (sorted scene order = `ls`). Own read so far: sheets 1-8 of 12
   (scenes battle_items..scen_18); verdicts not written into a gate yet. Brief: `docs/visual-qa-brief.md`.
+- **Session 2026-11-23n (phase 8, shop freeze):** see to-do 3. Also seen on the New Game path (`work/qa/w_ng3`,
+  state `work/states/ng_town.mss` = first town after the ceremony): the 第1部『迫り来る恐怖』 part card is still JP
+  graphics (16x16 2bpp glyphs at 0x18449A, `docs/re/graphics.md` row "Chapter card"): a phase-8 redraw item, with
+  第2部/第3部. check 52 passed, lint 0, smoke ok. Worker handed back at the context limit.
 - **Session 2026-11-23m (phase 8, shop box):** to-do 3 (see above). Shop states in `work/states/` refreshed on
   this build (states made on an older build show stale text tiles: cold boot or re-run `warp_all.py --states`).
   check 52 passed, lint 0 problems, smoke ok. Worker handed back at the context limit.

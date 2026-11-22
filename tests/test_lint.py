@@ -38,6 +38,9 @@ def test_shop_rows_fit_the_20_cell_portrait_box():
     assert batches.width_problems(entry, '"Equip it now?"{FF01}{FF0E:0006}Yes') == []
     assert batches.width_problems(entry, '"Will you equip it now?"{FF01}{FF0E:0006}Yes')       # 24 cells
     assert batches.width_problems(entry, '"Equip it{FF01}now?"{FF01}{FF0E:0006}Yes')          # a 4th row
+    # a full 20-cell row wraps by itself, so its {FF01} skips a row (Yes/No drew over row 1, 1AFD1A)
+    assert batches.width_problems(entry, '"Shall I equip it??"{FF01}{FF0E:0006}Yes')          # 20 then FF01
+    assert batches.width_problems(entry, '"Shall I equip it?"{FF01}{FF0E:0006}Yes') == []     # 19
     # variables count at their longest English value: item 16, price 5
     assert batches.shop_row_cells('"{FF06:48CD:007E}{FF0E:0003}{FF06:48F9:007E}G"') == 1 + 16 + 3 + 5 + 2
 

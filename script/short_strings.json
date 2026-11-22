@@ -227,7 +227,7 @@
   "id": "1AF738",
   "kind": "text",
   "jp": "「{FF06:4905:007E}さんは{FF06:48CD:007E}を{FF01}{FF0E:0003}装備できませんがよろしいですか？」{FF0E:0006}はい{FF0E:0003}いいえ{FF09:F7A8:00DA:F7B0:00DA:0001}{FF0A}{FF0B:4A57:007E:F7A2:00DA}",
-  "en": "\"{FF06:4905:007E} can't use{FF01}{FF06:48CD:007E}.\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:F7A8:00DA:F7B0:00DA:0001}{FF0A}{FF0B:4A57:007E:F7A2:00DA}"
+  "en": "\"{FF06:48CD:007E}?{FF01}Not for {FF06:4905:007E}.\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:F7A8:00DA:F7B0:00DA:0001}{FF0A}{FF0B:4A57:007E:F7A2:00DA}"
  },
  {
   "id": "1AF7A0",
@@ -314,7 +314,7 @@
   "id": "1AF84C",
   "kind": "text",
   "jp": "「もちものがいっぱいなので{FF01}{FF0E:0003}倉庫にいれておきます。」{FF10:F581:00DA}{FF11}{FF0D}",
-  "en": "\"Your bags are full.{FF01}{FF0E:0003}I'll store it.\"{FF10:F581:00DA}{FF11}{FF0D}"
+  "en": "\"Bags are full.{FF01}{FF0E:0003}I'll store it.\"{FF10:F581:00DA}{FF11}{FF0D}"
  },
  {
   "id": "1AF88E",
@@ -326,7 +326,7 @@
   "id": "1AF890",
   "kind": "text",
   "jp": "「°°°倉庫もいっぱいでした！{FF01}　この取引はなかったことにしましょう。」{FF10:F581:00DA}{FF11}{FF0D}",
-  "en": "\"...Storage is full!{FF01} Let's call it off.\"{FF10:F581:00DA}{FF11}{FF0D}"
+  "en": "\"Storage full, too!{FF01} Let's call it off.\"{FF10:F581:00DA}{FF11}{FF0D}"
  },
  {
   "id": "1AF8E2",
@@ -392,7 +392,7 @@
   "id": "1AF9EA",
   "kind": "text",
   "jp": "「ほかに買って下さるものはありますか？」{FF01}{FF0E:0006}はい{FF0E:0003}いいえ{FF09:FA36:00DA:FA3E:00DA:0001}{FF0A}{FF0D}",
-  "en": "\"Buy anything else?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FA36:00DA:FA3E:00DA:0001}{FF0A}{FF0D}"
+  "en": "\"Anything else?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FA36:00DA:FA3E:00DA:0001}{FF0A}{FF0D}"
  },
  {
   "id": "1AFA36",
@@ -416,7 +416,7 @@
   "id": "1AFA48",
   "kind": "text",
   "jp": "「装備してた{FF06:48CD:007E}を{FF01}{FF06:48F9:007E}Ｇで買い取りましょうか？」{FF01}{FF0E:0006}はい{FF0E:0003}いいえ{FF09:FAA2:00DA:FAAA:00DA:0001}{FF0A}{FF0D}",
-  "en": "\"{FF06:48CD:007E}?{FF01}Sell it for {FF06:48F9:007E}G?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FAA2:00DA:FAAA:00DA:0001}{FF0A}{FF0D}"
+  "en": "\"{FF06:48CD:007E}?{FF01}Sell for {FF06:48F9:007E}G?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FAA2:00DA:FAAA:00DA:0001}{FF0A}{FF0D}"
  },
  {
   "id": "1AFAA2",
@@ -504,7 +504,7 @@
   "id": "1AFBAC",
   "kind": "text",
   "jp": "「{FF06:48CD:007E}なら{FF06:48F9:007E}Ｇで{FF01}　買い取りましょう。よろしいですか？」{FF01}{FF0E:0006}はい{FF0E:0003}いいえ{FF09:FC0E:00DA:FC16:00DA:0001}{FF0A}{FF0D}",
-  "en": "\"{FF06:48CD:007E}?{FF01}I'd pay {FF06:48F9:007E}G. OK?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FC0E:00DA:FC16:00DA:0001}{FF0A}{FF0D}"
+  "en": "\"{FF06:48CD:007E}?{FF01}How about {FF06:48F9:007E}G?\"{FF01}{FF0E:0006}Yes{FF0E:0003}No{FF09:FC0E:00DA:FC16:00DA:0001}{FF0A}{FF0D}"
  },
  {
   "id": "1AFC0E",
@@ -572,13 +572,13 @@
   "id": "1AFC7E",
   "kind": "text",
   "jp": "倉庫はいっぱいです！！{FF01}{FF06:F569:00DA}{FF06:F5A7:00DA}{FF03}",
-  "en": "Storage is full! So,{FF01}{FF06:F569:00DA}{FF06:F5A7:00DA}{FF03}"
+  "en": "Storage full! So,{FF01}{FF06:F569:00DA}{FF06:F5A7:00DA}{FF03}"
  },
  {
   "id": "1AFCA4",
   "kind": "text",
   "jp": "「所持品がいっぱいなので{FF01}倉庫に入れます。」{FF10:F581:00DA}{FF11}{FF0D}",
-  "en": "\"Your bags are full.{FF01}It goes to storage.\"{FF10:F581:00DA}{FF11}{FF0D}",
+  "en": "\"Bags are full.{FF01}It goes to storage.\"{FF10:F581:00DA}{FF11}{FF0D}",
   "refs": [
    "0D25F3"
   ]
@@ -593,19 +593,19 @@
   "id": "1AFCDC",
   "kind": "text",
   "jp": "「装備している　{FF06:48E3:007E}を{FF01}{FF0E:0003}下取りしましょうか？」{FF01}{FF06:FC4A:00DA}{FF03}",
-  "en": "\"Trade in your gear,{FF01}{FF0E:0001}{FF06:48E3:007E}?\"{FF01}{FF06:FC4A:00DA}{FF03}"
+  "en": "\"Trade in your old{FF01}{FF0E:0001}{FF06:48E3:007E}?\"{FF01}{FF06:FC4A:00DA}{FF03}"
  },
  {
   "id": "1AFD1A",
   "kind": "text",
   "jp": "「下取りで{FF06:48F9:007E}Ｇになります。{FF01}{FF0E:0003}よろしいですか？」{FF01}{FF06:FC4A:00DA}{FF03}",
-  "en": "\"Trade-in: {FF06:48F9:007E}G.{FF01}{FF0E:0001}Is that all right?\"{FF01}{FF06:FC4A:00DA}{FF03}"
+  "en": "\"Trade-in: {FF06:48F9:007E}G.{FF01}Is that all right?\"{FF01}{FF06:FC4A:00DA}{FF03}"
  },
  {
   "id": "1AFD5A",
   "kind": "text",
   "jp": "「{FF06:48F9:007E}Ｇのおかえしになります。{FF01}{FF0E:0003}よろしいですか？」{FF01}{FF06:FC4A:00DA}{FF03}",
-  "en": "\"Change is {FF06:48F9:007E}G.{FF01}{FF0E:0001}Is that all right?\"{FF01}{FF06:FC4A:00DA}{FF03}"
+  "en": "\"Change is {FF06:48F9:007E}G.{FF01}Is that all right?\"{FF01}{FF06:FC4A:00DA}{FF03}"
  },
  {
   "id": "1AFD9C",

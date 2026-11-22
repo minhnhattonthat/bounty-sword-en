@@ -26,6 +26,10 @@ camp	mode	31	6		6	400						camp menu (mode 6)
 camp_party_status	mode	31	6		6	1214		300 -;6 a;200 -;6 down;40 -;6 a;200 -;6 a;200 -				party -> status
 town_weapon_shop	scenario	1			13	1056				500 -;6 a;300 -		town (A-01) menu -> weapon_shop
 town_item_shop	scenario	1			13	1132				500 -;16 down;60 -;6 a;300 -		town (A-01) menu -> item_shop
+town_tavern	scenario	1			13	1208				500 -;16 down;60 -;16 down;60 -;6 a;300 -		town (A-01) menu -> tavern
+shop_buy	scenario	1			13	1668				500 -;6 a;300 -;6 a;200 -;6 a;400 -		weapon shop: Buy -> Iron Sword -> price Yes/No
+shop_sell	scenario	1			13	1508				500 -;6 a;300 -;6 right;40 -;6 a;400 -		weapon shop: Sell -> what'll you sell
+shop_trade	scenario	1			13	2152				500 -;6 a;300 -;6 a;200 -;6 a;200 -;6 a;200 -;6 down;60 -;6 a;200 -;6 a;200 -		weapon shop: Buy -> Iron Sword -> Yes -> Steel Sword -> trade-in price Yes/No
 battle_menu	scenario	37			7	1610				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -		battle map command menu (party / items / withdraw) after the opening lines
 battle_items	scenario	37			7	1962				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 a;300 -		battle command menu -> items
 battle_withdraw	scenario	37			7	2008				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 down;40 -;6 a;300 -		battle command menu -> withdraw

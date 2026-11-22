@@ -83,13 +83,22 @@ def scenes():
     out.append(row(name="camp", kind="mode", map=31, mode=6, expect=6, hold=400, note="camp menu (mode 6)"))
     out.append(row(name="camp_party_status", kind="mode", map=31, mode=6, expect=6, hold=800,
                    route=steps("300 -;6 a;200 -", downs(1), "6 a;200 -;6 a;200 -"), note="party -> status"))
-    # town menu: weapon shop, item shop, tavern, party, items, leave town. The menu takes one Down and then ignores
-    # further presses (seen at 40-200 frame gaps), so only the first two entries are reachable by route; tavern is
-    # open in docs/status.md (find the cursor variable and poke it). Party/items/leave = camp screens and world map.
-    town = ["weapon_shop", "item_shop"]
+    # town menu: weapon shop, item shop, tavern, party, items, leave town. After the warp the game used to freeze on
+    # an APU handshake (C2:F5A2; it looked like ignored input): warp.lua now nudges it, see APU_NUDGE in the log.
+    # Party/items/leave = camp screens and world map.
+    town = ["weapon_shop", "item_shop", "tavern"]
     for k, sub in enumerate(town):
-        out.append(row(name=f"town_{sub}", kind="scenario", map=1, expect=13, hold=600, route="",
+        out.append(row(name=f"town_{sub}", kind="scenario", map=1, expect=13, hold=600 + 300 * (k == 2), route="",
                        then=steps("500 -", downs(k, 60, 16), "6 a;300 -"), note=f"town (A-01) menu -> {sub}"))
+    # shop flows (dialogue in short_strings 1AF585..1AFDC2): Buy -> item -> price confirm; Sell; trade-in confirm
+    shop = "500 -;6 a;300 -"
+    flows = {"buy": (steps(shop, "6 a;200 -;6 a;400 -"), 1100, "Buy -> Iron Sword -> price Yes/No"),
+             "sell": (steps(shop, "6 right;40 -;6 a;400 -"), 1100, "Sell -> what'll you sell"),
+             "trade": (steps(shop, "6 a;200 -;6 a;200 -;6 a;200 -;6 down;60 -;6 a;200 -;6 a;200 -"), 2000,
+                       "Buy -> Iron Sword -> Yes -> Steel Sword -> trade-in price Yes/No")}
+    for sub, (then, hold, note) in flows.items():
+        out.append(row(name=f"shop_{sub}", kind="scenario", map=1, expect=13, hold=hold, route="", then=then,
+                       note=f"weapon shop: {note}"))
     skip = "300 -" + ";6 a;60 -" * 10 + ";400 -"
     out.append(row(name="battle_menu", kind="scenario", map=37, expect=7, hold=1300, then=skip,
                    note="battle map command menu (party / items / withdraw) after the opening lines"))

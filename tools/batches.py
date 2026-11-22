@@ -150,6 +150,10 @@ def width_problems(entry, en):
         if file_of(entry) == "short_strings" and SHOP[0] <= int(entry["id"], 16) <= SHOP[1]:
             out = [f"shop row over {SHOP[2]} cells ({shop_row_cells(r)}): {TOKEN.sub('', r)!r}"
                    for r in rows if shop_row_cells(r) > SHOP[2]]
+            # a full row wraps by itself, so an {FF01} after it skips a row: the Yes/No of 1AFD1A landed on row 1
+            # over the price (`work/qa/w_shopx`, session n)
+            out += [f"shop row of {SHOP[2]} cells before {{FF01}} wraps twice: {TOKEN.sub('', r)!r}"
+                    for r in rows[:-1] if shop_row_cells(r) == SHOP[2]]
             jp_rows = entry["jp"].split("{FF01}")    # a JP row past 20 cells wraps on its own: one more row
             if en.count("{FF01}") > len(jp_rows) - 1 + sum(shop_row_cells(r) > SHOP[2] for r in jp_rows):
                 out.append("more {FF01} rows than the JP shows (the shop box holds 3 rows)")

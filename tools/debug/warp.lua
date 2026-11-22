@@ -88,6 +88,23 @@ if kind == "msg" then
   end)
 end
 
+-- APU handshake nudge: after a scenario-select warp the sound CPU sometimes never echoes a command on port 1, and
+-- C2:F59F (send-and-wait, both ROMs) spins at C2:F5A2-F5AE forever (the shop froze after its greeting). After
+-- APU_SPIN polls with no answer we make the wait counter $D9 equal the port value, so the game moves on (debug only).
+local APU_CMP, APU_SPIN = 0xC2F5AC, 4000
+local apuSpins = 0
+L.on_exec(APU_CMP, APU_CMP, function()
+  if state ~= "warped" then return end
+  apuSpins = apuSpins + 1
+  if apuSpins < APU_SPIN then return end
+  local s = emu.getState()
+  local dp = (s["cpu.d"] or 0) + 0xD9
+  emu.write(dp, (s["cpu.a"] or 0) & 0xFF, M)
+  apuSpins = 0
+  L.log(string.format("APU_NUDGE f%d", L.frame))
+end)
+L.on_exec(0xC2F5B0, 0xC2F5B0, function() apuSpins = 0 end)
+
 L.on_frame(function(f)
   local m = rd16(MODE_ADDR)
   if state == "boot" then
