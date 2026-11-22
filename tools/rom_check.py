@@ -58,7 +58,32 @@ def write_sites(data):
     out += [(h, h + HOOK_BYTES, "vwf.asm hook $%06X" % (h + 0xC00000)) for h in hook_sites()]
     out.append((*CHECKSUM, "header checksum"))
     out += [(o, o + 2 * n, f"default name {en}") for o, n, _, en in default_names()]
+    out += [(o, o + len(new), f"byte patch: {note}") for o, _, new, note in byte_patches()]
     return sorted(out)
+
+
+BYTE_PATCHES = ROOT / "script" / "byte_patches.tsv"
+
+
+def byte_patches(path=BYTE_PATCHES):
+    """[(offset, original bytes, new bytes, note)] from script/byte_patches.tsv (tilemap scripts and other data)."""
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines() if path.exists() else ():
+        if line.strip() and not line.startswith("#"):
+            off, old, new, note = line.split("\t")[:4]
+            old, new = bytes.fromhex(old), bytes.fromhex(new)
+            if len(old) != len(new):
+                raise ValueError(f"byte patch {off}: original and new differ in length")
+            rows.append((int(off, 16), old, new, note))
+    return rows
+
+
+def put_byte_patches(rom, path=BYTE_PATCHES):
+    """Write each byte patch into bytearray `rom`; checks the original bytes first."""
+    for off, old, new, note in byte_patches(path):
+        if rom[off:off + len(old)] != old:
+            raise ValueError(f"byte patch at {off:06X} ({note}): ROM holds {rom[off:off + len(old)].hex()}")
+        rom[off:off + len(new)] = new
 
 
 DEFAULT_NAMES = ROOT / "script" / "default_names.tsv"

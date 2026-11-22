@@ -5,3 +5,5 @@
 1068D	6	ソード	Sword	hero ({hero}/{FF1F}), default record
 10EC1	6	ソード	Sword	hero, unit record 0 (C1:0EBF)
 1101F	6	ソード	Sword	hero, unit record 4 (C1:101D)
+32787	6	倉庫	Vault	storage entry in the shop sell list (copied to $1132 by C3:2770)
+3980F	6	倉庫	Vault	storage entry, second copy (C3:97FE)

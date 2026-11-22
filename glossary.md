@@ -180,6 +180,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ハイドラ | Hydra | | three-headed super-heavy weapon at Tartessos Gate | |
 | 超黒の魔導士 | Ultra-Black Sorcerer | | Faust's epithet | |
 | 機動トウテキ隊 | Mobile Grenadier Corps | | Steyr's Romulus army unit | |
+| 倉庫 | storage / store | | dialogue; the shop list entry is "Vault": a is a 6-word name field (C3:2787, C3:980F, `script/default_names.tsv`); 2-cell menus say "Bin" (polish) | |
+| 武器屋 | weapon / Weapons | | shop header "Weapons", nameplate 武器屋の主人 "Smith" (glyph set 01D2B7 + `script/byte_patches.tsv`) | |
+| 道具屋 | item / Items | | shop header "Items", nameplate 道具屋の娘 "Clerk" | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,

@@ -71,7 +71,7 @@
 01D190	=
 01D1A8	0:SELECT | 6:Pad setup | 16:Set OK and Cancel.
 01D1EA	0:Font
-01D2B7	=
+01D2B7	0:Weapons | 6:Items | 11:Smith | 17:Clerk | 22:Who? | 26:Gear | 29:Pack
 01D2F9	0:Atk | 2:Def | 4:Agi | 6:Int | 8:Spr | 10:Lck | 12:AS
 01D31B	0:Wp. | 2:Etc | 5:Gear | 8:Item | 12:Bin | 14:x
 01D38D	0:Promote? | 7:OK | 9:No

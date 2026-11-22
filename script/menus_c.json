@@ -10,7 +10,7 @@
   "width": 32,
   "kind": "text",
   "jp": "買う売るやめる武器屋道具屋？娘　誰が何を装備品所持品と話すの主人",
-  "en": "買う売るやめる武器屋道具屋？娘　誰が何を装備品所持品と話すの主人",
+  "en": "Weapons[0F7F]Items[0F1F][000B]Smith[0F1F][0011]Clerk[0F1F][0016]Who?[0F7F]Gear[0F7F]Pack",
   "refs": [
    "08EB65"
   ]

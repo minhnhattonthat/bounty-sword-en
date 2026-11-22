@@ -22,7 +22,7 @@ from bps import snes_checksum  # noqa: E402
 from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
-from rom_check import allowed_ranges, check_ranges, put_default_names, write_sites  # noqa: E402
+from rom_check import allowed_ranges, check_ranges, put_byte_patches, put_default_names, write_sites  # noqa: E402
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
 from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load  # noqa: E402
 from tag_font import TagFont  # noqa: E402
@@ -79,6 +79,7 @@ def build(out=OUT, identity=False, marker=False, qa=()):
         built = bytearray(built)
         if not marker:
             put_default_names(built, TextCodec(True))     # script/default_names.tsv: new-game names in English
+            put_byte_patches(built)                       # script/byte_patches.tsv: shop tilemaps etc.
         built = bytes(built) + b"\xff" * (ROM_EXPANDED - len(built))
     out.write_bytes(built)
     if not identity:

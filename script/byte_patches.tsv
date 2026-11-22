@@ -1,0 +1,11 @@
+# Small data patches the English build writes after the text step (tools/rom_check.py put_byte_patches).
+# offset	original hex	new hex	note. The build checks the original bytes first; romdiff logs each write.
+# Shop screens (C5 tilemap scripts: `40 pos16 w h tile16` = a w x 2 block of tiles, top row tile.., bottom tile+$10;
+# glyph set 01D2B7 = 32 cells, cell k<16 -> tile C0+k, k>=16 -> E0+k-16; English cells in script/grid_specs.tsv).
+05B1C7	40c4050302c70040ca050302ed00	40c4050602ca0040c4050602ca00	weapon shop nameplate 武器屋の主人 -> "Smith" (cells 10-15)
+05B1D6	40c4050302ca0040ca050102ed0040cc050102ce00	40c4050502e00040c4050502e00040c4050502e000	item shop nameplate 道具屋の娘 -> "Clerk" (cells 16-20)
+05B230	4090000302c700	408a000602c000	weapon shop header 武器屋 -> "Weapons" (cells 0-5, cols 5-10; the digit stays at col 11)
+05B25C	4090000302ca00	408e000402c600	item shop header 道具屋 -> "Items" (cells 6-9, cols 7-10)
+05B282	40ae000302e400	40ae000302ea00	sell screen tab 装備品 -> "Gear" (cells 26-28)
+05B298	40ee020302e700	40ee020302ed00	sell screen tab 所持品 -> "Pack" (cells 29-31)
+01D33B	e0e1c0c1cdf0f1d0d1dde0e1c2c3cdf0f1d2d3dde0eaebedcdf0fafbfddd	e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9	prompts 誰が買う？ 誰が売る？ 誰と話の？ (5x2 maps, op 18 at C5:B2F0..) -> "Who?" (cells 21-25)
