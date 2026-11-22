@@ -5,6 +5,13 @@ Orca workers can't start subagents and codex is out of quota until 2026-11-26, s
 translator's own fresh read-only pass (JP vs EN, glossary, voice); re-run them with codex or a reviewer agent when
 one is available (the story pass in phase 9 reads every chapter again).
 
+**Phase 6 review (2026-11-22, `.harness/reviews/bounty-sword-en-phase6.md`):** these own passes don't meet the
+done-when. Fixed from it: honorifics (D11, lint now sees {hero}/{FF31} and どの), Cronus, Isolated Isle,
+`{hero}'s`, Mauser's voice, `docs/style-reference.md`, brief notes. Still to do before phase 6 closes: the widow fit
+pass (D12, `batches.py widows`) and an independent read-only review of every batch (table "Independent review" at the end:
+codex from 2026-11-26, or a session that can dispatch `translate-retro-game:reviewer`; with neither, a fresh
+worker's read-only pass of pairs it did not translate).
+
 | Batch | Reviewer | Critical | Important | Minors |
 |---|---|---|---|---|
 | b001-b009 (name tables) | own pass | 0 | 0 | short forms listed in glossary |
@@ -25,3 +32,11 @@ one is available (the story pass in phase 9 reads every chapter again).
 | b067-b068 (spell/item descriptions) | own pass | 0 | 0 | 0 (no reader found; equip lines use "Eq:" and class short forms in 28-cell rows) |
 | b057, b064, b058 (menus, windows, menus_c grid strings; `tools/grid.py`, specs `script/grid_specs.tsv`) | own pass + in-game shots (camp, status, config, items, file menu, battle menus: `work/qa/warp`) | 0 | 0 | 2 (2-cell labels abbreviated: Itm, Tac, Inf, Gdr, Sg., Fld, Bin, Trd, Wp.; fragment pools 01C60C/01CC4A need an on-screen check) |
 | b059 (objectives, exact length, no reader) | own pass | 0 | 0 | 1 (terse: "SorcGen", "M.God 1") |
+
+## Independent review
+
+Pairs files from `python -X utf8 tools/pairs.py` (`>> id | JP / EN`, +-2 context), read by someone other than the
+translator. One row per batch range when done.
+
+| Batches | Reviewer | Critical | Important | Minors |
+|---|---|---|---|---|

@@ -2,15 +2,26 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check: next. Phase 6 (translate) done 2026-11-22e: 3197/3656 entries in English,
-  `batches.py check` 0 problems, every batch has a review line in `docs/reviews.md` (own passes; codex back
-  2026-11-26), glossary updated. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
+- **Phase:** 6. Translate: reopened by the phase 6 review (`.harness/reviews/bounty-sword-en-phase6.md`). 3197/3656
+  entries in English, `batches.py check` 0 problems. Left to close phase 6: (1) **widow fit pass** (D12): `check`
+  warns N widow boxes; `batches.py widows` lists `id page JP EN`; write `work/tl/fitNN.fix.tsv` rows
+  `id<TAB>page<TAB>new page`, dry-run with `batches.py fit '"text"'`, then `batches.py repage fitNN
+  work/tl/fitNN.fix.tsv`, `check fitNN` (also flags widows on the entry's other pages), `merge fitNN --overwrite`.
+  (2) **independent review** of every batch (`tools/pairs.py bNNN --out work/qa/review/bNNN.txt`; codex is out of
+  quota until 2026-11-26 10:32, Orca workers can't start subagents: a fresh worker reviews pairs it did not
+  translate), rows in `docs/reviews.md` "Independent review"; fix Critical/Important, Minors to `docs/polish.md`.
+  Then phase 7. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
   keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (phase 7).
 - **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);
   (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
   its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
   (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
-- **Session 2026-11-22e (b067, b057, b064, b058, b059 merged; phase 6 closed):**
+- **Session 2026-11-22f (phase 6 review fixes):** honorifics D11 (lint: `batches.HONORIFICS` + どの/さま, matches
+  {hero}/{FF31}; 14 lines fixed), Cronus (glossary row クロノス; ceremony 1DEDE7), Isolated Isle (glossary row,
+  275EE6), `{hero}'s` lint (295456), Mauser's オレ様 (1E6B6C, 25B114), `docs/style-reference.md` (prologue seen in
+  game: `work/qa/w_prologue6`, English in the box), brief "Notes from earlier batches", minor 9 in `docs/polish.md`.
+  New tools: `pages.widows`, `batches.py widows|fit|repage`, `tools/pairs.py`; tests in `tests/test_pages.py`.
+- **Session 2026-11-22e (b067, b057, b064, b058, b059 merged; phase 6 closed, reopened in f):**
   - Descriptions b067 (sign items: fragment 0EEE68 = "-born / who use it...?"; equip rows "Eq: Warrior, Knights").
   - **Grid strings** (menus/windows/menus_c): `tools/grid.py` lays English out cell by cell from
     `script/grid_specs.tsv` (`cell:text | ...`, `=` keeps JP; `fill bNNN` writes the batch); `batches.py check` runs
@@ -150,7 +161,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
      windows/menus/menus_c (C1 grid strings with `[0F7F]` cells: translate against `docs/re/slices.tsv`),
      descriptions/objectives (no reader found; translate, keep codes). Skipped rows left JP on purpose: classes
      `0BFFF2`, items `1AEDAF` (junk-looking records), orders `08E996`.. (role labels across 8-word records).
-  4. First in-game look at the prologue (warp `prologue`) not done yet.
+  4. Prologue seen in game (session f, `work/qa/w_prologue6`); voices in `docs/style-reference.md`.
 - **Open (not blocking):**
   - **Phase 7 engine work from phase 6 (D8):** speaker tag (6 cells, `C2:5641`) and location label (10 cells,
     `C0:E1B1`) must pack two letters a cell; until then `build.py` keeps the JP for the 43 overflowing entries and

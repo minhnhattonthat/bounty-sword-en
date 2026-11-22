@@ -5,7 +5,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 (forms separated by ` / `), and no Avoid spelling may appear.
 
 ## Rulings (asked of the user once; options and reasons in docs/decisions.md)
-- Honorifics: kept, hyphenated (Name-san). Name order: Western (given name first).
+- Honorifics (D1): kept, hyphenated, on names and on {hero}/{FF31} alike, never swapped for an English title:
+  さん -> -san ({hero}-san), 様/さま -> -sama ({hero}-sama, {FF31}-sama, Elysion-sama), どの/殿 -> -dono
+  ({hero}-dono, Faust-dono), ちゃん -> -chan, くん -> -kun. Titles that are words, not suffixes, stay English
+  (陛下 "Your Majesty", 隊長 "Captain"). `batches.py check` fails on a JP honorific after a name or name variable
+  without its suffix. Name order: Western (given name first).
 - Romanisation source: official English names, else an earlier fan patch, else Hepburn without macrons. There is no
   official English release or known fan patch; names that are real gun makers or myth names use that spelling
   (Mauser, Steyr, Detonics, Colts, Hammerli, Rheinmetall; Ares, Thetis, Erebus, Nyx).
@@ -115,6 +119,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ハイランド | Highland | | lone island west of Rheinmetall | |
 | タルテソスの門 | Tartessos Gate | | | |
 | 剣のみさき | Sword Cape | | | |
+| 閉ざされた島 | Isolated Isle | | the Archsage's island; location label too | |
 | ヘラクレスの柱 | Pillars of Hercules | | strait between north and south Europea | |
 
 ## Items / skills / terms
@@ -137,6 +142,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | プルートゥの指輪 | Pluto Ring | | | |
 | ゼウスの指輪 | Zeus Ring | | | |
 | クロノスの指輪 | Cronus Ring | | | Kronos |
+| クロノス | Cronus | | the Zodiac God of time (時神クロノス, ceremony fragment <= 10 chars); same spelling as Cronus Ring | Chronos / Kronos |
 | ウラヌスの指輪 | Uranus Ring | | | |
 | ポセイドンの指輪 | Poseidon Ring | | | |
 | 封魔石 | stone / Stone | | sealing stones (Fire Stone...) | |

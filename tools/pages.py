@@ -172,6 +172,38 @@ def layout_page(jp_lines, prefix, en, menu=False):
     return out, probs
 
 
+WIDOW_CHARS = 20   # a continuation box of one line this short that starts mid-sentence is a widow
+SENTENCE_END = re.compile(r"(?:[.!?]|\.\.\.)['\"]?$")
+
+
+def widows(jp, en):
+    """Continuation boxes the wrap adds (not a forced {next}) that hold one short line starting mid-sentence:
+    "...the twelve" / "powers of darkness!". Each costs the player a key press for a word or two (review of phase 6).
+    Returns ["page N: 'text'"]; raw messages and choice/conditional pages are skipped."""
+    raw, items = split(jp)
+    if raw:
+        return []
+    pages = [p for p in items if p[0] == "page"]
+    src = [p.strip() for p in en.split("||")]
+    if len(src) != len(pages):
+        return []
+    out = []
+    for k, (it, text) in enumerate(zip(pages, src)):
+        jp_text = "".join(it[2])
+        q_open, q_close = jp_text.startswith("「"), jp_text.endswith("」")
+        body = text.strip()
+        body = body[1:] if q_open and body.startswith('"') else body
+        body = body[:-1] if q_close and body.endswith('"') else body
+        for b in body.split("{next}"):
+            lines = wrap(b.strip(), "「" if q_open else "", " " if q_open else "", px("」") if q_close else 0)
+            chunks = [lines[i:i + LINES] for i in range(0, len(lines), LINES)]
+            for prev, c in zip(chunks, chunks[1:]):
+                short = len(re.sub(r"\{[^}]*\}", "xxxxxx", c[0].strip())) <= WIDOW_CHARS
+                if len(c) == 1 and short and not SENTENCE_END.search(prev[-1].strip()):
+                    out.append(f"page {k + 1}: {c[0].strip()!r}")
+    return out
+
+
 def build_en(jp, en):
     """Full English message from the page paragraphs ('||'-separated) or, for raw messages, script syntax."""
     raw, items = split(jp)

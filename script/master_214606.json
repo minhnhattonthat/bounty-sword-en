@@ -968,8 +968,8 @@
    1590
   ],
   "jp": "{spk}ロジャー　　\n「ぼく達は　{hero}さんとともに\n　いろいろな人達の　苦労を\n　悲しみを　見聞きしてきた！」\n{next}\n「これ以上　国としてのエゴを\n　通しては　ならないんだ！」\n{next}\n「国があっての　人ではない！\n　人があっての　国なんだ！」\n",
-  "en": "{spk}ロジャー　　\n「Together with {hero},\n we've seen and heard the\n hardships and sorrows of all」\n{next}\n「kinds of people!」\n{next}\n「We can't let nations force\n their selfishness on people\n any longer!」\n{next}\n「People don't exist for the\n sake of the nation! The\n nation exists for the sake of」\n{next}\n「the people!」\n",
-  "pages": "\"Together with {hero}, we've seen and heard the hardships and sorrows of all kinds of people!\" || \"We can't let nations force their selfishness on people any longer!\" || \"People don't exist for the sake of the nation! The nation exists for the sake of the people!\""
+  "en": "{spk}ロジャー　　\n「With {hero}-san, we have\n seen the hardship and\n sorrow of so many people!」\n{next}\n「We can't let nations force\n their selfishness on people\n any longer!」\n{next}\n「People don't exist for the\n nation! The nation exists for\n the people!」\n",
+  "pages": "\"With {hero}-san, we have seen the hardship and sorrow of so many people!\" || \"We can't let nations force their selfishness on people any longer!\" || \"People don't exist for the nation! The nation exists for the people!\""
  },
  {
   "id": "217A16",

@@ -46,6 +46,23 @@ def test_page_count_and_quotes_are_checked():
     assert pages.build_en(JP, 'No quotes. || "Fine."')[1]
 
 
+def test_widow_box_is_flagged_but_a_sentence_box_is_not():
+    widow = '"' + " ".join(["word"] * 15) + ' to spill over."'
+    w = pages.widows(JP, f'"This is East End." || {widow}')
+    assert len(w) == 1 and w[0].startswith("page 2:")
+    sentence = '"' + " ".join(["word"] * 15) + '. Two more."'
+    assert pages.widows(JP, f'"This is East End." || {sentence}') == []
+
+
+def test_honorific_after_name_variable_needs_its_suffix():
+    import batches
+    jp = "{spk}ロブン　　　\n「おひさしぶりですな　{hero}どの」\n"
+    entry = {"id": "X", "jp": jp, "slots": []}
+    assert any("-dono" in p for p in batches.problems(entry, '"Long time, {hero}."', []))
+    assert not any("honorific" in p for p in batches.problems(entry, '"Long time, {hero}-dono."', []))
+    assert any("'s" in p for p in batches.problems(entry, '"Long time, {hero}-dono. {hero}\'s sword!"', []))
+
+
 def test_every_master_message_has_a_page_view():
     for path in sorted((ROOT / "script").glob("master_*.json")):
         for e in json.loads(path.read_text(encoding="utf-8")):

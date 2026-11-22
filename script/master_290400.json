@@ -1535,8 +1535,8 @@
    299
   ],
   "jp": "{spk}コルツ　　　\n「あのぼうや　{hero}の剣を見れば\n　胸を　なでおろすだろうよ\n　ああ　斬られなくてよかったってな」\n",
-  "en": "{spk}コルツ　　　\n「Once that boy sees\n {hero}'s sword, he'll\n breathe a sigh of relief. Glad」\n{next}\n「he didn't get cut, that is.」\n",
-  "pages": "\"Once that boy sees {hero}'s sword, he'll breathe a sigh of relief. Glad he didn't get cut, that is.\""
+  "en": "{spk}コルツ　　　\n「Once that boy sees the\n sword of {hero}, he'll\n breathe a sigh of relief. Glad」\n{next}\n「he didn't get cut, that is.」\n",
+  "pages": "\"Once that boy sees the sword of {hero}, he'll breathe a sigh of relief. Glad he didn't get cut, that is.\""
  },
  {
   "id": "2954D0",

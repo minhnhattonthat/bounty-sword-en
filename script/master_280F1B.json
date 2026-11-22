@@ -3036,8 +3036,8 @@
    754
   ],
   "jp": "{spk}ロジャー　　\n「ぼくたち　反乱軍のメンバー全[03AC]\n　{hero}様と　ともに戦います」\n",
-  "en": "{spk}ロジャー　　\n「All of us rebel members will\n fight alongside you, Sir\n {hero}.」\n",
-  "pages": "\"All of us rebel members will fight alongside you, Sir {hero}.\""
+  "en": "{spk}ロジャー　　\n「All of us rebel members will\n fight alongside you,\n {hero}-sama.」\n",
+  "pages": "\"All of us rebel members will fight alongside you, {hero}-sama.\""
  },
  {
   "id": "2898CD",

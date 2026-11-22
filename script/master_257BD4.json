@@ -590,8 +590,8 @@
    2386
   ],
   "jp": "{spk}ロブン　　　\n「ファウストどの　お力を！」\n{spk}ファウスト　\n「‥‥わかりました　東洋の風水\n　西洋の魔力　一つに重ねて！」\n{next}\n{spk}ロブン　　　\n「まいりますぞ！」\n{spk}ファウスト　\n「合体攻撃！」\n{spk}ロブン　　　\n「モ°ー°タ°ル°リ°ン°グ！」\n{spk}ファウスト　　\n「モ°ー°タ°ル°リ°ン°グ！」\n",
-  "en": "{spk}ロブン　　　\n「Faust, lend me your\n strength!」\n{spk}ファウスト　\n「...Very well. Eastern\n geomancy and Western\n magic, joined as one!」\n{next}\n{spk}ロブン　　　\n「Here we go!」\n{spk}ファウスト　\n「Combined attack!」\n{spk}ロブン　　　\n「MORTAL RING!」\n{spk}ファウスト　　\n「MORTAL RING!」\n",
-  "pages": "\"Faust, lend me your strength!\" || \"...Very well. Eastern geomancy and Western magic, joined as one!\" || \"Here we go!\" || \"Combined attack!\" || \"MORTAL RING!\" || \"MORTAL RING!\""
+  "en": "{spk}ロブン　　　\n「Faust-dono, lend me your\n strength!」\n{spk}ファウスト　\n「...Very well. Eastern\n geomancy and Western magic,\n joined as one!」\n{next}\n{spk}ロブン　　　\n「Here we go!」\n{spk}ファウスト　\n「Combined attack!」\n{spk}ロブン　　　\n「MORTAL RING!」\n{spk}ファウスト　　\n「MORTAL RING!」\n",
+  "pages": "\"Faust-dono, lend me your strength!\" || \"...Very well. Eastern geomancy and Western magic, joined as one!\" || \"Here we go!\" || \"Combined attack!\" || \"MORTAL RING!\" || \"MORTAL RING!\""
  },
  {
   "id": "259132",
@@ -707,8 +707,8 @@
    1874
   ],
   "jp": "{spk}ツキカゲ　　\n「‥‥ククク　スリルだな！\n　血が　わきたつほどに\n　ゾクゾクする！　シビれるぜ！」\n{next}\n「{hero}さんよ\n　アンタの　仲間になって\n　本当に　よかったと思うぜ！」\n",
-  "en": "{spk}ツキカゲ　　\n「...Heh heh heh, what a thrill!\n My blood's boiling! I've got\n shivers! I love it!」\n{next}\n「Hey, {hero}. I'm real glad I\n joined up with you!」\n",
-  "pages": "\"...Heh heh heh, what a thrill! My blood's boiling! I've got shivers! I love it!\" || \"Hey, {hero}. I'm real glad I joined up with you!\""
+  "en": "{spk}ツキカゲ　　\n「...Heh heh heh, what a thrill!\n My blood's boiling! I've got\n shivers! I love it!」\n{next}\n「Hey, {hero}-san. I'm real\n glad I joined up with you!」\n",
+  "pages": "\"...Heh heh heh, what a thrill! My blood's boiling! I've got shivers! I love it!\" || \"Hey, {hero}-san. I'm real glad I joined up with you!\""
  },
  {
   "id": "259864",
@@ -959,8 +959,8 @@
    1902
   ],
   "jp": "{spk}ロブン　　　\n「おひさしぶりですな　{hero}どの」\n{next}\n「私は　大いに　まんぞくです\n　やみの十二の力　その　すばらしさを\n　この目で　見る事ができて！」\n{next}\n「私は　このやみの力を　見るために\n　はるか東洋から　この地へ\n　きたのかも　知れません‥‥」\n{next}\n「なのに　なぜ　あなた方には\n　その　すばらしさが　わからない！？」\n{next}\n「死になさい！」\n{next}\n「この力の　すばらしさを\n　わかろうとしない者に\n　生きるしかくなど　ないのです！」\n",
-  "en": "{spk}ロブン　　　\n「It has been a long time,\n {hero}.」\n{next}\n「I am deeply satisfied, having\n seen with my own eyes the\n wonder of the twelve」\n{next}\n「powers of darkness!」\n{next}\n「Perhaps I came to this land\n all the way from the distant\n East just to see this power」\n{next}\n「of darkness...」\n{next}\n「So why can't you understand\n how wonderful it is!?」\n{next}\n「Die!」\n{next}\n「Those who will not\n understand the wonder of\n this power have no right to」\n{next}\n「live!」\n",
-  "pages": "\"It has been a long time, {hero}.\" || \"I am deeply satisfied, having seen with my own eyes the wonder of the twelve powers of darkness!\" || \"Perhaps I came to this land all the way from the distant East just to see this power of darkness...\" || \"So why can't you understand how wonderful it is!?\" || \"Die!\" || \"Those who will not understand the wonder of this power have no right to live!\""
+  "en": "{spk}ロブン　　　\n「It has been a long time,\n {hero}-dono.」\n{next}\n「What joy, to see with my\n own eyes the wonder of the\n twelve powers of darkness!」\n{next}\n「Perhaps I came all this way\n from the far East just to\n see this power of darkness...」\n{next}\n「So why can't you understand\n how wonderful it is!?」\n{next}\n「Die!」\n{next}\n「Those who will not see the\n wonder of this power have\n no right to live!」\n",
+  "pages": "\"It has been a long time, {hero}-dono.\" || \"What joy, to see with my own eyes the wonder of the twelve powers of darkness!\" || \"Perhaps I came all this way from the far East just to see this power of darkness...\" || \"So why can't you understand how wonderful it is!?\" || \"Die!\" || \"Those who will not see the wonder of this power have no right to live!\""
  },
  {
   "id": "25A51E",
@@ -1211,8 +1211,8 @@
    1930
   ],
   "jp": "{spk}マウザー　　\n「うぉぉぉぉぉぉぉぉぉぉっ！\n　‥‥くッ！　オレ様の\n　力でも　ビクともしないぜ！」\n",
-  "en": "{spk}マウザー　　\n「Uoooooooooooh! ...Ngh! Even\n with all my strength, it won't\n budge!」\n",
-  "pages": "\"Uoooooooooooh! ...Ngh! Even with all my strength, it won't budge!\""
+  "en": "{spk}マウザー　　\n「Uoooooooooooh! ...Ngh! Not\n even the mighty Mauser can\n make it budge!」\n",
+  "pages": "\"Uoooooooooooh! ...Ngh! Not even the mighty Mauser can make it budge!\""
  },
  {
   "id": "25B17A",
@@ -1229,8 +1229,8 @@
    1932
   ],
   "jp": "{spk}ロブン　　　\n「気をつけてください　{hero}どの\n　恐らく　あの機神　格闘用に\n　作られた　最強の機神ですぞ！」\n",
-  "en": "{spk}ロブン　　　\n「Be careful, {hero}. That\n Machine God was most likely\n built for close combat. It」\n{next}\n「must be the strongest of\n them all!」\n",
-  "pages": "\"Be careful, {hero}. That Machine God was most likely built for close combat. It must be the strongest of them all!\""
+  "en": "{spk}ロブン　　　\n「Be careful, {hero}-dono.\n That Machine God was most\n likely built for close combat.」\n{next}\n「The strongest of them all!」\n",
+  "pages": "\"Be careful, {hero}-dono. That Machine God was most likely built for close combat. The strongest of them all!\""
  },
  {
   "id": "25B23C",
@@ -2056,8 +2056,8 @@
    2024
   ],
   "jp": "{spk}リュウビ　　\n「{hero}どの‥‥\n　私たちも　ともに戦いますぞ」\n",
-  "en": "{spk}リュウビ　　\n「Sir {hero}... we shall fight\n at your side as well.」\n",
-  "pages": "\"Sir {hero}... we shall fight at your side as well.\""
+  "en": "{spk}リュウビ　　\n「{hero}-dono... we shall fight\n at your side as well.」\n",
+  "pages": "\"{hero}-dono... we shall fight at your side as well.\""
  },
  {
   "id": "25D92A",

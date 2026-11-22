@@ -563,8 +563,8 @@
    681
   ],
   "jp": "{spk}ロジャー　　\n「おおっ　まさしく{FF31}様！\n　船が　しずめられたと聞き\n　われら　心配しておりました！」\n",
-  "en": "{spk}ロジャー　　\n「Oh! It truly is Lady {FF31}!\n We heard your ship was\n sunk, and we were worried!」\n",
-  "pages": "\"Oh! It truly is Lady {FF31}! We heard your ship was sunk, and we were worried!\""
+  "en": "{spk}ロジャー　　\n「Oh! {FF31}-sama, it is you!\n We heard your ship was sunk.\n We feared the worst!」\n",
+  "pages": "\"Oh! {FF31}-sama, it is you! We heard your ship was sunk. We feared the worst!\""
  },
  {
   "id": "27308E",
@@ -572,8 +572,8 @@
    682
   ],
   "jp": "{spk}ミランダ　　\n「{FF31}様　よくぞ　ご無事で\n　これも　神のおぼしめしです‥‥」\n",
-  "en": "{spk}ミランダ　　\n「Lady {FF31}, I am so glad\n you are safe. This too is\n God's will...」\n",
-  "pages": "\"Lady {FF31}, I am so glad you are safe. This too is God's will...\""
+  "en": "{spk}ミランダ　　\n「{FF31}-sama, I am so glad\n you are safe. This too is\n God's will...」\n",
+  "pages": "\"{FF31}-sama, I am so glad you are safe. This too is God's will...\""
  },
  {
   "id": "2730DC",
@@ -581,8 +581,8 @@
    683
   ],
   "jp": "{spk}ロジャー　　\n「{FF31}様　この者たちは？」\n",
-  "en": "{spk}ロジャー　　\n「Lady {FF31}, who are\n these people?」\n",
-  "pages": "\"Lady {FF31}, who are these people?\""
+  "en": "{spk}ロジャー　　\n「{FF31}-sama, who are\n these people?」\n",
+  "pages": "\"{FF31}-sama, who are these people?\""
  },
  {
   "id": "273106",
@@ -662,8 +662,8 @@
    692
   ],
   "jp": "{spk}ロジャー　　\n「ぼくたち　反乱軍のメンバー全[03AC]\n　{hero}様と　ともに戦います」\n{next}\n「まずは　ぼくら反乱軍のきょ点\n　ミッドガルドの街に　向かいましょう」\n{next}\n「そこで体制を整え　南へ‥‥」\n{next}\n「南エウロペア大陸の　さらに南\n　あらゆる　わざわいの　みなもと\n　‥‥神祖連邦オルドバへと！」\n",
-  "en": "{spk}ロジャー　　\n「Every member of our rebel\n army will fight alongside you,\n Sir {hero}.」\n{next}\n「First, let's head for the\n town of Midgard, our rebel\n army's base.」\n{next}\n「We'll get organised there,\n then go south...」\n{next}\n「South, beyond southern\n Europea, to the source of\n every calamity... the Divine」\n{next}\n「Federation of Ordoba!」\n",
-  "pages": "\"Every member of our rebel army will fight alongside you, Sir {hero}.\" || \"First, let's head for the town of Midgard, our rebel army's base.\" || \"We'll get organised there, then go south...\" || \"South, beyond southern Europea, to the source of every calamity... the Divine Federation of Ordoba!\""
+  "en": "{spk}ロジャー　　\n「Every member of our rebel\n army will fight alongside you,\n {hero}-sama.」\n{next}\n「First, let's head for the town\n of Midgard, our rebel army's\n base.」\n{next}\n「We'll get organised there,\n then go south...」\n{next}\n「South, beyond southern\n Europea, to the source of\n every calamity... the Divine」\n{next}\n「Federation of Ordoba!」\n",
+  "pages": "\"Every member of our rebel army will fight alongside you, {hero}-sama.\" || \"First, let's head for the town of Midgard, our rebel army's base.\" || \"We'll get organised there, then go south...\" || \"South, beyond southern Europea, to the source of every calamity... the Divine Federation of Ordoba!\""
  },
  {
   "id": "273722",
@@ -1418,8 +1418,8 @@
    1371
   ],
   "jp": "{spk}ババア　　　\n「ここの海岸から　海を渡ると\n　閉ざされた島が　ありますじゃ」\n{next}\n「あそこには　古代の神々が\n　眠っておる‥‥　誰も\n　近づいてはいけない　決まりじゃ」\n",
-  "en": "{spk}ババア　　　\n「If you cross the sea from\n this shore, you'll find an\n island closed off from the」\n{next}\n「world, dearie.」\n{next}\n「The ancient gods sleep\n there... It's the rule that no\n one may go near it.」\n",
-  "pages": "\"If you cross the sea from this shore, you'll find an island closed off from the world, dearie.\" || \"The ancient gods sleep there... It's the rule that no one may go near it.\""
+  "en": "{spk}ババア　　　\n「If you cross the sea from\n this shore, you'll find the\n Isolated Isle, dearie.」\n{next}\n「The ancient gods sleep\n there... Nobody goes near it,\n dearie. That is the rule.」\n",
+  "pages": "\"If you cross the sea from this shore, you'll find the Isolated Isle, dearie.\" || \"The ancient gods sleep there... Nobody goes near it, dearie. That is the rule.\""
  },
  {
   "id": "275F92",
@@ -1814,8 +1814,8 @@
    1414
   ],
   "jp": "{spk}ツキカゲ　　\n「行くぜ　{hero}さんとやら！\n　一対一だ！　おたがい\n　生きるか死ぬか　いいだろ！？」\n",
-  "en": "{spk}ツキカゲ　　\n「Here I come, {hero}, or\n whatever your name is! One\n on one! Live or die, the both」\n{next}\n「of us. Fine by you?!」\n",
-  "pages": "\"Here I come, {hero}, or whatever your name is! One on one! Live or die, the both of us. Fine by you?!\""
+  "en": "{spk}ツキカゲ　　\n「Here I come, {hero}-san, or\n whoever you are! One on one!\n Live or die! Fine by you?!」\n",
+  "pages": "\"Here I come, {hero}-san, or whoever you are! One on one! Live or die! Fine by you?!\""
  },
  {
   "id": "277690",

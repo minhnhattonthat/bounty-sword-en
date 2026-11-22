@@ -39,7 +39,9 @@ def free_token(t):
     word such as 05E8A0's [011E]): the English may drop or keep them."""
     return t in FREE or (t.startswith("[") and 0x60 <= int(t[1:5], 16) <= 0x4FF)
 VARIABLE = r"\{(?:FF2B|FF2C)\}"
-HONORIFICS = {"さん": "-san", "様": "-sama", "殿": "-dono", "ちゃん": "-chan", "くん": "-kun"}
+# Glossary "Honorifics" (D1): every honorific after a name or name variable keeps its suffix.
+HONORIFICS = {"さん": "-san", "様": "-sama", "さま": "-sama", "殿": "-dono", "どの": "-dono", "ちゃん": "-chan",
+              "くん": "-kun"}
 NOT_NAMES = {"バア", "ジイ", "オバ", "オレ", "ハンター", "コソドロ"}   # old lady, old man, "Me-sama": not honorifics
 # Side-table budgets (docs/re/vwf.md width gate): ("px", n) = pixels, C1 VWF field (cells x 8); ("ch", n) = one
 # character a cell; ("row", n) = engine B rows of n cells broken by {FF01}.
@@ -215,10 +217,14 @@ def problems(entry, en, terms):
         if any(has_term(jp_plain, j) for j in jps) and not any(" ".join(e.split()).lower() in en_terms for e in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")
         out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
+    jp_names = re.sub(r"\{spk\}[^\n]*\n", "\n", jp)   # keeps {hero}/{FF31}: "{hero}どの" is an honorific too
     for jp_form, en_form in HONORIFICS.items():
-        named = [m for m in re.findall(r"([ァ-ヺー]+)" + jp_form, jp_plain) if m not in NOT_NAMES]
+        named = [m for m in re.findall(r"(\{hero\}|\{FF1F\}|\{FF31\}|[ァ-ヺー°]+)" + jp_form, jp_names)
+                 if m not in NOT_NAMES]
         if named and en_form.lower() not in en.lower():
             out.append(f"honorific {jp_form} needs {en_form} (or note it in UNSURE if it is not an honorific)")
+    if re.search(r"\{(?:hero|FF1F|FF31)\}'s\b", en):
+        out.append("\"'s\" after a name variable (write \"the sword of {hero}\" or rephrase)")
     return out + width_problems(entry, en)
 
 
@@ -289,6 +295,11 @@ def split(size, only=None):
     print(f"{len(batches)} new batches in {TL}, {len(taken)} ids already batched")
 
 
+def widows(entry, en):
+    """Master pages whose wrap leaves a one-line box starting mid-sentence (pages.widows)."""
+    return [f"widow box {w}" for w in pages.widows(entry["jp"], en)] if is_master(entry) else []
+
+
 def check_batch(batch, entries, terms):
     want = [r[0] for r in read_tsv(TL / f"{batch}.tsv")]
     rows = [(r[0], "\t".join(r[1:])) for r in read_tsv(TL / f"{batch}.out.tsv")]
@@ -300,8 +311,35 @@ def check_batch(batch, entries, terms):
                    f"duplicate {dup[:8]} (order must match too)")
     for eid, en in rows:
         if eid in entries:
-            bad += [f"{eid}: {p}" for p in problems(entries[eid], en, terms)]
+            bad += [f"{eid}: {p}" for p in problems(entries[eid], en, terms) + widows(entries[eid], en)]
     return bad, dict(rows)
+
+
+def page_view(entry, n):
+    """(JP page n as one line, English page n) of a merged master entry, n from 1."""
+    jp = pages.jp_view(entry["jp"], NAMES).split(" ‖ ")
+    en = [p.strip() for p in entry["pages"].split("||")]
+    return jp[n - 1], en[n - 1]
+
+
+def repage(name, src):
+    """Fit-pass input: rows `id<TAB>page<TAB>new English page` (pages from 1) -> work/tl/NAME.tsv + NAME.out.tsv
+    with each entry's full page paragraphs, the named pages replaced; then `check NAME`, `merge NAME --overwrite`."""
+    entries = index()
+    new = {}
+    for row in read_tsv(Path(src)):
+        eid, n, text = row[0], int(row[1]), "\t".join(row[2:])
+        e = entries[eid]
+        cur = new.get(eid) or [p.strip() for p in e["pages"].split("||")]
+        cur[n - 1] = text.strip()
+        new[eid] = cur
+    ids = list(new)
+    (TL / f"{name}.tsv").write_text("".join(f"{i}\t{speaker_of(entries[i])}\t{form_of(entries[i])}\t"
+                                            f"{limit_label(entries[i])}\t{jp_column(entries[i])}\n" for i in ids),
+                                    encoding="utf-8", newline="\n")
+    (TL / f"{name}.out.tsv").write_text("".join(f"{i}\t{pages.SEP.join(new[i])}\n" for i in ids),
+                                        encoding="utf-8", newline="\n")
+    print(f"{name}: {len(ids)} entries, {sum(1 for _ in read_tsv(Path(src)))} pages replaced")
 
 
 def merge(new, overwrite):
@@ -359,13 +397,35 @@ def main(argv):
                 path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
         print(f"rewrap: {changed} entries changed")
         return 0
+    if cmd == "repage":   # repage NAME FIX.tsv (id, page, English page) -> NAME.tsv/.out.tsv
+        return repage(args[0], args[1])
+    if cmd == "fit":      # fit '"quoted page"' ...: dry-run wrap, boxes of 3 lines with pixel widths
+        for text in args:
+            q = text.startswith('"') and text.endswith('"')
+            lines = pages.wrap(text.strip('"') if q else text, "「" if q else "", " " if q else "",
+                               pages.px("」") if q else 0)
+            for k, ln in enumerate(lines):
+                print(("--\n" if k and k % pages.LINES == 0 else "") + f"{pages.px(ln):4d} {ln}")
+            print("==")
+        return 0
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
     entries, terms = index(), glossary()
+    if cmd == "widows":   # widows [--limit N]: id, page, JP page, English page of every widow box (fit-pass input)
+        limit = int(args[args.index("--limit") + 1]) if "--limit" in args else 10 ** 6
+        rows = [(i, w) for i, e in entries.items() if is_master(e) and e.get("pages")
+                for w in pages.widows(e["jp"], e["pages"])]
+        for i, w in rows[:limit]:
+            n = int(w.split(":")[0].split()[1])
+            jp, en = page_view(entries[i], n)
+            print(f"{i}\t{n}\t{jp}\t{en}")
+        print(f"{len(rows)} widow boxes in {len({i for i, _ in rows})} entries", file=sys.stderr)
+        return 0
     if cmd == "check" and not names:
         bad = [f"{i}: {p}" for i, e in entries.items() if e.get("en") for p in problems(e, authored(e), terms)]
+        wid = sum(len(widows(e, authored(e))) for e in entries.values() if e.get("pages"))
         print(f"{len(entries)} entries, {sum(1 for e in entries.values() if e.get('en'))} in English, "
-              f"{len(bad)} problems")
+              f"{len(bad)} problems, {wid} widow boxes (warning; `batches.py widows` lists them for the fit pass)")
         print("\n".join(bad[:200]))
         return 1 if bad else 0
     if cmd not in ("check", "merge") or not names:
