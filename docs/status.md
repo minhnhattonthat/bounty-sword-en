@@ -7,11 +7,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   menu flow past the item list is not worked out: `AFTER` keys a/down/down/a only toggled the Pack panel), "Promote?
   OK No" (01D38D, needs a unit able to change class), "Retreat! Sure? OK No" (01C578, not shown on scenario 37);
   (2) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) `textcover.py` over side tables
-  (master coverage done, `work/qa/cover`); (4) to-do 3 shop lines read in game; (5) the build changed since the
-  tour (shop headers, Yes/No cells): re-run the full tour (`warp_all.py build/bounty_en.sfc --jobs 6 --out
-  work/qa/tour --states --sheet`, then `find work -name _mesen -prune -exec rm -rf {} +`), `qa_gate.py init ...
-  --build`, verdict the changed sheets (shop ones), `qa_gate.py check`**).
-  Old tour: `work/qa/tour` 146/146 ok on build b87fef44ac02 (gate green then; now fails on the build hash).
+  (master coverage 2335/2335, `work/qa/cover`); (4) to-do 3 shop lines read in game**).
+- **Session 2026-11-23w (phase 8, tour + gate):** full tour re-run on build c014fcdc11f2: `work/qa/tour` 146/146 ok.
+  `warp_all.py --sheet` writes only `proofs_N.png`, so the gate sheets come from `sheet.py "work/qa/tour/*/proof.png"
+  --div 1 --cols 4 --max 12 --out work/qa/tour/sheets/sheet.png`; then `qa_gate.py init work/qa/manifest.tsv
+  work/qa/tour --glob "sheet*.png" --build build/bounty_en.sfc`. Read-only pass over all 13 sheets: all ok
+  (`work/qa/verdicts/tour_c014fcdc11f2.tsv`); **`qa_gate.py check` exit 0**. Any rebuild means re-touring.
 - **Session 2026-11-23v (phase 8, inkbox gate):** new **`tools/inkbox_all.py`** + **`docs/inkbox.tsv`** (one row per
   choice/centred box: warp, keys, frame, rects, mode `centre` or `match` = English ink starts where the JP ink does,
   options `side=right`, `ink=R,G,B diff=N` for text over sprites; `--shoot` warps both ROMs into
