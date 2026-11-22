@@ -50,7 +50,7 @@ def build(out=OUT, identity=False, marker=False):
         sys.exit("script/ is empty: run build.py --dump first")
     files = load(SCRIPT)
     if marker:
-        files = marker_files(files)
+        files = marker_files(files, rom)
     data = apply_script(rom, files, field="en")
     built = repack(rom, data, WordCodec())
     out.parent.mkdir(parents=True, exist_ok=True)

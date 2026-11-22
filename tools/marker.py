@@ -74,6 +74,31 @@ def torture_boxes():
     return "{next}\n".join(boxes)
 
 
+# Chapter-card subtitles (mode 14, printer C6:DD44, glyphs C6:DF04 -> the VWF): line 1 centred by its pixel width
+# (C6:D383 hook), later lines start at the left edge. Messages = master pointer slots listed by the card table
+# C6:D485 (60 words, byte offsets into the master pointer table). docs/re/vwf.md §Width gate.
+CARD_TABLE, CARD_COUNT = 0x06D485, 60
+QUOTE_PX = {"「": None, "」": None, "[0405]": 8, "[0406]": 8}   # None: drawn as '"'
+
+
+def card_slots(rom):
+    return {int.from_bytes(rom[CARD_TABLE + 2 * i:CARD_TABLE + 2 * i + 2], "little") // 3
+            for i in range(1, CARD_COUNT)}
+
+
+def card_marker(eid, jp):
+    """Each line filled to LINE_PX, quotes kept; line 1 starts with the id."""
+    adv = advance()
+    out = []
+    for n, line in enumerate(jp.rstrip("\n").split("\n")):
+        toks = TOKEN.findall(line)
+        head = toks[0] if toks[0] in QUOTE_PX else ""
+        tail = toks[-1] if toks[-1] in QUOTE_PX else ""
+        px = LINE_PX - sum(QUOTE_PX[q] or adv['"'] for q in (head, tail) if q)
+        out.append(head + fill_line(f"{eid} " if n == 0 else "", px) + tail)
+    return "\n".join(out) + "\n"
+
+
 def master_marker(eid, jp, torture=True):
     if eid == TORTURE_ID and torture:
         head, _, rest = jp.partition("\n")       # keep the speaker header, replace box 1, mark the rest
@@ -134,12 +159,15 @@ def side_marker(tag, idx, entry):
     return "".join(out)
 
 
-def marker_files(files):
+def marker_files(files, rom):
+    """rom = the original dump (card_slots reads the chapter-card table from it)."""
     files = copy.deepcopy(files)
+    cards = card_slots(rom)
     for name, entries in files.items():
         if name.startswith("master_"):
             for e in entries:
-                e["en"] = master_marker(e["id"], e["jp"])
+                card = cards & set(e.get("slots", []))
+                e["en"] = card_marker(e["id"], e["jp"]) if card else master_marker(e["id"], e["jp"])
             continue
         if name[:-5] in KEEP_JP:
             continue

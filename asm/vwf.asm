@@ -21,6 +21,9 @@ hirom
 !SPILL = $FF98          ; nonzero when the glyph runs into the next cell
 !T = $FF9A              ; scratch
 !R = $FF9C              ; row offset inside the cell ($00-$0E top tile, $200-$20E bottom tile)
+!LAST6 = $FF9E          ; LAST/BASE/PX of the C6 printer (narration, card subtitle), swapped in by SwapC6
+!PXSTART = $FFA4        ; first PX of the next run (card subtitle centring), consumed by the run start
+!MODE = $FFA6           ; 0 = engine A (C2:4922), 1 = C6 printer (C6:DF04)
 
 ; ---- menus, engine B, name tags through the C1 glyph-address routine: English codes read the English font ----
 org $C186A9
@@ -33,6 +36,20 @@ org $C24922
 ; ---- speaker name tag (FF0E path, C2:55C6..): Y = glyph offset computed the game's way, base pointer set here ----
 org $C25641
     jml NameGlyph
+
+; ---- location label (world map, chapter card), C0:E1B1 one cell per call: $2E = glyph offset, base set here ----
+org $C0E1CB
+    jml CardGlyph
+
+; ---- C6 printer (chapter-card subtitle, mode 14; narration, mode 15): glyph draw JSR'd from C6:DD8F/DE60 with the
+; code in $20, same cell table and buffer as engine A: the same VWF ----
+org $C6DF04
+    jml C6Vwf
+
+; ---- chapter-card subtitle centring (was: start cell from table C6:D421 by line-1 length, lengths 0-19 only):
+; centre line 1 by its pixel width ----
+org $C6D383
+    jml CardCentre
 
 ; The English font sits where the game's 16-bit glyph-offset formula puts codes $0F20-$0F7F when the base is
 ; $FF:0000 (tools/font_en.py font_block): offset(c) = ((c & $FFF0) << 5) + ((c & $F) << 4), truncated to 16 bits.
@@ -112,6 +129,113 @@ NameGlyph:
     rep #$20
     jml $C25651
 
+; Replace SEP #$20 / $44-$46 = $EB:2D8C (8-bit stores) / REP #$20, 16 bytes ending at RET. $2E = glyph offset,
+; English >= $E400. Used by C0:E1CB (location label).
+macro FontBase2E(ret)
+    lda $2E
+    cmp.w #$E400
+    bcc ?jp
+    stz $44
+    sep #$20
+    lda.b #$FF
+    sta $46
+    jml <ret>
+?jp:
+    sep #$20
+    lda.b #$8C
+    sta $44
+    lda.b #$2D
+    sta $45
+    lda.b #$EB
+    sta $46
+    jml <ret>
+endmacro
+
+; Replaces C6:D383-C6:D38A (LDA $2E / ASL / TAX / LDA $C6D421,x -> A = start cell x2, stored to $7E4D7B).
+; [$48] = the subtitle, $7E4D79 its start; line 1 ends at the first word >= $8000 (FFFF, names) as in the
+; original count. Width as VwfDraw draws it: English from EnWidth, 「」 as '"', anything else 8 px.
+CardCentre:
+    lda.l $7E4D79
+    tay
+    stz $2C
+.sum:
+    lda [$48],y
+    bmi .done
+    cmp.w #$0036
+    beq .quote
+    cmp.w #$0037
+    bne +
+.quote:
+    lda.w #!EN_BASE+2
++
+    cmp.w #!EN_BASE
+    bcc .jp
+    cmp.w #!EN_END
+    bcs .jp
+    sec
+    sbc.w #!EN_BASE
+    tax
+    lda.l EnWidth,x
+    and.w #$00FF
+    bra .add
+.jp:
+    lda.w #$0008
+.add:
+    clc
+    adc $2C
+    sta $2C
+    iny
+    iny
+    bra .sum
+.done:
+    lda.w #160
+    sec
+    sbc $2C
+    bpl +
+    lda.w #$0000
++
+    lsr
+    sta.l $7F0000+!PXSTART
+    lda.w #$FFFF        ; force a new run at cell 0
+    sta.l $7F0000+!LAST6
+    lda.w #$0000
+    jml $C6D38B
+
+CardGlyph:
+    %FontBase2E($C0E1D9)
+
+; Replaces C6:DF04 (PHX / LDA $20 ...); returns through C6:DF96 (PLX / RTS), so the original's INC of $7E4D7B is
+; skipped: VwfDraw sets it.
+C6Vwf:
+    phx
+    php
+    phb
+    rep #$30
+    pea $7F7F
+    plb
+    plb
+    lda $20
+    sta $2E
+    lda.w #$0001
+    sta.w !MODE
+    jsr SwapC6
+    jmp VwfCommon
+
+; Swap LAST/BASE/PX with the C6 printer's copies (DB = $7F, 16-bit).
+SwapC6:
+    ldx.w #$0004
+-
+    lda.w !LAST,x
+    pha
+    lda.w !LAST6,x
+    sta.w !LAST,x
+    pla
+    sta.w !LAST6,x
+    dex
+    dex
+    bpl -
+    rts
+
 ; Replaces C2:4922-C2:49CD. Draws the glyph for code $2E at pixel position PX of the current line run into the
 ; window tile buffer ($7E:A000 + $1400/$2400, cell offsets from the table at C2:49CE), then advances $3727 (script)
 ; and $3729 (cell cursor, rounded up to the next empty cell so the engine's line logic still works).
@@ -122,6 +246,8 @@ VwfDraw:
     pea $7F7F
     plb
     plb
+    stz.w !MODE
+VwfCommon:
     lda.w #$0100        ; both fonts keep a glyph's bottom tile $100 after its top tile
     sta.w !BOT
     lda $2E
@@ -163,18 +289,28 @@ VwfDraw:
     lda.w #$0008
     sta.w !W
 .pos:
+    lda.w !MODE
+    bne +
     lda.l $7E3729
+    bra ++
++
+    lda.l $7E4D7B
+++
     cmp.w !LAST
     beq .same
     lsr
     sta.w !BASE
-    stz.w !PX
+    lda.w !PXSTART
+    sta.w !PX
+    stz.w !PXSTART
 .same:
     lda.w !PX
     and.w #$0007
     sta.w !S
     lda.w #$1400
     sta.w !T
+    lda.w !MODE         ; the C6 printer has one buffer half
+    bne +
     lda.l $7E374F
     beq +
     lda.w #$2400
@@ -311,6 +447,15 @@ VwfDraw:
     clc
     adc.w !BASE
     asl
+    ldx.w !MODE
+    beq .engA
+    sta.l $7E4D7B
+    sta.w !LAST
+    jsr SwapC6
+    plb
+    plp
+    jml $C6DF96         ; PLX / RTS of the original C6 routine
+.engA:
     sta.l $7E3729
     sta.w !LAST
     lda.l $7E3727
