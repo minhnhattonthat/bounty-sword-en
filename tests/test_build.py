@@ -57,6 +57,19 @@ def test_town_menu_records_are_rewritten(built):
         assert data[rec:rec + 10] != orig[rec:rec + 10], f"town menu record {rec:06X} still Japanese"
 
 
+def test_callers_into_a_relocated_script_follow_it(built):
+    """C4:0819 calls system prompt 0413E3 and C4:081E enters the same script one FF0A later (0413E7); C0:7518 calls
+    the talisman line 007645, which sat inside a data entry. Each caller must land on its own English entry."""
+    from rom_text import to_file
+    _, data, _ = built
+    head = to_file(int.from_bytes(data[0x040819:0x04081C], "little"))
+    inner = to_file(int.from_bytes(data[0x04081E:0x040821], "little"))
+    assert head >= 0x300000 and inner == head + 4
+    assert data[inner:inner + 2] == b"\x0a\xff"
+    charm = to_file(int.from_bytes(data[0x007518:0x00751B], "little"))
+    assert charm >= 0x300000 and data[charm:charm + 4] == bytes.fromhex("09ff0000")
+
+
 def test_byte_scripts_reach_their_english(built):
     """tools/byte_scripts.py: every caller of a translated entry points at its English, and the tavern 'Got it!'
     script (05E8F8, ends FF03) still runs on into the roster greeting, whose FF26 jump stays in its bank."""

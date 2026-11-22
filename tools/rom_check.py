@@ -57,6 +57,8 @@ def write_sites(data):
     for changed bytes they don't cover (--writes)."""
     out = [(MASTER_TABLE, MASTER_TABLE + 3 * len(data["master"]["slots"]), "master pointer table")]
     out += [(p, p + 3, f"caller of relocated {r['id']}") for r in data.get("relocs", ()) for p in r["refs"]]
+    out += [(p, p + 3, f"inner caller of relocated {r['id']}") for r in data.get("relocs", ())
+            for p, _ in r.get("inner", ())]
     out += data.get("byte_sites", [])
     out += [(h, h + HOOK_BYTES, "vwf.asm hook $%06X" % (h + 0xC00000)) for h in hook_sites()]
     out.append((*CHECKSUM, "header checksum"))

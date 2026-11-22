@@ -2,10 +2,32 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release: next (phase 8 done-when met in session ac on build **d7d9d1892cb6**: smoke ok, tour
-  147/147 + `qa_gate.py check` exit 0, inkbox 12/12, stress gate exit 0 (session ab), textcover 0 failing).
-  Non-gate leftovers from phase 8, do if cheap: inkbox row "Promote? OK No" (01D38D, leads in session ab);
-  shop lines read in game (THEN_KEYS two-stage form); engine B level-up / stat-up lines (1DF0CF..) seen on screen.
+- **Phase:** 9. Release in progress (session ad). Gate = `python -X utf8 tools/release.py` (new): it now stops at
+  **jp_left** (8 C4 unit names, polish.md last line). After that it will stop at, in order: qa_gate on
+  `work/qa/manifest.tsv` (build changed: 2000d2976f73, tour ran on d7d9d1892cb6 -> re-tour with `warp_all.py
+  --states --sheet` + read-only verdicts, or `qa_gate.py waive` once the two changed lines are seen on screen),
+  story manifest (no verdicts yet), textcover (2 new ids 007645 / 0413E7 not yet shown), polish.md (23 unticked).
+  **Next, in this order:** (1) C4 names lead; (2) polish.md lines (text ones first; each changes the build, so
+  batch them before the re-tour); (3) story pass: chapter files exist (`tools/story_chapters.py` -> 18 files
+  `work/qa/story/chapters/`, manifest `work/qa/story/manifest.tsv` initialised); codex is out of quota until
+  2026-11-26 10:32, so before then read them yourself in a fresh read-only pass, one chapter at a time
+  (~35 KB each: Read with offset/limit), brief = `$SKILL/assets/story-reviewer-brief.md`, write
+  `work/qa/story/verdicts/<chapter id>.tsv` (`id<TAB>ok|issue<TAB>note`, id = file name without .txt), Minors to
+  polish.md; re-run `story_chapters.py` + `qa_gate.py init` after text fixes and add `fixed` lines for changed
+  chapters; (4) re-tour + textcover_all; (5) release.py to a zip. Never `gh release create`.
+- **Session 2026-11-23ad (phase 9 start):** (a) **Live JP found by jp_left:** 「よりしろの呪符が効果を発揮した！」 at
+  0x007645 (called `43 4576C0` at C0:7515) sat inside a battle_prompts_b `data` entry: side tables in `RELOCATE`
+  now cut at every pointer target whose caller byte is a relocate opcode (`script_text.side_entries`) -> new text
+  entry 007645 "The Yorishiro Charm took effect!". The same cut split system prompt 0413E3: C4:081E enters it one
+  FF0A later (0413E7); before, that caller kept pointing at the old JP copy when the script was relocated (likely
+  showed 「敵に発見されました！！」). Relocation now rewrites callers into the middle of a moved script (`inner` in
+  relocs, `rom_text.repack`, allowed in `rom_check`); test `test_callers_into_a_relocated_script_follow_it`.
+  Neither line seen on screen yet. (b) **`tools/jp_known.py`** classifies the build's unchanged JP runs (region /
+  master / noise) and writes `docs/jp_known.txt` (1150 known; the 8 C4 names left out on purpose). (c)
+  **`tools/release.py`** (build, check, smoke, jp_left --known, qa_gate on every manifest incl. story, textcover,
+  polish, README placeholders, debug off, BPS + re-apply, zip patch + README.txt; refuses overwrite w/o --force).
+  (d) README.md filled (status table, base ROM CRC32/MD5/SHA-1, build steps). (e) **`tools/story_chapters.py`**.
+  check 61 passed, lint 0, build sha1 2000d2976f73.
 - **Session 2026-11-23ac (phase 8 close):** full re-tour on d7d9d1892cb6 `work/qa/tour` 147/147 ok, 13 sheets read
   in an own read-only pass (all ok, same notes as aa: `work/qa/verdicts/tour_d7d9d1892cb6.tsv`), gate exit 0.
   `inkbox_all.py --shoot` 12/12 ok. `textcover_all.py` again ended 47 failing with "side_a: nothing to do"

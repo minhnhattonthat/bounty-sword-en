@@ -271,6 +271,9 @@ def side_entries(rom, name, start, end, codec, ptrs):
     cuts = anchors
     if name in ENGINE_B_TABLES:
         cuts = {(t - start) // 2 for t in engine_b_targets(rom, start, end, name) if (t - start) % 2 == 0}
+    if name in RELOCATE:    # a script called mid-entry (C0:7515 `43 4576C0`, inside code bytes) starts its own entry
+        cuts = cuts | {(t - start) // 2 for t in range(start + 2, end, 2)
+                       if any(r > 0 and rom[r - 1] in RELOCATE[name] for r in ptrs.get(t, ()))}
     out = []
     for a, b in split_region(words, rule, args, cuts):
         w = words[a:b]
@@ -466,10 +469,13 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
         if moved == old:
             out += old
             continue
-        inner = [entries[j]["id"] for j in run[1:] if entries[j].get("refs")]
-        if inner:
-            raise ValueError(f"{region['name']} {head['id']}: entries {inner} are called directly, so the script "
-                             "can't change")
+        # Callers into the middle of the script (0413E7: `03 ptr24` at C4:081E enters one FF0A after 0413E3) follow
+        # the copy at the same entry's offset there; in place, an entry must keep its offset.
+        inner = [(int(r, 16), o) for j, (_, o) in zip(run[1:], offs[1:]) for r in entries[j].get("refs", [])
+                 if rom[int(r, 16) - 1] in ops]
+        if inner and len(moved) <= len(old) and any(o != 2 * sum(len(jp[k]) for k in run[:run.index(j)])
+                                                    for j, (_, o) in zip(run[1:], offs[1:]) if entries[j].get("refs")):
+            raise ValueError(f"{region['name']} {head['id']}: an entry called directly moved inside the script")
         if len(moved) <= len(old):
             out += moved + old[len(moved):]
             continue
@@ -477,7 +483,8 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
         if not refs:
             raise ValueError(f"{region['name']} {head['id']}: English is {2 * (len(moved) - len(old))} bytes "
                              "longer than the JP and no caller is known, so it must fit in place")
-        relocs.append({"id": head["id"], "text": WordCodec().decode(moved), "refs": refs, "ids": offs})
+        relocs.append({"id": head["id"], "text": WordCodec().decode(moved), "refs": refs, "ids": offs,
+                       "inner": inner})
         out += old
     return out
 

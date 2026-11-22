@@ -265,6 +265,8 @@ def repack(rom, data, codec=None):
         out[copy:copy + len(b)] = b
         for p in r["refs"]:
             out[p:p + 3] = to_cpu(copy).to_bytes(3, "little")
+        for p, d in r.get("inner", ()):     # callers into the middle of a relocated script (script_text.relocate_scripts)
+            out[p:p + 3] = to_cpu(copy + d).to_bytes(3, "little")
         spill += size
     # Byte-level engine A tables (tools/byte_scripts.py layout): in-place units, relocated units, caller operands.
     for off, b in data.get("byte_writes", ()):

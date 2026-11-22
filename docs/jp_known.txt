@@ -1,0 +1,1150 @@
+00419A	noise	グジバヘヰ
+0073B7	region battle_prompts_b	体力回復の手が
+0073C9	region battle_prompts_b	つきてしまったか
+0073E1	region battle_prompts_b	防御行動にしますか
+0073FB	region battle_prompts_b	そのまま攻撃
+00740B	region battle_prompts_b	防御する
+00764D	region battle_prompts_b	よりしろの呪符が効果を発揮した
+00C95A	noise	ダ補ゲム
+00C980	noise	補約ダゲ活ムヒベ
+00EFA2	noise	・奨゜銭
+010406	noise	強ぐ望エ超じ口じ口門ボゐ高約
+010428	noise	い薬ガピ
+01045A	noise	三サ速近密ぐ望
+01046A	noise	起約岬ムヴゴ
+010482	noise	ヰと赤怒
+0104B8	noise	雨困ゼ前トヒだ騎超務じぼゼ
+01184B	noise	ャユラレワヲヵ
+011BC7	noise	ぁいぇおきぐこざすぜたぢづとにのぱぴぷぺぽむゃゆられわを
+0177CE	noise	コザぇざ
+01869F	noise	ぉぐ可家南
+01ADE4	noise	ヽヾゝゞ
+01C06B	region menus	ヽヾゝゞ
+01C305	region menus	だぢづでどばびぶべぼぱぴぷぺぽ
+01C3DB	region menus	ダヂヅデドバビブベボパピプペポ
+01D4AF	noise	遁首ざて
+01D6D3	noise	遁賞ブレ
+0249E0	noise	ぐばゐグバヰ狂
+02D04D	noise	ヽヾゝゞ
+02EAB0	noise	戻ゼ雲ご合杖コ鎧ガむ
+02EAC6	noise	ゐヤ安た客ぜて始許十騎べ
+0309EA	noise	毎剛ゝ宝
+034AA0	noise	ヌバピヘボムヤヨ
+034E91	noise	よ起件川本伏払よれゐ
+0354C6	noise	づづすづ
+036536	noise	・旗・奨・閉・
+036546	noise	・旗・奨・閉・
+0369BE	noise	仲ヂ弱品
+03AEB1	noise	路・以達
+03BB53	noise	ぶヶ橋正復
+041379	region system_prompts	敵を発見しました
+041399	region system_prompts	戦闘しますか
+0413AF	region system_prompts	戦闘する時は
+0413BD	region system_prompts	戦闘コマンドを実行してください
+0413ED	region system_prompts	敵に発見されました
+04140B	region system_prompts	戦闘をかいしします
+04142D	region system_prompts	戦闘をかいしします
+04144D	region system_prompts	目標にとうちゃくしました
+041497	region system_prompts	一騎打ちを受けますか
+0414DD	region system_prompts	はレベル
+0414EA	region system_prompts	になった
+041511	region system_prompts	になった
+04153A	region system_prompts	になった
+041554	region system_prompts	攻撃力が
+041561	region system_prompts	上がった
+04157B	region system_prompts	防御力が
+041588	region system_prompts	上がった
+0415AD	region system_prompts	上がった
+0415D2	region system_prompts	上がった
+0415F7	region system_prompts	上がった
+04161C	region system_prompts	上がった
+041640	region system_prompts	を覚えた
+041664	region system_prompts	を覚えた
+041688	region system_prompts	を覚えた
+0416AC	region system_prompts	を覚えた
+0416D0	region system_prompts	を覚えた
+0416F4	region system_prompts	を覚えた
+041718	region system_prompts	を覚えた
+04173C	region system_prompts	を覚えた
+041756	region system_prompts	アイスキューブを覚えた
+04177E	region system_prompts	グラビティホールを覚えた
+0417A8	region system_prompts	ギガスマッシャーを覚えた
+0417D2	region system_prompts	モータルリングを覚えた
+0417FA	region system_prompts	アナザディメンションを覚えた
+041828	region system_prompts	ツインソニックを覚えた
+041851	region system_prompts	を手に入れた
+041887	region system_prompts	この戦場からは
+04189F	region system_prompts	できないわよ
+0418C7	region system_prompts	森の中に敵がいるわよ
+043312	noise	組ぢ信愛
+0436B9	noise	調捨ゐヽ
+043848	noise	組ゴれ愛
+043865	noise	組ゴれ愛
+043882	noise	組ゴれ愛
+046E5E	region unit_records	答エリュシオン
+04CAC9	noise	ヴ宮愛系
+04CCC5	noise	こぎ宮愛
+04E2B7	noise	ぎ宮愛系
+05099E	noise	いぐぜむぴむぴ
+0509BC	noise	イグゼトレムレム顔イ
+05449C	noise	ヽヾゝゞ
+05969A	noise	ゥ客険客ゥ
+05A530	noise	目標を指定して下さい
+05A54C	noise	はんいを指定して下さい
+05A56A	noise	どこに移動しますか
+05B4DB	noise	験悪へ愛
+05B944	noise	杖一グ相
+05BCBB	noise	費右ジ収
+05BEF3	noise	点一ぺ相
+05BF16	noise	江一ず意
+05C053	noise	移ナ愛葉
+05E8AA	noise	どうするの
+05E8CC	noise	情報屋と話す
+05E8DC	noise	仲間を探す
+05E8EA	noise	店を出る
+05E900	noise	わかったわ
+05E910	noise	ちょっと待っててね
+05E95E	noise	お待たせ
+05E970	noise	酒場にいるのは
+05E9A3	noise	仲間になって
+05E9B1	noise	くれそうな
+05E9C5	noise	いないみたい
+05EA19	noise	ヘンメリー
+05EA49	noise	デトニクス
+05EAC2	noise	アマゾネス
+05EBCC	noise	サムライ
+05EC99	noise	ニンジャ
+05ED36	noise	スナイパー
+05ED66	noise	プリースト
+05ED99	noise	を仲間にしますか
+05EDD7	noise	が仲間になった
+05EE01	noise	が仲間になった
+05EE39	noise	ロジャーが受ける
+05EE4D	noise	ミランダが受ける
+05EE61	noise	受けない
+05EE77	noise	ロジャーが受ける
+05EE8B	noise	受けない
+05EEA1	noise	ミランダが受ける
+05EEB5	noise	受けない
+05EF2B	noise	を手に入れた
+05EF47	noise	宝箱から
+05EF54	noise	を入手したわ
+05EF75	noise	を手に入れた
+05EF97	noise	買わない
+05EFB7	noise	受けない
+05EFD5	noise	殺さない
+05EFF3	noise	のらない
+06B9C6	noise	薬イ旗盤
+06DFAA	noise	ぐばゐグバヰ狂
+06F4F1	noise	げござじず峡群荒込支
+06F527	noise	だぢつてと未到脱
+06F709	noise	がゞ花ぇ
+06F800	noise	うぎざぞてヶ黄願数荒資
+06F8C4	noise	ズ銀天認
+07BC0D	noise	ヽ゜゛゛
+088DFF	noise	ジ・ダ・ト・バ
+08E9A2	region orders	マスター
+09113F	noise	令敵引・
+0924C1	noise	おぎおか
+094041	noise	任゜届弾
+0A1D00	noise	敵移引゛かゞ
+0A3106	noise	・引移・移
+0AA926	noise	市市ヵ調
+0B0973	noise	奨嬢ヾ奨
+0B5240	noise	ぎゝく凶
+0BA206	noise	弟゛゛下
+0BB806	noise	弟゛゛下
+0BC206	noise	弟゛゛下
+0BD40F	noise	え悪爪爪
+0BD7FF	noise	ジ愛長超
+0BD80F	noise	え悪爪爪
+0C04E8	noise	任任求・
+0C7B02	noise	会く病逆
+0C942E	noise	ー爪追追
+0D17BB	noise	弟葉の忍
+0DA421	noise	会ぇでささ
+0DE861	noise	移土ぎ標
+0E3391	noise	点゛゛゛゛雨以
+0E5D4D	noise	ぎ械械協
+0E5F4D	noise	ぎ械械協
+0E67AC	noise	え超長長
+0EAC5D	noise	憶みわわわ娘
+0EB45D	noise	憶みわわわ娘
+0EE580	region descriptions	防御力アップ
+0EE5A4	region descriptions	させることもある
+0EE60E	region descriptions	バッドステータスを解除
+0EE660	region descriptions	防御力アップ
+0EE682	region descriptions	バッドステータスが回復
+0EE6A8	region descriptions	自分のとなりにテレポートさせる
+0EE6D4	region descriptions	攻撃力アップ
+0EE6EE	region descriptions	攻撃力アップ
+0EE726	region descriptions	撃を防ぐ
+0EE740	region descriptions	攻撃を防ぐ
+0EE784	region descriptions	離れた敵を攻撃
+0EE7A8	region descriptions	爆発をおこし敵をふきとばす
+0EE7E4	region descriptions	にテレポート
+0EE7FE	region descriptions	敵一体の動きをとめる
+0EE83E	region descriptions	スター系とアンデッド系に
+0EE87E	region descriptions	などの敵一体を
+0EE88E	region descriptions	消しさることがある
+0EE8AE	region descriptions	ればクリティカル
+0EE8CC	region descriptions	させることもある
+0EE8EA	region descriptions	させることもある
+0EE908	region descriptions	すれば必ず眠らせる
+0EE942	region descriptions	んいに攻撃
+0EE95A	region descriptions	敵にダメージ
+0EE998	region descriptions	クリティカル
+0EE9B2	region descriptions	敵にダメージ
+0EE9DC	region descriptions	ティカルがでやすい
+0EEA06	region descriptions	物理ダメージを返す
+0EEA26	region descriptions	敵にダメージ
+0EEA54	region descriptions	にテレポート
+0EEA70	region descriptions	自分の場所をいれかえる
+0EEA94	region descriptions	敵に攻撃
+0EEA9E	region descriptions	マヒさせることもある
+0EEAC0	region descriptions	系一体を
+0EEACA	region descriptions	一撃でしとめることがある
+0EEAF0	region descriptions	ソードとアテナで敵単体を氷づけにしダメージ
+0EEB30	region descriptions	マウザー
+0EEB3A	region descriptions	ファウスト
+0EEB6A	region descriptions	ロジャー
+0EEB74	region descriptions	ミランダ
+0EEB9A	region descriptions	ファウスト
+0EEBAE	region descriptions	ツキカゲ
+0EEBCC	region descriptions	敵攻撃力をダウン
+0EEBF2	region descriptions	ツキカゲ
+0EEBFC	region descriptions	リュウビ
+0EEC18	region descriptions	だ外側に攻撃
+0EEC3A	region descriptions	アジャックス
+0EEE72	region descriptions	装備して使用すると
+0EEEC8	region descriptions	に強ダメージ
+0EEF1C	region descriptions	ザードの効果
+0EEF94	region descriptions	バインの効果
+0EEFA2	region descriptions	アンデッドに強ダメージ
+0EEFEA	region descriptions	イアストームの効果
+0EF018	region descriptions	に強ダメージ
+0EF026	region descriptions	ヒーリング効果有
+0EF086	region descriptions	しやすくなる
+0EF0B8	region descriptions	ルがでやすくなる
+0EF0EA	region descriptions	をはねつける
+0EF116	region descriptions	ッシュレイの効果
+0EF13C	region descriptions	バーの効果
+0EF148	region descriptions	アンデッドに強ダメージ
+0EF1B6	region descriptions	ることがある
+0EF1DA	region descriptions	に強ダメージ
+0EF1E8	region descriptions	敵を混乱させることがある
+0EF220	region descriptions	かすことがある
+0EF230	region descriptions	敵を一撃でほうむりさることがある
+0EF28E	region descriptions	でやすくなる
+0EF2E6	region descriptions	一回だけ生き返らせる
+0EF344	region descriptions	ントムゴアーの効果
+0EF35A	region descriptions	魔法攻撃を防ぐことがある
+0EF3BA	region descriptions	に強ダメージ
+0EF3DE	region descriptions	に強ダメージ
+0EF3EC	region descriptions	使うとマインドブラストの効果
+0EF42E	region descriptions	でやすくなる
+0EF454	region descriptions	ータスを防ぐ
+0EF462	region descriptions	必殺技を防ぐことがある
+0EF4FA	region descriptions	ことがある
+0EF562	region descriptions	かえすことがある
+0EF58A	region descriptions	ことがある
+0EF596	region descriptions	魔法のダメージを半分にする
+0EF5D6	region descriptions	風系を除く全ての職業
+0EF624	region descriptions	ータスと
+0EF62E	region descriptions	クリティカル攻撃を防ぐ
+0EF6A8	region descriptions	ータスを防ぐ
+0EF718	region descriptions	ことがある
+0EF76C	region descriptions	ァイアストームが使える
+0EF790	region descriptions	ンダーストームが使える
+0EF7B4	region descriptions	リザードが使える
+0EF822	region descriptions	を少し回復
+0EF83C	region descriptions	バッドステータスの解除
+0EF86C	region descriptions	バッドステータスを全回復
+0EF8AA	region descriptions	だ味方を
+0EF8B4	region descriptions	一人よみがえらせる
+0EF96C	region descriptions	移動できなくする
+0EF98A	region descriptions	の場で生き返る
+0EF9AA	region descriptions	テレポートできる
+0EF9CC	region descriptions	場所を入れかえる
+0EF9EE	region descriptions	自分のそばにテレポートさせる
+0EFA18	region descriptions	自分以外の敵味方全ての動きを
+0EFA36	region descriptions	完全にとめる
+0EFB22	region descriptions	ドラゴンナイトに転職
+0EFB4C	region descriptions	ダークナイトに転職
+0EFB6C	region descriptions	が使うと
+0EFB76	region descriptions	シャドウマスターに転職
+0EFB9A	region descriptions	ザードが使うと
+0EFBAA	region descriptions	スペルマスターに転職
+0EFBCC	region descriptions	僧侶系が使うと
+0EFBDC	region descriptions	ワイズマンに転職
+0EFC1C	region descriptions	テティスのまわりをてらし影を見えるようにする
+0EFC5E	region descriptions	テティスのまわりをてらし影を見えるようにする
+0EFC98	region descriptions	ったネックレス
+0EFCBA	region descriptions	で手に入れたフエ
+0EFCD8	region descriptions	うしじんが愛した楽器
+0EFD00	region descriptions	の美少女からの手紙
+100560	noise	専老親コ
+101FFF	noise	ロ愛長超
+10200F	noise	じ悪追以
+1021FF	noise	ロ愛長超
+10220F	noise	む悪追以
+102A04	noise	円ぎ屋盗ぎ
+1051FF	noise	ロ愛長超
+105AFF	noise	ロ愛長超
+105B0F	noise	じ悪追以
+106E1F	noise	い愛長超
+107306	noise	電電引・
+10A700	noise	うぎぎう
+10DA22	noise	首ヮ数皇
+113683	noise	ば愛超長
+118346	noise	・土店雲
+118B48	noise	・土店雲
+118C4A	noise	夫整任・
+119348	noise	・土店雲
+1196CC	noise	えヽ炎ゞ
+119ECC	noise	えヽ炎ゞ
+11A6CC	noise	えああ東
+11B44C	noise	客家家ぎ
+11B704	noise	・土店雲
+11C46C	noise	絡ーヽゞ
+11F708	noise	ヽかぎヽ調
+120498	noise	敵帝・土
+120A98	noise	敵帝・土
+121298	noise	敵帝・土
+121498	noise	敵帝・土
+123392	noise	にぉぉ同投
+126994	noise	はく敵敵敵
+127396	noise	ぉ仝仝ー下
+127B90	noise	求点゛的
+12A994	noise	はく敵敵敵
+12C9A7	noise	ぉ長追追
+131400	noise	傷傷ギ晶山良ギの
+133C00	noise	酒酒ギ山ガ
+135066	noise	美゛・奨奨
+135880	noise	夫首讐晶のぬ
+137908	noise	移像テ皇
+139E22	noise	ぅ絡毒謎
+13BC42	noise	ゝヾ仝仝
+13EA76	noise	遺せホ試
+13EE76	noise	遺せホ試
+13F276	noise	遺せホ試
+13F676	noise	遺せホ試
+13FE76	noise	せせホ試ク
+14FB45	noise	げち安ぁ
+15399F	noise	土く然討
+153A0B	noise	・団組定
+1544DF	noise	クク宮く
+15AC84	noise	ぃくははたみ
+15AD0E	noise	ワクク晶
+15AE26	noise	ククわ凶
+15AEBE	noise	け爪巨一
+15F6B2	noise	ぬ却却ガ賞賞
+15FBC8	noise	ぬ却標官
+15FBF8	noise	ぬ却標官
+15FC28	noise	ぬ却標官
+15FC58	noise	ぬ却標官
+15FC88	noise	ぬ却標官
+15FCB8	noise	ぬ却標官
+15FCE8	noise	ぬ却標官
+15FD18	noise	ぬ却標官
+15FD48	noise	ぬ却標官
+15FD78	noise	ぬ却標官
+160214	noise	点を点揮
+161364	noise	グググヰ
+1615E3	noise	面武武入入入こけ
+161743	noise	調勢ヲゑ祝
+1617A3	noise	出士ヲヱヱ
+161D89	noise	服入こぁチ
+1620E3	noise	着ぐ仝親
+167E57	noise	ギギギ皇配
+168709	noise	歌怪勢ゑ
+16888A	noise	ガ却標官官良三ガ
+1688AA	noise	ガ却標官官良三ガ
+1688EA	noise	ガ却標官官良三ガ
+16894A	noise	ガ却標官官良三ガ
+16896A	noise	ガ却標官官良三ガ
+1689AA	noise	ガ却標官官良三ガ
+1689EA	noise	ガ却標官官良三ガ
+168A0A	noise	ガ却標官官良三ガ
+168A2A	noise	ガ却標官官良三ガ
+168A4A	noise	ガ却標官官良三ガ
+168A6A	noise	ガ却標官官良三ガ
+168A8A	noise	ガ却標官官良三ガ
+168ACA	noise	ガ却標官官良三ガ
+168AEA	noise	ガ却標官官良三ガ
+16BC1C	noise	ぬ却標官
+16D660	noise	引悪゛組
+174B37	noise	令敵引・
+1762A4	noise	でぐ番ェ
+1784C2	noise	ぬ却却ガ賞
+185AAD	noise	ぬ却標官
+18AA51	noise	ね逆氷岸
+18B29B	noise	ね逆氷岸
+18B65D	noise	ね逆氷岸
+18DC96	noise	゛ヽぇき追
+18FF4A	noise	ゴーシュを倒せ
+18FF5A	noise	悪霊を倒せ
+18FF6C	noise	号を倒せ
+1A00A0	noise	各ず傷線
+1A00B2	noise	間令ク晶
+1A014A	noise	攻攻索・
+1A0756	noise	晶晶はは謎
+1AD458	noise	攻撃力が
+1AD465	noise	上がった
+1AD4D3	noise	防御力が
+1AD4E0	noise	上がった
+1AD559	noise	上がった
+1AD5D2	noise	上がった
+1AD64E	noise	上がった
+1AD6CA	noise	上がった
+1AD74A	noise	上がった
+1AD7B2	noise	上がった
+1AEEAD	noise	脱疲味ぜば
+1AEEB9	noise	食ぜ閉ばガ味
+1AF54D	region short_strings	になりました
+1AF573	region short_strings	しましょう
+1AF58F	region short_strings	ゃいませ
+1AF5DF	region short_strings	いますか
+1AF5FD	region short_strings	りますか
+1AF64A	region short_strings	って下さるんですか
+1AF676	region short_strings	って下さるんですか
+1AF6BC	region short_strings	なりますが
+1AF6C8	region short_strings	よろしいですか
+1AF754	region short_strings	装備できませんがよろしいですか
+1AF806	region short_strings	装備しますか
+1AF856	region short_strings	がいっぱいなので
+1AF86C	region short_strings	倉庫にいれておきます
+1AF89A	region short_strings	庫もいっぱいでした
+1AF8B2	region short_strings	この取引はなかったことにしましょう
+1AF8EE	region short_strings	の持ち物も倉庫もいっぱいです
+1AF924	region short_strings	たしますか
+1AF950	region short_strings	持ち物はいっぱいです
+1AF97C	region short_strings	たしますか
+1AF9A2	region short_strings	持ち物がいっぱいですね
+1AF9D0	region short_strings	たしますか
+1AF9F4	region short_strings	って下さるものはありますか
+1AFA66	region short_strings	で買い取りましょうか
+1AFAC0	region short_strings	そのお金では足りませんよ
+1AFB08	region short_strings	気がむいたらまた来てください
+1AFB4E	region short_strings	所に入れておきます
+1AFB7C	region short_strings	それは買えません
+1AFBC6	region short_strings	買い取りましょう
+1AFBD8	region short_strings	よろしいですか
+1AFC2A	region short_strings	って下さるものはありますか
+1AFC88	region short_strings	ぱいです
+1AFCAE	region short_strings	いっぱいなので
+1AFCBE	region short_strings	倉庫に入れます
+1AFD2C	region short_strings	になります
+1AFD3E	region short_strings	よろしいですか
+1AFD64	region short_strings	のおかえしになります
+1AFD80	region short_strings	よろしいですか
+1B4548	noise	足待ク調
+1B7F22	noise	栄・意と
+1BBCAF	noise	ョ悪以以
+1C1E53	noise	会絡謎く
+1CBE53	noise	会絡謎く
+1CC653	noise	会絡謎く
+1CCE53	noise	会絡謎く
+1CD653	noise	会絡謎く
+1CDE53	noise	会絡謎く
+1CEE53	noise	会絡謎く
+1CF653	noise	会絡謎く
+1D00E8	noise	嬢グぢぢ
+1D0152	noise	げョ新会
+1D1AF4	noise	み鏡を械
+1DA987	noise	・・賞旗
+1DEBDF	region ceremony	れし宿命の者よ
+1DEBEF	region ceremony	よくぞ参られた
+1DEC0B	region ceremony	指輪に封印されし十二の神
+1DEC3F	region ceremony	アの大地の契約にもとづき
+1DEC5D	region ceremony	これよりぎしきを行う
+1DEC87	region ceremony	んじの運命の日を数えよ
+1DECD3	region ceremony	となるが
+1DECDD	region ceremony	それでも良いか
+1DEE21	region ceremony	守られし者よ
+1DEE33	region ceremony	なんじに預けたい男がいる
+1DEE65	region ceremony	戦いにせを向けた男だ
+1DEE8F	region ceremony	この男の運命をゆだねる
+1DEEAB	region ceremony	この男に名前を付けてくれ
+1DEEDB	region ceremony	は良い名だ
+1DEEF1	region ceremony	をなんじに預ける
+1DEF17	region ceremony	アの大地と我ら十二神の名において
+1DEF3D	region ceremony	そなたに祝福あれ
+1DF1E9	region ceremony	になった
+1DF20B	region ceremony	になった
+1DF22D	region ceremony	になった
+1DF257	region ceremony	上がった
+1DF27F	region ceremony	上がった
+1DF2A5	region ceremony	上がった
+1DF2CB	region ceremony	上がった
+1DF2F1	region ceremony	上がった
+1DF317	region ceremony	上がった
+1DF4D1	region ceremony	ラゴンナイトに転職できます
+1DF4F7	region ceremony	ークナイトに転職できます
+1DF51B	region ceremony	ャドウマスターに転職できます
+1DF543	region ceremony	ペルマスターに転職できます
+1DF569	region ceremony	イズマンに転職できます
+1DF58B	region ceremony	かいせんに転職できます
+1E8AE0	master	確実なのは
+1E8AEC	master	いつの間にか
+1E8AFC	master	このオレが
+1E8B16	master	なんて物に
+1E8B22	master	なっている事だろう
+1E8B3E	master	しがない
+1E8B48	master	賞金かせぎの
+1E8B58	master	こんなオレが
+1EC49A	master	族ぁ契神
+1EC60E	master	美熱ゞ挑
+1ECF26	master	まユ資皇皇晶
+1ED404	master	ル高晶皇
+1EE2CC	master	脈旗奨ー
+1EEB24	master	庭式ー礼
+1EF74A	master	ず酒後ヶざて
+1FB736	master	え残体時
+1FB784	master	だと祖部字自相
+1FB968	master	ばへばヘ
+1FBF7C	master	良冷ばジ
+21832E	master	さらに古い
+218344	master	伝説の国ですな
+21835C	master	ツキカゲ
+21836C	master	聞こえる
+218376	master	聞こえるぜ
+218396	master	魔物の叫び声が
+2183AC	master	ミランダ
+2183BC	master	気をつけて
+2183D2	master	そこかしこに
+2183E0	master	魔物がいます
+2183F4	master	リュウビ
+218412	master	魔物どもが
+218420	master	飛び出してきそうな
+218458	master	どうするの
+218470	master	ともかく
+21847A	master	先へ進む
+2184A6	master	ここから先へ
+2184BE	master	進んでは
+2184E4	master	消えたわ
+2184F8	master	なんだったの
+218528	master	オレたちの前に
+21855A	master	と言い残し
+218568	master	幻のように
+218574	master	こつぜんと
+218580	master	消えうせた
+21859C	master	行かないわけには
+2185AE	master	いかない
+2185BA	master	この先にあるのが
+2185CC	master	じごくだろうと
+2185DE	master	オレ達は
+2185EE	master	進むしかないのだ
+218604	master	魔物の群れは
+218612	master	つきる事がない
+218624	master	それとも
+21862E	master	ヤツらは
+21863A	master	この地を守る
+218648	master	番人なのか
+21BAB0	master	南ぐだえ
+21EB80	master	恵剛へべぺほをん
+21EC74	master	毎抹末岬脈鳴元訳れろゎわをん
+21ECBA	master	原湖功高皇ぎく
+21F092	master	をんを゜
+21F1F4	master	ヽヾゝゞ
+21F362	master	カガゆょよら快線式仕治路首酒
+21F3A6	master	りるれろ奨嬢食震親頭跡巣想操騒代達探端壇゛゛
+21F3EC	master	カガ美仲潮鳥挑都
+2200C0	master	ゴサ速忠定点東道
+22022C	master	紅シゾゲズグズジ
+22027A	master	ヅツじだと゜
+220290	master	ごヅツぜつぬ
+22036E	master	ややややや符゜ヾ
+2203E6	master	ぴピピボピボぼ
+2203FE	master	ピピボピボぼ
+220488	master	ぴピピボピボぼ仝
+22049A	master	゜゜ぴピピボピボぼ
+2204DE	master	゜゜ヾヾ
+22053E	master	゜ヾ゜゜ヾ盾君整
+220582	master	戻落値弓近軍件゜ヾヾ
+2205FE	master	張払司指邪集゜ヾヾ
+22066C	master	゜゜仝盾君整
+2206B0	master	やレ渡現
+22072A	master	や脈渡閉
+220742	master	ヴヴヴヴ裂話別常冷狼所実
+2207A4	master	や脈渡閉
+22081C	master	ぴボぼ渡現
+220832	master	やややや盤ゥ
+220840	master	ぐじ群ぐチヤ
+2208A8	master	゜渡やややや毎ゥ
+2208DC	master	仝鎧仝仝゜゜ヾキゥ
+2208F0	master	ぐじ群ぐチヤ
+220920	master	置゜ばバヘバヘへヾ不始
+2209A4	master	゜゜ヾ゜相有胸
+2209D8	master	゜ヾ゜ヾヾ不始
+220A10	master	味説着弓近軍件゜゜ヾヾ息特
+220A54	master	゜ヾヾ゜相有胸
+220A9A	master	゜ヾヾ秒専
+220AC0	master	味説着弓近軍件ヾ゜ヾヾ息特
+220B3A	master	務降隠司指邪集ヾ゜ヾヾ秒専
+220B74	master	や盤渡閉
+220BEE	master	やレ渡閉
+220C68	master	や脈渡閉
+220D56	master	ゴ゜ぴボぼヾ機ボボヤピボヤピ却゜
+220D78	master	仝゜機ボヤピボヤピ却゜
+220DCA	master	ヾヾ機ボヾ゜
+220E10	master	゜機ボボヤピボヤピ却゜
+220E28	master	仝゜機ボヤピボヤピ却
+220E5E	master	戻落値紙竪束官゜ヾヾ
+220F0C	master	戻落値゜
+220F1A	master	゜ヾ゜ヾ海栄
+220F88	master	張払゜仝
+220F92	master	゜゜ヾヾ
+220FB6	master	盾孫ヾヾヾヾ
+220FFA	master	ヾ盾君整
+221128	master	゜ヾヾ゜
+221148	master	ゲコ想ヾ
+2211B8	master	仝渡閉ケグケグ達ヾキ岩じ群ぐチヤ
+2211F0	master	ヾヾ゜ヾ
+221232	master	仝ばバヘバヘい
+221266	master	仝ヾヾ゜゜ヾ
+2212AC	master	置゜゜ヾ
+2212E0	master	仝゜ヾヾ゜゜ヾどちすムじとすチヤ
+22139C	master	味説着弓近軍件゜゜ヾヾ痛夢抜
+2213D4	master	置゜゜ヾ
+221416	master	務降隠司指邪集゜゜ヾヾ孫務降隠
+221458	master	゜゜ヾヾ
+2214C4	master	味説着弓近軍件゜゜ヾ
+22153E	master	務降隠司指邪集゜゜ヾヾ
+22163A	master	的怒逃ヴ治仝ヾヾヾ
+22164E	master	゜ヾヾ゜゜治
+2216EE	master	機ボボヤピボヤピ却゜
+221704	master	仝゜機ボヤピボヤピ却゜仝
+22172C	master	冷狼所行湖脈仝ヾヾヾ
+2217C6	master	エ゜゜゜
+221812	master	仝仝機ボボヤピボヤピ却゜
+22182C	master	仝゜仝ヾヾァ込ゑゐ
+221910	master	ぴピボボピボぼ仝゜
+221924	master	゜゜ぴチダチダボぼ
+2219AA	master	狂込ヾ゜゜゜
+221A34	master	錬実ヴ置
+221B16	master	痛夢ばへばへ
+221E00	master	ぴ許グ群許へ
+221EE4	master	ばへぐぼ
+221FC0	master	錬実ヴ置
+2220DA	master	とむつぬつ
+222216	master	錬実ヴ置え味説着
+2222FE	master	イイヤとつと
+222608	master	ヘエエム
+222902	master	ヰ敗盾地二買ヨ
+222966	master	だヨググググヰ
+2229EC	master	だとヘエム
+222FDE	master	錬実ヴ置
+22315E	master	ヨググ君整
+2231FE	master	ばとムとだと
+223372	master	ヨグググ
+22379A	master	ヨググヰ
+2237AD	master	バあああ
+2237F6	master	痛夢ばへ
+22398C	master	ばへ想旗
+2239BE	master	実ヴ妖冷
+223C40	master	接錬実ヴ
+223D42	master	と接錬実ヴ
+224044	master	と門妖立
+22404E	master	゜ヾぴぼぴレヰ
+2240A6	master	接錬実ヴ
+224238	master	裂だとヾつ
+2242A0	master	ぼ゜ヾつ
+224CE6	master	起ヘト再
+224CF6	master	エムヘエ
+224F06	master	だと奨むよ
+22507C	master	だヘヰとば
+2250C0	master	むヘグググヰへば起確
+2251CA	master	トムとだ
+2251D4	master	ヘエムヘ
+225214	master	だとだと
+225718	master	エム霊立妖
+225DC8	master	ばへ歴味
+2260D4	master	だとだ敗南隠知
+22616A	master	゜敗匹匹ヴ置
+2261AE	master	ぴいレ着
+227226	master	食゜゜゜ヾ
+2276C4	master	ヨグエム
+227D12	master	仝ムとヨ
+227D26	master	錬実ヴ置
+227F96	master	と門妖立
+227FF4	master	むと接錬実ヴ置だ
+2286DE	master	張払痛夢だとよ
+228804	master	ばヨヰヨ
+228A36	master	痛夢ゐば
+228C34	master	仝むよ仝だ
+22967E	master	実錬ダばへへば
+2296DC	master	戻戻戻ヨ
+229714	master	可妖ばへ
+2298A2	master	ばヨジジヰへ
+229B6C	master	奥ヘムと
+229D0A	master	ヰへだ門妖立
+229F38	master	ば許ゴゴゴヴ
+229F60	master	不痛夢だ
+229F94	master	ムとば許
+229FEC	master	だええええと
+22A496	master	と旗ばヨ
+22A558	master	鳥鳥だジ
+22A88C	master	ヨググヰへ
+22A9C8	master	へだとだ
+22AF78	master	へ接錬実ヴ置だ
+22B12C	master	ヨグ狂グ狂とだ
+22B148	master	ばへばへ
+22B46E	master	ダ式ばヨ
+22B692	master	ヴだとと快だと快ば
+22B770	master	ダと門妖立冷鳥治
+22B7D2	master	ダ接錬実ヴ置
+22BB6C	master	バ奥想よ
+22BC88	master	ヘエエム
+22BCCA	master	ダ想ぬれ
+22BEEC	master	エエムヨ
+22BF18	master	どヘエエエエ
+22C04C	master	裂だとだ
+22C562	master	門妖立冷ヘエエムと
+22C5B2	master	接錬実ヴ置だとだと
+22C712	master	ヨ去逃未
+22C75A	master	へばへばグ去
+22C798	master	と接錬実ヴ置
+22C8F6	master	張払痛ヘ
+22C99E	master	だとだ門妖立冷だ
+22D6A8	master	いがごぜピフネ
+22D6D4	master	そさきい
+22D82E	master	いが現ガ
+22D970	master	エヌバ約
+22D996	master	強苦軍件エヌバ原式ロ
+22DE5A	master	ゥ知知知
+22E00A	master	子ピ里原
+22E8CE	master	と門妖立
+22E930	master	接錬実ヴ
+22EAC4	master	だとヾつ
+22EB2A	master	ぼ゜ヾつ
+22F910	master	実錬ダばへへば
+22F96E	master	戻戻戻ヨ
+22F9A6	master	可妖ばへ
+22F9B0	master	へへば立
+230863	master	゜ヾだじ
+23095D	master	だと゜ヾ
+230A8F	master	妖立冷゜
+230B47	master	裂ヵゴゴ
+230DDD	master	だと゜ヾヾ
+230F11	master	だ怒怒怒
+231313	master	゜ヾぴぼぴレヰへ団
+231355	master	ヤと霊妖立
+23169F	master	ゐ許群許群群ぼ仝
+2316DF	master	え残体時
+23172D	master	だと祖部字自相
+231911	master	ばへばヘ
+231F25	master	良冷ばジ
+2321D3	master	錬実ヴ置
+232F2B	master	イヤヘム
+2330B3	master	錬実ヴ置
+233153	master	好ばイヰ
+2331A7	master	グヰばへ
+233209	master	ググヰ狂ヨ
+2332C3	master	ヘムヘエ
+23331B	master	へだとだとだ
+23333F	master	許ゴゴゴヴ
+23336F	master	ば起ヨググ狂へ仝
+2333AF	master	ぼ仝゜ヾ
+233435	master	ダと門妖立冷仝
+233493	master	奥接錬実ヴ置ばへば
+2336F9	master	仝ば起ググ狂へ
+233753	master	ぴぼぴヨ
+2337A7	master	仝だとだ
+2338B3	master	ヨゴヴ許群
+233993	master	仝ばへば狂へ
+233B0D	master	仝だとだと仝つぬつ
+233D03	master	だとだと
+233E29	master	レググヴ
+2349BB	master	錬実ヴ置
+234D99	master	錬実ヴ置
+2356C9	master	と接錬実ヴ
+2356E1	master	ぼ仝仝ぴレ
+235827	master	連妖立裂つぬつ
+2359D5	master	ぼヾぴぼぴレ
+2359F9	master	薬来良裂゜ば
+236009	master	夢だヘムだ
+236121	master	痛夢だとだヘムと霊
+23656D	master	べ叫ふど敗匹南隠
+23681F	master	ム妖立妖
+236AE9	master	だとだとば
+236B5F	master	狂レゴヴ
+236DF7	master	痛夢だと
+237189	master	夢ばえへだ
+2371D5	master	夢だえと
+237307	master	仝ぐヘヰへ
+2373BB	master	好接錬実ヴ置ぐへ仝
+2374C1	master	ムヨグヰ
+2375E7	master	だとだと
+237725	master	ばへ戻落値関加ばヰ
+237B09	master	仝ぐへ仝
+237CD5	master	じ超怖狂
+237D9D	master	撤弓実ヴ
+23837F	master	す関加加
+23841B	master	狂ベ契撤撤撤撤バト
+238433	master	撤撤許ヌ
+23848F	master	だとむじ奨想奨想奨想奨
+238C4D	master	奨想的え
+238E51	master	狂へばへばヘ
+238EEB	master	ヨググト
+239079	master	ばヨググヰ
+239189	master	ばへ霊立
+2392ED	master	ムぴ゜ヾ
+239B27	master	接錬実ヴ置だ
+239B35	master	とだヵケロぱ
+239D7B	master	とばレグヴ
+239E55	master	だヨググえ
+239F89	master	と接錬実ヴ置
+23A0D9	master	へばへだ
+23A233	master	ヰヨヰへ
+23A497	master	痛夢だとだボガガヤ
+23A63F	master	旗だとだ
+23A649	master	ヘエエエエム門妖立
+23A6B5	master	錬実ヴ置
+23A773	master	ググ落値レグ
+23A927	master	ム門妖立裂ば
+23A985	master	ヤ残錬実ヴ置レ
+23A997	master	ヴヘエガ
+23AA49	master	へ落値レ
+23AAA7	master	レゴ張払
+23AAD7	master	ぬつぬ仝
+23AB19	master	ヰとだと
+23AD29	master	と門妖立
+23AD87	master	と残錬実ヴ置
+23B17D	master	レゴゴヴ
+23B187	master	れ門妖立
+23B1B9	master	ヤと゜ヾ゜ヾば
+23B1DD	master	ボガガム
+23B1E7	master	残錬実ヴ
+23B28D	master	レゴゴゴヴ群群レ
+23B405	master	れ門妖立冷ぐ
+23B465	master	残錬実ヴ置ぐ
+23B72D	master	ガ仝ヾやや符仝
+23B785	master	ややヨ仝
+23B7D3	master	イガピボぼ
+23B8C9	master	ヾヾやや符
+23B91B	master	ヾヾややヨ゜ヾ仝
+23B98D	master	落値ヾ゜ヾ
+23B9E7	master	ヾ゜ガ仝ヾ゜仝ヾ
+23BA07	master	仝ヾ渡現
+23BB11	master	盤ヾヾヾ
+23BB37	master	ヴ治ヾ仝仝仝
+23BBC7	master	ゴゴゼゴ
+23BC47	master	ヾヾ機ボボヤ
+23BCD7	master	イガヾヾ
+23BD09	master	仝゜ヾヾ
+23BD13	master	仝ヾへヾ不始
+23BD55	master	仝゜ガ仝
+23BD65	master	゜゜ヾ゜相有胸
+23BDB3	master	軍件゜゜ヾヾ息特
+23BDCB	master	久底゜ヾヾヾ゜ヾ゜岸竪束官
+23BE0B	master	゜ヾヾ秒専
+23BFE1	master	ヾ機ボボヤピボヤピ却゜
+23BFF9	master	仝゜機ボヤピボヤピ却゜
+23C069	master	キゥボボヤピボヤピ却ヾ
+23C08F	master	戻落値ヾ
+23C099	master	゜へ゜ヾヾ
+23C10F	master	゜へヾ不始
+23C11B	master	状゜ヾヾ
+23C24D	master	行グ想ヾ
+23C269	master	゜ヾヾ゜
+23C2E3	master	機じ結群ぐチヤヤヤ
+23C323	master	じ群ぐヘバヘい
+23C335	master	ゥ史史脱
+23C3EF	master	仝仝仝゜機ボヤピボヤ
+23C6A5	master	だと門妖立福
+23C6C5	master	グググヰ
+23C709	master	エエエム
+23C847	master	ばへだヘ
+23CCED	master	接錬実ヴ置だ
+23CD3B	master	だヨググヰ
+23D171	master	置トトトグ群へ
+23D1DF	master	だヘムとヘ
+23D23B	master	エムと゜
+23D2D5	master	ヨグググヰへ
+23DA43	master	とばヨヰ許群
+23DA8F	master	痛ムじ許
+23DB4B	master	え仝だヘ
+23DBE3	master	ヤとばレググヰとだ
+23DC33	master	ムとば起
+23DCEB	master	仝だと仝
+23E093	master	だヘムヘムと
+23E375	master	薬来良裂ヨ狂へ接錬実ヴ置
+23E47D	master	張払痛夢ばへ
+23E4CF	master	君整ヤぴ
+23E6D3	master	ヰへばへ
+23E725	master	グググヰ
+23E895	master	事奥ばへ
+23E8BF	master	ヨヰ起狂へ
+23E91B	master	ヰへ仝ば
+23EE0B	master	ヤと゜ヾば
+23EE9D	master	とつぬつ
+23EF5B	master	゜ヾだじ
+23F055	master	だと゜ヾ
+23F187	master	妖立冷゜
+23F23F	master	裂ヵゴゴ
+23F4D5	master	だと゜ヾヾ
+23F64F	master	へ門妖立冷ば起ググヰ
+23F6A3	master	錬実ヴ置
+23F6F1	master	ヰぼ味説着
+23F745	master	ヰ犬落値関加だ
+23FA0B	master	゜ヾぴぼぴレヰへ団
+23FA4D	master	ヤと霊妖立
+23FD97	master	ゐ許群許群群ぼ仝
+240C82	master	だへばへ
+240D68	master	可回とゐ
+24108C	master	ぴがいがいへ
+2410A6	master	ばヴがいがいぱ
+24120A	master	がいがいが精赤子怒薬官望秒刃特老霊因
+241384	master	ゴがいがいがい敗立速匹
+241416	master	がい史砕抱早八匹発買がい
+241496	master	がいがい栄
+241558	master	ゼごぜごぜゴ
+24158E	master	ごぜゴ却ゼ
+241AA2	master	史栄えと
+241B2E	master	グジぐじ脱
+242696	master	へばへ犬落値関
+242756	master	ばへば狂へ
+24285E	master	狂ぴレゴヴ
+242F5A	master	許ゴゴゴヴ
+2435F2	master	ヵケロぱ
+244D7A	master	錬実ヴ置
+244ECE	master	接錬実ヴ
+244F02	master	張払痛ム
+24520E	master	だとだと
+245354	master	だと接錬実ヴ置だ
+2454C4	master	ばへつ丸
+2454FC	master	ヤヵゴガ
+245544	master	ぴレゴヴねュ
+245674	master	群ぼぴぼば
+2456F6	master	顔つぬだとヾねュ
+245786	master	つぬつぬ
+2457CC	master	とよだと
+2458F6	master	だとばと
+245CFA	master	ばへ霊立妖
+245E20	master	狂じと門妖立冷仝
+245E52	master	ムじ接錬実ヴ置仝
+246130	master	立冷よば
+246588	master	へへボヘ
+24670A	master	ムとだヘ
+24675C	master	ぼ閉去と
+2467B4	master	ムぬ仝仝
+246834	master	イヤへ゜ヾ
+246854	master	゜ぴレ先
+24687C	master	へ゜ヾ霊
+246BE0	master	仝仝ばへ落値関加ばレ
+2470DC	master	だとだと
+247120	master	だとむよ
+247246	master	ばへばへ
+2474E4	master	ば剣近軍件ヰへ
+2475B8	master	だえとば
+2476F0	master	ゴヴ群レ
+24784C	master	妖立冷だ
+247CBE	master	とばへボ
+247DEE	master	イイイム
+247EEC	master	へ接錬実
+247F2E	master	と歴味説
+247F8A	master	接錬実ヴヴ
+24800A	master	ぴレゴヴ落値関加
+248046	master	ゴヴ群レ
+248246	master	ヘエエエ
+248338	master	と門妖立冷ば
+24876E	master	だエエ奥と
+2489DE	master	ム門妖立
+248A22	master	錬実ヴ置
+248A5E	master	ヘム歴味説着
+248B7E	master	完ぬだヘエガガ
+248C14	master	部字自相ばレ
+248C7C	master	在異ムボ
+248D2C	master	エムとば
+249436	master	ばヨググヰ
+2498B2	master	ヨググヰじ
+249A50	master	ばへばへ
+249D20	master	張払痛ベ
+249E42	master	置来冷ば
+249E98	master	ばへばへ
+249FE2	master	とばへば
+24A358	master	と霊来良
+24A5BA	master	ムヘエエ
+24A64E	master	ヵケロぱ
+24B13E	master	グ狂銃正
+24B22E	master	ばへばへ
+24B2AA	master	良来裂だ
+24B384	master	錬実ヴ置ばえ
+24B5A6	master	接錬実ヴ置ばレ
+24B624	master	レヰ歴味説着
+24B65C	master	むヘババム奥
+24B68C	master	錬実ヴ置
+24B6AC	master	ヰ落値関だボ
+24B6DE	master	怒未ヰと
+24B760	master	とだ未ヰ
+24BEEC	master	エエエム門妖立冷
+24BF52	master	と接錬実ヴ置
+24C0DC	master	とゐ君整
+24C1A8	master	ば叫グゥ
+24C3B4	master	ばレグヴ接
+24C784	master	だえばへ
+24C7E8	master	だヵケロぱ
+24C95A	master	君整奥え
+24C9EA	master	エエエム
+24CADC	master	ムとだ奥
+24CC18	master	とだヨヰへば
+24FE38	master	しなくっちゃね
+24FE58	master	マクベス
+24FE74	master	久しぶりに
+24FE80	master	その名を聞いたな
+250768	master	風狂親ヵ
+25093A	master	きぁ報陣新成砂滅薬が
+2509E6	master	きぁ報ぅ報
+250A08	master	痛他゜ヾ
+250A4A	master	痛他゜ヾ
+250A8C	master	痛他゜ヾ
+250B66	master	イイガガ
+250BAE	master	狂レゴレ
+250CA8	master	ぴぼぴレゴ
+250DAC	master	ツだとだ
+250DF4	master	へばヨグム
+250E2E	master	イイイヰ
+250F94	master	ばへ゜ヾば
+250FD0	master	銭゜ヾぐ
+251050	master	銭゜ヾ゜
+251090	master	へ゜ヾ゜ば
+251218	master	え銭銭ばへ
+251282	master	ヵサロ叫ふ
+251342	master	゜ぴレュ
+251380	master	゜ヾばヱ
+2513B8	master	ばヨダへ
+251452	master	ポぬ加胸
+251486	master	よヾだヅ
+251516	master	ヵサロ叫
+251524	master	゜ヾ゜ヾ
+251562	master	ロへ゜ヾ
+2515B8	master	ばヵサロ叫狂
+25186C	master	゜ばぬ旗
+251B28	master	レゴヴへ
+251B5A	master	レゴゴゴヴ群群レ
+251B8E	master	ヴへヾぴ
+2522C2	master	へ接錬実ヴ置
+25327C	master	ダとだとだ
+2534F0	master	とよばへだ
+2537AE	master	接錬実ヴ置ば
+253872	master	へへ落値関だと
+253D1A	master	速地地二買刀エム
+253E90	master	バ奥ヨググヰと
+253FB0	master	ヨググへ
+254304	master	いえさごい
+254312	master	いさごいぅだ胸
+254324	master	供ちいぅさごぅ
+254336	master	ぅさごぉぅ
+254356	master	右ばぼやよぱばや
+254376	master	走打体像ァやゅ
+25438E	master	ゅぱばらゅぽぱ雨
+2543AE	master	右グゼツトケグ
+2543E8	master	ケグドヅソケ雨
+2548DE	master	いさごいぅだ
+25490A	master	ちいぅさごぅ
+255206	master	江江ちけゐ
+2561A6	master	えけぐだ
+2561CE	master	ちけぐぉぁ
+2561F6	master	むよゑゐ
+256220	master	ァゑゐらめ
+256240	master	右グフピダトパバム迎
+256270	master	泣メパバドチフピケ雨
+2565D4	master	意約英英づつ
+2565F0	master	づつ盤盤翼移
+25662A	master	英英ゥイ
+256642	master	ゥイ盤盤
+256698	master	盤盤ち雨
+25671C	master	意ュ英英
+25673C	master	盤盤ヤ移
+256814	master	右英英づつ
+25682E	master	づつ盤盤雨
+256866	master	愛英英ゥイ
+256880	master	ゥイ盤盤悪
+256A50	master	意ュ英づつ英英夜老狼老狼門盤盤づつ盤ヤ移
+256D12	master	れが機却
+256D34	master	゜ヾ゜ヾ
+256D8C	master	ややややぴピピボヤピボヤぼヾ
+256DAA	master	ぴピピボヤ
+260AC6	master	ヽヾゝゞ
+260AD6	master	ヽヾゝゞ
+260AE6	master	ヽヾゝゞ
+260AF6	master	ヽヾゝゞ
+260C0E	master	ヽヾゝゞ
+260C1E	master	ヽヾゝゞ
+260C2E	master	ヽヾゝゞ
+260D46	master	ヽヾゝゞ
+260D56	master	ヽヾゝゞ
+260D66	master	ヽヾゝゞ
+260D76	master	ヽヾゝゞ
+260E8E	master	ヽヾゝゞ
+260E9E	master	ヽヾゝゞ
+260EAE	master	ヽヾゝゞ
+260FC6	master	ヽヾゝゞ
+260FD6	master	ヽヾゝゞ
+260FE6	master	ヽヾゝゞ
+260FF6	master	ヽヾゝゞ
+26110E	master	ヽヾゝゞ
+26111E	master	ヽヾゝゞ
+26112E	master	ヽヾゝゞ
+26F3AF	master	もう終わったかい
+270008	master	イヤヘム
+270190	master	錬実ヴ置
+270230	master	好ばイヰ
+270284	master	グヰばへ
+2702E6	master	ググヰ狂ヨ
+2703A0	master	ヘムヘエ
+2703F8	master	へだとだとだ
+27041C	master	許ゴゴゴヴ
+27044C	master	ば起ヨググ狂へ仝
+27048C	master	ぼ仝゜ヾ
+270512	master	ダと門妖立冷仝
+270570	master	奥接錬実ヴ置ばへば
+2707D6	master	仝ば起ググ狂へ
+270830	master	ぴぼぴヨ
+270884	master	仝だとだ
+270990	master	ヨゴヴ許群
+270A70	master	仝ばへば狂へ
+270BEA	master	仝だとだと仝つぬつ
+270DE0	master	だとだと
+270F06	master	レググヴ
+279CDE	master	新しい情報を
+279CEC	master	入手すると
+279D02	master	行けなかった場所に
+279D18	master	行ける事も
+279D24	master	あるわよ
+279D46	master	光ってる場所が
+279D5C	master	あなたが
+279D66	master	行ける場所よ
+279D7E	master	その場所で
+279D8A	master	知りたい事が
+279D9A	master	あったら
+279DAC	master	選んでね
+279DC6	master	知っている事なら
+279DE2	master	おしえてあげるから
+27DE0A	master	未ど太名
+27F80A	master	旗堕レヴヴ
+28F833	master	っぱり商人なんだな
+28F849	master	もういちど
+28F855	master	ガンバッてみようかな
+28F897	master	オレから
+28F8A3	master	買いたくなんてないよな
+28F8CF	master	お金が足りないよ
+29CC0E	master	黄道十二神との
+29CC20	master	出会いも
+29CC2C	master	がさらわれ
+29CC3A	master	アジャックスと
+29CC4A	master	再会した事も
+29CC6A	master	何かが違うと
+29CC7A	master	オレの頭の中に
+29CC8A	master	声がひびく
+2AE692	master	中心部へと
+2AE6D0	master	あなたとともに
+2AE6E0	master	参ります
+2AE732	master	嬢ちゃんは
+2AE73E	master	言っていた
+2AE756	master	だからさ
+2AE786	master	わざわいの中心
+2AE7A2	master	オルドバへと
+2AFA1E	master	訳符符゜
+2E031A	noise	しまセャ凶奇決四獣嬢
