@@ -3,14 +3,21 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator: in progress (session aa: build **f3fd66b97f7d**; tour 147/147 and
-  `qa_gate.py check` exit 0 on it, textcover/inkbox re-run results below; **next: (1) inkbox rows still missing:
+  `qa_gate.py check` exit 0, `textcover.py` 3545/3574 + 29 waived, **0 failing** (exit 0), inkbox **11/11 ok**,
+  all on this build; **next: (1) inkbox rows still missing:
   "Promote? OK No" (01D38D) and "Retreat! Sure? OK No" (01C578), leads below; (2) stress saves: gold not found yet
   (session aa notes); (3) to-do 3 shop lines read in game (the shop warps ignore input after SCENE_OK, so a buy can't
   be routed yet: fix that first); (4) the swapped engine B level-up / stat-up lines (1DF0CF.., polish.md) were read,
   not seen laid out; (5) any rebuild = re-tour + textcover + gate**).
 - **Session 2026-11-23aa (phase 8, tour + gate on f3fd66b97f7d):** full tour `work/qa/tour` **147/147 ok**
   (`--states`, so `work/states/` is from this build); 13 sheets read in a read-only pass, all ok
-  (`work/qa/verdicts/tour_f3fd66b97f7d.tsv`); **`qa_gate.py check` exit 0**. **Gold (camp/shop box "1006G") is not
+  (`work/qa/verdicts/tour_f3fd66b97f7d.tsv`); **`qa_gate.py check` exit 0**. `inkbox_all.py --shoot` 11/11 ok.
+  `textcover_all.py` first came back 48 failing: in step 5 msgcover's side job printed "side_a: nothing to do"
+  although the report listed 47 engine A side lines (re-run by hand, `msgcover.py ... --side
+  work/qa/textcover/gaps_report.out --shots`: 47/47 ok; cause not found, watch for it next run), and move_prompt
+  was never read: the `battle_move` route ended back on the deploy menu, so C4:193D (`LDA $C419DC,x`) never ran.
+  **Scene fixed** (make_scenes.py: tail `6 b;60 -;6 up;30 -;6 a;300 -;6 x;150 -`, hold 3500; proof shows "Pick a
+  destination."); its probe log is `work/qa/textcover/extra_move`. Re-report: **0 failing**. **Gold (camp/shop box "1006G") is not
   in WRAM or SRAM** as u16/u24 binary (LE or BE), packed BCD (either order), one digit per byte or word (any glyph
   base), nor as digit glyph words `C1 C0 C0 C6` (tbl C000-C900), in dumps from the camp warp (f1300), and states
   camp/shop_buy/camp_items; no `$4204-6` divider writes while the camp box draws (f400-853); the only save-window

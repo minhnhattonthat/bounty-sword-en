@@ -36,7 +36,7 @@ battle_menu	scenario	37			7	1742				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 
 battle_items	scenario	37			7	2094				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 a;300 -		battle command menu -> items
 battle_withdraw	scenario	37			7	2140				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 down;40 -;6 a;300 -		battle command menu -> withdraw
 battle_status	scenario	37			7	2000			a:40			unit status on the battle map (A mashed)
-battle_move	scenario	11			7	3022				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 b;60 -;6 x;100 -;6 down;40 -;6 a;900 -;6 x;150 -		B-01: deploy menu -> Fight! -> X: move order prompt (move_prompt 0419DC)
+battle_move	scenario	11			7	3586				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 b;60 -;6 x;100 -;6 down;40 -;6 a;900 -;6 x;150 -;6 b;60 -;6 up;30 -;6 a;300 -;6 x;150 -		B-01: deploy menu -> Fight! -> X: move order prompt (move_prompt 0419DC)
 scen_01	scenario	1			13	600			a:40			scenario 1 (A-01) opening
 card_02	scenario	2			14	300						scenario 2 (A-02): briefing then chapter card
 scen_02	scenario	2			7	600			a:40			scenario 2 (A-02) opening
