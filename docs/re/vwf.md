@@ -51,12 +51,12 @@ after boot in prologue, scen_25 (battle) and camp_items. Recheck if a scene show
 |---|---|---|---|
 | Dialogue line (engine A, VWF) | 160 px, 3 lines a box; more lines = `{next}` | marker lines filled to exactly 160 px end in a visible `|` at the box edge (prologue, `work/qa/m_prologue/f007340.png`); torture box | measured |
 | Last dialogue line + page arrow | 160 px incl. the closing `"` | arrow sits in the border below line 3 (same shot) | measured |
-| Speaker name tag | 6 cells (6 chars, fixed) | FF15 literal is 6 words | guess: measure with English speaker names |
+| Speaker name tag | 6 cells, 1 char per cell (`C2:5641` path, no VWF) | marker label `K20abc` fills the tag with the portrait still matched (prologue, `work/qa/marker2/prologue/proof.png`); table name and FF15 literal must be identical | measured |
 | Chapter-card subtitle (master messages in card table `C6:D485`, 59) | 160 px line 1 incl. quotes (`「」` draw as `"`), centred; a second line starts at the left edge (avoid) | card_02-06 marker shots `work/qa/m_c6/` | measured |
 | Narration (mode 15, master messages from table `C6:D7D8`: 7 bytes a scenario, flag ptr + two slot offsets) | 160 px a line (VWF), lines per box: JP uses up to 3 | narration marker `work/qa/m_c6/narration` (2-line message) | measured width; 3rd line guess |
 | Location label (`locations`) | 10 cells, 1 char per cell | worldmap marker `L30abcdefg` fills the frame | measured |
-| Window strings (`windows`, C1 `[count][words]` via 24-bit pointers in the C8 window scripts, drawer `C1:8F13`) | in place, count x 8 px (C1Run VWF, pairs packed). **Grid strings**: window op `02` draws the whole string into tile slots 0..n-1 (`C8:F449`: `02 0000 C1CCF2`), op `0A` DMAs `$7E:A000` to VRAM, and a tilemap shows slices of those slots (file menu `01CCF2`: ロード = slots 4-6, 消去 = 2 cells): each slice's budget = its cells x 8 px, items separated by `[0F7F]` TABs. Decoder: `tools/re/winscript.py C8F449` | slice cells from the JP string; px budgets not yet shot | guess (the tilemap holding the slices is not found yet; re-cut it if a slice is too small) |
-| Menus, items, classes, unit names/titles | C1Run VWF: field cells x 8 px, up to 2 letters a word (items/classes 10 cells = 80 px, unit names 6 = 48 px, titles 16 = 128 px) | battle_status marker `work/qa/mk_c1/battle_status/proof.png`: equipment/inventory markers (`I1The quick bro`) end at the window frame, 80 px | items measured in battle_status only; other screens guess until the camp/shop tour is clean |
+| Window strings (`windows`, C1 `[count][words]` via 24-bit pointers in the C8 window scripts, drawer `C1:8F13`) | in place, count x 8 px (C1Run VWF, pairs packed). **Grid strings**: window op `02` draws the whole string into tile slots 0..n-1 (`C8:F449`: `02 0000 C1CCF2`), op `0A` DMAs `$7E:A000` to VRAM, and a tilemap shows slices of those slots (file menu `01CCF2`: ロード = slots 4-6, 消去 = 2 cells): each slice's budget = its cells x 8 px, items separated by `[0F7F]` TABs. Decoder: `tools/re/winscript.py C8F449`. Marker: label, then one 8-px code per cell (`0.`-`9.` cells 0-9, `A.`.. per `marker.CELL_CHARS`, `:` from cell 48), so each slice shows its own cells | measured per slice from `work/qa/mk_c4/<scene>/proof.png`: file menu `W6` (01CCF2) header ファイル = cells 27-30, ロード 4-6, コピー 7-9, 消去 10-11, first item 12-15 (no save) or 32-34; camp command list items 4-5 cells (1-4, 7-8, 9-10, 11-15, 16-19, 20-23, 24-28); camp orders 16-19/20-23/24-27; config `W25` (01D03A) labels 6-14, 21-24, 25-31, 32-39, values 40-43/44-47/48-53/54-59, 1-cell keys; party status labels (01C6EE) 2 cells each; ratings (01C722 at slot $2A) 1 cell each, picked by the tilemap per value | measured (screens toured); a per-string slice table for translators is still to write |
+| Menus, items, classes, unit names/titles, spells, constellations, orders | C1Run VWF: field cells x 8 px, up to 2 letters a word (items/classes/spells 10 cells = 80 px, unit names 6 = 48 px, titles 16 = 128 px, constellations 5 = 40 px, orders 8 = 64 px) | battle_status / camp_party_status markers (`I1The quick bro`, `C2The quick br`, `T1The quick`, `Q11Thel`) end at the window frame | items, classes, titles, constellations measured (mk_c4); spells and orders: no warp shows them yet (guess = field width) |
 | Engine B (ceremony, short strings, descriptions) | position table `$7E:4A3D`, 1 char per cell | - | guess |
 
 Glyph torture line: all encodable ASCII + double spaces, prologue message 24FABE boxes 1-2: renders correctly.
@@ -73,6 +73,13 @@ Seen in the proof sheets (own read-only pass; codex was out of quota):
   FF15 headers); the file menu header ファイル shows one marker letter only (slice of `01CCF2`; check the C8 script);
 - camp command list: marker letters mixed with `)。。`: those menu strings contain layout words decoded as characters;
   split them out of `menus` before translating.
+- **fixed (fourth session)**: the marker bug below. `menus`/`windows`/`menus_c` now split by the C8 op 02 targets
+  (`script_text.window_anchors`, rule `anchored`; no code or other window op points into `C1:BFFF-D3AB`), and
+  `menus` is seven word-phase segments (11/13-byte layout records flip the phase; 18 strings at even offsets were
+  missing, among them the party-status labels `01C6EE`). `unit_titles` was five tables: now `unit_titles`
+  (16 words from `C8:DF5E`), `spells`, `c8_layout`, `constellations`, `c8_digits`, `orders`. Full tour
+  `work/qa/marker2`: 140/140, largest C1 run = a real string (n=106), no garbage screens. Speaker names now
+  show as `K<n>` labels with portraits.
 - **marker bug (2026-11-22, C1Run tour `work/qa/mk_c1`)**: `menus`/`menus_c` use the `term` split, so the marker
   overwrites the count words of `[count][words]` strings there. `tools/lua/c1runs.lua` on town_item_shop logged
   `run40 n=3951 ptr=C1D2F9` (count word replaced by `o` = `$0F6F`): the run clears ~4000 slots and the camp and

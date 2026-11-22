@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 from rom_text import REGIONS, WordCodec, read_slots, repack, unpack, words_at  # noqa: E402
 from script_text import (ENGINE_B_TABLES, SCRIPT, TextCodec, apply_script, dump, extract, load,  # noqa: E402
-                         side_codecs, side_words)
+                         region_entries, side_codecs, side_words)
 
 ROM = ROOT / "rom" / "Bounty Sword (Japan).sfc"
 
@@ -81,10 +81,23 @@ def test_side_entries_tile_regions(files):
     sc = side_codecs()
     for name, start, end in REGIONS:
         p = start
-        for e in files[name + ".json"]:
+        for e in region_entries(files, name, start, end):
             assert int(e["id"], 16) == p, f"{name}: gap or overlap before {e['id']}"
             p += 2 * len(side_words(e, sc[name in ENGINE_B_TABLES]))
         assert p == end, name
+
+
+def test_every_window_op02_string_has_a_text_entry(rom, files):
+    """Every [count][words] string a C8 window script draws (op 02 into the C1 string area) is a counted entry,
+    whatever its word phase (strings at even offsets inside an odd region were once silently skipped)."""
+    ids = {e["id"]: e for n in ("menus", "windows", "menus_c") for e in files[n + ".json"]}
+    lo, hi = 0x01BFFF, 0x01D3AB
+    for p in range(0x080000, 0x090000 - 5):
+        if rom[p] == 0x02 and rom[p + 5] in (0xC1, 0x41):
+            t = 0x010000 | rom[p + 4] << 8 | rom[p + 3]
+            n = rom[t] | rom[t + 1] << 8
+            if lo <= t < hi and 0 < n < 0x100:
+                assert "%06X" % t in ids and ids["%06X" % t].get("head"), "%06X" % t
 
 
 def test_c1_window_strings_keep_their_count_word(files):

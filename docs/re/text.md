@@ -127,7 +127,7 @@ reader not confirmed (phase 4 confirms each with a ROM-read log before extractin
 | speakers | `C2:5B3C` (FF15 literal-name match), `C2:5D34/40/4C` | prologue, scen_27/28 | verified |
 | unit_records | `C0:A4AD`..`C0:A55F` (record parser) | scen_25/50/51/56/57/59 | verified (names in records not split out) |
 | unit_names | `C6:E392` | prologue | verified; records are **6 words**, not 5 |
-| unit_titles, classes, items | `C1:8E96` (menu text drawer) | battle_status, camp_file, battle_items, shop | verified; items are 10-word records from 0x1ADFEF (record 0 blank) |
+| unit_titles, classes, items, constellations, c8_digits | `C1:8E96` (menu text drawer) | battle_status, camp_file, camp_party_status, battle_items, shop | verified; items are 10-word records from 0x1ADFEF (record 0 blank); titles 16 words from 0x08DF5E (`c1runs.lua`: n=16), constellations 5 words (n=5 at C8:E87C), digits one word at a time; spells/orders by layout only |
 | short_strings, ceremony | `C3:C78B` (engine B word reader) | scen_01, ceremony, name_entry | verified engine B |
 | battle_prompts(_b), system_prompts, descriptions, objectives | not read on any warp | - | guess: reach them in phase 8 (`textcover`) |
 

@@ -117,6 +117,7 @@ class TextCodec:
 #   ("term",): a string ends after a run of 0000 words.
 #   ("ends", {words}): a string ends after any of these control words.
 #   ("counted",): [count][count words] strings back to back; anything that breaks the chain is a 1-word entry.
+#   ("data",): one data entry (no text).
 #   ("anchored",): [count][count words] strings only where a C8 window script's op 02 points (`window_anchors`);
 #       every stretch between them is one data entry (tile/layout tables: tools/re/winscript.py, docs/re/vwf.md).
 SPLIT = {
@@ -131,7 +132,12 @@ SPLIT = {
     "unit_records": ("term",),
     "battle_prompts": ("ends", {0xFF00, 0xFF03}),
     "unit_names": ("fixed", 6, 0),
-    "unit_titles": ("fixed", 16, 0),
+    "unit_titles": ("fixed", 16, 0, 10),
+    "spells": ("fixed", 10, 0),
+    "c8_layout": ("data",),
+    "constellations": ("fixed", 5, 0),
+    "c8_digits": ("data",),
+    "orders": ("fixed", 8, 0),
     "classes": ("fixed", 10, 0),
     "descriptions": ("ends", {0xFF00, 0xFF0D, 0xFF03}),
     "objectives": ("ends", {0xFFFE, 0xFFFF}, "ptr16"),
@@ -149,6 +155,8 @@ def split_region(words, rule, args=None, anchors=()):
     for end words. `anchors`: word indices where an "anchored" region's counted strings start."""
     n, cuts = len(words), [0]
     kind = rule[0]
+    if kind == "data":
+        return [(0, n)]
     if kind == "anchored":
         for a in sorted(anchors):
             c = words[a]
@@ -260,7 +268,9 @@ def side_entries(rom, name, start, end, codec, ptrs):
             w = w[1:]
             while w and w[-1] == 0:
                 w = w[:-1]
-        if rule[0] in ("counted", "anchored"):
+        if rule[0] == "data":
+            e["kind"] = "data"
+        elif rule[0] in ("counted", "anchored"):
             e["kind"] = "text" if counted and off in ptrs and not is_data(w, args) else "data"
         else:
             e["kind"] = "data" if is_data(words[a:b], args) else "text"
@@ -278,7 +288,8 @@ def side_entries(rom, name, start, end, codec, ptrs):
 
 # Tables drawn by the C1 string runs (asm/vwf.asm C1Run): English there is proportional inside the field's cells,
 # two ASCII letters may share a word, and `[0F7F]` (TAB) moves to the next cell (grid strings cut into slices).
-C1_TABLES = {"items", "classes", "unit_names", "unit_titles", "windows", "menus", "menus_c"}
+C1_TABLES = {"items", "classes", "unit_names", "unit_titles", "spells", "constellations", "orders", "windows", "menus",
+             "menus_c"}
 TAB = 0x0F7F
 
 
@@ -330,8 +341,8 @@ def extract(rom):
             p += 2 * len(w)
         files["master_%06X.json" % blk["start"]] = entries
     ptrs = pointer_index(rom)
-    for name, s, e in REGIONS:
-        files[name + ".json"] = side_entries(rom, name, s, e, sc, ptrs)
+    for name, s, e in REGIONS:          # a name listed twice (word-phase segments) fills one file
+        files.setdefault(name + ".json", []).extend(side_entries(rom, name, s, e, sc, ptrs))
     return files
 
 
@@ -366,6 +377,11 @@ def load(src=SCRIPT):
     return {p.name: json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(src).glob("*.json"))}
 
 
+def region_entries(files, name, start, end):
+    """The entries of script file `name` that lie in the region segment [start, end)."""
+    return [e for e in files[name + ".json"] if start <= int(e["id"], 16) < end]
+
+
 def apply_script(rom, files, field="jp"):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step)."""
     mc, sc, wc = TextCodec(True), side_codecs(), WordCodec()
@@ -377,7 +393,7 @@ def apply_script(rom, files, field="jp"):
         blk["msgs"] = [wc.decode(mc.encode(e[field] if e.get(field) else e["jp"])) for e in entries]
     for r in data["regions"]:
         words = []
-        for e in files[r["name"] + ".json"]:
+        for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e
             words += side_words(src, sc[r["name"] in ENGINE_B_TABLES], pack=r["name"] in C1_TABLES)
         r["text"] = wc.decode(words)

@@ -19,6 +19,7 @@ from script_text import C1_TABLES
 LINE_PX = 160          # 20 cells; the width gate (docs/re/vwf.md) checks it in game
 TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W", "menus_c": "U","speakers": "K", "system_prompts": "Z",
         "unit_records": "R", "battle_prompts": "B", "unit_names": "N", "unit_titles": "T", "classes": "C",
+        "spells": "X", "constellations": "Q", "orders": "G", "c8_layout": "-", "c8_digits": "-",
         "descriptions": "D", "objectives": "O", "items": "I", "short_strings": "S", "ceremony": "Y"}
 FILL = "The quick brown fox jumps over the lazy dog. "
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{4}\]|\n|.", re.S)
@@ -164,71 +165,40 @@ def master_marker(eid, jp, torture=True, speakers=None):
 TAB = "[0F7F]"
 
 
-def window_marker(label, jp, width):
-    """C1 window string (`[count][words]`, drawn into tile slots that a tilemap shows in slices): JP draws one word
-    a cell, so each run of non-space JP words is an item at fixed cells. Each item gets its own tag (the label for
-    item 0, its index for the rest) filled to the item's cells x 8 px, placed by TABs (asm/vwf.asm C1Run: TAB =
-    next cell boundary), so every slice on screen names its item and shows its cell budget."""
+CELL_CHARS = "0123456789ABCDEFGHJKLNOPRSTUVXYZabdeghnopqsuvxyz"   # 6 px each (font_en advances)
+CELL_MARKS = ".:|!'i"                                                # 2 px each: 6 + 2 = one 8-px cell
+
+
+def window_marker(label, width):
+    """C1 window string (`[count][words]`, drawn into tile slots that a tilemap shows in slices, often several
+    items with no space between them): the label, padded to whole cells, then one code per cell: cell k = a 6-px
+    character CELL_CHARS[k % 48] and a 2-px mark CELL_MARKS[k // 48], packed in one word, exactly 8 px, so each
+    slice on screen shows its first cell and its length in cells (`0.`..`9.` = cells 0-9, `A.` = 10, `a.` = 32,
+    `0:` = 48)."""
     adv = advance()
-    toks = TOKEN.findall(jp)
-    items, i = [], 0
-    while i < len(toks):
-        if toks[i] == "　":
-            i += 1
-            continue
-        s = i
-        while i < len(toks) and toks[i] != "　":
-            i += 1
-        items.append((s, i))
-
-    def px_of(s):
-        return sum(adv[c] for c in s)
-
-    def build(fills):
-        out, px, words = [], 0, 0
-        for j, (s, e) in enumerate(items):
-            while px < s * 8:
-                px = px // 8 * 8 + 8
-                out.append(TAB)
-                words += 1
-            f = fills[j]
-            nxt = items[j + 1][0] * 8 if j + 1 < len(items) else width * 8
-            if len(f) % 2 and px + px_of(f + " ") <= nxt:
-                f += " "                            # free in the pair word; saves a TAB when it crosses a cell edge
-            out.append(f)
-            px += px_of(f)
-            words += (len(f) + 1) // 2              # pack_pairs: two letters a word
-        return "".join(out), words
-
-    fills, heads = [], []
-    for j, (s, e) in enumerate(items):
-        head = label if j == 0 else str(j)
-        budget, txt = (e - s) * 8, ""
-        for c in head + "abcdefghijklmnopqrstuvwxyz" * 4:
-            if px_of(txt + c) > budget:
-                break
-            txt += c
-        fills.append(txt)
-        heads.append(min(len(head), len(txt)))
-    text, words = build(fills)
-    while words > width:            # over the count: trim filler letters first, then tags from the last item back
-        extra = [len(f) - h for f, h in zip(fills, heads)]
-        if max(extra) > 0:
-            k = max(range(len(fills)), key=lambda x: extra[x])
-        else:
-            k = max(x for x in range(len(fills)) if fills[x])
-            heads[k] -= 1
-        fills[k] = fills[k][:-1]
-        text, words = build(fills)
-    return text
+    pad = (-sum(adv[c] for c in label)) % 8
+    while pad in (1,):
+        pad += 8
+    fill = ""
+    while pad:                      # top the label up to a cell edge with 4/3/2-px glyphs
+        step = 4 if pad >= 6 or pad == 4 else (3 if pad in (3, 5) else 2)
+        fill += {4: " ", 3: "l", 2: "."}[step]
+        pad -= step
+    out = label + fill              # pairs may straddle cells: only pixels matter for placement
+    for k in range(sum(adv[c] for c in out) // 8, width):
+        code = CELL_CHARS[k % 48] + CELL_MARKS[k // 48 % len(CELL_MARKS)]
+        if (len(out) + len(code) + 1) // 2 > width:     # pack_pairs: two letters a word
+            break
+        out += code
+    return out
 
 
 def side_marker(tag, idx, entry, c1=False):
     label = f"{tag}{idx}"
     letters = label + "abcdefghijklmnopqrstuvwxyz" * 4
     toks = TOKEN.findall(entry["jp"])
-    if c1 and "head" in entry:      # window string: item tags at the JP cells
-        return window_marker(label, entry["jp"], entry["width"])
+    if c1 and "head" in entry:      # window string: label, then a code in every cell
+        return window_marker(label, entry["width"])
     if c1 and "width" in entry:     # C1 run: proportional, the field's cells x 8 px (asm/vwf.asm C1Run)
         return fill_line(label, entry["width"] * 8)
     if "width" in entry:

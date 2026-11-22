@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (VWF on dialogue, narration, card subtitles and now C1
-  string runs; width gate open). Builds 2026-11-22 (third session): rebuild with `build.py` / `--marker` before
-  testing (sha1 changes with every asm edit). Marker tour `work/qa/mk_c1`: 22/23 menu scenes reach their scene
-  (prologue FAILED on this build: recheck after the menus fix), camp and shop screens garbled (marker bug below).
+- **Phase:** 5. Engine spike and marker build in progress (marker bug fixed, width gate mostly measured; left:
+  engine B / prompts / objectives budgets, slice table, kanji table). Builds 2026-11-22 (fourth session): rebuild
+  with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no garbled screen;
+  menu re-tour `work/qa/mk_c4` 21/21.
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
   (details and evidence in `docs/re/vwf.md`):
   - Font decision: dialogue VWF; C1 menus/lists VWF with packed pairs (third session); other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
@@ -27,24 +27,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
     of `script_text.C1_TABLES` pack two ASCII letters a word (`pack_pairs`): budget = cells x 8 px, up to 2 letters
     a cell. `[0F7F]` = TAB to the next cell (grid strings). Window script decoder `tools/re/winscript.py`; C1 run
     logger `tools/lua/c1runs.lua`. Test `test_c1_fields_pack_letter_pairs`. Details: `docs/re/vwf.md`.
+  - Fourth session: marker bug fixed. C1 window strings split at the C8 op 02 targets (rule `anchored`, test
+    `test_every_window_op02_string_has_a_text_entry`); `menus` = 7 word-phase segments (a script file may span
+    several `REGIONS` rows: `script_text.region_entries`); 18 missing strings found (party-status labels...).
+    `unit_titles` split into unit_titles/spells/c8_layout/constellations/c8_digits/orders (new script files).
+    Window marker = label + one 8-px code per cell (`marker.window_marker`), so each tilemap slice shows its cells.
+    Speaker names: `marker.speaker_labels` gives table + FF15 headers one `K<n>` label; portraits still match.
+    Width gate rows updated in `docs/re/vwf.md` (name tag, window slices, C1 fields measured).
+    Own visual pass of `work/qa/marker2/proofs*.png` (4 sheets): every screen shows markers or art, no garbage;
+    still JP: graphics only (chapter-card 第1部 title, already in the graphics survey).
 - **Next (phase 5, in this order):**
-  1. **Fix the marker bug** (`docs/re/vwf.md` §Marker build): `menus`/`menus_c` (`term` split) lose the count words
-     of `[count][words]` strings (`C1:D2F9` drew n=3951 and garbled camp/shop). Find every window-script op `02`
-     pointer (`02 pos16 ptr24`, `tools/re/winscript.py`) and `C1:8E90` caller source into `C1:BFFF-C1:D3AB`, split
-     those as counted entries (`head`, `width`), keep the rest data; regenerate `script/`, identity test, rebuild
-     marker, re-tour menus (`warp_all.py build/bounty_marker.sfc --match '^(camp|town|battle_|filemenu|ceremony|
-     name_entry|prologue)' --out work/qa/mk_c1`), check with `c1runs.lua` that no run has n > 64.
-  1b. Verify C1Run on every list screen (camp items, shops, party, status) and read each field's px budget off a
-     zoomed shot; then the grid slices: find the file-menu tilemap (slots 4-6 = ロード) and record per-slice px,
-     or re-cut it so items fit.
-  2. Speaker names in the marker: map each `speakers.json` name to a 6-char label in both the table and the FF15
-     literal headers (they must match for portraits), then measure the name tag.
-  3. Width gate for every other variant (table in `docs/re/vwf.md`; card subtitle, narration width, location label
-     now measured): menus, item/class/unit lists, unit titles,
-     locations, engine B boxes, battle prompts, objectives: read each budget off a marker shot (next column's x),
-     record measured/guess per row. Then re-run `warp_all.py build/bounty_marker.sfc --out work/qa/marker --sheet`
-     and give every sheet a visual verdict.
-  4. Kanji table (translators need readable `jp`, needed before phase 6): 777 codes still `[hhhh]` (20,883 uses).
+  1. Width gate, remaining rows (`docs/re/vwf.md`): engine B boxes (ceremony box looks ~28 cells; make the engine B
+     marker fill a line to find the edge), battle prompts, system prompts, objectives (need a warp that shows them:
+     add scenes to `tools/debug/scenes.tsv`), spells and orders lists (add a warp to a spell / orders menu).
+  2. Slice table for translators: per window string, the slices the tilemaps show (start cell, cells), read off
+     `work/qa/mk_c4` shots; put it in each entry's `notes` (or `docs/re/slices.tsv`) and make the fit lint use it.
+  3. Kanji table (translators need readable `jp`, needed before phase 6): 777 codes still `[hhhh]` (20,883 uses).
      `work/re/kanji_cand.tsv` has candidates + contexts; shape matching is weak. Read zoomed glyph sheets
      (`tools/font_sheet.py`) with script context, most used first, write `tbl/kanji.tsv`, `mktbl.py --kanji`,
      `build.py --dump --refresh`, `tools/check.py`. Codes 0x10-0x1A may be Latin Q-Z. Known: 消=2AB 去=1F1 最=275.

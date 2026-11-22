@@ -34,18 +34,34 @@ EXPANDED_TEXT = (0x300000, 0x3F0000)
 REGIONS = (
     ("locations", 0x00CD7B, 0x00D151),
     ("battle_prompts_b", 0x0073AB, 0x007673),
-    # C1 window strings, [count][count words] reached by 24-bit pointers from the C8 window scripts (drawer
-    # C1:8F13), in two word phases: odd from 0x01BFFF, even from 0x01CC00 (file menu, save prompts, battle
-    # orders), odd again from 0x01D1F5. Bytes 0x01CBFF and 0x01D1F4 belong to no string.
-    ("menus", 0x01BFFF, 0x01CBFF),
-    ("windows", 0x01CC00, 0x01D1F4),
+    # C1 window strings, [count][count words] reached by 24-bit pointers (op 02) from the C8 window scripts (drawer
+    # C1:8F13). Strings are whole words, but 11/13-byte layout records between them flip the word phase, so a
+    # file may span several segments (same name, entries go to the segment holding their id). The one byte left
+    # out at each flip is inside such a record: 0x01C577, 0x01C934, 0x01C975, 0x01CA4A, 0x01CADF, 0x01CB48,
+    # 0x01CBB7, 0x01D1F4.
+    ("menus", 0x01BFFF, 0x01C577),
+    ("menus", 0x01C578, 0x01C934),
+    ("menus", 0x01C935, 0x01C975),
+    ("menus", 0x01C976, 0x01CA4A),
+    ("menus", 0x01CA4B, 0x01CADF),
+    ("menus", 0x01CAE0, 0x01CB48),
+    ("menus", 0x01CB49, 0x01CBB7),
+    ("windows", 0x01CBB8, 0x01D1F4),
     ("menus_c", 0x01D1F5, 0x01D3AB),
     ("speakers", 0x025D5D, 0x025F7F),
     ("system_prompts", 0x04136F, 0x0418E3),
     ("unit_records", 0x046CF4, 0x0473B0),
     ("battle_prompts", 0x05E8A0, 0x05EF52),
     ("unit_names", 0x06E3AB, 0x06E627),
-    ("unit_titles", 0x08DF4A, 0x08E9D6),
+    # C8 tables read by the C1 string runs (C1:8E90, tools/lua/c1runs.lua): titles (16 words, run n=16 from
+    # C8:DF5E), spell/skill names (10 words, record 0 blank), layout bytes, constellations (5 words, run n=5 at
+    # C8:E87C = うお座), full-width digits (read one word at a time), battle orders (8 words, record 0 blank).
+    ("unit_titles", 0x08DF4A, 0x08E0BE),
+    ("spells", 0x08E0BE, 0x08E65E),
+    ("c8_layout", 0x08E65E, 0x08E80E),
+    ("constellations", 0x08E80E, 0x08E890),
+    ("c8_digits", 0x08E890, 0x08E8A6),
+    ("orders", 0x08E8A6, 0x08E9D6),
     ("classes", 0x0BF8AE, 0x0C0004),
     ("descriptions", 0x0EE59E, 0x0EFD28),
     ("objectives", 0x18FD06, 0x18FF48),
