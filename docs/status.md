@@ -2,12 +2,25 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session z: build **f3fd66b97f7d**, so the tour gate and
-  textcover from c014fcdc11f2 are stale: re-run `textcover_all.py` and the full tour (147 scenes now) before the
-  gate; **next: (1) inkbox rows still missing: "Promote? OK No" (01D38D) and "Retreat! Sure? OK No" (01C578), leads
-  below; (2) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) to-do 3 shop lines read in
-  game; (4) the swapped engine B level-up / stat-up lines (1DF0CF.., polish.md) were read, not seen laid out: see
-  them on a real level-up if a scene can reach one; (5) re-tour + textcover + `qa_gate.py check`**).
+- **Phase:** 8. QA in the emulator: in progress (session aa: build **f3fd66b97f7d**; tour 147/147 and
+  `qa_gate.py check` exit 0 on it, textcover/inkbox re-run results below; **next: (1) inkbox rows still missing:
+  "Promote? OK No" (01D38D) and "Retreat! Sure? OK No" (01C578), leads below; (2) stress saves: gold not found yet
+  (session aa notes); (3) to-do 3 shop lines read in game (the shop warps ignore input after SCENE_OK, so a buy can't
+  be routed yet: fix that first); (4) the swapped engine B level-up / stat-up lines (1DF0CF.., polish.md) were read,
+  not seen laid out; (5) any rebuild = re-tour + textcover + gate**).
+- **Session 2026-11-23aa (phase 8, tour + gate on f3fd66b97f7d):** full tour `work/qa/tour` **147/147 ok**
+  (`--states`, so `work/states/` is from this build); 13 sheets read in a read-only pass, all ok
+  (`work/qa/verdicts/tour_f3fd66b97f7d.tsv`); **`qa_gate.py check` exit 0**. **Gold (camp/shop box "1006G") is not
+  in WRAM or SRAM** as u16/u24 binary (LE or BE), packed BCD (either order), one digit per byte or word (any glyph
+  base), nor as digit glyph words `C1 C0 C0 C6` (tbl C000-C900), in dumps from the camp warp (f1300), and states
+  camp/shop_buy/camp_items; no `$4204-6` divider writes while the camp box draws (f400-853); the only save-window
+  reads then are flags (C0:E5E4 7FFD40..4D, C1:5522.. 7FFD50..56) and unit records (C2:23DD..). Probes:
+  `work/lua/{div,dig,rd,rd2}.lua` (rd2 = every WRAM read by pc, very slow). Next idea: log exec at the camp number
+  box's draw (find the box call from the camp menu code) or a buy diff once the shop warp takes input.
+  *Retreat* attempt: `battle_move` + KEEP + `AFTER='6 b;60 -;6 up;30 -;6 a;300 -;24 left;30 -;24 up;30 -;6 a;80 -'`
+  opens Orders/Flee/Sts/Sit (`work/qa/ib_fl5/f005500.png`), but down/up in that menu did not move the cursor in two
+  runs, and a third run with right/up diverged to another map view (`ib_fl7`): the real-time battle is not stable
+  under different keys.
 - **Session 2026-11-23z (phase 8, inkbox + a live JP box):** (a) **Bug fixed:** the battle-map box
   「移動目標を選択して下さい」 was still JP (jp_left.md had called 0419DC dead). C4:18F1 runs when X starts a move order
   after deploy (scenario 11): C4:193D sends 12 glyph words through C0:E1B1. New table **`move_prompt`** (REGIONS
