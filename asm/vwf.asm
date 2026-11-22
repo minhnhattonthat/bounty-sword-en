@@ -75,6 +75,13 @@ EnFont:
     incbin "../build/font_en.bin"
 assert pc() == $FFF000
 
+; Speaker tags and location labels pre-rendered by the build (tools/tag_font.py): codes $0500-$0F1E, offsets
+; $A000-$E3EF with base $FF:0000.
+org $FFA000
+TagFont:
+    incbin "../build/font_tag.bin"
+assert pc() <= $FFE400
+
 org $FF0000
 EnWidth:
     incbin "../build/font_en_w.bin"
@@ -124,10 +131,10 @@ C1Glyph:
     lda.w #$00EB
     jml $C186AD
 
-; Replaces C2:5641-C2:5650 (set $44/$46 = $EB:2D8C). Y = glyph offset; English codes give Y >= $E400 (JP codes
-; stay below $A000), and read the English font with base $FF:0000.
+; Replaces C2:5641-C2:5650 (set $44/$46 = $EB:2D8C). Y = glyph offset; English and tag codes give Y >= $A000 (JP
+; codes stay below $A000), and read the English font / tag tiles with base $FF:0000.
 NameGlyph:
-    cpy.w #$E400
+    cpy.w #$A000
     bcc .jp
     stz $44
     sep #$20
@@ -147,10 +154,10 @@ NameGlyph:
     jml $C25651
 
 ; Replace SEP #$20 / $44-$46 = $EB:2D8C (8-bit stores) / REP #$20, 16 bytes ending at RET. $2E = glyph offset,
-; English >= $E400. Used by C0:E1CB (location label).
+; English and tag codes >= $A000. Used by C0:E1CB (location label).
 macro FontBase2E(ret)
     lda $2E
-    cmp.w #$E400
+    cmp.w #$A000
     bcc ?jp
     stz $44
     sep #$20

@@ -22,6 +22,8 @@ from pathlib import Path
 
 from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
 from rom_text import REGIONS, TBL, WordCodec, unpack, word, words_at
+from tag_font import CENTRED, TAG_CELLS, TagFont, speaker_names
+from tag_font import headers as tag_headers
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "script"
@@ -404,6 +406,7 @@ def region_entries(files, name, start, end):
 
 
 OVERFLOW = []   # side entries whose `en` overflowed a fixed field in the last apply_script (JP kept)
+TAGS = []       # the TagFont of the last apply_script(tags=True) (build.py writes its tiles)
 
 # Engine A side tables whose scripts may move: table -> the event-script opcodes whose 24-bit operand calls a script
 # there (the byte before each `refs` offset). system_prompts: `03 ptr24` in bank C4 (`03 931341` at C4:07EA);
@@ -528,16 +531,30 @@ def trampolines(rom, region, files, field, codec, relocs):
     return out
 
 
-def apply_script(rom, files, field="jp"):
-    """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step)."""
+def tag_source(e, region, field, names, tf):
+    """Speaker tags / location labels (tools/tag_font.py, D8): the English rendered into its cells as tag codes."""
+    en = e.get(field)
+    if region == "speakers":
+        en = names.get(e["jp"].rstrip("　"), en)
+    return dict(e, jp=tf.script(en, TAG_CELLS[region], region in CENTRED))
+
+
+def apply_script(rom, files, field="jp", tags=False):
+    """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step). `tags`: render
+    English speaker tags and location labels with tools/tag_font.py (the font is left in TAGS for the build)."""
     OVERFLOW.clear()
+    TAGS[:] = [TagFont()] if tags else []
+    names = speaker_names() if tags else {}
     mc, sc, wc = TextCodec(True), side_codecs(), WordCodec()
     data = unpack(rom)
     for bi, blk in enumerate(data["master"]["blocks"]):
         entries = files["master_%06X.json" % blk["start"]]
         if len(entries) != len(blk["msgs"]):
             raise ValueError(f"master block {blk['start']:06X}: {len(entries)} entries, layout has {len(blk['msgs'])}")
-        blk["msgs"] = [wc.decode(mc.encode(e[field] if e.get(field) else e["jp"])) for e in entries]
+        texts = [e[field] if e.get(field) else e["jp"] for e in entries]
+        if tags:
+            texts = [tag_headers(t, names, TAGS[0]) if e.get(field) else t for t, e in zip(texts, entries)]
+        blk["msgs"] = [wc.decode(mc.encode(t)) for t in texts]
     data["relocs"] = []
     for r in data["regions"]:
         if r["name"] in RELOCATE:
@@ -549,6 +566,9 @@ def apply_script(rom, files, field="jp"):
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e
+            if (tags and r["name"] in TAG_CELLS and e.get("width") == TAG_CELLS[r["name"]] and e.get(field)
+                    and not re.search(r"[{\[]", e[field])):
+                src = tag_source(e, r["name"], field, names, TAGS[0])
             codec, pack = codec_for(sc, r["name"]), r["name"] in C1_TABLES
             try:
                 words += side_words(src, codec, pack=pack)

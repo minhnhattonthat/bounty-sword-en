@@ -92,3 +92,35 @@ def test_c1_fields_pack_letter_pairs():
     # a 3-cell field takes 6 letters and pads with JP spaces; JP text is never packed (identity build)
     assert side_words({"jp": "Potion", "width": 4}, codec, pack=True) == [0x506F, 0x7469, 0x6F6E, 0]
     assert side_words({"jp": "　　", "width": 2}, codec, pack=True) == [0, 0]
+
+
+def test_tag_font_renders_every_speaker_and_label_in_its_cells():
+    """D8: speaker tags (6 cells) and location labels (10 cells) are pre-rendered; every literal `{spk}` header has
+    an English name, every name fits, the codes stay in the window the hooks read as tags ($A000-$E3FF)."""
+    import json
+    from tag_font import HEADER, TAG_END, TAG_FIRST, TagFont, offset, speaker_names
+    names, tf = speaker_names(), TagFont()
+    for f in sorted(SCRIPT.glob("master_*.json")):
+        for e in json.loads(f.read_text(encoding="utf-8")):
+            for m in HEADER.finditer(e.get("en") or ""):
+                assert m.group(1).rstrip("　") in names, (e["id"], m.group(1))
+    for en in names.values():
+        assert len(tf.words(en, 6)) == 6, en
+    for e in json.loads((SCRIPT / "locations.json").read_text(encoding="utf-8")):
+        if e.get("en") and e.get("width") == 10:
+            assert len(tf.words(e["en"], 10, centre=True)) == 10, e["id"]
+    assert all(TAG_FIRST <= c < TAG_END and 0xA000 <= offset(c) < 0xE400 for c in tf.codes.values())
+    assert len(tf.block()) <= 0x4400
+    # same name, same codes: a header and its speakers-table row must match for the portrait
+    assert TagFont().words("Roger", 6) == TagFont().words("Roger", 6)
+    assert tf.words("", 6) == [0] * 6
+
+
+def test_rom_check_knows_every_hook_site():
+    """build.py fails on any changed byte outside the allowed ranges (tools/rom_check.py); each low-bank hook of
+    vwf.asm is a 4-byte jml inside the 3 MB dump."""
+    from rom_check import hook_sites
+    sites = hook_sites()
+    asm = (ROOT / "asm" / "vwf.asm").read_text(encoding="utf-8")
+    assert len(sites) == len(re.findall(r"^org \$[C-E][0-9A-F]{5}\b", asm, re.M)) >= 8
+    assert all(0 <= s < 0x300000 for s in sites)

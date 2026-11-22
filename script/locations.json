@@ -127,7 +127,7 @@
   "id": "00CEBB",
   "width": 10,
   "kind": "text",
-  "jp": "　　イベリアの[00AB]",
+  "jp": "　　イベリアの岬",
   "en": "Cape Iberia"
  },
  {
@@ -192,7 +192,7 @@
   "id": "00CF5B",
   "width": 10,
   "kind": "text",
-  "jp": "　　　剣の[00AB]",
+  "jp": "　　　剣の岬",
   "en": "Sword Cape"
  },
  {
@@ -227,7 +227,7 @@
   "width": 10,
   "kind": "text",
   "jp": "　ジブラルタル海峡",
-  "en": "Gibraltar Str."
+  "en": "Gibraltar Strait"
  },
  {
   "id": "00CFD3",
@@ -273,7 +273,7 @@
   "width": 10,
   "kind": "text",
   "jp": "　アトラス山脈°東",
-  "en": "E. Atlas Mts"
+  "en": "East Atlas Mts"
  },
  {
   "id": "00D04B",
@@ -287,7 +287,7 @@
   "width": 10,
   "kind": "text",
   "jp": "　アトラス山脈°南",
-  "en": "S. Atlas Mts"
+  "en": "South Atlas Mts"
  },
  {
   "id": "00D073",
@@ -340,14 +340,14 @@
   "width": 10,
   "kind": "text",
   "jp": "アルダブラ島°中央",
-  "en": "Mid Aldabra"
+  "en": "Central Aldabra"
  },
  {
   "id": "00D0FF",
   "width": 10,
   "kind": "text",
   "jp": "　オルドバ連邦内",
-  "en": "Ordoba Fed.",
+  "en": "Ordoba",
   "refs": [
    "09895A",
    "098AFA",
