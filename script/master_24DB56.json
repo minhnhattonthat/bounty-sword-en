@@ -185,8 +185,8 @@
    2114
   ],
   "jp": "{spk}{FF28}\n「ううん　やっぱりアナタは\n　私が　みこんだ　とおりの人よ」\n",
-  "en": "{spk}{FF28}\n「Mm-hm. You really are\n the man I took you for.」\n",
-  "pages": "\"Mm-hm. You really are the man I took you for.\""
+  "en": "{spk}{FF28}\n「No, no. You really are\n the man I took you for.」\n",
+  "pages": "\"No, no. You really are the man I took you for.\""
  },
  {
   "id": "24E286",
@@ -257,8 +257,8 @@
    2122
   ],
   "jp": "{spk}ラグガドル　\n「バ°カ°ナ‥‥\n　こんな　こんなことが！？\n　このワシが　倒されるなど！」\n",
-  "en": "{spk}ラグガドル　\n「Im... pos... sible... This,\n this can't be!? That I, of\n all beings, should fall!」\n",
-  "pages": "\"Im... pos... sible... This, this can't be!? That I, of all beings, should fall!\""
+  "en": "{spk}ラグガドル　\n「Im... pos... sible... This, this\n can't be!? To think that\n I would be defeated!」\n",
+  "pages": "\"Im... pos... sible... This, this can't be!? To think that I would be defeated!\""
  },
  {
   "id": "24E502",

@@ -437,8 +437,8 @@
    2369
   ],
   "jp": "{FF12}「わが怒りを秘めし　千本の矢\n　その身に　受けるがいい！\n　必中の矢‥‥サウザンドアロー！」\n",
-  "en": "{FF12}「A thousand arrows that hold\n my wrath! Take them upon\n yourself! Never-missing」\n{next}\n「arrows... 1000 Arrows!」\n",
-  "pages": "\"A thousand arrows that hold my wrath! Take them upon yourself! Never-missing arrows... 1000 Arrows!\""
+  "en": "{FF12}「Take my wrath, a thousand\n arrows strong! Sure-shot\n arrows... Thousand Arrows!」\n",
+  "pages": "\"Take my wrath, a thousand arrows strong! Sure-shot arrows... Thousand Arrows!\""
  },
  {
   "id": "2587C8",
@@ -491,8 +491,8 @@
    2375
   ],
   "jp": "{FF12}「こぉぉぉぉぉぉぉぉぉぉっ！\n　敵の一撃こそ　わが一撃！\n　‥‥地°竜°逆°撃‥‥！」\n",
-  "en": "{FF12}「Hoooooooooooo! The\n enemy's blow becomes\n my blow! ...Earth Dragon...!」\n",
-  "pages": "\"Hoooooooooooo! The enemy's blow becomes my blow! ...Earth Dragon...!\""
+  "en": "{FF12}「Hoooooooooooo! The enemy's\n blow becomes my blow!\n ...Earth Dragon Counter...!」\n",
+  "pages": "\"Hoooooooooooo! The enemy's blow becomes my blow! ...Earth Dragon Counter...!\""
  },
  {
   "id": "258A42",
@@ -1481,8 +1481,8 @@
    1960
   ],
   "jp": "{spk}{FF1F}\n「やはりキサマは　皇帝ではない！\n　その実体は　千年前にほろんだ\n　古代人の悪霊　そうだな‥‥？」\n",
-  "en": "{spk}{FF1F}\n「So you're not the Emperor\n after all! What you really are\n is the evil spirit of an ancient」\n{next}\n「people who perished\n a thousand years\n ago. Am I right...?」\n",
-  "pages": "\"So you're not the Emperor after all! What you really are is the evil spirit of an ancient people who perished a thousand years ago. Am I right...?\""
+  "en": "{spk}{FF1F}\n「So you're not the Emperor\n after all! What you really are\n is the evil spirit of an ancient」\n{next}\n「man who died a thousand\n years ago. Am I right...?」\n",
+  "pages": "\"So you're not the Emperor after all! What you really are is the evil spirit of an ancient man who died a thousand years ago. Am I right...?\""
  },
  {
   "id": "25BAF0",
@@ -1732,8 +1732,8 @@
    1988
   ],
   "jp": "「それきり　声はとぎれた‥‥」\n{next}\n「自らの　血に　よって　超機神の\n　封印を解き　永遠の眠りについた\n　神祖連邦の皇帝　エリュシオン‥‥」\n{next}\n「復活すると同時に　消えた\n　恐るべき　古代の兵器　超機神‥‥」\n{next}\n「オレたちに　ラインメタルの\n　首都へこいという　謎の声‥‥」\n{next}\n「オレは　確かめねばならない\n　このたびの　本当の意味を‥‥\n　この戦いの　本当の終着点を‥‥」\n「オレたちの戦いは　終わった」\n{next}\n「皇帝エリュシオンは　倒れ\n　フュリスは　その　うつろなひとみで\n　ただ　ちゅうを　見つめている‥‥」\n{next}\n「長き　旅の果てに　待っていたのは\n　あまりにも　苦く　つらい勝利だった」\n{next}\n「だが　オレたちは　それでも\n　生きて行かねば　ならない‥‥」\n{next}\n「この　荒れ果てた世の中で\n　生きぬく事こそが　オレたちの\n　もうひとつの　戦いなのだから‥‥」\n{next}\n「さあ　行こう」\n{next}\n「たとえ　その道のりが\n　苦しみに　みちたものだとしても」\n",
-  "en": "「With that, the\n voice fell silent...」\n{next}\n「Elysion, Emperor of the\n Divine Federation, broke the\n seal of the Machine God」\n{next}\n「Supreme with his own\n blood and went to\n his eternal sleep...」\n{next}\n「The Machine God Supreme,\n a terrifying ancient weapon,\n vanished as it revived...」\n{next}\n「And a mysterious voice\n telling us to come to the\n capital of Rheinmetall...」\n{next}\n「I have to find out the true\n meaning of this journey...\n the true end of this war...\" 」\n{next}\n「\"Our battle is over.」\n{next}\n「Emperor Elysion has fallen,\n and Furis just stares into\n space with hollow eyes...」\n{next}\n「What waited at the end\n of our long journey was\n a victory far too bitter.」\n{next}\n「But even so, we\n have to go on living...」\n{next}\n「Because in this ruined world,\n surviving is our other battle...」\n{next}\n「Come on, let's go.」\n{next}\n「Even if the road ahead\n is full of suffering.」\n",
-  "pages": "\"With that, the voice fell silent...\" || \"Elysion, Emperor of the Divine Federation, broke the seal of the Machine God Supreme with his own blood and went to his eternal sleep...\" || \"The Machine God Supreme, a terrifying ancient weapon, vanished as it revived...\" || \"And a mysterious voice telling us to come to the capital of Rheinmetall...\" || \"I have to find out the true meaning of this journey... the true end of this war...\" \\n \"Our battle is over.\" || \"Emperor Elysion has fallen, and Furis just stares into space with hollow eyes...\" || \"What waited at the end of our long journey was a victory far too bitter.\" || \"But even so, we have to go on living...\" || \"Because in this ruined world, surviving is our other battle...\" || \"Come on, let's go.\" || \"Even if the road ahead is full of suffering.\""
+  "en": "「With that, the\n voice fell silent...」\n{next}\n「Elysion, Emperor of the\n Divine Federation, broke the\n seal of the Machine God」\n{next}\n「Supreme with his own\n blood and went to\n his eternal sleep...」\n{next}\n「The Machine God Supreme,\n a terrifying ancient weapon,\n vanished as it revived...」\n{next}\n「And a mysterious voice\n telling us to come to the\n capital of Rheinmetall...」\n{next}\n「I have to find out the true\n meaning of this journey...\n the true end of this war...」\n{next}\n「Our battle is over.」\n{next}\n「Emperor Elysion has fallen,\n and Furis just stares into\n space with hollow eyes...」\n{next}\n「What waited at the end\n of our long journey was\n a victory far too bitter.」\n{next}\n「But even so, we\n have to go on living...」\n{next}\n「Because in this ruined world,\n surviving is our other battle...」\n{next}\n「Come on, let's go.」\n{next}\n「Even if the road ahead\n is full of suffering.」\n",
+  "pages": "\"With that, the voice fell silent...\" || \"Elysion, Emperor of the Divine Federation, broke the seal of the Machine God Supreme with his own blood and went to his eternal sleep...\" || \"The Machine God Supreme, a terrifying ancient weapon, vanished as it revived...\" || \"And a mysterious voice telling us to come to the capital of Rheinmetall...\" || \"I have to find out the true meaning of this journey... the true end of this war...\\nOur battle is over.\" || \"Emperor Elysion has fallen, and Furis just stares into space with hollow eyes...\" || \"What waited at the end of our long journey was a victory far too bitter.\" || \"But even so, we have to go on living...\" || \"Because in this ruined world, surviving is our other battle...\" || \"Come on, let's go.\" || \"Even if the road ahead is full of suffering.\""
  },
  {
   "id": "25C888",
@@ -2200,8 +2200,8 @@
    2040
   ],
   "jp": "{spk}{FF1F}\n「なるほど　人間は　自分勝手な\n　生き物でしか　ないかもしれん」\n{next}\n「だが　十年前に　そして\n　今回のたびで　オレは\n　一人の少女に　おしえられた‥‥」\n{next}\n「自分自身が　そう思うから\n　いつも　自分の心に\n　正直に　生きていたいから‥‥」\n{next}\n「じこ満足　そうかもしれん‥‥」\n{next}\n「だが　そうやって\n　オレたちは　生きてきたさ」\n{next}\n「じこ満足であろうと　友を作り\n　仲間をいたわり　平和をそだて\n　明日の　安らぎだけを祈った‥‥」\n{next}\n「決して　大義などでは　ない\n　ただ仲間に　死んでほしくないから\n　戦いを見るのが　いやだから」\n{next}\n「それだけで　十分だ！」\n{next}\n「オレは　オレ自身のために\n　戦っている‥‥\n　もちろん　神の代理人でもない」\n{next}\n「こいつは　オレ自身に\n　決着をつけるための　戦いだ！」\n{next}\n「お前を　許せないという\n　オレ自身の　心情に\n　決着をつけるための　戦いだ！」\n",
-  "en": "{spk}{FF1F}\n「Sure, maybe humans are\n nothing but selfish creatures.」\n{next}\n「But ten years ago, and\n again on this journey, a\n girl taught me something...」\n{next}\n「Because you\n believe it yourself...」\n{next}\n「Because you always\n want to live honest\n to your own heart...」\n{next}\n「Self-satisfaction?\n Maybe it is...」\n{next}\n「But that's how we've lived.」\n{next}\n「Self-satisfaction or not, we\n made friends, cared for our\n comrades, raised peace, and」\n{next}\n「prayed only for\n tomorrow's rest...」\n{next}\n「It's no great cause. We just\n don't want our comrades to\n die. We just hate seeing war.」\n{next}\n「That's reason enough!」\n{next}\n「I'm fighting for my own\n sake... And I'm no agent\n of the gods, either.」\n{next}\n「This is a battle to settle\n things with myself!」\n{next}\n「A battle to settle my\n own feeling that I can\n never forgive you!」\n",
-  "pages": "\"Sure, maybe humans are nothing but selfish creatures.\" || \"But ten years ago, and again on this journey, a girl taught me something...\" || \"Because you believe it yourself...{next}Because you always want to live honest to your own heart...\" || \"Self-satisfaction? Maybe it is...\" || \"But that's how we've lived.\" || \"Self-satisfaction or not, we made friends, cared for our comrades, raised peace, and prayed only for tomorrow's rest...\" || \"It's no great cause. We just don't want our comrades to die. We just hate seeing war.\" || \"That's reason enough!\" || \"I'm fighting for my own sake... And I'm no agent of the gods, either.\" || \"This is a battle to settle things with myself!\" || \"A battle to settle my own feeling that I can never forgive you!\""
+  "en": "{spk}{FF1F}\n「Sure, maybe humans are\n nothing but selfish creatures.」\n{next}\n「But ten years ago, and\n again on this journey, a\n girl taught me something...」\n{next}\n「That we act because\n we ourselves believe it...」\n{next}\n「Because we always want to\n live true to our own hearts...」\n{next}\n「Self-satisfaction?\n Maybe it is...」\n{next}\n「But that's how we've lived.」\n{next}\n「Self-satisfaction or not, we\n made friends, cared for our\n comrades, raised peace, and」\n{next}\n「prayed only for\n tomorrow's rest...」\n{next}\n「It's no great cause. We just\n don't want our comrades to\n die. We just hate seeing war.」\n{next}\n「That's reason enough!」\n{next}\n「I'm fighting for my own\n sake... And I'm no agent\n of the gods, either.」\n{next}\n「This is a battle to settle\n things with myself!」\n{next}\n「A battle to settle my\n own feeling that I can\n never forgive you!」\n",
+  "pages": "\"Sure, maybe humans are nothing but selfish creatures.\" || \"But ten years ago, and again on this journey, a girl taught me something...\" || \"That we act because we ourselves believe it...{next}Because we always want to live true to our own hearts...\" || \"Self-satisfaction? Maybe it is...\" || \"But that's how we've lived.\" || \"Self-satisfaction or not, we made friends, cared for our comrades, raised peace, and prayed only for tomorrow's rest...\" || \"It's no great cause. We just don't want our comrades to die. We just hate seeing war.\" || \"That's reason enough!\" || \"I'm fighting for my own sake... And I'm no agent of the gods, either.\" || \"This is a battle to settle things with myself!\" || \"A battle to settle my own feeling that I can never forgive you!\""
  },
  {
   "id": "25E4D2",
@@ -2560,8 +2560,8 @@
    2080
   ],
   "jp": "{spk}{FF31}　　　　　\n「私は　元から　いい子よ！\n　しがない　賞金かせぎさん！」\n",
-  "en": "{spk}{FF31}　　　　　\n「I've always been\n a good girl! Mister\n small-time bounty chaser!」\n",
-  "pages": "\"I've always been a good girl! Mister small-time bounty chaser!\""
+  "en": "{spk}{FF31}　　　　　\n「I've always been a good\n girl! Mister Small-Time\n Bounty Chaser!」\n",
+  "pages": "\"I've always been a good girl! Mister Small-Time Bounty Chaser!\""
  },
  {
   "id": "25F67A",

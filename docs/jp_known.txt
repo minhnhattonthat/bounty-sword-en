@@ -485,8 +485,7 @@
 1DF543	region ceremony	ペルマスターに転職できます
 1DF569	region ceremony	イズマンに転職できます
 1DF58B	region ceremony	かいせんに転職できます
-1E8AE0	master	確実なのは
-1E8AEC	master	いつの間にか
+1E8AEE	master	つの間にか
 1E8AFC	master	このオレが
 1E8B16	master	なんて物に
 1E8B22	master	なっている事だろう
@@ -504,9 +503,6 @@
 1FB784	master	だと祖部字自相
 1FB968	master	ばへばヘ
 1FBF7C	master	良冷ばジ
-21832E	master	さらに古い
-218344	master	伝説の国ですな
-21835C	master	ツキカゲ
 21836C	master	聞こえる
 218376	master	聞こえるぜ
 218396	master	魔物の叫び声が
@@ -1066,6 +1062,8 @@
 256D34	master	゜ヾ゜ヾ
 256D8C	master	ややややぴピピボヤピボヤぼヾ
 256DAA	master	ぴピピボヤ
+25FBE0	master	オレ達の
+25FBF8	master	戦いのために
 260AC6	master	ヽヾゝゞ
 260AD6	master	ヽヾゝゞ
 260AE6	master	ヽヾゝゞ
@@ -1124,21 +1122,18 @@
 279DE2	master	おしえてあげるから
 27DE0A	master	未ど太名
 27F80A	master	旗堕レヴヴ
-28F833	master	っぱり商人なんだな
+28F83D	master	なんだな
 28F849	master	もういちど
 28F855	master	ガンバッてみようかな
 28F897	master	オレから
 28F8A3	master	買いたくなんてないよな
 28F8CF	master	お金が足りないよ
-29CC0E	master	黄道十二神との
-29CC20	master	出会いも
 29CC2C	master	がさらわれ
 29CC3A	master	アジャックスと
 29CC4A	master	再会した事も
 29CC6A	master	何かが違うと
 29CC7A	master	オレの頭の中に
 29CC8A	master	声がひびく
-2AE692	master	中心部へと
 2AE6D0	master	あなたとともに
 2AE6E0	master	参ります
 2AE732	master	嬢ちゃんは

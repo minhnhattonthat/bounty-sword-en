@@ -91,10 +91,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | オルドバ | Ordoba | | the Federation | Ordova / Cordoba |
 | ロムルス | Romulus | | 王都ロムルス "the royal city of Romulus": a military realm allied with Rheinmetall, not its capital | |
 | イーストエンド | East End | | | Eastend |
-| ブラックバーン | Blackburn | | | |
+| ブラックバーン | Blackburn | | ブラックバーンの山々: map label "Blackburn Mts" (10-cell tag label), dialogue "the Blackburn Mountains" | |
 | アーデン | Arden | | | |
 | エルツ | Erz | | | |
-| リパイオス | Rhipaean | | Rhipaean Mountains | Ripaios |
+| リパイオス | Rhipaean | | リパイオス山脈: dialogue "Rhipaean Mountains", map label "Rhipaean Mts" (10-cell tag label) | Ripaios |
 | イベリア | Iberia | | | |
 | エリダヌス | Eridanus | | | |
 | パドヴァ | Padova | | | Padua |
@@ -154,7 +154,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 機神 | Machine God / M.God | | ancient weapons; numbered "Machine God No. 8"; "M.God 1" only in the fixed-length objectives; 機神１号 speaker tag "Machine 1" (48 px, D8): tag "Machine 1" | |
 | 超機神 | Machine God Supreme / Machine God | | the god of destruction Elysion revives; "Machine God" only in the 80 px class field | |
 | 神の代理人 | agent of the gods / agent of us twelve gods | | what the Zodiac Gods call the hero | |
-| 屍解仙 | Corpse Immortal | | boss at the Abadan River | |
+| 屍解仙 | Corpse Immortal / Immortal | | boss at the Abadan River; the class しかいせん (80 px), its unit-name override (48 px) and the 28-cell ceremony row use "Immortal" (session ae) | |
 | 悪霊 | evil spirit | | Ruins Town ghost | |
 | ワルキューレ | Valkyrie | | Rune's Valkyrie Corps | |
 | 火竜 | fire dragon | | Salamander | |

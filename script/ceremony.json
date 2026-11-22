@@ -481,7 +481,7 @@
   "id": "1DF0ED",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は防御力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": "{FF06:4D1B:007E}: Defense +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
+  "en": "{FF06:4D1B:007E}: Defence +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF10B",
@@ -584,7 +584,7 @@
   "id": "1DF271",
   "kind": "text",
   "jp": "防御力が{FF06:F069:00DD}上がった{FF03}",
-  "en": "Defense rose by {FF06:F069:00DD}.{FF03}",
+  "en": "Defence rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A93A"
   ]

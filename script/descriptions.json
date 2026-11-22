@@ -104,7 +104,7 @@
   "id": "0EE576",
   "kind": "text",
   "jp": "味方一人の防御力アップ{FF00}",
-  "en": "Raises one ally's defense.{FF00}"
+  "en": "Raises one ally's defence.{FF00}"
  },
  {
   "id": "0EE58E",
@@ -279,7 +279,7 @@
   "id": "0EE656",
   "kind": "text",
   "jp": "味方一人の防御力アップ{FF00}",
-  "en": "Raises one ally's defense.{FF00}"
+  "en": "Raises one ally's defence.{FF00}"
  },
  {
   "id": "0EE66E",
@@ -2520,7 +2520,7 @@
   "id": "0EF856",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰ°ＳＰ°バッドステータスを全回復{FF00}",
-  "en": "Fully restores all allies'{FF01}HP, SP and ailments.{FF00}"
+  "en": "Fully restores all allies'{FF01}HP and SP, cures ailments.{FF00}"
  },
  {
   "id": "0EF886",
@@ -2582,7 +2582,7 @@
   "id": "0EF8DC",
   "kind": "text",
   "jp": "防御力アップ{FF00}",
-  "en": "Raises defense.{FF00}"
+  "en": "Raises defence.{FF00}"
  },
  {
   "id": "0EF8EA",
@@ -2800,7 +2800,7 @@
   "id": "0EFA0E",
   "kind": "text",
   "jp": "一定時間　自分以外の敵味方全ての動きを　完全にとめる{FF00}",
-  "en": "For a while, stops everyone{FF01}else, friend and foe, dead.{FF00}"
+  "en": "For a while, freezes all{FF01}others, friend and foe.{FF00}"
  },
  {
   "id": "0EFA44",
@@ -3169,7 +3169,7 @@
   "id": "0EFCAA",
   "kind": "text",
   "jp": "「辺境の火山島」で手に入れたフエ{FF00}",
-  "en": "A whistle found on the{FF01}\"Frontier Volcano Isle\".{FF00}"
+  "en": "A whistle found on{FF01}Volcano Isle.{FF00}"
  },
  {
   "id": "0EFCCC",

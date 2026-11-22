@@ -320,8 +320,8 @@
    349
   ],
   "jp": "{spk}{FF31}　　　　　\n「好きに　よべばいいわ\n　オイでも　コラでも　お前さんでも\n　あなたの好きに　よんでちょうだい」\n",
-  "en": "{spk}{FF31}　　　　　\n「Call me whatever you like.\n Hey, or you there, or kid.\n Call me whatever you please.」\n",
-  "pages": "\"Call me whatever you like. Hey, or you there, or kid. Call me whatever you please.\""
+  "en": "{spk}{FF31}　　　　　\n「Call me whatever you like.\n 'Hey,' 'you there,' 'kid'... Call\n me whatever you please.」\n",
+  "pages": "\"Call me whatever you like. 'Hey,' 'you there,' 'kid'... Call me whatever you please.\""
  },
  {
   "id": "281ABB",
@@ -1578,8 +1578,8 @@
    489
   ],
   "jp": "{spk}{FF31}　　　　　\n「そうよ　私の生まれたオルドバは\n　大昔には栄えたけど　今は\n　忘れられた　ほろびゆく国だった」\n{next}\n「でも　古代文明の　いせきを　手に入れ\n　皇帝は野望に　とりつかれたの‥‥」\n{next}\n「何千年ぶりかに　再びオルドバが\n　地上の　あらゆる国々の\n　ちょうてんに　立つという野望を」\n{next}\n「ふふ‥‥笑っちゃうでしょ？\n　そんな　バカげた野望に\n　すっかり　とりつかれたのよ」\n{next}\n「神祖皇帝　エリュシオンは‥‥」\n",
-  "en": "{spk}{FF31}　　　　　\n「That's right. Ordoba, where I\n was born, flourished long\n ago, but now it was a」\n{next}\n「forgotten, dying country.」\n{next}\n「But once he got his hands on\n the ruins of the ancient\n civilization, the Emperor was」\n{next}\n「possessed by ambition...」\n{next}\n「The ambition that Ordoba,\n for the first time in\n thousands of years, would」\n{next}\n「stand at the top of\n every nation on earth.」\n{next}\n「Heh... It's laughable, isn't it?\n He's completely possessed\n by that stupid ambition.」\n{next}\n「Elysion, the Divine Emperor...」\n",
-  "pages": "\"That's right. Ordoba, where I was born, flourished long ago, but now it was a forgotten, dying country.\" || \"But once he got his hands on the ruins of the ancient civilization, the Emperor was possessed by ambition...\" || \"The ambition that Ordoba, for the first time in thousands of years, would stand at the top of every nation on earth.\" || \"Heh... It's laughable, isn't it? He's completely possessed by that stupid ambition.\" || \"Elysion, the Divine Emperor...\""
+  "en": "{spk}{FF31}　　　　　\n「That's right. Ordoba, my\n homeland, flourished long\n ago, but it had become a」\n{next}\n「forgotten, dying land.」\n{next}\n「But once he got his hands on\n the ruins of the ancient\n civilization, the Emperor was」\n{next}\n「possessed by ambition...」\n{next}\n「The ambition that Ordoba,\n for the first time in\n thousands of years, would」\n{next}\n「stand at the top of\n every nation on earth.」\n{next}\n「Heh... It's laughable, isn't it?\n He's completely possessed\n by that stupid ambition.」\n{next}\n「Elysion, the Divine Emperor...」\n",
+  "pages": "\"That's right. Ordoba, my homeland, flourished long ago, but it had become a forgotten, dying land.\" || \"But once he got his hands on the ruins of the ancient civilization, the Emperor was possessed by ambition...\" || \"The ambition that Ordoba, for the first time in thousands of years, would stand at the top of every nation on earth.\" || \"Heh... It's laughable, isn't it? He's completely possessed by that stupid ambition.\" || \"Elysion, the Divine Emperor...\""
  },
  {
   "id": "28530B",
@@ -2352,8 +2352,8 @@
    575
   ],
   "jp": "{spk}ジジイ　　　\n「見ておったぞ‥‥\n　よくぞ　村のかたきを\n　とってくれたな‥‥」\n{next}\n「わしは　このへんでは\n　物知りで　とおっておる\n　ささ　何でも　聞いてくれ」\n{next}\n　反乱軍について\n　連邦について\n　古代兵器について\n{FF14:00C3}{end}\n",
-  "en": "{spk}ジジイ　　　\n「I saw it all... You avenged\n our village, and well done...」\n{next}\n「Round here I'm known as\n a man who knows things.\n Go on, ask me anything.」\n{next}\n　About the rebels\n　About the Federation\n　About the ancient weapons\n{FF14:00C3}{end}\n",
-  "pages": "\"I saw it all... You avenged our village, and well done...\" || \"Round here I'm known as a man who knows things. Go on, ask me anything.\" || About the rebels\\nAbout the Federation\\nAbout the ancient weapons"
+  "en": "{spk}ジジイ　　　\n「I saw it all... You avenged our\n village. Well done, I tell you...」\n{next}\n「Round here I'm known as\n a man who knows things.\n Go on, ask me anything.」\n{next}\n　About the rebels\n　About the Federation\n　About the ancient weapons\n{FF14:00C3}{end}\n",
+  "pages": "\"I saw it all... You avenged our village. Well done, I tell you...\" || \"Round here I'm known as a man who knows things. Go on, ask me anything.\" || About the rebels\\nAbout the Federation\\nAbout the ancient weapons"
  },
  {
   "id": "28763F",
@@ -2847,8 +2847,8 @@
    733
   ],
   "jp": "{spk}重装騎士　　\n「闘将どの　ここは　私におまかせを」\n{next}\n「このような　ザコに\n　闘将どのが　わざわざ\n　手を下す事も　ありますまい」\n",
-  "en": "{spk}重装騎士　　\n「Lord Warlord,\n leave this to me.」\n{next}\n「There's no need for\n you to trouble yourself\n with small fry like these.」\n",
-  "pages": "\"Lord Warlord, leave this to me.\" || \"There's no need for you to trouble yourself with small fry like these.\""
+  "en": "{spk}重装騎士　　\n「Warlord-dono,\n leave this to me.」\n{next}\n「There's no need for\n you to trouble yourself\n with small fry like these.」\n",
+  "pages": "\"Warlord-dono, leave this to me.\" || \"There's no need for you to trouble yourself with small fry like these.\""
  },
  {
   "id": "289139",
@@ -3369,8 +3369,8 @@
    791
   ],
   "jp": "{spk}マウザー　　\n「やれやれ　空の敵かい！\n　じょうとうだ！　このマウザー\n　どんな敵にも　ひるまないぜ！」\n",
-  "en": "{spk}マウザー　　\n「Well, well, enemies in the\n sky! Bring it on! I, Mauser,\n don't flinch at any enemy!」\n",
-  "pages": "\"Well, well, enemies in the sky! Bring it on! I, Mauser, don't flinch at any enemy!\""
+  "en": "{spk}マウザー　　\n「Well, well, enemies in the sky!\n Bring it on! The great Mauser\n doesn't flinch at any enemy!」\n",
+  "pages": "\"Well, well, enemies in the sky! Bring it on! The great Mauser doesn't flinch at any enemy!\""
  },
  {
   "id": "28AD3F",

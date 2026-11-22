@@ -23,8 +23,8 @@
    131
   ],
   "jp": "{spk}{FF28}\n「きたわ　{hero}！\n　盗賊どもの　お出迎えよ！」\n{next}\n「盗賊どもは　力は　弱いけど\n　数で　攻めてくるわ\n　囲まれないよう　気をつけて！」\n{next}\n「配置の時には　あなたと仲間の\n　行動や　回復する　タイミングを\n　決めることが　できるわ！」\n{next}\n「戦闘開始で　戦いは　始まるわよ！」\n{next}\n「そうそう　あなたの技は　強力だけど\n　ＳＰがなくなると　技も魔法も\n　使えなくなるから　注意してね！」\n{next}\n「さあ　配置で　布陣を決めて\n　盗賊なんか　やっつけましょう！」\n",
-  "en": "{spk}{FF28}\n「Here they come, {hero}!\n The bandits' welcoming party!」\n{next}\n「Bandits aren't strong, but\n they attack in numbers.」\n{next}\n「Be careful not to\n get surrounded!」\n{next}\n「In Deploy, you can decide\n when you and your allies\n act and when you heal!」\n{next}\n「The fight starts\n with Start Battle!」\n{next}\n「Oh, and your skills are\n powerful, but once you're\n out of SP you can't use skills」\n{next}\n「or magic, so be careful!」\n{next}\n「Now, set up your\n formation in Deploy and\n let's beat those bandits!」\n",
-  "pages": "\"Here they come, {hero}! The bandits' welcoming party!\" || \"Bandits aren't strong, but they attack in numbers.{next}Be careful not to get surrounded!\" || \"In Deploy, you can decide when you and your allies act and when you heal!\" || \"The fight starts with Start Battle!\" || \"Oh, and your skills are powerful, but once you're out of SP you can't use skills or magic, so be careful!\" || \"Now, set up your formation in Deploy and let's beat those bandits!\""
+  "en": "{spk}{FF28}\n「Here they come, {hero}!\n The bandits' welcoming party!」\n{next}\n「Bandits aren't strong, but\n they attack in numbers.」\n{next}\n「Be careful not to\n get surrounded!」\n{next}\n「In 'Set,' you can decide\n when you and your allies\n act and when you heal!」\n{next}\n「Choose 'Fight!' and\n the battle begins!」\n{next}\n「Oh, and your skills are\n powerful, but once you're\n out of SP you can't use skills」\n{next}\n「or magic, so be careful!」\n{next}\n「Now, choose 'Set' to\n arrange your formation,\n and let's beat those bandits!」\n",
+  "pages": "\"Here they come, {hero}! The bandits' welcoming party!\" || \"Bandits aren't strong, but they attack in numbers.{next}Be careful not to get surrounded!\" || \"In 'Set,' you can decide when you and your allies act and when you heal!\" || \"Choose 'Fight!' and the battle begins!\" || \"Oh, and your skills are powerful, but once you're out of SP you can't use skills or magic, so be careful!\" || \"Now, choose 'Set' to arrange your formation, and let's beat those bandits!\""
  },
  {
   "id": "290732",
@@ -284,8 +284,8 @@
    160
   ],
   "jp": "{spk}{FF1F}\n「そのうちな‥‥」\n",
-  "en": "{spk}{FF1F}\n「Some time...」\n",
-  "pages": "\"Some time...\""
+  "en": "{spk}{FF1F}\n「Maybe some other time...」\n",
+  "pages": "\"Maybe some other time...\""
  },
  {
   "id": "2916FA",
@@ -752,8 +752,8 @@
    212
   ],
   "jp": "{spk}敗残兵　　　\n「もう　王国も　終わりだ‥‥\n　オレは見た　再現だ\n　悪夢の時代の　再現だ‥‥」\n{next}\n「やみが　広がって　アンデッドが\n　じごくの　もうじゃ　どもが‥‥」\n{next}\n「ぐ　あ　あ　あ　う　！？」\n",
-  "en": "{spk}敗残兵　　　\n「The kingdom's finished... I\n saw it... It's happening again...」\n{next}\n「The age of nightmares\n is happening again...」\n{next}\n「The darkness is spreading,\n and the undead...\n the dead from hell...」\n{next}\n「Gh, a, a, a, uh, !?」\n",
-  "pages": "\"The kingdom's finished... I saw it... It's happening again...{next}The age of nightmares is happening again...\" || \"The darkness is spreading, and the undead... the dead from hell...\" || \"Gh, a, a, a, uh, !?\""
+  "en": "{spk}敗残兵　　　\n「The kingdom's finished... I\n saw it... It's happening again...」\n{next}\n「The age of nightmares\n is happening again...」\n{next}\n「The darkness is spreading,\n and the undead...\n the dead from hell...」\n{next}\n「Gh... aah... uhh...!?」\n",
+  "pages": "\"The kingdom's finished... I saw it... It's happening again...{next}The age of nightmares is happening again...\" || \"The darkness is spreading, and the undead... the dead from hell...\" || \"Gh... aah... uhh...!?\""
  },
  {
   "id": "292F10",
@@ -905,8 +905,8 @@
    229
   ],
   "jp": "「かんし所の兵士は　全めつしていた\n　本らいなら　そこで\n　オレの仕事は　終わりのはずだ‥‥」\n{next}\n「しかし　オレは　兵士が言い残した\n　さらに北　アンデッドの巣へ　向かう」\n{next}\n「兵士たちへの　とむらいでもない\n　まして　国のためでもない\n　だが　何かが　オレを動かしていた」\n",
-  "en": "「The soldiers at the watch\n post had been wiped out.」\n{next}\n「Normally that's where my\n job would have ended...」\n{next}\n「But I head further north, to\n the undead nest the soldier\n spoke of with his last breath.」\n{next}\n「Not to mourn the soldiers.\n Still less for the country. But\n something was driving me on.」\n",
-  "pages": "\"The soldiers at the watch post had been wiped out.{next}Normally that's where my job would have ended...\" || \"But I head further north, to the undead nest the soldier spoke of with his last breath.\" || \"Not to mourn the soldiers. Still less for the country. But something was driving me on.\""
+  "en": "「The soldiers at the watch\n post had been wiped out.」\n{next}\n「Normally that's where my\n job would have ended...」\n{next}\n「But I headed further\n north, to the undead nest\n the dying soldier spoke of.」\n{next}\n「Not to mourn the soldiers.\n Still less for the country. But\n something was driving me on.」\n",
+  "pages": "\"The soldiers at the watch post had been wiped out.{next}Normally that's where my job would have ended...\" || \"But I headed further north, to the undead nest the dying soldier spoke of.\" || \"Not to mourn the soldiers. Still less for the country. But something was driving me on.\""
  },
  {
   "id": "293646",
@@ -1607,8 +1607,8 @@
    307
   ],
   "jp": "{spk}{FF1F}\n「そのうちな‥‥」\n",
-  "en": "{spk}{FF1F}\n「Some time...」\n",
-  "pages": "\"Some time...\""
+  "en": "{spk}{FF1F}\n「Maybe some other time...」\n",
+  "pages": "\"Maybe some other time...\""
  },
  {
   "id": "295734",
@@ -2048,8 +2048,8 @@
    865
   ],
   "jp": "{spk}{FF28}\n「カワイくないの！」\n",
-  "en": "{spk}{FF28}\n「You're no fun at all!」\n",
-  "pages": "\"You're no fun at all!\""
+  "en": "{spk}{FF28}\n「What a brat!」\n",
+  "pages": "\"What a brat!\""
  },
  {
   "id": "296930",
@@ -4124,8 +4124,8 @@
    1857
   ],
   "jp": "{spk}アジャックス\n「さすが　不敗の聖騎士だな‥‥\n　だが　オレを　殺せなかったか？」\n{next}\n「‥‥ふふ　あいかわらずだ\n　十年前と　変わらず　お前は\n　はき気の　しそうな　あまちゃんだ」\n{next}\n「‥‥しかし\n　昔の　まんまだよ　お前は」\n",
-  "en": "{spk}アジャックス\n「As expected of the\n Undefeated Paladin...\n But couldn't you kill me?」\n{next}\n「...Heh. Same as ever. Just\n like ten years ago, you're\n so soft it makes me sick.」\n{next}\n「...But you haven't changed\n a bit from the old days.」\n",
-  "pages": "\"As expected of the Undefeated Paladin... But couldn't you kill me?\" || \"...Heh. Same as ever. Just like ten years ago, you're so soft it makes me sick.\" || \"...But you haven't changed a bit from the old days.\""
+  "en": "{spk}アジャックス\n「As expected of the\n Undefeated Paladin... But you\n couldn't kill me, could you?」\n{next}\n「...Heh. Same as ever. Just\n like ten years ago, you're\n so soft it makes me sick.」\n{next}\n「...But you haven't changed\n a bit from the old days.」\n",
+  "pages": "\"As expected of the Undefeated Paladin... But you couldn't kill me, could you?\" || \"...Heh. Same as ever. Just like ten years ago, you're so soft it makes me sick.\" || \"...But you haven't changed a bit from the old days.\""
  },
  {
   "id": "29C966",

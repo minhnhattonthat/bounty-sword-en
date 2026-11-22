@@ -347,8 +347,8 @@
    2296
   ],
   "jp": "{spk}リュウビ　　\n「‥‥く‥‥無念！」\n",
-  "en": "{spk}リュウビ　　\n「...Ngh... Regrettable!」\n",
-  "pages": "\"...Ngh... Regrettable!\""
+  "en": "{spk}リュウビ　　\n「...Ngh... Curses!」\n",
+  "pages": "\"...Ngh... Curses!\""
  },
  {
   "id": "2A8BF4",
@@ -842,8 +842,8 @@
    2402
   ],
   "jp": "{FF12}「アフロディーテの力が　やどった！\n　一定時間　あらゆる魔法攻撃を\n　完全に　防御する！」\n",
-  "en": "{FF12}「Aphrodite's power dwells\n within! Fully blocks all\n magic attacks for a time!」\n",
-  "pages": "\"Aphrodite's power dwells within! Fully blocks all magic attacks for a time!\""
+  "en": "{FF12}「The power of Aphrodite\n dwells within! Fully blocks\n all magic attacks for a time!」\n",
+  "pages": "\"The power of Aphrodite dwells within! Fully blocks all magic attacks for a time!\""
  },
  {
   "id": "2A9A20",
@@ -860,8 +860,8 @@
    2404
   ],
   "jp": "{FF12}「プルートゥの力が　やどった！\n　一定時間　受けたダメージを\n　二倍にして　加えた相手に返す！」\n",
-  "en": "{FF12}「Pluto's power dwells\n within! For a time, damage\n taken returns doubled!」\n",
-  "pages": "\"Pluto's power dwells within! For a time, damage taken returns doubled!\""
+  "en": "{FF12}「The power of Pluto dwells\n within! For a time, damage\n taken returns doubled!」\n",
+  "pages": "\"The power of Pluto dwells within! For a time, damage taken returns doubled!\""
  },
  {
   "id": "2A9AE4",
@@ -1328,8 +1328,8 @@
    1042
   ],
   "jp": "{spk}バアさん　　\n「みさきの石像を　わしは　毎日\n　おがんでいるのじゃ　だから\n　百をすぎても　元気なんじゃよ」\n",
-  "en": "{spk}バアさん　　\n「I pray to the stone statue\n on the cape every day.」\n{next}\n「That's why I'm still\n spry past a hundred.」\n",
-  "pages": "\"I pray to the stone statue on the cape every day.{next}That's why I'm still spry past a hundred.\""
+  "en": "{spk}バアさん　　\n「I pray to the stone\n statue on the cape\n every day, dearie.」\n{next}\n「That's why I'm still spry\n past a hundred, you see.」\n",
+  "pages": "\"I pray to the stone statue on the cape every day, dearie.{next}That's why I'm still spry past a hundred, you see.\""
  },
  {
   "id": "2AAFE2",
@@ -2246,8 +2246,8 @@
    1144
   ],
   "jp": "{spk}ロジャー　　\n「ついにきたぞ！　ここを\n　突破すれば　南エウロペア！\n　いよいよ　連邦の　ほんきょ地だ！」\n",
-  "en": "{spk}ロジャー　　\n「It's finally here! Break\n through here and it's\n southern Europea! The」\n{next}\n「Federation's home\n ground at last!」\n",
-  "pages": "\"It's finally here! Break through here and it's southern Europea! The Federation's home ground at last!\""
+  "en": "{spk}ロジャー　　\n「We've finally made it! Break\n through here and it's\n southern Europea! The」\n{next}\n「Federation's home\n ground at last!」\n",
+  "pages": "\"We've finally made it! Break through here and it's southern Europea! The Federation's home ground at last!\""
  },
  {
   "id": "2ADA06",

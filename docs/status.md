@@ -2,19 +2,31 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session ad). Gate = `python -X utf8 tools/release.py` (new): it now stops at
-  **jp_left** (8 C4 unit names, polish.md last line). After that it will stop at, in order: qa_gate on
-  `work/qa/manifest.tsv` (build changed: 2000d2976f73, tour ran on d7d9d1892cb6 -> re-tour with `warp_all.py
-  --states --sheet` + read-only verdicts, or `qa_gate.py waive` once the two changed lines are seen on screen),
-  story manifest (no verdicts yet), textcover (2 new ids 007645 / 0413E7 not yet shown), polish.md (23 unticked).
-  **Next, in this order:** (1) C4 names lead; (2) polish.md lines (text ones first; each changes the build, so
-  batch them before the re-tour); (3) story pass: chapter files exist (`tools/story_chapters.py` -> 18 files
+- **Phase:** 9. Release in progress (session ae). Gate = `python -X utf8 tools/release.py`. Done this session:
+  jp_left 0 (C4 names), polish.md all ticked (build 647164b684bb). It will now stop at, in order: qa_gate on
+  `work/qa/manifest.tsv` (build changed since the d7d9d1892cb6 tour: ~45 dialogue entries, descriptions, ceremony,
+  level-up, an item name, 11 name records -> full re-tour with `warp_all.py --states --sheet` + read-only verdicts),
+  story manifest (no verdicts yet), textcover (007645 / 0413E7 not yet shown). **Next, in this order:** (1)
+  story pass (below); (2) re-tour + verdicts + textcover_all; (3) release.py to a zip. Story pass: chapter files exist (`tools/story_chapters.py` -> 18 files
   `work/qa/story/chapters/`, manifest `work/qa/story/manifest.tsv` initialised); codex is out of quota until
   2026-11-26 10:32, so before then read them yourself in a fresh read-only pass, one chapter at a time
   (~35 KB each: Read with offset/limit), brief = `$SKILL/assets/story-reviewer-brief.md`, write
   `work/qa/story/verdicts/<chapter id>.tsv` (`id<TAB>ok|issue<TAB>note`, id = file name without .txt), Minors to
   polish.md; re-run `story_chapters.py` + `qa_gate.py init` after text fixes and add `fixed` lines for changed
-  chapters; (4) re-tour + textcover_all; (5) release.py to a zip. Never `gh release create`.
+  chapters (session ae changed text in most chapters: re-run `story_chapters.py` + `qa_gate.py init` FIRST). Never
+  `gh release create`.
+- **Session 2026-11-23ae (phase 9, jp_left + polish):** (a) **C4 names**: a whole-ROM scan for script op 16
+  (battle-setup name override: `16 slot` + 6-word name) and op 64 (`64 slot` + name; C4:E85C.. chain `62 xx
+  ptr24` + `64 slot name`, and C4:E3CA) found 11 JP name records the battle_setup parser misses (043F2F 海兵隊長,
+  044E40 スカルナイト "Skull", 044F91, 04695F, 04E3CC, 04E863..04E8B3): all in `script/default_names.tsv`. Not seen
+  on screen (no scene known). (b) **polish.md all ticked**: ~45 dialogue fixes (repage batches `work/tl/pol*.tsv`),
+  British spelling (D15), tutorial uses the real labels 'Set'/'Fight!'/'Inf', glossary forms for Immortal and the
+  two mountain labels; menu-grid abbreviations and engine B letter gaps deferred as README known issues (D16).
+  **Bug fixed** (seen in game): 25C52E page 5's 4th line spilled into its own box as `""Our battle is over."`.
+  (c) New **`tools/show.py`** (entries by id / `--grep`: JP page view + English pages) and
+  **`tools/debug/msgpages.py`** (one master message page by page: `msg` warp + KEEP + A every 90 frames, sheet in
+  `work/qa/msg_<id>/`; use `sheet.py --changed 0.05 --from 1100` on it). (d) `jp_known.py --write` after the text
+  changes (4 stale master tails). check 61 passed, lint 0, smoke ok, jp_left 0.
 - **Session 2026-11-23ad (phase 9 start):** (a) **Live JP found by jp_left:** 「よりしろの呪符が効果を発揮した！」 at
   0x007645 (called `43 4576C0` at C0:7515) sat inside a battle_prompts_b `data` entry: side tables in `RELOCATE`
   now cut at every pointer target whose caller byte is a relocate opcode (`script_text.side_entries`) -> new text
@@ -482,5 +494,6 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Open bugs:** shop lines not all read in game yet (to-do 3); scenario warps ignore keys queued after SCENE_OK in
   shops and battle menus (debug tool; a state run takes them, session ab). (C4 battle-setup names: fixed in
   session u.)
-- **Waiting on the user:** (not blocking) D14 shop headers "Arms 1" / "Item 1" (3-cell labels so they stay centred);
+- **Waiting on the user:** (not blocking) D15 British spelling and D16 releasing with the abbreviated menu labels
+  and engine B letter gaps listed as known issues: say if either should change. (not blocking) D14 shop headers "Arms 1" / "Item 1" (3-cell labels so they stay centred);
   say if you'd rather have "Weapons"/"Items" off-centre. (Keyboard input in Mesen not checked by hand: headless session.)

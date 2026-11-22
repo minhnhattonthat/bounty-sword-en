@@ -32,8 +32,8 @@
    2179
   ],
   "jp": "{spk}{FF28}\n「ここは　ブラックバーンの山々よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ウワサによると　この地は\n　盗賊どもの　すみかに\n　なっているって　話だけど‥‥」\n{next}\n「いくら　あなたでも　仲間が\n　少なくとも　二人はいないと\n　苦戦するかも　知れないわよ！」\n",
-  "en": "{spk}{FF28}\n「These are the Blackburn\n mountains. We haven't\n cleared them yet.」\n{next}\n「Rumor has it this place has\n turned into a bandit hideout...」\n{next}\n「Even you might have a\n hard time of it without\n at least two allies along!」\n",
-  "pages": "\"These are the Blackburn mountains. We haven't cleared them yet.\" || \"Rumor has it this place has turned into a bandit hideout...\" || \"Even you might have a hard time of it without at least two allies along!\""
+  "en": "{spk}{FF28}\n「These are the Blackburn\n Mountains. We haven't\n cleared them yet.」\n{next}\n「Rumour has it this place has\n turned into a bandit hideout...」\n{next}\n「Even you might have a\n hard time of it without\n at least two allies along!」\n",
+  "pages": "\"These are the Blackburn Mountains. We haven't cleared them yet.\" || \"Rumour has it this place has turned into a bandit hideout...\" || \"Even you might have a hard time of it without at least two allies along!\""
  },
  {
   "id": "1E02EA",
@@ -41,8 +41,8 @@
    2180
   ],
   "jp": "{spk}{FF28}\n「ここは　ブラックバーンの山々」\n{next}\n「そう言えば　ここでは\n　盗賊のボスを　倒したのよね！」\n",
-  "en": "{spk}{FF28}\n「These are the\n Blackburn mountains.」\n{next}\n「Oh, right, this is where\n we beat the bandit boss!」\n",
-  "pages": "\"These are the Blackburn mountains.\" || \"Oh, right, this is where we beat the bandit boss!\""
+  "en": "{spk}{FF28}\n「These are the\n Blackburn Mountains.」\n{next}\n「Oh, right, this is where\n we beat the bandit boss!」\n",
+  "pages": "\"These are the Blackburn Mountains.\" || \"Oh, right, this is where we beat the bandit boss!\""
  },
  {
   "id": "1E0350",
@@ -248,8 +248,8 @@
    2202
   ],
   "jp": "{spk}{FF28}\n「ここは　エルツの大平原よ」\n{next}\n「ここには　{hero}の昔の\n　思い出が　うめてあるのね‥‥」\n",
-  "en": "{spk}{FF28}\n「These are the Erz Plains.」\n{next}\n「Old memories of {hero} are\n buried here, aren't they...」\n",
-  "pages": "\"These are the Erz Plains.\" || \"Old memories of {hero} are buried here, aren't they...\""
+  "en": "{spk}{FF28}\n「These are the Erz Plains.」\n{next}\n「{hero}, your old memories\n are buried here, aren't they...」\n",
+  "pages": "\"These are the Erz Plains.\" || \"{hero}, your old memories are buried here, aren't they...\""
  },
  {
   "id": "1E11E0",
@@ -293,8 +293,8 @@
    2207
   ],
   "jp": "{spk}{FF28}\n「ここは　イベリアのみさきよ\n　まだ　この地は　クリアしてないわ」\n{next}\n「この場所に　何があるか\n　今の所　わからないわね‥‥」\n{next}\n「ウワサだと　連邦の部隊を\n　見た‥‥っていう　事らしいけど」\n",
-  "en": "{spk}{FF28}\n「This is Cape Iberia. We\n haven't cleared it yet.」\n{next}\n「Right now we don't\n know what's out here...」\n{next}\n「Rumor has it someone saw\n a Federation unit, though.」\n",
-  "pages": "\"This is Cape Iberia. We haven't cleared it yet.\" || \"Right now we don't know what's out here...\" || \"Rumor has it someone saw a Federation unit, though.\""
+  "en": "{spk}{FF28}\n「This is Cape Iberia. We\n haven't cleared it yet.」\n{next}\n「Right now we don't\n know what's out here...」\n{next}\n「Rumour has it someone saw\n a Federation unit, though.」\n",
+  "pages": "\"This is Cape Iberia. We haven't cleared it yet.\" || \"Right now we don't know what's out here...\" || \"Rumour has it someone saw a Federation unit, though.\""
  },
  {
   "id": "1E14A0",
@@ -329,8 +329,8 @@
    2211
   ],
   "jp": "{spk}{FF28}\n「ここは　パドヴァ地方よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ウワサによると　ここは\n　魔物の巣に　なっているみたい」\n",
-  "en": "{spk}{FF28}\n「This is the Padova region.\n We haven't cleared it yet.」\n{next}\n「Rumor has it this place has\n become a monster nest.」\n",
-  "pages": "\"This is the Padova region. We haven't cleared it yet.\" || \"Rumor has it this place has become a monster nest.\""
+  "en": "{spk}{FF28}\n「This is the Padova region.\n We haven't cleared it yet.」\n{next}\n「Rumour has it this place\n has become a monster nest.」\n",
+  "pages": "\"This is the Padova region. We haven't cleared it yet.\" || \"Rumour has it this place has become a monster nest.\""
  },
  {
   "id": "1E1786",
@@ -365,8 +365,8 @@
    2215
   ],
   "jp": "{spk}{FF28}\n「ここは　紅の湖よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「赤くそまった　湖なんだけど\n　悪いウワサしか　聞かないわね‥‥」\n",
-  "en": "{spk}{FF28}\n「This is Crimson Lake. We\n haven't cleared it yet.」\n{next}\n「It's a lake stained red,\n and I hear nothing but\n bad rumors about it...」\n",
-  "pages": "\"This is Crimson Lake. We haven't cleared it yet.\" || \"It's a lake stained red, and I hear nothing but bad rumors about it...\""
+  "en": "{spk}{FF28}\n「This is Crimson Lake. We\n haven't cleared it yet.」\n{next}\n「It's a lake stained red,\n and I hear nothing but\n bad rumours about it...」\n",
+  "pages": "\"This is Crimson Lake. We haven't cleared it yet.\" || \"It's a lake stained red, and I hear nothing but bad rumours about it...\""
  },
  {
   "id": "1E1956",
@@ -428,8 +428,8 @@
    2221
   ],
   "jp": "{spk}{FF28}\n「ここは　王都ロムルスよ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ロムルスは　十年前の大戦のあと\n　ラインメタル王国と\n　手をにぎった　強大な軍事国家」\n{next}\n「だから　この戦いでは\n　連邦軍に　まっさきに\n　ほろぼされて　しまったのね」\n{next}\n「その王都の　ロムルス‥‥\n　ウワサによると　今では\n　魔物の巣に　なっているみたい」\n",
-  "en": "{spk}{FF28}\n「This is the royal\n city of Romulus. We\n haven't cleared it yet.」\n{next}\n「After the great war ten\n years ago, Romulus became a\n mighty military power allied」\n{next}\n「with the Kingdom\n of Rheinmetall.」\n{next}\n「That's why the Federation\n army destroyed it\n first in this war.」\n{next}\n「Romulus, that royal city...\n Rumor has it it's become\n a monster nest now.」\n",
-  "pages": "\"This is the royal city of Romulus. We haven't cleared it yet.\" || \"After the great war ten years ago, Romulus became a mighty military power allied with the Kingdom of Rheinmetall.\" || \"That's why the Federation army destroyed it first in this war.\" || \"Romulus, that royal city... Rumor has it it's become a monster nest now.\""
+  "en": "{spk}{FF28}\n「This is the royal\n city of Romulus. We\n haven't cleared it yet.」\n{next}\n「After the great war ten\n years ago, Romulus became a\n mighty military power allied」\n{next}\n「with the Kingdom\n of Rheinmetall.」\n{next}\n「That's why the Federation\n army destroyed it\n first in this war.」\n{next}\n「Romulus, that royal city...\n Rumour has it it's become\n a monster nest now.」\n",
+  "pages": "\"This is the royal city of Romulus. We haven't cleared it yet.\" || \"After the great war ten years ago, Romulus became a mighty military power allied with the Kingdom of Rheinmetall.\" || \"That's why the Federation army destroyed it first in this war.\" || \"Romulus, that royal city... Rumour has it it's become a monster nest now.\""
  },
  {
   "id": "1E1EB4",
@@ -545,8 +545,8 @@
    2234
   ],
   "jp": "{spk}{FF28}\n「ここは　南の砂漠よ」\n{next}\n「ここには　たびの商人が\n　よく　くるという　ウワサよ」\n",
-  "en": "{spk}{FF28}\n「This is the South Desert.」\n{next}\n「Rumor has it traveling\n merchants often\n come by here.」\n",
-  "pages": "\"This is the South Desert.\" || \"Rumor has it traveling merchants often come by here.\""
+  "en": "{spk}{FF28}\n「This is the South Desert.」\n{next}\n「Rumour has it\n travelling merchants\n often come by here.」\n",
+  "pages": "\"This is the South Desert.\" || \"Rumour has it travelling merchants often come by here.\""
  },
  {
   "id": "1E265A",
@@ -554,8 +554,8 @@
    2235
   ],
   "jp": "{spk}{FF28}\n「ここは　アバダンの川よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ウワサによると　ここには\n　手強い敵が　いるらしいけど‥‥」\n",
-  "en": "{spk}{FF28}\n「This is the Abadan River.\n We haven't cleared it yet.」\n{next}\n「Rumor has it there's\n a tough enemy here...」\n",
-  "pages": "\"This is the Abadan River. We haven't cleared it yet.\" || \"Rumor has it there's a tough enemy here...\""
+  "en": "{spk}{FF28}\n「This is the Abadan River.\n We haven't cleared it yet.」\n{next}\n「Rumour has it there's\n a tough enemy here...」\n",
+  "pages": "\"This is the Abadan River. We haven't cleared it yet.\" || \"Rumour has it there's a tough enemy here...\""
  },
  {
   "id": "1E26E4",
@@ -590,8 +590,8 @@
    2239
   ],
   "jp": "{spk}{FF28}\n「ここは　アトラス山脈の東よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ここには　連邦の大部隊が\n　いるという　ウワサだけど‥‥」\n{next}\n「ここは　南エウロペア‥‥\n　連邦の部隊は　どこにいても\n　おかしく　ないんですものね」\n",
-  "en": "{spk}{FF28}\n「This is the east of the\n Atlas Mountains. We\n haven't cleared it yet.」\n{next}\n「Rumor has it there's a big\n Federation force here...」\n{next}\n「This is southern Europea...\n Federation units could\n be anywhere, after all.」\n",
-  "pages": "\"This is the east of the Atlas Mountains. We haven't cleared it yet.\" || \"Rumor has it there's a big Federation force here...\" || \"This is southern Europea... Federation units could be anywhere, after all.\""
+  "en": "{spk}{FF28}\n「This is the east of the\n Atlas Mountains. We\n haven't cleared it yet.」\n{next}\n「Rumour has it there's a\n big Federation force here...」\n{next}\n「This is southern Europea...\n Federation units could\n be anywhere, after all.」\n",
+  "pages": "\"This is the east of the Atlas Mountains. We haven't cleared it yet.\" || \"Rumour has it there's a big Federation force here...\" || \"This is southern Europea... Federation units could be anywhere, after all.\""
  },
  {
   "id": "1E2970",
@@ -852,8 +852,8 @@
    2269
   ],
   "jp": "{spk}{FF28}\n「ここは　ミッドガルドの街よ！」\n{next}\n「この街は　反乱軍の　アジトらしくて\n　彼らと　いっしょじゃないと\n　入れない‥‥　っていう　ウワサよ」\n",
-  "en": "{spk}{FF28}\n「This is the town of Midgard!」\n{next}\n「Rumor says this is the rebel\n hideout. You can't get in\n unless you're with them.」\n",
-  "pages": "\"This is the town of Midgard!\" || \"Rumor says this is the rebel hideout. You can't get in unless you're with them.\""
+  "en": "{spk}{FF28}\n「This is the town of Midgard!」\n{next}\n「Rumour says this is the\n rebel hideout. You can't get\n in unless you're with them.」\n",
+  "pages": "\"This is the town of Midgard!\" || \"Rumour says this is the rebel hideout. You can't get in unless you're with them.\""
  },
  {
   "id": "1E3D1C",
@@ -1068,8 +1068,8 @@
    1635
   ],
   "jp": "{spk}ファウスト　\n　神々の兵器は　われらが　使うには\n　あまりに　早すぎた\n　だが　気づくのは　遅すぎた\n{next}\n　子らよ　いつの日にか　同じ\n　あやまちを　くり返さぬよう\n　子らよ　黄道十二神の　指輪をたくす\n{next}\n　子らよ　約束の地で　指輪を\n　石像へ変え　封印するがいい\n　子らよ　なんじらの　子らのために\n{FF04}{end}\n",
-  "en": "{spk}ファウスト　\nThe weapons of the gods came\nfar too soon for us to wield,\nbut we realized it far too late.\n{next}\nChildren, so that you may\nnever repeat the same\nmistake, children, we entrust\n{next}\nto you the rings\nof the Zodiac Gods.\n{next}\nChildren, in the promised land,\nturn the rings into statues and\nseal them away. Children, for\n{next}\nthe sake of your own children.\n{FF04}{end}\n",
-  "pages": "The weapons of the gods came far too soon for us to wield, but we realized it far too late. || Children, so that you may never repeat the same mistake, children, we entrust to you the rings of the Zodiac Gods. || Children, in the promised land, turn the rings into statues and seal them away. Children, for the sake of your own children."
+  "en": "{spk}ファウスト　\nThe weapons of the gods came\nfar too soon for us to wield,\nbut we realised it far too late.\n{next}\nChildren, so that you may\nnever repeat the same\nmistake, children, we entrust\n{next}\nto you the rings\nof the Zodiac Gods.\n{next}\nChildren, in the promised land,\nturn the rings into statues and\nseal them away. Children, for\n{next}\nthe sake of your own children.\n{FF04}{end}\n",
+  "pages": "The weapons of the gods came far too soon for us to wield, but we realised it far too late. || Children, so that you may never repeat the same mistake, children, we entrust to you the rings of the Zodiac Gods. || Children, in the promised land, turn the rings into statues and seal them away. Children, for the sake of your own children."
  },
  {
   "id": "1E4774",
@@ -1662,8 +1662,8 @@
    1701
   ],
   "jp": "{spk}{FF28}\n「ウワサ通り　とんでもない\n　大きさの　火竜だわ！」\n",
-  "en": "{spk}{FF28}\n「Just like the rumors\n said, that's one\n enormous fire dragon!」\n",
-  "pages": "\"Just like the rumors said, that's one enormous fire dragon!\""
+  "en": "{spk}{FF28}\n「Just like the rumours\n said, that's one\n enormous fire dragon!」\n",
+  "pages": "\"Just like the rumours said, that's one enormous fire dragon!\""
  },
  {
   "id": "1E6B48",

@@ -419,8 +419,8 @@
    1529
   ],
   "jp": "{spk}バアさん　　\n「ここから　ずっと　南へ進むと\n　やがて　廃墟の半島と\n　よばれる　みさきへ　たどり着く」\n{next}\n「連邦の中心　オルドバよりも\n　さらに古い　はるかな昔‥‥」\n{next}\n「廃墟の半島では　とんでもない\n　力を持った　文明が\n　栄えておった‥‥という話じゃ」\n{next}\n「その文明も　今の連邦と　同じく\n　神々の兵器を　ほり出したそうじゃが\n　使い方を　あやまったらしい‥‥」\n{next}\n「文明は　わずか一夜で　消えて\n　今では　そのざんがいを\n　残すのみ‥‥となったのじゃ」\n",
-  "en": "{spk}バアさん　　\n「Head far south from here,\n and you'll come to a cape\n called Ruin Peninsula.」\n{next}\n「Long, long ago, even\n before Ordoba, the\n heart of the Federation...」\n{next}\n「they say a civilization\n with tremendous power\n flourished on Ruin Peninsula...」\n{next}\n「Like the Federation today,\n that civilization dug up the\n weapons of the gods, but it」\n{next}\n「seems they used\n them wrong...」\n{next}\n「The civilization vanished\n in a single night, and now\n only its ruins remain...」\n",
-  "pages": "\"Head far south from here, and you'll come to a cape called Ruin Peninsula.\" || \"Long, long ago, even before Ordoba, the heart of the Federation...\" || \"they say a civilization with tremendous power flourished on Ruin Peninsula...\" || \"Like the Federation today, that civilization dug up the weapons of the gods, but it seems they used them wrong...\" || \"The civilization vanished in a single night, and now only its ruins remain...\""
+  "en": "{spk}バアさん　　\n「Head far south from here,\n dearie, and you'll come to a\n cape they call Ruin Peninsula.」\n{next}\n「Long, long ago, even\n before Ordoba, the\n heart of the Federation...」\n{next}\n「a civilization of tremendous\n power flourished on Ruin\n Peninsula, so they say...」\n{next}\n「Like the Federation today,\n that civilization dug up the\n weapons of the gods, but it」\n{next}\n「seems they used\n them wrong...」\n{next}\n「The civilization vanished in\n a single night, and now only\n its ruins remain, dearie...」\n",
+  "pages": "\"Head far south from here, dearie, and you'll come to a cape they call Ruin Peninsula.\" || \"Long, long ago, even before Ordoba, the heart of the Federation...\" || \"a civilization of tremendous power flourished on Ruin Peninsula, so they say...\" || \"Like the Federation today, that civilization dug up the weapons of the gods, but it seems they used them wrong...\" || \"The civilization vanished in a single night, and now only its ruins remain, dearie...\""
  },
  {
   "id": "216008",
@@ -428,8 +428,8 @@
    1530
   ],
   "jp": "{spk}バアさん　　\n「機神じゃと？　あんな物は\n　暗黒十二神の　力の\n　わずかな　一部でしかない」\n{next}\n「言ってみれば　真の　最終兵器の\n　力を　まねした　ささやかな\n　オモチャみたいな物じゃ‥‥」\n{next}\n「最終兵器は　暗黒十二神が\n　束ねられた　真の姿\n　恐るべき　はかいの神なのじゃ」\n{next}\n「はかいの神は　神の名を持つ　悪魔\n　この世の　あらゆる物を\n　跡形もなく　はかいしつくす‥‥」\n",
-  "en": "{spk}バアさん　　\n「Machine Gods, you say?」\n{next}\n「Those things are only a\n tiny part of the power\n of the Twelve Dark Gods.」\n{next}\n「You might call them little\n toys that ape the power of\n the true ultimate weapon...」\n{next}\n「The ultimate weapon is the\n true form of the Twelve\n Dark Gods bound together, a」\n{next}\n「fearsome god of destruction.」\n{next}\n「The god of destruction is a\n devil bearing a god's name. It\n will destroy everything in」\n{next}\n「this world without a trace...」\n",
-  "pages": "\"Machine Gods, you say?{next}Those things are only a tiny part of the power of the Twelve Dark Gods.\" || \"You might call them little toys that ape the power of the true ultimate weapon...\" || \"The ultimate weapon is the true form of the Twelve Dark Gods bound together, a fearsome god of destruction.\" || \"The god of destruction is a devil bearing a god's name. It will destroy everything in this world without a trace...\""
+  "en": "{spk}バアさん　　\n「Machine Gods, you say?」\n{next}\n「Heh, those things are only\n a tiny part of the power of\n the Twelve Dark Gods, dearie.」\n{next}\n「You might call them little\n toys that ape the power of\n the true ultimate weapon...」\n{next}\n「The ultimate weapon is the\n true form of the Twelve\n Dark Gods bound together, a」\n{next}\n「fearsome god of destruction.」\n{next}\n「The god of destruction is a\n devil bearing a god's name. It\n will destroy everything in」\n{next}\n「this world without a trace...」\n",
+  "pages": "\"Machine Gods, you say?{next}Heh, those things are only a tiny part of the power of the Twelve Dark Gods, dearie.\" || \"You might call them little toys that ape the power of the true ultimate weapon...\" || \"The ultimate weapon is the true form of the Twelve Dark Gods bound together, a fearsome god of destruction.\" || \"The god of destruction is a devil bearing a god's name. It will destroy everything in this world without a trace...\""
  },
  {
   "id": "21618A",
@@ -536,8 +536,8 @@
    1542
   ],
   "jp": "{spk}{FF1F}\n「狙撃にだけ　気をつけろ\n　当たらなければ\n　どうという　事はない！」\n",
-  "en": "{spk}{FF1F}\n「Just watch out for the\n snipers. If they don't\n hit you, it's nothing!」\n",
-  "pages": "\"Just watch out for the snipers. If they don't hit you, it's nothing!\""
+  "en": "{spk}{FF1F}\n「Just watch out for\n the snipers. Can't hurt\n you if it doesn't hit!」\n",
+  "pages": "\"Just watch out for the snipers. Can't hurt you if it doesn't hit!\""
  },
  {
   "id": "2165F4",
@@ -923,8 +923,8 @@
    1585
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　血だ！\n　ヤツらの　ヨロイからは\n　血の　においが　する！」\n",
-  "en": "{spk}ツキカゲ　　\n「Heh heh heh... Blood! Their\n armor reeks of blood!」\n",
-  "pages": "\"Heh heh heh... Blood! Their armor reeks of blood!\""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... Blood! Their\n armour reeks of blood!」\n",
+  "pages": "\"Heh heh heh... Blood! Their armour reeks of blood!\""
  },
  {
   "id": "21772E",
