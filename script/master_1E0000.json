@@ -50,8 +50,8 @@
    2181
   ],
   "jp": "{spk}{FF28}\n「ここは　辺境の　かんし所よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ここの　かんし所は　辺境に住む\n　盗賊や　モンスターから\n　王国首都を　守っているのよね」\n{next}\n「そうそう　このあたりは\n　沼地で　歩きにくいらしいわ」\n",
-  "en": "{spk}{FF28}\n「This is the Frontier Post. We\n haven't cleared it yet.」\n{next}\n「This post protects the royal\n capital from the bandits and\n monsters living out on the」\n{next}\n「frontier.」\n{next}\n「Oh, and I hear the ground\n around here is marshy and\n hard to walk on.」\n",
-  "pages": "\"This is the Frontier Post. We haven't cleared it yet.\" || \"This post protects the royal capital from the bandits and monsters living out on the frontier.\" || \"Oh, and I hear the ground around here is marshy and hard to walk on.\""
+  "en": "{spk}{FF28}\n「This is the Frontier Post. We\n haven't cleared it yet.」\n{next}\n「This post guards the royal\n capital from frontier bandits\n and monsters, you know.」\n{next}\n「Oh, and I hear the ground\n around here is marshy and\n hard to walk on.」\n",
+  "pages": "\"This is the Frontier Post. We haven't cleared it yet.\" || \"This post guards the royal capital from frontier bandits and monsters, you know.\" || \"Oh, and I hear the ground around here is marshy and hard to walk on.\""
  },
  {
   "id": "1E043A",
@@ -68,8 +68,8 @@
    2183
   ],
   "jp": "{spk}{FF28}\n「ここは　アンデッドの巣よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「ここは　誰もが近づかない\n　アンデッドたちが　住むという場所」\n{next}\n「沼ばっかりで　歩きにくいし\n　用がないのなら　あんまり\n　行かない方が　いいと思うけど‥‥」\n",
-  "en": "{spk}{FF28}\n「This is the Undead Nest. We\n haven't cleared it yet.」\n{next}\n「Nobody goes near this place.\n They say the undead live\n here.」\n{next}\n「It's all swamp and hard\n going, so if you've got no\n business there, I'd rather we」\n{next}\n「stayed away...」\n",
-  "pages": "\"This is the Undead Nest. We haven't cleared it yet.\" || \"Nobody goes near this place. They say the undead live here.\" || \"It's all swamp and hard going, so if you've got no business there, I'd rather we stayed away...\""
+  "en": "{spk}{FF28}\n「This is the Undead Nest. We\n haven't cleared it yet.」\n{next}\n「Nobody goes near this place.\n They say the undead live\n here.」\n{next}\n「It's all swamp and hard going.\n If we've no business there,\n I'd rather we stayed away...」\n",
+  "pages": "\"This is the Undead Nest. We haven't cleared it yet.\" || \"Nobody goes near this place. They say the undead live here.\" || \"It's all swamp and hard going. If we've no business there, I'd rather we stayed away...\""
  },
  {
   "id": "1E059E",
@@ -104,8 +104,8 @@
    2187
   ],
   "jp": "{spk}{FF28}\n「ここは　水晶の入り江よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「昔は　たくさんの水晶が\n　とれたらしいけど　近ごろは\n　一つも　水晶が　ないみたい」\n{next}\n「何だか　悪い事が起きる\n　前ぶれじゃなきゃ　いいんだけど」\n",
-  "en": "{spk}{FF28}\n「This is Crystal Cove. We\n haven't cleared it yet.」\n{next}\n「They say lots of crystals\n used to be found here, but\n lately there don't seem to」\n{next}\n「be any at all.」\n{next}\n「I just hope it isn't an omen\n of something bad...」\n",
-  "pages": "\"This is Crystal Cove. We haven't cleared it yet.\" || \"They say lots of crystals used to be found here, but lately there don't seem to be any at all.\" || \"I just hope it isn't an omen of something bad...\""
+  "en": "{spk}{FF28}\n「This is Crystal Cove. We\n haven't cleared it yet.」\n{next}\n「Lots of crystals used to be\n found here, they say, but\n lately there are none at all.」\n{next}\n「I just hope it isn't an omen\n of something bad...」\n",
+  "pages": "\"This is Crystal Cove. We haven't cleared it yet.\" || \"Lots of crystals used to be found here, they say, but lately there are none at all.\" || \"I just hope it isn't an omen of something bad...\""
  },
  {
   "id": "1E08B0",
@@ -113,8 +113,8 @@
    2188
   ],
   "jp": "{spk}{FF28}\n「ここは　水晶の入り江よ」\n{next}\n「ここで　{FF31}と\n　はじめて　であったのね！」\n{next}\n「そういえば　ここには\n　民家が　あったはずだわ！」\n{next}\n「まだ　行ってないんなら\n　たずねてみたら？　何か\n　情報が　聞けるかも‥‥？」\n",
-  "en": "{spk}{FF28}\n「This is Crystal Cove.」\n{next}\n「This is where we first met\n {FF31}!」\n{next}\n「Oh, that's right, there should\n be a house around here!」\n{next}\n「If you haven't been there\n yet, why not pay a visit? We\n might hear something」\n{next}\n「useful...?」\n",
-  "pages": "\"This is Crystal Cove.\" || \"This is where we first met {FF31}!\" || \"Oh, that's right, there should be a house around here!\" || \"If you haven't been there yet, why not pay a visit? We might hear something useful...?\""
+  "en": "{spk}{FF28}\n「This is Crystal Cove.」\n{next}\n「This is where we first met\n {FF31}!」\n{next}\n「Oh, that's right, there should\n be a house around here!」\n{next}\n「If you haven't been yet, why\n not visit? We might hear\n something useful...?」\n",
+  "pages": "\"This is Crystal Cove.\" || \"This is where we first met {FF31}!\" || \"Oh, that's right, there should be a house around here!\" || \"If you haven't been yet, why not visit? We might hear something useful...?\""
  },
  {
   "id": "1E0994",
@@ -122,8 +122,8 @@
    2189
   ],
   "jp": "{spk}{FF28}\n「ここは　島国のラインメタルから\n　エウロペア大陸に　向かう\n　ゆいいつの　出入り口なのよ！」\n{next}\n「‥‥でも　こんな戦争の中で\n　船は　出ているのかしら‥‥？」\n",
-  "en": "{spk}{FF28}\n「This is the only gateway\n from the island kingdom of\n Rheinmetall to the continent」\n{next}\n「of Europea!」\n{next}\n「...But with this war going on,\n I wonder if any ships are\n still sailing...」\n",
-  "pages": "\"This is the only gateway from the island kingdom of Rheinmetall to the continent of Europea!\" || \"...But with this war going on, I wonder if any ships are still sailing...\""
+  "en": "{spk}{FF28}\n「This is the only way from the\n island kingdom of Rheinmetall\n to mainland Europea!」\n{next}\n「...But with this war going on, I\n wonder if any ships are still\n sailing...」\n",
+  "pages": "\"This is the only way from the island kingdom of Rheinmetall to mainland Europea!\" || \"...But with this war going on, I wonder if any ships are still sailing...\""
  },
  {
   "id": "1E0A3E",
@@ -176,8 +176,8 @@
    2195
   ],
   "jp": "{spk}{FF28}\n「ここは　アーデンの森よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「そうそう　たしか　ここは\n　森ばかりだから　気をつけないと\n　見えない敵に　襲われちゃうわよ」\n{next}\n「精霊水を　持っていかなきゃ！」\n",
-  "en": "{spk}{FF28}\n「This is Arden Forest. We\n haven't cleared it yet.」\n{next}\n「Oh, right, it's all forest here,\n so if we're not careful,\n enemies we can't see will」\n{next}\n「ambush us.」\n{next}\n「We have to bring Spirit\n Water!」\n",
-  "pages": "\"This is Arden Forest. We haven't cleared it yet.\" || \"Oh, right, it's all forest here, so if we're not careful, enemies we can't see will ambush us.\" || \"We have to bring Spirit Water!\""
+  "en": "{spk}{FF28}\n「This is Arden Forest. We\n haven't cleared it yet.」\n{next}\n「Oh, right, it's all forest here.\n If we're not careful, unseen\n enemies will ambush us!」\n{next}\n「We have to bring Spirit\n Water!」\n",
+  "pages": "\"This is Arden Forest. We haven't cleared it yet.\" || \"Oh, right, it's all forest here. If we're not careful, unseen enemies will ambush us!\" || \"We have to bring Spirit Water!\""
  },
  {
   "id": "1E0E0A",
@@ -311,8 +311,8 @@
    2209
   ],
   "jp": "{spk}{FF28}\n「ここは　エリダヌス川よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「アーデンの森を　つらぬく　この川は\n　昔から　アンデッドたちの\n　住みかとして　知られているわ」\n",
-  "en": "{spk}{FF28}\n「This is the Eridanus River. We\n haven't cleared it yet.」\n{next}\n「This river runs through\n Arden Forest and has long\n been known as a home of」\n{next}\n「the undead.」\n",
-  "pages": "\"This is the Eridanus River. We haven't cleared it yet.\" || \"This river runs through Arden Forest and has long been known as a home of the undead.\""
+  "en": "{spk}{FF28}\n「This is the Eridanus River. We\n haven't cleared it yet.」\n{next}\n「This river runs through Arden\n Forest. It's long been known\n as a home of the undead.」\n",
+  "pages": "\"This is the Eridanus River. We haven't cleared it yet.\" || \"This river runs through Arden Forest. It's long been known as a home of the undead.\""
  },
  {
   "id": "1E15B0",
@@ -419,8 +419,8 @@
    2220
   ],
   "jp": "{spk}{FF28}\n「ここは　スパニア高原よ」\n{next}\n「ここには　連邦空軍の\n　大部隊が　いたのよね‥‥」\n{next}\n「連邦空軍みたいに　空を飛べる\n　仲間が　私たちにも　いれば\n　もっと戦いは　楽になるのにね」\n",
-  "en": "{spk}{FF28}\n「This is the Spania Plateau.」\n{next}\n「A big Federation air force\n unit was here, wasn't it...」\n{next}\n「If only we had allies who\n could fly like the Federation\n air force, the fighting would」\n{next}\n「be a lot easier.」\n",
-  "pages": "\"This is the Spania Plateau.\" || \"A big Federation air force unit was here, wasn't it...\" || \"If only we had allies who could fly like the Federation air force, the fighting would be a lot easier.\""
+  "en": "{spk}{FF28}\n「This is the Spania Plateau.」\n{next}\n「A big Federation air force\n unit was here, wasn't it...」\n{next}\n「If only we had fliers like the\n Federation air force. Fighting\n would be so much easier!」\n",
+  "pages": "\"This is the Spania Plateau.\" || \"A big Federation air force unit was here, wasn't it...\" || \"If only we had fliers like the Federation air force. Fighting would be so much easier!\""
  },
  {
   "id": "1E1D60",
@@ -437,8 +437,8 @@
    2222
   ],
   "jp": "{spk}{FF28}\n「ここは　王都ロムルスよ」\n{next}\n「でも　ひとつの　大きな都を\n　あそこまで　はかい　するなんて‥‥\n　連邦のやり方は　ひどすぎるわ」\n",
-  "en": "{spk}{FF28}\n「This is the royal city of\n Romulus.」\n{next}\n「But to destroy a whole\n great city like that... The\n Federation's methods are」\n{next}\n「just too cruel.」\n",
-  "pages": "\"This is the royal city of Romulus.\" || \"But to destroy a whole great city like that... The Federation's methods are just too cruel.\""
+  "en": "{spk}{FF28}\n「This is the royal city of\n Romulus.」\n{next}\n「But to destroy a whole great\n city like that... The Federation\n is just too cruel.」\n",
+  "pages": "\"This is the royal city of Romulus.\" || \"But to destroy a whole great city like that... The Federation is just too cruel.\""
  },
  {
   "id": "1E1F40",
@@ -464,8 +464,8 @@
    2225
   ],
   "jp": "{spk}{FF28}\n「ここは　タルテソスの門よ」\n{next}\n「この地は　私たちの　北エウロペアと\n　オルドバのある　南エウロペアとを\n　つなぐ　海きょうに　なっている‥‥」\n{next}\n「この　タルテソスの門を　こえないと\n　神祖連邦オルドバへ\n　たどり着く事は　できないわ！」\n",
-  "en": "{spk}{FF28}\n「This is Tartessos Gate.」\n{next}\n「This land is the strait linking\n our northern Europea with\n southern Europea, where」\n{next}\n「Ordoba lies...」\n{next}\n「Unless we get past\n Tartessos Gate, we'll never\n reach the Divine Federation」\n{next}\n「of Ordoba!」\n",
-  "pages": "\"This is Tartessos Gate.\" || \"This land is the strait linking our northern Europea with southern Europea, where Ordoba lies...\" || \"Unless we get past Tartessos Gate, we'll never reach the Divine Federation of Ordoba!\""
+  "en": "{spk}{FF28}\n「This is Tartessos Gate.」\n{next}\n「This strait links our northern\n Europea with southern\n Europea, where Ordoba lies...」\n{next}\n「Unless we get past Tartessos\n Gate, we'll never reach the\n Divine Federation of Ordoba!」\n",
+  "pages": "\"This is Tartessos Gate.\" || \"This strait links our northern Europea with southern Europea, where Ordoba lies...\" || \"Unless we get past Tartessos Gate, we'll never reach the Divine Federation of Ordoba!\""
  },
  {
   "id": "1E2170",
@@ -482,8 +482,8 @@
    2227
   ],
   "jp": "{spk}{FF28}\n「ここは　ジブラルタル海峡よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「南エウロペアの　入り口ですもの\n　きっと　連邦軍の　大部隊が\n　私たちを　待ちうけているわ！」\n{next}\n「近くの街で　装備品や　所持品を\n　そろえておいた方が　いいわよ！」\n",
-  "en": "{spk}{FF28}\n「This is the Strait of\n Gibraltar. We haven't cleared\n it yet.」\n{next}\n「It's the entrance to\n southern Europea, so a big\n Federation force is sure to」\n{next}\n「be lying in wait for us!」\n{next}\n「We'd better get our\n equipment and items ready in\n a nearby town!」\n",
-  "pages": "\"This is the Strait of Gibraltar. We haven't cleared it yet.\" || \"It's the entrance to southern Europea, so a big Federation force is sure to be lying in wait for us!\" || \"We'd better get our equipment and items ready in a nearby town!\""
+  "en": "{spk}{FF28}\n「This is the Strait of Gibraltar.\n We haven't cleared it yet.」\n{next}\n「It's the gateway to southern\n Europea. A big Federation\n army must be waiting for us!」\n{next}\n「We'd better get our\n equipment and items ready in\n a nearby town!」\n",
+  "pages": "\"This is the Strait of Gibraltar. We haven't cleared it yet.\" || \"It's the gateway to southern Europea. A big Federation army must be waiting for us!\" || \"We'd better get our equipment and items ready in a nearby town!\""
  },
  {
   "id": "1E22CE",
@@ -491,8 +491,8 @@
    2228
   ],
   "jp": "{spk}{FF28}\n「ここは　ジブラルタル海峡よ」\n{next}\n「そう　ダークロードと　であい\n　{FF31}が　さらわれた\n　忘れられない　地だわ‥‥」\n",
-  "en": "{spk}{FF28}\n「This is the Strait of\n Gibraltar.」\n{next}\n「Yes... the place we met the\n Dark Lord, where {FF31}\n was taken. I'll never forget」\n{next}\n「it...」\n",
-  "pages": "\"This is the Strait of Gibraltar.\" || \"Yes... the place we met the Dark Lord, where {FF31} was taken. I'll never forget it...\""
+  "en": "{spk}{FF28}\n「This is the Strait of Gibraltar.」\n{next}\n「Yes... where we met the Dark\n Lord and {FF31} was\n taken. I'll never forget it...」\n",
+  "pages": "\"This is the Strait of Gibraltar.\" || \"Yes... where we met the Dark Lord and {FF31} was taken. I'll never forget it...\""
  },
  {
   "id": "1E234A",
@@ -500,8 +500,8 @@
    2229
   ],
   "jp": "{spk}{FF28}\n「ここは　アトラス砂漠よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「果てしなく続く　砂漠が\n　あるというだけで　そのほかの事は\n　何ひとつ　わからないわね‥‥」\n",
-  "en": "{spk}{FF28}\n「This is the Atlas Desert. We\n haven't cleared it yet.」\n{next}\n「All we know is that there's a\n desert that goes on forever.\n Apart from that, nothing at」\n{next}\n「all...」\n",
-  "pages": "\"This is the Atlas Desert. We haven't cleared it yet.\" || \"All we know is that there's a desert that goes on forever. Apart from that, nothing at all...\""
+  "en": "{spk}{FF28}\n「This is the Atlas Desert. We\n haven't cleared it yet.」\n{next}\n「All we know is there's a\n desert that goes on forever.\n Beyond that, nothing at all...」\n",
+  "pages": "\"This is the Atlas Desert. We haven't cleared it yet.\" || \"All we know is there's a desert that goes on forever. Beyond that, nothing at all...\""
  },
  {
   "id": "1E23F4",
@@ -572,8 +572,8 @@
    2237
   ],
   "jp": "{spk}{FF28}\n「ここは　アトラス山脈よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「とてつもない　高さの山々が\n　連なる　巨大な山脈\n　それが　このアトラス山脈‥‥」\n{next}\n「こんな所で　敵の待ちぶせを\n　受けたら　どう戦えば　いいのか‥‥」\n",
-  "en": "{spk}{FF28}\n「These are the Atlas\n Mountains. We haven't\n cleared them yet.」\n{next}\n「A huge range of impossibly\n tall peaks, one after\n another... That's the Atlas」\n{next}\n「Mountains...」\n{next}\n「If the enemy ambushed us in\n a place like this, how would\n we even fight...?」\n",
-  "pages": "\"These are the Atlas Mountains. We haven't cleared them yet.\" || \"A huge range of impossibly tall peaks, one after another... That's the Atlas Mountains...\" || \"If the enemy ambushed us in a place like this, how would we even fight...?\""
+  "en": "{spk}{FF28}\n「These are the Atlas\n Mountains. We haven't\n cleared them yet.」\n{next}\n「A huge range of impossibly\n tall peaks, on and on... These\n are the Atlas Mountains...」\n{next}\n「If the enemy ambushed us in\n a place like this, how would\n we even fight...?」\n",
+  "pages": "\"These are the Atlas Mountains. We haven't cleared them yet.\" || \"A huge range of impossibly tall peaks, on and on... These are the Atlas Mountains...\" || \"If the enemy ambushed us in a place like this, how would we even fight...?\""
  },
  {
   "id": "1E2824",
@@ -599,8 +599,8 @@
    2240
   ],
   "jp": "{spk}{FF28}\n「ここは　アトラス山脈の東よ！」\n{next}\n「敵兵が　うろついているから\n　腕だめしには\n　ちょうど　いいかもね！」\n",
-  "en": "{spk}{FF28}\n「This is the east of the Atlas\n Mountains!」\n{next}\n「Enemy soldiers wander\n around here, so it might be\n just right for testing your」\n{next}\n「skills!」\n",
-  "pages": "\"This is the east of the Atlas Mountains!\" || \"Enemy soldiers wander around here, so it might be just right for testing your skills!\""
+  "en": "{spk}{FF28}\n「This is the east of the Atlas\n Mountains!」\n{next}\n「Enemy soldiers roam around\n here, so it's just the place to\n test your skills!」\n",
+  "pages": "\"This is the east of the Atlas Mountains!\" || \"Enemy soldiers roam around here, so it's just the place to test your skills!\""
  },
  {
   "id": "1E29E6",
@@ -617,8 +617,8 @@
    2242
   ],
   "jp": "{spk}{FF28}\n「ここは　閉ざされた島よ」\n{next}\n「この島には　見た目は子供だけど\n　十万歳になる　賢者が\n　一人で　ひっそりと　住んでいるわ」\n{next}\n「十万歳かぁ‥‥」\n{next}\n「でも　それが本当なら\n　あの少年は　神々の時代から‥‥？」\n{next}\n「‥‥ううん　そんなはずない\n　だって　だって　この私も‥‥」\n{next}\n「‥‥あ　何でもないってば！\n　あんまり　ツっこまないでよ！」\n",
-  "en": "{spk}{FF28}\n「This is the Isolated Isle.」\n{next}\n「A sage who looks like a child\n but is a hundred thousand\n years old lives here, quietly,」\n{next}\n「all alone.」\n{next}\n「A hundred thousand years,\n huh...」\n{next}\n「But if that's true, then that\n boy has been around since\n the age of the gods...?」\n{next}\n「...No, that can't be. Because...\n because I'm...」\n{next}\n「...Ah, it's nothing, I said! Don't\n poke your nose in!」\n",
-  "pages": "\"This is the Isolated Isle.\" || \"A sage who looks like a child but is a hundred thousand years old lives here, quietly, all alone.\" || \"A hundred thousand years, huh...\" || \"But if that's true, then that boy has been around since the age of the gods...?\" || \"...No, that can't be. Because... because I'm...\" || \"...Ah, it's nothing, I said! Don't poke your nose in!\""
+  "en": "{spk}{FF28}\n「This is the Isolated Isle.」\n{next}\n「A sage lives here all alone.\n He looks like a child, but he is\n 100,000 years old.」\n{next}\n「A hundred thousand years,\n huh...」\n{next}\n「But if that's true, then that\n boy has been around since\n the age of the gods...?」\n{next}\n「...No, that can't be. Because...\n because I'm...」\n{next}\n「...Ah, it's nothing, I said! Don't\n poke your nose in!」\n",
+  "pages": "\"This is the Isolated Isle.\" || \"A sage lives here all alone. He looks like a child, but he is 100,000 years old.\" || \"A hundred thousand years, huh...\" || \"But if that's true, then that boy has been around since the age of the gods...?\" || \"...No, that can't be. Because... because I'm...\" || \"...Ah, it's nothing, I said! Don't poke your nose in!\""
  },
  {
   "id": "1E2BD6",
@@ -653,8 +653,8 @@
    2246
   ],
   "jp": "{spk}{FF28}\n「ここは　龍の亀裂よ」\n{next}\n「この地から　連邦の本体\n　オルドバ王国の　王都へと\n　進撃する事が　できるのよ！」\n",
-  "en": "{spk}{FF28}\n「This is the Dragon Rift.」\n{next}\n「From here we can march on\n the royal capital of the\n Kingdom of Ordoba, the heart」\n{next}\n「of the Federation!」\n",
-  "pages": "\"This is the Dragon Rift.\" || \"From here we can march on the royal capital of the Kingdom of Ordoba, the heart of the Federation!\""
+  "en": "{spk}{FF28}\n「This is the Dragon Rift.」\n{next}\n「From here we can march on\n the royal city of Ordoba, the\n heart of the Federation!」\n",
+  "pages": "\"This is the Dragon Rift.\" || \"From here we can march on the royal city of Ordoba, the heart of the Federation!\""
  },
  {
   "id": "1E2DCE",
@@ -698,8 +698,8 @@
    2251
   ],
   "jp": "{spk}{FF28}\n「ここは　ぜつ望の湖よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「湖のまわりは　沼が多いし\n　森も　あるらしいから\n　戦いにくいと　思うわ！」\n{next}\n「聞いた話だと　連邦の\n　スナイパー部隊が\n　この湖に　いるらしいけど‥‥」\n",
-  "en": "{spk}{FF28}\n「This is Lake Despair. We\n haven't cleared it yet.」\n{next}\n「There are lots of swamps\n around the lake, and forest\n too, so I think it'll be a tough」\n{next}\n「fight!」\n{next}\n「I hear there's a Federation\n sniper unit at this lake...」\n",
-  "pages": "\"This is Lake Despair. We haven't cleared it yet.\" || \"There are lots of swamps around the lake, and forest too, so I think it'll be a tough fight!\" || \"I hear there's a Federation sniper unit at this lake...\""
+  "en": "{spk}{FF28}\n「This is Lake Despair. We\n haven't cleared it yet.」\n{next}\n「There are lots of swamps\n around the lake, and forest\n too. It'll be a tough fight!」\n{next}\n「I hear there's a Federation\n sniper unit at this lake...」\n",
+  "pages": "\"This is Lake Despair. We haven't cleared it yet.\" || \"There are lots of swamps around the lake, and forest too. It'll be a tough fight!\" || \"I hear there's a Federation sniper unit at this lake...\""
  },
  {
   "id": "1E308A",
@@ -725,8 +725,8 @@
    2254
   ],
   "jp": "{spk}{FF28}\n「ここは　ぜつ望の湖の南よ」\n{next}\n「ここでは　連邦の特命部隊\n　ブラッドシールドと\n　戦ったんじゃ　なかったっけ？」\n",
-  "en": "{spk}{FF28}\n「This is the south of Lake\n Despair.」\n{next}\n「Isn't this where we fought\n the Blood Shield, the\n Federation's special task」\n{next}\n「force?」\n",
-  "pages": "\"This is the south of Lake Despair.\" || \"Isn't this where we fought the Blood Shield, the Federation's special task force?\""
+  "en": "{spk}{FF28}\n「This is the south of Lake\n Despair.」\n{next}\n「Isn't this where we fought\n the Blood Shield, the\n Federation's special forces?」\n",
+  "pages": "\"This is the south of Lake Despair.\" || \"Isn't this where we fought the Blood Shield, the Federation's special forces?\""
  },
  {
   "id": "1E3214",
@@ -752,8 +752,8 @@
    2257
   ],
   "jp": "{spk}{FF28}\n「ここは　アルダブラ島の火山よ！」\n{next}\n「ここに住む　サラマンダーは\n　話によると　恐ろしい炎をはく\n　強大な　魔物らしいじゃない！？」\n{next}\n「勝ち目は　あるの！？」\n",
-  "en": "{spk}{FF28}\n「This is the volcano on\n Aldabra Island!」\n{next}\n「They say the Salamander\n living here is a mighty\n monster that breathes」\n{next}\n「terrifying flames!」\n{next}\n「Do we stand a chance!?」\n",
-  "pages": "\"This is the volcano on Aldabra Island!\" || \"They say the Salamander living here is a mighty monster that breathes terrifying flames!\" || \"Do we stand a chance!?\""
+  "en": "{spk}{FF28}\n「This is the volcano on\n Aldabra Island!」\n{next}\n「They say the Salamander\n here is a mighty monster\n that breathes terrible fire!」\n{next}\n「Do we stand a chance!?」\n",
+  "pages": "\"This is the volcano on Aldabra Island!\" || \"They say the Salamander here is a mighty monster that breathes terrible fire!\" || \"Do we stand a chance!?\""
  },
  {
   "id": "1E3452",
@@ -806,8 +806,8 @@
    2263
   ],
   "jp": "{spk}{FF28}\n「ついに　来たわね！！」\n{next}\n「ここは　皇帝のいる王の間‥‥」\n{next}\n「いよいよ　最後の戦いよ！\n　よく考えて　仲間を選んで！」\n{next}\n「武器やアイテムも\n　きちんと　そろえなくちゃ！」\n{spk}{FF28}\n「急いで　{hero}！」\n{next}\n「あの恐ろしい　超機神は\n　ここに　むかったのよ！！」\n{next}\n「早くしないと　首都が‥‥\n　いえ　世界が\n　あいつに　ほろぼされちゃう！」\n",
-  "en": "{spk}{FF28}\n「We're finally here!」\n{next}\n「This is the throne room,\n where the Emperor is...」\n{next}\n「This is the final battle! Think\n hard about which allies to\n pick!」\n{next}\n「And get your weapons and\n items in order, too!」\n{spk}{FF28}\n「Hurry, {hero}!」\n{next}\n「That terrifying Machine God\n Supreme was headed here!」\n{next}\n「If we don't hurry, the\n capital... No, the whole world\n will be destroyed by that」\n{next}\n「thing!」\n",
-  "pages": "\"We're finally here!\" || \"This is the throne room, where the Emperor is...\" || \"This is the final battle! Think hard about which allies to pick!\" || \"And get your weapons and items in order, too!\" || \"Hurry, {hero}!\" || \"That terrifying Machine God Supreme was headed here!\" || \"If we don't hurry, the capital... No, the whole world will be destroyed by that thing!\""
+  "en": "{spk}{FF28}\n「We're finally here!」\n{next}\n「This is the throne room,\n where the Emperor is...」\n{next}\n「This is the final battle! Think\n hard about which allies to\n pick!」\n{next}\n「And get your weapons and\n items in order, too!」\n{spk}{FF28}\n「Hurry, {hero}!」\n{next}\n「That terrifying Machine God\n Supreme was headed here!」\n{next}\n「Hurry, or the capital... No, the\n whole world will be\n destroyed by that thing!」\n",
+  "pages": "\"We're finally here!\" || \"This is the throne room, where the Emperor is...\" || \"This is the final battle! Think hard about which allies to pick!\" || \"And get your weapons and items in order, too!\" || \"Hurry, {hero}!\" || \"That terrifying Machine God Supreme was headed here!\" || \"Hurry, or the capital... No, the whole world will be destroyed by that thing!\""
  },
  {
   "id": "1E38BA",
@@ -815,8 +815,8 @@
    2266
   ],
   "jp": "{spk}{FF28}\n「ここは　島国のラインメタルから\n　エウロペア大陸に　向かう\n　ゆいいつの　出入り口なのよ！」\n{next}\n「‥‥でも　こんな戦争の中で\n　船は　出ているのかしら‥‥？」\n",
-  "en": "{spk}{FF28}\n「This is the only gateway\n from the island kingdom of\n Rheinmetall to the continent」\n{next}\n「of Europea!」\n{next}\n「...But with this war going on,\n I wonder if any ships are\n still sailing...」\n",
-  "pages": "\"This is the only gateway from the island kingdom of Rheinmetall to the continent of Europea!\" || \"...But with this war going on, I wonder if any ships are still sailing...\""
+  "en": "{spk}{FF28}\n「This is the only way from the\n island kingdom of Rheinmetall\n to mainland Europea!」\n{next}\n「...But with this war going on, I\n wonder if any ships are still\n sailing...」\n",
+  "pages": "\"This is the only way from the island kingdom of Rheinmetall to mainland Europea!\" || \"...But with this war going on, I wonder if any ships are still sailing...\""
  },
  {
   "id": "1E3964",
@@ -824,8 +824,8 @@
    2264
   ],
   "jp": "{spk}{FF28}\n「急がなきゃ　{hero}！」\n{next}\n「あのバケモノみたいな　超機神は\n　この　ラインメタル王国の\n　首都へと　向かったのよ！\n{next}\n「時間がないわ！」\n{next}\n「ラインメタル王国が‥‥　いえ\n　世界そのものが\n　超機神に　はかいされてしまう！」\n",
-  "en": "{spk}{FF28}\n「We have to hurry, {hero}!」\n{next}\n「That monstrous Machine God\n Supreme is headed for the\n capital of the Kingdom of\n{next}\nRheinmetall!\n{next}\n「There's no time!」\n{next}\n「The Kingdom of Rheinmetall...\n No, the world itself will be\n destroyed by the Machine」\n{next}\n「God Supreme!」\n",
-  "pages": "\"We have to hurry, {hero}!\" || \"That monstrous Machine God Supreme is headed for the capital of the Kingdom of Rheinmetall! || \"There's no time!\" || \"The Kingdom of Rheinmetall... No, the world itself will be destroyed by the Machine God Supreme!\""
+  "en": "{spk}{FF28}\n「We have to hurry, {hero}!」\n{next}\n「That monstrous Machine God\n Supreme is headed for the\n capital of Rheinmetall!\n{next}\n「There's no time!」\n{next}\n「Rheinmetall... No, the whole\n world will be destroyed by\n the Machine God Supreme!」\n",
+  "pages": "\"We have to hurry, {hero}!\" || \"That monstrous Machine God Supreme is headed for the capital of Rheinmetall! || \"There's no time!\" || \"Rheinmetall... No, the whole world will be destroyed by the Machine God Supreme!\""
  },
  {
   "id": "1E3A5A",
@@ -852,8 +852,8 @@
    2269
   ],
   "jp": "{spk}{FF28}\n「ここは　ミッドガルドの街よ！」\n{next}\n「この街は　反乱軍の　アジトらしくて\n　彼らと　いっしょじゃないと\n　入れない‥‥　っていう　ウワサよ」\n",
-  "en": "{spk}{FF28}\n「This is the town of Midgard!」\n{next}\n「Rumor has it this town is the\n rebel army's hideout, and\n you can't get in unless」\n{next}\n「you're with them.」\n",
-  "pages": "\"This is the town of Midgard!\" || \"Rumor has it this town is the rebel army's hideout, and you can't get in unless you're with them.\""
+  "en": "{spk}{FF28}\n「This is the town of Midgard!」\n{next}\n「Rumor says this is the rebel\n hideout. You can't get in\n unless you're with them.」\n",
+  "pages": "\"This is the town of Midgard!\" || \"Rumor says this is the rebel hideout. You can't get in unless you're with them.\""
  },
  {
   "id": "1E3D1C",
@@ -870,8 +870,8 @@
    2271
   ],
   "jp": "{spk}{FF28}\n「ここは　メッシーナの街よ！」\n{next}\n「この街は　連邦に　近いけど\n　音楽を愛する　心やさしい\n　人々が　住んでいるそうよ！」\n",
-  "en": "{spk}{FF28}\n「This is the town of Messina!」\n{next}\n「It's close to the Federation,\n but they say kind-hearted\n people who love music live」\n{next}\n「here!」\n",
-  "pages": "\"This is the town of Messina!\" || \"It's close to the Federation, but they say kind-hearted people who love music live here!\""
+  "en": "{spk}{FF28}\n「This is the town of Messina!」\n{next}\n「It's close to the Federation,\n but they say kind,\n music-loving people live here!」\n",
+  "pages": "\"This is the town of Messina!\" || \"It's close to the Federation, but they say kind, music-loving people live here!\""
  },
  {
   "id": "1E3E1C",
@@ -888,8 +888,8 @@
    2273
   ],
   "jp": "{spk}{FF28}\n「ここは　いせきの街よ\n　まだ　この地は　クリアしてないわ」\n{next}\n「でも　街とは　名ばかりで\n　本当に　何もない\n　ただのガレキの　山みたいよ？」\n",
-  "en": "{spk}{FF28}\n「This is the Ruins Town. We\n haven't cleared it yet.」\n{next}\n「But it's a town in name only.\n There's really nothing there,\n just piles of rubble, you」\n{next}\n「know?」\n",
-  "pages": "\"This is the Ruins Town. We haven't cleared it yet.\" || \"But it's a town in name only. There's really nothing there, just piles of rubble, you know?\""
+  "en": "{spk}{FF28}\n「This is the Ruins Town. We\n haven't cleared it yet.」\n{next}\n「But it's a town in name only.\n There's nothing there but\n piles of rubble, you know?」\n",
+  "pages": "\"This is the Ruins Town. We haven't cleared it yet.\" || \"But it's a town in name only. There's nothing there but piles of rubble, you know?\""
  },
  {
   "id": "1E3F32",
@@ -969,8 +969,8 @@
    1624
   ],
   "jp": "{spk}悪霊　　　　\n「‥‥なぜ‥‥生きようとする？\n　死ねば‥‥全ては‥‥終わる\n　‥‥死は‥‥すばらしい　たび路‥‥」\n{next}\n「死ねば‥‥あらゆる‥‥苦しみから\n　‥‥解ほうされる‥‥うえも‥‥\n　戦争も‥‥苦悩もない‥‥わかるか」\n{next}\n「世界を‥‥自分の手で‥‥\n　‥‥終わらす事さえ‥‥\n　できると‥‥いうのだぞ‥‥？」\n",
-  "en": "{spk}悪霊　　　　\n「...Why... do you cling to life?\n In death... all things... end.\n ...Death is... a wondrous」\n{next}\n「journey...」\n{next}\n「In death... you are freed...\n from all suffering... No\n hunger... no war... no anguish...」\n{next}\n「Do you understand?」\n{next}\n「You could even... end the\n world... with your own hands...\n you know...?」\n",
-  "pages": "\"...Why... do you cling to life? In death... all things... end. ...Death is... a wondrous journey...\" || \"In death... you are freed... from all suffering... No hunger... no war... no anguish... Do you understand?\" || \"You could even... end the world... with your own hands... you know...?\""
+  "en": "{spk}悪霊　　　　\n「...Why... cling to life? In\n death... all ends. ...Death is... a\n wondrous journey...」\n{next}\n「In death... you are freed...\n from all suffering... No\n hunger... no war... no anguish...」\n{next}\n「Do you understand?」\n{next}\n「You could even... end the\n world... with your own hands...\n you know...?」\n",
+  "pages": "\"...Why... cling to life? In death... all ends. ...Death is... a wondrous journey...\" || \"In death... you are freed... from all suffering... No hunger... no war... no anguish... Do you understand?\" || \"You could even... end the world... with your own hands... you know...?\""
  },
  {
   "id": "1E431E",
@@ -1050,8 +1050,8 @@
    1633
   ],
   "jp": "{spk}ファウスト　\n　神よ　神よ　われらの　神よ\n　封印は　すでに　解かれた\n　十二の暗黒は　地上に　あふれる\n{next}\n　神よ　神よ　暗黒の　神よ\n　われらの街は　火の中に　ある\n　空は赤く　海はなお　赤い\n{next}\n　神よ　神よ　星々の　神よ\n　暗黒に　打ち勝つ　星々の神よ\n　あなたの力は　あまりに遅すぎた\n{FF04}{end}\n",
-  "en": "{spk}ファウスト　\nO God, O God, our God, the seal\nis already broken, the twelve\ndarknesses flood the earth.\n{next}\nO God, O God, God of darkness,\nour cities are in flames, the\nsky is red, the sea redder\n{next}\nstill.\n{next}\nO God, O God, God of the\nstars, God of the stars who\nconquers darkness, your\n{next}\npower came far too late.\n{FF04}{end}\n",
-  "pages": "O God, O God, our God, the seal is already broken, the twelve darknesses flood the earth. || O God, O God, God of darkness, our cities are in flames, the sky is red, the sea redder still. || O God, O God, God of the stars, God of the stars who conquers darkness, your power came far too late."
+  "en": "{spk}ファウスト　\nO God, O God, our God, the seal\nis already broken, the twelve\ndarknesses flood the earth.\n{next}\nO God, O God, God of darkness,\nour cities are in flames, the\nsky is red, the sea redder still.\n{next}\nO God, O God of the stars, who\nconquers darkness: your power\ncame far too late.\n{FF04}{end}\n",
+  "pages": "O God, O God, our God, the seal is already broken, the twelve darknesses flood the earth. || O God, O God, God of darkness, our cities are in flames, the sky is red, the sea redder still. || O God, O God of the stars, who conquers darkness: your power came far too late."
  },
  {
   "id": "1E45F8",
@@ -1077,8 +1077,8 @@
    1636
   ],
   "jp": "{spk}ファウスト　\n　神は　なぜに　これを作ったのか\n　人と同じく　神もまた\n　戦さを　こよなく　愛したのか\n{next}\n　神の兵器は　破めつの兵器と知れ\n　天を燃やし　海をたぎらせ\n　陸を　じごくへと　変えていく‥‥\n{next}\n　生きのびし　十二人の　子らよ\n　今は　そなたたちに　みらいをたくす\n　わが子らよ　その名は‥‥\n{next}\n　オルドバ‥‥　ロムルス‥‥\n　ラインメタル‥‥　イベリア‥‥\n　アトラス‥‥　リパイオス‥‥\n{FF04}{end}\n",
-  "en": "{spk}ファウスト　\nWhy did the gods create\nthese? Did the gods, like men,\nso dearly love war?\n{next}\nKnow that the weapons of the\ngods are weapons of ruin.\nThey burn the heavens, boil\n{next}\nthe seas, and turn the land\ninto hell...\n{next}\nO twelve children who\nsurvived, to you I now entrust\nthe future. My children, your\n{next}\nnames are...\n{next}\nOrdoba... Romulus...\nRheinmetall... Iberia... Atlas...\nRhipaean...\n{FF04}{end}\n",
-  "pages": "Why did the gods create these? Did the gods, like men, so dearly love war? || Know that the weapons of the gods are weapons of ruin. They burn the heavens, boil the seas, and turn the land into hell... || O twelve children who survived, to you I now entrust the future. My children, your names are... || Ordoba... Romulus... Rheinmetall... Iberia... Atlas... Rhipaean..."
+  "en": "{spk}ファウスト　\nWhy did the gods create\nthese? Did the gods, like men,\nso dearly love war?\n{next}\nKnow that the weapons of the\ngods are weapons of ruin.\nThey burn the heavens, boil\n{next}\nthe seas, and turn the land\ninto hell...\n{next}\nO twelve who survived, to you\nI entrust the future. My\nchildren, your names are...\n{next}\nOrdoba... Romulus... Rheinmetall...\nIberia... Atlas... Rhipaean...\n{FF04}{end}\n",
+  "pages": "Why did the gods create these? Did the gods, like men, so dearly love war? || Know that the weapons of the gods are weapons of ruin. They burn the heavens, boil the seas, and turn the land into hell... || O twelve who survived, to you I entrust the future. My children, your names are... || Ordoba... Romulus... Rheinmetall... Iberia... Atlas... Rhipaean..."
  },
  {
   "id": "1E4914",
@@ -1131,8 +1131,8 @@
    1642
   ],
   "jp": "{spk}{FF1F}\n「お前の　くみする世界は\n　ここにはない　すみやかに\n　元の世界に　帰るがいい‥‥」\n",
-  "en": "{spk}{FF1F}\n「The world you belong to isn't\n here. Go back where you\n came from, and be quick」\n{next}\n「about it...」\n",
-  "pages": "\"The world you belong to isn't here. Go back where you came from, and be quick about it...\""
+  "en": "{spk}{FF1F}\n「Your world is not here. Go\n back where you came from,\n and be quick about it...」\n",
+  "pages": "\"Your world is not here. Go back where you came from, and be quick about it...\""
  },
  {
   "id": "1E4B1C",
@@ -1158,8 +1158,8 @@
    1645
   ],
   "jp": "{spk}{FF28}\n「人は　とうに　忘れてしまっている\n　天空の星々を　つかさどり\n　世界をみちびいていた　古代の神々」\n{next}\n「そう‥‥連邦の　掘り出した\n　古代神の　いぶつとは　また　ことなる\n　もう一つの　星座の神々たち‥‥」\n{next}\n「古代の書物に　こうあるわ」\n{next}\n　地に　やみがあふれ　空には悪意が満ちる\n　太陽は　すでに　その姿を消し\n　人は　終わる事ない　夜におびえた\n{next}\n　ああ　しかし　見るがいい！\n　太陽が　失われたとしても\n　我らには　天にまたたく　星がある！\n{next}\n　星は　人々のねがいを　受け入れ\n　地上へと　まい降り\n　十二の石像へと　姿を変えた‥‥\n{next}\n　それ　すなわち　黄道十二神なり\n{FF04}{end}\n",
-  "en": "{spk}{FF28}\n「Ancient gods that people\n forgot long ago. They ruled\n the stars of heaven and」\n{next}\n「guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the\nstars twinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
-  "pages": "\"Ancient gods that people forgot long ago. They ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
+  "en": "{spk}{FF28}\n「Ancient gods, long forgotten,\n who ruled the stars of\n heaven and guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the stars\ntwinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
+  "pages": "\"Ancient gods, long forgotten, who ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
  },
  {
   "id": "1E4DDC",
@@ -1185,8 +1185,8 @@
    1648
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue, are you the one who\n will drive away the darkness」\n{next}\n「of the world?」\n",
-  "pages": "\"You who stand before my statue, are you the one who will drive away the darkness of the world?\""
+  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
+  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
  },
  {
   "id": "1E4E9E",
@@ -1212,8 +1212,8 @@
    1651
   ],
   "jp": "{spk}黄道十二神　\n「われは　星々の流れに　したがって\n　この世界の　運命の流れを\n　つかさどる　十二の神の一人　なり」\n{next}\n「そなたに　わが力をたくす\n　われら　十二の神の代理人として\n　この世の　ながれを　是正せよ」\n",
-  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who follow the course of the\n stars and govern the flow」\n{next}\n「of this world's fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set right the course of this」\n{next}\n「world.」\n",
-  "pages": "\"I am one of the twelve gods who follow the course of the stars and govern the flow of this world's fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set right the course of this world.\""
+  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who, following the stars,\n govern the flow of fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set the world aright.」\n",
+  "pages": "\"I am one of the twelve gods who, following the stars, govern the flow of fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set the world aright.\""
  },
  {
   "id": "1E4FE4",
@@ -1248,8 +1248,8 @@
    1655
   ],
   "jp": "{spk}黄道十二神　\n「なんじは　世界にちらばりし\n　十二神の像を　探し出し\n　その全ての力を　束ねるのだ」\n{next}\n「さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n",
-  "en": "{spk}黄道十二神　\n「Seek out the statues of the\n twelve gods scattered\n across the world and bind all」\n{next}\n「their power together.」\n{next}\n「Then shall we grant thee\n true power...」\n",
-  "pages": "\"Seek out the statues of the twelve gods scattered across the world and bind all their power together.\" || \"Then shall we grant thee true power...\""
+  "en": "{spk}黄道十二神　\n「Seek out the twelve gods'\n statues across the world,\n and bind all their power.」\n{next}\n「Then shall we grant thee\n true power...」\n",
+  "pages": "\"Seek out the twelve gods' statues across the world, and bind all their power.\" || \"Then shall we grant thee true power...\""
  },
  {
   "id": "1E5150",
@@ -1275,8 +1275,8 @@
    1658
   ],
   "jp": "「この街は　ただの廃墟だ\n　はるかな昔　ほろびて消えた\n　一つの王国の　ただのざんがいだ」\n{next}\n「時のながれは　あらゆる物を\n　消しさり　うもれさせ\n　ほろびのふちへ　追いやって行く」\n{next}\n「ならば　オレは　わずかな\n　生を　自分の　思うままに\n　生きる事に　しよう‥‥」\n",
-  "en": "「This town is nothing but\n ruins. Just the wreckage of\n a kingdom that fell and」\n{next}\n「vanished long, long ago.」\n{next}\n「The flow of time wipes\n everything away, buries it,\n and drives it to the brink of」\n{next}\n「ruin.」\n{next}\n「Then I'll live what little life I\n have the way I see fit...」\n",
-  "pages": "\"This town is nothing but ruins. Just the wreckage of a kingdom that fell and vanished long, long ago.\" || \"The flow of time wipes everything away, buries it, and drives it to the brink of ruin.\" || \"Then I'll live what little life I have the way I see fit...\""
+  "en": "「This town is nothing but\n ruins. Just the wreckage of a\n kingdom that fell and」\n{next}\n「vanished long, long ago.」\n{next}\n「The flow of time wipes all\n away, buries it, and drives it\n to the brink of ruin.」\n{next}\n「Then I'll live what little life I\n have the way I see fit...」\n",
+  "pages": "\"This town is nothing but ruins. Just the wreckage of a kingdom that fell and vanished long, long ago.\" || \"The flow of time wipes all away, buries it, and drives it to the brink of ruin.\" || \"Then I'll live what little life I have the way I see fit...\""
  },
  {
   "id": "1E5618",
@@ -1284,8 +1284,8 @@
    1659
   ],
   "jp": "「ワルキューレは　戦場を駆け\n　兵士の魂を　死の国である\n　ヴァルハラへと　運ぶのだという」\n{next}\n「ワルキューレ‥‥　地方により\n　ヴァルキリーと　呼ばれる\n　戦場を駆け抜ける　女神‥‥」\n",
-  "en": "「They say the Valkyries ride\n across the battlefield and\n carry the souls of soldiers」\n{next}\n「to Valhalla, the land of the\n dead.」\n{next}\n「Valkyrie... In some lands\n they're called Walkure.\n Goddesses who race across」\n{next}\n「the battlefield...」\n",
-  "pages": "\"They say the Valkyries ride across the battlefield and carry the souls of soldiers to Valhalla, the land of the dead.\" || \"Valkyrie... In some lands they're called Walkure. Goddesses who race across the battlefield...\""
+  "en": "「They say the Valkyries ride\n across the battlefield and\n carry the souls of soldiers to」\n{next}\n「Valhalla, the land of the\n dead.」\n{next}\n「Valkyrie... In some lands,\n Walkure. Goddesses who race\n across the battlefield...」\n",
+  "pages": "\"They say the Valkyries ride across the battlefield and carry the souls of soldiers to Valhalla, the land of the dead.\" || \"Valkyrie... In some lands, Walkure. Goddesses who race across the battlefield...\""
  },
  {
   "id": "1E56D6",
@@ -1338,8 +1338,8 @@
    1665
   ],
   "jp": "{spk}シュタイア　\n「連邦の　女神部隊か‥‥\n　見かけは　美しいが\n　その実力は　かなりの物と聞く」\n",
-  "en": "{spk}シュタイア　\n「The Federation's goddess\n unit, eh... They look beautiful,\n but I hear they're very」\n{next}\n「capable.」\n",
-  "pages": "\"The Federation's goddess unit, eh... They look beautiful, but I hear they're very capable.\""
+  "en": "{spk}シュタイア　\n「The Federation's goddess\n unit, eh... Pretty to look at,\n but I hear they're tough.」\n",
+  "pages": "\"The Federation's goddess unit, eh... Pretty to look at, but I hear they're tough.\""
  },
  {
   "id": "1E584E",
@@ -1356,8 +1356,8 @@
    1667
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥妹の　アテナか！？」\n{next}\n「まさか　反乱軍に　いようとは\n　あなたは　いくつになっても\n　この私を　こまらせるのね‥‥」\n",
-  "en": "{spk}ルーネ　　　\n「...My sister, Athena!?」\n{next}\n「To think you'd be with the\n rebel army... No matter how\n old you get, you always give」\n{next}\n「me trouble...」\n",
-  "pages": "\"...My sister, Athena!?\" || \"To think you'd be with the rebel army... No matter how old you get, you always give me trouble...\""
+  "en": "{spk}ルーネ　　　\n「...My sister, Athena!?」\n{next}\n「To think you'd join the\n rebels... However old you get,\n you always give me trouble...」\n",
+  "pages": "\"...My sister, Athena!?\" || \"To think you'd join the rebels... However old you get, you always give me trouble...\""
  },
  {
   "id": "1E593E",
@@ -1365,8 +1365,8 @@
    1668
   ],
   "jp": "{spk}アテナ　　　\n「くッ！　‥‥兄さんこそ　なぜ\n　われらの　祖国をほろぼした\n　連邦に　くみするというの！？」\n",
-  "en": "{spk}アテナ　　　\n「Ngh! ...And you, brother, why\n would you side with the\n Federation that destroyed」\n{next}\n「our homeland!?」\n",
-  "pages": "\"Ngh! ...And you, brother, why would you side with the Federation that destroyed our homeland!?\""
+  "en": "{spk}アテナ　　　\n「Ngh! ...And you, brother! Why\n side with the Federation that\n destroyed our homeland!?」\n",
+  "pages": "\"Ngh! ...And you, brother! Why side with the Federation that destroyed our homeland!?\""
  },
  {
   "id": "1E59AE",
@@ -1374,8 +1374,8 @@
    1669
   ],
   "jp": "{spk}ルーネ　　　\n「忘れないで　アテナ！　わが国が\n　その小ささゆえ　周りの大国から\n　常に　食い物に　されてきた事を！」\n{next}\n「おぼえている！？　私たちと\n　同じ年の　むすめが　泣きながら\n　売られていく　あの時の顔を！？」\n{next}\n「力があれば！　金があれば！\n　だからこそ　私は　連邦へと\n　入る　決心を　固めたのよ！」\n",
-  "en": "{spk}ルーネ　　　\n「Don't forget, Athena! Our\n country was so small that\n the great powers around it」\n{next}\n「always preyed on it!」\n{next}\n「Do you remember!? The faces\n of girls our own age, crying\n as they were sold off!?」\n{next}\n「If only we'd had power! If\n only we'd had money! That is\n why I made up my mind to」\n{next}\n「join the Federation!」\n",
-  "pages": "\"Don't forget, Athena! Our country was so small that the great powers around it always preyed on it!\" || \"Do you remember!? The faces of girls our own age, crying as they were sold off!?\" || \"If only we'd had power! If only we'd had money! That is why I made up my mind to join the Federation!\""
+  "en": "{spk}ルーネ　　　\n「Don't forget, Athena! Our tiny\n country was always prey to\n the great powers around it!」\n{next}\n「Do you remember!? The faces\n of girls our own age, crying\n as they were sold off!?」\n{next}\n「If only we'd had power! Or\n money! That is why I chose\n to join the Federation!」\n",
+  "pages": "\"Don't forget, Athena! Our tiny country was always prey to the great powers around it!\" || \"Do you remember!? The faces of girls our own age, crying as they were sold off!?\" || \"If only we'd had power! Or money! That is why I chose to join the Federation!\""
  },
  {
   "id": "1E5AF0",
@@ -1473,8 +1473,8 @@
    1680
   ],
   "jp": "{spk}アテナ　　　\n「ルーネ！　もはや　お前を\n　兄とは思わぬ！　必ずや　わが\n　シルバーナイトの　名にかけて！」\n",
-  "en": "{spk}アテナ　　　\n「Rune! I no longer think of\n you as my brother! I swear\n it on my name as a Silver」\n{next}\n「Knight!」\n",
-  "pages": "\"Rune! I no longer think of you as my brother! I swear it on my name as a Silver Knight!\""
+  "en": "{spk}アテナ　　　\n「Rune! You are no brother of\n mine! I swear it on my name\n as a Silver Knight!」\n",
+  "pages": "\"Rune! You are no brother of mine! I swear it on my name as a Silver Knight!\""
  },
  {
   "id": "1E5F1E",
@@ -1491,8 +1491,8 @@
    1682
   ],
   "jp": "{spk}{FF28}\n「機神よりも　恐ろしい\n　真のやみの力‥‥って　いったい」\n",
-  "en": "{spk}{FF28}\n「A true power of darkness,\n more terrifying than the\n Machine Gods... What could it」\n{next}\n「be?」\n",
-  "pages": "\"A true power of darkness, more terrifying than the Machine Gods... What could it be?\""
+  "en": "{spk}{FF28}\n「A true power of darkness,\n scarier than the Machine\n Gods... What could it be?」\n",
+  "pages": "\"A true power of darkness, scarier than the Machine Gods... What could it be?\""
  },
  {
   "id": "1E5F98",
@@ -1554,8 +1554,8 @@
    1689
   ],
   "jp": "{spk}情報屋　　　\n「おお！　おおおおおっ！\n　ありがとう　ございます！」\n{next}\n「となりの島へは　船がなくとも\n　行けます　キャンプで\n　地図を開いて　見て下さい！」\n{next}\n「そこで　アルダブラ島を　選べば\n　行けるはずですから！」\n",
-  "en": "{spk}情報屋　　　\n「Oh! Ohhhhh! Thank you so\n much!」\n{next}\n「You can reach the next\n island without a ship. Open\n the map at camp and have a」\n{next}\n「look!」\n{next}\n「Choose Aldabra Island there,\n and you should be able to\n go!」\n",
-  "pages": "\"Oh! Ohhhhh! Thank you so much!\" || \"You can reach the next island without a ship. Open the map at camp and have a look!\" || \"Choose Aldabra Island there, and you should be able to go!\""
+  "en": "{spk}情報屋　　　\n「Oh! Ohhhhh! Thank you so\n much!」\n{next}\n「You can reach the next\n island without a ship. Open\n the map at camp and see!」\n{next}\n「Choose Aldabra Island there,\n and you should be able to go!」\n",
+  "pages": "\"Oh! Ohhhhh! Thank you so much!\" || \"You can reach the next island without a ship. Open the map at camp and see!\" || \"Choose Aldabra Island there, and you should be able to go!\""
  },
  {
   "id": "1E64FE",
@@ -1581,8 +1581,8 @@
    1692
   ],
   "jp": "{spk}情報屋　　　\n「おお！　反乱軍のみなさん！\n　火竜を倒すという　依頼を\n　受けて　下さるのですか！？」\n",
-  "en": "{spk}情報屋　　　\n「Oh! Members of the rebel\n army! Will you take on the\n job of slaying the fire」\n{next}\n「dragon!?」\n",
-  "pages": "\"Oh! Members of the rebel army! Will you take on the job of slaying the fire dragon!?\""
+  "en": "{spk}情報屋　　　\n「Oh! Rebel army folks! Will you\n take the job of slaying the\n fire dragon!?」\n",
+  "pages": "\"Oh! Rebel army folks! Will you take the job of slaying the fire dragon!?\""
  },
  {
   "id": "1E65FC",
@@ -1599,8 +1599,8 @@
    1694
   ],
   "jp": "{spk}情報屋　　　\n「ありがとう　ございました！\n　村から集めた　なけなしの金です\n　どうか　お受け取り下さい‥‥」\n",
-  "en": "{spk}情報屋　　　\n「Thank you so much! It's the\n little money we could gather\n from the village, but please」\n{next}\n「accept it...」\n",
-  "pages": "\"Thank you so much! It's the little money we could gather from the village, but please accept it...\""
+  "en": "{spk}情報屋　　　\n「Thank you so much! It's all\n the money our village could\n gather. Please take it...」\n",
+  "pages": "\"Thank you so much! It's all the money our village could gather. Please take it...\""
  },
  {
   "id": "1E66D6",
@@ -1626,8 +1626,8 @@
    1697
   ],
   "jp": "{spk}村長　　　　\n「ありがとう　ございました！\n　いや　お礼の言葉も　ありません！」\n{next}\n「そう言えば　閉ざされた島を\n　御存じですかな？　ここから\n　北に行った　小島なんですがね」\n{next}\n「そこには　世界の　全てを知る\n　偉い老人が　住んでいると\n　この村に　伝えられております」\n{next}\n「きっと　あなた達の　行く道を\n　さししめして　くれるでしょう」\n{next}\n「船を　用意しましょう\n　しばらくしたら　この酒場に\n　また　おいで下さいませ！」\n",
-  "en": "{spk}村長　　　　\n「Thank you so much! Why, I\n can't thank you enough!」\n{next}\n「By the way, have you heard\n of the Isolated Isle? It's a\n little island north of here.」\n{next}\n「This village has long held\n that a wise old man who\n knows everything in the」\n{next}\n「world lives there.」\n{next}\n「I'm sure he will show you the\n path you must take.」\n{next}\n「We will prepare a ship.\n Please come back to this\n tavern after a while!」\n",
-  "pages": "\"Thank you so much! Why, I can't thank you enough!\" || \"By the way, have you heard of the Isolated Isle? It's a little island north of here.\" || \"This village has long held that a wise old man who knows everything in the world lives there.\" || \"I'm sure he will show you the path you must take.\" || \"We will prepare a ship. Please come back to this tavern after a while!\""
+  "en": "{spk}村長　　　　\n「Thank you so much! Why, I\n can't thank you enough!」\n{next}\n「By the way, have you heard\n of the Isolated Isle? It's a\n little island north of here.」\n{next}\n「This village has long said a\n wise old man who knows all\n things lives there.」\n{next}\n「I'm sure he will show you the\n path you must take.」\n{next}\n「We will prepare a ship. Please\n come back to this tavern\n after a while!」\n",
+  "pages": "\"Thank you so much! Why, I can't thank you enough!\" || \"By the way, have you heard of the Isolated Isle? It's a little island north of here.\" || \"This village has long said a wise old man who knows all things lives there.\" || \"I'm sure he will show you the path you must take.\" || \"We will prepare a ship. Please come back to this tavern after a while!\""
  },
  {
   "id": "1E6936",
@@ -1644,8 +1644,8 @@
    1699
   ],
   "jp": "「おかしな物だ　少し前の事なのに\n　バウンティハンターを　していた時が\n　ひどく　なつかしく感じられる‥‥」\n{next}\n「オレは今　村人の　依頼を　受け\n　巨大な火竜を　倒すために\n　東の　火山島へと　向かっていた」\n{next}\n「金ではない　村人の　ためでもない\n　行かなければ　そう思えたからこそ\n　オレは　この依頼を　受けたのだ」\n{next}\n「へんぴな火山島で　いったい\n　何が　待っているのだろうか‥‥」\n",
-  "en": "「Strange... It wasn't long ago,\n yet my days as a bounty\n hunter feel so very far」\n{next}\n「away...」\n{next}\n「Now I had taken on a job\n from the villagers and was\n heading for the volcano」\n{next}\n「island to the east to slay a\n giant fire dragon.」\n{next}\n「Not for money. Not even for\n the villagers. I took the job\n because I felt I had to go.」\n{next}\n「What could be waiting on\n that remote volcano island...?」\n",
-  "pages": "\"Strange... It wasn't long ago, yet my days as a bounty hunter feel so very far away...\" || \"Now I had taken on a job from the villagers and was heading for the volcano island to the east to slay a giant fire dragon.\" || \"Not for money. Not even for the villagers. I took the job because I felt I had to go.\" || \"What could be waiting on that remote volcano island...?\""
+  "en": "「Strange... It wasn't long ago,\n yet my bounty hunter days\n feel so far away...」\n{next}\n「Now I had taken on a job\n from the villagers and was\n heading for the volcano」\n{next}\n「island to the east to slay a\n giant fire dragon.」\n{next}\n「Not for money. Not even for\n the villagers. I took the job\n because I felt I had to go.」\n{next}\n「What could be waiting on\n that remote volcano island...?」\n",
+  "pages": "\"Strange... It wasn't long ago, yet my bounty hunter days feel so far away...\" || \"Now I had taken on a job from the villagers and was heading for the volcano island to the east to slay a giant fire dragon.\" || \"Not for money. Not even for the villagers. I took the job because I felt I had to go.\" || \"What could be waiting on that remote volcano island...?\""
  },
  {
   "id": "1E6AF6",
@@ -1707,8 +1707,8 @@
    1706
   ],
   "jp": "{spk}ロジャー　　\n「ああ　ミランダこそ\n　気をつけてくれよ　昔から\n　体が　弱いんだからさ‥‥」\n",
-  "en": "{spk}ロジャー　　\n「Yeah, you be careful too,\n Miranda. You've always been\n frail, ever since we were」\n{next}\n「kids...」\n",
-  "pages": "\"Yeah, you be careful too, Miranda. You've always been frail, ever since we were kids...\""
+  "en": "{spk}ロジャー　　\n「Yeah, you be careful too,\n Miranda. You've been frail\n ever since we were kids...」\n",
+  "pages": "\"Yeah, you be careful too, Miranda. You've been frail ever since we were kids...\""
  },
  {
   "id": "1E6CBE",
@@ -1734,8 +1734,8 @@
    1709
   ],
   "jp": "{spk}シュタイア　\n「オレもついているさ　リュウビ\n　忘れたのか？　辺境の魔物を\n　二人で　ずいぶん　倒しただろう」\n",
-  "en": "{spk}シュタイア　\n「I'm with you too, Ryubi. Did\n you forget? The two of us\n beat plenty of frontier」\n{next}\n「monsters together.」\n",
-  "pages": "\"I'm with you too, Ryubi. Did you forget? The two of us beat plenty of frontier monsters together.\""
+  "en": "{spk}シュタイア　\n「I'm with you too, Ryubi.\n Forgotten? We beat plenty\n of frontier monsters, us two.」\n",
+  "pages": "\"I'm with you too, Ryubi. Forgotten? We beat plenty of frontier monsters, us two.\""
  },
  {
   "id": "1E6DCA",
@@ -1743,8 +1743,8 @@
    1710
   ],
   "jp": "{spk}リュウビ　　\n「忘れるはず　なかろう\n　そなたが後衛　私が前衛\n　あれは　最高の　布陣だった」\n",
-  "en": "{spk}リュウビ　　\n「How could I forget? You in\n the rear, me in the front.\n That was the finest」\n{next}\n「formation there was.」\n",
-  "pages": "\"How could I forget? You in the rear, me in the front. That was the finest formation there was.\""
+  "en": "{spk}リュウビ　　\n「How could I forget? You in\n the rear, I in the front. The\n finest formation there was.」\n",
+  "pages": "\"How could I forget? You in the rear, I in the front. The finest formation there was.\""
  },
  {
   "id": "1E6E2C",
@@ -1788,8 +1788,8 @@
    1715
   ],
   "jp": "{spk}ファウスト　\n「やはり　アウトレンジから\n　技と魔法で　一気に\n　倒すしか　手はありませんね」\n",
-  "en": "{spk}ファウスト　\n「As I thought, our only option\n is to strike from outside its\n range with skills and magic,」\n{next}\n「all at once.」\n",
-  "pages": "\"As I thought, our only option is to strike from outside its range with skills and magic, all at once.\""
+  "en": "{spk}ファウスト　\n「As I thought: we must hit it\n from out of range, all at\n once, with skills and magic.」\n",
+  "pages": "\"As I thought: we must hit it from out of range, all at once, with skills and magic.\""
  },
  {
   "id": "1E704C",
@@ -1851,8 +1851,8 @@
    1722
   ],
   "jp": "{spk}{FF28}\n「人は　とうに　忘れてしまっている\n　天空の星々を　つかさどり\n　世界をみちびいていた　古代の神々」\n{next}\n「そう‥‥連邦の　掘り出した\n　古代神の　いぶつとは　また　ことなる\n　もう一つの　星座の神々たち‥‥」\n{next}\n「古代の書物に　こうあるわ」\n{next}\n　地に　やみがあふれ　空には悪意が満ちる\n　太陽は　すでに　その姿を消し\n　人は　終わる事ない　夜におびえた\n{next}\n　ああ　しかし　見るがいい！\n　太陽が　失われたとしても\n　我らには　天にまたたく　星がある！\n{next}\n　星は　人々のねがいを　受け入れ\n　地上へと　まい降り\n　十二の石像へと　姿を変えた‥‥\n{next}\n　それ　すなわち　黄道十二神なり\n{FF04}{end}\n",
-  "en": "{spk}{FF28}\n「Ancient gods that people\n forgot long ago. They ruled\n the stars of heaven and」\n{next}\n「guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the\nstars twinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
-  "pages": "\"Ancient gods that people forgot long ago. They ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
+  "en": "{spk}{FF28}\n「Ancient gods, long forgotten,\n who ruled the stars of\n heaven and guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the stars\ntwinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
+  "pages": "\"Ancient gods, long forgotten, who ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
  },
  {
   "id": "1E7428",
@@ -1878,8 +1878,8 @@
    1725
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue, are you the one who\n will drive away the darkness」\n{next}\n「of the world?」\n",
-  "pages": "\"You who stand before my statue, are you the one who will drive away the darkness of the world?\""
+  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
+  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
  },
  {
   "id": "1E74EA",
@@ -1905,8 +1905,8 @@
    1728
   ],
   "jp": "{spk}黄道十二神　\n「われは　星々の流れに　したがって\n　この世界の　運命の流れを\n　つかさどる　十二の神の一人　なり」\n{next}\n「そなたに　わが力をたくす\n　われら　十二の神の代理人として\n　この世の　ながれを　是正せよ」\n",
-  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who follow the course of the\n stars and govern the flow」\n{next}\n「of this world's fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set right the course of this」\n{next}\n「world.」\n",
-  "pages": "\"I am one of the twelve gods who follow the course of the stars and govern the flow of this world's fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set right the course of this world.\""
+  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who, following the stars,\n govern the flow of fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set the world aright.」\n",
+  "pages": "\"I am one of the twelve gods who, following the stars, govern the flow of fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set the world aright.\""
  },
  {
   "id": "1E7630",
@@ -1941,8 +1941,8 @@
    1732
   ],
   "jp": "{spk}黄道十二神　\n「なんじは　世界にちらばりし\n　十二神の像を　探し出し\n　その全ての力を　束ねるのだ」\n{next}\n「さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n",
-  "en": "{spk}黄道十二神　\n「Seek out the statues of the\n twelve gods scattered\n across the world and bind all」\n{next}\n「their power together.」\n{next}\n「Then shall we grant thee\n true power...」\n",
-  "pages": "\"Seek out the statues of the twelve gods scattered across the world and bind all their power together.\" || \"Then shall we grant thee true power...\""
+  "en": "{spk}黄道十二神　\n「Seek out the twelve gods'\n statues across the world,\n and bind all their power.」\n{next}\n「Then shall we grant thee\n true power...」\n",
+  "pages": "\"Seek out the twelve gods' statues across the world, and bind all their power.\" || \"Then shall we grant thee true power...\""
  },
  {
   "id": "1E779C",
@@ -1968,8 +1968,8 @@
    1735
   ],
   "jp": "「わずかな戦力で　オレ達は\n　ハイドラをも　上回る\n　恐るべき火竜を　打ち倒した‥‥」\n{next}\n「この頼れる　仲間とならば\n　連邦を倒す事も　夢ではない\n　オレは　ふと　そんな確信を抱いた」\n",
-  "en": "「With only a small force, we\n struck down a fearsome fire\n dragon even stronger than」\n{next}\n「the Hydra...」\n{next}\n「With allies this reliable,\n beating the Federation is no\n mere dream. All at once, I」\n{next}\n「felt sure of it.」\n",
-  "pages": "\"With only a small force, we struck down a fearsome fire dragon even stronger than the Hydra...\" || \"With allies this reliable, beating the Federation is no mere dream. All at once, I felt sure of it.\""
+  "en": "「With a small force, we struck\n down a fire dragon more\n fearsome than the Hydra...」\n{next}\n「With allies this reliable,\n beating the Federation is no\n dream. Suddenly I was sure.」\n",
+  "pages": "\"With a small force, we struck down a fire dragon more fearsome than the Hydra...\" || \"With allies this reliable, beating the Federation is no dream. Suddenly I was sure.\""
  },
  {
   "id": "1E7C0E",

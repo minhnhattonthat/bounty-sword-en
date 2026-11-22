@@ -322,12 +322,14 @@ def page_view(entry, n):
     return jp[n - 1], en[n - 1]
 
 
-def repage(name, src):
+def repage(name, *srcs):
     """Fit-pass input: rows `id<TAB>page<TAB>new English page` (pages from 1) -> work/tl/NAME.tsv + NAME.out.tsv
-    with each entry's full page paragraphs, the named pages replaced; then `check NAME`, `merge NAME --overwrite`."""
+    with each entry's full page paragraphs, the named pages replaced (a later file's row wins: retries go in a
+    second file); then `check NAME`, `merge NAME --overwrite`."""
     entries = index()
     new = {}
-    for row in read_tsv(Path(src)):
+    rows = [row for src in srcs for row in read_tsv(Path(src))]
+    for row in rows:
         eid, n, text = row[0], int(row[1]), "\t".join(row[2:])
         e = entries[eid]
         cur = new.get(eid) or [p.strip() for p in e["pages"].split("||")]
@@ -339,7 +341,7 @@ def repage(name, src):
                                     encoding="utf-8", newline="\n")
     (TL / f"{name}.out.tsv").write_text("".join(f"{i}\t{pages.SEP.join(new[i])}\n" for i in ids),
                                         encoding="utf-8", newline="\n")
-    print(f"{name}: {len(ids)} entries, {sum(1 for _ in read_tsv(Path(src)))} pages replaced")
+    print(f"{name}: {len(ids)} entries, {len(rows)} page rows")
 
 
 def merge(new, overwrite):
@@ -397,8 +399,8 @@ def main(argv):
                 path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
         print(f"rewrap: {changed} entries changed")
         return 0
-    if cmd == "repage":   # repage NAME FIX.tsv (id, page, English page) -> NAME.tsv/.out.tsv
-        return repage(args[0], args[1])
+    if cmd == "repage":   # repage NAME FIX.tsv [RETRY.tsv ...] (id, page, English page) -> NAME.tsv/.out.tsv
+        return repage(args[0], *args[1:])
     if cmd == "fit":      # fit '"quoted page"' ...: dry-run wrap, boxes of 3 lines with pixel widths
         for text in args:
             q = text.startswith('"') and text.endswith('"')
