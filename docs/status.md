@@ -2,8 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session u: C4 battle-setup name overrides done, the JP-left list
-  is closed; **next: the full re-tour on the final build + verdicts + `qa_gate.py`**; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session u: C4 names done, JP-left list closed, full re-tour + gate
+  green on build b87fef44ac02; **next, the rest of phase 8's done-when: `inkbox.py` on every Yes/No and centred menu
+  box (trade-in Yes/No `shop_trade`, shop Buy/Sell/Quit, file menus, battle/camp menus; compare tour_jp when unsure),
+  stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`), `textcover.py` over side tables (master
+  coverage done, `work/qa/cover`), then the remaining to-do 3 shop lines read in game**; to-dos below).
+  Tour: `work/qa/tour` 146/146 ok, states refreshed, sheets `work/qa/tour/sheets/sheet*.png` (13), manifest
+  `work/qa/manifest.tsv` (build recorded), verdicts `work/qa/verdicts/chunk_077c37329c60_000.tsv` (own fresh pass,
+  13 ok); `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exits 0. Any rebuild needs a new tour + init.
 - **Session 2026-11-23u (phase 8, C4 names):** static parser **`tools/re/battle_setup.py`** for the battle-setup
   records (C4:2A39, C0:A3AE/A496 format in its docstring): 214 name overrides (copied to `$1132 + 12*slot`), 211
   now English through `script/default_names.tsv` (Soldier, Dragoons, Ranger, Zodiac, M.God 1-12, Captain ...; 48 px
@@ -349,6 +355,6 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
   - Debug tool: town tavern, Mode 9 and the real ending not in the scene list; GOD/NOENC/FAST not built.
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
-- **Open bugs:** C4 battle-setup name overrides show JP on unit status (session t, `docs/re/jp_left.md`); shop
-  lines not all read in game yet (to-do 3); shop warp ignores input after the greeting (debug tool).
+- **Open bugs:** shop lines not all read in game yet (to-do 3); shop warp ignores input after the greeting (debug
+  tool). (C4 battle-setup names: fixed in session u.)
 - **Waiting on the user:** nothing. (Keyboard input in Mesen not checked by hand: headless session.)
