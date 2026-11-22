@@ -2,25 +2,23 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate: reopened by the phase 6 review (`.harness/reviews/bounty-sword-en-phase6.md`). 3197/3656
-  entries in English, `batches.py check` 0 problems. (1) **Widow fit pass done** (D12, session g): 0 widow boxes,
-  and `check` now fails on any widow (`widows()` is part of `problems`). fit03 = 437 pages: 271 split at a sentence
-  end with `{next}` (same box count, clean break), 166 tightened to 3 lines by hand; `tools/fit_hint.py` lists the
-  sentence-end splits that fit. All 8 Zodiac statue scenes now share the fit01 wording. Left to close phase 6:
-  (2) **independent review** of every batch (`tools/pairs.py bNNN --out work/qa/review/bNNN.txt`; codex is out of
-  quota until 2026-11-26 10:32, Orca workers can't start subagents: a fresh worker reviews pairs it did not
-  translate), rows in `docs/reviews.md` "Independent review"; fix Critical/Important, Minors to `docs/polish.md`.
-  **Done: b001-b036** (sessions h, i). **Resume at b037** (b037-b050 master, then b051-b069 side tables; pairs
-  files for b033-b050 already regenerated after rv02/rv03 in `work/qa/review/`, b037+ unchanged since). A big batch
-  is ~8k tokens: about 8 batches a worker. Fix a finding with `work/tl/rvNN_fix.tsv` rows `id<TAB>page<TAB>text`,
-  `batches.py repage rvNN FILE`, `check rvNN`, `merge rvNN --overwrite` (the old `bNNN.out.tsv` files predate the
-  fit pass: never re-merge them). Rune's later lines (b048 Highland etc.): check the feminine register (brief).
-  Then phase 7. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
-  keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (phase 7).
+- **Phase:** 7. Insert, fit, check: starting. Phase 6 closed 2026-11-23 (session j): 3197/3656 entries in English,
+  `batches.py check` 0 problems (widows included), 0 widow boxes, independent review of every batch b001-b069 done
+  (`docs/reviews.md` "Independent review": 0 Critical, 3 Important fixed in rv01-rv02, Minors in `docs/polish.md`).
+  Done-when for phase 7 (skill): build green, width/overflow lint clean, control codes matched, `romdiff.py` shows
+  no writes outside allowed ranges. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
+  keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (below).
+  Fixing a text finding: `work/tl/rvNN_fix.tsv` rows `id<TAB>page<TAB>text`, `batches.py repage rvNN FILE`,
+  `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
 - **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);
   (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
   its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
   (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
+- **Session 2026-11-23j (independent review b037-b069, phase 6 closed):** fresh worker, read-only pass of the
+  pairs files (Read with offset/limit, ~80 lines a call): 0 Critical, 0 Important, 12 Minors to `docs/polish.md`
+  (incl. US spellings Defense/armor/traveling in a British-spelled script, and 0EFCAA "Frontier Volcano Isle" vs
+  the "Volcano Isle" label). Rune's Highland lines (b045/b046) carry no feminine markers in the JP, so nothing to
+  restore there. `batches.py check` 0 problems, `tools/check.py` 41 passed. No text changed, so no rebuild needed.
 - **Session 2026-11-23i (independent review b017-b036):** fresh worker, read-only pass: 0 Critical, 2 Important
   fixed (rv02: shout 259132 "ANOTHER DIMENSION"; old-man/old-woman register in 21618A, 217E8E, 217EF6, 215BF6),
   small fixes (273A5A, 25C374, 258F2E), Zodiac intro scenes 2721F6/28B4EB unified with the shared wording (rv03);

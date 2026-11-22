@@ -47,3 +47,15 @@
   2890B1 闘将どの "Lord Warlord" reads oddly ("Warlord-dono" per D1, or "my lord Warlord"); 287555 "You avenged
   our village, and well done..." ("Well done, I tell you..."); 28ACD3 このマウザー "I, Mauser," could be "the great
   Mauser" (style reference)
+- [ ] Independent review b037-b050 (minors): 2916E0/29571A そのうちな "Some time..." ("Maybe some other time...");
+  292E42 "Gh, a, a, a, uh, !?" (stray commas: "Gh... aah... uhh...!?"); 29352E "But I head further north" in
+  past narration ("headed"); 296914 カワイくないの "You're no fun at all!" ("What a brat!"); 29C87E "But couldn't
+  you kill me?" reads as a request ("But you couldn't bring yourself to kill me, could you?"); 2A8BCE Ryubi 無念
+  "Regrettable!" ("Curses!"); 2A99C2/2A9A80 ring shouts say "Aphrodite's/Pluto's power dwells within" where the
+  other ten say "The power of X" (width?); 2AD998 ついにきたぞ "It's finally here!" ("We've finally made it!")
+- [ ] Independent review b051-b069 (minors): US spellings in a British-spelled script (colour, favour, armour,
+  travelling, defence): "Defense" 1DF0ED, 1DF271 (ceremony), 0EE656, 0EF8DC (descriptions), "armor" in the
+  Tsukikage line of master_214606, "Rumor ... traveling" 1E0000 South Desert hint; 0EF856 "Fully restores all
+  allies' HP, SP and ailments" (ailments are cured, not restored); 0EFA0E "stops everyone else, friend and foe,
+  dead" ("dead" can read as killed: "freezes everyone else"); 0EFCAA whistle quotes "Frontier Volcano Isle" but
+  the map label and dialogue say "Volcano Isle"
