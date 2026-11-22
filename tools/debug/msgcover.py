@@ -53,6 +53,32 @@ def emu(rom, out, frames, *extra):
     return code
 
 
+# engine A scripts outside the master table (byte scripts and in-place tables): reached by the same pointer swap
+SIDE_A = ("battle_prompts", "battle_prompts_b", "system_prompts", "level_up", "target_prompts", "enemy_lost")
+
+
+def side_job(rom, out, hook, report, wait, shots):
+    unshown = {line.split()[2] for line in report.read_text(encoding="utf-8").splitlines()
+               if line.startswith("NEVER SHOWN")}
+    keys = dict(line.split("\t") for line in (ROOT / "build" / "strings.tsv").read_text(encoding="utf-8").splitlines())
+    ptrs = [keys[e["id"]] for t in SIDE_A
+            for e in json.loads((ROOT / "script" / f"{t}.json").read_text(encoding="utf-8"))
+            if e["id"] in unshown and e["id"] in keys]
+    d = out / "side_a"
+    if d.exists():
+        shutil.rmtree(d)
+    if not ptrs:
+        print("side_a: nothing to do")
+        return 0
+    extra = ["--script", str(DEBUG / "msgcover.lua"), "--var", f"HOOK_STATE=[[{hook.as_posix()}]]",
+             "--var", f"PTRS='{','.join(ptrs)}'", "--var", f"WAIT={wait}"] + (["--var", "MSGSHOT=1"] if shots else [])
+    code = emu(rom, d, (len(ptrs) + 2) * (wait + 10) + 600, *extra)
+    log = (d / "log.txt").read_text(encoding="utf-8", errors="replace") if (d / "log.txt").exists() else ""
+    print(f"side_a: exit {code}, {'done' if 'MSGCOVER_DONE' in log else 'NOT DONE'}, "
+          f"{log.count(' ok' + chr(10))} ok, {log.count(' miss' + chr(10))} miss of {len(ptrs)}")
+    return 0 if "MSGCOVER_DONE" in log else 1
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("rom", nargs="?", type=Path, default=ROM)
@@ -63,18 +89,26 @@ def main():
     ap.add_argument("--last", type=int, default=SLOTS - 1)
     ap.add_argument("--shots", action="store_true")
     ap.add_argument("--waive", type=Path, default=ROOT / "docs" / "text_unshown.tsv")
+    ap.add_argument("--side", type=Path, metavar="REPORT",
+                    help="textcover.py stdout: swap in its NEVER SHOWN engine A side-table scripts (SIDE_A tables, "
+                         "addresses from build/strings.tsv) instead of master slots; one job, writes OUT/side_a")
     a = ap.parse_args()
     rom, out = a.rom.resolve(), a.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
-    (out / "strings.tsv").write_text(strings_tsv(rom.read_bytes()), encoding="utf-8")
+    if not a.side:
+        (out / "strings.tsv").write_text(strings_tsv(rom.read_bytes()), encoding="utf-8")
 
     hook = out / "hook.mss"
-    hook.unlink(missing_ok=True)
-    code = emu(rom, out / "_hook", 7000, "--script", str(DEBUG / "warp.lua"), "--var", "SCENE='msg'",
-               "--var", f"SCENES=[[{(DEBUG / 'scenes.tsv').as_posix()}]]",
-               "--var", f"HOOK_STATE=[[{hook.as_posix()}]]")
-    if not hook.exists():
-        sys.exit(f"no hook state (emu.py exit {code}, see {out / '_hook' / 'log.txt'})")
+    if not (a.side and hook.exists()):
+        hook.unlink(missing_ok=True)
+        code = emu(rom, out / "_hook", 7000, "--script", str(DEBUG / "warp.lua"), "--var", "SCENE='msg'",
+                   "--var", f"SCENES=[[{(DEBUG / 'scenes.tsv').as_posix()}]]",
+                   "--var", f"HOOK_STATE=[[{hook.as_posix()}]]")
+        if not hook.exists():
+            sys.exit(f"no hook state (emu.py exit {code}, see {out / '_hook' / 'log.txt'})")
+
+    if a.side:
+        sys.exit(side_job(rom, out, hook, a.side, a.wait, a.shots))
 
     n = a.last - a.first + 1
     step = -(-n // a.jobs)

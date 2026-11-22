@@ -2,22 +2,24 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session x: text coverage 3281/3573 on build c014fcdc11f2;
-  **next: (1) close the 288 unshown strings (`python -X utf8 tools/debug/textcover_all.py --skip-master
-  --skip-tour --skip-side` re-reports into `work/textcover_report.out` style output; 4 waived in
-  `docs/text_unshown.tsv`): ceremony 86 = mostly the **battle level-up engine B scripts** (DD:F0CF.. "X: Attack +N",
-  "is now Level N!", "Attack rose by N.", digits DD:F091..) and the guardian-deity names (DD:ED5B Ares..Poseidon,
-  FF07 subroutines): needs a level-up scene (poke EXP, win a fight) or a hook where their caller stores `$7E4A37/39`;
-  short_strings 65 (shop scripts: "X is now Y", Who is buying/selling, can't equip, bags full: shop routes or a
-  stress save); menus 34 (PLAYER DATA / BATTLE TOTAL records screen not in the scene list, name-entry kana grids
-  01C283.. are input glyphs: waive with that reason); windows 22 (drop/discard, file overwritten/erased/bad, orders
-  sub-lines); objectives 22 (reader unknown: never read on any warp); battle_prompts 21, system_prompts 12,
-  battle_prompts_b 3, target_prompts 3, level_up 8 (battle events: duel/recruit/job rosters, "Enemy sighted",
-  "Map clear!"); speakers 7; descriptions 1 (0EF038 "…only" 専用: no FF06 call, low word has 67 ambiguous hits);
-  menus_c 2; unit_records 2. Swapping engine B at its word reader C3:C789 does not work (tried, removed);
-  (2) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp "Discard it?" (01CCCC), "Promote? OK No" (01D38D),
-  "Retreat! Sure? OK No" (01C578); (3) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`);
-  (4) to-do 3 shop lines read in game**).
+- **Phase:** 8. QA in the emulator: in progress (session y: **`textcover.py` exits 0** on build c014fcdc11f2,
+  3544/3573 shown, 29 waived with evidence; **next: (1) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp
+  "Discard it?" (01CCCC), "Promote? OK No" (01D38D), "Retreat! Sure? OK No" (01C578); (2) stress saves
+  (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) to-do 3 shop lines read in game; (4) the swapped
+  engine B level-up / stat-up lines (1DF0CF.., polish.md) were read, not seen laid out: see them on a real level-up
+  if a scene can reach one**).
+- **Session 2026-11-23y (phase 8, text coverage closed):** `textcover_all.py` step 5 "gaps" swaps in whatever the
+  report still lists: **sidecover jobs with `catch`** (pointer caught while it holds one table's entry, swapped to
+  another table's): `engine_b` (ceremony + short_strings from the description hook C3:C52D; RAM strings the scripts
+  FF06-call get an empty `{FF07}` poked first, `POKES`), `grids` (menus/windows/menus_c via `C1Run40`, `$40`),
+  `engine_b_moves` (parents of FF09 operand tables, cursor moved: the first FF09 table is read only on a move;
+  `ONCE=1` one swap a round); **`msgcover.py --side REPORT`** (engine A side scripts: battle/system prompts,
+  level_up, target_prompts via the `$7E3723` swap, `PTRS`); **speakers** (FF15 name rows C2:5F0D.. are read by
+  C2:5B3C only when a message names them; one `msg` scene per row with the probe). Waived: 22 objectives (pointer
+  table D8:FC9C has no code reference; never read in two full tours), 0EF038 (no pointer/FF06 call in the original
+  ROM), 2 unit_records data fragments. Seen: `work/qa/textcover/master/side_a/check.png` ("Kill him", "We've
+  reach..", "Map clear", "Attack rose" typing in the dialogue box). Helper `tools/debug/unshown.py REPORT [--full]`
+  groups a report by table. check 60 passed, lint 0, build unchanged (tour gate stands).
 - **Session 2026-11-23x (phase 8, text coverage):** `build.py` now writes **`build/strings.tsv`** (`id<TAB>CPU
   address` of every master message and side-table text entry, from the build's own layout: `script_text.ADDR`,
   relocated engine A scripts at their copy, byte tables in bank $FE, engine B trampolines at their slot; test

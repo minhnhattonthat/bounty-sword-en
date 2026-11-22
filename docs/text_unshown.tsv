@@ -2,3 +2,28 @@
 0EEE9A	descriptions: lone {FF00} after the sub-string 0EEE68, which returns with {FF07}; no pointer to it, nothing runs on into it
 05EBB0	battle_prompts: Dorn/Lena/Baron tavern roster with no caller in the ROM (the 5 other rosters each have a `2E ptr24`; script/keep_jp.txt)
 022FDC	enemy_lost: no 24- or 16-bit reference in the ROM and never read in the 146-scene region-read tour (work/qa/rr2) nor the textcover tour (docs/re/jp_left.md)
+0EF038	descriptions: "       only" (専用) sub-string with no caller: the original ROM has no 24-bit pointer (38 F0 CE) and no FF06 call (06 FF 38 F0) to it; the entry before it ends {FF00}, so nothing runs on into it
+046E4A	unit_records: record data bytes inside a C4 unit record (追ｓ = 02 C1.. words), not text; script/keep_jp.txt
+04716A	unit_records: record data bytes inside a C4 unit record, not text; script/keep_jp.txt
+18FD06	objectives: dead table. Its 16-bit pointer table D8:FC9C has no reader (no LDA abs/long/indexed with 9C FC in the ROM; the one byte hit 0x21CE5E is inside master text) and neither table nor text was read in the 140-scene region-read tour (work/qa/rr_all, docs/status.md sixth session) or the 146-scene textcover tour
+18FD1E	objectives: dead table, see 18FD06
+18FD42	objectives: dead table, see 18FD06
+18FD5A	objectives: dead table, see 18FD06
+18FD78	objectives: dead table, see 18FD06
+18FD8A	objectives: dead table, see 18FD06
+18FD9C	objectives: dead table, see 18FD06
+18FDAC	objectives: dead table, see 18FD06
+18FDBC	objectives: dead table, see 18FD06
+18FDCE	objectives: dead table, see 18FD06
+18FDDE	objectives: dead table, see 18FD06
+18FDEE	objectives: dead table, see 18FD06
+18FE02	objectives: dead table, see 18FD06
+18FE16	objectives: dead table, see 18FD06
+18FE26	objectives: dead table, see 18FD06
+18FE4A	objectives: dead table, see 18FD06
+18FE5C	objectives: dead table, see 18FD06
+18FEE8	objectives: dead table, see 18FD06
+18FF00	objectives: dead table, see 18FD06
+18FF12	objectives: dead table, see 18FD06
+18FF26	objectives: dead table, see 18FD06
+18FF36	objectives: dead table, see 18FD06

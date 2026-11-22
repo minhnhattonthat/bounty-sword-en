@@ -11,11 +11,15 @@
    log the side-table strings they read.
    `--states` refreshes work/states/<scene>.mss from this build.
 4. DIR/side: tools/debug/sidecover.py (name and description tables by pointer swap, from those states).
-5. scripts/textcover.py DIR DIR/strings.tsv --mask 0x3FFFFF --waive docs/text_unshown.tsv (exit code passed on).
-More runs (stress saves, probes) can drop their own `log.txt` folders under DIR before step 5: `--skip-master
---skip-tour --skip-side` only re-reports.
+5. DIR/gaps, gaps_moves, master/side_a, speakers: what 2-4 missed, swapped in by the report's own gaps (engine B
+   scripts and grid strings, FF09 operand tables with the cursor moved, engine A side scripts, speaker rows; see
+   `speakers()` and the sidecover jobs with `catch`). `--skip-gaps` leaves it out.
+6. scripts/textcover.py DIR DIR/strings.tsv --mask 0x3FFFFF --waive docs/text_unshown.tsv (exit code passed on).
+More runs (stress saves, probes) can drop their own `log.txt` folders under DIR before step 6: `--skip-master
+--skip-tour --skip-side --skip-gaps` only re-reports.
 """
 import argparse
+import json
 import shutil
 import subprocess
 import sys
@@ -56,6 +60,7 @@ def main():
     ap.add_argument("--skip-master", action="store_true")
     ap.add_argument("--skip-tour", action="store_true")
     ap.add_argument("--skip-side", action="store_true")
+    ap.add_argument("--skip-gaps", action="store_true")
     ap.add_argument("--match", help="regex on scene names (tour)")
     ap.add_argument("--waive", type=Path, default=ROOT / "docs" / "text_unshown.tsv")
     a = ap.parse_args()
@@ -78,12 +83,59 @@ def main():
         subprocess.run(cmd)
         for d in (out / "tour").glob("*/_mesen"):
             shutil.rmtree(d, ignore_errors=True)
-    if not a.skip_side:
-        subprocess.run(py + [str(DEBUG / "sidecover.py"), str(a.rom), "--out", str(out / "side"), "--shots"])
     cmd = py + [str(Path(SKILL) / "scripts" / "textcover.py"), str(out), str(strings), "--mask", "0x3FFFFF"]
     if a.waive.exists():
         cmd += ["--waive", str(a.waive)]
+
+    def report():
+        path = out / "gaps_report.out"
+        with open(path, "w", encoding="utf-8") as fh:
+            subprocess.run(cmd, stdout=fh)
+        return path
+
+    if not a.skip_side:
+        subprocess.run(py + [str(DEBUG / "sidecover.py"), str(a.rom), "--out", str(out / "side"), "--shots"])
+    if not a.skip_gaps:
+        # 5. what steps 2-4 missed, by swapping the gaps in: engine B scripts and grid strings (sidecover), FF09
+        # operand tables with the cursor moved (their parents), engine A side scripts (msgcover --side), speaker rows
+        rep = report()
+        subprocess.run(py + [str(DEBUG / "sidecover.py"), str(a.rom), "--out", str(out / "gaps"), "--only",
+                             "engine_b,grids", "--report", str(rep), "--shots"])
+        rep = report()
+        subprocess.run(py + [str(DEBUG / "sidecover.py"), str(a.rom), "--out", str(out / "gaps_moves"), "--only",
+                             "engine_b_moves", "--report", str(rep), "--shots"])
+        subprocess.run(py + [str(DEBUG / "msgcover.py"), str(a.rom), "--out", str(out / "master"), "--side",
+                             str(report()), "--shots"])
+        speakers(a.rom, out, report())
     sys.exit(subprocess.run(cmd).returncode)
+
+
+def speakers(rom, out, rep):
+    """Speaker-table rows (C2:5D5D..) are read by the FF15 name match only when a message names that speaker, and
+    the master run watches the text banks alone: show one message per unshown row with the probe on the table."""
+    unshown = {line.split()[2] for line in rep.read_text(encoding="utf-8").splitlines()
+               if line.startswith("NEVER SHOWN")}
+    rows = [e for e in json.loads((ROOT / "script" / "speakers.json").read_text(encoding="utf-8"))
+            if e["id"] in unshown and e.get("kind") == "text"]
+    slots = {}
+    for f in sorted((ROOT / "script").glob("master_*.json")):
+        for m in json.loads(f.read_text(encoding="utf-8")):
+            for e in rows:
+                if e["id"] not in slots and m.get("slots") and m["jp"].startswith("{spk}" + e["jp"]):
+                    slots[e["id"]] = m["slots"][0]
+    lo = min(int(e["id"], 16) for e in json.loads((ROOT / "script" / "speakers.json").read_text(encoding="utf-8")))
+    probe = Path(SKILL) / "scripts" / "lua" / "probes" / "textcover.lua"
+    for sid, slot in sorted(slots.items()):
+        d = out / "speakers" / f"msg_{slot}"
+        shutil.rmtree(d, ignore_errors=True)
+        subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts" / "emu.py"), str(rom), "--out",
+                        str(d), "--script", str(DEBUG / "warp.lua"), "--script", str(probe), "--var", "SCENE='msg'",
+                        "--var", f"MSG={slot}", "--var", f"RANGES='C{lo:05X}-C{lo + 0x300:05X}'",
+                        "--frames", "9000"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        shutil.rmtree(d / "_mesen", ignore_errors=True)
+    for e in rows:
+        if e["id"] not in slots:
+            print(f"speaker {e['id']} {e['jp']}: no master message names it")
 
 
 if __name__ == "__main__":

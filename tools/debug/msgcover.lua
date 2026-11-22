@@ -24,6 +24,19 @@ end
 L.on_read(0xDE0000, 0xEAFFFF, on_text_read)
 L.on_read(0xF00000, 0xFEFFFF, on_text_read)
 
+-- PTRS ("FE01B3,F38D56,..."): side-table engine A scripts (battle/system prompts, level-up lines) instead of master
+-- slots; each is swapped into $7E3723 the same way ("SLOT <i>" counts the list).
+local ptrs = {}
+for h in string.gmatch(PTRS or "", "%x+") do ptrs[#ptrs + 1] = tonumber(h, 16) end
+if #ptrs > 0 then
+  first, last, slot = 1, #ptrs, 0
+  local lo, hi = 0xFFFFFF, 0
+  for _, p in ipairs(ptrs) do
+    if p < 0xDE0000 or (p > 0xEAFFFF and p < 0xF00000) then lo, hi = math.min(lo, p), math.max(hi, p) end
+  end
+  if hi > 0 then L.on_read(lo, hi, on_text_read) end
+end
+
 local loading = false
 local function next_slot()
   while true do
@@ -33,8 +46,13 @@ local function next_slot()
       L.finish(0)
       return
     end
-    local p = MSG_TABLE + slot * 3
-    local ptr = rd(p) | (rd(p + 1) << 8) | (rd(p + 2) << 16)
+    local ptr
+    if #ptrs > 0 then
+      ptr = ptrs[slot]
+    else
+      local p = MSG_TABLE + slot * 3
+      ptr = rd(p) | (rd(p + 1) << 8) | (rd(p + 2) << 16)
+    end
     if ptr ~= 0 and not done[ptr] then
       done[ptr] = true
       target, hit, startAt, loading = ptr, false, nil, true
