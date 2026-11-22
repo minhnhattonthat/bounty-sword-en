@@ -22,9 +22,9 @@ from bps import snes_checksum  # noqa: E402
 from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
-from rom_check import allowed_ranges, check_ranges, write_sites  # noqa: E402
+from rom_check import allowed_ranges, check_ranges, put_default_names, write_sites  # noqa: E402
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
-from script_text import OVERFLOW, SCRIPT, TAGS, apply_script, dump, load  # noqa: E402
+from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load  # noqa: E402
 from tag_font import TagFont  # noqa: E402
 
 ORIG = ROOT / "rom" / "Bounty Sword (Japan).sfc"
@@ -76,7 +76,10 @@ def build(out=OUT, identity=False, marker=False, qa=()):
     built = repack(rom, data, WordCodec())
     out.parent.mkdir(parents=True, exist_ok=True)
     if not identity:
-        built += b"\xff" * (ROM_EXPANDED - len(built))
+        built = bytearray(built)
+        if not marker:
+            put_default_names(built, TextCodec(True))     # script/default_names.tsv: new-game names in English
+        built = bytes(built) + b"\xff" * (ROM_EXPANDED - len(built))
     out.write_bytes(built)
     if not identity:
         assemble(out)
@@ -114,6 +117,8 @@ def main():
         a.out = BUILD / "bounty_qa.sfc"
     elif a.marker and a.out == OUT:
         a.out = MARKER_OUT
+    elif a.identity and a.out == OUT:          # never overwrite the English build with the repack check
+        a.out = BUILD / "bounty_identity.sfc"
     rom, built = build(a.out, identity=a.identity, marker=a.marker, qa=a.qa)
     diff = sum(1 for x, y in zip(rom, built) if x != y) + abs(len(rom) - len(built))
     print(f"{a.out.relative_to(ROOT) if a.out.is_relative_to(ROOT) else a.out}: {len(built)} bytes, "

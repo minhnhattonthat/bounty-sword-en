@@ -57,7 +57,33 @@ def write_sites(data):
     out += [(p, p + 3, f"caller of relocated {r['id']}") for r in data.get("relocs", ()) for p in r["refs"]]
     out += [(h, h + HOOK_BYTES, "vwf.asm hook $%06X" % (h + 0xC00000)) for h in hook_sites()]
     out.append((*CHECKSUM, "header checksum"))
+    out += [(o, o + 2 * n, f"default name {en}") for o, n, _, en in default_names()]
     return sorted(out)
+
+
+DEFAULT_NAMES = ROOT / "script" / "default_names.tsv"
+
+
+def default_names(path=DEFAULT_NAMES):
+    """[(offset, words, jp, en)] from script/default_names.tsv."""
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines() if path.exists() else ():
+        if line.strip() and not line.startswith("#"):
+            off, n, jp, en = line.split("\t")[:4]
+            rows.append((int(off, 16), int(n), jp, en))
+    return rows
+
+
+def put_default_names(rom, codec, path=DEFAULT_NAMES):
+    """Write each default name (English codes, zero-padded to its field) into bytearray `rom`; checks the JP first."""
+    for off, n, jp, en in default_names(path):
+        old = b"".join(w.to_bytes(2, "little") for w in codec.encode(jp))
+        if rom[off:off + len(old)] != old:
+            raise ValueError(f"default name at {off:06X}: ROM does not hold {jp}")
+        words = codec.encode(en)
+        if len(words) > n:
+            raise ValueError(f"default name {en!r} is {len(words)} words, field holds {n}")
+        rom[off:off + 2 * n] = b"".join(w.to_bytes(2, "little") for w in words) + b"\0" * (2 * (n - len(words)))
 
 
 def write_ranges(ranges, path):

@@ -21,7 +21,7 @@
   "id": "1AF569",
   "kind": "text",
   "jp": "いかがいたしましょう？{FF07}",
-  "en": "what can I do for you?{FF07}",
+  "en": "How can I help?{FF07}",
   "refs": [
    "1AF5A1",
    "1AF7EE",
@@ -54,7 +54,7 @@
   "id": "1AF585",
   "kind": "text",
   "jp": "「いらっしゃいませ，{FF01}{FF0E:0003}",
-  "en": "\"Welcome! Now,{FF01}{FF0E:0003}"
+  "en": "\"Welcome!{FF01}{FF0E:0003}"
  },
  {
   "id": "1AF59F",

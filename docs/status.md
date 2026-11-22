@@ -2,7 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: starting. Phase 7 closed 2026-11-23 (session k): build green and self-checking
+- **Phase:** 8. QA in the emulator: in progress (session l: phase 7 review fixed, first tour read, to-dos below).
+  Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
   identity build still byte-identical; smoke ok. Left JP on purpose: junk/data rows (see "Skip on purpose" below),
@@ -16,8 +17,31 @@ Updated at the end of every session. Keep it to what the next session needs; his
   武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): find how the layout words in 01D1F5 place its 32 glyph tiles on
   the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`; (2) widen the 2-cell
   menu slices that force abbreviations (polish line "Menu grid strings"; e.g. 01D31B "Wp.Etc Gear Item Binx").
+  (3) **shop dialogue box is ~20 cells, not engine B's 28**: a row past it wraps and the Buy/Sell/Quit row then
+  lands on row 1 (seen: greeting, fixed in session l, `work/qa/w_shop7`). Measure the box, add the width to the
+  lint for the shop rows (short_strings 1AF618..1AFDC2) and re-check every shop line in game (sell/equip/trade-in).
+  (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
+  (5) name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
+  and add it to `script/default_names.tsv` like ソード/テティス. (6) status "Gdr 男" value still JP (polish line).
+  (7) camp_items shows 倉庫 (storage tab) in JP and "Itm1": same as to-do 2. (8) cards 02/51/53-ish: dialogue
+  typed over the card subtitle area overlaps it ("to be thrown away!" eturn'"): compare with `work/qa/tour_jp`
+  (same scene names) before fixing; card_31 title graphic "Anicient Weapon" (check whether the JP card has it).
+  (9) textcover: no `build/strings.tsv` and no multi-message runner yet (the `msg` scene shows one message per
+  boot); master addresses can come from the built pointer table (`$E6:D5EF` + 3*slot).
   Then the phase 8 done-when (skill table): warp tour sheets + read-only visual-QA verdicts (`qa_gate.py`), every
   graphics-text row English in a zoomed shot, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py`.
+  Tours: `work/qa/tour` (English, build of session l before the default-name/greeting fix: re-run it), `tour_jp`
+  (original, same scene names). Proof sheets at full scale: `sheet.py "work/qa/tour/*/proof.png" --div 1 --cols 4
+  --max 12 --out work/qa/tour/sheets/sheet.png` (sorted scene order = `ls`). Own read so far: sheets 1-8 of 12
+  (scenes battle_items..scen_18); verdicts not written into a gate yet. Brief: `docs/visual-qa-brief.md`.
+- **Session 2026-11-23l (phase 7 review fixes, phase 8 start):** review Important 1-4 + minors fixed:
+  `tests/test_build.py` builds the English ROM (overflow/asar/romdiff gates now in `check.py`); romdiff write log
+  `build/writes.txt` (pointer table, reloc callers, hooks, checksum, default names); header checksum fixed;
+  `script/keep_jp.txt` (32 ids) enforced by `batches.py check`; speaker tags checked against glossary `tag "X"`
+  notes (Skull, General, Ranger; objective 18FD9C "General"); `pages.wrap` balances each paragraph's last box
+  (181 stub lines -> 0; stub rule in the lint); "Atlas Mountains". New: `script/default_names.tsv` (hero "Sword",
+  fairy "Thetis" in the new-game records; seen in game `work/qa/w_names`); `build.py --identity` now writes
+  `build/bounty_identity.sfc` (it used to overwrite the English build). 51 tests.
 - **Session 2026-11-23k (phase 6 review fixes, phase 7 closed):** review Important fixed: name-entry keys (D13:
   終わり "End", 英字 "Abc", kana page keys あ/ア; seen in game: keys switch pages, typing, ← and End work,
   `work/qa/w_name3`, `w_name6`); minors fixed (PERFECT CLEAR 01C115, glossary {FF31} rule, style-reference note,
@@ -202,5 +226,5 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
   - Debug tool: town tavern, Mode 9 and the real ending not in the scene list; GOD/NOENC/FAST not built.
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
-- **Open bugs:** none.
+- **Open bugs:** phase 8 to-dos 3-8 above (shop box width, card subtitle overlap, default name フェリス, 男, 倉庫).
 - **Waiting on the user:** nothing. (Keyboard input in Mesen not checked by hand: headless session.)

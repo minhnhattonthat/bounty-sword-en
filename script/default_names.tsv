@@ -1,0 +1,7 @@
+# Default names the game copies into a new game (name fields of 6 words, zero-padded; C1 bank records, outside any
+# text region). build.py writes `en` as English codes ($0F00+ASCII) after the text repack; rom_check logs each write.
+# offset	words	jp	en	what
+10657	6	テティス	Thetis	fairy companion ({FF28}), default record
+1068D	6	ソード	Sword	hero ({hero}/{FF1F}), default record
+10EC1	6	ソード	Sword	hero, unit record 0 (C1:0EBF)
+1101F	6	ソード	Sword	hero, unit record 4 (C1:101D)

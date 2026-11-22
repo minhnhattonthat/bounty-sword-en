@@ -31,6 +31,12 @@ def test_english_build_passes_its_rom_gates(built):
     assert out.read_bytes() == data
 
 
+def test_default_names_are_english(built):
+    _, data, _ = built
+    assert data[0x1068D:0x10697] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Sword")
+    assert data[0x10657:0x10663] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Thetis")
+
+
 def test_header_checksum_is_valid(built):
     _, data, _ = built
     total = sum(data[:0xFFDC]) + sum(data[0xFFE0:]) + 0xFF * 2 & 0xFFFF
