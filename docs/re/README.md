@@ -12,4 +12,9 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| [text.md](text.md) | encoding, font, both script engines, master pointer table, text ranges | encoding/font/pointer table verified; engine-A arg counts and kanji list open |
+| [rom.md](rom.md) | header, map, free space, expansion, graphics loading | header verified; free space untested |
+| [graphics.md](graphics.md) | graphics-text survey | in progress (tour partial, static sweep not done) |
+
+Prior work: no earlier fan translation or community tools found (web search 2026-11-22; Data Crystal is on the
+denied tcrf.net domain, not read).

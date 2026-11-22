@@ -13,7 +13,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 ## Paths
 - Original ROM: `rom/Bounty Sword (Japan).sfc` (gitignored; SHA-1 in `rom.sha1`, checked by `tools/check_rom.py`). HiROM (header at $FFC0, map $31), 3 MB, Pioneer LDC 1995.
 - Emulator: this repo's own MesenCE QA fork in `tools/mesen/` (release `qa-1`, https://github.com/minhnhattonthat/MesenCE/releases/download/qa-1/Mesen_qa-1_Windows.zip; gitignored; `python -X utf8 $SKILL/scripts/fetch_emu.py mesen` restores it). Savestates: `work/states/`.
-- Text: `script/` (TSV). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`. Codecs copied from the skill: `tools/tbl.py`, `tools/bps.py`, `tools/romdiff.py`.
+- Text: `script/` (TSV). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md` (helpers: `tools/re/`, `tools/font_sheet.py`, `tools/gfx_sweep.py`, `tools/mktbl.py` -> `tbl/jp.tbl`). Fonts and their licences: `docs/fonts.md`. Codecs copied from the skill: `tools/tbl.py`, `tools/bps.py`, `tools/romdiff.py`.
 
 ## Rulings
 - Edit source files (.py .lua .asm .tbl .json) only with the file-edit tool; scripts here read and analyse, never `.replace()` and write back.
