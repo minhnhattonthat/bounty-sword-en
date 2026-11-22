@@ -11,7 +11,8 @@ arguments are not parsed here; the phase-4 extractor adds that on top of the sam
 Master dialogue (engine A): a 3-byte pointer table at MASTER_TABLE (lo, hi, bank; 0 = unused slot). A message runs to
 the next pointer target; the last message of a block ends after its first 」FFFF that isn't followed by FF18. Repack
 writes each block's messages back to back from the block start and rewrites every slot, so a longer or shorter message
-moves everything after it. A block may not grow past its capacity (for now its original end).
+moves everything after it; a message that no longer fits its block goes to the expanded ROM (any message may live
+anywhere: each has its own pointer, and engine A's skips are relative).
 """
 from pathlib import Path
 
@@ -23,6 +24,10 @@ MASTER_END = 0x26F2C9            # first byte after the last slot: 2,462 slots
 # Block starts (file offsets), verified by unpack(): a gap > BLOCK_GAP between two message targets is data, not text.
 MASTER_BLOCKS = (0x1E0000, 0x214606, 0x24DB56, 0x257BD4, 0x26F317, 0x271410, 0x280F1B, 0x290400, 0x2A7D44)
 BLOCK_GAP = 0x400
+# Master messages that no longer fit their block go to the expanded ROM (docs/re/rom.md): file 0x300000-0x3EFFFF
+# ($F0-$FE). Bank $FF holds the engine patch (asm/vwf.asm).
+ROM_EXPANDED = 0x400000
+EXPANDED_TEXT = (0x300000, 0x3F0000)
 
 # Text found outside the master table (docs/re/text.md §Text inventory), repacked in place, same length.
 # (name, first byte, end exclusive). Phase 4 replaces these with pointer-aware tables as each reader is confirmed.
@@ -170,15 +175,26 @@ def repack(rom, data, codec=None):
         out[r["start"]:r["end"]] = b
     m = data["master"]
     addr = {}
+    spill = EXPANDED_TEXT[0]
     for bi, blk in enumerate(m["blocks"]):
         p = blk["start"]
         for mi, text in enumerate(blk["msgs"]):
             b = codec.encode_bytes(text)
-            addr[(bi, mi)] = p
-            out[p:p + len(b)] = b
-            p += len(b)
-        if p > blk["end"]:
-            raise ValueError(f"master block {blk['start']:06X} overflows by {p - blk['end']} bytes")
+            if p + len(b) <= blk["end"]:          # in place while the block has room
+                addr[(bi, mi)] = p
+                out[p:p + len(b)] = b
+                p += len(b)
+                continue
+            p = blk["end"]                       # the rest of this block's messages go to the expanded ROM
+            if len(out) < ROM_EXPANDED:          # 3 MB -> 4 MB: banks $F0-$FF, filled with FF
+                out += b"\xff" * (ROM_EXPANDED - len(out))
+            if (spill >> 16) != ((spill + len(b) - 1) >> 16):
+                spill = (spill + 0xFFFF) & ~0xFFFF    # a message never crosses a bank
+            if spill + len(b) > EXPANDED_TEXT[1]:
+                raise ValueError(f"expanded text area full at master message {bi}/{mi}")
+            addr[(bi, mi)] = spill
+            out[spill:spill + len(b)] = b
+            spill += len(b)
         # Unused tail after a shrunk block: original bytes stay (nothing points there).
     for i, ref in enumerate(m["slots"]):
         v = to_cpu(addr[tuple(ref)]) if ref is not None else 0

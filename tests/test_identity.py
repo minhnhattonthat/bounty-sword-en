@@ -68,9 +68,20 @@ def test_edit_moves_pointers(rom, data, codec):
     assert out[end:end + 0x100] == rom[end:end + 0x100]
 
 
-def test_overflow_rejected(rom, data, codec):
+def test_overflow_moves_to_expanded_rom(rom, data, codec):
+    """A message that no longer fits its block goes to the expanded 4 MB area ($F0+), never across a bank."""
     import copy
+    from rom_text import EXPANDED_TEXT, MASTER_TABLE, read_slots, to_file
     d = copy.deepcopy(data)
-    d["master"]["blocks"][0]["msgs"][0] += "[0000]" * 0x10000
-    with pytest.raises(ValueError, match="overflows"):
+    d["master"]["blocks"][0]["msgs"][0] += "[0000]" * 0x6000     # 48 KB: more than block 0 holds
+    out = repack(rom, d, codec)
+    assert len(out) == 0x400000
+    slot = d["master"]["slots"].index([0, 0])
+    target = to_file(read_slots(out)[slot])
+    assert EXPANDED_TEXT[0] <= target < EXPANDED_TEXT[1]
+    n = len(codec.encode_bytes(d["master"]["blocks"][0]["msgs"][0]))
+    assert target >> 16 == (target + n - 1) >> 16
+    assert MASTER_TABLE    # table rewritten in place (read_slots read it)
+    d["master"]["blocks"][0]["msgs"][1] += "[0000]" * 0x80000
+    with pytest.raises(ValueError, match="full"):
         repack(rom, d, codec)

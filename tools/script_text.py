@@ -19,6 +19,7 @@ A table character that collides with an alias (`　` 0001, `‥` 0045) is writte
 import json
 from pathlib import Path
 
+from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
 from rom_text import REGIONS, TBL, WordCodec, unpack, words_at
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,6 +53,11 @@ class TextCodec:
         self.dec = {w: c for w, c in self.dec.items() if c not in taken}
         self.dec.update(self.char)
         self.enc = {c: w for w, c in self.dec.items()}
+        # English (tools/font_en.py): ASCII c -> EN_BASE + ord(c). Encode only: JP decoding never yields ASCII,
+        # and words in that range inside JP data stay `[hhhh]`.
+        for code in range(EN_FIRST, EN_LAST + 1):
+            if chr(code) not in "{}[]":
+                self.enc[chr(code)] = EN_BASE + code
         self.named = {v: k for k, v in NAMED.items()} if master else {}
 
     def decode(self, words):
@@ -114,7 +120,8 @@ SPLIT = {
     "locations": ("fixed", 10, 0),
     "battle_prompts_b": ("ends", {0xFF00, 0xFF03}),
     "menus": ("term",),
-    "speakers": ("fixed", 8, 2, 6),
+    "speakers": ("fixed", 8, 2, 8),     # records (6-word name + 2 ids) start at 0x025D6D = C2:5D6D
+
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
     "unit_records": ("term",),
     "battle_prompts": ("ends", {0xFF00, 0xFF03}),
