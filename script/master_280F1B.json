@@ -770,7 +770,8 @@
    399
   ],
   "jp": "{spk}{FF28}\n「ちょ　ちょっと　{hero}！　\n　どういう風の　ふきまわし？\n　何があるか　わからないのよ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「W-wait a minute, {hero}!\n What's gotten into you? We\n don't know what we're」\n{next}\n「getting into!?」\n",
+  "pages": "\"W-wait a minute, {hero}! What's gotten into you? We don't know what we're getting into!?\""
  },
  {
   "id": "282C83",
@@ -778,7 +779,8 @@
    400
   ],
   "jp": "{spk}{FF1F}\n「言っただろう　気まぐれだよ\n　それに　このぶんじゃ\n　この国での仕事は　ないだろうしな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I told you, it's a whim.\n Besides, the way things are,\n there won't be any work in」\n{next}\n「this country.」\n",
+  "pages": "\"I told you, it's a whim. Besides, the way things are, there won't be any work in this country.\""
  },
  {
   "id": "282CE5",
@@ -786,7 +788,8 @@
    401
   ],
   "jp": "{spk}ヘンメリー　\n「ま　その通りだろうね\n　みんな　逃げ出す事で　\n　頭の中は　いっぱいみたいだし」\n{next}\n「今さら　賞金かせぎ　なんかに\n　仕事を頼むヤツなんか　いないよ」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Well, that's about right.\n Seems everyone's heads are\n full of nothing but running」\n{next}\n「away.」\n{next}\n「Nobody's going to hire a\n bounty chaser at this point.」\n",
+  "pages": "\"Well, that's about right. Seems everyone's heads are full of nothing but running away.\" || \"Nobody's going to hire a bounty chaser at this point.\""
  },
  {
   "id": "282D91",
@@ -794,7 +797,8 @@
    402
   ],
   "jp": "{spk}{FF28}\n「そうね　わかったわ‥‥\n　でも　連邦が　この子を\n　あきらめたとは　とても　思えない」\n{next}\n「早めに街で　次の戦いの　じゅんびを\n　しておいた方が　いいんじゃない？」\n{next}\n「何が起こるか　わからないしね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Fine, I get it... But I really\n don't think the Federation\n has given up on this girl.」\n{next}\n「Shouldn't we get ready for\n the next fight in town early?」\n{next}\n「Who knows what'll happen!」\n",
+  "pages": "\"Fine, I get it... But I really don't think the Federation has given up on this girl.\" || \"Shouldn't we get ready for the next fight in town early?\" || \"Who knows what'll happen!\""
  },
  {
   "id": "282E69",
@@ -802,7 +806,8 @@
    403
   ],
   "jp": "{spk}{FF1F}\n「ああ　そうしようか」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah, let's do that.」\n",
+  "pages": "\"Yeah, let's do that.\""
  },
  {
   "id": "282E87",
@@ -810,7 +815,8 @@
    404
   ],
   "jp": "{spk}{FF31}　　　　　\n「なんて　つめたい人なの！\n　いたいけな少女が\n　助けを　もとめてるのに！」\n{next}\n「なら　こっちにも　考えがあるわ！\n　街の酒場で　あなたより\n　腕のいい人を　やとうから！」\n{next}\n「ふん！　それじゃあね！\n　こしぬけの　賞金かせぎさん！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「How cold can you be! A poor\n little girl is begging for help!」\n{next}\n「Then I have ideas of my own!\n I'll hire someone better than\n you at the town tavern!」\n{next}\n「Hmph! Goodbye, then! Mister\n Coward Bounty Chaser!」\n",
+  "pages": "\"How cold can you be! A poor little girl is begging for help!\" || \"Then I have ideas of my own! I'll hire someone better than you at the town tavern!\" || \"Hmph! Goodbye, then! Mister Coward Bounty Chaser!\""
  },
  {
   "id": "282F87",
@@ -818,7 +824,8 @@
    405
   ],
   "jp": "{spk}{FF28}\n「{hero}　{FF31}がいるわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, there's {FF31}.」\n",
+  "pages": "\"{hero}, there's {FF31}.\""
  },
  {
   "id": "282FAB",
@@ -826,7 +833,8 @@
    406
   ],
   "jp": "{spk}{FF31}　　　　　\n「あら　どうしたの？\n　こしぬけの　賞金かせぎさん」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Oh, what's the matter?\n Mister Coward Bounty\n Chaser.」\n",
+  "pages": "\"Oh, what's the matter? Mister Coward Bounty Chaser.\""
  },
  {
   "id": "282FF1",
@@ -834,7 +842,8 @@
    407
   ],
   "jp": "{spk}{FF1F}\n「お前さんを　護衛するヤツは\n　見つかったのかい　お嬢さん？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Found anyone to escort you,\n little lady?」\n",
+  "pages": "\"Found anyone to escort you, little lady?\""
  },
  {
   "id": "283037",
@@ -842,7 +851,8 @@
    408
   ],
   "jp": "{spk}{FF31}　　　　　\n「ダメよ　みんな連邦を恐れて\n　てんで　相手にしてくれない」\n{next}\n「くやしいけど　もう一度\n　あなたに　依頼　するわ」\n{next}\n「私を　シェブールの港街まで\n　無事に　おくってほしいの」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「No. Everyone's scared of the\n Federation. Nobody will even\n talk to me.」\n{next}\n「I hate to say it, but I'll ask\n you one more time.」\n{next}\n「I want you to take me safely\n to the port town of\n Cherbourg.」\n",
+  "pages": "\"No. Everyone's scared of the Federation. Nobody will even talk to me.\" || \"I hate to say it, but I'll ask you one more time.\" || \"I want you to take me safely to the port town of Cherbourg.\""
  },
  {
   "id": "2830FF",
@@ -850,7 +860,8 @@
    409
   ],
   "jp": "{spk}{FF31}　　　　　\n「そう　わかったわ！\n　用がないなら　さっさと出てって！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Fine, I get it! If you've got\n no business here, get out!」\n",
+  "pages": "\"Fine, I get it! If you've got no business here, get out!\""
  },
  {
   "id": "28314B",
@@ -858,7 +869,8 @@
    410
   ],
   "jp": "{spk}{FF1F}\n「やれやれだ‥‥　オレは\n　酒を飲みに　きただけなんだがな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Good grief... I only came here\n for a drink.」\n",
+  "pages": "\"Good grief... I only came here for a drink.\""
  },
  {
   "id": "28318F",
@@ -866,7 +878,8 @@
    411
   ],
   "jp": "「その時は　たしかに\n　ほんの　小さな\n　気まぐれだったのかも　知れない」\n{next}\n「ともかくも　オレは\n　{FF31}の　依頼を　うけおった」\n{next}\n「しかし　それが　人生の中で\n　二度目の　大きな転機になろうとは\n　オレ自身も　予想していなかった」\n{next}\n「十年前の　あの日\n　オレを襲った　大きな転機」\n{next}\n「そして　二度目の　転機の始まりは\n　その夜　突然に　襲ってきた‥‥」\n",
-  "en": ""
+  "en": "「At the time, maybe it really\n was just a tiny whim.」\n{next}\n「Anyway, I took on the job\n from {FF31}.」\n{next}\n「But I never expected it\n would become the second\n great turning point of my」\n{next}\n「life.」\n{next}\n「The great turning point that\n struck me on that day ten\n years ago.」\n{next}\n「And the second turning point\n began suddenly, that very\n night...」\n",
+  "pages": "\"At the time, maybe it really was just a tiny whim.\" || \"Anyway, I took on the job from {FF31}.\" || \"But I never expected it would become the second great turning point of my life.\" || \"The great turning point that struck me on that day ten years ago.\" || \"And the second turning point began suddenly, that very night...\""
  },
  {
   "id": "2832FF",
@@ -874,7 +887,8 @@
    412
   ],
   "jp": "「まぼろしの市街戦」\n",
-  "en": ""
+  "en": "「Phantom Street Battle」\n",
+  "pages": "\"Phantom Street Battle\""
  },
  {
   "id": "283315",
@@ -882,7 +896,8 @@
    413
   ],
   "jp": "{spk}{FF28}\n「{hero}！　早く起きて！\n　敵が　街の中まできてるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! Get up, quick! The\n enemy's come into the town!」\n",
+  "pages": "\"{hero}! Get up, quick! The enemy's come into the town!\""
  },
  {
   "id": "28335B",
@@ -890,7 +905,8 @@
    414
   ],
   "jp": "{spk}{FF1F}\n「ああ　さっきから　起きている\n　これほどの殺気だ\n　おちおち　眠ってもいられない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah, I've been up for a\n while. With bloodlust this\n thick, nobody could sleep.」\n",
+  "pages": "\"Yeah, I've been up for a while. With bloodlust this thick, nobody could sleep.\""
  },
  {
   "id": "2833B7",
@@ -898,7 +914,8 @@
    415
   ],
   "jp": "{spk}コルツ　　　\n「しかし　この王国首都にまで\n　入り込んでくるとは！\n　騎士団や国防軍は　何をしている？」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「But to sneak right into the\n royal capital! What are the\n knights and the national」\n{next}\n「army doing?」\n",
+  "pages": "\"But to sneak right into the royal capital! What are the knights and the national army doing?\""
  },
  {
   "id": "283423",
@@ -906,7 +923,8 @@
    416
   ],
   "jp": "{spk}ヘンメリー　\n「入りこんできたのは　たぶん\n　連邦の　影の部隊だろうね\n　暗殺　はかいの　プロフェッショナルだ」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「The ones who got in are\n probably the Federation's\n shadow unit. Professionals」\n{next}\n「at assassination and\n sabotage.」\n",
+  "pages": "\"The ones who got in are probably the Federation's shadow unit. Professionals at assassination and sabotage.\""
  },
  {
   "id": "283497",
@@ -914,7 +932,8 @@
    417
   ],
   "jp": "{spk}デトニクス　\n「じょうだんじゃないぜ！\n　連邦軍は　すでに　この首都にまで\n　手を伸ばし始めてる‥‥ってのかよ？」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「You've got to be kidding! You\n mean the Federation army's\n already reaching into the」\n{next}\n「capital?」\n",
+  "pages": "\"You've got to be kidding! You mean the Federation army's already reaching into the capital?\""
  },
  {
   "id": "28350D",
@@ -922,7 +941,8 @@
    418
   ],
   "jp": "{spk}{FF28}\n「どうするの　{hero}？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What do we do, {hero}?」\n",
+  "pages": "\"What do we do, {hero}?\""
  },
  {
   "id": "283533",
@@ -930,7 +950,8 @@
    419
   ],
   "jp": "{spk}{FF1F}\n「ふりかかる火のこは\n　はらわないと　いけないさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「When sparks fly your way,\n you've got to brush them\n off.」\n",
+  "pages": "\"When sparks fly your way, you've got to brush them off.\""
  },
  {
   "id": "28356D",
@@ -938,7 +959,8 @@
    420
   ],
   "jp": "{spk}{FF28}\n「そう　こなくちゃ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「That's what I like to hear!」\n",
+  "pages": "\"That's what I like to hear!\""
  },
  {
   "id": "28358B",
@@ -946,7 +968,8 @@
    421
   ],
   "jp": "{spk}連邦兵　　　\n「な　なぜです‥‥　なぜ\n　お国を　捨ててまで‥‥\n　ひ‥‥め‥‥さ‥‥ま‥‥」\n{next}\n「う‥‥　ぐぁはッ！」\n",
-  "en": ""
+  "en": "{spk}連邦兵　　　\n「Wh-why... why would you...\n abandon your own country...\n Prin... cess...」\n{next}\n「Ugh... gwah!」\n",
+  "pages": "\"Wh-why... why would you... abandon your own country... Prin... cess...\" || \"Ugh... gwah!\""
  },
  {
   "id": "283609",
@@ -954,7 +977,8 @@
    422
   ],
   "jp": "{spk}{FF28}\n「ひめさま？　姫さまって？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Princess? What princess?」\n",
+  "pages": "\"Princess? What princess?\""
  },
  {
   "id": "28362D",
@@ -962,7 +986,8 @@
    423
   ],
   "jp": "{spk}{FF1F}\n「‥‥さあな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Who knows...」\n",
+  "pages": "\"...Who knows...\""
  },
  {
   "id": "283647",
@@ -970,7 +995,8 @@
    424
   ],
   "jp": "「‥‥どこかで　何かが\n　きしむ音が　聞こえる\n　それは　はぐるまが　きしむ音だ」\n{next}\n「運命の　はぐるまが　狂い始めた」\n{next}\n「もう　あとにもどる事は　できない\n　オレは　知っている\n　運命にあともどりは　ないということを」\n",
-  "en": ""
+  "en": "「...Somewhere, I hear\n something creaking. It's the\n creak of gears.」\n{next}\n「The gears of fate have\n begun to go awry.」\n{next}\n「There's no going back now. I\n know that. There's no going\n back on fate.」\n",
+  "pages": "\"...Somewhere, I hear something creaking. It's the creak of gears.\" || \"The gears of fate have begun to go awry.\" || \"There's no going back now. I know that. There's no going back on fate.\""
  },
  {
   "id": "28372B",
@@ -978,7 +1004,8 @@
    425
   ],
   "jp": "{spk}{FF28}\n「港街の　シェブールは\n　海の向こう側\n　船を使うしか　ないわね」\n{next}\n「昔は　ここを出て　南\n　ラインメタルの　港街から\n　渡し船が　出ていたんだけど‥‥」\n{next}\n「連邦が　迫っている時に\n　船を　出してくれるかどうか」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The port town of Cherbourg\n is across the sea. We'll have\n to take a ship.」\n{next}\n「There used to be a ferry\n from Rheinmetall's port\n town, south of here...」\n{next}\n「But with the Federation\n closing in, who knows if\n they'll sail.」\n",
+  "pages": "\"The port town of Cherbourg is across the sea. We'll have to take a ship.\" || \"There used to be a ferry from Rheinmetall's port town, south of here...\" || \"But with the Federation closing in, who knows if they'll sail.\""
  },
  {
   "id": "28380F",
@@ -986,7 +1013,8 @@
    426
   ],
   "jp": "{spk}{FF1F}\n「ともかく　港へ行こう\n　大陸まで　泳ぐわけには\n　いかないだろうからな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Let's head to the port\n anyway. We can't exactly\n swim to the continent...」\n",
+  "pages": "\"Let's head to the port anyway. We can't exactly swim to the continent...\""
  },
  {
   "id": "283865",
@@ -994,7 +1022,8 @@
    427
   ],
   "jp": "{spk}{FF31}　　　　　\n「もう泳ぐのは\n　こりごりだわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「I've had enough swimming for\n one lifetime...」\n",
+  "pages": "\"I've had enough swimming for one lifetime...\""
  },
  {
   "id": "28389B",
@@ -1002,7 +1031,8 @@
    428
   ],
   "jp": "{spk}{FF28}\n「じゃあ　南の港街へ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Then off to the southern\n port town!」\n",
+  "pages": "\"Then off to the southern port town!\""
  },
  {
   "id": "2838BB",
@@ -1010,7 +1040,8 @@
    429
   ],
   "jp": "「そして　オレたちは\n　重苦しい　予感を　引きずりながら\n　首都の南　港街へと　向かった‥‥」\n",
-  "en": ""
+  "en": "「And so, dragging a heavy\n sense of foreboding along\n with us, we headed for the」\n{next}\n「port town south of the\n capital...」\n",
+  "pages": "\"And so, dragging a heavy sense of foreboding along with us, we headed for the port town south of the capital...\""
  },
  {
   "id": "28391B",
@@ -1018,7 +1049,8 @@
    430
   ],
   "jp": "「姿なき敵」\n",
-  "en": ""
+  "en": "「The Unseen Enemy」\n",
+  "pages": "\"The Unseen Enemy\""
  },
  {
   "id": "283929",
@@ -1026,7 +1058,8 @@
    431
   ],
   "jp": "{spk}{FF28}\n「やっぱりだわ　{hero}！\n　港街の入り口に　敵よ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Just as I thought, {hero}!\n Enemies at the entrance to\n the port town!」\n",
+  "pages": "\"Just as I thought, {hero}! Enemies at the entrance to the port town!\""
  },
  {
   "id": "28396B",
@@ -1034,7 +1067,8 @@
    432
   ],
   "jp": "{spk}コルツ　　　\n「それにしても　いやな雨だ\n　この雨に　じょうじて\n　兵を送り込んだ‥‥ってわけか」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「What nasty rain, though. So\n they used this rain as cover\n to send in troops...」\n",
+  "pages": "\"What nasty rain, though. So they used this rain as cover to send in troops...\""
  },
  {
   "id": "2839D1",
@@ -1042,7 +1076,8 @@
    433
   ],
   "jp": "{spk}{FF1F}\n「‥‥どうやら敵は\n　こちらの動きを　つかんでいるな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Looks like the enemy has a\n handle on our movements.」\n",
+  "pages": "\"...Looks like the enemy has a handle on our movements.\""
  },
  {
   "id": "283A0F",
@@ -1050,7 +1085,8 @@
    434
   ],
   "jp": "{spk}ヘンメリー　\n「連邦は　このお嬢ちゃんの\n　行き先を　知っているみたいね」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Seems the Federation knows\n where this little lady is\n headed.」\n",
+  "pages": "\"Seems the Federation knows where this little lady is headed.\""
  },
  {
   "id": "283A5D",
@@ -1058,7 +1094,8 @@
    435
   ],
   "jp": "{spk}{FF31}　　　　　\n「お嬢ちゃんは　よして　オバさん」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Stop calling me little lady,\n auntie.」\n",
+  "pages": "\"Stop calling me little lady, auntie.\""
  },
  {
   "id": "283A91",
@@ -1066,7 +1103,8 @@
    436
   ],
   "jp": "{spk}ヘンメリー　\n「わかったよ　ガキんちょ」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Fine by me, brat.」\n",
+  "pages": "\"Fine by me, brat.\""
  },
  {
   "id": "283ABD",
@@ -1074,7 +1112,8 @@
    437
   ],
   "jp": "{spk}{FF28}\n「{hero}　街にたどりつければ\n　何とかなるわ！　このまま\n　一気に　駆けぬけましょう！」\n{next}\n「真上にある　港街の入り口\n　あそこの　門をこえれば！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, if we can make it to\n town, we'll be fine! Let's\n dash straight through!」\n{next}\n「The port town entrance right\n up north! Once we're past\n that gate!」\n",
+  "pages": "\"{hero}, if we can make it to town, we'll be fine! Let's dash straight through!\" || \"The port town entrance right up north! Once we're past that gate!\""
  },
  {
   "id": "283B61",
@@ -1082,7 +1121,8 @@
    438
   ],
   "jp": "{spk}{FF1F}\n「よし　街まで全速だ\n　弓兵には　気をつけろよ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, full speed to town.\n Watch out for archers.」\n",
+  "pages": "\"Right, full speed to town. Watch out for archers.\""
  },
  {
   "id": "283B99",
@@ -1090,7 +1130,8 @@
    439
   ],
   "jp": "{spk}コルツ　　　\n「ちぃッ！　連邦のヤツらが！\n　人様の国で　ずいぶんと\n　好き勝手　してくれるわい！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Tch! Those Federation dogs!\n Doing whatever they please\n in other people's country!」\n",
+  "pages": "\"Tch! Those Federation dogs! Doing whatever they please in other people's country!\""
  },
  {
   "id": "283C01",
@@ -1098,7 +1139,8 @@
    440
   ],
   "jp": "{spk}ヘンメリー　\n「‥‥何なのさ　このお嬢ちゃんは\n　それほど　大事な人間なのかい？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「...What's the deal with this\n little lady? Is she really that\n important?」\n",
+  "pages": "\"...What's the deal with this little lady? Is she really that important?\""
  },
  {
   "id": "283C57",
@@ -1106,7 +1148,8 @@
    441
   ],
   "jp": "{spk}{FF1F}\n「立ち止まるな！\n　敵の　いいマトになるぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Don't stop! You'll be easy\n targets!」\n",
+  "pages": "\"Don't stop! You'll be easy targets!\""
  },
  {
   "id": "283C8D",
@@ -1114,7 +1157,8 @@
    442
   ],
   "jp": "{spk}デトニクス　\n「‥‥くそったれが！\n　こんなガキのために　死ぬんじゃ\n　どうにも　わりに　あわんぞ！」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「...Damn it all! Dying for a brat\n like this just isn't worth it!」\n",
+  "pages": "\"...Damn it all! Dying for a brat like this just isn't worth it!\""
  },
  {
   "id": "283CF7",
@@ -1122,7 +1166,8 @@
    443
   ],
   "jp": "{spk}{FF1F}\n「口を動かすヒマが　あったら\n　さっさと走れ！　デトニクス！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「If you've got time to flap\n your mouth, then run!\n Detonics!」\n",
+  "pages": "\"If you've got time to flap your mouth, then run! Detonics!\""
  },
  {
   "id": "283D3D",
@@ -1130,7 +1175,8 @@
    444
   ],
   "jp": "{spk}降下猟兵　　\n「‥‥バ　‥‥バカな！\n　われら　連邦陸軍が誇る\n　降下猟兵部隊が　全めつだと！？」\n",
-  "en": ""
+  "en": "{spk}降下猟兵　　\n「...Im... impossible! Our airborne\n ranger unit, the pride of the\n Federation army, wiped out?!」\n",
+  "pages": "\"...Im... impossible! Our airborne ranger unit, the pride of the Federation army, wiped out?!\""
  },
  {
   "id": "283DA3",
@@ -1138,7 +1184,8 @@
    445
   ],
   "jp": "{spk}{FF1F}\n「よし　街の中に入るぞ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, into the town.」\n",
+  "pages": "\"Right, into the town.\""
  },
  {
   "id": "283DC3",
@@ -1146,7 +1193,8 @@
    446
   ],
   "jp": "{spk}降下猟兵　　\n「これ以上の　ふか追いは　危険だな\n　わが隊は　これよりテッシュウする！」\n{next}\n「伝令！　海兵隊に連絡！\n　‥‥船だ！　船を狙えとな！」\n",
-  "en": ""
+  "en": "{spk}降下猟兵　　\n「Pursuing any further is\n dangerous. Our unit will now\n withdraw!」\n{next}\n「Messenger! Contact the\n marines! ...The ship! Tell them\n to target the ship!」\n",
+  "pages": "\"Pursuing any further is dangerous. Our unit will now withdraw!\" || \"Messenger! Contact the marines! ...The ship! Tell them to target the ship!\""
  },
  {
   "id": "283E5D",
@@ -1154,7 +1202,8 @@
    447
   ],
   "jp": "「敵は　連邦の降下猟兵だった\n　エモノを求め　空からまい降りる\n　腕ききぞろいの　狙撃兵ども‥‥」\n{next}\n「しかし　エモノになったのは\n　あいにく　連中の方だった」\n{next}\n「狙う者　狙われる者　その立場は\n　いつ何時　変わるかも知れない\n　もちろん　オレも同じように‥‥」\n{next}\n「今まで作ってきた　無数の屍は\n　オレの　明日の姿なのか\n　みらいは　まだ見ぬ　やみの中だ」\n",
-  "en": ""
+  "en": "「The enemy were Federation\n airborne rangers. Crack\n snipers who swoop down」\n{next}\n「from the sky in search of\n prey...」\n{next}\n「But as it happened, they\n were the ones who became\n the prey.」\n{next}\n「Hunter and hunted: those\n roles can switch at any\n moment. The same goes for」\n{next}\n「me, of course...」\n{next}\n「Are the countless corpses\n I've left behind a picture of\n my own tomorrow? The」\n{next}\n「future still lies unseen in\n darkness.」\n",
+  "pages": "\"The enemy were Federation airborne rangers. Crack snipers who swoop down from the sky in search of prey...\" || \"But as it happened, they were the ones who became the prey.\" || \"Hunter and hunted: those roles can switch at any moment. The same goes for me, of course...\" || \"Are the countless corpses I've left behind a picture of my own tomorrow? The future still lies unseen in darkness.\""
  },
  {
   "id": "283FCD",
@@ -1162,7 +1211,8 @@
    448
   ],
   "jp": "{spk}デトニクス　\n「すまんが　{hero}\n　シェブールに行くことは　できん\n　オレは　この王国の騎士なんだ‥‥」\n{next}\n「わかってくれるな？\n　一人でも　戦力は\n　あるに　こしたことはない‥‥」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「Sorry, {hero}, but I can't\n go to Cherbourg. I'm a knight\n of this kingdom...」\n{next}\n「You understand, right? Every\n extra fighter counts...」\n",
+  "pages": "\"Sorry, {hero}, but I can't go to Cherbourg. I'm a knight of this kingdom...\" || \"You understand, right? Every extra fighter counts...\""
  },
  {
   "id": "28408F",
@@ -1170,7 +1220,8 @@
    449
   ],
   "jp": "{spk}{FF1F}\n「そうか　しかたないな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I see. Can't be helped.」\n",
+  "pages": "\"I see. Can't be helped.\""
  },
  {
   "id": "2840AF",
@@ -1178,7 +1229,8 @@
    450
   ],
   "jp": "{spk}デトニクス　\n「悪いが　かんべんしてくれ\n　それと　その　お嬢ちゃんの事だが\n　マクベス大臣には　うまく伝えておく」\n{next}\n「それとな　{hero}‥‥\n　例の　あんたの悪いウワサ‥‥\n　あれが　大ウソだとわかったよ‥‥」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「Sorry, forgive me. And about\n the little lady, I'll put it to\n Minister Macbeth the right」\n{next}\n「way.」\n{next}\n「And one more thing,\n {hero}... Those nasty\n rumours about you... I know」\n{next}\n「now they're a pack of lies...」\n",
+  "pages": "\"Sorry, forgive me. And about the little lady, I'll put it to Minister Macbeth the right way.\" || \"And one more thing, {hero}... Those nasty rumours about you... I know now they're a pack of lies...\""
  },
  {
   "id": "28418F",
@@ -1194,7 +1246,8 @@
    452
   ],
   "jp": "{spk}デトニクス　\n「あばよ　{hero}！\n　あんたに　買ってもらった　道具は\n　この場に　残して　おくからな！」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「So long, {hero}! I'm leaving\n the gear you bought me\n right here!」\n",
+  "pages": "\"So long, {hero}! I'm leaving the gear you bought me right here!\""
  },
  {
   "id": "284211",
@@ -1202,7 +1255,8 @@
    453
   ],
   "jp": "{spk}{FF28}\n「シェブール行きの船が　見つかったわ\n　連邦軍のヤツら　さすがに\n　民間の船には　手を出さないみたい！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We found a ship bound for\n Cherbourg! Looks like even\n those Federation guys won't」\n{next}\n「touch civilian ships!」\n",
+  "pages": "\"We found a ship bound for Cherbourg! Looks like even those Federation guys won't touch civilian ships!\""
  },
  {
   "id": "284281",
@@ -1210,7 +1264,8 @@
    454
   ],
   "jp": "{spk}{FF31}　　　　　\n「良かった‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Thank goodness...」\n",
+  "pages": "\"Thank goodness...\""
  },
  {
   "id": "2842A3",
@@ -1218,7 +1273,8 @@
    455
   ],
   "jp": "{spk}情報屋　　　\n「‥‥おっとっと！？\n　{hero}さんじゃ　ないですか！\n　ずいぶんと　久しぶりですなぁ！」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「...Whoa there!? If it isn't\n {hero}-san! Long time no\n see!」\n",
+  "pages": "\"...Whoa there!? If it isn't {hero}-san! Long time no see!\""
  },
  {
   "id": "284313",
@@ -1226,7 +1282,8 @@
    456
   ],
   "jp": "{spk}{FF1F}\n「お前さんは　逃げないのか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「You're not running?」\n",
+  "pages": "\"You're not running?\""
  },
  {
   "id": "284339",
@@ -1234,7 +1291,8 @@
    457
   ],
   "jp": "{spk}情報屋　　　\n「‥‥まさか！　だいたい\n　逃げるったって　どこに逃げるって\n　言うんですかい　{hero}さん」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「...Me? Run? Where would I\n even run to, {hero}-san?」\n",
+  "pages": "\"...Me? Run? Where would I even run to, {hero}-san?\""
  },
  {
   "id": "2843AD",
@@ -1242,7 +1300,8 @@
    458
   ],
   "jp": "{spk}情報屋　　　\n「ラインメタルは　小さな島国\n　どこへ逃げたって\n　おんなじ　ことですからね！」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Rheinmetall's a small island\n country. Run anywhere you\n like, it's all the same!」\n",
+  "pages": "\"Rheinmetall's a small island country. Run anywhere you like, it's all the same!\""
  },
  {
   "id": "28440F",
@@ -1250,7 +1309,8 @@
    459
   ],
   "jp": "{spk}情報屋　　　\n「街の連中　今度は　連邦相手に\n　商売するんだって\n　半分　ヤケになってまさぁ！」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「The folks in town say they'll\n do business with the\n Federation next. They've half」\n{next}\n「given up, I tell you!」\n",
+  "pages": "\"The folks in town say they'll do business with the Federation next. They've half given up, I tell you!\""
  },
  {
   "id": "284473",
@@ -1258,7 +1318,8 @@
    460
   ],
   "jp": "{spk}商人　　　　\n「はい　いらっしゃいませ」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Yes, welcome!」\n",
+  "pages": "\"Yes, welcome!\""
  },
  {
   "id": "28449F",
@@ -1266,7 +1327,8 @@
    461
   ],
   "jp": "{spk}{FF28}\n「あっ　{hero}！　見て　見て！！\n　すごいアイテムが　売ってるわよ！」\n{next}\n「○○○○ですって！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Ah, {hero}! Look, look!!\n They're selling an amazing\n item!」\n{next}\n「It says it's a ****!」\n",
+  "pages": "\"Ah, {hero}! Look, look!! They're selling an amazing item!\" || \"It says it's a ****!\""
  },
  {
   "id": "28450F",
@@ -1274,7 +1336,8 @@
    462
   ],
   "jp": "{spk}{FF1F}\n「こいつは　いくらだ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「How much is this?」\n",
+  "pages": "\"How much is this?\""
  },
  {
   "id": "28452F",
@@ -1282,7 +1345,8 @@
    463
   ],
   "jp": "{spk}商人　　　　\n「お客さん　お目がたかい！\n　これは古代王国時代に　作られた物で\n　コットウかちが　たかいお品ですよ」\n{next}\n「そうですね〜　１０００００Ｇで\n　いかがでしょうか？」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「You've got a good eye, sir!\n This was made in the age of\n the ancient kingdom. It's」\n{next}\n「worth a lot as an antique.」\n{next}\n「Let's see... How about\n 100000G?」\n",
+  "pages": "\"You've got a good eye, sir! This was made in the age of the ancient kingdom. It's worth a lot as an antique.\" || \"Let's see... How about 100000G?\""
  },
  {
   "id": "2845E5",
@@ -1290,7 +1354,8 @@
    464
   ],
   "jp": "{spk}商人　　　　\n「えっ　おかいに　なるんですか！？\n　あ　ありがとうございます！\n　いや　お客さん　フトッパラですね！」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Eh, you're buying it?!\n Th-thank you very much! My,\n sir, you're a generous one!」\n",
+  "pages": "\"Eh, you're buying it?! Th-thank you very much! My, sir, you're a generous one!\""
  },
  {
   "id": "28465F",
@@ -1298,7 +1363,8 @@
    465
   ],
   "jp": "{spk}商人　　　　\n「まあ　そうでしょうね\n　気がむいたら　またきてください」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Well, I figured. Come back if\n you change your mind.」\n",
+  "pages": "\"Well, I figured. Come back if you change your mind.\""
  },
  {
   "id": "2846AB",
@@ -1306,7 +1372,8 @@
    466
   ],
   "jp": "{spk}商人　　　　\n「お客さん　お金がたりませんよ！」\n{next}\n「それなら　こちらのアイテムは\n　どうですか？　これも\n　古代王国時代に　作られた物ですよ」\n{next}\n「おおまけに　まけて\n　５０００Ｇで　どうでしょう？」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Sir, you don't have enough\n money!」\n{next}\n「Then how about this item\n here? This was also made in\n the age of the ancient」\n{next}\n「kingdom.」\n{next}\n「I'll knock the price way down.\n How about 5000G?」\n",
+  "pages": "\"Sir, you don't have enough money!\" || \"Then how about this item here? This was also made in the age of the ancient kingdom.\" || \"I'll knock the price way down. How about 5000G?\""
  },
  {
   "id": "28477D",
@@ -1314,7 +1381,8 @@
    467
   ],
   "jp": "「渡し船は　たやすく　見つかった\n　連邦が　迫っていても\n　商売をする連中は　たくましい」\n{next}\n「連邦も　どうもうな　魔物ではない\n　ヤツらが　生きるためにも\n　街や　商人は　必要ってことだ‥‥」\n{next}\n「もっとも　連邦に逆らえば\n　誰だろうと　そく　死が待っている\n　この港は　死と　となり合わせなのだ」\n{next}\n「そして　オレたちは\n　{FF31}と　ともに船出した‥‥」\n",
-  "en": ""
+  "en": "「We found a ferry easily.\n Even with the Federation\n closing in, merchants are a」\n{next}\n「tough bunch.」\n{next}\n「The Federation isn't some\n savage monster either. To\n survive, even they need」\n{next}\n「towns and merchants...」\n{next}\n「Mind you, defy the\n Federation and death awaits\n anyone on the spot. This」\n{next}\n「port lives side by side with\n death.」\n{next}\n「And so we set sail with\n {FF31}...」\n",
+  "pages": "\"We found a ferry easily. Even with the Federation closing in, merchants are a tough bunch.\" || \"The Federation isn't some savage monster either. To survive, even they need towns and merchants...\" || \"Mind you, defy the Federation and death awaits anyone on the spot. This port lives side by side with death.\" || \"And so we set sail with {FF31}...\""
  },
  {
   "id": "2848E7",
@@ -1322,7 +1390,8 @@
    468
   ],
   "jp": "「超空の魔王」\n",
-  "en": ""
+  "en": "「The Demon King of the Skies」\n",
+  "pages": "\"The Demon King of the Skies\""
  },
  {
   "id": "2848F7",

@@ -15,3 +15,6 @@ one is available (the story pass in phase 9 reads every chapter again).
 | b017-b019 (Forgotten Island, Lake Despair, Blood Shield, ruins) | own pass | 0 | 0 | 0 |
 | b020 (spell/skill shouts, combined attacks, castle entrance) | own pass | 0 | 0 | 1 (spaced-out combo shouts written in caps; check on screen in phase 8) |
 | b021 (Imperial Guard, Elysion) | own pass | 0 | 1 fixed (超機神 now "Machine God Supreme" in dialogue, b013/b014 lines re-merged) | 0 |
+| b022-b025 (finale, Macbeth, ending, duel/job prompts) | own pass | 0 | 0 | 1 (25C52E page flow) |
+| b026-b030 (Mauser, rebel fort, Gauche, Tsukikage, Dark Wall) | own pass | 0 | 2 fixed (informer choice list lost its cursor indent: pages.py fix + rewrap; 様 kept as -sama) | 1 (278CA8 page flow) |
+| b031-b032 (Crystal Cove opening, Rheinmetall capital, port) | own pass | 0 | 1 fixed (賞金かせぎ = "bounty chaser" everywhere so Thetis's "Bounty HUNTER!" correction lands; b024/b027 re-merged) | 1 (28449F placeholder) |

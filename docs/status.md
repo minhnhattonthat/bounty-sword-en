@@ -2,11 +2,11 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 1589/3539 entries in English (name tables, b010-b031: prologue,
-  master_1E0000, 214606, 257BD4 incl. the finale, 26F317, 271410, 280F1B start); dialogue batches b032-b050 left
-  (b032 = rest of master_280F1B), then side tables. Pace: ~10 batches per worker context; the Orca brief forbids
+- **Phase:** 6. Translate in progress: 1658/3539 entries in English (name tables, b010-b032: prologue,
+  master_1E0000, 214606, 257BD4 incl. the finale, 26F317, 271410, 280F1B up to the ship); dialogue batches
+  b033-b050 left (b033 starts at 「超空の魔王」 aftermath, master_280F1B), then side tables. Pace: ~10 batches per worker context; the Orca brief forbids
   subagents, so each worker translates itself.
-- **Session 2026-11-22 (b022-b031):** `pages.py`: a page right before a `{FF14..}` choice code keeps the JP cursor
+- **Session 2026-11-22 (b022-b032):** `pages.py`: a page right before a `{FF14..}` choice code keeps the JP cursor
   indent `　` on every English line (one option a line, `\n` between; test `test_choice_list_keeps_cursor_indent...`);
   `batches.py rewrap` re-lays out merged pages after a `pages.py` change. 賞金かせぎ = "bounty chaser" (glossary).
   Tutorial lines name map/menu labels: 279ADC says "choose Rheinmetall" (location label) and 279CA6 "choose
