@@ -16,6 +16,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
   its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
   (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
+- **Session 2026-11-22g (fit pass):** widow fit pass finished and merged (see Phase). Seen in game: split box
+  1E8298 (`work/qa/w_fit03`, `msg` scene, MSG=1759 = the entry's `slots` value, not its id) ends cleanly with its
+  quote. Build green, smoke ok. Independent review table in `docs/reviews.md` is still empty: start at b010.
 - **Session 2026-11-22f (phase 6 review fixes):** honorifics D11 (lint: `batches.HONORIFICS` + どの/さま, matches
   {hero}/{FF31}; 14 lines fixed), Cronus (glossary row クロノス; ceremony 1DEDE7), Isolated Isle (glossary row,
   275EE6), `{hero}'s` lint (295456), Mauser's オレ様 (1E6B6C, 25B114), `docs/style-reference.md` (prologue seen in
