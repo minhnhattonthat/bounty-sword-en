@@ -16,7 +16,7 @@
 01C4B5	0:Inf | 2:Go | 4:Close | 10:Travel
 01C4D3	0:Rheinmetall | 16:North Europea | 32:South Europea
 01C535	1:Party | 5:Itm | 7:Fld | 9:Camp | 16:Map View | 23+3:Flee
-01C578	0:Retreat! | 6:Sure? | 16:OK | 18:No | 21+3:Flee
+01C578	2:now! | 6:Sure? | 16:OK | 18:No | 21+3:Flee
 01C5AA	0:Aim | 4:Skill | 8:Itm | 10:Tac | 12:Rtn | 14:Sts | 17:canceled.
 01C60C	1:Pick a target, press A. | 16:pick | 21:Which | 25:one? | 29:Fld | 31:Unit | 35:/
 01C6EE	1:Atk | 3:Agi | 5:Spr | 7:AS | 9:Gdr | 11:Def | 13:Int | 16:Lck | 18:Elm | 20:Sg. | 22:/

@@ -54,6 +54,12 @@
   table `C1:4933`), 0xAA0 bytes each = a copy of WRAM `$7F:F4CB-$7F:FF6A`. Save routine `C1:4940` (writes, then
   re-sums and stores the checksum only if it matches the RAM image).
 - Fields (slot offset = WRAM address - `$7FF4CB`): `+018` hero name, 6 words (padded with 0000); `+86B` scenario
-  number (`$7FFD36`). Money, units and items are not mapped yet (phase 8 stress saves): the camp's number box
-  (1000 / 1006) was not found as a binary or BCD value inside the slot.
+  number (`$7FFD36`); `+7E5` **gold** (`$7FFCB0`, u16 LE: a 1234 poke shows "1234G" in the shop, 999999 shows
+  16959 = its low word; the box reads "100G", earlier misread as 1006); `+420` the hero's item bytes (`$7FF8EB`,
+  item-table index in `script/items.json` order, 0 = none; base 01 44 = Iron Sword, Buckler; status Gear shows the
+  first two); `+450` the hero's Pack, 4 indexes (`$7FF91B`; base 5E x4 = Herb). Bytes at +3C0/+3D8/+3F0/+408
+  (02 06 02 01) look like the same item block for other units (stride 0x18), not verified. `save.py edit --gold
+  --gear --pack`; `tools/debug/stress.py` builds the stress cases from them.
+- `work/saves/base.srm` (save_test.py) is written by the **original** ROM (its default ROM), so file 1 is named
+  ソード; stress.py makes `base_en.srm` with the English build instead (file 1 "Sword").
 - Title file menu: with any save present the cursor starts on ロード, not 最初から.

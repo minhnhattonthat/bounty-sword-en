@@ -210,7 +210,7 @@
   "width": 24,
   "kind": "text",
   "jp": "退却します！よろしいですか？　　はいいいえ[01F6][01F7][01F8]",
-  "en": "Retreat![0F1F][0006]Sure?[0F1F][0010]OK[0F7F]No[0F1F][0015]Flee",
+  "en": "[0F1F][0002]now![0F1F][0006]Sure?[0F1F][0010]OK[0F7F]No[0F1F][0015]Flee",
   "refs": [
    "08ECC5"
   ]

@@ -26,6 +26,10 @@ WRAM_BASE = 0x7FF4CB
 FIELDS = {  # name: (slot offset, bytes, what); offsets = WRAM address - $7FF4CB
     "name": (0x018, 12, "hero name, 6 16-bit font codes (FF15/FF19-1E print it)"),
     "map": (0x86B, 2, "scenario / map number ($7FFD36), 1-59: next scenario the camp opens"),
+    "gold": (0x7E5, 2, "money ($7FFCB0), u16: the shop/camp box prints up to 65535G (a poke shows 1234G)"),
+    "gear": (0x420, 6, "hero's item bytes ($7FF8EB): item-table index (script/items.json order, 0 = none);"
+                       " base save 01 44 = Iron Sword, Buckler; the status Gear list shows the first two"),
+    "pack": (0x450, 4, "hero's Pack, 4 item indexes ($7FF91B); base save 5E x4 = Herb"),
 }
 
 
@@ -87,19 +91,32 @@ def info(d):
         used = bool(d[USED] >> i & 1)
         ok = "ok" if checksum(s) == stored else f"BAD (calc {checksum(s):04X})"
         o, n, _ = FIELDS["map"]
+        g, gn, _ = FIELDS["gold"]
+        e, en, _ = FIELDS["gear"]
         lines.append(f"file {i + 1}: {'used' if used else 'empty'} checksum {stored:04X} {ok}"
                      + (f"  map {int.from_bytes(s[o:o + n], 'little')}  name {decode_name(s[0x18:0x24], codes)}"
+                        f"  gold {int.from_bytes(s[g:g + gn], 'little')}  gear {s[e:e + en].hex(' ')}"
                         if used else ""))
     return "\n".join(lines)
 
 
-def edit(d, i, src=None, map_=None, name=None, pokes=()):
+def edit(d, i, src=None, map_=None, name=None, pokes=(), gold=None, gear=None, pack=None):
     if src is not None and src != i:
         d[SLOT_BASE[i]:SLOT_BASE[i] + SLOT_LEN] = slot(d, src)
     base = SLOT_BASE[i]
     if map_ is not None:
         o = FIELDS["map"][0]
         d[base + o:base + o + 2] = int(map_).to_bytes(2, "little")
+    if gold is not None:
+        o = FIELDS["gold"][0]
+        d[base + o:base + o + 2] = int(gold).to_bytes(2, "little")
+    for field, items in (("gear", gear), ("pack", pack)):
+        if items is None:
+            continue
+        o, n, _ = FIELDS[field]
+        if len(items) > n:
+            raise SystemExit(f"{field}: {n} items at most")
+        d[base + o:base + o + len(items)] = bytes(items)
     if name is not None:
         o = FIELDS["name"][0]
         d[base + o:base + o + 12] = encode_name(name)
@@ -147,12 +164,19 @@ def main():
     p.add_argument("--map", type=int)
     p.add_argument("--name")
     p.add_argument("--poke", action="append", default=[], type=parse_poke, help="OFF=HEX (slot offset, hex)")
+    p.add_argument("--gold", type=int, help="money, 0-65535")
+    p.add_argument("--gear", help="hero's item indexes, comma list (script/items.json order), up to 6")
+    p.add_argument("--pack", help="hero's Pack item indexes, comma list, up to 4")
     a = ap.parse_args()
     if a.cmd == "info":
         print(info(load(a.save)))
         return 0
     d = load(a.base)
-    edit(d, a.slot - 1, None if a.from_slot is None else a.from_slot - 1, a.map, a.name, a.poke)
+
+    def items(s):
+        return [int(x, 0) for x in s.split(",")] if s else None
+    edit(d, a.slot - 1, None if a.from_slot is None else a.from_slot - 1, a.map, a.name, a.poke, a.gold,
+         items(a.gear), items(a.pack))
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_bytes(d)
     print(info(d))

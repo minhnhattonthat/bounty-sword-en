@@ -58,6 +58,7 @@
 32787	6	倉庫	Vault	storage entry in the shop sell list (copied to $1132 by C3:2770)
 3980F	6	倉庫	Vault	storage entry, second copy (C3:97FE)
 6E27A	6	フュリス	Furis	name-entry default copied to $7E4D1B by C6:E266 (LDA $C6E27A,x, 12 bytes)
+6EF1A	6	ソード	Sword	name-entry default copied to $7E4D1B by C6:EEF6 (LDA $C6EF1A,x, 12 bytes; script op 0B at 06EA39)
 # Battle-setup name overrides (records C4:2A39, parser C0:A3AE, tools/re/battle_setup.py): 6 words copied
 # to $1132 + 12*slot, the unit-name buffer the battle and camp status draw. 48 px forms = speaker tags.
 431F6	6	盗賊のボス	Boss	battle-setup name override, scenario 145

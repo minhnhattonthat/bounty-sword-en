@@ -1,6 +1,8 @@
 # Skill gotchas
 
 One line per gotcha: the skill reference it belongs in, then the fact.
+references/emulator-qa.md (Debug tool / stress saves): a number box misread from a small shot ("100G" read as 1006) sent a whole RAM search after the wrong value: zoom the digits with sheet.py first, then confirm the address by holding a poke (a Lua write every frame) and reading the box.
+references/emulator-qa.md (warps): keys queued by the warp script after SCENE_OK can be ignored by some menus (Bounty Sword shops and battle menus) while the same keys from a savestate of that run work: save a state at the warp's last frame and play the keys in a second run (tools/inkbox_all.py THEN_KEYS).
 
 - references/platform-snes.md (fixed one-glyph-a-cell fields: name tags, labels): no runtime VWF needed: render each English string proportionally at build time into its cells and give every distinct cell bitmap a spare glyph code (dedupe; centre to whole cells, not pixels, or every label gets unique cells). Check the game's glyph-offset formula for 16-bit truncation: here codes past 0x071F wrapped below the hook's "English" threshold, capping the spare codes at 544.
 

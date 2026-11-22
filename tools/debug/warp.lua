@@ -103,7 +103,7 @@ end
 local APU_CMP, APU_SPIN = 0xC2F5AC, 4000
 local apuSpins = 0
 L.on_exec(APU_CMP, APU_CMP, function()
-  if state ~= "warped" then return end
+  if state ~= "warped" and state ~= "done" then return end  -- "done" too: KEEP/AFTER keys run past SCENE_OK
   apuSpins = apuSpins + 1
   if apuSpins < APU_SPIN then return end
   local s = emu.getState()

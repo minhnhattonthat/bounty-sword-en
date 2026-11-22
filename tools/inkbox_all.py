@@ -78,20 +78,48 @@ def shots(row, stem):
     return OUT / f"{stem}_en" / en, OUT / f"{stem}_jp" / (jp or en)
 
 
+def row_vars(row, tag):
+    """vars for this ROM: `en:K=V` / `jp:K=V` apply to one ROM only. THEN_KEYS / THEN_FRAMES are not passed to
+    warp.lua: they ask for a second stage (see shoot)."""
+    out = {}
+    for v in filter(None, (v.strip() for v in row["vars"].split("|"))):
+        rom, _, rest = v.partition(":") if v[:3] in ("en:", "jp:") else ("", "", v)
+        if rom and rom != tag:
+            continue
+        k, _, val = rest.partition("=")
+        out[k] = val
+    return out
+
+
 def shoot(row, stem, rom, tag):
+    """Warp from a cold boot. With THEN_KEYS='6 a;80 -' (and THEN_FRAMES), the warp run saves a state at its last
+    frame and a second run plays those keys from it without warp.lua: menus deep in a real-time battle ignore
+    keys queued after SCENE_OK in the warp run, but take them from a state (Retreat box, session ab)."""
     d = OUT / f"{stem}_{tag}"
     d.mkdir(parents=True, exist_ok=True)
     for old in d.glob("*.png"):
         old.unlink()
-    cmd = [sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "emu.py"), str(rom), "--out", str(d),
-           "--frames", row["frames"] or "9000", "--timeout", "900", "--shot-every", "20",
-           "--script", str(ROOT / "tools" / "debug" / "warp.lua"), "--var", f"SCENE='{row['scene']}'"]
-    for v in filter(None, row["vars"].split("|")):
-        cmd += ["--var", v.strip()]
+    vs = row_vars(row, tag)
+    then_keys, then_frames = vs.pop("THEN_KEYS", None), vs.pop("THEN_FRAMES", "400")
+    emu = [sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "emu.py"), str(rom), "--out", str(d),
+           "--timeout", "900"]
+    state = d / "stage1.mss"
+    cmd = emu + ["--frames", row["frames"] or "9000", "--shot-every", "20",
+                 "--script", str(ROOT / "tools" / "debug" / "warp.lua"), "--var", f"SCENE='{row['scene']}'"]
+    for k, v in vs.items():
+        cmd += ["--var", f"{k}={v}"]
     if row["route"]:
         cmd += ["--route", str(ROOT / row["route"])]
+    if then_keys:
+        cmd += ["--state-out", str(state)]
     with open(d / "run.out", "w", encoding="utf-8") as f:
         code = subprocess.run(cmd, stdout=f, stderr=subprocess.STDOUT).returncode
+        if then_keys and not code:
+            for old in d.glob("*.png"):
+                old.unlink()
+            code = subprocess.run(emu + ["--state-in", str(state), "--route-str", then_keys.strip("'"),
+                                         "--frames", then_frames, "--shot-every", "20"],
+                                  stdout=f, stderr=subprocess.STDOUT).returncode
     shutil.rmtree(d / "_mesen", ignore_errors=True)  # emu.py's ~95 MB emulator copy per run
     return code
 

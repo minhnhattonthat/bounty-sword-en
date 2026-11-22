@@ -2,13 +2,34 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session aa: build **f3fd66b97f7d**; tour 147/147 and
-  `qa_gate.py check` exit 0, `textcover.py` 3545/3574 + 29 waived, **0 failing** (exit 0), inkbox **11/11 ok**,
-  all on this build; **next: (1) inkbox rows still missing:
-  "Promote? OK No" (01D38D) and "Retreat! Sure? OK No" (01C578), leads below; (2) stress saves: gold not found yet
-  (session aa notes); (3) to-do 3 shop lines read in game (the shop warps ignore input after SCENE_OK, so a buy can't
-  be routed yet: fix that first); (4) the swapped engine B level-up / stat-up lines (1DF0CF.., polish.md) were read,
-  not seen laid out; (5) any rebuild = re-tour + textcover + gate**).
+- **Phase:** 8. QA in the emulator: in progress (session ab: build **d7d9d1892cb6**. On it: stress gate
+  `qa_gate.py check work/qa/stress/manifest.tsv work/qa/verdicts_stress` exit 0, inkbox row retreat_confirm ok.
+  The tour gate and textcover ran on f3fd66b97f7d (session aa) and must be **re-run on this build**: two ROM
+  changes since, 01C578 retreat box text and the C6:EF1A name-entry default. **Next: (1) re-tour + `qa_gate.py
+  init/check` + `textcover_all.py` + `inkbox_all.py --shoot` (12 rows) on this build; (2) inkbox row
+  "Promote? OK No" (01D38D) still missing, leads below; (3) to-do 3 shop lines read in game (warp keys after
+  SCENE_OK are still ignored in shops and battle menus: use inkbox_all's THEN_KEYS two-stage form, or a state
+  run); (4) the engine B level-up / stat-up lines (1DF0CF.., polish.md) were read but never seen on screen**).
+- **Session 2026-11-23ab (phase 8, stress saves + Retreat box):** (a) **Gold found**: `$7FFCB0` u16 (save slot
+  +7E5); session aa had searched for 1006 because the box was misread; it reads "100G". Also mapped: hero
+  gear +420 and Pack +450 (`docs/re/debug.md`). `save.py edit --gold/--gear/--pack`. (b) New
+  **`tools/debug/stress.py`** (makes `work/saves/base_en.srm` with this build's camp_save, then cases max / min /
+  one, each through camp, file, items and status, plus the weapon-shop gold box held at 65535/1/0 by the new
+  **`tools/lua/pokeloop.lua`**): 15/15 runs, sheets `work/qa/stress/sheets/`, verdicts
+  `work/qa/verdicts_stress/` (own read-only pass: all fit). (c) **Bug fixed:** the battle-map Flee confirm
+  showed **"Flee reat! Sure?"**: the box draws cells 21-23 (the 離脱 glyphs, now "Flee") then cells 2-5, so
+  "Retreat!" lost its head. 01C578 spec is now `2:now! | 6:Sure? | 16:OK | 18:No | 21+3:Flee` -> "Flee now!
+  Sure?" (rv14). (d) **Bug fixed:** a second name-entry default ソード at C6:EF1A (copied to $7E4D1B by C6:EEF6,
+  script op 0B at 06EA39) is now "Sword" (`default_names.tsv`); no scene for it is known. (e) **inkbox_all.py**:
+  `en:`/`jp:` var prefixes and a second stage `THEN_KEYS`/`THEN_FRAMES` (the warp run saves a state at its last
+  frame, then the keys run from it without warp.lua). Why: on scenario warps, keys queued after SCENE_OK are
+  ignored in battle menus and shops; the same keys from a savestate of that run work (`work/qa/rt7` vs `rt8`).
+  Not the APU nudge (0 nudges logged; warp.lua now nudges after SCENE_OK too) and not press length (12/20
+  frames fail too). Cause unknown. Row **retreat_confirm** passes match (en L8 vs jp L9). (f) `tools/lua/pclog.lua`
+  (PC samples). check 60 passed, lint 0. **Promote lead:** script C3:748E (op 39 C3:6FC0, op 6C C3:BFB0, op 24 menu
+  C8:EB05) is entry 10 of a C3 pointer table at file 0x1ADF3E.. (no direct reference found); camp command 4 "Go!"
+  (決意) lists units with the hero greyed out (`tour/camp_resolve`) and may be the class-change list once a unit
+  qualifies. Try: give the hero a promotion level with a save edit (unit records not mapped yet), then open Go!.
 - **Session 2026-11-23aa (phase 8, tour + gate on f3fd66b97f7d):** full tour `work/qa/tour` **147/147 ok**
   (`--states`, so `work/states/` is from this build); 13 sheets read in a read-only pass, all ok
   (`work/qa/verdicts/tour_f3fd66b97f7d.tsv`); **`qa_gate.py check` exit 0**. `inkbox_all.py --shoot` 11/11 ok.
@@ -434,7 +455,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
   - Debug tool: town tavern, Mode 9 and the real ending not in the scene list; GOD/NOENC/FAST not built.
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
-- **Open bugs:** shop lines not all read in game yet (to-do 3); shop warp ignores input after the greeting (debug
-  tool). (C4 battle-setup names: fixed in session u.)
+- **Open bugs:** shop lines not all read in game yet (to-do 3); scenario warps ignore keys queued after SCENE_OK in
+  shops and battle menus (debug tool; a state run takes them, session ab). (C4 battle-setup names: fixed in
+  session u.)
 - **Waiting on the user:** (not blocking) D14 shop headers "Arms 1" / "Item 1" (3-cell labels so they stay centred);
   say if you'd rather have "Weapons"/"Items" off-centre. (Keyboard input in Mesen not checked by hand: headless session.)
