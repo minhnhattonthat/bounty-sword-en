@@ -23,7 +23,15 @@ hirom
 !R = $FF9C              ; row offset inside the cell ($00-$0E top tile, $200-$20E bottom tile)
 !LAST6 = $FF9E          ; LAST/BASE/PX of the C6 printer (narration, card subtitle), swapped in by SwapC6
 !PXSTART = $FFA4        ; first PX of the next run (card subtitle centring), consumed by the run start
-!MODE = $FFA6           ; 0 = engine A (C2:4922), 1 = C6 printer (C6:DF04)
+!MODE = $FFA6           ; 0 = engine A (C2:4922), 1 = C6 printer (C6:DF04), 2 = C1 string run (C1Run)
+!C1N = $FFA8            ; C1 run: cells in the field (the string's word count)
+!C1LO = $FFAA           ; start slot & $0F
+!C1HI = $FFAC           ; start slot & $FFF0
+!C1I = $FFAE            ; byte index of the next word
+!C1LEN = $FFB0          ; field length in bytes
+!C1PAIR = $FFB2         ; second letter of a packed pair still to draw (0 = none)
+
+!TAB = $0F7F            ; C1 runs: move to the next cell boundary (blank glyph elsewhere)
 
 ; ---- menus, engine B, name tags through the C1 glyph-address routine: English codes read the English font ----
 org $C186A9
@@ -50,6 +58,14 @@ org $C6DF04
 ; centre line 1 by its pixel width ----
 org $C6D383
     jml CardCentre
+
+; ---- C1 string runs (menus, lists, windows): C1:8E90 draws $2C/2 words from [$34] at tile slot $2E (19 callers),
+; C1:8F13 draws a [count][words] string from [$40]. Runs holding English go through the VWF core (mode 2): the
+; field keeps its slots, text is packed by pixels, and a word $2020-$7E7E holds two ASCII letters ----
+org $C18E90
+    jml C1Run34
+org $C18F13
+    jml C1Run40
 
 ; The English font sits where the game's 16-bit glyph-offset formula puts codes $0F20-$0F7F when the base is
 ; $FF:0000 (tools/font_en.py font_block): offset(c) = ((c & $FFF0) << 5) + ((c & $F) << 4), truncated to 16 bits.
@@ -290,6 +306,11 @@ VwfCommon:
     sta.w !W
 .pos:
     lda.w !MODE
+    cmp.w #$0002
+    bne +
+    jmp .c1pos
++
+    lda.w !MODE
     bne +
     lda.l $7E3729
     bra ++
@@ -347,6 +368,7 @@ VwfCommon:
     ldx.w !D0
     jsr ClearCell
 +
+.rows:
     stz.w !ROW
 .row:
     lda.w !ROW
@@ -439,6 +461,13 @@ VwfCommon:
     clc
     adc.w !W
     sta.w !PX
+    ldx.w !MODE
+    cpx.w #$0002
+    bne +
+    plb                 ; mode 2: back to C1Run (JSR'd through C1Glyph1)
+    plp
+    rts
++
     clc
     adc.w #$0007
     lsr
@@ -466,6 +495,35 @@ VwfCommon:
     plp
     jml $C249CD         ; the RTS that ended the original routine
 
+; mode 2 (C1 run): cells are tile slots from the run's start slot; the field was cleared by C1Run, and a glyph never
+; spills past the field's last cell.
+.c1pos:
+    lda.w !PX
+    and.w #$0007
+    sta.w !S
+    stz.w !SPILL
+    lda.w !PX
+    lsr
+    lsr
+    lsr
+    pha
+    jsr C1SlotOff
+    sta.w !D0
+    pla
+    inc
+    cmp.w !C1N
+    bcs +
+    jsr C1SlotOff
+    sta.w !D1
+    lda.w !S
+    clc
+    adc.w !W
+    cmp.w #$0009
+    bcc +
+    inc.w !SPILL
++
+    jmp .rows
+
 ; X = buffer offset of a cell: fill both tiles with background (colour 14: planes 0/1 = 00/FF, planes 2/3 = FF/FF).
 ClearCell:
     ldy.w #$0008
@@ -481,5 +539,228 @@ ClearCell:
     dey
     bne -
     rts
+
+; ---- C1 string runs ----
+; Replaces C1:8E90 (PHY / LDY #0 / per word: JSL C1:8EB9, slot $2E + 1, rows of 16 slots 2 apart / PLY / RTL).
+C1Run34:
+    phx
+    phy
+    lda $2C
+    lsr
+    jsr C1Run
+    ply
+    plx
+    rtl
+
+; Replaces C1:8F13 ([$40] = count word, then the words; $2E = start slot).
+C1Run40:
+    lda $34
+    pha
+    lda $36
+    pha
+    lda $40
+    clc
+    adc.w #$0002
+    sta $34
+    lda $42
+    adc.w #$0000
+    and.w #$00FF
+    sta $36
+    lda [$40]
+    jsr C1Run
+    pla
+    sta $36
+    pla
+    sta $34
+    rtl
+
+; A = word count N, [$34] = words, $2E = start slot. Out: $2E = the slot after the field, as the original loop.
+; All-Japanese runs take the original per-cell path, so the JP build and JP strings draw as before.
+C1Run:
+    php
+    phb
+    rep #$30
+    pea $7F7F
+    plb
+    plb
+    sta.w !C1N
+    asl
+    sta.w !C1LEN
+    tay
+-
+    dey
+    dey
+    bpl +
+    jmp .jp
++
+    lda [$34],y
+    jsr C1IsEn
+    bcc -
+    lda $2E
+    and.w #$000F
+    sta.w !C1LO
+    lda $2E
+    and.w #$FFF0
+    sta.w !C1HI
+    ldy.w #$0000
+-
+    cpy.w !C1N
+    bcs +
+    phy
+    tya
+    jsr C1SlotOff
+    tax
+    jsr ClearCell
+    ply
+    iny
+    bra -
++
+    stz.w !PX
+    stz.w !C1I
+    stz.w !C1PAIR
+.loop:
+    lda.w !C1PAIR
+    beq +
+    stz.w !C1PAIR
+    bra .glyph
++
+    ldy.w !C1I
+    cpy.w !C1LEN
+    bcs .done
+    lda [$34],y
+    iny
+    iny
+    sty.w !C1I
+    cmp.w #!TAB
+    bne +
+    lda.w !PX
+    and.w #$FFF8
+    clc
+    adc.w #$0008
+    sta.w !PX
+    bra .loop
++
+    cmp.w #$2020        ; packed pair: high byte first, low byte next
+    bcc .glyph
+    cmp.w #$7F00
+    bcs .glyph
+    pha
+    and.w #$00FF
+    clc
+    adc.w #$0F00
+    sta.w !C1PAIR
+    pla
+    xba
+    and.w #$00FF
+    clc
+    adc.w #$0F00
+.glyph:
+    pha
+    lda.w !PX
+    lsr
+    lsr
+    lsr
+    cmp.w !C1N
+    pla
+    bcs .loop           ; past the field: dropped (the fit lint keeps text inside)
+    sta $2E
+    jsr C1Glyph1
+    bra .loop
+.done:
+    lda.w !C1N
+    jsr C1Slot
+    sta $2E
+    plb
+    plp
+    rts
+.jp:
+    ldy.w #$0000
+-
+    cpy.w !C1LEN
+    bcs +
+    lda [$34],y
+    jsl $C18EB9
+    lda $2E
+    inc
+    and.w #$000F
+    bne ++
+    lda $2E
+    and.w #$00F0
+    clc
+    adc.w #$0020
+    sta $2E
+    bra +++
+++
+    inc $2E
++++
+    iny
+    iny
+    bra -
++
+    plb
+    plp
+    rts
+
+; carry set if word A is English: $0F20-$0F7F, or a packed pair with both bytes $20-$7E
+C1IsEn:
+    cmp.w #!EN_BASE
+    bcc .no
+    cmp.w #!TAB+1
+    bcc .yes
+    cmp.w #$2020
+    bcc .no
+    cmp.w #$7F00
+    bcs .no
+    pha
+    and.w #$00FF
+    cmp.w #$0020
+    bcc +
+    cmp.w #$007F
+    bcs +
+    pla
+    sec
+    rts
++
+    pla
+.no:
+    clc
+    rts
+.yes:
+    sec
+    rts
+
+; A = cell k of the run -> A = its slot: (start & $FFF0) + (t >> 4) * $20 + (t & $F), t = (start & $F) + k
+C1Slot:
+    clc
+    adc.w !C1LO
+    pha
+    and.w #$000F
+    sta.w !T
+    pla
+    and.w #$FFF0
+    asl
+    clc
+    adc.w !T
+    clc
+    adc.w !C1HI
+    rts
+
+; A = cell k -> A = its offset from $7E:A000 (32 bytes a slot; the bottom tile is +$200, 16 slots on)
+C1SlotOff:
+    jsr C1Slot
+    asl
+    asl
+    asl
+    asl
+    asl
+    rts
+
+; $2E = code: draw it at PX through the VWF core (mode 2, DB = $7F, 16-bit)
+C1Glyph1:
+    php
+    phb
+    lda.w #$0002
+    sta.w !MODE
+    jmp VwfCommon
 
 assert pc() <= $FF8000

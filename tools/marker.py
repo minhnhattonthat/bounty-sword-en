@@ -14,6 +14,7 @@ import copy
 import re
 
 from font_en import advance
+from script_text import C1_TABLES
 
 LINE_PX = 160          # 20 cells; the width gate (docs/re/vwf.md) checks it in game
 TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W", "menus_c": "U","speakers": "K", "system_prompts": "Z",
@@ -143,10 +144,12 @@ def master_marker(eid, jp, torture=True):
     return "".join(out)
 
 
-def side_marker(tag, idx, entry):
+def side_marker(tag, idx, entry, c1=False):
     label = f"{tag}{idx}"
     letters = label + "abcdefghijklmnopqrstuvwxyz" * 4
     toks = TOKEN.findall(entry["jp"])
+    if c1 and "width" in entry:     # C1 run: proportional, the field's cells x 8 px (asm/vwf.asm C1Run)
+        return fill_line(label, entry["width"] * 8)
     if "width" in entry:
         return (label + "abcdefghijklmnopqrstuvwxyz")[:entry["width"]]
     out, k = [], 0
@@ -174,5 +177,5 @@ def marker_files(files, rom):
         tag = TAGS[name[:-5]]
         for i, e in enumerate(entries):
             if e.get("kind") == "text" and e["jp"]:
-                e["en"] = side_marker(tag, i, e)
+                e["en"] = side_marker(tag, i, e, c1=name[:-5] in C1_TABLES)
     return files

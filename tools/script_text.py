@@ -248,8 +248,31 @@ def side_entries(rom, name, start, end, codec, ptrs):
     return out
 
 
-def side_words(entry, codec):
+# Tables drawn by the C1 string runs (asm/vwf.asm C1Run): English there is proportional inside the field's cells,
+# two ASCII letters may share a word, and `[0F7F]` (TAB) moves to the next cell (grid strings cut into slices).
+C1_TABLES = {"items", "classes", "unit_names", "unit_titles", "windows", "menus", "menus_c"}
+TAB = 0x0F7F
+
+
+def pack_pairs(words):
+    """Two English letters in a row -> one word (first << 8 | second), each letter as ASCII."""
+    out, i = [], 0
+    while i < len(words):
+        a = words[i]
+        b = words[i + 1] if i + 1 < len(words) else None
+        if b is not None and EN_BASE + EN_FIRST <= a <= EN_BASE + EN_LAST and EN_BASE + EN_FIRST <= b <= EN_BASE + EN_LAST:
+            out.append((a - EN_BASE) << 8 | (b - EN_BASE))
+            i += 2
+        else:
+            out.append(a)
+            i += 1
+    return out
+
+
+def side_words(entry, codec, pack=False):
     w = codec.encode(entry["jp"])
+    if pack and "width" in entry:     # only fixed fields: a run with no width keeps its JP length
+        w = pack_pairs(w)
     if "width" in entry:
         if len(w) > entry["width"]:
             raise ValueError(f"{entry['id']}: {len(w)} words, field is {entry['width']}")
@@ -328,6 +351,6 @@ def apply_script(rom, files, field="jp"):
         words = []
         for e in files[r["name"] + ".json"]:
             src = dict(e, jp=e[field]) if e.get(field) else e
-            words += side_words(src, sc[r["name"] in ENGINE_B_TABLES])
+            words += side_words(src, sc[r["name"] in ENGINE_B_TABLES], pack=r["name"] in C1_TABLES)
         r["text"] = wc.decode(words)
     return data

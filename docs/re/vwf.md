@@ -32,6 +32,7 @@ computes a JP glyph address reaches the English font by swapping only its base p
 | `C2:5641` | `$44/$46 = $EB:2D8C` in the FF0E name-tag drawer | Y >= `$E400` (English) -> base `$FF:0000` | assembled, JP path verified; English path untested (speakers still JP) |
 | `C0:E1CB` | same base store in the location-label drawer `C0:E1B1` (world map, chapter card) | `$2E` >= `$E400` -> `$FF` | verified (worldmap marker `L30abcdefg`, 10 cells) |
 | `C6:DF04` | the whole C6 printer glyph draw (chapter-card subtitle, mode 14; narration, mode 15; printer loop `C6:DD44`, code in `$20`, cursor `$7E4D7B`) | shared VWF core (`C6Vwf`, `!MODE`=1, own LAST/BASE/PX swapped in by `SwapC6`, one buffer half `$1400`); returns via `C6:DF96` | verified (card_02-06, narration markers at 160 px) |
+| `C1:8E90`, `C1:8F13` | the C1 string-run loops (8E90: `$2C/2` words from `[$34]`, 19 callers incl. item lists, window op `16`; 8F13: `[count][words]` from `[$40]`, window op `02`), each word drawn by `C1:8EB9` into tile slot `$2E` (32 bytes, top tile `$7E:A000+slot*32`, bottom +`$200`; slot+1, rows of 16 slots `$20` apart) | `C1Run`: a run holding English goes through the VWF core in **mode 2** (cells = the run's slots, field cleared first, nothing spills past the last cell); word `$2020-$7E7E` = two ASCII letters (high byte first, `script_text.pack_pairs`, fixed fields of `C1_TABLES` only); `$0F7F` = TAB to the next cell (grid strings). All-JP runs take the original loop | partly verified 2026-11-22: battle_status lists/equipment show proportional packed markers; camp/shop lists garbled by a **marker bug**, see below |
 | `C6:D383` | card subtitle centring (table `C6:D421`, lengths 0-19 only: 20+ read the next table and drew garbage) | centre line 1 by its pixel width (`PXSTART`) | verified (card markers centred) |
 
 VWF (`VwfDraw`): pixel cursor `PX` from the line-run start cell `BASE`. When `$7E3729` differs from the value the
@@ -54,8 +55,8 @@ after boot in prologue, scen_25 (battle) and camp_items. Recheck if a scene show
 | Chapter-card subtitle (master messages in card table `C6:D485`, 59) | 160 px line 1 incl. quotes (`「」` draw as `"`), centred; a second line starts at the left edge (avoid) | card_02-06 marker shots `work/qa/m_c6/` | measured |
 | Narration (mode 15, master messages from table `C6:D7D8`: 7 bytes a scenario, flag ptr + two slot offsets) | 160 px a line (VWF), lines per box: JP uses up to 3 | narration marker `work/qa/m_c6/narration` (2-line message) | measured width; 3rd line guess |
 | Location label (`locations`) | 10 cells, 1 char per cell | worldmap marker `L30abcdefg` fills the frame | measured |
-| Window strings (`windows`, C1 `[count][words]` via 24-bit pointers in the C8 window scripts, drawer `C1:8F13`) | in place: each string fixed at its JP count; **grid strings are sliced** by the window script (file menu `01CCF2`: ロード = 3 cells, 最初から = 4) | filemenu marker `work/qa/m_win/filemenu` | guess: phase 7 must re-cut slices in the C8 scripts or relocate (pointers are 24-bit) |
-| Menus, items, classes, unit names/titles | record width in cells (items/classes 10, unit names 6, titles 16) | C1 path, 1 char per cell | guess: measure each screen's next-column x |
+| Window strings (`windows`, C1 `[count][words]` via 24-bit pointers in the C8 window scripts, drawer `C1:8F13`) | in place, count x 8 px (C1Run VWF, pairs packed). **Grid strings**: window op `02` draws the whole string into tile slots 0..n-1 (`C8:F449`: `02 0000 C1CCF2`), op `0A` DMAs `$7E:A000` to VRAM, and a tilemap shows slices of those slots (file menu `01CCF2`: ロード = slots 4-6, 消去 = 2 cells): each slice's budget = its cells x 8 px, items separated by `[0F7F]` TABs. Decoder: `tools/re/winscript.py C8F449` | slice cells from the JP string; px budgets not yet shot | guess (the tilemap holding the slices is not found yet; re-cut it if a slice is too small) |
+| Menus, items, classes, unit names/titles | C1Run VWF: field cells x 8 px, up to 2 letters a word (items/classes 10 cells = 80 px, unit names 6 = 48 px, titles 16 = 128 px) | battle_status marker `work/qa/mk_c1/battle_status/proof.png`: equipment/inventory markers (`I1The quick bro`) end at the window frame, 80 px | items measured in battle_status only; other screens guess until the camp/shop tour is clean |
 | Engine B (ceremony, short strings, descriptions) | position table `$7E:4A3D`, 1 char per cell | - | guess |
 
 Glyph torture line: all encodable ASCII + double spaces, prologue message 24FABE boxes 1-2: renders correctly.
@@ -72,3 +73,9 @@ Seen in the proof sheets (own read-only pass; codex was out of quota):
   FF15 headers); the file menu header ファイル shows one marker letter only (slice of `01CCF2`; check the C8 script);
 - camp command list: marker letters mixed with `)。。`: those menu strings contain layout words decoded as characters;
   split them out of `menus` before translating.
+- **marker bug (2026-11-22, C1Run tour `work/qa/mk_c1`)**: `menus`/`menus_c` use the `term` split, so the marker
+  overwrites the count words of `[count][words]` strings there. `tools/lua/c1runs.lua` on town_item_shop logged
+  `run40 n=3951 ptr=C1D2F9` (count word replaced by `o` = `$0F6F`): the run clears ~4000 slots and the camp and
+  shop screens fill with garbage. The original-path build drew the same bad count more quietly. Fix: split both
+  regions by the window-script op `02` pointers (`02 pos16 ptr24` into `C1:BFFF-C1:D3AB`; the counted chain holds
+  only in stretches: `C1:D2F9` 16, `C1:D31B` 15, then breaks; `C1:BFFF` 12 strings to `C1:C283`).

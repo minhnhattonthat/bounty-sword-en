@@ -64,3 +64,13 @@ def test_marker_keeps_structure_and_fills_lines_exactly():
 
 def test_torture_line_wraps_inside_the_box():
     assert all(line_px(x) <= LINE_PX for x in wrap_px(TORTURE, LINE_PX - 8))
+
+
+def test_c1_fields_pack_letter_pairs():
+    from script_text import pack_pairs, side_words, side_codecs
+    codec = side_codecs()[False]
+    # "Abc" + JP space: A,b pack into one word (high byte first), c stays single, JP words untouched
+    assert pack_pairs(codec.encode("Abc　")) == [0x4162, EN_BASE + ord("c"), 0]
+    # a 3-cell field takes 6 letters and pads with JP spaces; JP text is never packed (identity build)
+    assert side_words({"jp": "Potion", "width": 4}, codec, pack=True) == [0x506F, 0x7469, 0x6F6E, 0]
+    assert side_words({"jp": "　　", "width": 2}, codec, pack=True) == [0, 0]

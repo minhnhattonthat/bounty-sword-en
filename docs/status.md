@@ -2,12 +2,13 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (VWF on dialogue, narration and card subtitles; unhooked
-  renderers done; width gate open). Builds 2026-11-22 (second session): rebuild with `build.py` / `--marker`
-  before testing (sha1 changes with every asm edit); card, narration, filemenu, camp warps ok on both.
+- **Phase:** 5. Engine spike and marker build in progress (VWF on dialogue, narration, card subtitles and now C1
+  string runs; width gate open). Builds 2026-11-22 (third session): rebuild with `build.py` / `--marker` before
+  testing (sha1 changes with every asm edit). Marker tour `work/qa/mk_c1`: 22/23 menu scenes reach their scene
+  (prologue FAILED on this build: recheck after the menus fix), camp and shop screens garbled (marker bug below).
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
   (details and evidence in `docs/re/vwf.md`):
-  - Font decision: dialogue VWF; other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
+  - Font decision: dialogue VWF; C1 menus/lists VWF with packed pairs (third session); other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
     `tools/font_en.txt` (`tools/font_en.py`), placed at `$FF:E400` in the game's font layout.
   - `asm/vwf.asm` (asar 1.91, `tools/asar/`): hooks `C1:86A9` (C1 menu/list drawers, engine B), `C2:4922` (engine A
     VWF), `C2:5641` (name tag base pointer). `build.py` pads to 4 MB and assembles; master messages that outgrow their
@@ -21,12 +22,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `C6:D485`. `menus` region was read out of word phase: split into `menus`/`windows`/`menus_c`
     (`rom_text.REGIONS`, rule "counted", `head` = count word); file menu, save prompts, config and battle orders now
     extract (`script/windows.json`, 31 text entries) and show markers. Identity build still byte-identical.
+  - Third session: **C1 VWF** (D4 engine work first). C1 strings are fixed in place, so `C1Run` (hooks `C1:8E90`,
+    `C1:8F13`) draws English runs through the VWF core (mode 2) inside the field's own tile slots, and fixed fields
+    of `script_text.C1_TABLES` pack two ASCII letters a word (`pack_pairs`): budget = cells x 8 px, up to 2 letters
+    a cell. `[0F7F]` = TAB to the next cell (grid strings). Window script decoder `tools/re/winscript.py`; C1 run
+    logger `tools/lua/c1runs.lua`. Test `test_c1_fields_pack_letter_pairs`. Details: `docs/re/vwf.md`.
 - **Next (phase 5, in this order):**
-  1. Window strings: grid strings (`windows` 01CCF2: file menu items) are drawn in slices by the C8 window script
-     (records near `C8:F44C`, opcodes `C1:870C` table `C1:871A`); find the slice operands so English items can be
-     longer than the JP count (or note per-slice cell budgets). Check camp command list (`menus` 'term' split may
-     still hold layout words: re-split `menus`/`menus_c` with the "counted" rule if the chain holds; the odd chain
-     0x1BFFF-0x1C56B does, see `docs/re/text.md`).
+  1. **Fix the marker bug** (`docs/re/vwf.md` §Marker build): `menus`/`menus_c` (`term` split) lose the count words
+     of `[count][words]` strings (`C1:D2F9` drew n=3951 and garbled camp/shop). Find every window-script op `02`
+     pointer (`02 pos16 ptr24`, `tools/re/winscript.py`) and `C1:8E90` caller source into `C1:BFFF-C1:D3AB`, split
+     those as counted entries (`head`, `width`), keep the rest data; regenerate `script/`, identity test, rebuild
+     marker, re-tour menus (`warp_all.py build/bounty_marker.sfc --match '^(camp|town|battle_|filemenu|ceremony|
+     name_entry|prologue)' --out work/qa/mk_c1`), check with `c1runs.lua` that no run has n > 64.
+  1b. Verify C1Run on every list screen (camp items, shops, party, status) and read each field's px budget off a
+     zoomed shot; then the grid slices: find the file-menu tilemap (slots 4-6 = ロード) and record per-slice px,
+     or re-cut it so items fit.
   2. Speaker names in the marker: map each `speakers.json` name to a 6-char label in both the table and the FF15
      literal headers (they must match for portraits), then measure the name tag.
   3. Width gate for every other variant (table in `docs/re/vwf.md`; card subtitle, narration width, location label
