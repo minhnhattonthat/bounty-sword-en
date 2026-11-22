@@ -115,6 +115,9 @@ def put_default_names(rom, codec, path=DEFAULT_NAMES):
         if rom[off:off + len(old)] != old:
             raise ValueError(f"default name at {off:06X}: ROM does not hold {jp}")
         words = codec.encode(en)
+        if len(words) > n:      # a long name packs two letters a word, as unit_names does (C1Run and FF29 draw both)
+            from script_text import pack_pairs
+            words = pack_pairs(words)
         if len(words) > n:
             raise ValueError(f"default name {en!r} is {len(words)} words, field holds {n}")
         rom[off:off + 2 * n] = b"".join(w.to_bytes(2, "little") for w in words) + b"\0" * (2 * (n - len(words)))

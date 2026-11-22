@@ -2,9 +2,22 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session s: JP-left sweep worked, byte-level engine A tables;
-  **next: the 3 open leads in `docs/re/jp_left.md` (022FDC reader, C1/C4 unit-record names), then the full re-tour +
-  verdicts + `qa_gate.py`**; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session t: 022FDC and the C1 unit-record names done;
+  **next: the C4 battle-setup name overrides (`docs/re/jp_left.md`, last open row: real JP on enemy status), then
+  the full re-tour + verdicts + `qa_gate.py`**; to-dos below).
+- **Session 2026-11-23t (phase 8, JP-left leads):** (a) 「敵を見失いました。」 022FDC: new in-place engine A table
+  **`enemy_lost`** (`rom_text.REGIONS`, `script_text` SPLIT/ENGINE_A_TABLES/RELOCATE, marker tag `A`) -> `"Foe lost."`
+  (JP length = 11 one-char cells; no reader known, never read in the tour; `MSGPTR` can't show FF0A-0000 boxes, the
+  verified sibling 041373 draws nothing there either). (b) Region-read tour `work/qa/rr2` (146/146, `regionreads.lua`
+  over 0106D3-011439, 0445A2-047467, 022FDC-022FFA). C1 unit records (stride 0x46, name at +2) are copied into unit
+  RAM by C2:21D9 / C1:4622: all 48 non-hero names English via `default_names.tsv`; `put_default_names` now packs
+  two letters a word when a name is over 6 letters (Tsukikage, Hammerli, Detonics, Macbeth, Miranda). (c) **C4 lead is
+  real**: battle-setup records (C4:2A39 table, parser C0:A3AE) carry optional 6-word name overrides copied by
+  C0:A542 to `$1132 + 12*slot`, which the battle status (C2:5525 -> `$7E378D`) and camp status draw (watch probe,
+  `work/qa/w_1132`). ~225 candidate fields (連邦兵, 盗賊, 降下猟兵, 竜騎士団, 空挺部隊, named bosses); plan in
+  `docs/re/jp_left.md` (Lua runner per scenario index logging C0:A527 field addresses, then `default_names.tsv` rows).
+  check 57 passed, lint 0, batches 0 problems, identity identical, smoke ok; build sha1 6b8f0dc9706d. Worker handed
+  back near the context limit.
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -331,6 +344,6 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
   - Debug tool: town tavern, Mode 9 and the real ending not in the scene list; GOD/NOENC/FAST not built.
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
-- **Open bugs:** phase 8 to-dos 3-8 above (shop lines not yet read in game, card subtitle overlap, default name
-  フェリス, 男, 倉庫); shop warp ignores input after the greeting (debug tool).
+- **Open bugs:** C4 battle-setup name overrides show JP on unit status (session t, `docs/re/jp_left.md`); shop
+  lines not all read in game yet (to-do 3); shop warp ignores input after the greeting (debug tool).
 - **Waiting on the user:** nothing. (Keyboard input in Mesen not checked by hand: headless session.)

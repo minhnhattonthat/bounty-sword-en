@@ -133,6 +133,7 @@ SPLIT = {
     "town_menu": ("fixed", 5, 0),
 
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
+    "enemy_lost": ("ends", {0xFF00, 0xFF03}),
     "unit_records": ("term",),
     "unit_names": ("fixed", 6, 0),
     "unit_titles": ("fixed", 16, 0, 10),
@@ -155,7 +156,7 @@ SPLIT = {
 ENGINE_B_TABLES = {"ceremony", "short_strings", "descriptions"}
 # System and battle prompts are engine A scripts (drawn in the dialogue box): parse their argument words too, so
 # `{FF09}　` (a 0x0001 argument read as a character) reads `{FF09:0001}`.
-ENGINE_A_TABLES = {"battle_prompts_b", "system_prompts"}     # + the byte-level tables of tools/byte_scripts.py
+ENGINE_A_TABLES = {"battle_prompts_b", "system_prompts", "enemy_lost"}    # + the byte-level tables of tools/byte_scripts.py
 
 
 def split_region(words, rule, args=None, anchors=()):
@@ -416,7 +417,7 @@ TAGS = []       # the TagFont of the last apply_script(tags=True) (build.py writ
 # battle_prompts_b: `43 ptr24` in a C0 op list (`43 AB73C0` at C0:7379); battle_prompts: `2E ptr24` in C5/C6 event
 # scripts (`2E A2E8C5` at 0x06CCA7, 33 calls of 05EF1E). A script = entries up to one ending in
 # FF00 (FF03 waits and runs on into the next entry, e.g. a question then its choice list).
-RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}}   # battle_prompts: tools/byte_scripts.py
+RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}, "enemy_lost": {0x03}}  # battle_prompts: tools/byte_scripts.py
 
 
 def script_runs(entries, words):

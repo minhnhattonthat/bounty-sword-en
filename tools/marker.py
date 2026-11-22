@@ -21,7 +21,7 @@ TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W",
         "unit_records": "R", "battle_prompts": "B", "unit_names": "N", "unit_titles": "T", "classes": "C",
         "spells": "X", "constellations": "Q", "orders": "G", "c8_layout": "-", "c8_digits": "-",
         "descriptions": "D", "objectives": "O", "items": "I", "short_strings": "S", "ceremony": "Y",
-        "target_prompts": "H", "level_up": "E"}
+        "target_prompts": "H", "level_up": "E", "enemy_lost": "A"}
 FILL = "The quick brown fox jumps over the lazy dog. "
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{4}\]|\n|.", re.S)
 NAME_TOKENS = {"{hero}"} | {"{FF%02X}" % c for c in (0x1F, 0x20, 0x21, 0x22, 0x23, 0x24, 0x28, 0x31)}

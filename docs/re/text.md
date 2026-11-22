@@ -120,6 +120,7 @@ arithmetic tables such as 0x11B91, data at 0x21E8F6-0x256DD4 and 0x2700D0-0x270F
 | 0x1AF349-0x1AFDC2 | short strings, 0000-padded | variable, 0000 runs | many 24-bit pointers (0x22xxx, 0x83xxx) | guess |
 | 0x08DF4A-0x08E9D6 | unit titles / epithets (ドラゴンバスター, …のシュタイアー) | 16 words fixed | 24-bit pointers spread in code | guess |
 | 0x06E3AB-0x06E627 | unit names (ロジャー, ミランダ, シュタイア…) | 6 words fixed | `C6:E38F`, `C6:E644` | guess |
+| 0x022FDC-0x022FFA | 「敵を見失いました。」, one engine A script (FF0A 0000 .. FF04 FF00) between two bank-C2 routines | engine A words, one char a word | none found (no 24/16-bit reference, never read in the 144-scene tour) | translated in place (table `enemy_lost`, 11 chars: `"Foe lost."`); sibling of system_prompts 041373 |
 | 0x025D5D-0x025F7F | speaker name -> portrait table (ソード___ 01 18, ロジャー__ 04 17…) | 8 words: 6-word name + 2 ids | `C2:4826`.. `C2:5D25..5D61` | guess: FF15 literal names must match it |
 | 0x0396B2-0x03970C | town command menu (武器屋 道具屋 酒場 地図を開く 街を出る 情報屋 パーティ 道具), record 0 blank | 5-word records | `C3:966D`: `$C3:96B2 + 10 * index` -> `$34`, slot from `C3:96A6`, C1 run `C1:8E90` (n=5) | verified (session r: found JP in game, missed by the phase-1 scan; table `town_menu`) |
 | 0x046CF4-0x0473B0, 0x044E40 | unit/class data records with embedded names (パラディン, …マスター) | mixed records | pointer list at 0x042AE1 | guess |
