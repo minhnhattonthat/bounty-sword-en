@@ -1,2 +1,1 @@
-# SHA-1 of the supported dump, in sha1sum format (`sha1sum -c rom.sha1` works too). One line per file for discs.
-<sha1>  rom/<file>
+560d3eb4ec3bc40a7d5a06af2f03b19f5104f633  rom/Bounty Sword (Japan).sfc

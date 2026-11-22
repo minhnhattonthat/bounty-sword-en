@@ -1,0 +1,6 @@
+# Cold boot: Pioneer logo, intro (Start at f1500 skips it), title with PUSH START BUTTON by ~f2200; Start opens the menu.
+1500 -
+6 start
+700 -
+6 start
+400 -
