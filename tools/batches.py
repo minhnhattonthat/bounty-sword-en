@@ -31,6 +31,12 @@ MAX_ENTRIES = 150
 # ---- ADAPTER: this game's text format ----
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{4}\]")
 FREE = {"{FF01}", "[00AB]"}  # engine B row break (the English places its own, 28 cells a row); 00AB = 岬 (unread kanji)
+
+
+def free_token(t):
+    """FREE codes and `[hhhh]` glyph words (0x0060-0x04FF: a kanji the table prints as a code, or a stray glyph
+    word such as 05E8A0's [011E]): the English may drop or keep them."""
+    return t in FREE or (t.startswith("[") and 0x60 <= int(t[1:5], 16) <= 0x4FF)
 VARIABLE = r"\{(?:FF2B|FF2C)\}"
 HONORIFICS = {"さん": "-san", "様": "-sama", "殿": "-dono", "ちゃん": "-chan", "くん": "-kun"}
 NOT_NAMES = {"バア", "ジイ", "オバ", "オレ", "ハンター", "コソドロ"}   # old lady, old man, "Me-sama": not honorifics
@@ -178,8 +184,8 @@ def problems(entry, en, terms):
         built, probs = pages.build_en(jp, en)
         out += probs
     else:
-        want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
-        have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
+        want = Counter(t for t in TOKEN.findall(jp) if not free_token(t))
+        have = Counter(t for t in TOKEN.findall(en) if not free_token(t))
         if want != have:
             out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):

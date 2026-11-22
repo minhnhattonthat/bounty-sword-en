@@ -53,7 +53,9 @@ REGIONS = (
     # script before it.
     ("system_prompts", 0x041373, 0x0418E3),
     ("unit_records", 0x046CF4, 0x0473B0),
-    ("battle_prompts", 0x05E8A0, 0x05EF52),
+    # Starts at the first script (0x05E8A2, called by `2E A2E8C5` at 0x06CCA7); the word 0x011E at 0x05E8A0 is the
+    # tail of the data before it.
+    ("battle_prompts", 0x05E8A2, 0x05EF52),
     ("unit_names", 0x06E3AB, 0x06E627),
     # C8 tables read by the C1 string runs (C1:8E90, tools/lua/c1runs.lua): titles (16 words, run n=16 from
     # C8:DF5E), spell/skill names (10 words, record 0 blank), layout bytes, constellations (5 words, run n=5 at

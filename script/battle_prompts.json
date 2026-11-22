@@ -1,21 +1,24 @@
 [
  {
-  "id": "05E8A0",
+  "id": "05E8A2",
   "kind": "text",
-  "jp": "ぎ{FF09:0000}{FF12}「どうするの？　{FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}」{FF04}{FF03}",
-  "en": ""
+  "jp": "{FF09:0000}{FF12}「どうするの？　{FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}」{FF04}{FF03}",
+  "en": "{FF09:0000}{FF12}\"What'll we do? {FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}\"{FF04}{FF03}",
+  "refs": [
+   "06CCA7"
+  ]
  },
  {
   "id": "05E8CA",
   "kind": "text",
   "jp": "　情報屋と話す{FF11}　仲間を探す{FF11}　店を出る{FF14:0003}{FF00}",
-  "en": ""
+  "en": "  Talk to the informer{FF11}  Look for allies{FF11}  Leave{FF14:0003}{FF00}"
  },
  {
   "id": "05E8F8",
   "kind": "text",
   "jp": "{FF09:0000}{FF12}「わかったわ！{FF11}　ちょっと待っててね　{FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}{FF11}　‥‥‥‥‥‥‥‥‥‥‥‥‥」{FF04}{FF03}",
-  "en": "",
+  "en": "{FF09:0000}{FF12}\"Got it!{FF11} Wait just a moment. {FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}{FF11} ........................\"{FF04}{FF03}",
   "refs": [
    "06CCC2"
   ]

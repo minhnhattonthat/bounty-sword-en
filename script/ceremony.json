@@ -21,19 +21,19 @@
   "id": "1DEBD5",
   "kind": "text",
   "jp": "　星に導かれし宿命の者よ，よくぞ参られた。{FF01}　我らは，指輪に封印されし十二の神々なり。{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " Welcome, star-guided one.{FF01} We are the Twelve Gods.{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DEC35",
   "kind": "text",
   "jp": "　エウロペアの大地の契約にもとづき，{FF01}　これよりぎしきを行う。{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " By our pact with Europea,{FF01} the ceremony now begins.{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DEC7D",
   "kind": "text",
   "jp": "　まず，なんじの運命の日を[01DE]えよ。{FF10:ECA9:00DD}{FF11}{FF0D}",
-  "en": ""
+  "en": " First, tell us the day{FF01} of thy destiny.{FF10:ECA9:00DD}{FF11}{FF0D}"
  },
  {
   "id": "1DECA9",
@@ -55,13 +55,13 @@
   "id": "1DECAF",
   "kind": "text",
   "jp": "　そなたの守護精霊は{FF0E:0002}{FF06:ED2D:00DD}{FF01}{FF0E:0005}となるが，それでも良いか？{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " Guardian spirit:{FF0E:0002}{FF06:ED2D:00DD}{FF01}{FF0E:0005}Dost thou accept it?{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DECF7",
   "kind": "text",
   "jp": "{FF0E:000A}{FF05}はい{FF0E:0003}{FF05}いいえ{FF09:ED1D:00DD:ED25:00DD:0001}{FF0A}{FF0D}",
-  "en": ""
+  "en": "{FF0E:000A}{FF05}Yes{FF0E:0003}{FF05}No{FF09:ED1D:00DD:ED25:00DD:0001}{FF0A}{FF0D}"
  },
  {
   "id": "1DED1D",
@@ -103,7 +103,7 @@
   "id": "1DED5B",
   "kind": "text",
   "jp": "軍神アレス{FF07}",
-  "en": "",
+  "en": "Ares{FF07}",
   "refs": [
    "1DED37"
   ]
@@ -112,7 +112,7 @@
   "id": "1DED67",
   "kind": "text",
   "jp": "美神ヴィナス{FF07}",
-  "en": "",
+  "en": "Venus{FF07}",
   "refs": [
    "1DED3A"
   ]
@@ -121,7 +121,7 @@
   "id": "1DED75",
   "kind": "text",
   "jp": "伝令神ヘルメス{FF07}",
-  "en": "",
+  "en": "Hermes{FF07}",
   "refs": [
    "1DED3D"
   ]
@@ -130,7 +130,7 @@
   "id": "1DED85",
   "kind": "text",
   "jp": "静寂神セレネ{FF07}",
-  "en": "",
+  "en": "Selene{FF07}",
   "refs": [
    "1DED40"
   ]
@@ -139,7 +139,7 @@
   "id": "1DED93",
   "kind": "text",
   "jp": "太陽神アポロン{FF07}",
-  "en": "",
+  "en": "Apollo{FF07}",
   "refs": [
    "1DED43"
   ]
@@ -148,7 +148,7 @@
   "id": "1DEDA3",
   "kind": "text",
   "jp": "知神マーキュリー{FF07}",
-  "en": "",
+  "en": "Mercury{FF07}",
   "refs": [
    "1DED46"
   ]
@@ -157,7 +157,7 @@
   "id": "1DEDB5",
   "kind": "text",
   "jp": "美神アフロディーテ{FF07}",
-  "en": "",
+  "en": "Aphrodite{FF07}",
   "refs": [
    "1DED49"
   ]
@@ -166,7 +166,7 @@
   "id": "1DEDC9",
   "kind": "text",
   "jp": "冥王神プルートゥ{FF07}",
-  "en": "",
+  "en": "Pluto{FF07}",
   "refs": [
    "1DED4C"
   ]
@@ -175,7 +175,7 @@
   "id": "1DEDDB",
   "kind": "text",
   "jp": "大神ゼウス{FF07}",
-  "en": "",
+  "en": "Zeus{FF07}",
   "refs": [
    "1DED4F",
    "2E7D17"
@@ -185,7 +185,7 @@
   "id": "1DEDE7",
   "kind": "text",
   "jp": "時神クロノス{FF07}",
-  "en": "",
+  "en": "Chronos{FF07}",
   "refs": [
    "1DED52"
   ]
@@ -194,7 +194,7 @@
   "id": "1DEDF5",
   "kind": "text",
   "jp": "天空神ウラヌス{FF07}",
-  "en": "",
+  "en": "Uranus{FF07}",
   "refs": [
    "1DED55"
   ]
@@ -203,7 +203,7 @@
   "id": "1DEE05",
   "kind": "text",
   "jp": "海神ポセイドン{FF07}",
-  "en": "",
+  "en": "Poseidon{FF07}",
   "refs": [
    "1DED58"
   ]
@@ -218,19 +218,19 @@
   "id": "1DEE17",
   "kind": "text",
   "jp": "　{FF06:ED2D:00DD}に守られし者よ，{FF01}　なんじに預けたい男がいる。{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " One guarded by {FF06:ED2D:00DD},{FF01} I entrust a man to thee.{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DEE57",
   "kind": "text",
   "jp": "　宿命に敗れ，戦いにせを向けた男だ。{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " A man beaten by his fate,{FF01} who turned his back on war.{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DEE85",
   "kind": "text",
   "jp": "　なんじにこの男の運命をゆだねる。{FF01}　この男に名前を付けてくれ。{FF10:ECA9:00DD}{FF11}{FF0D}",
-  "en": ""
+  "en": " His fate is in thy hands.{FF01} Give this man a name.{FF10:ECA9:00DD}{FF11}{FF0D}"
  },
  {
   "id": "1DEECF",
@@ -242,13 +242,13 @@
   "id": "1DEED1",
   "kind": "text",
   "jp": "　{FF06:4D1B:007E}とは良い名だ。{FF01}　{FF06:4D1B:007E}をなんじに預ける。{FF10:ECA9:00DD}{FF11}{FF03}",
-  "en": ""
+  "en": " {FF06:4D1B:007E} is a good name.{FF01} We entrust {FF06:4D1B:007E} to thee.{FF10:ECA9:00DD}{FF11}{FF03}"
  },
  {
   "id": "1DEF0D",
   "kind": "text",
   "jp": "　エウロペアの大地と我ら十二神の名において，{FF01}　そなたに祝福あれ°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}{FF0D}",
-  "en": "",
+  "en": " In the name of Europea and{FF01} the Twelve, be blessed.{FF04:001E}{FF0F}.{FF04:001E}{FF0F}.{FF04:001E}{FF0F}.{FF04:001E}{FF0F}{FF0D}",
   "refs": [
    "1DBF67"
   ]
@@ -263,19 +263,19 @@
   "id": "1DEF71",
   "kind": "text",
   "jp": "{FF05}　ＭＯＮＴＨ．　　　　　　　　　　　　ＤＡＹ．　　{FF0D}",
-  "en": ""
+  "en": "{FF05} MONTH.            DAY.  {FF0D}"
  },
  {
   "id": "1DEFA7",
   "kind": "text",
   "jp": "{FF05}　ＭＯＮＴＨ．　{FF06:4CF9:007E}{FF05}　　ＤＡＹ．　{FF0D}",
-  "en": ""
+  "en": "{FF05} MONTH. {FF06:4CF9:007E}{FF05}  DAY. {FF0D}"
  },
  {
   "id": "1DEFD1",
   "kind": "text",
   "jp": "{FF05}　ＭＯＮＴＨ．　{FF06:4CF9:007E}{FF05}　　ＤＡＹ．　{FF06:4D11:007E}{FF01}{FF05}　　　　　　　ＯＫ？　　　ＹＥＳ　　　ＮＯ{FF09:F03D:00DD:F045:00DD:0001}{FF0A}{FF0D}",
-  "en": ""
+  "en": "{FF05} MONTH. {FF06:4CF9:007E}{FF05}  DAY. {FF06:4D11:007E}{FF01}{FF05}       OK?   YES   NO{FF09:F03D:00DD:F045:00DD:0001}{FF0A}{FF0D}"
  },
  {
   "id": "1DF03D",
@@ -299,7 +299,7 @@
   "id": "1DF04F",
   "kind": "text",
   "jp": "{FF0E:0004}{FF05}ＮＡＭＥ{FF0E:0003}{FF06:4D19:007E}{FF0D}",
-  "en": "",
+  "en": "{FF0E:0004}{FF05}NAME{FF0E:0003}{FF06:4D19:007E}{FF0D}",
   "refs": [
    "2F0FD7"
   ]
@@ -338,7 +338,7 @@
   "id": "1DF091",
   "kind": "text",
   "jp": "０{FF07}",
-  "en": "",
+  "en": "0{FF07}",
   "refs": [
    "1DF073"
   ]
@@ -347,7 +347,7 @@
   "id": "1DF095",
   "kind": "text",
   "jp": "１{FF07}",
-  "en": "",
+  "en": "1{FF07}",
   "refs": [
    "1DF076"
   ]
@@ -356,7 +356,7 @@
   "id": "1DF099",
   "kind": "text",
   "jp": "２{FF07}",
-  "en": "",
+  "en": "2{FF07}",
   "refs": [
    "1DF079"
   ]
@@ -365,7 +365,7 @@
   "id": "1DF09D",
   "kind": "text",
   "jp": "３{FF07}",
-  "en": "",
+  "en": "3{FF07}",
   "refs": [
    "1DF07C"
   ]
@@ -374,7 +374,7 @@
   "id": "1DF0A1",
   "kind": "text",
   "jp": "４{FF07}",
-  "en": "",
+  "en": "4{FF07}",
   "refs": [
    "1DF07F"
   ]
@@ -383,7 +383,7 @@
   "id": "1DF0A5",
   "kind": "text",
   "jp": "５{FF07}",
-  "en": "",
+  "en": "5{FF07}",
   "refs": [
    "1DF082"
   ]
@@ -392,7 +392,7 @@
   "id": "1DF0A9",
   "kind": "text",
   "jp": "６{FF07}",
-  "en": "",
+  "en": "6{FF07}",
   "refs": [
    "1DF085"
   ]
@@ -401,7 +401,7 @@
   "id": "1DF0AD",
   "kind": "text",
   "jp": "７{FF07}",
-  "en": "",
+  "en": "7{FF07}",
   "refs": [
    "1DF088"
   ]
@@ -410,7 +410,7 @@
   "id": "1DF0B1",
   "kind": "text",
   "jp": "８{FF07}",
-  "en": "",
+  "en": "8{FF07}",
   "refs": [
    "1DF08B"
   ]
@@ -419,7 +419,7 @@
   "id": "1DF0B5",
   "kind": "text",
   "jp": "９{FF07}",
-  "en": "",
+  "en": "9{FF07}",
   "refs": [
    "1DF08E"
   ]
@@ -428,7 +428,7 @@
   "id": "1DF0B9",
   "kind": "text",
   "jp": "上がった！{FF07}",
-  "en": "",
+  "en": "!{FF07}",
   "refs": [
    "1DF0E7",
    "1DF105",
@@ -444,7 +444,7 @@
   "id": "1DF0C5",
   "kind": "text",
   "jp": "を覚えた{FF07}",
-  "en": "",
+  "en": " learned.{FF07}",
   "refs": [
    "1DF339",
    "1DF357",
@@ -466,7 +466,7 @@
   "id": "1DF0CF",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は攻撃力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": "",
+  "en": "{FF06:4D1B:007E}: Attack +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
   "refs": [
    "1A5C16"
   ]
@@ -475,43 +475,43 @@
   "id": "1DF0ED",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は防御力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: Defense +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF10B",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は速さが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: Speed +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF127",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は魔力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: Magic +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF143",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は精神が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: Spirit +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF15F",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}は幸運が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: Luck +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF17B",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はＨＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: HP +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF197",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はＳＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
-  "en": ""
+  "en": "{FF06:4D1B:007E}: SP +{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}"
  },
  {
   "id": "1DF1B3",
@@ -523,7 +523,7 @@
   "id": "1DF1C3",
   "kind": "text",
   "jp": "最大レベルです！{FF00}",
-  "en": "",
+  "en": "Maximum level!{FF00}",
   "refs": [
    "05A8AF"
   ]
@@ -532,7 +532,7 @@
   "id": "1DF1D5",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はレベル{FF06:4CF7:007E}になった！{FF03}",
-  "en": "",
+  "en": "{FF06:4D1B:007E} is now Level {FF06:4CF7:007E}!{FF03}",
   "refs": [
    "05A8AC",
    "2F8C85"
@@ -542,13 +542,13 @@
   "id": "1DF1F5",
   "kind": "text",
   "jp": "{FF0C:A8B2:00C5}最大ＨＰが{FF06:4CF7:007E}になった！{FF03}",
-  "en": ""
+  "en": "{FF0C:A8B2:00C5}Max HP is now {FF06:4CF7:007E}!{FF03}"
  },
  {
   "id": "1DF217",
   "kind": "text",
   "jp": "{FF0C:A904:00C5}最大ＳＰが{FF06:4CF7:007E}になった！{FF03}",
-  "en": ""
+  "en": "{FF0C:A904:00C5}Max SP is now {FF06:4CF7:007E}!{FF03}"
  },
  {
   "id": "1DF239",
@@ -560,7 +560,7 @@
   "id": "1DF249",
   "kind": "text",
   "jp": "攻撃力が{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Attack rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A922"
   ]
@@ -578,7 +578,7 @@
   "id": "1DF271",
   "kind": "text",
   "jp": "防御力が{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Defense rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A93A"
   ]
@@ -596,7 +596,7 @@
   "id": "1DF299",
   "kind": "text",
   "jp": "速さが{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Speed rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A952"
   ]
@@ -614,7 +614,7 @@
   "id": "1DF2BF",
   "kind": "text",
   "jp": "魔力が{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Magic rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A96A"
   ]
@@ -632,7 +632,7 @@
   "id": "1DF2E5",
   "kind": "text",
   "jp": "精神が{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Spirit rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A982"
   ]
@@ -650,7 +650,7 @@
   "id": "1DF30B",
   "kind": "text",
   "jp": "幸運が{FF06:F069:00DD}上がった{FF03}",
-  "en": "",
+  "en": "Luck rose by {FF06:F069:00DD}.{FF03}",
   "refs": [
    "05A99A"
   ]
@@ -920,36 +920,36 @@
   "id": "1DF4C7",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はドラゴンナイトに転職できます{FF00}",
-  "en": ""
+  "en": "Dragon Knight open to {FF06:4D1B:007E}{FF00}"
  },
  {
   "id": "1DF4ED",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はダークナイトに転職できます{FF00}",
-  "en": ""
+  "en": "Dark Knight open to {FF06:4D1B:007E}{FF00}"
  },
  {
   "id": "1DF511",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はシャドウマスターに転職できます{FF00}",
-  "en": ""
+  "en": "Shadowmaster open to {FF06:4D1B:007E}{FF00}"
  },
  {
   "id": "1DF539",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はスペルマスターに転職できます{FF00}",
-  "en": ""
+  "en": "Spellmaster open to {FF06:4D1B:007E}{FF00}"
  },
  {
   "id": "1DF55F",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はワイズマンに転職できます{FF00}",
-  "en": ""
+  "en": "Wise Man open to {FF06:4D1B:007E}{FF00}"
  },
  {
   "id": "1DF581",
   "kind": "text",
   "jp": "{FF06:4D1B:007E}はしかいせんに転職できます{FF00}",
-  "en": ""
+  "en": "Immortal open to {FF06:4D1B:007E}{FF00}"
  }
 ]

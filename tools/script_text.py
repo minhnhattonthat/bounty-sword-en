@@ -405,9 +405,10 @@ OVERFLOW = []   # side entries whose `en` overflowed a fixed field in the last a
 
 # Engine A side tables whose scripts may move: table -> the event-script opcodes whose 24-bit operand calls a script
 # there (the byte before each `refs` offset). system_prompts: `03 ptr24` in bank C4 (`03 931341` at C4:07EA);
-# battle_prompts_b: `43 ptr24` in a C0 op list (`43 AB73C0` at C0:7379). A script = entries up to one ending in
+# battle_prompts_b: `43 ptr24` in a C0 op list (`43 AB73C0` at C0:7379); battle_prompts: `2E ptr24` in C5/C6 event
+# scripts (`2E A2E8C5` at 0x06CCA7, 33 calls of 05EF1E). A script = entries up to one ending in
 # FF00 (FF03 waits and runs on into the next entry, e.g. a question then its choice list).
-RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}}
+RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}, "battle_prompts": {0x2E}}
 
 
 def script_runs(entries, words):
