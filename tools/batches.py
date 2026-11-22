@@ -225,7 +225,7 @@ def problems(entry, en, terms):
             out.append(f"honorific {jp_form} needs {en_form} (or note it in UNSURE if it is not an honorific)")
     if re.search(r"\{(?:hero|FF1F|FF31)\}'s\b", en):
         out.append("\"'s\" after a name variable (write \"the sword of {hero}\" or rephrase)")
-    return out + width_problems(entry, en)
+    return out + width_problems(entry, en) + widows(entry, en)
 
 
 def index():
@@ -311,7 +311,7 @@ def check_batch(batch, entries, terms):
                    f"duplicate {dup[:8]} (order must match too)")
     for eid, en in rows:
         if eid in entries:
-            bad += [f"{eid}: {p}" for p in problems(entries[eid], en, terms) + widows(entries[eid], en)]
+            bad += [f"{eid}: {p}" for p in problems(entries[eid], en, terms)]
     return bad, dict(rows)
 
 
@@ -425,9 +425,8 @@ def main(argv):
         return 0
     if cmd == "check" and not names:
         bad = [f"{i}: {p}" for i, e in entries.items() if e.get("en") for p in problems(e, authored(e), terms)]
-        wid = sum(len(widows(e, authored(e))) for e in entries.values() if e.get("pages"))
         print(f"{len(entries)} entries, {sum(1 for e in entries.values() if e.get('en'))} in English, "
-              f"{len(bad)} problems, {wid} widow boxes (warning; `batches.py widows` lists them for the fit pass)")
+              f"{len(bad)} problems (widow boxes count: `batches.py widows` lists them for a fit pass)")
         print("\n".join(bad[:200]))
         return 1 if bad else 0
     if cmd not in ("check", "merge") or not names:

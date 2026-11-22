@@ -1977,8 +1977,8 @@
    1736
   ],
   "jp": "「アクラの街で　船を出してもらい\n　オレ達は　閉ざされた島を　目指す」\n{next}\n「だが　連邦の追撃部隊が　それを\n　見逃すはずがない　船の上で\n　逃げ場のない　オレ達をおそう‥‥」\n",
-  "en": "「In the town of Accra, we got\n a ship to take us out, and\n we set course for the」\n{next}\n「Isolated Isle.」\n{next}\n「But the Federation's pursuit\n force was never going to let\n that pass. They attacked us」\n{next}\n「on the ship, with nowhere to\n run...」\n",
-  "pages": "\"In the town of Accra, we got a ship to take us out, and we set course for the Isolated Isle.\" || \"But the Federation's pursuit force was never going to let that pass. They attacked us on the ship, with nowhere to run...\""
+  "en": "「In Accra we got a ship to\n take us out, and set course\n for the Isolated Isle.」\n{next}\n「But the Federation's pursuit\n force was never going to let\n that pass. They attacked us」\n{next}\n「on the ship, with nowhere to\n run...」\n",
+  "pages": "\"In Accra we got a ship to take us out, and set course for the Isolated Isle.\" || \"But the Federation's pursuit force was never going to let that pass. They attacked us on the ship, with nowhere to run...\""
  },
  {
   "id": "1E7CC0",
@@ -2022,8 +2022,8 @@
    1741
   ],
   "jp": "{spk}シュタイア　\n「連邦も　ごくろうな事だ\n　わざわざ船の上まで\n　倒されに　きてくれるとは！」\n{next}\n「ここならば　逃げ場はない！\n　オレの銃撃で　全めつさせる！」\n",
-  "en": "{spk}シュタイア　\n「The Federation's gone to a\n lot of trouble, coming all the\n way out onto a ship just to」\n{next}\n「be beaten!」\n{next}\n「There's no escape out here!\n My gunfire will wipe them all\n out!」\n",
-  "pages": "\"The Federation's gone to a lot of trouble, coming all the way out onto a ship just to be beaten!\" || \"There's no escape out here! My gunfire will wipe them all out!\""
+  "en": "{spk}シュタイア　\n「The Federation went to a lot\n of trouble, coming onto a\n ship just to be beaten!」\n{next}\n「There's no escape out here!\n My gunfire will wipe them all\n out!」\n",
+  "pages": "\"The Federation went to a lot of trouble, coming onto a ship just to be beaten!\" || \"There's no escape out here! My gunfire will wipe them all out!\""
  },
  {
   "id": "1E7E46",
@@ -2166,8 +2166,8 @@
    1757
   ],
   "jp": "{spk}少年　　　　\n「そこの妖精よ　私は今年で\n　十万歳になる　見かけだけで\n　人を判断しては　いかんな‥‥」\n",
-  "en": "{spk}少年　　　　\n「Fairy there, I turn a hundred\n thousand this year. One\n shouldn't judge people by」\n{next}\n「looks alone...」\n",
-  "pages": "\"Fairy there, I turn a hundred thousand this year. One shouldn't judge people by looks alone...\""
+  "en": "{spk}少年　　　　\n「Fairy there, I turn a hundred\n thousand this year.」\n{next}\n「One shouldn't judge people\n by looks alone...」\n",
+  "pages": "\"Fairy there, I turn a hundred thousand this year.{next}One shouldn't judge people by looks alone...\""
  },
  {
   "id": "1E8272",
@@ -2184,8 +2184,8 @@
    1759
   ],
   "jp": "{spk}少年　　　　\n「時間がない　手短に話そう\n　そなたは　黄道十二神の\n　指輪を　いくつ　持っているかな？」\n",
-  "en": "{spk}少年　　　　\n「Time is short, so I shall be\n brief. How many of the\n Zodiac Gods' rings do you」\n{next}\n「hold?」\n",
-  "pages": "\"Time is short, so I shall be brief. How many of the Zodiac Gods' rings do you hold?\""
+  "en": "{spk}少年　　　　\n「Time is short, so I shall be\n brief.」\n{next}\n「How many of the Zodiac Gods'\n rings do you hold?」\n",
+  "pages": "\"Time is short, so I shall be brief.{next}How many of the Zodiac Gods' rings do you hold?\""
  },
  {
   "id": "1E8304",
@@ -2238,8 +2238,8 @@
    1765
   ],
   "jp": "{spk}船乗り　　　\n「用事は　すんだかい！？」\n{next}\n「長くいると　いつまた　連邦に\n　襲われるか　わからねえからな\n　悪いが　オレは　先に帰るぜ！」\n{next}\n「え？　‥‥ああ　大丈夫だよ！\n　キャンプで　地図を開いてみな！」\n{next}\n「いつでも　この島には\n　これるように　なってるからよ！」\n{next}\n「連邦だか　反乱軍だか　知らねえが\n　オレは　あんたらが　気に入った！\n　だから　決して　死ぬんじゃねえぞ！」\n{next}\n「じゃあな　がんばりなよ！」\n",
-  "en": "{spk}船乗り　　　\n「All done with your business!?」\n{next}\n「Stay too long and there's no\n telling when the Federation'll\n hit us again. Sorry, but I'm」\n{next}\n「heading back first!」\n{next}\n「Eh? ...Ah, don't worry! Just\n open the map at camp!」\n{next}\n「You'll be able to come to this\n island anytime!」\n{next}\n「Federation, rebels,\n whatever, I don't know. But I\n like you folks! So don't you」\n{next}\n「dare die on me!」\n{next}\n「See ya! Give it your all!」\n",
-  "pages": "\"All done with your business!?\" || \"Stay too long and there's no telling when the Federation'll hit us again. Sorry, but I'm heading back first!\" || \"Eh? ...Ah, don't worry! Just open the map at camp!\" || \"You'll be able to come to this island anytime!\" || \"Federation, rebels, whatever, I don't know. But I like you folks! So don't you dare die on me!\" || \"See ya! Give it your all!\""
+  "en": "{spk}船乗り　　　\n「All done with your business!?」\n{next}\n「Stay too long and there's no\n telling when the Federation'll\n hit us again.」\n{next}\n「Sorry, but I'm heading back\n first!」\n{next}\n「Eh? ...Ah, don't worry! Just\n open the map at camp!」\n{next}\n「You'll be able to come to this\n island anytime!」\n{next}\n「Federation, rebels, whatever,\n I don't know.」\n{next}\n「But I like you folks! So don't\n you dare die on me!」\n{next}\n「See ya! Give it your all!」\n",
+  "pages": "\"All done with your business!?\" || \"Stay too long and there's no telling when the Federation'll hit us again.{next}Sorry, but I'm heading back first!\" || \"Eh? ...Ah, don't worry! Just open the map at camp!\" || \"You'll be able to come to this island anytime!\" || \"Federation, rebels, whatever, I don't know.{next}But I like you folks! So don't you dare die on me!\" || \"See ya! Give it your all!\""
  },
  {
   "id": "1E8A7C",
@@ -2247,7 +2247,7 @@
    1766
   ],
   "jp": "「島に住む　十万歳の少年に\n　黄道十二神の指輪‥‥\n　世の中は　わからない事だらけだ」\n{next}\n「だが　確実なのは　いつの間にか\n　このオレが　神の代理人\n　なんて物に　なっている事だろう」\n{next}\n「しがない　賞金かせぎの\n　こんなオレが‥‥　だ‥‥」\n",
-  "en": "「A\n hundred-thousand-year-old\n boy living on an island, the」\n{next}\n「rings of the Zodiac Gods...\n The world is full of things I\n don't understand.」\n{next}\n「But one thing's certain:\n before I knew it, I had\n become something called an」\n{next}\n「agent of the gods.」\n{next}\n「Me, of all people... a lowly\n bounty hunter...」\n",
-  "pages": "\"A hundred-thousand-year-old boy living on an island, the rings of the Zodiac Gods... The world is full of things I don't understand.\" || \"But one thing's certain: before I knew it, I had become something called an agent of the gods.\" || \"Me, of all people... a lowly bounty hunter...\""
+  "en": "「A hundred-thousand-year-old\n boy living on an island, the\n rings of the Zodiac Gods... The」\n{next}\n「world is full of things I don't\n understand.」\n{next}\n「But this much is certain: I'd\n become a so-called agent of\n the gods.」\n{next}\n「Me, of all people... a lowly\n bounty hunter...」\n",
+  "pages": "\"A hundred-thousand-year-old boy living on an island, the rings of the Zodiac Gods... The world is full of things I don't understand.\" || \"But this much is certain: I'd become a so-called agent of the gods.\" || \"Me, of all people... a lowly bounty hunter...\""
  }
 ]

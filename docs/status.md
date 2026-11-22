@@ -3,14 +3,10 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 6. Translate: reopened by the phase 6 review (`.harness/reviews/bounty-sword-en-phase6.md`). 3197/3656
-  entries in English, `batches.py check` 0 problems. Left to close phase 6: (1) **widow fit pass** (D12): `check`
-  warns 437 widow boxes (498 at the start; fit01-fit02 done = the first 60 rows of the list, ids 1E0350..1E7B52);
-  `batches.py widows > work/tl/widows.tsv` lists `id page JP EN`; write `work/tl/fit03.fix.tsv` rows
-  `id<TAB>page<TAB>new page` (~30 a chunk, aim at <= 72 chars with the quotes, keep the speaker's voice per
-  `docs/style-reference.md`; reuse the same wording for repeated scenes such as the Zodiac statue speeches), dry-run
-  with `batches.py fit '"text"' ...`, then `batches.py repage fit03 work/tl/fit03.fix.tsv [work/tl/fit03b.fix.tsv
-  retries]`, `check fit03` (also flags widows on the entry's other pages), `merge fit03 --overwrite`; commit per
-  chunk or two. When the count is 0, make widows a `check` error (move `widows()` into `problems`).
+  entries in English, `batches.py check` 0 problems. (1) **Widow fit pass done** (D12, session g): 0 widow boxes,
+  and `check` now fails on any widow (`widows()` is part of `problems`). fit03 = 437 pages: 271 split at a sentence
+  end with `{next}` (same box count, clean break), 166 tightened to 3 lines by hand; `tools/fit_hint.py` lists the
+  sentence-end splits that fit. All 8 Zodiac statue scenes now share the fit01 wording. Left to close phase 6:
   (2) **independent review** of every batch (`tools/pairs.py bNNN --out work/qa/review/bNNN.txt`; codex is out of
   quota until 2026-11-26 10:32, Orca workers can't start subagents: a fresh worker reviews pairs it did not
   translate), rows in `docs/reviews.md` "Independent review"; fix Critical/Important, Minors to `docs/polish.md`.
