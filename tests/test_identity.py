@@ -85,3 +85,35 @@ def test_overflow_moves_to_expanded_rom(rom, data, codec):
     d["master"]["blocks"][0]["msgs"][1] += "[0000]" * 0x80000
     with pytest.raises(ValueError, match="full"):
         repack(rom, d, codec)
+
+
+def test_grown_side_script_moves_and_callers_follow(rom, codec):
+    """An engine A prompt script (question + choice list, FF03 runs on) that outgrows its slot moves to $F0+ whole;
+    its `03 ptr24` caller points at it; the old bytes stay; a shorter one is padded in place; a grown script with
+    no known caller is refused."""
+    import copy
+    from rom_text import EXPANDED_TEXT, to_file
+    from script_text import apply_script, load
+    files = copy.deepcopy(load())
+    for es in files.values():
+        for e in es:
+            e["en"] = ""
+    sp = {e["id"]: e for e in files["system_prompts.json"]}
+    sp["04148F"]["en"] = '{FF09:0000}{FF12}"Will you accept the challenge to a duel?"{FF04}{FF03}'
+    sp["0414B3"]["en"] = "  Yes{FF11}  No{FF14:0002}{FF00}"
+    sp["041449"]["en"] = '{FF12}"Here."{FF04}{FF00}'
+    out = repack(rom, apply_script(rom, files, field="en"), codec)
+    target = to_file(int.from_bytes(out[0x041296:0x041299], "little"))
+    assert EXPANDED_TEXT[0] <= target < EXPANDED_TEXT[1] and out[0x041295] == 0x03
+    from script_text import side_codecs, side_words
+    a = side_codecs()["A"]
+    want = b"".join(w.to_bytes(2, "little") for e in (sp["04148F"], sp["0414B3"])
+                    for w in side_words(dict(e, jp=e["en"]), a))
+    assert out[target:target + len(want)] == want
+    assert out[0x04148F:0x0414C9] == rom[0x04148F:0x0414C9]
+    short = b"".join(w.to_bytes(2, "little") for w in side_words(dict(sp["041449"], jp=sp["041449"]["en"]), a))
+    assert out[0x041449:0x041449 + len(short)] == short and out[0x041449 + len(short):0x04146D] == \
+        rom[0x041449 + len(short):0x04146D]
+    sp["04146D"]["en"] = '{FF09:0000}{FF12}"The whole map is clear now!"{FF04}{FF00}'
+    with pytest.raises(ValueError, match="no caller"):
+        apply_script(rom, files, field="en")

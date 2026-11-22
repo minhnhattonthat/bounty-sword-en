@@ -1,15 +1,21 @@
 [
  {
-  "id": "04136F",
+  "id": "041373",
   "kind": "text",
-  "jp": "[007E]　{FF0A:0000}「敵を発見しました！！」{FF04}{FF00}",
-  "en": ""
+  "jp": "{FF0A:0000}「敵を発見しました！！」{FF04}{FF00}",
+  "en": "{FF0A:0000}\"Enemy sighted!!\"{FF04}{FF00}",
+  "refs": [
+   "040797",
+   "0407B1",
+   "0407D0",
+   "0407F9"
+  ]
  },
  {
   "id": "041393",
   "kind": "text",
   "jp": "{FF0A:0000}「戦闘しますか？」{FF04}{FF03}",
-  "en": "",
+  "en": "{FF0A:0000}\"Engage in battle?\"{FF04}{FF03}",
   "refs": [
    "0407EB"
   ]
@@ -18,13 +24,13 @@
   "id": "0413AD",
   "kind": "text",
   "jp": "「戦闘する時は，戦闘コマンドを実行してください。」{FF04}{FF00}",
-  "en": ""
+  "en": "\"To fight, use the battle command.\"{FF04}{FF00}"
  },
  {
   "id": "0413E3",
   "kind": "text",
   "jp": "{FF0A:0000}{FF0A:0000}「敵に発見されました！！」{FF04}{FF03}",
-  "en": "",
+  "en": "{FF0A:0000}{FF0A:0000}\"We've been spotted!!\"{FF04}{FF03}",
   "refs": [
    "040819"
   ]
@@ -33,13 +39,13 @@
   "id": "041409",
   "kind": "text",
   "jp": "「戦闘をかいしします！！」{FF04}{FF00}",
-  "en": ""
+  "en": "\"Battle start!!\"{FF04}{FF00}"
  },
  {
   "id": "041427",
   "kind": "text",
   "jp": "{FF0A:0000}「戦闘をかいしします！！」{FF04}{FF00}",
-  "en": "",
+  "en": "{FF0A:0000}\"Battle start!!\"{FF04}{FF00}",
   "refs": [
    "0407AC",
    "0407CC",
@@ -50,7 +56,7 @@
   "id": "041449",
   "kind": "text",
   "jp": "{FF12}「目標にとうちゃくしました。」{FF04}{FF00}",
-  "en": "",
+  "en": "{FF12}\"We've reached the objective.\"{FF04}{FF00}",
   "refs": [
    "040DF0"
   ]
@@ -59,13 +65,13 @@
   "id": "04146D",
   "kind": "text",
   "jp": "{FF09:0000}{FF12}「マップクリアー！！！」{FF04}{FF00}",
-  "en": ""
+  "en": "{FF09:0000}{FF12}\"Map clear!\"{FF04}{FF00}"
  },
  {
   "id": "04148F",
   "kind": "text",
   "jp": "{FF09:0000}{FF12}「一騎打ちを受けますか？」{FF04}{FF03}",
-  "en": "",
+  "en": "{FF09:0000}{FF12}\"Accept the duel?\"{FF04}{FF03}",
   "refs": [
    "041296"
   ]
@@ -74,7 +80,7 @@
   "id": "0414B3",
   "kind": "text",
   "jp": "　はい{FF11}　いいえ{FF14:0002}{FF00}",
-  "en": ""
+  "en": "  Yes{FF11}  No{FF14:0002}{FF00}"
  },
  {
   "id": "0414C9",
@@ -120,7 +126,7 @@
   "id": "041865",
   "kind": "text",
   "jp": "{FF09:0000}{FF12}「ダメよ　{FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}！{FF11}　この戦場からは　離脱{FF11}　できないわよ‥‥！！」{FF04}{FF00}",
-  "en": "",
+  "en": "{FF09:0000}{FF12}\"No, {FF19}{FF1A}{FF1B}{FF1C}{FF1D}{FF1E}!{FF11} You can't retreat from{FF11} this battlefield...!!\"{FF04}{FF00}",
   "refs": [
    "04134B"
   ]
@@ -129,7 +135,7 @@
   "id": "0418B9",
   "kind": "text",
   "jp": "{FF09:0000}{FF12}「まだ，森の中に敵がいるわよ！」{FF04}{FF00}",
-  "en": "",
+  "en": "{FF09:0000}{FF12}\"Still enemies in the forest!\"{FF04}{FF00}",
   "refs": [
    "04135D"
   ]

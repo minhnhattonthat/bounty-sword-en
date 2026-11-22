@@ -3,7 +3,7 @@
   "id": "0073AB",
   "kind": "text",
   "jp": "{FF12}「くっ！　体力回復の手が{FF11}　つきてしまったか！」{FF04}{FF03}",
-  "en": "",
+  "en": "{FF12}\"Ngh! I've run out of ways{FF11} to recover HP!\"{FF04}{FF03}",
   "refs": [
    "00737A"
   ]
@@ -12,13 +12,13 @@
   "id": "0073E1",
   "kind": "text",
   "jp": "防御行動にしますか？{FF04}{FF03}",
-  "en": ""
+  "en": "Switch to defence?{FF04}{FF03}"
  },
  {
   "id": "0073F9",
   "kind": "text",
   "jp": "　そのまま攻撃{FF11}　防御する{FF14:0002}{FF00}",
-  "en": ""
+  "en": "  Keep attacking{FF11}  Defend{FF14:0002}{FF00}"
  },
  {
   "id": "007419",

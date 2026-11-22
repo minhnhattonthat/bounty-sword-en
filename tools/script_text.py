@@ -397,6 +397,65 @@ def region_entries(files, name, start, end):
 
 OVERFLOW = []   # side entries whose `en` overflowed a fixed field in the last apply_script (JP kept)
 
+# Engine A side tables whose scripts may move: table -> the event-script opcodes whose 24-bit operand calls a script
+# there (the byte before each `refs` offset). system_prompts: `03 ptr24` in bank C4 (`03 931341` at C4:07EA);
+# battle_prompts_b: `43 ptr24` in a C0 op list (`43 AB73C0` at C0:7379). A script = entries up to one ending in
+# FF00 (FF03 waits and runs on into the next entry, e.g. a question then its choice list).
+RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}}
+
+
+def script_runs(entries, words):
+    """Indices of consecutive text entries grouped into scripts (a run ends at an entry whose last word is FF00);
+    a data entry is a run of its own."""
+    runs, cur = [], []
+    for i, (e, w) in enumerate(zip(entries, words)):
+        if e.get("kind") != "text":
+            if cur:
+                runs.append(cur)
+                cur = []
+            runs.append([i])
+            continue
+        cur.append(i)
+        if w and w[-1] == 0xFF00:
+            runs.append(cur)
+            cur = []
+    if cur:
+        runs.append(cur)
+    return runs
+
+
+def relocate_scripts(rom, region, files, field, codec, relocs):
+    """Region words with each script's `field` text in place (padded with its old words when shorter); a script
+    that grew goes to `relocs` (rom_text.repack places it in the expanded ROM and rewrites its callers) and keeps its
+    JP bytes in place. A grown script must start at an entry with confirmed callers, and nothing may call into its
+    middle."""
+    ops = RELOCATE[region["name"]]
+    entries = region_entries(files, region["name"], region["start"], region["end"])
+    jp = [side_words(e, codec) for e in entries]
+    new = [side_words(dict(e, jp=e[field]), codec) if e.get(field) else w for e, w in zip(entries, jp)]
+    out = []
+    for run in script_runs(entries, jp):
+        head = entries[run[0]]
+        old = [x for j in run for x in jp[j]]
+        moved = [x for j in run for x in new[j]]
+        if moved == old:
+            out += old
+            continue
+        inner = [entries[j]["id"] for j in run[1:] if entries[j].get("refs")]
+        if inner:
+            raise ValueError(f"{region['name']} {head['id']}: entries {inner} are called directly, so the script "
+                             "can't change")
+        if len(moved) <= len(old):
+            out += moved + old[len(moved):]
+            continue
+        refs = [int(r, 16) for r in head.get("refs", []) if rom[int(r, 16) - 1] in ops]
+        if not refs:
+            raise ValueError(f"{region['name']} {head['id']}: English is {2 * (len(moved) - len(old))} bytes "
+                             "longer than the JP and no caller is known, so it must fit in place")
+        relocs.append({"id": head["id"], "text": WordCodec().decode(moved), "refs": refs})
+        out += old
+    return out
+
 
 def apply_script(rom, files, field="jp"):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step)."""
@@ -408,7 +467,11 @@ def apply_script(rom, files, field="jp"):
         if len(entries) != len(blk["msgs"]):
             raise ValueError(f"master block {blk['start']:06X}: {len(entries)} entries, layout has {len(blk['msgs'])}")
         blk["msgs"] = [wc.decode(mc.encode(e[field] if e.get(field) else e["jp"])) for e in entries]
+    data["relocs"] = []
     for r in data["regions"]:
+        if r["name"] in RELOCATE:
+            r["text"] = wc.decode(relocate_scripts(rom, r, files, field, codec_for(sc, r["name"]), data["relocs"]))
+            continue
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e

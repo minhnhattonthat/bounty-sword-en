@@ -49,7 +49,9 @@ REGIONS = (
     ("windows", 0x01CBB8, 0x01D1F4),
     ("menus_c", 0x01D1F5, 0x01D3AB),
     ("speakers", 0x025D5D, 0x025F7F),
-    ("system_prompts", 0x04136F, 0x0418E3),
+    # Starts at the first script (0x041373, called by `03 731344`); 0x04136F-0x041372 is the tail of the event
+    # script before it.
+    ("system_prompts", 0x041373, 0x0418E3),
     ("unit_records", 0x046CF4, 0x0473B0),
     ("battle_prompts", 0x05E8A0, 0x05EF52),
     ("unit_names", 0x06E3AB, 0x06E627),
@@ -220,4 +222,18 @@ def repack(rom, data, codec=None):
     for i, ref in enumerate(m["slots"]):
         v = to_cpu(addr[tuple(ref)]) if ref is not None else 0
         out[MASTER_TABLE + 3 * i:MASTER_TABLE + 3 * i + 3] = v.to_bytes(3, "little")
+    # Side-table scripts that outgrew their slot (script_text.apply_script): placed after the master spill, each
+    # pointer at `refs` (file offsets of 24-bit operands) rewritten. The old copy stays in the region, unreached.
+    for r in data.get("relocs", ()):
+        b = codec.encode_bytes(r["text"])
+        if len(out) < ROM_EXPANDED:
+            out += b"\xff" * (ROM_EXPANDED - len(out))
+        if (spill >> 16) != ((spill + len(b) - 1) >> 16):
+            spill = (spill + 0xFFFF) & ~0xFFFF
+        if spill + len(b) > EXPANDED_TEXT[1]:
+            raise ValueError(f"expanded text area full at side script {r['id']}")
+        out[spill:spill + len(b)] = b
+        for p in r["refs"]:
+            out[p:p + 3] = to_cpu(spill).to_bytes(3, "little")
+        spill += len(b)
     return bytes(out)
