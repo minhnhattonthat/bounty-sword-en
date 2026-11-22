@@ -2,19 +2,30 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 2797/3539 entries in English; **all master dialogue done** (b010-b050; b038
-  had been translated but never merged: fixed, merged); side tables left. Pace: ~10 batches per worker context; the
-  Orca brief forbids subagents, so each worker translates itself.
-- **Side tables (started 2026-11-22, batches b051-b064 split in `work/tl/`):**
-  - **Blocker for merging side tables: the build repacks each side region in place** (`rom_text.repack` raises
-    "region X: N bytes, slot is M" when English outgrows it). b052 (battle_prompts_b) and b062 (system_prompts) are
-    translated and pass `check` (`work/tl/b052.out.tsv`, `b062.out.tsv`) but merging them broke the build (790 vs
-    712 bytes), so they are NOT merged. Next step (do it first, it is phase-7 engine work pulled forward): relocate
-    grown side entries to free space `$F0-$FE` and rewrite their pointers (per table `refs`; engine A prompts are
-    reached through the engine A pointer list, confirm with `regionreads.lua`), with a test, then merge b052/b062.
-  - System/battle prompts are engine A scripts: `script_text.ENGINE_A_TABLES` now parses their argument words
-    (`{FF09:0000}`, `{FF0A:0000}`, `{FF14:0002}`; the old dump showed them as `　`/`、`/`。`). Identity still
-    byte-identical. English there: ASCII `"` for 「」, keep every code.
+- **Phase:** 6. Translate in progress: 2812/3584 entries in English; **all master dialogue done**; side tables
+  left (b052 battle_prompts_b and b062 system_prompts merged). Pace: ~10 batches per worker context; the Orca brief
+  forbids subagents, so each worker translates itself.
+- **Side tables: length is no longer a blocker (session 2026-11-22c, `docs/re/text.md` §Engine B):**
+  - Engine A prompts (`script_text.RELOCATE`: system_prompts, battle_prompts_b): a script (entries up to FF00; FF03
+    runs on into the next entry) that grows moves whole to `$F0+` and its `03`/`43 ptr24` callers are rewritten; a
+    shorter one is padded in place; a grown script with no known caller must fit (04146D "Map clear!" did).
+    battle_prompts (b051) is not in RELOCATE yet: its callers (05E8F8 <- `2E` at 06CCC2?) need confirming first.
+  - Engine B (ceremony, short_strings, descriptions, `script_text.trampolines`): an entry whose English has any other
+    length gets a 10-byte FF0B jump to its copy in `$F0+`, which jumps back to the next entry. Entries under 5 words
+    must keep their exact length (digits `1{FF07}`). Engine B tables now cut at FF00 (ceremony) and at every target of
+    their own FF06/FF09/FF0B/FF10 pointers (incl. FF0B jump tables), so no pointer lands inside an entry (guarded).
+    Verified in game (`work/qa/w_tramp2`) and by tests. system_prompts region now starts at 041373.
+  - Engine B text is 1 char a cell, 28 cells a row, 2 rows a page; `{FF01}` is free in the check (add row breaks),
+    a 3rd row overwrites. Engine B batches re-split: **b065 ceremony, b066 short_strings, b067-b068 descriptions**
+    (old b053/b054/b055/b061 deleted). Ceremony notes: god names (1DED67..) are FF07 fragments shown inside
+    " One guarded by {god}," and after "guardian spirit" on row 1: keep them <= 10 chars (Venus, Hermes, Selene,
+    Apollo, Mercury, Aphrodite, Pluto, Zeus, Chronos, Uranus, Poseidon). Full-width ＭＯＮＴＨ/ＤＡＹ/ＮＡＭＥ/ＯＫ？ rows: same
+    cell counts in ASCII. 1DF03D (`[0001]　[0001]ｑ奨Ｈ末Ｈ`) is data reached mid-way by FF09: drop it from the batch.
+    Yes/No in 1DECF7: "Yes" is a cell longer than はい, check the cursor in phase 8.
+  - Remaining side batches: b051, b056 (skip junk row), b057 menus, b058 menus_c, b059 objectives, b060 (orders junk),
+    b063 unit_records, b064 windows, b065-b068. Then a read-only review line in `docs/reviews.md`.
+  - System/battle prompts are engine A scripts: `script_text.ENGINE_A_TABLES` parses their argument words
+    (`{FF09:0000}`, `{FF0A:0000}`, `{FF14:0002}`). English there: ASCII `"` for 「」, keep every code.
   - b051 (battle_prompts 05E8A0..): `05E8A0` starts with a stray word 0x011E (shows as ぎ) before `{FF09}`; the check
     rejects both `ぎ` and `[011E]` in English. Decide: split that word into its own `data` entry (rule change in
     `script_text.SPLIT`) or let the check accept `[hhhh]` words the JP has; then `check b051`.
@@ -118,10 +129,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
     in `en`: map them from `speakers.json` en in phase 7 (rule-based, literal names list in the batch tool's
     terms pass). Location labels were centred with JP spaces: centre the English by pixel width.
   - `[00AB]` is 岬 (cape); add it to `tbl/kanji.tsv` and `build.py --dump --refresh` when convenient.
-  - **Side tables are repacked in place** (`rom_text.repack`: each region keeps its exact size, entries are not
-    relocated and their pointers not rewritten), so today an English ceremony/prompt/description line must have the
-    JP entry's byte length. Before phase 7: relocate grown entries to `$F0-$FE` and rewrite their pointers (each
-    entry's `refs` lists candidates; confirm per table), or pad shorter ones; tell translators the rule in phase 6.
+  - Side tables still repacked in place (exact length): objectives (no reader found), unit_records, battle_prompts
+    (until its callers are confirmed); C1 tables are fixed fields with pair packing.
   - Side tables never read on a warp: battle_prompts(_b), system_prompts, descriptions, objectives (phase 8
     `textcover`). unit_records: names inside mixed records marked `data` whole.
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.

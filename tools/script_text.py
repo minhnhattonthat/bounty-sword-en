@@ -144,7 +144,9 @@ SPLIT = {
     "objectives": ("ends", {0xFFFE, 0xFFFF}, "ptr16"),
     "items": ("fixed", 10, 0),
     "short_strings": ("ends", {0xFF0D, 0xFF07, 0xFF03}),
-    "ceremony": ("ends", {0xFF0D, 0xFF07, 0xFF03}),
+    # FF00 ends a script only when `$7E:4A53` is set (C3:C863), so the stat-up lines after each FF00 are their own
+    # entries; engine B tables also cut at every target of their own pointers (engine_b_targets).
+    "ceremony": ("ends", {0xFF0D, 0xFF07, 0xFF03, 0xFF00}),
 }
 # Tables run by engine B: verified for ceremony and short_strings (read by C3:C78B in the region-read tour,
 # tools/re/region_reads.py); descriptions per docs/re/text.md (FF06 calls), not yet seen read.
@@ -176,7 +178,7 @@ def split_region(words, rule, args=None, anchors=()):
             i += 1 + args.get(w, 0)
             if w in rule[1] and i < n:
                 cuts.append(i)
-        cuts = sorted(set(cuts))
+        cuts = sorted(set(cuts) | {a for a in anchors if 0 < a < n})
         return list(zip(cuts, cuts[1:] + [n]))
     if kind == "counted":
         i = 0
@@ -262,8 +264,11 @@ def side_entries(rom, name, start, end, codec, ptrs):
     args = side_args(name)
     codec = codec_for(codec, name)
     anchors = window_anchors(rom, start, end) if rule[0] == "anchored" else set()
+    cuts = anchors
+    if name in ENGINE_B_TABLES:
+        cuts = {(t - start) // 2 for t in engine_b_targets(rom, start, end) if (t - start) % 2 == 0}
     out = []
-    for a, b in split_region(words, rule, args, anchors):
+    for a, b in split_region(words, rule, args, cuts):
         w = words[a:b]
         off = start + 2 * a
         e = {"id": "%06X" % off}
@@ -463,23 +468,34 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
 # English changes length keeps its slot, which gets a 5-word FF0B trampoline to its copy in the expanded ROM; the copy
 # ends with an FF0B back to the next entry (rom_text.repack), so every caller, known or not, still works.
 TRAMPOLINE_WORDS = 5
-POINTER_OPS = re.compile(r"\{FF(06|09|0B|10)((?::[0-9A-F]{4})+)\}")
 
 
-def inner_targets(entries):
-    """File offsets that engine B pointer arguments (FF06 call, FF09 choice, FF0B jump, FF10 params) point at."""
-    out = set()
-    for e in entries:
-        for m in POINTER_OPS.finditer(e["jp"]):
-            a = [int(x, 16) for x in m.group(2)[1:].split(":")]
-            out |= {(bank & 0x3F) << 16 | lo for lo, bank in zip(a[0::2], a[1::2])}
-    return out
+def engine_b_targets(rom, start, end):
+    """File offsets in [start, end) that the region's own engine B pointer arguments reach: FF06 call, FF09 choice,
+    FF0B jump (its index pointer and every entry of its 3-byte jump table that lands in the region), FF10 params."""
+    args, out, p = ENGINE_B_ARGS, set(), start
+    while p < end:
+        w = word(rom, p)
+        a = [word(rom, p + 2 + 2 * i) for i in range(args.get(w, 0))]
+        p += 2 + 2 * len(a)
+        if w not in (0xFF06, 0xFF09, 0xFF0B, 0xFF10):
+            continue
+        ptrs = [(bank & 0x3F) << 16 | lo for lo, bank in zip(a[0::2], a[1::2])]
+        out |= set(ptrs)
+        if w == 0xFF0B:
+            t = ptrs[1]
+            for i in range(64):
+                v = rom[t + 3 * i] | rom[t + 3 * i + 1] << 8 | (rom[t + 3 * i + 2] & 0x3F) << 16
+                if not start <= v < end:
+                    break
+                out.add(v)
+    return {t for t in out if start <= t < end}
 
 
-def trampolines(region, files, field, codec, relocs):
+def trampolines(rom, region, files, field, codec, relocs):
     """Region words for an engine B table: same-length English in place, any other length via a trampoline."""
     entries = region_entries(files, region["name"], region["start"], region["end"])
-    targets = inner_targets(files[region["name"] + ".json"])
+    targets = engine_b_targets(rom, region["start"], region["end"])
     out = []
     for e in entries:
         old = side_words(e, codec)
@@ -517,7 +533,7 @@ def apply_script(rom, files, field="jp"):
             r["text"] = wc.decode(relocate_scripts(rom, r, files, field, codec_for(sc, r["name"]), data["relocs"]))
             continue
         if r["name"] in ENGINE_B_TABLES:
-            r["text"] = wc.decode(trampolines(r, files, field, codec_for(sc, r["name"]), data["relocs"]))
+            r["text"] = wc.decode(trampolines(rom, r, files, field, codec_for(sc, r["name"]), data["relocs"]))
             continue
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):

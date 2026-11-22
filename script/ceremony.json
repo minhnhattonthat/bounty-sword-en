@@ -65,10 +65,47 @@
  },
  {
   "id": "1DED1D",
-  "kind": "data",
-  "jp": "[0001]　[0001]ｑ銭８端８{FF0B:4D19:007E:ED37:00DD}[ED5B][67DD][DDED][ED75][85DD][DDED][ED93][A3DD][DDED][EDB5][C9DD][DDED][EDDB][E7DD][DDED][EDF5][05DD][DDEE]軍神アレス{FF07}",
+  "kind": "text",
+  "jp": "[0001]　[0001]ｑ",
+  "en": "",
   "refs": [
    "1DED0F"
+  ]
+ },
+ {
+  "id": "1DED25",
+  "kind": "text",
+  "jp": "銭８端８",
+  "en": "",
+  "refs": [
+   "1DED13"
+  ]
+ },
+ {
+  "id": "1DED2D",
+  "kind": "text",
+  "jp": "{FF0B:4D19:007E:ED37:00DD}",
+  "en": "",
+  "refs": [
+   "1DECC9",
+   "1DEE1B"
+  ]
+ },
+ {
+  "id": "1DED37",
+  "kind": "data",
+  "jp": "[ED5B][67DD][DDED][ED75][85DD][DDED][ED93][A3DD][DDED][EDB5][C9DD][DDED][EDDB][E7DD][DDED][EDF5][05DD][DDEE]",
+  "refs": [
+   "1DED33"
+  ]
+ },
+ {
+  "id": "1DED5B",
+  "kind": "text",
+  "jp": "軍神アレス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED37"
   ]
  },
  {
@@ -243,10 +280,19 @@
  {
   "id": "1DF03D",
   "kind": "text",
-  "jp": "[0001]　[0001]ｑ奨Ｈ末Ｈ{FF03}",
+  "jp": "[0001]　[0001]ｑ",
   "en": "",
   "refs": [
    "1DF02F"
+  ]
+ },
+ {
+  "id": "1DF045",
+  "kind": "text",
+  "jp": "奨Ｈ末Ｈ{FF03}",
+  "en": "",
+  "refs": [
+   "1DF033"
   ]
  },
  {
@@ -260,8 +306,9 @@
  },
  {
   "id": "1DF069",
-  "kind": "data",
-  "jp": "{FF0B:476B:007E:F073:00DD}[F091][95DD][DDF0][F099][9DDD][DDF0][F0A1][A5DD][DDF0][F0A9][ADDD][DDF0][F0B1][B5DD][DDF0]０{FF07}",
+  "kind": "text",
+  "jp": "{FF0B:476B:007E:F073:00DD}",
+  "en": "",
   "refs": [
    "1DF0E1",
    "1DF0FF",
@@ -277,6 +324,23 @@
    "1DF2C7",
    "1DF2ED",
    "1DF313"
+  ]
+ },
+ {
+  "id": "1DF073",
+  "kind": "data",
+  "jp": "[F091][95DD][DDF0][F099][9DDD][DDF0][F0A1][A5DD][DDF0][F0A9][ADDD][DDF0][F0B1][B5DD][DDF0]",
+  "refs": [
+   "1DF06F"
+  ]
+ },
+ {
+  "id": "1DF091",
+  "kind": "text",
+  "jp": "０{FF07}",
+  "en": "",
+  "refs": [
+   "1DF073"
   ]
  },
  {
@@ -401,10 +465,77 @@
  {
   "id": "1DF0CF",
   "kind": "text",
-  "jp": "{FF06:4D1B:007E}は攻撃力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は防御力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は速さが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は魔力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は精神が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は幸運が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}はＨＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}はＳＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF0C:A88E:00C5}{FF0B:70DD:007F:A8AC:00C5}最大レベルです！{FF00}{FF06:4D1B:007E}はレベル{FF06:4CF7:007E}になった！{FF03}",
+  "jp": "{FF06:4D1B:007E}は攻撃力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
   "en": "",
   "refs": [
    "1A5C16"
+  ]
+ },
+ {
+  "id": "1DF0ED",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は防御力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF10B",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は速さが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF127",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は魔力が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF143",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は精神が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF15F",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は幸運が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF17B",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はＨＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF197",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はＳＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF1B3",
+  "kind": "text",
+  "jp": "{FF0C:A88E:00C5}{FF0B:70DD:007F:A8AC:00C5}",
+  "en": ""
+ },
+ {
+  "id": "1DF1C3",
+  "kind": "text",
+  "jp": "最大レベルです！{FF00}",
+  "en": "",
+  "refs": [
+   "05A8AF"
+  ]
+ },
+ {
+  "id": "1DF1D5",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はレベル{FF06:4CF7:007E}になった！{FF03}",
+  "en": "",
+  "refs": [
+   "05A8AC",
+   "2F8C85"
   ]
  },
  {
@@ -422,187 +553,403 @@
  {
   "id": "1DF239",
   "kind": "text",
-  "jp": "{FF0C:A90D:00C5}{FF0B:70E3:007F:A91F:00C5}攻撃力が{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A90D:00C5}{FF0B:70E3:007F:A91F:00C5}",
   "en": ""
+ },
+ {
+  "id": "1DF249",
+  "kind": "text",
+  "jp": "攻撃力が{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A922"
+  ]
  },
  {
   "id": "1DF261",
   "kind": "text",
-  "jp": "{FF0C:A925:00C5}{FF0B:70E5:007F:A937:00C5}防御力が{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A925:00C5}{FF0B:70E5:007F:A937:00C5}",
   "en": "",
   "refs": [
    "05A91F"
   ]
  },
  {
+  "id": "1DF271",
+  "kind": "text",
+  "jp": "防御力が{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A93A"
+  ]
+ },
+ {
   "id": "1DF289",
   "kind": "text",
-  "jp": "{FF0C:A93D:00C5}{FF0B:70E7:007F:A94F:00C5}速さが{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A93D:00C5}{FF0B:70E7:007F:A94F:00C5}",
   "en": "",
   "refs": [
    "05A937"
   ]
  },
  {
+  "id": "1DF299",
+  "kind": "text",
+  "jp": "速さが{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A952"
+  ]
+ },
+ {
   "id": "1DF2AF",
   "kind": "text",
-  "jp": "{FF0C:A955:00C5}{FF0B:70E9:007F:A967:00C5}魔力が{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A955:00C5}{FF0B:70E9:007F:A967:00C5}",
   "en": "",
   "refs": [
    "05A94F"
   ]
  },
  {
+  "id": "1DF2BF",
+  "kind": "text",
+  "jp": "魔力が{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A96A"
+  ]
+ },
+ {
   "id": "1DF2D5",
   "kind": "text",
-  "jp": "{FF0C:A96D:00C5}{FF0B:70EB:007F:A97F:00C5}精神が{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A96D:00C5}{FF0B:70EB:007F:A97F:00C5}",
   "en": "",
   "refs": [
    "05A967"
   ]
  },
  {
+  "id": "1DF2E5",
+  "kind": "text",
+  "jp": "精神が{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A982"
+  ]
+ },
+ {
   "id": "1DF2FB",
   "kind": "text",
-  "jp": "{FF0C:A985:00C5}{FF0B:70ED:007F:A997:00C5}幸運が{FF06:F069:00DD}上がった{FF03}",
+  "jp": "{FF0C:A985:00C5}{FF0B:70ED:007F:A997:00C5}",
   "en": "",
   "refs": [
    "05A97F"
   ]
  },
  {
+  "id": "1DF30B",
+  "kind": "text",
+  "jp": "幸運が{FF06:F069:00DD}上がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A99A"
+  ]
+ },
+ {
   "id": "1DF321",
   "kind": "text",
-  "jp": "{FF0C:A99D:00C5}{FF0B:70EF:007F:A9AF:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:A99D:00C5}{FF0B:70EF:007F:A9AF:00C5}",
   "en": "",
   "refs": [
    "05A997"
   ]
  },
  {
+  "id": "1DF331",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9B2"
+  ]
+ },
+ {
   "id": "1DF33F",
   "kind": "text",
-  "jp": "{FF0C:A9B5:00C5}{FF0B:70F1:007F:A9C7:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:A9B5:00C5}{FF0B:70F1:007F:A9C7:00C5}",
   "en": "",
   "refs": [
    "05A9AF"
   ]
  },
  {
+  "id": "1DF34F",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9CA"
+  ]
+ },
+ {
   "id": "1DF35D",
   "kind": "text",
-  "jp": "{FF0C:A9CD:00C5}{FF0B:70F3:007F:A9DF:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:A9CD:00C5}{FF0B:70F3:007F:A9DF:00C5}",
   "en": "",
   "refs": [
    "05A9C7"
   ]
  },
  {
+  "id": "1DF36D",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9E2"
+  ]
+ },
+ {
   "id": "1DF37B",
   "kind": "text",
-  "jp": "{FF0C:A9E5:00C5}{FF0B:70F5:007F:A9F7:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:A9E5:00C5}{FF0B:70F5:007F:A9F7:00C5}",
   "en": "",
   "refs": [
    "05A9DF"
   ]
  },
  {
+  "id": "1DF38B",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9FA"
+  ]
+ },
+ {
   "id": "1DF399",
   "kind": "text",
-  "jp": "{FF0C:A9FD:00C5}{FF0B:70F7:007F:AA0F:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:A9FD:00C5}{FF0B:70F7:007F:AA0F:00C5}",
   "en": "",
   "refs": [
    "05A9F7"
   ]
  },
  {
+  "id": "1DF3A9",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA12"
+  ]
+ },
+ {
   "id": "1DF3B7",
   "kind": "text",
-  "jp": "{FF0C:AA15:00C5}{FF0B:70F9:007F:AA27:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA15:00C5}{FF0B:70F9:007F:AA27:00C5}",
   "en": "",
   "refs": [
    "05AA0F"
   ]
  },
  {
+  "id": "1DF3C7",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA2A"
+  ]
+ },
+ {
   "id": "1DF3D5",
   "kind": "text",
-  "jp": "{FF0C:AA2D:00C5}{FF0B:70FB:007F:AA3F:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA2D:00C5}{FF0B:70FB:007F:AA3F:00C5}",
   "en": "",
   "refs": [
    "05AA27"
   ]
  },
  {
+  "id": "1DF3E5",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA42"
+  ]
+ },
+ {
   "id": "1DF3F3",
   "kind": "text",
-  "jp": "{FF0C:AA45:00C5}{FF0B:70FD:007F:AA57:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA45:00C5}{FF0B:70FD:007F:AA57:00C5}",
   "en": "",
   "refs": [
    "05AA3F"
   ]
  },
  {
+  "id": "1DF403",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA5A"
+  ]
+ },
+ {
   "id": "1DF411",
   "kind": "text",
-  "jp": "{FF0C:AA5D:00C5}{FF0B:70FF:007F:AA72:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA5D:00C5}{FF0B:70FF:007F:AA72:00C5}",
   "en": "",
   "refs": [
    "05AA57"
   ]
  },
  {
+  "id": "1DF421",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA75"
+  ]
+ },
+ {
   "id": "1DF42F",
   "kind": "text",
-  "jp": "{FF0C:AA78:00C5}{FF0B:7101:007F:AA8D:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA78:00C5}{FF0B:7101:007F:AA8D:00C5}",
   "en": "",
   "refs": [
    "05AA72"
   ]
  },
  {
+  "id": "1DF43F",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA90"
+  ]
+ },
+ {
   "id": "1DF44D",
   "kind": "text",
-  "jp": "{FF0C:AA93:00C5}{FF0B:7103:007F:AAA8:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AA93:00C5}{FF0B:7103:007F:AAA8:00C5}",
   "en": "",
   "refs": [
    "05AA8D"
   ]
  },
  {
+  "id": "1DF45D",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAAB"
+  ]
+ },
+ {
   "id": "1DF46B",
   "kind": "text",
-  "jp": "{FF0C:AAAE:00C5}{FF0B:7105:007F:AAC3:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AAAE:00C5}{FF0B:7105:007F:AAC3:00C5}",
   "en": "",
   "refs": [
    "05AAA8"
   ]
  },
  {
+  "id": "1DF47B",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAC6"
+  ]
+ },
+ {
   "id": "1DF489",
   "kind": "text",
-  "jp": "{FF0C:AAC9:00C5}{FF0B:7107:007F:AADE:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AAC9:00C5}{FF0B:7107:007F:AADE:00C5}",
   "en": "",
   "refs": [
    "05AAC3"
   ]
  },
  {
+  "id": "1DF499",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAE1"
+  ]
+ },
+ {
   "id": "1DF4A7",
   "kind": "text",
-  "jp": "{FF0C:AAE4:00C5}{FF0B:7109:007F:AAF9:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "jp": "{FF0C:AAE4:00C5}{FF0B:7109:007F:AAF9:00C5}",
   "en": "",
   "refs": [
    "05AADE"
   ]
  },
  {
+  "id": "1DF4B7",
+  "kind": "text",
+  "jp": "{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAFC"
+  ]
+ },
+ {
   "id": "1DF4C5",
   "kind": "text",
-  "jp": "{FF00}{FF06:4D1B:007E}はドラゴンナイトに転職できます{FF00}{FF06:4D1B:007E}はダークナイトに転職できます{FF00}{FF06:4D1B:007E}はシャドウマスターに転職できます{FF00}{FF06:4D1B:007E}はスペルマスターに転職できます{FF00}{FF06:4D1B:007E}はワイズマンに転職できます{FF00}{FF06:4D1B:007E}はしかいせんに転職できます{FF00}",
+  "jp": "{FF00}",
   "en": "",
   "refs": [
    "05AAF9"
   ]
+ },
+ {
+  "id": "1DF4C7",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はドラゴンナイトに転職できます{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF4ED",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はダークナイトに転職できます{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF511",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はシャドウマスターに転職できます{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF539",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はスペルマスターに転職できます{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF55F",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はワイズマンに転職できます{FF00}",
+  "en": ""
+ },
+ {
+  "id": "1DF581",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}はしかいせんに転職できます{FF00}",
+  "en": ""
  }
 ]
