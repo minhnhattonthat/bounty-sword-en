@@ -604,6 +604,8 @@ C1Run:
     lda [$34],y
     jsr C1IsEn
     bcc -
+    lda.w !PX           ; PX is shared with engine A: a dialogue box opened after a menu whose start equals LAST
+    pha                 ; (0 after a cold warp) kept the menu's PX and began at the right edge (tavern); restored at .done
     lda $2E
     and.w #$000F
     sta.w !C1LO
@@ -690,6 +692,8 @@ C1Run:
     lda.w !C1N
     jsr C1Slot
     sta $2E
+    pla
+    sta.w !PX
     plb
     plp
     rts
