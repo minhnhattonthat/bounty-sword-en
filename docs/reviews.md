@@ -14,3 +14,4 @@ one is available (the story pass in phase 9 reads every chapter again).
 | b014-b016 (Ruins Town, Zodiac statues, Valkyries, Salamander, Isolated Isle) | own pass | 0 | 0 | 0 |
 | b017-b019 (Forgotten Island, Lake Despair, Blood Shield, ruins) | own pass | 0 | 0 | 0 |
 | b020 (spell/skill shouts, combined attacks, castle entrance) | own pass | 0 | 0 | 1 (spaced-out combo shouts written in caps; check on screen in phase 8) |
+| b021 (Imperial Guard, Elysion) | own pass | 0 | 1 fixed (超機神 now "Machine God Supreme" in dialogue, b013/b014 lines re-merged) | 0 |

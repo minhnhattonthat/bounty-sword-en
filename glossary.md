@@ -130,7 +130,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | キャンプ | camp | | | |
 | 作戦指示 | orders | | camp command | |
 | 精霊水 | Spirit Water | | item | |
-| 機神 | Machine God | | ancient weapons (超機神 too) | |
+| 機神 | Machine God | | ancient weapons; numbered "Machine God No. 8" | |
+| 超機神 | Machine God Supreme / Machine God | | the god of destruction Elysion revives; "Machine God" only in the 80 px class field | |
 | 神の代理人 | agent of the gods / agent of us twelve gods | | what the Zodiac Gods call the hero | |
 | 屍解仙 | Corpse Immortal | | boss at the Abadan River | |
 | 悪霊 | evil spirit | | Ruins Town ghost | |

@@ -806,8 +806,8 @@
    2263
   ],
   "jp": "{spk}{FF28}\n「ついに　来たわね！！」\n{next}\n「ここは　皇帝のいる王の間‥‥」\n{next}\n「いよいよ　最後の戦いよ！\n　よく考えて　仲間を選んで！」\n{next}\n「武器やアイテムも\n　きちんと　そろえなくちゃ！」\n{spk}{FF28}\n「急いで　{hero}！」\n{next}\n「あの恐ろしい　超機神は\n　ここに　むかったのよ！！」\n{next}\n「早くしないと　首都が‥‥\n　いえ　世界が\n　あいつに　ほろぼされちゃう！」\n",
-  "en": "{spk}{FF28}\n「We're finally here!」\n{next}\n「This is the throne room,\n where the Emperor is...」\n{next}\n「This is the final battle! Think\n hard about which allies to\n pick!」\n{next}\n「And get your weapons and\n items in order, too!」\n{spk}{FF28}\n「Hurry, {hero}!」\n{next}\n「That terrifying Machine God\n was headed here!」\n{next}\n「If we don't hurry, the\n capital... No, the whole world\n will be destroyed by that」\n{next}\n「thing!」\n",
-  "pages": "\"We're finally here!\" || \"This is the throne room, where the Emperor is...\" || \"This is the final battle! Think hard about which allies to pick!\" || \"And get your weapons and items in order, too!\" || \"Hurry, {hero}!\" || \"That terrifying Machine God was headed here!\" || \"If we don't hurry, the capital... No, the whole world will be destroyed by that thing!\""
+  "en": "{spk}{FF28}\n「We're finally here!」\n{next}\n「This is the throne room,\n where the Emperor is...」\n{next}\n「This is the final battle! Think\n hard about which allies to\n pick!」\n{next}\n「And get your weapons and\n items in order, too!」\n{spk}{FF28}\n「Hurry, {hero}!」\n{next}\n「That terrifying Machine God\n Supreme was headed here!」\n{next}\n「If we don't hurry, the\n capital... No, the whole world\n will be destroyed by that」\n{next}\n「thing!」\n",
+  "pages": "\"We're finally here!\" || \"This is the throne room, where the Emperor is...\" || \"This is the final battle! Think hard about which allies to pick!\" || \"And get your weapons and items in order, too!\" || \"Hurry, {hero}!\" || \"That terrifying Machine God Supreme was headed here!\" || \"If we don't hurry, the capital... No, the whole world will be destroyed by that thing!\""
  },
  {
   "id": "1E38BA",
@@ -824,8 +824,8 @@
    2264
   ],
   "jp": "{spk}{FF28}\n「急がなきゃ　{hero}！」\n{next}\n「あのバケモノみたいな　超機神は\n　この　ラインメタル王国の\n　首都へと　向かったのよ！\n{next}\n「時間がないわ！」\n{next}\n「ラインメタル王国が‥‥　いえ\n　世界そのものが\n　超機神に　はかいされてしまう！」\n",
-  "en": "{spk}{FF28}\n「We have to hurry, {hero}!」\n{next}\n「That monstrous Machine God\n is headed for the capital of\n the Kingdom of Rheinmetall!\n{next}\n「There's no time!」\n{next}\n「The Kingdom of Rheinmetall...\n No, the world itself will be\n destroyed by the Machine」\n{next}\n「God!」\n",
-  "pages": "\"We have to hurry, {hero}!\" || \"That monstrous Machine God is headed for the capital of the Kingdom of Rheinmetall! || \"There's no time!\" || \"The Kingdom of Rheinmetall... No, the world itself will be destroyed by the Machine God!\""
+  "en": "{spk}{FF28}\n「We have to hurry, {hero}!」\n{next}\n「That monstrous Machine God\n Supreme is headed for the\n capital of the Kingdom of\n{next}\nRheinmetall!\n{next}\n「There's no time!」\n{next}\n「The Kingdom of Rheinmetall...\n No, the world itself will be\n destroyed by the Machine」\n{next}\n「God Supreme!」\n",
+  "pages": "\"We have to hurry, {hero}!\" || \"That monstrous Machine God Supreme is headed for the capital of the Kingdom of Rheinmetall! || \"There's no time!\" || \"The Kingdom of Rheinmetall... No, the world itself will be destroyed by the Machine God Supreme!\""
  },
  {
   "id": "1E3A5A",

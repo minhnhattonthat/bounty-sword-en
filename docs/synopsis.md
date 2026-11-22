@@ -46,6 +46,18 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   informer's job). Ship to the Isolated Isle (marines attack on the way): a 100,000-year-old boy holds the
   Poseidon Ring; with all twelve, go to the four sages of the Sage Village below the Rhipaean Mountains.
 
+## Southern Europea and the castle (master_214606, master_257BD4; b017-b021)
+- Forgotten Island: an old woman explains the dark wall around the Federation capital (only the legendary Sword of
+  Bounty, given by the Zodiac Gods, breaks it; the hero's sword looks like it), Ruin Peninsula (a civilization that
+  misused the gods' weapons, gone in one night), and the ultimate weapon (the Twelve Dark Gods bound into a god of
+  destruction; Machine Gods are toys beside it).
+- Lake Despair: Steyr kills the sniper captain who killed his sister Rossy at Romulus; Ryubi the Shredder (old
+  comrade of Steyr the Flash) joins. South of it the Blood Shield (Leopard) falls ("the nation exists for its people").
+- master_257BD4 opens with every spell/skill shout and combined attack (b020), then the castle assault: Machine God
+  No. 7 (teleports), the Imperial Guard (a variant where recruitable allies fight for the Federation), and
+  **Elysion, the Divine Emperor: {FF31} is his daughter**; her royal blood is the catalyst to revive the Machine God
+  Supreme. He sends Machine God No. 12 (humanlike, close combat) and pins the party with his magic.
+
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.
 - Map hints by the fairy per location: "This is <place>. We haven't cleared it yet." / memories once cleared.

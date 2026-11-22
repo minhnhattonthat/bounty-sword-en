@@ -2,8 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 1010/3539 entries in English (name tables, prologue b010-b011, master_1E0000
-  b012-b016, master_214606 b017-b019, master_257BD4 b020); dialogue batches b021-b050 left, then side tables.
+- **Phase:** 6. Translate in progress: 1074/3539 entries in English (name tables, prologue b010-b011, master_1E0000
+  b012-b016, master_214606 b017-b019, master_257BD4 b020-b021); dialogue batches b022-b050 left, then side tables.
+  Pace: ~5 batches per worker context; the Orca brief forbids subagents, so each worker translates itself.
   `tools/tl_reuse.py todo|fill bNNN` reuses English for rows whose JP repeats a translated entry (Zodiac statue
   scenes recur): translate only the `todo` rows into `bNNN.new.tsv`, `fill` writes `bNNN.out.tsv`. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
   stays byte-identical.
