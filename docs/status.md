@@ -2,19 +2,33 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check: starting. Phase 6 closed 2026-11-23 (session j): 3197/3656 entries in English,
-  `batches.py check` 0 problems (widows included), 0 widow boxes, independent review of every batch b001-b069 done
-  (`docs/reviews.md` "Independent review": 0 Critical, 3 Important fixed in rv01-rv02, Minors in `docs/polish.md`).
-  Done-when for phase 7 (skill): build green, width/overflow lint clean, control codes matched, `romdiff.py` shows
-  no writes outside allowed ranges. Left JP on purpose: junk/data rows (see "Skip on purpose" below), the kana
-  grids of the name-entry keyboards 01C283/01C359/01C42F (input characters; their keys are English per D13), shop
-  glyph set 01D2B7 (below).
+- **Phase:** 8. QA in the emulator: starting. Phase 7 closed 2026-11-23 (session k): build green and self-checking
+  (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
+  hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
+  identity build still byte-identical; smoke ok. Left JP on purpose: junk/data rows (see "Skip on purpose" below),
+  the kana grids of the name-entry keyboards 01C283/01C359/01C42F (input characters; keys English per D13), shop
+  glyph set 01D2B7 (phase 8 to-do 1).
   Fixing a text finding: `work/tl/rvNN_fix.tsv` rows `id<TAB>page<TAB>text`, `batches.py repage rvNN FILE`,
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
-- **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);
-  (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
-  its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
-  (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
+  Grid strings (menus/windows/menus_c): edit `script/grid_specs.tsv`, put the ids in `work/tl/rvNN.tsv` (rows from
+  `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
+- **Phase 8 to do (carried from phase 7, graphics text):** (1) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる
+  武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): find how the layout words in 01D1F5 place its 32 glyph tiles on
+  the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`; (2) widen the 2-cell
+  menu slices that force abbreviations (polish line "Menu grid strings"; e.g. 01D31B "Wp.Etc Gear Item Binx").
+  Then the phase 8 done-when (skill table): warp tour sheets + read-only visual-QA verdicts (`qa_gate.py`), every
+  graphics-text row English in a zoomed shot, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py`.
+- **Session 2026-11-23k (phase 6 review fixes, phase 7 closed):** review Important fixed: name-entry keys (D13:
+  終わり "End", 英字 "Abc", kana page keys あ/ア; seen in game: keys switch pages, typing, ← and End work,
+  `work/qa/w_name3`, `w_name6`); minors fixed (PERFECT CLEAR 01C115, glossary {FF31} rule, style-reference note,
+  reviews.md count) or moved to `docs/polish.md`. **D8 done** as build-time rendering: `tools/tag_font.py` draws each
+  English speaker tag (48 px) and location label (80 px, centred to whole cells) into tag codes 0500-071F at
+  `$FF:A000` (544 codes, ~480 used: the 16-bit glyph-offset formula wraps from 0720 on, so that is the cap);
+  `script/speaker_tags.tsv` names all 107 speakers and maps the `{spk}` headers at build time (the JSON `en` keeps the
+  JP header; marker/identity builds skip the rendering). Seen in game: "Roger"/"Tsukikage" tags with portraits
+  (`work/qa/w_tag1704`, `w_tag1716`), "Atlas Desert" label (`w_tagmap`). `[00AB]` = 岬 (`tbl/kanji.tsv`; regenerate
+  with `tools/mktbl.py --kanji tbl/kanji.tsv`: without `--kanji` it drops every kanji, and `--dump --refresh` then
+  rewrites all jp).
 - **Session 2026-11-23j (independent review b037-b069, phase 6 closed):** fresh worker, read-only pass of the
   pairs files (Read with offset/limit, ~80 lines a call): 0 Critical, 0 Important, 12 Minors to `docs/polish.md`
   (incl. US spellings Defense/armor/traveling in a British-spelled script, and 0EFCAA "Frontier Volcano Isle" vs
@@ -179,12 +193,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
      `0BFFF2`, items `1AEDAF` (junk-looking records), orders `08E996`.. (role labels across 8-word records).
   4. Prologue seen in game (session f, `work/qa/w_prologue6`); voices in `docs/style-reference.md`.
 - **Open (not blocking):**
-  - **Phase 7 engine work from phase 6 (D8):** speaker tag (6 cells, `C2:5641`) and location label (10 cells,
-    `C0:E1B1`) must pack two letters a cell; until then `build.py` keeps the JP for the 43 overflowing entries and
-    prints a warning (`script_text.OVERFLOW`). Speaker headers inside master text (`{spk}<6-word name>`) are still JP
-    in `en`: map them from `speakers.json` en in phase 7 (rule-based, literal names list in the batch tool's
-    terms pass). Location labels were centred with JP spaces: centre the English by pixel width.
-  - `[00AB]` is 岬 (cape); add it to `tbl/kanji.tsv` and `build.py --dump --refresh` when convenient.
+  - Tag font capacity: ~480 of 544 tag codes used. A new speaker or label adds cells; if `tag_font.py` reports the
+    font full, give the tags their own bank (a base other than `$FF:0000` in NameGlyph/CardGlyph).
   - Side tables still repacked in place (exact length): objectives (no reader found), unit_records; C1 tables are
     fixed fields with pair packing.
   - Side tables never read on a warp: battle_prompts(_b), system_prompts, descriptions, objectives (phase 8

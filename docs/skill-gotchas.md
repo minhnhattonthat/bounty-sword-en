@@ -2,6 +2,8 @@
 
 One line per gotcha: the skill reference it belongs in, then the fact.
 
+- references/platform-snes.md (fixed one-glyph-a-cell fields: name tags, labels): no runtime VWF needed: render each English string proportionally at build time into its cells and give every distinct cell bitmap a spare glyph code (dedupe; centre to whole cells, not pixels, or every label gets unique cells). Check the game's glyph-offset formula for 16-bit truncation: here codes past 0x071F wrapped below the hook's "English" threshold, capping the spare codes at 544.
+
 - references/platform-snes.md: `snes_romreads.lua` prints `off` with the LoROM formula; on HiROM games read the file offset as `addr & 0x3FFFFF` (the probe header says so, the log column misleads).
 - references/pipeline.md (§Recon): `tbl.py` is byte-greedy; with 16-bit LE codes and `FFxx` control words it decodes `FF FF 00 00` as `[FF]`+`FF00` and desyncs. Tokenise word by word in the extractor (roundtrip still holds).
 - references/graphics.md (§Survey): a 512 KB-per-sheet whole-ROM render is unreadable noise; sweep at 32-64 KB per sheet.
