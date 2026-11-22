@@ -1,0 +1,64 @@
+[
+ {
+  "id": "0396B2",
+  "width": 5,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "0396BC",
+  "width": 5,
+  "kind": "text",
+  "jp": "武器屋",
+  "en": "Arms"
+ },
+ {
+  "id": "0396C6",
+  "width": 5,
+  "kind": "text",
+  "jp": "道具屋",
+  "en": "Items"
+ },
+ {
+  "id": "0396D0",
+  "width": 5,
+  "kind": "text",
+  "jp": "酒場",
+  "en": "Tavern"
+ },
+ {
+  "id": "0396DA",
+  "width": 5,
+  "kind": "text",
+  "jp": "地図を開く",
+  "en": "Map"
+ },
+ {
+  "id": "0396E4",
+  "width": 5,
+  "kind": "text",
+  "jp": "街を出る",
+  "en": "Leave"
+ },
+ {
+  "id": "0396EE",
+  "width": 5,
+  "kind": "text",
+  "jp": "情報屋",
+  "en": "Info"
+ },
+ {
+  "id": "0396F8",
+  "width": 5,
+  "kind": "text",
+  "jp": "パーティ",
+  "en": "Party"
+ },
+ {
+  "id": "039702",
+  "width": 5,
+  "kind": "text",
+  "jp": "道具",
+  "en": "Pack"
+ }
+]

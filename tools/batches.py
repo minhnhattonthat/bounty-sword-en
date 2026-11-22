@@ -48,6 +48,7 @@ NOT_NAMES = {"バア", "ジイ", "オバ", "オレ", "ハンター", "コソド�
 # character a cell; ("row", n) = engine B rows of n cells broken by {FF01}.
 LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "unit_names": ("px", 48),
           "unit_titles": ("px", 128), "constellations": ("px", 40), "orders": ("px", 64),
+          "town_menu": ("px", 40),
           # location label (C0:E1B1, 10 cells) and name tag (C2:5641, 6 cells) draw one char a cell today: phase 7
           # packs two letters a cell there like C1Run (decision D8), so they get the pair budget too.
           "locations": ("px", 80), "speakers": ("px", 48),

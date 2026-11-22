@@ -87,6 +87,8 @@ def scenes():
     # an APU handshake (C2:F5A2; it looked like ignored input): warp.lua now nudges it, see APU_NUDGE in the log.
     # Party/items/leave = camp screens and world map.
     town = ["weapon_shop", "item_shop", "tavern"]
+    out.append(row(name="town_menu", kind="scenario", map=1, expect=13, hold=560, route="",
+                   note="town (A-01) command menu (town_menu table 0396B2: Arms, Items, Tavern, Party, Pack, Leave)"))
     for k, sub in enumerate(town):
         out.append(row(name=f"town_{sub}", kind="scenario", map=1, expect=13, hold=600 + 300 * (k == 2), route="",
                        then=steps("500 -", downs(k, 60, 16), "6 a;300 -"), note=f"town (A-01) menu -> {sub}"))

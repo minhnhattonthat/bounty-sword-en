@@ -17,7 +17,7 @@ from font_en import advance
 from script_text import C1_TABLES
 
 LINE_PX = 160          # 20 cells; the width gate (docs/re/vwf.md) checks it in game
-TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W", "menus_c": "U","speakers": "K", "system_prompts": "Z",
+TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W", "menus_c": "U", "town_menu": "V", "speakers": "K", "system_prompts": "Z",
         "unit_records": "R", "battle_prompts": "B", "unit_names": "N", "unit_titles": "T", "classes": "C",
         "spells": "X", "constellations": "Q", "orders": "G", "c8_layout": "-", "c8_digits": "-",
         "descriptions": "D", "objectives": "O", "items": "I", "short_strings": "S", "ceremony": "Y"}

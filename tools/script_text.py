@@ -130,6 +130,7 @@ SPLIT = {
     "windows": ("anchored",),
     "menus_c": ("anchored",),
     "speakers": ("fixed", 8, 2, 8),     # records (6-word name + 2 ids) start at 0x025D6D = C2:5D6D
+    "town_menu": ("fixed", 5, 0),
 
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
     "unit_records": ("term",),
@@ -310,7 +311,7 @@ def side_entries(rom, name, start, end, codec, ptrs):
 # Tables drawn by the C1 string runs (asm/vwf.asm C1Run): English there is proportional inside the field's cells,
 # two ASCII letters may share a word, and `[0F7F]` (TAB) moves to the next cell (grid strings cut into slices).
 C1_TABLES = {"items", "classes", "unit_names", "unit_titles", "spells", "constellations", "orders", "windows", "menus",
-             "menus_c"}
+             "menus_c", "town_menu"}
 TAB = 0x0F7F
 
 

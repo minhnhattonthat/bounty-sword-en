@@ -4,7 +4,8 @@
 --          MSG (override the msg column), MSGPTR (msg kind: swap in any engine A script by its 24-bit CPU
 --          pointer instead, e.g. a side-table prompt: --var "MSGPTR=0xC41393"), HOLD (frames to run after the expected mode is reached, default the row's),
 --          WARP_STATE (absolute path: save a state at SCENE_OK; only then, so a failed warp never leaves a bad state),
---          KEEP (don't stop at SCENE_OK; run on to --frames, e.g. to watch a scene play out).
+--          KEEP (don't stop at SCENE_OK; run on to --frames, e.g. to watch a scene play out),
+--          HOOK_STATE (msg kind, absolute path: save a state when the message starts; tools/debug/msgcover.py).
 -- How it works (docs/re/debug.md): the main loop runs the 24-bit continuation at $00EB-$00ED every frame. Once the
 -- game's first mode is up, we point it at the leftover SCENARIO select (C0:D8B8, unreferenced debug code). When the
 -- select reaches its input loop (C0:D9E5) we write the map number ($7FFD36) and then either take the select's own
@@ -85,6 +86,7 @@ if kind == "msg" then
     emu.write(MSG_PTR, ptr & 0xFF, M); emu.write(MSG_PTR + 1, (ptr >> 8) & 0xFF, M); emu.write(MSG_PTR + 2, ptr >> 16, M)
     msgDone = L.frame
     L.log(string.format("MSG %d ptr %06X f%d", MSGPTR and -1 or msg, ptr, L.frame))
+    if HOOK_STATE then L.save_state(HOOK_STATE) end  -- state at the message start, for tools/debug/msgcover.lua
   end)
 end
 

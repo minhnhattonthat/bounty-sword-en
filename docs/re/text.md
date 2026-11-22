@@ -114,6 +114,7 @@ arithmetic tables such as 0x11B91, data at 0x21E8F6-0x256DD4 and 0x2700D0-0x270F
 | 0x08DF4A-0x08E9D6 | unit titles / epithets (ドラゴンバスター, …のシュタイアー) | 16 words fixed | 24-bit pointers spread in code | guess |
 | 0x06E3AB-0x06E627 | unit names (ロジャー, ミランダ, シュタイア…) | 6 words fixed | `C6:E38F`, `C6:E644` | guess |
 | 0x025D5D-0x025F7F | speaker name -> portrait table (ソード___ 01 18, ロジャー__ 04 17…) | 8 words: 6-word name + 2 ids | `C2:4826`.. `C2:5D25..5D61` | guess: FF15 literal names must match it |
+| 0x0396B2-0x03970C | town command menu (武器屋 道具屋 酒場 地図を開く 街を出る 情報屋 パーティ 道具), record 0 blank | 5-word records | `C3:966D`: `$C3:96B2 + 10 * index` -> `$34`, slot from `C3:96A6`, C1 run `C1:8E90` (n=5) | verified (session r: found JP in game, missed by the phase-1 scan; table `town_menu`) |
 | 0x046CF4-0x0473B0, 0x044E40 | unit/class data records with embedded names (パラディン, …マスター) | mixed records | pointer list at 0x042AE1 | guess |
 | 0x01BFFF-0x01D3AB | menu strings: file menu, name-entry kana grid (0x1C285), options | `[count][count words]` back to back (0000 = space), in two word phases: `menus` 0x01BFFF-0x01CBFF (odd), `windows` 0x01CC00-0x01D1F4 (even, split "counted"), `menus_c` 0x01D1F5-0x01D3AB; grid strings are drawn in slices by the window script | 24-bit pointers in menu records (0x08E9DC-0x08F9xx, 0x05Bxxx) and code; drawn by `C1:8F16` | verified for the file menu |
 | 0x04136F-0x0418E3 | save / system prompts (…しますか？) | engine B script | pointers at 0x040797-0x04135D | guess |

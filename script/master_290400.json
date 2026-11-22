@@ -95,8 +95,8 @@
    139
   ],
   "jp": "{spk}{FF28}\n「このままだと　死んじゃうわ\n　いったん　離脱しましょう！」\n{next}\n「『離脱』のコマンドで\n　すぐに　ＭＡＰの外に\n　出ることが　できるわ！」\n{next}\n「いったんＭＡＰの　外に出ると\n　次は　最初から　やり直しだけど\n　戦った　経験値だけは　残るわ！」\n",
-  "en": "{spk}{FF28}\n「At this rate you'll die!\n Let's retreat for now!」\n{next}\n「With the 'Retreat'\n command, you can\n leave the MAP at once!」\n{next}\n「Once you leave the MAP, you\n have to start over next\n time, but you keep the」\n{next}\n「experience from the fight!」\n",
-  "pages": "\"At this rate you'll die! Let's retreat for now!\" || \"With the 'Retreat' command, you can leave the MAP at once!\" || \"Once you leave the MAP, you have to start over next time, but you keep the experience from the fight!\""
+  "en": "{spk}{FF28}\n「At this rate you'll die!\n Let's retreat for now!」\n{next}\n「With the 'Flee' command, you\n can leave the MAP at once!」\n{next}\n「Once you leave the MAP, you\n have to start over next\n time, but you keep the」\n{next}\n「experience from the fight!」\n",
+  "pages": "\"At this rate you'll die! Let's retreat for now!\" || \"With the 'Flee' command, you can leave the MAP at once!\" || \"Once you leave the MAP, you have to start over next time, but you keep the experience from the fight!\""
  },
  {
   "id": "290C7E",

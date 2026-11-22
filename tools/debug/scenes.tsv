@@ -24,6 +24,7 @@ camp_file	mode	31	6		6	1032		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40
 camp_save	mode	31	6		6	1750		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -;6 a;200 -;6 a;200 -;6 a;300 -				camp -> file -> save -> file 1 (writes SRAM: the run's .srm is a game-written base save)
 camp	mode	31	6		6	400						camp menu (mode 6)
 camp_party_status	mode	31	6		6	1214		300 -;6 a;200 -;6 down;40 -;6 a;200 -;6 a;200 -				party -> status
+town_menu	scenario	1			13	560						town (A-01) command menu (town_menu table 0396B2: Arms, Items, Tavern, Party, Pack, Leave)
 town_weapon_shop	scenario	1			13	1056				500 -;6 a;300 -		town (A-01) menu -> weapon_shop
 town_item_shop	scenario	1			13	1132				500 -;16 down;60 -;6 a;300 -		town (A-01) menu -> item_shop
 town_tavern	scenario	1			13	1208				500 -;16 down;60 -;16 down;60 -;6 a;300 -		town (A-01) menu -> tavern

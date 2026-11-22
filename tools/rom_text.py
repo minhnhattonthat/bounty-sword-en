@@ -49,6 +49,9 @@ REGIONS = (
     ("windows", 0x01CBB8, 0x01D1F4),
     ("menus_c", 0x01D1F5, 0x01D3AB),
     ("speakers", 0x025D5D, 0x025F7F),
+    # Town command menu (武器屋 道具屋 酒場 地図を開く 街を出る 情報屋 パーティ 道具): 5-word records, record 0 blank, read by
+    # C3:966D (pointer $C3:96B2 + 10 * index into $34, then the C1 string run C1:8E90).
+    ("town_menu", 0x0396B2, 0x03970C),
     # Starts at the first script (0x041373, called by `03 731344`); 0x04136F-0x041372 is the tail of the event
     # script before it.
     ("system_prompts", 0x041373, 0x0418E3),

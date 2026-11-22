@@ -49,6 +49,13 @@ def test_shop_tilemaps_point_at_the_english_cells(built):
     assert data[0x32787:0x32791] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Vault")
 
 
+def test_town_menu_records_are_rewritten(built):
+    """Town command menu (C3:966D reads 5-word records at $C3:96B2 + 10 * index): no record keeps its JP bytes."""
+    orig, data, _ = built
+    for rec in range(0x0396BC, 0x03970C, 10):
+        assert data[rec:rec + 10] != orig[rec:rec + 10], f"town menu record {rec:06X} still Japanese"
+
+
 def test_part_cards_and_gender_glyph_are_english(built):
     """tools/card_gfx.py draws the 3 part cards into the original 93 tiles + 3 maps; the status gender is ♂/♀."""
     from card_gfx import MAPS_AT, MAP_BYTES, N_TILES, TILES_AT, render

@@ -77,7 +77,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | フュリス | Furis | | | |
 | 黄道十二神 | Zodiac Gods / Twelve Gods / Zodiac | | speaker tag: Zodiac | |
 | 大賢者 | Archsage | | | |
-| 情報屋 | informer / Informer | | | |
+| 情報屋 | informer / Informer / Info | | town menu 0396EE "Info" (5-word field, 40 px) | |
 | オフィーリア°レス°エリュシオン | Ophelia Les Elysion | | {FF31}'s real name (Elysion's daughter by his eighth wife) | |
 | コウホウ | Koho | | samurai company captain, duels the hero | |
 | タウルス | Taurus | | Federation assault landing platoon leader, Wolf Forest | |
@@ -182,7 +182,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 超黒の魔導士 | Ultra-Black Sorcerer | | Faust's epithet | |
 | 機動トウテキ隊 | Mobile Grenadier Corps | | Steyr's Romulus army unit | |
 | 倉庫 | storage / store | | dialogue; the shop list entry is "Vault": a is a 6-word name field (C3:2787, C3:980F, `script/default_names.tsv`); 2-cell menus say "Bin" (polish) | |
-| 武器屋 | weapon / Weapons | | shop header "Weapons", nameplate 武器屋の主人 "Smith" (glyph set 01D2B7 + `script/byte_patches.tsv`) | |
+| 武器屋 | weapon / Weapons / Arms | | town menu 0396BC "Arms" (5-word field, 40 px), shop header "Weapons", nameplate 武器屋の主人 "Smith" (glyph set 01D2B7 + `script/byte_patches.tsv`) | |
 | 道具屋 | item / Items | | shop header "Items", nameplate 道具屋の娘 "Clerk" | |
 
 ## Decisions from earlier batches

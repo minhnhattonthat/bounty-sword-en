@@ -15,8 +15,8 @@
 01C479	1:Party | 5:Tac | 7:Itm | 9:Go! | 11:Map | 16:Orders | 20:File | 24:Config
 01C4B5	0:Inf | 2:Go | 4:Close | 10:Travel
 01C4D3	0:Rheinmetall | 16:North Europea | 32:South Europea
-01C535	1:Party | 5:Itm | 7:Fld | 9:Camp | 16:Map View | 23:[01F6][01F7][01F8]
-01C578	0:Retreat! | 6:Sure? | 16:OK | 18:No | 21:[01F6][01F7][01F8]
+01C535	1:Party | 5:Itm | 7:Fld | 9:Camp | 16:Map View | 23+3:Flee
+01C578	0:Retreat! | 6:Sure? | 16:OK | 18:No | 21+3:Flee
 01C5AA	0:Aim | 4:Skill | 8:Itm | 10:Tac | 12:Rtn | 14:Sts | 17:canceled.
 01C60C	1:Pick a target, press A. | 16:pick | 21:Which | 25:one? | 29:Fld | 31:Unit | 35:/
 01C6EE	1:Atk | 3:Agi | 5:Spr | 7:AS | 9:Gdr | 11:Def | 13:Int | 16:Lck | 18:Elm | 20:Sg. | 22:/
@@ -34,7 +34,7 @@
 01CA4B	0:Orders | 4:Skill | 8:Ord | 10:Itm | 12:Sts | 16:Move | 21:Action | 26:Healing
 01CA8B	0:HP | 4:% | 5:heal
 01CA9D	0:All Units
-01CAAB	1:Orders | 5:Out | 7:Sts | 9:Sit | 11:Sys. | 16:[01F6][01F7][01F8]
+01CAAB	1:Orders | 5:Out | 7:Sts | 9:Sit | 11:Sys. | 16+3:Flee
 01CAE0	0:Choose.
 01CAF0	1:Sit | 3:Big Map | 8:Goal | 12:Sys. | 16:Swap
 01CB1A	0:Spell | 3:Skill | 6:Combo | 10:Members
