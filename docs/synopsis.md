@@ -58,6 +58,30 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   **Elysion, the Divine Emperor: {FF31} is his daughter**; her royal blood is the catalyst to revive the Machine God
   Supreme. He sends Machine God No. 12 (humanlike, close combat) and pins the party with his magic.
 
+## Finale (master_257BD4 end, b022-b024)
+- The party breaks Elysion's barrier on their own; Elysion is the evil spirit of an ancient people in the Emperor's
+  body. He dies, but the Machine God Supreme still fails to wake; {FF31} (here also named **Furis** in narration)
+  says her father acted of his own will. Then a voice: the Emperor's own death blood was the missing catalyst.
+- The voice is **Minister Macbeth**, "agent of an evil god": he used the Emperor as a tool and had the hero find
+  {FF31}; the Machine God Supreme levels the Rheinmetall capital (Colts and Hammerli die; Detonics survives
+  briefly). Macbeth loved Norn and hated the hero for "taking" her. Every ally speaks; the hero: the gods were just
+  people, the weapons are relics; "I fight for myself".
+- Ending: the Zodiac Gods take back the rings and the Bounty Sword and sleep; {FF31} ("good girl"; the dog's-tail
+  joke) joins the hero; each ally names their next road.
+
+## Opening and early game (master_26F317 to master_280F1B, b025-b031)
+- Crystal Cove (b031, the game's first job): Macbeth sends the hero to learn what the Federation seeks; it is
+  {FF31}, washed ashore, aged 11-12, haughty ("bounty chaser"; calls Thetis a bug). With Colts, Hammerli (a woman)
+  and the knight Detonics, they flee east through the Wolf Forest; in the capital Macbeth is away and {FF31} hires
+  the hero herself (1000G to reach the port of Cherbourg).
+- Rhipaean Mountains: Mauser the Dragon Buster (warrior of Oceanus, "face great evil with our fists") joins. The
+  northern Silka fort: rebels Roger and Miranda call {FF31} "Princess" and ask the hero to lead them; base: Midgard
+  tavern. Colts and Hammerli go home to Rheinmetall.
+- Atlas Mountains: Captain Gauche, Roger and Miranda's old Federation commander, duels one of them and dies proud.
+  Forgotten Valley: a former gravekeeper gives the key to the Sealed Tomb (north Rheinmetall), where Tsukikage
+  the Ninja Master (hired against the hero) can be hired for 5000G. The Dark Wall at the royal city falls to the
+  equipped Bounty Sword; a Federation guard lets them pass.
+
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.
 - Map hints by the fairy per location: "This is <place>. We haven't cleared it yet." / memories once cleared.

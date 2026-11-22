@@ -2,9 +2,16 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 1074/3539 entries in English (name tables, prologue b010-b011, master_1E0000
-  b012-b016, master_214606 b017-b019, master_257BD4 b020-b021); dialogue batches b022-b050 left, then side tables.
-  Pace: ~5 batches per worker context; the Orca brief forbids subagents, so each worker translates itself.
+- **Phase:** 6. Translate in progress: 1589/3539 entries in English (name tables, b010-b031: prologue,
+  master_1E0000, 214606, 257BD4 incl. the finale, 26F317, 271410, 280F1B start); dialogue batches b032-b050 left
+  (b032 = rest of master_280F1B), then side tables. Pace: ~10 batches per worker context; the Orca brief forbids
+  subagents, so each worker translates itself.
+- **Session 2026-11-22 (b022-b031):** `pages.py`: a page right before a `{FF14..}` choice code keeps the JP cursor
+  indent `　` on every English line (one option a line, `\n` between; test `test_choice_list_keeps_cursor_indent...`);
+  `batches.py rewrap` re-lays out merged pages after a `pages.py` change. 賞金かせぎ = "bounty chaser" (glossary).
+  Tutorial lines name map/menu labels: 279ADC says "choose Rheinmetall" (location label) and 279CA6 "choose
+  Information" (menus 01C4B5 情報): keep those labels matching when the side tables are translated. Yes/no RAW prompts
+  (26F317, 26F34D) use two ASCII spaces where the JP has `　` before はい/いいえ: check the cursor in phase 8.
   `tools/tl_reuse.py todo|fill bNNN` reuses English for rows whose JP repeats a translated entry (Zodiac statue
   scenes recur): translate only the `todo` rows into `bNNN.new.tsv`, `fill` writes `bNNN.out.tsv`. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
   stays byte-identical.

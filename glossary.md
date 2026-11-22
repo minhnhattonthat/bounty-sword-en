@@ -102,6 +102,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | アクラ | Accra | | | Akura |
 | オケアノス | Oceanus | | | |
 | ヴァルハラ | Valhalla | | | |
+| 水晶の入り江 | Crystal Cove | | where {FF31} washes ashore | |
+| 狼の森 | Wolf Forest | | | |
+| 忘れられた谷 | Forgotten Valley / valley forgotten | | | |
 
 ## Items / skills / terms
 | JP | EN | max | notes | Avoid |
@@ -144,6 +147,13 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 寸断のリュウビ | Ryubi the Shredder | | | |
 | ロシィ | Rossy | | Steyr's sister | |
 | 合体攻撃 | Combined attack | | combo shouts in caps (GIGA SMASHER!) | |
+| 賞金かせぎ | bounty chaser / bounty hunter | | {FF31}'s slight ("bounty chaser"), Thetis corrects her: "Bounty HUNTER!"; the hero and Colts use it of themselves | |
+| ニンジャマスター | Ninja Master | | Tsukikage's title | |
+| ドラゴンバスター | Dragon Buster | | Mauser | |
+| 暗黒の結界 / 暗黒のカベ | barrier of darkness / wall of darkness / Dark Wall | | around the Federation's royal city | |
+| 封印の墓所 | Sealed Tomb | | northern tip of Rheinmetall | |
+| 悪神の代理人 | agent of an evil god | | Macbeth | |
+| 不敗の聖騎士 | Undefeated Paladin | | the hero's old epithet | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,
