@@ -117,3 +117,36 @@ def test_grown_side_script_moves_and_callers_follow(rom, codec):
     sp["04146D"]["en"] = '{FF09:0000}{FF12}"The whole map is clear now!"{FF04}{FF00}'
     with pytest.raises(ValueError, match="no caller"):
         apply_script(rom, files, field="en")
+
+
+def test_engine_b_entry_of_new_length_jumps_to_its_copy(rom, codec):
+    """A ceremony line whose English has another length: its slot starts with `FF0B` to a copy in $F0+, and the copy
+    ends with `FF0B` back to the next entry (both through index-0 pointer records); the rest of the slot is unchanged.
+    Verified in game: work/qa/w_tramp2 (two trampolined lines in a row, then the JP line after them)."""
+    import copy
+    from rom_text import EXPANDED_TEXT, to_cpu, to_file
+    from script_text import apply_script, load, side_codecs, side_words
+    files = copy.deepcopy(load())
+    for es in files.values():
+        for e in es:
+            e["en"] = ""
+    cer = {e["id"]: e for e in files["ceremony.json"]}
+    cer["1DEBD5"]["en"] = " Welcome.{FF10:ECA9:00DD}{FF11}{FF03}"
+    out = repack(rom, apply_script(rom, files, field="en"), codec)
+    w = [out[0x1DEBD5 + i] | out[0x1DEBD6 + i] << 8 for i in range(0, 10, 2)]
+    assert w[0] == 0xFF0B
+    rec = to_file(w[2] << 16 | w[1])
+    assert to_file(w[4] << 16 | w[3]) == rec + 2 and out[rec:rec + 2] == b"\0\0"
+    dst = to_file(int.from_bytes(out[rec + 2:rec + 5], "little"))
+    assert EXPANDED_TEXT[0] <= dst < EXPANDED_TEXT[1]
+    a = side_codecs()["B"]
+    want = b"".join(x.to_bytes(2, "little") for x in side_words(dict(cer["1DEBD5"], jp=cer["1DEBD5"]["en"]), a))
+    assert out[dst:dst + len(want)] == want
+    back = out[dst + len(want):dst + len(want) + 10]
+    assert back[:2] == b"\x0b\xff"
+    rec2 = to_file(int.from_bytes(back[2:4], "little") | back[4] << 16)
+    assert int.from_bytes(out[rec2 + 2:rec2 + 5], "little") == to_cpu(0x1DEC35)
+    assert out[0x1DEBD5 + 10:0x1DEC35] == rom[0x1DEBD5 + 10:0x1DEC35]
+    cer["1DEBCF"]["en"] = "{FF03}{FF03}"
+    with pytest.raises(ValueError, match="too short"):
+        apply_script(rom, files, field="en")

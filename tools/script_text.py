@@ -17,6 +17,7 @@ Text tokens (docs/re/text.md):
 A table character that collides with an alias (`　` 0001, `‥` 0045) is written as `[hhhh]`, so tokens never clash.
 """
 import json
+import re
 from pathlib import Path
 
 from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
@@ -457,6 +458,49 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
     return out
 
 
+# Engine B (C3:C6BF) has no call stack (FF06 saves one return) but FF0B is an indexed jump: `FF0B lo bank lo bank`
+# reads an index word at the first pointer and jumps through the 3-byte pointer table at the second. An entry whose
+# English changes length keeps its slot, which gets a 5-word FF0B trampoline to its copy in the expanded ROM; the copy
+# ends with an FF0B back to the next entry (rom_text.repack), so every caller, known or not, still works.
+TRAMPOLINE_WORDS = 5
+POINTER_OPS = re.compile(r"\{FF(06|09|0B|10)((?::[0-9A-F]{4})+)\}")
+
+
+def inner_targets(entries):
+    """File offsets that engine B pointer arguments (FF06 call, FF09 choice, FF0B jump, FF10 params) point at."""
+    out = set()
+    for e in entries:
+        for m in POINTER_OPS.finditer(e["jp"]):
+            a = [int(x, 16) for x in m.group(2)[1:].split(":")]
+            out |= {(bank & 0x3F) << 16 | lo for lo, bank in zip(a[0::2], a[1::2])}
+    return out
+
+
+def trampolines(region, files, field, codec, relocs):
+    """Region words for an engine B table: same-length English in place, any other length via a trampoline."""
+    entries = region_entries(files, region["name"], region["start"], region["end"])
+    targets = inner_targets(files[region["name"] + ".json"])
+    out = []
+    for e in entries:
+        old = side_words(e, codec)
+        new = side_words(dict(e, jp=e[field]), codec) if e.get(field) else old
+        if len(new) == len(old):
+            out += new
+            continue
+        start = int(e["id"], 16)
+        end = start + 2 * len(old)
+        if len(old) < TRAMPOLINE_WORDS:
+            raise ValueError(f"{region['name']} {e['id']}: slot is {len(old)} words, too short for a jump: the "
+                             f"English must be exactly {len(old)} words")
+        inside = sorted("%06X" % t for t in targets if start < t < end)
+        if inside:
+            raise ValueError(f"{region['name']} {e['id']}: pointers land inside it ({' '.join(inside)}), so it "
+                             "must keep its length")
+        relocs.append({"id": e["id"], "text": WordCodec().decode(new), "refs": [], "tramp": start, "back": end})
+        out += old
+    return out
+
+
 def apply_script(rom, files, field="jp"):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step)."""
     OVERFLOW.clear()
@@ -471,6 +515,9 @@ def apply_script(rom, files, field="jp"):
     for r in data["regions"]:
         if r["name"] in RELOCATE:
             r["text"] = wc.decode(relocate_scripts(rom, r, files, field, codec_for(sc, r["name"]), data["relocs"]))
+            continue
+        if r["name"] in ENGINE_B_TABLES:
+            r["text"] = wc.decode(trampolines(r, files, field, codec_for(sc, r["name"]), data["relocs"]))
             continue
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):

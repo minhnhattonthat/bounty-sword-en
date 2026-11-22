@@ -224,16 +224,34 @@ def repack(rom, data, codec=None):
         out[MASTER_TABLE + 3 * i:MASTER_TABLE + 3 * i + 3] = v.to_bytes(3, "little")
     # Side-table scripts that outgrew their slot (script_text.apply_script): placed after the master spill, each
     # pointer at `refs` (file offsets of 24-bit operands) rewritten. The old copy stays in the region, unreached.
+    # An engine B entry (`tramp` = its slot) gets `FF0B` jumps instead (script_text.trampolines): the blob is
+    # [index 0000 + 3-byte pointer to the copy][copy][FF0B back][index 0000 + 3-byte pointer to `back`].
     for r in data.get("relocs", ()):
         b = codec.encode_bytes(r["text"])
+        size = len(b) + (20 if r.get("tramp") is not None else 0)
         if len(out) < ROM_EXPANDED:
             out += b"\xff" * (ROM_EXPANDED - len(out))
-        if (spill >> 16) != ((spill + len(b) - 1) >> 16):
+        if (spill >> 16) != ((spill + size - 1) >> 16):
             spill = (spill + 0xFFFF) & ~0xFFFF
-        if spill + len(b) > EXPANDED_TEXT[1]:
+        if spill + size > EXPANDED_TEXT[1]:
             raise ValueError(f"expanded text area full at side script {r['id']}")
-        out[spill:spill + len(b)] = b
+        if r.get("tramp") is not None:
+            rec, copy = spill, spill + 5
+            back = copy + len(b) + 10
+            out[rec:copy] = b"\0\0" + to_cpu(copy).to_bytes(3, "little")
+            out[back:back + 5] = b"\0\0" + to_cpu(r["back"]).to_bytes(3, "little")
+            out[r["tramp"]:r["tramp"] + 10] = jump_words(rec)
+            out[copy + len(b):back] = jump_words(back)
+        else:
+            copy = spill
+        out[copy:copy + len(b)] = b
         for p in r["refs"]:
-            out[p:p + 3] = to_cpu(spill).to_bytes(3, "little")
-        spill += len(b)
+            out[p:p + 3] = to_cpu(copy).to_bytes(3, "little")
+        spill += size
     return bytes(out)
+
+
+def jump_words(rec):
+    """Engine B `FF0B idx tbl`: index word at `rec` (0), 3-byte pointer table at rec + 2 (file offsets)."""
+    a, t = to_cpu(rec), to_cpu(rec + 2)
+    return b"".join(w.to_bytes(2, "little") for w in (0xFF0B, a & 0xFFFF, a >> 16, t & 0xFFFF, t >> 16))

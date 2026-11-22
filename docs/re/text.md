@@ -73,6 +73,12 @@ Addresses: CPU `$BB:AAAA` (HiROM, file offset = `addr & 0x3FFFFF`) or file offse
   of 3-byte pointers), FF0C +2 (JML to native code), FF0D end, FF0E +1 (advance cursor n cells), FF0F 0, FF10 +2
   (pointer to 2-word params), FF11 0, FF12 0. Here `0000` is a drawn space, not a newline.
 - Characters are placed through a position table (`$7E:4A3D`), not a running x: line breaks are FF01.
+- FF06 saves one return address (`$7E:4A49-4D`), no stack. FF0B handler `C3:CB80`: index = word at ptr1, target =
+  3-byte entry `index*3` of the table at ptr2; sets `$7E:4A37/39`, offset 0. The build uses it as a 10-byte
+  trampoline: an engine B entry (ceremony, short_strings, descriptions) whose English has another length jumps to
+  its copy in `$F0+`, which jumps back to the next entry (`script_text.trampolines`, verified `work/qa/w_tramp2`).
+  Engine A prompts that grow move whole (question + FF03 + choices) and their `03`/`43 ptr24` callers are rewritten
+  (`script_text.RELOCATE`, verified via MSGPTR).
 
 ## Pointers (verified for one entry; table bounds by zero padding)
 
