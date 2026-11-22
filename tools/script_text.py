@@ -21,7 +21,7 @@ import re
 from pathlib import Path
 
 from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
-from rom_text import REGIONS, TBL, WordCodec, unpack, word, words_at
+from rom_text import MASTER_TABLE, REGIONS, TBL, WordCodec, to_cpu, unpack, word, words_at
 from tag_font import CENTRED, TAG_CELLS, TagFont, speaker_names
 from tag_font import headers as tag_headers
 
@@ -410,6 +410,7 @@ def region_entries(files, name, start, end):
 
 
 OVERFLOW = []   # side entries whose `en` overflowed a fixed field in the last apply_script (JP kept)
+ADDR = {}       # side entry id -> file offset of its first byte in the last apply_script (relocs: after repack)
 TAGS = []       # the TagFont of the last apply_script(tags=True) (build.py writes its tiles)
 
 # Engine A side tables whose scripts may move: table -> the event-script opcodes whose 24-bit operand calls a script
@@ -454,6 +455,13 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
         head = entries[run[0]]
         old = [x for j in run for x in jp[j]]
         moved = [x for j in run for x in new[j]]
+        offs, p = [], 0
+        for j in run:
+            offs.append((entries[j]["id"], 2 * p))
+            p += len(new[j])
+        base = region["start"] + 2 * len(out)
+        if moved == old or len(moved) <= len(old):
+            ADDR.update((i, base + o) for i, o in offs)
         if moved == old:
             out += old
             continue
@@ -468,7 +476,7 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
         if not refs:
             raise ValueError(f"{region['name']} {head['id']}: English is {2 * (len(moved) - len(old))} bytes "
                              "longer than the JP and no caller is known, so it must fit in place")
-        relocs.append({"id": head["id"], "text": WordCodec().decode(moved), "refs": refs})
+        relocs.append({"id": head["id"], "text": WordCodec().decode(moved), "refs": refs, "ids": offs})
         out += old
     return out
 
@@ -516,6 +524,7 @@ def trampolines(rom, region, files, field, codec, relocs):
     targets = engine_b_targets(rom, region["start"], region["end"], region["name"])
     out = []
     for e in entries:
+        ADDR[e["id"]] = region["start"] + 2 * len(out)      # a trampoline starts at the slot too
         old = side_words(e, codec)
         new = side_words(dict(e, jp=e[field]), codec) if e.get(field) else old
         if len(new) == len(old):
@@ -547,7 +556,8 @@ def apply_script(rom, files, field="jp", tags=False):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step). `tags`: render
     English speaker tags and location labels with tools/tag_font.py (the font is left in TAGS for the build)."""
     OVERFLOW.clear()
-    TAGS[:] = [TagFont()] if tags else []
+    ADDR.clear()
+    TAGS[:]= [TagFont()] if tags else []
     names = speaker_names() if tags else {}
     mc, sc, wc = TextCodec(True), side_codecs(), WordCodec()
     data = unpack(rom)
@@ -574,6 +584,7 @@ def apply_script(rom, files, field="jp", tags=False):
                     and not re.search(r"[{\[]", e[field])):
                 src = tag_source(e, r["name"], field, names, TAGS[0])
             codec, pack = codec_for(sc, r["name"]), r["name"] in C1_TABLES
+            ADDR[e["id"]] = r["start"] + 2 * len(words)
             try:
                 words += side_words(src, codec, pack=pack)
             except ValueError:
@@ -586,4 +597,24 @@ def apply_script(rom, files, field="jp", tags=False):
         r["text"] = wc.decode(words)
     import byte_scripts
     data["byte_writes"], data["byte_sites"] = byte_scripts.layout(rom, files, field)
+    ADDR.update(byte_scripts.ADDR)
     return data
+
+
+def strings_tsv(built, data):
+    """build/strings.tsv for scripts/textcover.py: `id<TAB>CPU address` of every text entry's first byte in the built
+    ROM (master: through its pointer table; side tables: ADDR, relocated scripts placed by rom_text.repack)."""
+    addr = dict(ADDR)
+    for r in data.get("relocs", ()):
+        for i, off in r.get("ids", ()):
+            addr[i] = r["at"] + off
+    rows = []
+    for name, entries in sorted(load().items()):
+        for e in entries:
+            if name.startswith("master_"):
+                if e.get("slots"):
+                    p = MASTER_TABLE + 3 * e["slots"][0]
+                    rows.append((e["id"], int.from_bytes(built[p:p + 3], "little")))
+            elif e.get("kind") == "text" and e["id"] in addr:
+                rows.append((e["id"], to_cpu(addr[e["id"]])))
+    return "".join(f"{i}\t{a:06X}\n" for i, a in rows)

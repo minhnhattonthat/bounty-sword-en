@@ -49,6 +49,7 @@ BYTE_TABLES = {
 }
 # Relocated units: the last bank of the expanded text area (rom_text.EXPANDED_TEXT stops below it).
 BYTE_AREA = (0x3E0000, 0x3F0000)
+ADDR = {}    # entry id -> file offset of its first byte in the last layout() (build/strings.tsv)
 
 TOKEN = re.compile(r"\{[^}]*\}")
 ADDR_OP = re.compile(r"\{(FF2[579A]):([0-9A-F]{6})\}$")
@@ -215,6 +216,7 @@ def layout(rom, files, field="en"):
     codec = _codec()
     writes, sites = [], []
     spill = BYTE_AREA[0]
+    ADDR.clear()
     for name, (segs, _) in BYTE_TABLES.items():
         entries = files[name + ".json"]
         seg_of = lambda off: next((s, e) for s, e in segs if s <= off < e)
@@ -244,6 +246,7 @@ def layout(rom, files, field="en"):
                 addr[entries[i]["id"]] = p
                 p += len(pieces[i].data)
             placed.append((u, base))
+        ADDR.update(addr)
         for u, base in placed:
             blob = bytearray()
             for i in u:

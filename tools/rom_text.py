@@ -257,6 +257,7 @@ def repack(rom, data, codec=None):
             out[copy + len(b):back] = jump_words(back)
         else:
             copy = spill
+        r["at"] = copy                      # script_text.strings_tsv
         out[copy:copy + len(b)] = b
         for p in r["refs"]:
             out[p:p + 3] = to_cpu(copy).to_bytes(3, "little")

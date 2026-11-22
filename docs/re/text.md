@@ -148,7 +148,9 @@ reader not confirmed (phase 4 confirms each with a ROM-read log before extractin
 | unit_names | `C6:E392` | prologue | verified; records are **6 words**, not 5 |
 | unit_titles, classes, items, constellations, c8_digits | `C1:8E96` (menu text drawer) | battle_status, camp_file, camp_party_status, battle_items, shop | verified; items are 10-word records from 0x1ADFEF (record 0 blank); titles 16 words from 0x08DF5E (`c1runs.lua`: n=16), constellations 5 words (n=5 at C8:E87C), digits one word at a time; spells/orders by layout only |
 | short_strings, ceremony | `C3:C78B` (engine B word reader) | scen_01, ceremony, name_entry | verified engine B |
-| battle_prompts(_b), system_prompts, descriptions, objectives | not read on any warp | - | guess: reach them in phase 8 (`textcover`) |
+| spells, orders, classes, unit_titles (session x) | `C1:8E90` run, pointer `$34-$36` | spells: camp_party_status (Down = next unit); orders: camp_orders (A); classes: camp_save slot list (hero class per file); titles: window op `26` (`C1:89F4`: record `$130E,x * 32 + C8:DF5E`) on the unit status window (camp: A, Down, A, Select, X, Y, R, then A) | verified by `tools/debug/sidecover.py` (all entries read); a swapped title was read but not seen on screen (check) |
+| descriptions | `C3:C504`: Select in the camp Gear/Pack list; pointer `index` (`$2E`) of the 3-byte table at `$7E4A31` (`CE:EC58` for the item list; spells use `CE:E459`) -> engine B `$7E4A37`/`$7E4A39`, start flag `$7E4A25` (`C3:C52D`) | camp_items (prep route in `sidecover.py`) | verified: 193 table heads (each `{FF03}` + a continuation that FF06-calls the shared sub-strings) |
+| battle_prompts(_b), system_prompts, objectives | not read on any warp | - | guess: reach them in phase 8 (`textcover`) |
 
 - **objectives** (0x18FD06): one string per map, lines split by `FFFE`, a string ends at `FFFE` before the next one;
   a 16-bit pointer table (lo words `$FD1E`, `$FD5A`, ... = file 0x18FD1E ...) sits at 0x18FE72-0x18FEE8 inside the

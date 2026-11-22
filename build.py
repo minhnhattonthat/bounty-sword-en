@@ -24,7 +24,7 @@ from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
 from rom_check import allowed_ranges, check_ranges, put_byte_patches, put_default_names, write_sites  # noqa: E402
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
-from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load  # noqa: E402
+from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load, strings_tsv  # noqa: E402
 from tag_font import TagFont  # noqa: E402
 
 ORIG = ROOT / "rom" / "Bounty Sword (Japan).sfc"
@@ -90,6 +90,9 @@ def build(out=OUT, identity=False, marker=False, qa=()):
         if code:
             out.unlink(missing_ok=True)
             sys.exit("romdiff: bytes changed outside the allowed ranges (tools/rom_check.py):\n" + text)
+        # text coverage keys of this build (tools/debug/textcover_all.py, scripts/textcover.py)
+        keys = BUILD / "strings.tsv" if out == OUT else out.with_suffix(".strings.tsv")
+        keys.write_text(strings_tsv(built, data), encoding="utf-8")
     return rom, built
 
 

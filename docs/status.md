@@ -2,12 +2,28 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session v: inkbox gate built, 10/10 boxes ok on build c014fcdc11f2;
-  **next: (1) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp "Discard it?" (01CCCC, YES/NO; the camp_items
-  menu flow past the item list is not worked out: `AFTER` keys a/down/down/a only toggled the Pack panel), "Promote?
-  OK No" (01D38D, needs a unit able to change class), "Retreat! Sure? OK No" (01C578, not shown on scenario 37);
-  (2) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) `textcover.py` over side tables
-  (master coverage 2335/2335, `work/qa/cover`); (4) to-do 3 shop lines read in game**).
+- **Phase:** 8. QA in the emulator: in progress (session x: text coverage 3281/3573 on build c014fcdc11f2;
+  **next: (1) close the 292 unshown strings (`work/textcover_report.out`): ceremony 86, short_strings 65 (shop
+  scripts), menus 34, windows 22, objectives 22, battle_prompts 22, system_prompts 12, level_up 8, speakers 7,
+  descriptions 3 (0EE55E lone FF00, 0EEE9A, 0EF038), target_prompts 3, battle_prompts_b 3, menus_c 2, unit_records 2,
+  enemy_lost 1: new `sidecover.py` jobs (engine B: hook where the script pointer `$7E4A37/39` is set, as for
+  descriptions; engine A prompts: their callers), new scenes, or `docs/text_unshown.tsv` waivers with the reason;
+  (2) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp "Discard it?" (01CCCC), "Promote? OK No" (01D38D),
+  "Retreat! Sure? OK No" (01C578); (3) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`);
+  (4) to-do 3 shop lines read in game**).
+- **Session 2026-11-23x (phase 8, text coverage):** `build.py` now writes **`build/strings.tsv`** (`id<TAB>CPU
+  address` of every master message and side-table text entry, from the build's own layout: `script_text.ADDR`,
+  relocated engine A scripts at their copy, byte tables in bank $FE, engine B trampolines at their slot; test
+  `test_strings_tsv_keys_are_where_each_string_starts`). New **`tools/debug/textcover_all.py`** (one coverage dir
+  `work/qa/textcover`: master via `msgcover.py`, the 146-scene tour with `probes/textcover.lua` over the key ranges
+  and `--states`, then `sidecover.py`, then `textcover.py --mask 0x3FFFFF --waive docs/text_unshown.tsv`) and
+  **`tools/debug/sidecover.py` + `.lua`** (pointer swap from a scene state: each drawer call that would draw an
+  entry of the table draws the next unread one while a key route redraws the menu; jobs: items, spells,
+  constellations, classes, orders, unit_titles via the C1 run `$34`; descriptions via engine B `$7E4A37/39` set at
+  `C3:C52D`, Select in the camp item list; readers in `docs/re/text.md`). Results: master 2335/2335, all 7 swap
+  jobs complete (descriptions 193 heads, 402/405 entries read), total **3281/3573**. Open check: a swapped unit
+  title is read by window op 26 but was not seen drawn on the status window (`work/qa/sc_try/unit_titles`).
+  check 60 passed, lint 0, build sha1 c014fcdc11f2 (unchanged: the tour gate stands).
 - **Session 2026-11-23w (phase 8, tour + gate):** full tour re-run on build c014fcdc11f2: `work/qa/tour` 146/146 ok.
   `warp_all.py --sheet` writes only `proofs_N.png`, so the gate sheets come from `sheet.py "work/qa/tour/*/proof.png"
   --div 1 --cols 4 --max 12 --out work/qa/tour/sheets/sheet.png`; then `qa_gate.py init work/qa/manifest.tsv

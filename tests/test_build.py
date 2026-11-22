@@ -106,6 +106,38 @@ def test_part_cards_and_gender_glyph_are_english(built):
     assert data[0x18AA8:0x18AB0] == bytes.fromhex("a94a008003a94900")
 
 
+def test_strings_tsv_keys_are_where_each_string_starts(built):
+    """build.py's strings.tsv (textcover keys): one row per master message and side-table text entry, each address
+    in this ROM where that string's bytes start: relocated engine A scripts at their copy, byte tables in bank $FE,
+    trampolined engine B entries at their slot (the FF0B jump), the rest in place."""
+    import byte_scripts as bs
+    from script_text import C1_TABLES, codec_for, load, side_codecs, side_words, ENGINE_B_TABLES
+    _, data, out = built
+    keys = dict(line.split("\t") for line in out.with_suffix(".strings.tsv").read_text(encoding="utf-8").splitlines())
+    files, sc = load(build.SCRIPT), side_codecs()
+    masters = sum(1 for f, es in files.items() if f.startswith("master_") for e in es if e.get("slots"))
+    sides = [(f[:-5], e) for f, es in files.items() if not f.startswith("master_") for e in es if e.get("kind") == "text"]
+    assert len(keys) == masters + len(sides)
+    checked = 0
+    for name, e in sides:
+        at = int(keys[e["id"]], 16) & 0x3FFFFF
+        if name in bs.BYTE_TABLES:
+            head = bs.encode_entry(e.get("en") or e["jp"], bs._codec()).data[:4]
+        else:
+            try:
+                w = side_words(dict(e, jp=e.get("en") or e["jp"]), codec_for(sc, name), pack=name in C1_TABLES)[:2]
+            except ValueError:      # longer than its field as plain text: a tag-font field (below)
+                w = [0xFFFF]
+            head = b"".join(x.to_bytes(2, "little") for x in w)
+        if data[at:at + len(head)] == head:
+            checked += 1
+        elif name in ENGINE_B_TABLES:
+            assert data[at:at + 2] == b"\x0b\xff", f"{name} {e['id']}: neither its text nor a trampoline at {at:06X}"
+        else:   # speaker tags and location labels are drawn as tag-font codes, not the plain text
+            assert name in ("speakers", "locations", "unit_records"), f"{name} {e['id']}: {at:06X} isn't its text"
+    assert checked > 850
+
+
 def test_battle_setup_name_overrides_are_english(built):
     """tools/re/battle_setup.py: every name override the parser C0:A3AE copies to $1132 (record table C4:2A39) is
     English in the build except the {FF31} variable ones, and the English bytes keep the records parsing the same."""
