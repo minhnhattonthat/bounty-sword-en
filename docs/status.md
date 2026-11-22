@@ -2,19 +2,25 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session ae). Gate = `python -X utf8 tools/release.py`. Done this session:
-  jp_left 0 (C4 names), polish.md all ticked (build 647164b684bb). It will now stop at, in order: qa_gate on
-  `work/qa/manifest.tsv` (build changed since the d7d9d1892cb6 tour: ~45 dialogue entries, descriptions, ceremony,
-  level-up, an item name, 11 name records -> full re-tour with `warp_all.py --states --sheet` + read-only verdicts),
-  story manifest (no verdicts yet), textcover (007645 / 0413E7 not yet shown). **Next, in this order:** (1)
-  story pass (below); (2) re-tour + verdicts + textcover_all; (3) release.py to a zip. Story pass: chapter files exist (`tools/story_chapters.py` -> 18 files
-  `work/qa/story/chapters/`, manifest `work/qa/story/manifest.tsv` initialised); codex is out of quota until
-  2026-11-26 10:32, so before then read them yourself in a fresh read-only pass, one chapter at a time
-  (~35 KB each: Read with offset/limit), brief = `$SKILL/assets/story-reviewer-brief.md`, write
-  `work/qa/story/verdicts/<chapter id>.tsv` (`id<TAB>ok|issue<TAB>note`, id = file name without .txt), Minors to
-  polish.md; re-run `story_chapters.py` + `qa_gate.py init` after text fixes and add `fixed` lines for changed
-  chapters (session ae changed text in most chapters: re-run `story_chapters.py` + `qa_gate.py init` FIRST). Never
-  `gh release create`.
+- **Phase:** 9. Release ready (session af): `tools/release.py` exit 0 on build **80c0851383f1** ->
+  `release/Bounty_Sword_EN_v1.0.zip` (147451 bytes: .bps + README.txt; patch sha1 3694f0ef7263; re-applied by hand
+  to the clean dump: sha1 80c0851383f1 = build). Publishing (GitHub release, tag v1.0) is the owner's: never run
+  `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
+  again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
+- **Session 2026-11-23af (phase 9, story pass + gate to a zip):** (a) **Story pass** 18/18 chapters in an own
+  read-only pass (codex out of quota until 2026-11-26): verdicts `work/qa/story/verdicts/`. Fixed: the hero's line
+  of ten years ago (295E4C) now repeats 24E502 word for word; Ajax/hero duel words (29C3BA/29C4DA) repeat
+  24EF74/24EF38; 29C1F8 "Hey, {hero}..."; Zodiac statue opener (11 copies) in thou/art like the other statue lines;
+  Mauser "the great Mauser" (297B5C); "fighter of Oceanus" (271A36); no contractions for Elysion/Miranda/Robun.
+  Edit `pages` then `batches.py rewrap`: **gotcha**, rewrap also rewrites the three chapter-title entries
+  (24DB56 "An Endless Dream"/"Days That Never Return", 290400 "Bounty Hunter") from 「」 to straight quotes: put
+  their `en` back by hand after each rewrap. (b) Re-tour 147/147 on 80c0851383f1, 13 sheets read (all ok,
+  `work/qa/verdicts/tour_80c0851383f1.tsv`); stress 15/15 re-run, 2 sheets ok (`verdicts_stress/`). (c)
+  **textcover bug found:** `msgcover.py --side` deleted `master/side_a` on every run, so textcover_all's safety
+  re-run wiped the first run's logs (the "47 failing / nothing to do" of sessions aa/ac). Each side run now gets
+  its own dir (side_a, side_a_2, ..), cleared by the main master run. Report **3547/3576 shown, 29 waived, 0
+  failing**; 007645 seen in English ("The Yori..." mid-print); 0413E7's read logged at its relocated English copy
+  F38E6E (box not in the first-frame shot). check 61 passed, lint 0, jp_left 0.
 - **Session 2026-11-23ae (phase 9, jp_left + polish):** (a) **C4 names**: a whole-ROM scan for script op 16
   (battle-setup name override: `16 slot` + 6-word name) and op 64 (`64 slot` + name; C4:E85C.. chain `62 xx
   ptr24` + `64 slot name`, and C4:E3CA) found 11 JP name records the battle_setup parser misses (043F2F 海兵隊長,
@@ -494,6 +500,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Open bugs:** shop lines not all read in game yet (to-do 3); scenario warps ignore keys queued after SCENE_OK in
   shops and battle menus (debug tool; a state run takes them, session ab). (C4 battle-setup names: fixed in
   session u.)
-- **Waiting on the user:** (not blocking) D15 British spelling and D16 releasing with the abbreviated menu labels
+- **Waiting on the user:** (not blocking) the verified release zip `release/Bounty_Sword_EN_v1.0.zip` is ready to
+  publish when you choose (GitHub release + tag v1.0); nothing has been published. (not blocking) D15 British spelling and D16 releasing with the abbreviated menu labels
   and engine B letter gaps listed as known issues: say if either should change. (not blocking) D14 shop headers "Arms 1" / "Item 1" (3-cell labels so they stay centred);
   say if you'd rather have "Weapons"/"Items" off-centre. (Keyboard input in Mesen not checked by hand: headless session.)

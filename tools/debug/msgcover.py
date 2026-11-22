@@ -64,12 +64,16 @@ def side_job(rom, out, hook, report, wait, shots):
     ptrs = [keys[e["id"]] for t in SIDE_A
             for e in json.loads((ROOT / "script" / f"{t}.json").read_text(encoding="utf-8"))
             if e["id"] in unshown and e["id"] in keys]
-    d = out / "side_a"
-    if d.exists():
-        shutil.rmtree(d)
     if not ptrs:
         print("side_a: nothing to do")
         return 0
+    # each side run gets its own dir (side_a, side_a_2, ..): deleting the last one's logs here un-showed what it showed
+    # (sessions aa-af: the re-run in textcover_all wiped the first run's lines); the main master run clears them all
+    d = out / "side_a"
+    n = 1
+    while d.exists():
+        n += 1
+        d = out / f"side_a_{n}"
     extra = ["--script", str(DEBUG / "msgcover.lua"), "--var", f"HOOK_STATE=[[{hook.as_posix()}]]",
              "--var", f"PTRS='{','.join(ptrs)}'", "--var", f"WAIT={wait}"] + (["--var", "MSGSHOT=1"] if shots else [])
     code = emu(rom, d, (len(ptrs) + 2) * (wait + 10) + 600, *extra)
@@ -109,6 +113,8 @@ def main():
 
     if a.side:
         sys.exit(side_job(rom, out, hook, a.side, a.wait, a.shots))
+    for d in [out / "side_a"] + list(out.glob("side_a_*")):   # side runs of an older build: addresses move
+        shutil.rmtree(d, ignore_errors=True)
 
     n = a.last - a.first + 1
     step = -(-n // a.jobs)

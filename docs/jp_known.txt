@@ -1128,6 +1128,7 @@
 28F897	master	オレから
 28F8A3	master	買いたくなんてないよな
 28F8CF	master	お金が足りないよ
+29CC20	master	出会いも
 29CC2C	master	がさらわれ
 29CC3A	master	アジャックスと
 29CC4A	master	再会した事も
