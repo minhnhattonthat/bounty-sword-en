@@ -70,7 +70,11 @@ REGIONS = (
     ("descriptions", 0x0EE59E, 0x0EFD28),
     ("objectives", 0x18FD06, 0x18FF48),
     ("items", 0x1ADFEF, 0x1AEDB9),
-    ("short_strings", 0x1AF349, 0x1AFDC3),
+    # Starts at the first script (0x1AF53F, "{X}は{Y}になりました。"); 0x1AF349-0x1AF53E are data words (0000 runs and
+    # tile-like bytes, no text). 0x1AF617 is one code byte (RTL, the target of `FF0C:F617`); the shop scripts after it
+    # are in the even word phase (`「どれを買って…」` at 0x1AF63C).
+    ("short_strings", 0x1AF53F, 0x1AF617),
+    ("short_strings", 0x1AF618, 0x1AFDC2),
     ("ceremony", 0x1DEBCF, 0x1DF5A3),
 )
 

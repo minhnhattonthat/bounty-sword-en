@@ -38,7 +38,7 @@
  {
   "id": "1DECA9",
   "kind": "text",
-  "jp": "[00F0][00F0]{FF03}",
+  "jp": "[00F0][00F0]",
   "en": "",
   "refs": [
    "1DEC2D",
@@ -50,6 +50,12 @@
    "1DEEC7",
    "1DEF05"
   ]
+ },
+ {
+  "id": "1DECAD",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
  },
  {
   "id": "1DECAF",

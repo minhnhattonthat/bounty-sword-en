@@ -266,7 +266,7 @@ def side_entries(rom, name, start, end, codec, ptrs):
     anchors = window_anchors(rom, start, end) if rule[0] == "anchored" else set()
     cuts = anchors
     if name in ENGINE_B_TABLES:
-        cuts = {(t - start) // 2 for t in engine_b_targets(rom, start, end) if (t - start) % 2 == 0}
+        cuts = {(t - start) // 2 for t in engine_b_targets(rom, start, end, name) if (t - start) % 2 == 0}
     out = []
     for a, b in split_region(words, rule, args, cuts):
         w = words[a:b]
@@ -380,10 +380,12 @@ def dump(rom, out=SCRIPT, force=False, refresh=False):
             if not refresh:
                 continue
             old = {e["id"]: e for e in json.loads(path.read_text(encoding="utf-8"))}
-            if set(old) != {e["id"] for e in entries}:
-                raise ValueError(f"{name}: entry ids changed; refresh can't carry English across a re-split")
+            # A re-split may cut or join entries with no English; one with English must keep its id.
+            lost = sorted(i for i, o in old.items() if o.get("en") and i not in {e["id"] for e in entries})
+            if lost:
+                raise ValueError(f"{name}: entries with English would vanish in the re-split: {lost[:8]}")
             for e in entries:
-                o = old[e["id"]]
+                o = old.get(e["id"], {})
                 if o.get("en") and o["jp"] != e["jp"]:
                     requeue.append(e["id"])
                 e.update({k: v for k, v in o.items() if k not in e or k in ("en", "notes", "status")})
@@ -471,32 +473,40 @@ def relocate_scripts(rom, region, files, field, codec, relocs):
 TRAMPOLINE_WORDS = 5
 
 
-def engine_b_targets(rom, start, end):
-    """File offsets in [start, end) that the region's own engine B pointer arguments reach: FF06 call, FF09 choice,
-    FF0B jump (its index pointer and every entry of its 3-byte jump table that lands in the region), FF10 params."""
-    args, out, p = ENGINE_B_ARGS, set(), start
-    while p < end:
-        w = word(rom, p)
-        a = [word(rom, p + 2 + 2 * i) for i in range(args.get(w, 0))]
-        p += 2 + 2 * len(a)
-        if w not in (0xFF06, 0xFF09, 0xFF0B, 0xFF10):
-            continue
-        ptrs = [(bank & 0x3F) << 16 | lo for lo, bank in zip(a[0::2], a[1::2])]
-        out |= set(ptrs)
-        if w == 0xFF0B:
-            t = ptrs[1]
-            for i in range(64):
-                v = rom[t + 3 * i] | rom[t + 3 * i + 1] << 8 | (rom[t + 3 * i + 2] & 0x3F) << 16
-                if not start <= v < end:
-                    break
-                out.add(v)
+def engine_b_targets(rom, start, end, name=None):
+    """File offsets in [start, end) that the table's own engine B pointer arguments reach: FF06 call, FF09 choice,
+    FF0B jump (its index pointer and every entry of its 3-byte jump table that lands in the table), FF10 params.
+    With `name`, every REGIONS segment of that table is scanned (short_strings: the odd-phase menu strings are
+    called from the even-phase shop scripts)."""
+    segs = [(s, e) for n, s, e in REGIONS if n == name] or [(start, end)]
+    inside = lambda v: any(s <= v < e for s, e in segs)
+    args, out = ENGINE_B_ARGS, set()
+    for seg_start, seg_end in segs:
+        p = seg_start
+        while p < seg_end:
+            w = word(rom, p)
+            a = [word(rom, p + 2 + 2 * i) for i in range(args.get(w, 0))]
+            p += 2 + 2 * len(a)
+            if w not in (0xFF06, 0xFF09, 0xFF0B, 0xFF10):
+                continue
+            ptrs = [(bank & 0x3F) << 16 | lo for lo, bank in zip(a[0::2], a[1::2])]
+            out |= set(ptrs)
+            if w == 0xFF10:   # a 2-word parameter block (1AF565 `ＰＸ`, 1DECA9 `[00F0][00F0]`): what follows is text
+                out.add(ptrs[0] + 4)
+            if w == 0xFF0B:
+                t = ptrs[1]
+                for i in range(64):
+                    v = rom[t + 3 * i] | rom[t + 3 * i + 1] << 8 | (rom[t + 3 * i + 2] & 0x3F) << 16
+                    if not inside(v):
+                        break
+                    out.add(v)
     return {t for t in out if start <= t < end}
 
 
 def trampolines(rom, region, files, field, codec, relocs):
     """Region words for an engine B table: same-length English in place, any other length via a trampoline."""
     entries = region_entries(files, region["name"], region["start"], region["end"])
-    targets = engine_b_targets(rom, region["start"], region["end"])
+    targets = engine_b_targets(rom, region["start"], region["end"], region["name"])
     out = []
     for e in entries:
         old = side_words(e, codec)
