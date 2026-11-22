@@ -24,7 +24,21 @@ FILL = "The quick brown fox jumps over the lazy dog. "
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{4}\]|\n|.", re.S)
 NAME_TOKENS = {"{hero}"} | {"{FF%02X}" % c for c in (0x1F, 0x20, 0x21, 0x22, 0x23, 0x24, 0x28, 0x31)}
 CLOSE = "」"           # draws as '"' in the VWF (asm/vwf.asm)
-KEEP_JP = {"speakers"}  # FF15 literal names in the master text must match this table (portraits)
+KEEP_JP = set()
+# Speaker names: an FF15 literal header (6 words) must equal its speakers.json record for the portrait (C2:5B3C), so
+# both get the same 6-letter label `K<n>abc..`: table names first (n = record index), then other literal names.
+SPK = re.compile(r"\{spk\}([^\n{]*)\n")
+
+
+def speaker_labels(files):
+    names = [e["jp"] for e in files.get("speakers.json", []) if e.get("kind") == "text"]
+    for name in sorted(n for n in files if n.startswith("master_")):
+        for e in files[name]:
+            for m in SPK.finditer(e["jp"]):
+                lit = m.group(1).rstrip("　")
+                if lit and len(TOKEN.findall(m.group(1))) == 6 and lit not in names:
+                    names.append(lit)
+    return {n: (f"K{i}" + "abcdefghij")[:6] for i, n in enumerate(names)}
 
 
 def fill_line(head, px, tail=""):
@@ -100,7 +114,10 @@ def card_marker(eid, jp):
     return "\n".join(out) + "\n"
 
 
-def master_marker(eid, jp, torture=True):
+def master_marker(eid, jp, torture=True, speakers=None):
+    if speakers:
+        jp = SPK.sub(lambda m: "{spk}" + speakers.get(m.group(1).rstrip("　"), m.group(1)) + "\n"
+                     if len(TOKEN.findall(m.group(1))) == 6 else m.group(0), jp)
     if eid == TORTURE_ID and torture:
         head, _, rest = jp.partition("\n")       # keep the speaker header, replace box 1, mark the rest
         return head + "\n" + torture_boxes() + "{next}" + master_marker(eid, rest.split("{next}", 1)[1], False)
@@ -144,10 +161,74 @@ def master_marker(eid, jp, torture=True):
     return "".join(out)
 
 
+TAB = "[0F7F]"
+
+
+def window_marker(label, jp, width):
+    """C1 window string (`[count][words]`, drawn into tile slots that a tilemap shows in slices): JP draws one word
+    a cell, so each run of non-space JP words is an item at fixed cells. Each item gets its own tag (the label for
+    item 0, its index for the rest) filled to the item's cells x 8 px, placed by TABs (asm/vwf.asm C1Run: TAB =
+    next cell boundary), so every slice on screen names its item and shows its cell budget."""
+    adv = advance()
+    toks = TOKEN.findall(jp)
+    items, i = [], 0
+    while i < len(toks):
+        if toks[i] == "　":
+            i += 1
+            continue
+        s = i
+        while i < len(toks) and toks[i] != "　":
+            i += 1
+        items.append((s, i))
+
+    def px_of(s):
+        return sum(adv[c] for c in s)
+
+    def build(fills):
+        out, px, words = [], 0, 0
+        for j, (s, e) in enumerate(items):
+            while px < s * 8:
+                px = px // 8 * 8 + 8
+                out.append(TAB)
+                words += 1
+            f = fills[j]
+            nxt = items[j + 1][0] * 8 if j + 1 < len(items) else width * 8
+            if len(f) % 2 and px + px_of(f + " ") <= nxt:
+                f += " "                            # free in the pair word; saves a TAB when it crosses a cell edge
+            out.append(f)
+            px += px_of(f)
+            words += (len(f) + 1) // 2              # pack_pairs: two letters a word
+        return "".join(out), words
+
+    fills, heads = [], []
+    for j, (s, e) in enumerate(items):
+        head = label if j == 0 else str(j)
+        budget, txt = (e - s) * 8, ""
+        for c in head + "abcdefghijklmnopqrstuvwxyz" * 4:
+            if px_of(txt + c) > budget:
+                break
+            txt += c
+        fills.append(txt)
+        heads.append(min(len(head), len(txt)))
+    text, words = build(fills)
+    while words > width:            # over the count: trim filler letters first, then tags from the last item back
+        extra = [len(f) - h for f, h in zip(fills, heads)]
+        if max(extra) > 0:
+            k = max(range(len(fills)), key=lambda x: extra[x])
+        else:
+            k = max(x for x in range(len(fills)) if fills[x])
+            heads[k] -= 1
+        fills[k] = fills[k][:-1]
+        text, words = build(fills)
+    return text
+
+
 def side_marker(tag, idx, entry, c1=False):
     label = f"{tag}{idx}"
     letters = label + "abcdefghijklmnopqrstuvwxyz" * 4
     toks = TOKEN.findall(entry["jp"])
+    if c1 and "head" in entry:      # window string: item tags at the JP cells
+        return window_marker(label, entry["jp"], entry["width"])
     if c1 and "width" in entry:     # C1 run: proportional, the field's cells x 8 px (asm/vwf.asm C1Run)
         return fill_line(label, entry["width"] * 8)
     if "width" in entry:
@@ -166,13 +247,19 @@ def marker_files(files, rom):
     """rom = the original dump (card_slots reads the chapter-card table from it)."""
     files = copy.deepcopy(files)
     cards = card_slots(rom)
+    spk = speaker_labels(files)
     for name, entries in files.items():
         if name.startswith("master_"):
             for e in entries:
                 card = cards & set(e.get("slots", []))
-                e["en"] = card_marker(e["id"], e["jp"]) if card else master_marker(e["id"], e["jp"])
+                e["en"] = card_marker(e["id"], e["jp"]) if card else master_marker(e["id"], e["jp"], speakers=spk)
             continue
         if name[:-5] in KEEP_JP:
+            continue
+        if name == "speakers.json":
+            for e in entries:
+                if e.get("kind") == "text" and e["jp"]:
+                    e["en"] = spk[e["jp"]]
             continue
         tag = TAGS[name[:-5]]
         for i, e in enumerate(entries):

@@ -87,6 +87,16 @@ def test_side_entries_tile_regions(files):
         assert p == end, name
 
 
+def test_c1_window_strings_keep_their_count_word(files):
+    """menus/windows/menus_c: every text entry is a counted string at a window-script op 02 target, so the marker
+    and translation can never overwrite a count word (n=3951 at C1:D2F9 garbled camp and shops)."""
+    for name in ("menus", "windows", "menus_c"):
+        for e in files[name + ".json"]:
+            if e["kind"] == "text":
+                assert int(e["head"], 16) == e["width"], e["id"]
+                assert 0 < e["width"] < 0x100, e["id"]
+
+
 def test_text_entries_have_en_and_data_has_none(files):
     for name, es in files.items():
         for e in es:

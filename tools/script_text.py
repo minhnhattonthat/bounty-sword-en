@@ -20,7 +20,7 @@ import json
 from pathlib import Path
 
 from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
-from rom_text import REGIONS, TBL, WordCodec, unpack, words_at
+from rom_text import REGIONS, TBL, WordCodec, unpack, word, words_at
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "script"
@@ -117,12 +117,14 @@ class TextCodec:
 #   ("term",): a string ends after a run of 0000 words.
 #   ("ends", {words}): a string ends after any of these control words.
 #   ("counted",): [count][count words] strings back to back; anything that breaks the chain is a 1-word entry.
+#   ("anchored",): [count][count words] strings only where a C8 window script's op 02 points (`window_anchors`);
+#       every stretch between them is one data entry (tile/layout tables: tools/re/winscript.py, docs/re/vwf.md).
 SPLIT = {
     "locations": ("fixed", 10, 0),
     "battle_prompts_b": ("ends", {0xFF00, 0xFF03}),
-    "menus": ("term",),
-    "windows": ("counted",),
-    "menus_c": ("term",),
+    "menus": ("anchored",),
+    "windows": ("anchored",),
+    "menus_c": ("anchored",),
     "speakers": ("fixed", 8, 2, 8),     # records (6-word name + 2 ids) start at 0x025D6D = C2:5D6D
 
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
@@ -142,11 +144,19 @@ SPLIT = {
 ENGINE_B_TABLES = {"ceremony", "short_strings", "descriptions"}
 
 
-def split_region(words, rule, args=None):
+def split_region(words, rule, args=None, anchors=()):
     """Word index ranges [(a, b), ...] that tile the region. `args`: argument counts to step over when looking
-    for end words."""
+    for end words. `anchors`: word indices where an "anchored" region's counted strings start."""
     n, cuts = len(words), [0]
     kind = rule[0]
+    if kind == "anchored":
+        for a in sorted(anchors):
+            c = words[a]
+            if a + 1 + c > n:
+                raise ValueError(f"anchored string at word {a} runs past the region ({c} words)")
+            cuts += [a, a + 1 + c]
+        cuts = sorted(set(c for c in cuts if c < n))
+        return list(zip(cuts, cuts[1:] + [n]))
     if kind == "ends" and args:
         i = 0
         while i < n:
@@ -207,13 +217,31 @@ def pointer_index(rom):
     return idx
 
 
+WINDOW_SCRIPTS = (0x080000, 0x090000)    # C8: the C1 window scripts (interpreter C1:870C)
+
+
+def window_anchors(rom, start, end):
+    """Word indices in [start, end) that a window-script op 02 (`02 pos16 ptr24`, drawer C1:8F13) points at, with a
+    count word 1-255. Op 02 is the only window op pointing into the C1 string area, and no code loads a pointer
+    there (2026-11-22 sweep), so these are all the strings the C1 regions hold."""
+    out = set()
+    lo, hi = WINDOW_SCRIPTS
+    for p in range(lo, hi - 5):
+        if rom[p] == 0x02 and rom[p + 5] in (0xC1, 0x41):
+            t = 0x010000 | rom[p + 4] << 8 | rom[p + 3]
+            if start <= t < end and (t - start) % 2 == 0 and 0 < word(rom, t) < 0x100:
+                out.add((t - start) // 2)
+    return out
+
+
 def side_entries(rom, name, start, end, codec, ptrs):
     words = words_at(rom, start, end)
     rule = SPLIT[name]
     args = ENGINE_B_ARGS if name in ENGINE_B_TABLES else None
     codec = codec[bool(args)]
+    anchors = window_anchors(rom, start, end) if rule[0] == "anchored" else set()
     out = []
-    for a, b in split_region(words, rule, args):
+    for a, b in split_region(words, rule, args, anchors):
         w = words[a:b]
         off = start + 2 * a
         e = {"id": "%06X" % off}
@@ -225,14 +253,14 @@ def side_entries(rom, name, start, end, codec, ptrs):
             while body and body[-1] == 0:
                 body = body[:-1]
             w = body
-        counted = rule[0] == "counted" and b - a > 1
+        counted = (rule[0] == "counted" and b - a > 1) or a in anchors
         if counted:           # count word kept as `head`; the body is fixed at that many words, 0000 = space
             e["head"] = "%04X" % w[0]
             e["width"] = b - a - 1
             w = w[1:]
             while w and w[-1] == 0:
                 w = w[:-1]
-        if rule[0] == "counted":
+        if rule[0] in ("counted", "anchored"):
             e["kind"] = "text" if counted and off in ptrs and not is_data(w, args) else "data"
         else:
             e["kind"] = "data" if is_data(words[a:b], args) else "text"
