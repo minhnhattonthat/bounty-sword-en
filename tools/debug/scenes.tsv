@@ -1,0 +1,141 @@
+name	kind	map	mode	msg	expect	hold	frames	route	mash	then	sav	note
+intro	boot					1400						cold boot: Pioneer logo and the opening intro
+title	boot					2400		1500 -;6 start				title screen, PUSH START BUTTON
+filemenu	boot				3	300		1500 -;6 start;700 -;6 start;400 -				3-slot file menu
+load_file2	boot				6	400	8000	1500 -;6 start;700 -;6 start;400 -;6 a;80 -;6 down;40 -;6 a;80 -;6 a;80 -			work/saves/edit_map45.srm	needs --sav with a used file 2: the cursor starts on Load when a save exists; Load -> file 2 -> camp (tools/debug/save_test.py)
+ceremony	boot				17	700	9000	1500 -;6 start;700 -;6 start;400 -;900 -;6 start;30 -;6 a;60 -				New Game: opening ceremony (engine B text)
+prologue	boot				13	500	12000	1500 -;6 start;700 -;6 start;400 -;900 -;6 start;30 -;6 a;60 -	a,a,a,start:45			New Game through the ceremony and its name entry into the first town scene (master text)
+name_entry	mode	1	19		19	450						name entry screen (mode 19)
+narration	mode	2	15		15	300						narration text screen (mode 15; same text for every map tried); continues to the camp
+worldmap	mode	31	8		8	500						world map with location label
+gameover	mode	31	12		12	200						GAME OVER
+to_be_continued	mode	31	11		11	200						TO BE CONTINUED!
+credits	mode	31	18		18	2500						staff roll (mode 18)
+demo	mode	2	2		2	600						attract demo battle (mode 2)
+mode09	mode	31	9		9	300						mode 9 (C1:B15F): spell-like sequence, garbled out of context, returns to boot; not identified
+msg	msg	37		131	7	300						any master message: --var MSG=<id> swaps it into scenario 37's first dialogue
+camp_party	mode	31	6		6	756		300 -;6 a;200 -				camp menu -> party
+camp_orders	mode	31	6		6	802		300 -;6 down;40 -;6 a;200 -				camp menu -> orders
+camp_items	mode	31	6		6	848		300 -;6 down;40 -;6 down;40 -;6 a;200 -				camp menu -> items
+camp_resolve	mode	31	6		6	894		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -				camp menu -> resolve
+camp_map	mode	31	6		6	940		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -				camp menu -> map
+camp_config	mode	31	6		6	986		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -				camp menu -> config
+camp_file	mode	31	6		6	1032		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -				camp menu -> file
+camp_save	mode	31	6		6	1750		300 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -;6 a;200 -;6 a;200 -;6 a;200 -;6 a;300 -				camp -> file -> save -> file 1 (writes SRAM: the run's .srm is a game-written base save)
+camp	mode	31	6		6	400						camp menu (mode 6)
+camp_party_status	mode	31	6		6	1214		300 -;6 a;200 -;6 down;40 -;6 a;200 -;6 a;200 -				party -> status
+town_weapon_shop	scenario	1			13	1056				500 -;6 a;300 -		town (A-01) menu -> weapon_shop
+town_item_shop	scenario	1			13	1132				500 -;16 down;60 -;6 a;300 -		town (A-01) menu -> item_shop
+battle_menu	scenario	37			7	1610				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -		battle map command menu (party / items / withdraw) after the opening lines
+battle_items	scenario	37			7	1962				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 a;300 -		battle command menu -> items
+battle_withdraw	scenario	37			7	2008				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 down;40 -;6 a;300 -		battle command menu -> withdraw
+battle_status	scenario	37			7	2000			a:40			unit status on the battle map (A mashed)
+scen_01	scenario	1			13	600			a:40			scenario 1 (A-01) opening
+card_02	scenario	2			14	300						scenario 2 (A-02): briefing then chapter card
+scen_02	scenario	2			7	600			a:40			scenario 2 (A-02) opening
+card_03	scenario	3			14	300						scenario 3 (A-03): briefing then chapter card
+scen_03	scenario	3			7	600			a:40			scenario 3 (A-03) opening
+card_04	scenario	4			14	300						scenario 4 (A-04): briefing then chapter card
+scen_04	scenario	4			7	600			a:40			scenario 4 (A-04) opening
+card_05	scenario	5			14	300						scenario 5 (A-05): briefing then chapter card
+scen_05	scenario	5			7	600			a:40			scenario 5 (A-05) opening
+card_06	scenario	6			14	300						scenario 6 (A-06): briefing then chapter card
+scen_06	scenario	6			7	600			a:40			scenario 6 (A-06) opening
+card_07	scenario	7			14	300						scenario 7 (A-07): briefing then chapter card
+scen_07	scenario	7			7	600			a:40			scenario 7 (A-07) opening
+card_08	scenario	8			14	300						scenario 8 (A-08): briefing then chapter card
+scen_08	scenario	8			7	600			a:40			scenario 8 (A-08) opening
+card_09	scenario	9			14	300						scenario 9 (A-09): briefing then chapter card
+scen_09	scenario	9			7	600			a:40			scenario 9 (A-09) opening
+card_10	scenario	10			14	300						scenario 10 (A-10): briefing then chapter card
+scen_10	scenario	10			7	600			a:40			scenario 10 (A-10) opening
+card_11	scenario	11			14	300						scenario 11 (B-01): briefing then chapter card
+scen_11	scenario	11			7	600			a:40			scenario 11 (B-01) opening
+card_12	scenario	12			14	300						scenario 12 (B-02): briefing then chapter card
+scen_12	scenario	12			7	600			a:40			scenario 12 (B-02) opening
+card_13	scenario	13			14	300						scenario 13 (B-03): briefing then chapter card
+scen_13	scenario	13			7	600			a:40			scenario 13 (B-03) opening
+card_14	scenario	14			14	300						scenario 14 (B-04): briefing then chapter card
+scen_14	scenario	14			7	600			a:40			scenario 14 (B-04) opening
+card_15	scenario	15			14	300						scenario 15 (B-05): briefing then chapter card
+scen_15	scenario	15			7	600			a:40			scenario 15 (B-05) opening
+card_16	scenario	16			14	300						scenario 16 (B-06): briefing then chapter card
+scen_16	scenario	16			7	600			a:40			scenario 16 (B-06) opening
+card_17	scenario	17			14	300						scenario 17 (B-07): briefing then chapter card
+scen_17	scenario	17			7	600			a:40			scenario 17 (B-07) opening
+card_18	scenario	18			14	300						scenario 18 (B-08): briefing then chapter card
+scen_18	scenario	18			7	600			a:40			scenario 18 (B-08) opening
+card_19	scenario	19			14	300						scenario 19 (B-09): briefing then chapter card
+scen_19	scenario	19			7	600			a:40			scenario 19 (B-09) opening
+card_20	scenario	20			14	300						scenario 20 (B-10): briefing then chapter card
+scen_20	scenario	20			7	600			a:40			scenario 20 (B-10) opening
+card_21	scenario	21			14	300						scenario 21 (B-11): briefing then chapter card
+scen_21	scenario	21			7	600			a:40			scenario 21 (B-11) opening
+card_22	scenario	22			14	300						scenario 22 (B-12): briefing then chapter card
+scen_22	scenario	22			7	600			a:40			scenario 22 (B-12) opening
+card_23	scenario	23			14	300						scenario 23 (B-13): briefing then chapter card
+scen_23	scenario	23			7	600			a:40			scenario 23 (B-13) opening
+card_24	scenario	24			14	300						scenario 24 (B-14): briefing then chapter card
+scen_24	scenario	24			7	600			a:40			scenario 24 (B-14) opening
+card_25	scenario	25			14	300						scenario 25 (B-15): briefing then chapter card
+scen_25	scenario	25			7	600			a:40			scenario 25 (B-15) opening
+card_26	scenario	26			14	300						scenario 26 (B-16): briefing then chapter card
+scen_26	scenario	26			7	600			a:40			scenario 26 (B-16) opening
+scen_27	scenario	27			13	600			a:40			scenario 27 (CEX) opening
+scen_28	scenario	28			13	600			a:40			scenario 28 (DEX) opening
+card_30	scenario	30			14	300						scenario 30 (B-17): briefing then chapter card
+scen_30	scenario	30			7	600			a:40			scenario 30 (B-17) opening
+card_31	scenario	31			14	300						scenario 31 (C-01): briefing then chapter card
+scen_31	scenario	31			7	600			a:40			scenario 31 (C-01) opening
+card_32	scenario	32			14	300						scenario 32 (C-02): briefing then chapter card
+scen_32	scenario	32			7	600			a:40			scenario 32 (C-02) opening
+card_33	scenario	33			14	300						scenario 33 (C-03): briefing then chapter card
+scen_33	scenario	33			7	600			a:40			scenario 33 (C-03) opening
+card_34	scenario	34			14	300						scenario 34 (C-04): briefing then chapter card
+scen_34	scenario	34			7	600			a:40			scenario 34 (C-04) opening
+card_35	scenario	35			14	300						scenario 35 (C-05): briefing then chapter card
+scen_35	scenario	35			7	600			a:40			scenario 35 (C-05) opening
+card_36	scenario	36			14	300						scenario 36 (C-06): briefing then chapter card
+scen_36	scenario	36			7	600			a:40			scenario 36 (C-06) opening
+scen_37	scenario	37			7	600			a:40			scenario 37 (C-07) opening
+card_38	scenario	38			14	300						scenario 38 (C-08): briefing then chapter card
+scen_38	scenario	38			7	600			a:40			scenario 38 (C-08) opening
+card_39	scenario	39			14	300						scenario 39 (C-09): briefing then chapter card
+scen_39	scenario	39			7	600			a:40			scenario 39 (C-09) opening
+card_40	scenario	40			14	300						scenario 40 (C-10): briefing then chapter card
+scen_40	scenario	40			7	600			a:40			scenario 40 (C-10) opening
+card_41	scenario	41			14	300						scenario 41 (C-11): briefing then chapter card
+scen_41	scenario	41			7	600			a:40			scenario 41 (C-11) opening
+card_42	scenario	42			14	300						scenario 42 (C-12): briefing then chapter card
+scen_42	scenario	42			7	600			a:40			scenario 42 (C-12) opening
+card_43	scenario	43			14	300						scenario 43 (C-13): briefing then chapter card
+scen_43	scenario	43			7	600			a:40			scenario 43 (C-13) opening
+card_44	scenario	44			14	300						scenario 44 (C-14): briefing then chapter card
+scen_44	scenario	44			7	600			a:40			scenario 44 (C-14) opening
+card_45	scenario	45			14	300						scenario 45 (C-15): briefing then chapter card
+scen_45	scenario	45			7	600			a:40			scenario 45 (C-15) opening
+card_46	scenario	46			14	300						scenario 46 (C-16): briefing then chapter card
+scen_46	scenario	46			7	600			a:40			scenario 46 (C-16) opening
+scen_47	scenario	47			13	600			a:40			scenario 47 (EEX) opening
+card_48	scenario	48			14	300						scenario 48 (FEX): briefing then chapter card
+scen_48	scenario	48			7	600			a:40			scenario 48 (FEX) opening
+card_49	scenario	49			14	300						scenario 49 (GEX): briefing then chapter card
+scen_49	scenario	49			7	600			a:40			scenario 49 (GEX) opening
+card_50	scenario	50			14	300						scenario 50 (B-4B): briefing then chapter card
+scen_50	scenario	50			7	600			a:40			scenario 50 (B-4B) opening
+card_51	scenario	51			14	300						scenario 51 (B-1B): briefing then chapter card
+scen_51	scenario	51			7	600			a:40			scenario 51 (B-1B) opening
+card_53	scenario	53			14	300						scenario 53 (-): briefing then chapter card
+scen_53	scenario	53			7	600			a:40			scenario 53 (-) opening
+card_54	scenario	54			14	300						scenario 54 (C-17): briefing then chapter card
+scen_54	scenario	54			7	600			a:40			scenario 54 (C-17) opening
+card_55	scenario	55			14	300						scenario 55 (C-18): briefing then chapter card
+scen_55	scenario	55			7	600			a:40			scenario 55 (C-18) opening
+card_56	scenario	56			14	300						scenario 56 (C-19): briefing then chapter card
+scen_56	scenario	56			7	600			a:40			scenario 56 (C-19) opening
+card_57	scenario	57			14	300						scenario 57 (C-20): briefing then chapter card
+scen_57	scenario	57			7	600			a:40			scenario 57 (C-20) opening
+card_58	scenario	58			14	300						scenario 58 (AEX): briefing then chapter card
+scen_58	scenario	58			7	600			a:40			scenario 58 (AEX) opening
+card_59	scenario	59			14	300						scenario 59 (A1R): briefing then chapter card
+scen_59	scenario	59			7	600			a:40			scenario 59 (A1R) opening

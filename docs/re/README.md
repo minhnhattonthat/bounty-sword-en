@@ -14,6 +14,7 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 |---|---|---|
 | [text.md](text.md) | encoding, font, both script engines, master pointer table, text inventory | encoding/font/pointer table/engine-A arg counts verified; side tables mostly guess (phase 4 confirms); kanji list open |
 | [rom.md](rom.md) | header, map, free space, expansion, graphics loading | header verified; free space untested |
+| [debug.md](debug.md) | main loop, game modes, leftover SCENARIO select, dialogue start, save RAM layout | verified (warp_all 140/140, save_test) |
 | [graphics.md](graphics.md) | graphics-text survey | static sweep done; only the chapter card is tile-drawn Japanese |
 
 Helpers in `tools/re/`: `words.py` (dump words / master message N), `textruns.py` (all text runs), `refs24.py`
