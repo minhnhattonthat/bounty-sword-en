@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (width gate: engine B, engine A prompts measured; objectives/descriptions unreached;
-  left: descriptions, objectives, spells/orders lists, slice table, kanji table). Builds 2026-11-22 (fifth
+- **Phase:** 5. Engine spike and marker build in progress (width gate rows all measured or ruled, slice table
+  done; left: kanji table for blocks 0x38C-0x4FF, 0x1C8-0x1F8, 0x10-0x1C7). Builds 2026-11-22 (fifth
   session): rebuild with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no
   garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
@@ -46,16 +46,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
     sprite data). Full 140-scene tour `work/qa/rr_all` with `regionreads.lua` on objectives (table + text) and
     descriptions: **no read anywhere**; rows in `docs/re/vwf.md` marked "not reached, keep JP byte length".
     Route `tools/routes/orders_keys.txt` (camp_orders + KEEP) only reaches the formation grid, not an orders list.
+  - Seventh session: width rows closed (spells: engine A copies the record into the dialogue variable `$7E:379F`
+    at `C2:6458`, menu slot = items' C1 field; orders: no reader, budget by rule; `docs/re/vwf.md`). **Slice
+    table** `docs/re/slices.tsv` (119 slices, 20 menu scenes) generated from VRAM tilemaps + C1 run log by
+    `tools/re/slices.py` (command in its docstring; rerun on the English build in phase 8); test
+    `test_slice_table_names_real_cells`. **Kanji**: codes 0x200-0x38B are JIS level-1 order (愛..和, a few local
+    swaps such as 大 谷 第); all 388 used codes there identified in `tbl/kanji.tsv` (`eye` = read off the sheet,
+    `context` = picked from the script context among `tools/kanji_align.py` DP candidates). Unknown uses 20,883 -> 6,230.
 - **Next (phase 5, in this order):**
-  1. Width gate, remaining rows: spells and orders lists (C1 field 10 / 8 cells, guessed = field width; a warp
-     to a battle spell menu or the orders list would measure them). Objectives/descriptions: no reader on any
-     warp (see above); treat as measured-by-rule unless phase 8 textcover finds them.
-  2. Slice table for translators: per window string, the slices the tilemaps show (start cell, cells), read off
-     `work/qa/mk_c4` shots; put it in each entry's `notes` (or `docs/re/slices.tsv`) and make the fit lint use it.
-  3. Kanji table (translators need readable `jp`, needed before phase 6): 777 codes still `[hhhh]` (20,883 uses).
-     `work/re/kanji_cand.tsv` has candidates + contexts; shape matching is weak. Read zoomed glyph sheets
-     (`tools/font_sheet.py`) with script context, most used first, write `tbl/kanji.tsv`, `mktbl.py --kanji`,
-     `build.py --dump --refresh`, `tools/check.py`. Codes 0x10-0x1A may be Latin Q-Z. Known: 消=2AB 去=1F1 最=275.
+  1. Kanji table, remaining blocks (no order, so no DP: read each zoomed glyph with its script context):
+     `0x38C-0x4FF` (4,603 uses; starts 所 持 品 性 別 ? 運 座 行 禁 止 通 常...; sheet
+     `python -X utf8 tools/font_sheet.py work/re/fs_c.png 0x390 0xC0 --zoom 4`, count is hex), `0x1C8-0x1F8`
+     (472 uses; 去=1F1, 江 越 黄 許 再 支 市 末 到 示 visible), `0x10-0x1C7` (1,155 uses; 0x60-0xBF look like kanji
+     too; 0x10-0x1A may be Latin Q-Z). Contexts: `python -X utf8 tools/kanji_match.py` -> `work/re/kanji_cand.tsv`.
+     Append `code<TAB>kanji<TAB>how` to `tbl/kanji.tsv` (keep chars unique), then `mktbl.py --kanji tbl/kanji.tsv >
+     tbl/jp.tbl`, `build.py --dump --refresh`, `tools/check.py`. Read sheets of ~64 codes at a time: context fills fast.
+  2. Then phase 5 is done (width gate rows all measured or ruled; marker build verified): move to phase 6.
 - **Open (not blocking):**
   - **Side tables are repacked in place** (`rom_text.repack`: each region keeps its exact size, entries are not
     relocated and their pointers not rewritten), so today an English ceremony/prompt/description line must have the
