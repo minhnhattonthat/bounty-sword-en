@@ -110,6 +110,23 @@ def test_c1_window_strings_keep_their_count_word(files):
                 assert 0 < e["width"] < 0x100, e["id"]
 
 
+def test_slice_table_names_real_cells(files):
+    """docs/re/slices.tsv (tools/re/slices.py): every slice a screen shows lies inside one script entry, so the
+    fit lint can give each slice its own budget (cells x 8 px)."""
+    ids = {e["id"]: e for name, es in files.items() if not name.startswith("master_") for e in es}
+    starts = sorted(ids)
+    rows = [ln.split("\t") for ln in (ROOT / "docs" / "re" / "slices.tsv").read_text(encoding="utf8").splitlines()[1:]]
+    assert rows
+    for scene, sid, first, cells, *_ in rows:
+        if sid.startswith("RAM:"):
+            continue
+        owner = max(s for s in starts if int(s, 16) <= int(sid, 16))
+        if ids[owner]["kind"] == "data":  # digit cells drawn from c8_digits: nothing to translate
+            continue
+        assert sid in ids, (scene, sid)
+        assert int(first) + int(cells) <= ids[sid]["width"], (scene, sid, first, cells)
+
+
 def test_text_entries_have_en_and_data_has_none(files):
     for name, es in files.items():
         for e in es:
