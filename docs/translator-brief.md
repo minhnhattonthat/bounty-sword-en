@@ -1,0 +1,31 @@
+# Translator brief - Bounty Sword
+
+Read with offset/limit (files over ~4 KB come back as a stub otherwise): `glossary.md` (rulings, style, terms),
+`docs/synopsis.md`, your batch `work/tl/bNNN.tsv` and its terms `build/terms_bNNN.txt`.
+
+## Input
+`work/tl/bNNN.tsv`: `id<TAB>speaker<TAB>form<TAB>limit<TAB>JP`.
+- `dlg` (master dialogue): JP pages (one JP box each) joined by ` ‖ `, lines by ` / `, `<name>` = who speaks from
+  that page on (`<HERO>` = the hero {FF1F}, `<FF28>` = the fairy, `<FF31>` = the variable second name).
+  `{FF2F}`/`{FF30}` before a page = a conditional one-line list item (a ring name); `{FF12}` = spell shout prefix.
+  `RAW` = a yes/no prompt: write the whole message in script syntax with every `{...}` code kept, `\n` = FFFF.
+- side tables (`items`, `ceremony`...): script syntax; keep every `{FFxx...}` and `[hhhh]` code; `{FF01}` (engine B
+  row break, 28 characters a row) may be placed freely.
+
+## Output
+`work/tl/bNNN.out.tsv`, written with the file-write tool: `id<TAB>English`, every id once, same order, plain ASCII.
+- `dlg`: one paragraph per JP page, pages joined by ` || ` (same count as the ` ‖ ` pages). Keep `"` at the start/end
+  of a page where the JP page has 「/」. Keep {hero} {FF31} {FF1F} {FF28} {FF2B} inline. Do not wrap: the tool wraps
+  to 158 px x 3 lines and adds boxes. `\n` forces a line break; `{next}` forces a new box (avoid on {FF2F} lines).
+- Check: `python -X utf8 tools/batches.py check bNNN` until it prints OK. Merge: `tools/batches.py merge bNNN`.
+
+## Quality bar (mistakes made before, in this and other projects)
+- Names exactly as `glossary.md` (Steyr, not Steyer). A JP term in the line needs its EN form (the check enforces it).
+- Voice: keep each speaker's register (glossary Style rules); the fairy's teasing and the old men's rambling are not
+  neutral English. A flattened quirk or dead joke counts as Important in review.
+- No suffix glued to a variable ({FF2B}th); no "a/an" right before {hero}/{FF31}; no "'s" after them.
+- One JP page = one English page; don't move content between pages (the order of boxes is the game's pacing).
+- Don't over-explain; don't add content. ‥‥ pauses -> "..." (keep the pause beats).
+
+## Report (final message)
+`NEW TERM: jp -> en`, `UNSURE: id - note`, `CUT: id - what was dropped`.

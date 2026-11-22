@@ -4,7 +4,7 @@
   "width": 5,
   "kind": "text",
   "jp": "おひつじ座",
-  "en": "",
+  "en": "Aries",
   "refs": [
    "20CF0F"
   ]
@@ -14,83 +14,83 @@
   "width": 5,
   "kind": "text",
   "jp": "おうし座",
-  "en": ""
+  "en": "Taurus"
  },
  {
   "id": "08E822",
   "width": 5,
   "kind": "text",
   "jp": "ふたご座",
-  "en": ""
+  "en": "Gemini"
  },
  {
   "id": "08E82C",
   "width": 5,
   "kind": "text",
   "jp": "かに座",
-  "en": ""
+  "en": "Cancer"
  },
  {
   "id": "08E836",
   "width": 5,
   "kind": "text",
   "jp": "しし座",
-  "en": ""
+  "en": "Leo"
  },
  {
   "id": "08E840",
   "width": 5,
   "kind": "text",
   "jp": "おとめ座",
-  "en": ""
+  "en": "Virgo"
  },
  {
   "id": "08E84A",
   "width": 5,
   "kind": "text",
   "jp": "てんびん座",
-  "en": ""
+  "en": "Libra"
  },
  {
   "id": "08E854",
   "width": 5,
   "kind": "text",
   "jp": "さそり座",
-  "en": ""
+  "en": "Scorpio"
  },
  {
   "id": "08E85E",
   "width": 5,
   "kind": "text",
   "jp": "いて座",
-  "en": ""
+  "en": "Sagitt."
  },
  {
   "id": "08E868",
   "width": 5,
   "kind": "text",
   "jp": "やぎ座",
-  "en": ""
+  "en": "Capri."
  },
  {
   "id": "08E872",
   "width": 5,
   "kind": "text",
   "jp": "みずがめ座",
-  "en": ""
+  "en": "Aquar."
  },
  {
   "id": "08E87C",
   "width": 5,
   "kind": "text",
   "jp": "うお座",
-  "en": ""
+  "en": "Pisces"
  },
  {
   "id": "08E886",
   "width": 5,
   "kind": "text",
   "jp": "火水土風闇",
-  "en": ""
+  "en": "FWEAD"
  }
 ]

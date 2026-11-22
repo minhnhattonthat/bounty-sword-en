@@ -13,7 +13,7 @@
   "width": 10,
   "kind": "text",
   "jp": "鉄の剣",
-  "en": "",
+  "en": "Iron Sword",
   "refs": [
    "070E7B",
    "071268",
@@ -29,21 +29,21 @@
   "width": 10,
   "kind": "text",
   "jp": "鋼の剣",
-  "en": ""
+  "en": "Steel Sword"
  },
  {
   "id": "1AE02B",
   "width": 10,
   "kind": "text",
   "jp": "銀の剣",
-  "en": ""
+  "en": "Silver Sword"
  },
  {
   "id": "1AE03F",
   "width": 10,
   "kind": "text",
   "jp": "ミスリルの剣",
-  "en": "",
+  "en": "Mithril Sword",
   "refs": [
    "2E4468"
   ]
@@ -53,56 +53,56 @@
   "width": 10,
   "kind": "text",
   "jp": "ポイズンブレード",
-  "en": ""
+  "en": "Poison Blade"
  },
  {
   "id": "1AE067",
   "width": 10,
   "kind": "text",
   "jp": "ダークブレード",
-  "en": ""
+  "en": "Dark Blade"
  },
  {
   "id": "1AE07B",
   "width": 10,
   "kind": "text",
   "jp": "ダインスレイフ",
-  "en": ""
+  "en": "Dainsleif"
  },
  {
   "id": "1AE08F",
   "width": 10,
   "kind": "text",
   "jp": "マスターブレード",
-  "en": ""
+  "en": "Master Blade"
  },
  {
   "id": "1AE0A3",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンスレイヤー",
-  "en": ""
+  "en": "Dragonslayer"
  },
  {
   "id": "1AE0B7",
   "width": 10,
   "kind": "text",
   "jp": "エクスカリバー",
-  "en": ""
+  "en": "Excalibur"
  },
  {
   "id": "1AE0CB",
   "width": 10,
   "kind": "text",
   "jp": "レーヴァテイン",
-  "en": ""
+  "en": "Laevateinn"
  },
  {
   "id": "1AE0DF",
   "width": 10,
   "kind": "text",
   "jp": "バウンティソード",
-  "en": ""
+  "en": "Bounty Sword"
  },
  {
   "id": "1AE0F3",
@@ -121,77 +121,77 @@
   "width": 10,
   "kind": "text",
   "jp": "武士の刀",
-  "en": ""
+  "en": "Bushi Katana"
  },
  {
   "id": "1AE12F",
   "width": 10,
   "kind": "text",
   "jp": "旗本の刀",
-  "en": ""
+  "en": "Hatamoto Blade"
  },
  {
   "id": "1AE143",
   "width": 10,
   "kind": "text",
   "jp": "大名の刀",
-  "en": ""
+  "en": "Daimyo Katana"
  },
  {
   "id": "1AE157",
   "width": 10,
   "kind": "text",
   "jp": "忍びの刀",
-  "en": ""
+  "en": "Shinobi Katana"
  },
  {
   "id": "1AE16B",
   "width": 10,
   "kind": "text",
   "jp": "かすみの刀",
-  "en": ""
+  "en": "Kasumi Katana"
  },
  {
   "id": "1AE17F",
   "width": 10,
   "kind": "text",
   "jp": "おぼろの刀",
-  "en": ""
+  "en": "Oboro Katana"
  },
  {
   "id": "1AE193",
   "width": 10,
   "kind": "text",
   "jp": "つじ斬りの刀",
-  "en": ""
+  "en": "Tsujigiri Blade"
  },
  {
   "id": "1AE1A7",
   "width": 10,
   "kind": "text",
   "jp": "むらまさの刀",
-  "en": ""
+  "en": "Muramasa"
  },
  {
   "id": "1AE1BB",
   "width": 10,
   "kind": "text",
   "jp": "まさむねの刀",
-  "en": ""
+  "en": "Masamune"
  },
  {
   "id": "1AE1CF",
   "width": 10,
   "kind": "text",
   "jp": "こがらすまるの太刀",
-  "en": ""
+  "en": "Kogarasumaru"
  },
  {
   "id": "1AE1E3",
   "width": 10,
   "kind": "text",
   "jp": "ふつのみたまの太刀",
-  "en": ""
+  "en": "Futsunomitama"
  },
  {
   "id": "1AE1F7",
@@ -210,42 +210,42 @@
   "width": 10,
   "kind": "text",
   "jp": "ショートボウ",
-  "en": ""
+  "en": "Short Bow"
  },
  {
   "id": "1AE233",
   "width": 10,
   "kind": "text",
   "jp": "ロングボウ",
-  "en": ""
+  "en": "Long Bow"
  },
  {
   "id": "1AE247",
   "width": 10,
   "kind": "text",
   "jp": "コンポジットボウ",
-  "en": ""
+  "en": "Composite Bow"
  },
  {
   "id": "1AE25B",
   "width": 10,
   "kind": "text",
   "jp": "妖精の弓",
-  "en": ""
+  "en": "Fairy Bow"
  },
  {
   "id": "1AE26F",
   "width": 10,
   "kind": "text",
   "jp": "エロースの弓",
-  "en": ""
+  "en": "Eros' Bow"
  },
  {
   "id": "1AE283",
   "width": 10,
   "kind": "text",
   "jp": "アポロンの弓",
-  "en": ""
+  "en": "Apollo's Bow"
  },
  {
   "id": "1AE297",
@@ -264,70 +264,70 @@
   "width": 10,
   "kind": "text",
   "jp": "カシの木の杖",
-  "en": ""
+  "en": "Oak Staff"
  },
  {
   "id": "1AE2D3",
   "width": 10,
   "kind": "text",
   "jp": "退魔の杖",
-  "en": ""
+  "en": "Exorcist Staff"
  },
  {
   "id": "1AE2E7",
   "width": 10,
   "kind": "text",
   "jp": "祝福の杖",
-  "en": ""
+  "en": "Blessed Staff"
  },
  {
   "id": "1AE2FB",
   "width": 10,
   "kind": "text",
   "jp": "試錬の杖",
-  "en": ""
+  "en": "Trial Staff"
  },
  {
   "id": "1AE30F",
   "width": 10,
   "kind": "text",
   "jp": "復活の杖",
-  "en": ""
+  "en": "Revival Staff"
  },
  {
   "id": "1AE323",
   "width": 10,
   "kind": "text",
   "jp": "導師の杖",
-  "en": ""
+  "en": "Guru's Staff"
  },
  {
   "id": "1AE337",
   "width": 10,
   "kind": "text",
   "jp": "守護の杖",
-  "en": ""
+  "en": "Guardian Staff"
  },
  {
   "id": "1AE34B",
   "width": 10,
   "kind": "text",
   "jp": "吸魔の杖",
-  "en": ""
+  "en": "Mana Drain Rod"
  },
  {
   "id": "1AE35F",
   "width": 10,
   "kind": "text",
   "jp": "ガンバンテインの魔杖",
-  "en": ""
+  "en": "Gambantein"
  },
  {
   "id": "1AE373",
   "width": 10,
   "kind": "text",
   "jp": "金剛杖",
-  "en": ""
+  "en": "Kongo Staff"
  },
  {
   "id": "1AE387",
@@ -340,35 +340,35 @@
   "width": 10,
   "kind": "text",
   "jp": "らばん",
-  "en": ""
+  "en": "Raban"
  },
  {
   "id": "1AE3AF",
   "width": 10,
   "kind": "text",
   "jp": "聖木の短剣",
-  "en": ""
+  "en": "Holy Wood Dirk"
  },
  {
   "id": "1AE3C3",
   "width": 10,
   "kind": "text",
   "jp": "一文銭の短剣",
-  "en": ""
+  "en": "Mon Coin Dirk"
  },
  {
   "id": "1AE3D7",
   "width": 10,
   "kind": "text",
   "jp": "鋼のじゅず",
-  "en": ""
+  "en": "Steel Rosary"
  },
  {
   "id": "1AE3EB",
   "width": 10,
   "kind": "text",
   "jp": "七星剣",
-  "en": ""
+  "en": "Seven Stars"
  },
  {
   "id": "1AE3FF",
@@ -387,42 +387,42 @@
   "width": 10,
   "kind": "text",
   "jp": "パーカッション",
-  "en": ""
+  "en": "Percussion"
  },
  {
   "id": "1AE43B",
   "width": 10,
   "kind": "text",
   "jp": "ドラグーン",
-  "en": ""
+  "en": "Dragoon"
  },
  {
   "id": "1AE44F",
   "width": 10,
   "kind": "text",
   "jp": "ピースメイカー",
-  "en": ""
+  "en": "Peacemaker"
  },
  {
   "id": "1AE463",
   "width": 10,
   "kind": "text",
   "jp": "ガーランド",
-  "en": ""
+  "en": "Garand"
  },
  {
   "id": "1AE477",
   "width": 10,
   "kind": "text",
   "jp": "アーマーライト",
-  "en": ""
+  "en": "ArmaLite"
  },
  {
   "id": "1AE48B",
   "width": 10,
   "kind": "text",
   "jp": "バレット",
-  "en": ""
+  "en": "Barrett"
  },
  {
   "id": "1AE49F",
@@ -444,28 +444,28 @@
   "width": 10,
   "kind": "text",
   "jp": "バグナグ",
-  "en": ""
+  "en": "Bagh Nakh"
  },
  {
   "id": "1AE4DB",
   "width": 10,
   "kind": "text",
   "jp": "ミスリルのかぎつめ",
-  "en": ""
+  "en": "Mithril Claw"
  },
  {
   "id": "1AE4EF",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンのかぎつめ",
-  "en": ""
+  "en": "Dragon Claw"
  },
  {
   "id": "1AE503",
   "width": 10,
   "kind": "text",
   "jp": "しぼえんおうえつ",
-  "en": ""
+  "en": "Shiboen Oetsu"
  },
  {
   "id": "1AE517",
@@ -484,154 +484,154 @@
   "width": 10,
   "kind": "text",
   "jp": "バックラー",
-  "en": ""
+  "en": "Buckler"
  },
  {
   "id": "1AE553",
   "width": 10,
   "kind": "text",
   "jp": "鉄の盾",
-  "en": ""
+  "en": "Iron Shield"
  },
  {
   "id": "1AE567",
   "width": 10,
   "kind": "text",
   "jp": "鋼の盾",
-  "en": ""
+  "en": "Steel Shield"
  },
  {
   "id": "1AE57B",
   "width": 10,
   "kind": "text",
   "jp": "鏡の盾",
-  "en": ""
+  "en": "Mirror Shield"
  },
  {
   "id": "1AE58F",
   "width": 10,
   "kind": "text",
   "jp": "アイギスの盾",
-  "en": ""
+  "en": "Aegis Shield"
  },
  {
   "id": "1AE5A3",
   "width": 10,
   "kind": "text",
   "jp": "くさりかたびら",
-  "en": ""
+  "en": "Chain Mail"
  },
  {
   "id": "1AE5B7",
   "width": 10,
   "kind": "text",
   "jp": "当世具足",
-  "en": ""
+  "en": "Tosei Gusoku"
  },
  {
   "id": "1AE5CB",
   "width": 10,
   "kind": "text",
   "jp": "プレートメイル",
-  "en": ""
+  "en": "Plate Mail"
  },
  {
   "id": "1AE5DF",
   "width": 10,
   "kind": "text",
   "jp": "ミスリルプレート",
-  "en": ""
+  "en": "Mithril Plate"
  },
  {
   "id": "1AE5F3",
   "width": 10,
   "kind": "text",
   "jp": "オーディーンプレート",
-  "en": ""
+  "en": "Odin Plate"
  },
  {
   "id": "1AE607",
   "width": 10,
   "kind": "text",
   "jp": "戦士のサレット",
-  "en": ""
+  "en": "Warrior Sallet"
  },
  {
   "id": "1AE61B",
   "width": 10,
   "kind": "text",
   "jp": "勇者のアーメット",
-  "en": ""
+  "en": "Hero's Armet"
  },
  {
   "id": "1AE62F",
   "width": 10,
   "kind": "text",
   "jp": "黄金の腕輪",
-  "en": ""
+  "en": "Gold Bracelet"
  },
  {
   "id": "1AE643",
   "width": 10,
   "kind": "text",
   "jp": "思恵の腕輪",
-  "en": ""
+  "en": "Grace Bracelet"
  },
  {
   "id": "1AE657",
   "width": 10,
   "kind": "text",
   "jp": "金剛力の腕輪",
-  "en": ""
+  "en": "Kongo Bracelet"
  },
  {
   "id": "1AE66B",
   "width": 10,
   "kind": "text",
   "jp": "神速の腕輪",
-  "en": ""
+  "en": "Godspeed Band"
  },
  {
   "id": "1AE67F",
   "width": 10,
   "kind": "text",
   "jp": "守護の腕輪",
-  "en": ""
+  "en": "Guard Bracelet"
  },
  {
   "id": "1AE693",
   "width": 10,
   "kind": "text",
   "jp": "武者鎧",
-  "en": ""
+  "en": "Samurai Armor"
  },
  {
   "id": "1AE6A7",
   "width": 10,
   "kind": "text",
   "jp": "忍びしょうぞく",
-  "en": ""
+  "en": "Shinobi Garb"
  },
  {
   "id": "1AE6BB",
   "width": 10,
   "kind": "text",
   "jp": "幻影のローブ",
-  "en": ""
+  "en": "Phantom Robe"
  },
  {
   "id": "1AE6CF",
   "width": 10,
   "kind": "text",
   "jp": "聖者のローブ",
-  "en": ""
+  "en": "Saint's Robe"
  },
  {
   "id": "1AE6E3",
   "width": 10,
   "kind": "text",
   "jp": "あらはんのころも",
-  "en": ""
+  "en": "Arhat Robe"
  },
  {
   "id": "1AE6F7",
@@ -644,91 +644,91 @@
   "width": 10,
   "kind": "text",
   "jp": "炎熱の封魔石",
-  "en": ""
+  "en": "Fire Stone"
  },
  {
   "id": "1AE71F",
   "width": 10,
   "kind": "text",
   "jp": "雷撃の封魔石",
-  "en": ""
+  "en": "Thunder Stone"
  },
  {
   "id": "1AE733",
   "width": 10,
   "kind": "text",
   "jp": "氷刃の封魔石",
-  "en": ""
+  "en": "Ice Stone"
  },
  {
   "id": "1AE747",
   "width": 10,
   "kind": "text",
   "jp": "薬草",
-  "en": ""
+  "en": "Herb"
  },
  {
   "id": "1AE75B",
   "width": 10,
   "kind": "text",
   "jp": "調合薬",
-  "en": ""
+  "en": "Potion"
  },
  {
   "id": "1AE76F",
   "width": 10,
   "kind": "text",
   "jp": "マナの実",
-  "en": ""
+  "en": "Mana Fruit"
  },
  {
   "id": "1AE783",
   "width": 10,
   "kind": "text",
   "jp": "マナのエキス",
-  "en": ""
+  "en": "Mana Extract"
  },
  {
   "id": "1AE797",
   "width": 10,
   "kind": "text",
   "jp": "毒消し",
-  "en": ""
+  "en": "Antidote"
  },
  {
   "id": "1AE7AB",
   "width": 10,
   "kind": "text",
   "jp": "回復の封魔石",
-  "en": ""
+  "en": "Heal Stone"
  },
  {
   "id": "1AE7BF",
   "width": 10,
   "kind": "text",
   "jp": "解除の封魔石",
-  "en": ""
+  "en": "Release Stone"
  },
  {
   "id": "1AE7D3",
   "width": 10,
   "kind": "text",
   "jp": "全快の封魔石",
-  "en": ""
+  "en": "Full Heal Stone"
  },
  {
   "id": "1AE7E7",
   "width": 10,
   "kind": "text",
   "jp": "祝福の封魔石",
-  "en": ""
+  "en": "Bless Stone"
  },
  {
   "id": "1AE7FB",
   "width": 10,
   "kind": "text",
   "jp": "復活の封魔石",
-  "en": ""
+  "en": "Revive Stone"
  },
  {
   "id": "1AE80F",
@@ -747,63 +747,63 @@
   "width": 10,
   "kind": "text",
   "jp": "力のみなもと",
-  "en": ""
+  "en": "Power Source"
  },
  {
   "id": "1AE84B",
   "width": 10,
   "kind": "text",
   "jp": "守りのみなもと",
-  "en": ""
+  "en": "Guard Source"
  },
  {
   "id": "1AE85F",
   "width": 10,
   "kind": "text",
   "jp": "速さのみなもと",
-  "en": ""
+  "en": "Speed Source"
  },
  {
   "id": "1AE873",
   "width": 10,
   "kind": "text",
   "jp": "魔力のみなもと",
-  "en": ""
+  "en": "Magic Source"
  },
  {
   "id": "1AE887",
   "width": 10,
   "kind": "text",
   "jp": "精神のみなもと",
-  "en": ""
+  "en": "Spirit Source"
  },
  {
   "id": "1AE89B",
   "width": 10,
   "kind": "text",
   "jp": "運のみなもと",
-  "en": ""
+  "en": "Luck Source"
  },
  {
   "id": "1AE8AF",
   "width": 10,
   "kind": "text",
   "jp": "生命のみなもと",
-  "en": ""
+  "en": "Life Source"
  },
  {
   "id": "1AE8C3",
   "width": 10,
   "kind": "text",
   "jp": "心のみなもと",
-  "en": ""
+  "en": "Mind Source"
  },
  {
   "id": "1AE8D7",
   "width": 10,
   "kind": "text",
   "jp": "英霊のみなもと",
-  "en": ""
+  "en": "Hero Source"
  },
  {
   "id": "1AE8EB",
@@ -825,42 +825,42 @@
   "width": 10,
   "kind": "text",
   "jp": "けむりだま",
-  "en": ""
+  "en": "Smoke Ball"
  },
  {
   "id": "1AE927",
   "width": 10,
   "kind": "text",
   "jp": "バインディングネット",
-  "en": ""
+  "en": "Binding Net"
  },
  {
   "id": "1AE93B",
   "width": 10,
   "kind": "text",
   "jp": "まきびし",
-  "en": ""
+  "en": "Caltrops"
  },
  {
   "id": "1AE94F",
   "width": 10,
   "kind": "text",
   "jp": "火薬つぼ",
-  "en": ""
+  "en": "Powder Keg"
  },
  {
   "id": "1AE963",
   "width": 10,
   "kind": "text",
   "jp": "ペルセポネの箱",
-  "en": ""
+  "en": "Persephone"
  },
  {
   "id": "1AE977",
   "width": 10,
   "kind": "text",
   "jp": "導火線",
-  "en": ""
+  "en": "Fuse"
  },
  {
   "id": "1AE98B",
@@ -879,98 +879,98 @@
   "width": 10,
   "kind": "text",
   "jp": "遁甲盤",
-  "en": ""
+  "en": "Tonko Board"
  },
  {
   "id": "1AE9C7",
   "width": 10,
   "kind": "text",
   "jp": "よりしろの呪符",
-  "en": ""
+  "en": "Yorishiro Charm"
  },
  {
   "id": "1AE9DB",
   "width": 10,
   "kind": "text",
   "jp": "ものいみの呪符",
-  "en": ""
+  "en": "Monoimi Charm"
  },
  {
   "id": "1AE9EF",
   "width": 10,
   "kind": "text",
   "jp": "結界の呪符",
-  "en": ""
+  "en": "Barrier Charm"
  },
  {
   "id": "1AEA03",
   "width": 10,
   "kind": "text",
   "jp": "ヘルメスのサンダル",
-  "en": ""
+  "en": "Hermes Sandals"
  },
  {
   "id": "1AEA17",
   "width": 10,
   "kind": "text",
   "jp": "変わり身の巻物",
-  "en": ""
+  "en": "Decoy Scroll"
  },
  {
   "id": "1AEA2B",
   "width": 10,
   "kind": "text",
   "jp": "シルフの投げなわ",
-  "en": ""
+  "en": "Sylph Lasso"
  },
  {
   "id": "1AEA3F",
   "width": 10,
   "kind": "text",
   "jp": "ギャッラルホルン",
-  "en": ""
+  "en": "Gjallarhorn"
  },
  {
   "id": "1AEA53",
   "width": 10,
   "kind": "text",
   "jp": "ノームの帽子",
-  "en": ""
+  "en": "Gnome Hat"
  },
  {
   "id": "1AEA67",
   "width": 10,
   "kind": "text",
   "jp": "かくれ身のマント",
-  "en": ""
+  "en": "Hiding Cloak"
  },
  {
   "id": "1AEA7B",
   "width": 10,
   "kind": "text",
   "jp": "ネットトラップ",
-  "en": ""
+  "en": "Net Trap"
  },
  {
   "id": "1AEA8F",
   "width": 10,
   "kind": "text",
   "jp": "スピアトラップ",
-  "en": ""
+  "en": "Spear Trap"
  },
  {
   "id": "1AEAA3",
   "width": 10,
   "kind": "text",
   "jp": "ボウトラップ",
-  "en": ""
+  "en": "Bow Trap"
  },
  {
   "id": "1AEAB7",
   "width": 10,
   "kind": "text",
   "jp": "モーションストッパー",
-  "en": ""
+  "en": "Motion Stopper"
  },
  {
   "id": "1AEACB",
@@ -1001,140 +1001,140 @@
   "width": 10,
   "kind": "text",
   "jp": "アレスの指輪",
-  "en": ""
+  "en": "Ares Ring"
  },
  {
   "id": "1AEB2F",
   "width": 10,
   "kind": "text",
   "jp": "ヴィナスの指輪",
-  "en": ""
+  "en": "Venus Ring"
  },
  {
   "id": "1AEB43",
   "width": 10,
   "kind": "text",
   "jp": "ヘルメスの指輪",
-  "en": ""
+  "en": "Hermes Ring"
  },
  {
   "id": "1AEB57",
   "width": 10,
   "kind": "text",
   "jp": "セレネの指輪",
-  "en": ""
+  "en": "Selene Ring"
  },
  {
   "id": "1AEB6B",
   "width": 10,
   "kind": "text",
   "jp": "アポロンの指輪",
-  "en": ""
+  "en": "Apollo Ring"
  },
  {
   "id": "1AEB7F",
   "width": 10,
   "kind": "text",
   "jp": "マーキュリーの指輪",
-  "en": ""
+  "en": "Mercury Ring"
  },
  {
   "id": "1AEB93",
   "width": 10,
   "kind": "text",
   "jp": "アフロディーテの指輪",
-  "en": ""
+  "en": "Aphrodite Ring"
  },
  {
   "id": "1AEBA7",
   "width": 10,
   "kind": "text",
   "jp": "プルートゥの指輪",
-  "en": ""
+  "en": "Pluto Ring"
  },
  {
   "id": "1AEBBB",
   "width": 10,
   "kind": "text",
   "jp": "ゼウスの指輪",
-  "en": ""
+  "en": "Zeus Ring"
  },
  {
   "id": "1AEBCF",
   "width": 10,
   "kind": "text",
   "jp": "クロノスの指輪",
-  "en": ""
+  "en": "Cronus Ring"
  },
  {
   "id": "1AEBE3",
   "width": 10,
   "kind": "text",
   "jp": "ウラヌスの指輪",
-  "en": ""
+  "en": "Uranus Ring"
  },
  {
   "id": "1AEBF7",
   "width": 10,
   "kind": "text",
   "jp": "ポセイドンの指輪",
-  "en": ""
+  "en": "Poseidon Ring"
  },
  {
   "id": "1AEC0B",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンのたづな",
-  "en": ""
+  "en": "Dragon Reins"
  },
  {
   "id": "1AEC1F",
   "width": 10,
   "kind": "text",
   "jp": "黒騎士のエンブレム",
-  "en": ""
+  "en": "B.Knight Crest"
  },
  {
   "id": "1AEC33",
   "width": 10,
   "kind": "text",
   "jp": "影使いの奥義書",
-  "en": ""
+  "en": "Shadow Scroll"
  },
  {
   "id": "1AEC47",
   "width": 10,
   "kind": "text",
   "jp": "古代の魔導書",
-  "en": ""
+  "en": "Ancient Grimoire"
  },
  {
   "id": "1AEC5B",
   "width": 10,
   "kind": "text",
   "jp": "知恵の木の実",
-  "en": ""
+  "en": "Wisdom Fruit"
  },
  {
   "id": "1AEC6F",
   "width": 10,
   "kind": "text",
   "jp": "九転丹",
-  "en": ""
+  "en": "Kutentan"
  },
  {
   "id": "1AEC83",
   "width": 10,
   "kind": "text",
   "jp": "精霊水",
-  "en": ""
+  "en": "Spirit Water"
  },
  {
   "id": "1AEC97",
   "width": 10,
   "kind": "text",
   "jp": "精霊石",
-  "en": ""
+  "en": "Spirit Stone"
  },
  {
   "id": "1AECAB",
@@ -1186,42 +1186,42 @@
   "width": 10,
   "kind": "text",
   "jp": "竪琴",
-  "en": ""
+  "en": "Harp"
  },
  {
   "id": "1AED4B",
   "width": 10,
   "kind": "text",
   "jp": "弾丸のネックレス",
-  "en": ""
+  "en": "Bullet Necklace"
  },
  {
   "id": "1AED5F",
   "width": 10,
   "kind": "text",
   "jp": "叫びのフエ",
-  "en": ""
+  "en": "Shriek Whistle"
  },
  {
   "id": "1AED73",
   "width": 10,
   "kind": "text",
   "jp": "リュート",
-  "en": ""
+  "en": "Lute"
  },
  {
   "id": "1AED87",
   "width": 10,
   "kind": "text",
   "jp": "しょうかいじょう",
-  "en": ""
+  "en": "Referral"
  },
  {
   "id": "1AED9B",
   "width": 10,
   "kind": "text",
   "jp": "墓所のカギ",
-  "en": ""
+  "en": "Tomb Key"
  },
  {
   "id": "1AEDAF",

@@ -13,70 +13,70 @@
   "width": 10,
   "kind": "text",
   "jp": "ファイアボール",
-  "en": ""
+  "en": "Fireball"
  },
  {
   "id": "08E0E6",
   "width": 10,
   "kind": "text",
   "jp": "ファイアストーム",
-  "en": ""
+  "en": "Firestorm"
  },
  {
   "id": "08E0FA",
   "width": 10,
   "kind": "text",
   "jp": "アクアスクリーン",
-  "en": ""
+  "en": "Aqua Screen"
  },
  {
   "id": "08E10E",
   "width": 10,
   "kind": "text",
   "jp": "サンダーストーム",
-  "en": ""
+  "en": "Thunderstorm"
  },
  {
   "id": "08E122",
   "width": 10,
   "kind": "text",
   "jp": "マインドブラスト",
-  "en": ""
+  "en": "Mind Blast"
  },
  {
   "id": "08E136",
   "width": 10,
   "kind": "text",
   "jp": "ブリザード",
-  "en": ""
+  "en": "Blizzard"
  },
  {
   "id": "08E14A",
   "width": 10,
   "kind": "text",
   "jp": "ブラッドレイン",
-  "en": ""
+  "en": "Blood Rain"
  },
  {
   "id": "08E15E",
   "width": 10,
   "kind": "text",
   "jp": "ファントムゴアー",
-  "en": ""
+  "en": "Phantom Gore"
  },
  {
   "id": "08E172",
   "width": 10,
   "kind": "text",
   "jp": "式神",
-  "en": ""
+  "en": "Shikigami"
  },
  {
   "id": "08E186",
   "width": 10,
   "kind": "text",
   "jp": "ヒール",
-  "en": ""
+  "en": "Heal"
  },
  {
   "id": "08E19A",
@@ -89,70 +89,70 @@
   "width": 10,
   "kind": "text",
   "jp": "キュアー",
-  "en": ""
+  "en": "Cure"
  },
  {
   "id": "08E1C2",
   "width": 10,
   "kind": "text",
   "jp": "ヒールオール",
-  "en": ""
+  "en": "Heal All"
  },
  {
   "id": "08E1D6",
   "width": 10,
   "kind": "text",
   "jp": "メガヒール",
-  "en": ""
+  "en": "Mega Heal"
  },
  {
   "id": "08E1EA",
   "width": 10,
   "kind": "text",
   "jp": "ブレスガード",
-  "en": ""
+  "en": "Bless Guard"
  },
  {
   "id": "08E1FE",
   "width": 10,
   "kind": "text",
   "jp": "リカバー",
-  "en": ""
+  "en": "Recover"
  },
  {
   "id": "08E212",
   "width": 10,
   "kind": "text",
   "jp": "レスキュー",
-  "en": ""
+  "en": "Rescue"
  },
  {
   "id": "08E226",
   "width": 10,
   "kind": "text",
   "jp": "ブレスパワー",
-  "en": ""
+  "en": "Bless Power"
  },
  {
   "id": "08E23A",
   "width": 10,
   "kind": "text",
   "jp": "ブレスオール",
-  "en": ""
+  "en": "Bless All"
  },
  {
   "id": "08E24E",
   "width": 10,
   "kind": "text",
   "jp": "フォース",
-  "en": ""
+  "en": "Force"
  },
  {
   "id": "08E262",
   "width": 10,
   "kind": "text",
   "jp": "バニッシュレイ",
-  "en": "",
+  "en": "Banish Ray",
   "refs": [
    "0B062A"
   ]
@@ -162,301 +162,301 @@
   "width": 10,
   "kind": "text",
   "jp": "ディバイン",
-  "en": ""
+  "en": "Divine"
  },
  {
   "id": "08E28A",
   "width": 10,
   "kind": "text",
   "jp": "アシッドウィンド",
-  "en": ""
+  "en": "Acid Wind"
  },
  {
   "id": "08E29E",
   "width": 10,
   "kind": "text",
   "jp": "イージス",
-  "en": ""
+  "en": "Aegis"
  },
  {
   "id": "08E2B2",
   "width": 10,
   "kind": "text",
   "jp": "イージス２",
-  "en": ""
+  "en": "Aegis 2"
  },
  {
   "id": "08E2C6",
   "width": 10,
   "kind": "text",
   "jp": "ソニックシュート",
-  "en": ""
+  "en": "Sonic Shoot"
  },
  {
   "id": "08E2DA",
   "width": 10,
   "kind": "text",
   "jp": "真空斬り",
-  "en": ""
+  "en": "Vacuum Slash"
  },
  {
   "id": "08E2EE",
   "width": 10,
   "kind": "text",
   "jp": "ハイパーソニック",
-  "en": ""
+  "en": "Hypersonic"
  },
  {
   "id": "08E302",
   "width": 10,
   "kind": "text",
   "jp": "バーンソニック",
-  "en": ""
+  "en": "Burn Sonic"
  },
  {
   "id": "08E316",
   "width": 10,
   "kind": "text",
   "jp": "ソニックライディング",
-  "en": ""
+  "en": "Sonic Riding"
  },
  {
   "id": "08E32A",
   "width": 10,
   "kind": "text",
   "jp": "十字しゅりけん",
-  "en": ""
+  "en": "Cross Shuriken"
  },
  {
   "id": "08E33E",
   "width": 10,
   "kind": "text",
   "jp": "みじんの術",
-  "en": ""
+  "en": "Mijin Art"
  },
  {
   "id": "08E352",
   "width": 10,
   "kind": "text",
   "jp": "分身斬り",
-  "en": ""
+  "en": "Clone Slash"
  },
  {
   "id": "08E366",
   "width": 10,
   "kind": "text",
   "jp": "火走り",
-  "en": ""
+  "en": "Fire Dash"
  },
  {
   "id": "08E37A",
   "width": 10,
   "kind": "text",
   "jp": "うつしみの術",
-  "en": ""
+  "en": "Utsushimi Art"
  },
  {
   "id": "08E38E",
   "width": 10,
   "kind": "text",
   "jp": "影ヌイ",
-  "en": ""
+  "en": "Shadow Stitch"
  },
  {
   "id": "08E3A2",
   "width": 10,
   "kind": "text",
   "jp": "黒風",
-  "en": ""
+  "en": "Black Wind"
  },
  {
   "id": "08E3B6",
   "width": 10,
   "kind": "text",
   "jp": "鬼影",
-  "en": ""
+  "en": "Demon Shade"
  },
  {
   "id": "08E3CA",
   "width": 10,
   "kind": "text",
   "jp": "Ｘの字斬り",
-  "en": ""
+  "en": "X Slash"
  },
  {
   "id": "08E3DE",
   "width": 10,
   "kind": "text",
   "jp": "アークバッシャー",
-  "en": ""
+  "en": "Arc Basher"
  },
  {
   "id": "08E3F2",
   "width": 10,
   "kind": "text",
   "jp": "ホーリーブレイド",
-  "en": ""
+  "en": "Holy Blade"
  },
  {
   "id": "08E406",
   "width": 10,
   "kind": "text",
   "jp": "ダークブレイド",
-  "en": ""
+  "en": "Dark Blade"
  },
  {
   "id": "08E41A",
   "width": 10,
   "kind": "text",
   "jp": "スタンブレイド",
-  "en": ""
+  "en": "Stun Blade"
  },
  {
   "id": "08E42E",
   "width": 10,
   "kind": "text",
   "jp": "ミネウチ",
-  "en": ""
+  "en": "Mineuchi"
  },
  {
   "id": "08E442",
   "width": 10,
   "kind": "text",
   "jp": "狼牙封殺",
-  "en": ""
+  "en": "Wolf Fang Seal"
  },
  {
   "id": "08E456",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンファング",
-  "en": ""
+  "en": "Dragon Fang"
  },
  {
   "id": "08E46A",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンクライ",
-  "en": ""
+  "en": "Dragon Cry"
  },
  {
   "id": "08E47E",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンストーム",
-  "en": ""
+  "en": "Dragon Storm"
  },
  {
   "id": "08E492",
   "width": 10,
   "kind": "text",
   "jp": "百鬼斬",
-  "en": ""
+  "en": "Demon Horde"
  },
  {
   "id": "08E4A6",
   "width": 10,
   "kind": "text",
   "jp": "ヒュプノショット",
-  "en": ""
+  "en": "Hypno Shot"
  },
  {
   "id": "08E4BA",
   "width": 10,
   "kind": "text",
   "jp": "レンジプラス",
-  "en": ""
+  "en": "Range Plus"
  },
  {
   "id": "08E4CE",
   "width": 10,
   "kind": "text",
   "jp": "サウザンドアロー",
-  "en": ""
+  "en": "1000 Arrows"
  },
  {
   "id": "08E4E2",
   "width": 10,
   "kind": "text",
   "jp": "ミリオンアロー",
-  "en": ""
+  "en": "Million Arrows"
  },
  {
   "id": "08E4F6",
   "width": 10,
   "kind": "text",
   "jp": "エレメンタルブレッド",
-  "en": ""
+  "en": "Element Bullet"
  },
  {
   "id": "08E50A",
   "width": 10,
   "kind": "text",
   "jp": "キルショット",
-  "en": ""
+  "en": "Kill Shot"
  },
  {
   "id": "08E51E",
   "width": 10,
   "kind": "text",
   "jp": "メタルグレネード",
-  "en": ""
+  "en": "Metal Grenade"
  },
  {
   "id": "08E532",
   "width": 10,
   "kind": "text",
   "jp": "地竜逆撃",
-  "en": ""
+  "en": "Earth Dragon"
  },
  {
   "id": "08E546",
   "width": 10,
   "kind": "text",
   "jp": "破軍闘神",
-  "en": ""
+  "en": "War God Rout"
  },
  {
   "id": "08E55A",
   "width": 10,
   "kind": "text",
   "jp": "降岩の陣",
-  "en": ""
+  "en": "Rockfall Array"
  },
  {
   "id": "08E56E",
   "width": 10,
   "kind": "text",
   "jp": "地脈の陣",
-  "en": ""
+  "en": "Ley Line Array"
  },
  {
   "id": "08E582",
   "width": 10,
   "kind": "text",
   "jp": "奇門盾甲",
-  "en": ""
+  "en": "Kimon Tonko"
  },
  {
   "id": "08E596",
   "width": 10,
   "kind": "text",
   "jp": "転移の法",
-  "en": ""
+  "en": "Teleport Art"
  },
  {
   "id": "08E5AA",
   "width": 10,
   "kind": "text",
   "jp": "邪仙の法",
-  "en": ""
+  "en": "Evil Sage Art"
  },
  {
   "id": "08E5BE",
   "width": 10,
   "kind": "text",
   "jp": "ターンアンデッド",
-  "en": "",
+  "en": "Turn Undead",
   "refs": [
    "26ED09"
   ]
@@ -466,28 +466,28 @@
   "width": 10,
   "kind": "text",
   "jp": "アイスキューブ",
-  "en": ""
+  "en": "Ice Cube"
  },
  {
   "id": "08E5E6",
   "width": 10,
   "kind": "text",
   "jp": "グラビティホール",
-  "en": ""
+  "en": "Gravity Hole"
  },
  {
   "id": "08E5FA",
   "width": 10,
   "kind": "text",
   "jp": "ギガスマッシャー",
-  "en": ""
+  "en": "Giga Smasher"
  },
  {
   "id": "08E60E",
   "width": 10,
   "kind": "text",
   "jp": "モータルリング",
-  "en": "",
+  "en": "Mortal Ring",
   "refs": [
    "10F9E1"
   ]
@@ -497,20 +497,20 @@
   "width": 10,
   "kind": "text",
   "jp": "アナザディメンション",
-  "en": ""
+  "en": "Another World"
  },
  {
   "id": "08E636",
   "width": 10,
   "kind": "text",
   "jp": "ツインソニック",
-  "en": ""
+  "en": "Twin Sonic"
  },
  {
   "id": "08E64A",
   "width": 10,
   "kind": "text",
   "jp": "リブラインド",
-  "en": ""
+  "en": "Reblind"
  }
 ]

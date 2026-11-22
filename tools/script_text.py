@@ -382,8 +382,12 @@ def region_entries(files, name, start, end):
     return [e for e in files[name + ".json"] if start <= int(e["id"], 16) < end]
 
 
+OVERFLOW = []   # side entries whose `en` overflowed a fixed field in the last apply_script (JP kept)
+
+
 def apply_script(rom, files, field="jp"):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step)."""
+    OVERFLOW.clear()
     mc, sc, wc = TextCodec(True), side_codecs(), WordCodec()
     data = unpack(rom)
     for bi, blk in enumerate(data["master"]["blocks"]):
@@ -395,6 +399,15 @@ def apply_script(rom, files, field="jp"):
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e
-            words += side_words(src, sc[r["name"] in ENGINE_B_TABLES], pack=r["name"] in C1_TABLES)
+            codec, pack = sc[r["name"] in ENGINE_B_TABLES], r["name"] in C1_TABLES
+            try:
+                words += side_words(src, codec, pack=pack)
+            except ValueError:
+                if src is e:
+                    raise
+                # English longer than a fixed field the engine can't widen yet (speaker tags, location labels:
+                # decision D8, phase 7): keep the JP and report it.
+                OVERFLOW.append(f"{r['name']}:{e['id']}")
+                words += side_words(e, codec, pack=pack)
         r["text"] = wc.decode(words)
     return data

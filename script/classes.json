@@ -27,7 +27,7 @@
   "width": 10,
   "kind": "text",
   "jp": "妖精",
-  "en": "",
+  "en": "Fairy",
   "refs": [
    "0BF803"
   ]
@@ -37,7 +37,7 @@
   "width": 10,
   "kind": "text",
   "jp": "バウンティハンター",
-  "en": "",
+  "en": "Bounty Hunter",
   "refs": [
    "0BF806"
   ]
@@ -47,28 +47,28 @@
   "width": 10,
   "kind": "text",
   "jp": "コマンダー",
-  "en": ""
+  "en": "Commander"
  },
  {
   "id": "0BF8FE",
   "width": 10,
   "kind": "text",
   "jp": "ソードマスター",
-  "en": ""
+  "en": "Swordmaster"
  },
  {
   "id": "0BF912",
   "width": 10,
   "kind": "text",
   "jp": "ロード",
-  "en": ""
+  "en": "Lord"
  },
  {
   "id": "0BF926",
   "width": 10,
   "kind": "text",
   "jp": "ニンジャ",
-  "en": "",
+  "en": "Ninja",
   "refs": [
    "0BF830"
   ]
@@ -78,21 +78,21 @@
   "width": 10,
   "kind": "text",
   "jp": "ニンジャマスター",
-  "en": ""
+  "en": "Ninja Master"
  },
  {
   "id": "0BF94E",
   "width": 10,
   "kind": "text",
   "jp": "シャドウマスター",
-  "en": ""
+  "en": "Shadowmaster"
  },
  {
   "id": "0BF962",
   "width": 10,
   "kind": "text",
   "jp": "サムライ",
-  "en": "",
+  "en": "Samurai",
   "refs": [
    "0BF833"
   ]
@@ -102,14 +102,14 @@
   "width": 10,
   "kind": "text",
   "jp": "ケンゴウ",
-  "en": ""
+  "en": "Kengo"
  },
  {
   "id": "0BF98A",
   "width": 10,
   "kind": "text",
   "jp": "ガンマン",
-  "en": "",
+  "en": "Gunman",
   "refs": [
    "0BF836"
   ]
@@ -119,14 +119,14 @@
   "width": 10,
   "kind": "text",
   "jp": "スナイパー",
-  "en": ""
+  "en": "Sniper"
  },
  {
   "id": "0BF9B2",
   "width": 10,
   "kind": "text",
   "jp": "戦士",
-  "en": "",
+  "en": "Warrior",
   "refs": [
    "0BF839"
   ]
@@ -136,14 +136,14 @@
   "width": 10,
   "kind": "text",
   "jp": "ナイト",
-  "en": ""
+  "en": "Knight"
  },
  {
   "id": "0BF9DA",
   "width": 10,
   "kind": "text",
   "jp": "パラディン",
-  "en": "",
+  "en": "Paladin",
   "refs": [
    "1ACBC4"
   ]
@@ -153,21 +153,21 @@
   "width": 10,
   "kind": "text",
   "jp": "ダークナイト",
-  "en": ""
+  "en": "Dark Knight"
  },
  {
   "id": "0BFA02",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンナイト",
-  "en": ""
+  "en": "Dragon Knight"
  },
  {
   "id": "0BFA16",
   "width": 10,
   "kind": "text",
   "jp": "風水師",
-  "en": "",
+  "en": "Geomancer",
   "refs": [
    "0BF83C"
   ]
@@ -177,21 +177,21 @@
   "width": 10,
   "kind": "text",
   "jp": "おんみょうじ",
-  "en": ""
+  "en": "Onmyoji"
  },
  {
   "id": "0BFA3E",
   "width": 10,
   "kind": "text",
   "jp": "しかいせん",
-  "en": ""
+  "en": "Immortal"
  },
  {
   "id": "0BFA52",
   "width": 10,
   "kind": "text",
   "jp": "アマゾネス",
-  "en": "",
+  "en": "Amazon",
   "refs": [
    "0BF83F",
    "19708D"
@@ -202,14 +202,14 @@
   "width": 10,
   "kind": "text",
   "jp": "ワルキューレ",
-  "en": ""
+  "en": "Valkyrie"
  },
  {
   "id": "0BFA7A",
   "width": 10,
   "kind": "text",
   "jp": "魔術師",
-  "en": "",
+  "en": "Mage",
   "refs": [
    "0BF842",
    "0BF845"
@@ -220,35 +220,35 @@
   "width": 10,
   "kind": "text",
   "jp": "ウィザード",
-  "en": ""
+  "en": "Wizard"
  },
  {
   "id": "0BFAA2",
   "width": 10,
   "kind": "text",
   "jp": "ハイ°ウィザード",
-  "en": ""
+  "en": "High Wizard"
  },
  {
   "id": "0BFAB6",
   "width": 10,
   "kind": "text",
   "jp": "スペルマスター",
-  "en": ""
+  "en": "Spellmaster"
  },
  {
   "id": "0BFACA",
   "width": 10,
   "kind": "text",
   "jp": "ワイズマン",
-  "en": ""
+  "en": "Wise Man"
  },
  {
   "id": "0BFADE",
   "width": 10,
   "kind": "text",
   "jp": "弓兵",
-  "en": "",
+  "en": "Archer",
   "refs": [
    "0BF848"
   ]
@@ -258,21 +258,21 @@
   "width": 10,
   "kind": "text",
   "jp": "シューター",
-  "en": ""
+  "en": "Shooter"
  },
  {
   "id": "0BFB06",
   "width": 10,
   "kind": "text",
   "jp": "ボウマスター",
-  "en": ""
+  "en": "Bowmaster"
  },
  {
   "id": "0BFB1A",
   "width": 10,
   "kind": "text",
   "jp": "ゾンビマスター",
-  "en": "",
+  "en": "Zombie Master",
   "refs": [
    "0BF84B",
    "0BF84E"
@@ -283,14 +283,14 @@
   "width": 10,
   "kind": "text",
   "jp": "ワイズマン",
-  "en": ""
+  "en": "Wise Man"
  },
  {
   "id": "0BFB42",
   "width": 10,
   "kind": "text",
   "jp": "僧侶",
-  "en": "",
+  "en": "Cleric",
   "refs": [
    "0BF851"
   ]
@@ -300,28 +300,28 @@
   "width": 10,
   "kind": "text",
   "jp": "プリースト",
-  "en": ""
+  "en": "Priest"
  },
  {
   "id": "0BFB6A",
   "width": 10,
   "kind": "text",
   "jp": "ビショップ",
-  "en": ""
+  "en": "Bishop"
  },
  {
   "id": "0BFB7E",
   "width": 10,
   "kind": "text",
   "jp": "ワイズマン",
-  "en": ""
+  "en": "Wise Man"
  },
  {
   "id": "0BFB92",
   "width": 10,
   "kind": "text",
   "jp": "格闘家",
-  "en": "",
+  "en": "Brawler",
   "refs": [
    "0BF854"
   ]
@@ -331,14 +331,14 @@
   "width": 10,
   "kind": "text",
   "jp": "バトルマスター",
-  "en": ""
+  "en": "Battle Master"
  },
  {
   "id": "0BFBBA",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンナイト",
-  "en": "",
+  "en": "Dragon Knight",
   "refs": [
    "0BF857",
    "0BF85A",
@@ -350,7 +350,7 @@
   "width": 10,
   "kind": "text",
   "jp": "ゾンビ",
-  "en": "",
+  "en": "Zombie",
   "refs": [
    "0BF860"
   ]
@@ -360,14 +360,14 @@
   "width": 10,
   "kind": "text",
   "jp": "グール",
-  "en": ""
+  "en": "Ghoul"
  },
  {
   "id": "0BFBF6",
   "width": 10,
   "kind": "text",
   "jp": "ラグーン",
-  "en": "",
+  "en": "Lagoon",
   "refs": [
    "10DF53"
   ]
@@ -377,14 +377,14 @@
   "width": 10,
   "kind": "text",
   "jp": "土鬼",
-  "en": ""
+  "en": "Earth Demon"
  },
  {
   "id": "0BFC1E",
   "width": 10,
   "kind": "text",
   "jp": "スケルトン",
-  "en": "",
+  "en": "Skeleton",
   "refs": [
    "0BF863"
   ]
@@ -394,21 +394,21 @@
   "width": 10,
   "kind": "text",
   "jp": "ボーンゴーレム",
-  "en": ""
+  "en": "Bone Golem"
  },
  {
   "id": "0BFC46",
   "width": 10,
   "kind": "text",
   "jp": "スカルナイト",
-  "en": ""
+  "en": "Skull Knight"
  },
  {
   "id": "0BFC5A",
   "width": 10,
   "kind": "text",
   "jp": "ウォードッグ",
-  "en": "",
+  "en": "War Dog",
   "refs": [
    "0BF866"
   ]
@@ -418,21 +418,21 @@
   "width": 10,
   "kind": "text",
   "jp": "ケルベロス",
-  "en": ""
+  "en": "Cerberus"
  },
  {
   "id": "0BFC82",
   "width": 10,
   "kind": "text",
   "jp": "ヘルハウンド",
-  "en": ""
+  "en": "Hellhound"
  },
  {
   "id": "0BFC96",
   "width": 10,
   "kind": "text",
   "jp": "ダークロード",
-  "en": "",
+  "en": "Dark Lord",
   "refs": [
    "0BF869"
   ]
@@ -442,7 +442,7 @@
   "width": 10,
   "kind": "text",
   "jp": "ドラゴン",
-  "en": "",
+  "en": "Dragon",
   "refs": [
    "0BF86C"
   ]
@@ -452,28 +452,28 @@
   "width": 10,
   "kind": "text",
   "jp": "ダークドラゴン",
-  "en": ""
+  "en": "Dark Dragon"
  },
  {
   "id": "0BFCD2",
   "width": 10,
   "kind": "text",
   "jp": "カオスドラゴン",
-  "en": ""
+  "en": "Chaos Dragon"
  },
  {
   "id": "0BFCE6",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンゾンビ",
-  "en": ""
+  "en": "Dragon Zombie"
  },
  {
   "id": "0BFCFA",
   "width": 10,
   "kind": "text",
   "jp": "重装甲騎士",
-  "en": "",
+  "en": "Heavy Knight",
   "refs": [
    "0BF86F"
   ]
@@ -483,7 +483,7 @@
   "width": 10,
   "kind": "text",
   "jp": "ゴースト",
-  "en": "",
+  "en": "Ghost",
   "refs": [
    "0BF872",
    "0BF875"
@@ -494,14 +494,14 @@
   "width": 10,
   "kind": "text",
   "jp": "ダークソウル",
-  "en": ""
+  "en": "Dark Soul"
  },
  {
   "id": "0BFD36",
   "width": 10,
   "kind": "text",
   "jp": "盗賊",
-  "en": "",
+  "en": "Bandit",
   "refs": [
    "0BF878"
   ]
@@ -511,21 +511,21 @@
   "width": 10,
   "kind": "text",
   "jp": "アサシン",
-  "en": ""
+  "en": "Assassin"
  },
  {
   "id": "0BFD5E",
   "width": 10,
   "kind": "text",
   "jp": "ヒットマン",
-  "en": ""
+  "en": "Hitman"
  },
  {
   "id": "0BFD72",
   "width": 10,
   "kind": "text",
   "jp": "ミミック",
-  "en": "",
+  "en": "Mimic",
   "refs": [
    "0BF87B"
   ]
@@ -535,14 +535,14 @@
   "width": 10,
   "kind": "text",
   "jp": "リビングトラップ",
-  "en": ""
+  "en": "Living Trap"
  },
  {
   "id": "0BFD9A",
   "width": 10,
   "kind": "text",
   "jp": "ジャイアント",
-  "en": "",
+  "en": "Giant",
   "refs": [
    "0BF87E"
   ]
@@ -552,28 +552,28 @@
   "width": 10,
   "kind": "text",
   "jp": "シクロープ",
-  "en": ""
+  "en": "Cyclops"
  },
  {
   "id": "0BFDC2",
   "width": 10,
   "kind": "text",
   "jp": "ゴリアテ",
-  "en": ""
+  "en": "Goliath"
  },
  {
   "id": "0BFDD6",
   "width": 10,
   "kind": "text",
   "jp": "石像",
-  "en": ""
+  "en": "Statue"
  },
  {
   "id": "0BFDEA",
   "width": 10,
   "kind": "text",
   "jp": "ワイバーン",
-  "en": "",
+  "en": "Wyvern",
   "refs": [
    "0BF881"
   ]
@@ -583,28 +583,28 @@
   "width": 10,
   "kind": "text",
   "jp": "グリフォン",
-  "en": ""
+  "en": "Griffon"
  },
  {
   "id": "0BFE12",
   "width": 10,
   "kind": "text",
   "jp": "ロック",
-  "en": ""
+  "en": "Roc"
  },
  {
   "id": "0BFE26",
   "width": 10,
   "kind": "text",
   "jp": "ヴァルチャー",
-  "en": ""
+  "en": "Vulture"
  },
  {
   "id": "0BFE3A",
   "width": 10,
   "kind": "text",
   "jp": "モンスター使い",
-  "en": "",
+  "en": "Beast Tamer",
   "refs": [
    "0BF884"
   ]
@@ -614,7 +614,7 @@
   "width": 10,
   "kind": "text",
   "jp": "ハイドラ",
-  "en": "",
+  "en": "Hydra",
   "refs": [
    "0BF887"
   ]
@@ -624,21 +624,21 @@
   "width": 10,
   "kind": "text",
   "jp": "サラマンダー",
-  "en": ""
+  "en": "Salamander"
  },
  {
   "id": "0BFE76",
   "width": 10,
   "kind": "text",
   "jp": "カオスドラゴン",
-  "en": ""
+  "en": "Chaos Dragon"
  },
  {
   "id": "0BFE8A",
   "width": 10,
   "kind": "text",
   "jp": "ドラゴンゾンビ",
-  "en": "",
+  "en": "Dragon Zombie",
   "refs": [
    "0F4F2C"
   ]
@@ -648,7 +648,7 @@
   "width": 10,
   "kind": "text",
   "jp": "フュリス",
-  "en": "",
+  "en": "Furis",
   "refs": [
    "0BF88A"
   ]
@@ -658,7 +658,7 @@
   "width": 10,
   "kind": "text",
   "jp": "古代兵器",
-  "en": "",
+  "en": "Ancient Weapon",
   "refs": [
    "0BF88D",
    "0BF890",
@@ -675,7 +675,7 @@
   "width": 10,
   "kind": "text",
   "jp": "古代兵器",
-  "en": "",
+  "en": "Ancient Weapon",
   "refs": [
    "0D5B4B"
   ]
@@ -685,21 +685,21 @@
   "width": 10,
   "kind": "text",
   "jp": "古代兵器",
-  "en": ""
+  "en": "Ancient Weapon"
  },
  {
   "id": "0BFEEE",
   "width": 10,
   "kind": "text",
   "jp": "古代兵器",
-  "en": ""
+  "en": "Ancient Weapon"
  },
  {
   "id": "0BFF02",
   "width": 10,
   "kind": "text",
   "jp": "超機神",
-  "en": "",
+  "en": "Machine God",
   "refs": [
    "0BF8A8",
    "1A6A3D"
@@ -710,14 +710,14 @@
   "width": 10,
   "kind": "text",
   "jp": "超機神",
-  "en": ""
+  "en": "Machine God"
  },
  {
   "id": "0BFF2A",
   "width": 10,
   "kind": "text",
   "jp": "超機神",
-  "en": "",
+  "en": "Machine God",
   "refs": [
    "1A6E50"
   ]
@@ -727,14 +727,14 @@
   "width": 10,
   "kind": "text",
   "jp": "超機神",
-  "en": ""
+  "en": "Machine God"
  },
  {
   "id": "0BFF52",
   "width": 10,
   "kind": "text",
   "jp": "皇帝",
-  "en": "",
+  "en": "Emperor",
   "refs": [
    "0BF8A2"
   ]
@@ -744,7 +744,7 @@
   "width": 10,
   "kind": "text",
   "jp": "１２神像",
-  "en": "",
+  "en": "Zodiac Statue",
   "refs": [
    "0BF8AB"
   ]

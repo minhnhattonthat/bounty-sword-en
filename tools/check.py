@@ -9,4 +9,5 @@ ROOT = Path(__file__).resolve().parents[1]
 
 if __name__ == "__main__":
     r = subprocess.run([sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests")], cwd=ROOT)
-    sys.exit(r.returncode)
+    lint = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "batches.py"), "check"], cwd=ROOT)
+    sys.exit(r.returncode or lint.returncode)

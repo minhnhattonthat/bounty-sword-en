@@ -13,98 +13,98 @@
   "width": 8,
   "kind": "text",
   "jp": "目的地へ急げ",
-  "en": ""
+  "en": "Rush to Goal"
  },
  {
   "id": "08E8C6",
   "width": 8,
   "kind": "text",
   "jp": "ＳＰ使うな",
-  "en": ""
+  "en": "Save SP"
  },
  {
   "id": "08E8D6",
   "width": 8,
   "kind": "text",
   "jp": "回復のみＳＰ使用",
-  "en": ""
+  "en": "SP: Heal Only"
  },
  {
   "id": "08E8E6",
   "width": 8,
   "kind": "text",
   "jp": "防御しろ",
-  "en": ""
+  "en": "Defend"
  },
  {
   "id": "08E8F6",
   "width": 8,
   "kind": "text",
   "jp": "接近するな",
-  "en": ""
+  "en": "Keep Away"
  },
  {
   "id": "08E906",
   "width": 8,
   "kind": "text",
   "jp": "アイテム使うな",
-  "en": ""
+  "en": "No Items"
  },
  {
   "id": "08E916",
   "width": 8,
   "kind": "text",
   "jp": "その場で待ち伏せ",
-  "en": ""
+  "en": "Lie in Wait"
  },
  {
   "id": "08E926",
   "width": 8,
   "kind": "text",
   "jp": "自由に動け！",
-  "en": ""
+  "en": "Move Freely!"
  },
  {
   "id": "08E936",
   "width": 8,
   "kind": "text",
   "jp": "目標はここだ！",
-  "en": ""
+  "en": "Target Here!"
  },
  {
   "id": "08E946",
   "width": 8,
   "kind": "text",
   "jp": "その場で待機！",
-  "en": ""
+  "en": "Hold Here!"
  },
  {
   "id": "08E956",
   "width": 8,
   "kind": "text",
   "jp": "ＳＰ使え！",
-  "en": ""
+  "en": "Use SP!"
  },
  {
   "id": "08E966",
   "width": 8,
   "kind": "text",
   "jp": "ＳＰ使うな！",
-  "en": ""
+  "en": "No SP!"
  },
  {
   "id": "08E976",
   "width": 8,
   "kind": "text",
   "jp": "アイテム使え！",
-  "en": ""
+  "en": "Use Items!"
  },
  {
   "id": "08E986",
   "width": 8,
   "kind": "text",
   "jp": "アイテム使うな！",
-  "en": ""
+  "en": "No Items!"
  },
  {
   "id": "08E996",

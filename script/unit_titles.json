@@ -15,7 +15,7 @@
   "width": 16,
   "kind": "text",
   "jp": "音速のソード",
-  "en": "",
+  "en": "Sonic Sword",
   "refs": [
    "1900AB",
    "2B3C90",
@@ -36,28 +36,28 @@
   "width": 16,
   "kind": "text",
   "jp": "不敗の聖騎士",
-  "en": ""
+  "en": "Undefeated Paladin"
  },
  {
   "id": "08DFBE",
   "width": 16,
   "kind": "text",
   "jp": "辺境の聖女",
-  "en": ""
+  "en": "Saint of the Frontier"
  },
  {
   "id": "08DFDE",
   "width": 16,
   "kind": "text",
   "jp": "ドラゴンバスター",
-  "en": ""
+  "en": "Dragon Buster"
  },
  {
   "id": "08DFFE",
   "width": 16,
   "kind": "text",
   "jp": "閃光のシュタイアー",
-  "en": "",
+  "en": "Steyr the Flash",
   "refs": [
    "2B3E48",
    "2B75F6",
@@ -71,28 +71,28 @@
   "width": 16,
   "kind": "text",
   "jp": "寸断のリュウビ",
-  "en": ""
+  "en": "Ryubi the Shredder"
  },
  {
   "id": "08E03E",
   "width": 16,
   "kind": "text",
   "jp": "戦雲の女神",
-  "en": ""
+  "en": "Goddess of Battle"
  },
  {
   "id": "08E05E",
   "width": 16,
   "kind": "text",
   "jp": "闘将アジャックス",
-  "en": ""
+  "en": "Ajax the Warlord"
  },
  {
   "id": "08E07E",
   "width": 16,
   "kind": "text",
   "jp": "軍事大臣",
-  "en": "",
+  "en": "Minister of War",
   "refs": [
    "2A20E4"
   ]
@@ -102,6 +102,6 @@
   "width": 16,
   "kind": "text",
   "jp": "暴れんぼうロジャー",
-  "en": ""
+  "en": "Roger the Wild"
  }
 ]

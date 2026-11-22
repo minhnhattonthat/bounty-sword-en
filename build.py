@@ -22,7 +22,7 @@ from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
-from script_text import SCRIPT, apply_script, dump, load  # noqa: E402
+from script_text import OVERFLOW, SCRIPT, apply_script, dump, load  # noqa: E402
 
 ORIG = ROOT / "rom" / "Bounty Sword (Japan).sfc"
 BUILD = ROOT / "build"
@@ -63,7 +63,10 @@ def build(out=OUT, identity=False, marker=False, qa=()):
     if marker:
         files = marker_files(files, rom)
     files = apply_qa(files, qa)
-    data = apply_script(rom, files, field="en")
+    data = apply_script(rom, files, field="jp" if identity else "en")   # identity: repack with no edits
+    if OVERFLOW:
+        print(f"warning: {len(OVERFLOW)} English entries overflow a fixed field, JP kept (D8, phase 7): "
+              + " ".join(OVERFLOW[:12]) + (" ..." if len(OVERFLOW) > 12 else ""))
     built = repack(rom, data, WordCodec())
     out.parent.mkdir(parents=True, exist_ok=True)
     if not identity:

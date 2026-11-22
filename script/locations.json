@@ -4,7 +4,7 @@
   "width": 10,
   "kind": "text",
   "jp": "ラインメタル王国首都",
-  "en": "",
+  "en": "Rheinmetall",
   "refs": [
    "00CB58"
   ]
@@ -14,35 +14,35 @@
   "width": 10,
   "kind": "text",
   "jp": "　イーストエンド",
-  "en": ""
+  "en": "East End"
  },
  {
   "id": "00CDA3",
   "width": 10,
   "kind": "text",
   "jp": "ブラックバーンの山々",
-  "en": ""
+  "en": "Blackburn Mts"
  },
  {
   "id": "00CDB7",
   "width": 10,
   "kind": "text",
   "jp": "　辺境のかんしじょ",
-  "en": ""
+  "en": "Frontier Post"
  },
  {
   "id": "00CDCB",
   "width": 10,
   "kind": "text",
   "jp": "　アンデッドの巣",
-  "en": ""
+  "en": "Undead Nest"
  },
  {
   "id": "00CDDF",
   "width": 10,
   "kind": "text",
   "jp": "　　　狼の森",
-  "en": "",
+  "en": "Wolf Forest",
   "refs": [
    "197755"
   ]
@@ -52,14 +52,14 @@
   "width": 10,
   "kind": "text",
   "jp": "　　水晶の入り江",
-  "en": ""
+  "en": "Crystal Cove"
  },
  {
   "id": "00CE07",
   "width": 10,
   "kind": "text",
   "jp": "　　　　港街",
-  "en": "",
+  "en": "Port Town",
   "refs": [
    "1A8841"
   ]
@@ -69,42 +69,42 @@
   "width": 10,
   "kind": "text",
   "jp": "　　封印の墓所",
-  "en": ""
+  "en": "Sealed Tomb"
  },
  {
   "id": "00CE2F",
   "width": 10,
   "kind": "text",
   "jp": "　　ハイランド",
-  "en": ""
+  "en": "Highland"
  },
  {
   "id": "00CE43",
   "width": 10,
   "kind": "text",
   "jp": "　　アーデンの森",
-  "en": ""
+  "en": "Arden Forest"
  },
  {
   "id": "00CE57",
   "width": 10,
   "kind": "text",
   "jp": "　　　廃墟の村",
-  "en": ""
+  "en": "Ruined Village"
  },
  {
   "id": "00CE6B",
   "width": 10,
   "kind": "text",
   "jp": "　　氷結の大地",
-  "en": ""
+  "en": "Frozen Land"
  },
  {
   "id": "00CE7F",
   "width": 10,
   "kind": "text",
   "jp": "　エルツの大平原",
-  "en": "",
+  "en": "Erz Plains",
   "refs": [
    "11B2C3"
   ]
@@ -114,56 +114,56 @@
   "width": 10,
   "kind": "text",
   "jp": "　リパイオス山脈",
-  "en": ""
+  "en": "Rhipaean Mts"
  },
  {
   "id": "00CEA7",
   "width": 10,
   "kind": "text",
   "jp": "　　　賢者の里",
-  "en": ""
+  "en": "Sage Village"
  },
  {
   "id": "00CEBB",
   "width": 10,
   "kind": "text",
   "jp": "　　イベリアの[00AB]",
-  "en": ""
+  "en": "Cape Iberia"
  },
  {
   "id": "00CECF",
   "width": 10,
   "kind": "text",
   "jp": "　　エリダヌス川",
-  "en": ""
+  "en": "Eridanus River"
  },
  {
   "id": "00CEE3",
   "width": 10,
   "kind": "text",
   "jp": "　　パドヴァ地方",
-  "en": ""
+  "en": "Padova"
  },
  {
   "id": "00CEF7",
   "width": 10,
   "kind": "text",
   "jp": "　　辺境の火山島",
-  "en": ""
+  "en": "Volcano Isle"
  },
  {
   "id": "00CF0B",
   "width": 10,
   "kind": "text",
   "jp": "　　　紅の湖",
-  "en": ""
+  "en": "Crimson Lake"
  },
  {
   "id": "00CF1F",
   "width": 10,
   "kind": "text",
   "jp": "　　　西の平原",
-  "en": "",
+  "en": "West Plains",
   "refs": [
    "2F5D3E"
   ]
@@ -173,7 +173,7 @@
   "width": 10,
   "kind": "text",
   "jp": "　　スパニア高原",
-  "en": "",
+  "en": "Spania Plateau",
   "refs": [
    "0F0672"
   ]
@@ -183,7 +183,7 @@
   "width": 10,
   "kind": "text",
   "jp": "　　王都ロムルス",
-  "en": "",
+  "en": "Romulus",
   "refs": [
    "0AD383"
   ]
@@ -193,28 +193,28 @@
   "width": 10,
   "kind": "text",
   "jp": "　　　剣の[00AB]",
-  "en": ""
+  "en": "Sword Cape"
  },
  {
   "id": "00CF6F",
   "width": 10,
   "kind": "text",
   "jp": "　タルテソスの門",
-  "en": ""
+  "en": "Tartessos Gate"
  },
  {
   "id": "00CF83",
   "width": 10,
   "kind": "text",
   "jp": "　シェブールの街",
-  "en": ""
+  "en": "Cherbourg"
  },
  {
   "id": "00CF97",
   "width": 10,
   "kind": "text",
   "jp": "　ミッドガルドの街",
-  "en": ""
+  "en": "Midgard"
  },
  {
   "id": "00CFAB",
@@ -227,35 +227,35 @@
   "width": 10,
   "kind": "text",
   "jp": "　ジブラルタル海峡",
-  "en": ""
+  "en": "Gibraltar Str."
  },
  {
   "id": "00CFD3",
   "width": 10,
   "kind": "text",
   "jp": "　　アトラス砂漠",
-  "en": ""
+  "en": "Atlas Desert"
  },
  {
   "id": "00CFE7",
   "width": 10,
   "kind": "text",
   "jp": "　　　西の砂漠",
-  "en": ""
+  "en": "West Desert"
  },
  {
   "id": "00CFFB",
   "width": 10,
   "kind": "text",
   "jp": "　　　南の砂漠",
-  "en": ""
+  "en": "South Desert"
  },
  {
   "id": "00D00F",
   "width": 10,
   "kind": "text",
   "jp": "　　アバダンの川",
-  "en": "",
+  "en": "Abadan River",
   "refs": [
    "0BF71F",
    "2FB9F3"
@@ -266,63 +266,63 @@
   "width": 10,
   "kind": "text",
   "jp": "　　アトラス山脈",
-  "en": ""
+  "en": "Atlas Mts"
  },
  {
   "id": "00D037",
   "width": 10,
   "kind": "text",
   "jp": "　アトラス山脈°東",
-  "en": ""
+  "en": "E. Atlas Mts"
  },
  {
   "id": "00D04B",
   "width": 10,
   "kind": "text",
   "jp": "　　閉ざされた島",
-  "en": ""
+  "en": "Isolated Isle"
  },
  {
   "id": "00D05F",
   "width": 10,
   "kind": "text",
   "jp": "　アトラス山脈°南",
-  "en": ""
+  "en": "S. Atlas Mts"
  },
  {
   "id": "00D073",
   "width": 10,
   "kind": "text",
   "jp": "　　　龍の亀裂",
-  "en": ""
+  "en": "Dragon Rift"
  },
  {
   "id": "00D087",
   "width": 10,
   "kind": "text",
   "jp": "　　灰色の大地",
-  "en": ""
+  "en": "Gray Wastes"
  },
  {
   "id": "00D09B",
   "width": 10,
   "kind": "text",
   "jp": "　　　西の小島",
-  "en": ""
+  "en": "West Islet"
  },
  {
   "id": "00D0AF",
   "width": 10,
   "kind": "text",
   "jp": "　　ぜつ望の湖",
-  "en": ""
+  "en": "Lake Despair"
  },
  {
   "id": "00D0C3",
   "width": 10,
   "kind": "text",
   "jp": "　ぜつ望の湖°南",
-  "en": "",
+  "en": "S. Lake Despair",
   "refs": [
    "2296CD",
    "22F95F"
@@ -333,21 +333,21 @@
   "width": 10,
   "kind": "text",
   "jp": "　　廃墟の半島",
-  "en": ""
+  "en": "Ruin Peninsula"
  },
  {
   "id": "00D0EB",
   "width": 10,
   "kind": "text",
   "jp": "アルダブラ島°中央",
-  "en": ""
+  "en": "Mid Aldabra"
  },
  {
   "id": "00D0FF",
   "width": 10,
   "kind": "text",
   "jp": "　オルドバ連邦内",
-  "en": "",
+  "en": "Ordoba Fed.",
   "refs": [
    "09895A",
    "098AFA",
@@ -362,26 +362,26 @@
   "width": 10,
   "kind": "text",
   "jp": "　メッシーナの街",
-  "en": ""
+  "en": "Messina"
  },
  {
   "id": "00D127",
   "width": 10,
   "kind": "text",
   "jp": "　　遺跡の街",
-  "en": ""
+  "en": "Ruins Town"
  },
  {
   "id": "00D13B",
   "width": 10,
   "kind": "text",
   "jp": "　　アクラの街",
-  "en": ""
+  "en": "Accra"
  },
  {
   "id": "00D14F",
   "kind": "text",
   "jp": "抹",
-  "en": ""
+  "en": "-"
  }
 ]
