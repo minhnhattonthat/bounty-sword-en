@@ -19,6 +19,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import grid  # noqa: E402
 import pages  # noqa: E402
 from font_en import text_px  # noqa: E402
 
@@ -48,6 +49,7 @@ LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "uni
           # packs two letters a cell there like C1Run (decision D8), so they get the pair budget too.
           "locations": ("px", 80), "speakers": ("px", 48),
           "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("row", 28)}
+EXACT = {"objectives"}
 NAMES = {"{FF1F}": "HERO", "{FF28}": "FF28", "{FF31}": "FF31"}
 
 
@@ -103,7 +105,20 @@ def speaker_of(entry):
     return pages.speaker(m.group(0), NAMES) if m else ""
 
 
+def grid_codes(entry, text):
+    """C1 grid strings (tools/grid.py): drop the cursor codes and glyph words (< 0x0F00, e.g. [0001] ん) before the
+    control-code comparison: the English places its own cells."""
+    if file_of(entry) not in grid.GRID_FILES:
+        return text
+    return re.sub(r"\[0[0-9A-E][0-9A-F]{2}\]", "", grid.CURSOR.sub("", text))
+
+
 def width_problems(entry, en):
+    if file_of(entry) in grid.GRID_FILES and entry.get("width"):
+        return grid.problems(en, entry["width"])
+    if file_of(entry) in EXACT:     # repacked in place, entries addressed by pointers: one char a word, same count
+        n_jp, n_en = len(TOKEN.sub("", entry["jp"])), len(TOKEN.sub("", en))
+        return [] if n_en == n_jp else [f"{n_en} characters, the slot holds exactly {n_jp} (pad with spaces)"]
     lim = LIMITS.get(file_of(entry))
     if is_master(entry) or not lim:
         return []
@@ -121,6 +136,9 @@ def width_problems(entry, en):
         if any(len(TOKEN.sub("", r)) > n for r in rows):
             return [f"a row over {n} characters (break rows with {{FF01}})"]
     return []
+
+
+GRID_GLYPHS = set("　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９")   # JP font, 8 px a cell
 
 
 def encodable(char):
@@ -173,7 +191,8 @@ def problems(entry, en, terms):
     out = []
     raw = is_master(entry) and pages.split(jp)[0]
     plain = TOKEN.sub("", en.replace("\\n", "").replace("||", ""))
-    if bad := sorted({c for c in plain if not encodable(c)}):
+    jp_font = set(TOKEN.sub("", jp)) | (GRID_GLYPHS if file_of(entry) in grid.GRID_FILES else set())
+    if bad := sorted({c for c in plain if not encodable(c) and c not in jp_font}):
         out.append(f"unencodable characters {bad}")
     if re.search(r"\\u[0-9a-fA-F]{4}", en) or "\t" in en:
         out.append("escape sequence or tab in the English")
@@ -184,8 +203,8 @@ def problems(entry, en, terms):
         built, probs = pages.build_en(jp, en)
         out += probs
     else:
-        want = Counter(t for t in TOKEN.findall(jp) if not free_token(t))
-        have = Counter(t for t in TOKEN.findall(en) if not free_token(t))
+        want = Counter(t for t in TOKEN.findall(grid_codes(entry, jp)) if not free_token(t))
+        have = Counter(t for t in TOKEN.findall(grid_codes(entry, en)) if not free_token(t))
         if want != have:
             out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):

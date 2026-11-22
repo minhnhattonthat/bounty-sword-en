@@ -66,6 +66,24 @@ def test_torture_line_wraps_inside_the_box():
     assert all(line_px(x) <= LINE_PX for x in wrap_px(TORTURE, LINE_PX - 8))
 
 
+def test_grid_layout_places_each_word_in_its_cells():
+    import grid
+    # every glyph ends in a blank spacing column: the C1Run TAB may round back over it (asm/vwf.asm, tools/grid.py)
+    assert all(len(r) < adv or r[adv - 1] == "." for rows, adv in load().values() for r in rows)
+    assert grid.tab(17) == 16 and grid.tab(16) == 16 and grid.tab(18) == 24 and grid.tab(0) == 0
+    en = grid.layout(29, "1:Party | 7:Itm | 24:Config")
+    starts = [start for start, end, text in grid.runs(en) if text]
+    assert starts == [8, 56, 192]                      # each word starts at its JP word's first cell
+    assert "[0F1F][0018]" in en and grid.words(en) <= 29
+    assert grid.problems("Abcdefghij", 4)              # 10 letters: 5 words packed, 62 px > 4 cells
+    # the shipped grid strings all lay out and fit
+    for line in (ROOT / "script/grid_specs.tsv").read_text(encoding="utf-8").splitlines():
+        eid, spec = line.split("\t")
+        if spec != "=":
+            entry = next(e for f in grid.GRID_FILES for e in load_script()[f + ".json"] if e["id"] == eid)
+            assert entry["en"] == grid.layout(entry["width"], spec), eid
+
+
 def test_c1_fields_pack_letter_pairs():
     from script_text import pack_pairs, side_words, side_codecs
     codec = side_codecs()[None]

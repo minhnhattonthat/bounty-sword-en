@@ -10,7 +10,7 @@
   "width": 32,
   "kind": "text",
   "jp": "買う売るやめる武器屋道具屋？娘　誰が何を装備品所持品と話すの主人",
-  "en": "",
+  "en": "買う売るやめる武器屋道具屋？娘　誰が何を装備品所持品と話すの主人",
   "refs": [
    "08EB65"
   ]
@@ -21,7 +21,7 @@
   "width": 16,
   "kind": "text",
   "jp": "攻撃防御速さ魔力精神幸運ＡＳ",
-  "en": "",
+  "en": "AtkDef[0F7F]Agi[0F7F]Int[0F7F]Spr[0F7F]LckAS",
   "refs": [
    "08EB0E",
    "08EB74"
@@ -33,7 +33,7 @@
   "width": 15,
   "kind": "text",
   "jp": "武器その他装備品アイテム倉庫個",
-  "en": "",
+  "en": "Wp.Etc  Gear[0F7F]Item   Binx",
   "refs": [
    "08EB83"
   ]
@@ -52,7 +52,7 @@
   "width": 12,
   "kind": "text",
   "jp": "転職しますか？はいいいえ",
-  "en": "",
+  "en": "Promote?[0F1F][0007]OK[0F7F]No",
   "refs": [
    "08EB08"
   ]

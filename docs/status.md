@@ -2,9 +2,23 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 2948/3656 entries in English; **all master dialogue done**; side tables
-  left (b052 battle_prompts_b and b062 system_prompts merged). Pace: ~10 batches per worker context; the Orca brief
-  forbids subagents, so each worker translates itself.
+- **Phase:** 7. Insert, fit, check: next. Phase 6 (translate) done 2026-11-22e: 3197/3656 entries in English,
+  `batches.py check` 0 problems, every batch has a review line in `docs/reviews.md` (own passes; codex back
+  2026-11-26), glossary updated. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
+  keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (phase 7).
+- **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);
+  (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
+  its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
+  (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
+- **Session 2026-11-22e (b067, b057, b064, b058, b059 merged; phase 6 closed):**
+  - Descriptions b067 (sign items: fragment 0EEE68 = "-born / who use it...?"; equip rows "Eq: Warrior, Knights").
+  - **Grid strings** (menus/windows/menus_c): `tools/grid.py` lays English out cell by cell from
+    `script/grid_specs.tsv` (`cell:text | ...`, `=` keeps JP; `fill bNNN` writes the batch); `batches.py check` runs
+    `grid.problems` on them. Engine: C1Run TAB is now ceil((px-1)/8)*8 (the glyph's blank spacing column may spill
+    1 px) and new `[0F1F][n]` SETX jumps to cell n (2 words), `asm/vwf.asm`; font `s` narrowed to 4 px like `c`.
+    Seen in game (`work/qa/warp`: camp, party status, config, items, file menu, battle menus): aligned, no garbage.
+    Test `test_grid_layout_places_each_word_in_its_cells`.
+  - Objectives b059: repacked in place, so each line keeps the JP char count (check `EXACT` in `batches.py`).
 - **Session 2026-11-22d (b065, b051, b069, b068 merged):**
   - Ceremony (b065) in English and seen in game (`work/qa/w_cer65`: date entry, guardian line, Yes/No fit).
     Its FF09 cursor tables (1DED1D, 1DED25, 1DF03D, 1DF045) are data: dropped from the batch, keep JP.
@@ -21,8 +35,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - `batches.py check`: `[hhhh]` glyph words (0x60-0x4FF) are free (drop or keep), e.g. 1DEC7D `[01DE]`.
   - Descriptions: b068 done (sign items use fragment 0EEE68 "座の人が，装備して使用すると‥？": in b067 write it as
     "-born users who equip it...?" since b068 reads "For Aries{EE68}"). b067 (150 rows) left.
-  - Still to do: b067 descriptions, b057 menus, b064 windows, b058 menus_c, b059 objectives; skip b056/b060/b063
-    (junk). **menus_c (b058) is not a plain string table:** 01D2B7 is a 32-glyph set uploaded as tiles (layout
+  - (Done in session e.) **menus_c (b058) is not a plain string table:** 01D2B7 is a 32-glyph set uploaded as tiles (layout
     words in 01D1F5) for the shop screens (武器屋 header etc.), not in `docs/re/slices.tsv`; find its slices (C1Run
     log on town_weapon_shop) before translating, and give each JP word its own cells with `[0F7F]` TABs (TAB at an
     exact cell boundary skips a whole cell: `C1Run` adds 8 after rounding down).
@@ -127,7 +140,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
     canonical one (`tools/mktbl.py`, `docs/re/text.md`). Unknown uses 6,230 -> 37 (19 are later duplicate copies,
     18 truly unread: 0x25 0x7E 0xAB 0xCE 0xF0 0x1F6-0x1F8). 0x3C7 寸 (寸断のリュウビ) is low confidence.
     Identity build still byte-identical; smoke ok.
-- **Next (phase 6, translate; read `docs/translator-brief.md`, `glossary.md`, `docs/synopsis.md` first):**
+- **Phase 6 workflow (reference for retranslation; read `docs/translator-brief.md`, `glossary.md`, `docs/synopsis.md` first):**
   1. If `work/tl/` is gone (fresh clone): `python -X utf8 tools/batches.py split --only master_<block>` per block
      (24DB56 is done; then 1E0000 214606 257BD4 26F317 271410 280F1B 290400 2A7D44), and `--only <file>` for side
      tables. Translate each batch (`work/tl/bNNN.out.tsv`, `zip` helps for one-line-per-row tables), `check` until

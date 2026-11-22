@@ -32,6 +32,7 @@ hirom
 !C1PAIR = $FFB2         ; second letter of a packed pair still to draw (0 = none)
 
 !TAB = $0F7F            ; C1 runs: move to the next cell boundary (blank glyph elsewhere)
+!SETX = $0F1F           ; C1 runs: the next word is a cell number, PX = cell * 8 (tools/grid.py)
 
 ; ---- menus, engine B, name tags through the C1 glyph-address routine: English codes read the English font ----
 org $C186A9
@@ -633,10 +634,22 @@ C1Run:
     sty.w !C1I
     cmp.w #!TAB
     bne +
-    lda.w !PX
+    lda.w !PX           ; next cell after the ink: ceil((PX-1)/8)*8 (a glyph's last, blank column may spill;
+    clc                 ; at a cell edge TAB stays; tools/grid.py skips a cell with a space first)
+    adc.w #$0006
     and.w #$FFF8
-    clc
-    adc.w #$0008
+    sta.w !PX
+    bra .loop
++
+    cmp.w #!SETX        ; SETX n: PX = n * 8 (jump to cell n; grid strings with long gaps)
+    bne +
+    lda [$34],y
+    iny
+    iny
+    sty.w !C1I
+    asl
+    asl
+    asl
     sta.w !PX
     bra .loop
 +

@@ -19,3 +19,12 @@
 - [ ] 1AF628 (shop re-greeting after a cursor table) keeps the JP 「: the entry is cursor data + text, left in place
 - [ ] Ceremony stat-up lines 1DF0CF.. print "{name}: Attack +{n}!" (1DF0B9 = "!"), and 1DF4C7.. "Dragon Knight open
   to {name}" (one 28-cell row); see them on a level-up / class-change screen
+- [ ] Menu grid strings (b057/b064/b058): 2-cell slices force Itm, Tac, Inf, Gdr, Sg., Fld, Bin, Trd, Wp., Int, Spr;
+  phase 7 (D4 engine first): widen those tilemap slices (or move the labels to more slots) and re-run
+  `tools/grid.py fill` from `script/grid_specs.tsv` with full words (Items, Info, Magic, Spirit, Sign...). The
+  tutorial's "choose Information" (279CA6) must match the 情報 label then
+- [ ] Fragment pools 01C60C (target prompt) and 01CC4A (item window sentences) were translated one fragment per JP
+  word: check on screen how the game combines them (phase 8, `tools/re/slices.py` on the English build)
+- [ ] Objectives (b059) keep their JP length (no reader found): "SorcGen", "SorcCapt", "M.God 1"; if a reader turns
+  up, relocate the table (D8:FC9C pointers) and write full sentences
+- [ ] Status screen: the gender value 男/女 and the default hero name ソード are still JP (tile/graphic or save data)

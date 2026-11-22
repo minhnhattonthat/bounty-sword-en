@@ -3,7 +3,7 @@
   "id": "0EE59E",
   "kind": "text",
   "jp": "[00CE]マヒさせることもある{FF00}",
-  "en": ""
+  "en": "[00CE]May also paralyze.{FF00}"
  },
  {
   "id": "0EE5B6",
@@ -48,7 +48,7 @@
   "id": "0EE5CC",
   "kind": "text",
   "jp": "敵三体に攻撃{FF00}",
-  "en": ""
+  "en": "Attacks three enemies.{FF00}"
  },
  {
   "id": "0EE5DA",
@@ -64,7 +64,7 @@
   "id": "0EE5DC",
   "kind": "text",
   "jp": "敵三体に攻撃{FF00}",
-  "en": ""
+  "en": "Attacks three enemies.{FF00}"
  },
  {
   "id": "0EE5EA",
@@ -80,7 +80,7 @@
   "id": "0EE5EC",
   "kind": "text",
   "jp": "味方一人のＨＰを回復{FF00}",
-  "en": ""
+  "en": "Restores one ally's HP.{FF00}"
  },
  {
   "id": "0EE602",
@@ -96,7 +96,7 @@
   "id": "0EE604",
   "kind": "text",
   "jp": "味方一人のバッドステータスを解除{FF00}",
-  "en": ""
+  "en": "Cures one ally's ailments.{FF00}"
  },
  {
   "id": "0EE626",
@@ -112,7 +112,7 @@
   "id": "0EE628",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰ回復{FF00}",
-  "en": ""
+  "en": "Restores all allies' HP.{FF00}"
  },
  {
   "id": "0EE63C",
@@ -127,7 +127,7 @@
   "id": "0EE63E",
   "kind": "text",
   "jp": "味方一人のＨＰ全回復{FF00}",
-  "en": ""
+  "en": "Fully restores one{FF01}ally's HP.{FF00}"
  },
  {
   "id": "0EE654",
@@ -142,7 +142,7 @@
   "id": "0EE656",
   "kind": "text",
   "jp": "味方一人の防御力アップ{FF00}",
-  "en": ""
+  "en": "Raises one ally's defense.{FF00}"
  },
  {
   "id": "0EE66E",
@@ -157,7 +157,7 @@
   "id": "0EE670",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰと　バッドステータスが回復{FF00}",
-  "en": ""
+  "en": "Restores all allies' HP{FF01}and cures their ailments.{FF00}"
  },
  {
   "id": "0EE69A",
@@ -172,7 +172,7 @@
   "id": "0EE69C",
   "kind": "text",
   "jp": "味方一人を　自分のとなりにテレポートさせる{FF00}",
-  "en": ""
+  "en": "Teleports one ally{FF01}to your side.{FF00}"
  },
  {
   "id": "0EE6C8",
@@ -187,7 +187,7 @@
   "id": "0EE6CA",
   "kind": "text",
   "jp": "味方一人の攻撃力アップ{FF00}",
-  "en": ""
+  "en": "Raises one ally's attack.{FF00}"
  },
  {
   "id": "0EE6E2",
@@ -202,7 +202,7 @@
   "id": "0EE6E4",
   "kind": "text",
   "jp": "味方全[03AC]の攻撃力アップ{FF00}",
-  "en": ""
+  "en": "Raises all allies' attack.{FF00}"
  },
  {
   "id": "0EE6FC",
@@ -266,7 +266,7 @@
   "id": "0EE71C",
   "kind": "text",
   "jp": "自分への攻撃を防ぐ{FF00}",
-  "en": ""
+  "en": "Blocks attacks on yourself.{FF00}"
  },
  {
   "id": "0EE730",
@@ -281,7 +281,7 @@
   "id": "0EE732",
   "kind": "text",
   "jp": "味方一人への　攻撃を防ぐ{FF00}",
-  "en": ""
+  "en": "Blocks attacks on one ally.{FF00}"
  },
  {
   "id": "0EE74C",
@@ -356,7 +356,7 @@
   "id": "0EE776",
   "kind": "text",
   "jp": "テレポートし　離れた敵を攻撃{FF00}",
-  "en": ""
+  "en": "Teleports to strike{FF01}a distant enemy.{FF00}"
  },
  {
   "id": "0EE794",
@@ -377,7 +377,7 @@
   "id": "0EE79E",
   "kind": "text",
   "jp": "まわりに　爆発をおこし敵をふきとばす{FF00}",
-  "en": "",
+  "en": "A blast that blows away{FF01}nearby enemies.{FF00}",
   "refs": [
    "0EE4B9"
   ]
@@ -425,7 +425,7 @@
   "id": "0EE7DA",
   "kind": "text",
   "jp": "すきな場所にテレポート{FF00}",
-  "en": ""
+  "en": "Teleports to any spot.{FF00}"
  },
  {
   "id": "0EE7F2",
@@ -440,7 +440,7 @@
   "id": "0EE7F4",
   "kind": "text",
   "jp": "一定時間　敵一体の動きをとめる{FF00}",
-  "en": ""
+  "en": "Stops one enemy from moving{FF01}for a while.{FF00}"
  },
  {
   "id": "0EE814",
@@ -500,13 +500,13 @@
   "id": "0EE834",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}モンスター系とアンデッド系に{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "{FF06:E52E:00CE}Against monsters and undead,{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EE860",
   "kind": "text",
   "jp": "必ずクリティカル{FF00}",
-  "en": ""
+  "en": "always a critical hit.{FF00}"
  },
  {
   "id": "0EE872",
@@ -521,7 +521,7 @@
   "id": "0EE874",
   "kind": "text",
   "jp": "アンデットなどの敵一体を　消しさることがある{FF00}",
-  "en": ""
+  "en": "May wipe out one enemy,{FF01}such as the undead.{FF00}"
  },
  {
   "id": "0EE8A2",
@@ -536,7 +536,7 @@
   "id": "0EE8A4",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}当たればクリティカル{FF00}",
-  "en": ""
+  "en": "{FF06:E52E:00CE}Critical if it hits.{FF00}"
  },
  {
   "id": "0EE8C0",
@@ -553,7 +553,7 @@
   "id": "0EE8C2",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}マヒさせることもある{FF00}",
-  "en": ""
+  "en": "{FF06:E52E:00CE}May also paralyze.{FF00}"
  },
  {
   "id": "0EE8DE",
@@ -568,7 +568,7 @@
   "id": "0EE8E0",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}マヒさせることもある{FF00}",
-  "en": "",
+  "en": "{FF06:E52E:00CE}May also paralyze.{FF00}",
   "refs": [
    "1F2401"
   ]
@@ -586,7 +586,7 @@
   "id": "0EE8FE",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}命中すれば必ず眠らせる{FF00}",
-  "en": "",
+  "en": "{FF06:E52E:00CE}Always puts to sleep{FF01}if it hits.{FF00}",
   "refs": [
    "20C467"
   ]
@@ -604,7 +604,7 @@
   "id": "0EE91E",
   "kind": "text",
   "jp": "単体に強攻撃{FF00}",
-  "en": ""
+  "en": "Strong attack on one foe.{FF00}"
  },
  {
   "id": "0EE92C",
@@ -634,7 +634,7 @@
   "id": "0EE938",
   "kind": "text",
   "jp": "空中の広はんいに攻撃{FF00}",
-  "en": ""
+  "en": "Wide attack on flyers.{FF00}"
  },
  {
   "id": "0EE94E",
@@ -649,7 +649,7 @@
   "id": "0EE950",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": ""
+  "en": "Damages enemies on screen.{FF00}"
  },
  {
   "id": "0EE968",
@@ -664,7 +664,7 @@
   "id": "0EE96A",
   "kind": "text",
   "jp": "必ず眠らせる{FF00}",
-  "en": ""
+  "en": "Always puts to sleep.{FF00}"
  },
  {
   "id": "0EE978",
@@ -679,7 +679,7 @@
   "id": "0EE97A",
   "kind": "text",
   "jp": "無限距離攻撃可能{FF00}",
-  "en": ""
+  "en": "Attacks at any distance.{FF00}"
  },
  {
   "id": "0EE98C",
@@ -694,7 +694,7 @@
   "id": "0EE98E",
   "kind": "text",
   "jp": "単体に必ずクリティカル{FF00}",
-  "en": "",
+  "en": "Always a critical{FF01}on one foe.{FF00}",
   "refs": [
    "26E136"
   ]
@@ -712,7 +712,7 @@
   "id": "0EE9A8",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": ""
+  "en": "Damages enemies on screen.{FF00}"
  },
  {
   "id": "0EE9C0",
@@ -727,7 +727,7 @@
   "id": "0EE9C2",
   "kind": "text",
   "jp": "単体に強攻撃{FF00}",
-  "en": ""
+  "en": "Strong attack on one foe.{FF00}"
  },
  {
   "id": "0EE9D0",
@@ -742,7 +742,7 @@
   "id": "0EE9D2",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}クリティカルがでやすい{FF00}",
-  "en": ""
+  "en": "{FF06:E52E:00CE}Criticals come easily.{FF00}"
  },
  {
   "id": "0EE9F0",
@@ -772,7 +772,7 @@
   "id": "0EE9FC",
   "kind": "text",
   "jp": "一定時間　物理ダメージを返す{FF00}",
-  "en": ""
+  "en": "Reflects physical damage{FF01}for a while.{FF00}"
  },
  {
   "id": "0EEA1A",
@@ -787,7 +787,7 @@
   "id": "0EEA1C",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": ""
+  "en": "Damages enemies on screen.{FF00}"
  },
  {
   "id": "0EEA34",
@@ -832,7 +832,7 @@
   "id": "0EEA4A",
   "kind": "text",
   "jp": "すきな場所にテレポート{FF00}",
-  "en": ""
+  "en": "Teleports to any spot.{FF00}"
  },
  {
   "id": "0EEA62",
@@ -847,7 +847,7 @@
   "id": "0EEA64",
   "kind": "text",
   "jp": "味方一人と　自分の場所をいれかえる{FF00}",
-  "en": ""
+  "en": "Swaps places with one ally.{FF00}"
  },
  {
   "id": "0EEA88",
@@ -862,7 +862,7 @@
   "id": "0EEA8A",
   "kind": "text",
   "jp": "一画面内の敵に攻撃　マヒさせることもある{FF00}",
-  "en": "",
+  "en": "Attacks enemies on screen.{FF01}May also paralyze.{FF00}",
   "refs": [
    "26F0D5"
   ]
@@ -881,7 +881,7 @@
   "id": "0EEAB6",
   "kind": "text",
   "jp": "アンデッド系一体を　一撃でしとめることがある{FF00}",
-  "en": "",
+  "en": "May slay one undead{FF01}in a single blow.{FF00}",
   "refs": [
    "196E52"
   ]
@@ -899,7 +899,7 @@
   "id": "0EEAE6",
   "kind": "text",
   "jp": "合体攻撃．ソードとアテナで敵単体を氷づけにしダメージ{FF00}",
-  "en": ""
+  "en": "Combined attack: Sword and{FF01}Athena freeze one foe.{FF00}"
  },
  {
   "id": "0EEB1C",
@@ -914,7 +914,7 @@
   "id": "0EEB1E",
   "kind": "text",
   "jp": "合体攻撃．ソード　マウザー　ファウスト{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Combined attack:{FF01}Sword, Mauser, Faust{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EEB4E",
@@ -935,7 +935,7 @@
   "id": "0EEB58",
   "kind": "text",
   "jp": "合体攻撃．ソード　ロジャー　ミランダ{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Combined attack:{FF01}Sword, Roger, Miranda{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EEB86",
@@ -958,13 +958,13 @@
   "id": "0EEB90",
   "kind": "text",
   "jp": "合体攻撃．ファウスト　ロブン　ツキカゲ{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Combined attack:{FF01}Faust, Robun, Tsukikage{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EEBC0",
   "kind": "text",
   "jp": "広はんいの　敵攻撃力をダウン{FF00}",
-  "en": ""
+  "en": "Lowers enemy attack{FF01}over a wide area.{FF00}"
  },
  {
   "id": "0EEBDE",
@@ -979,7 +979,7 @@
   "id": "0EEBE0",
   "kind": "text",
   "jp": "合体攻撃．ロブン　ツキカゲ　リュウビ{FF10:E455:00CE}{FF11}{FF03}",
-  "en": "",
+  "en": "Combined attack:{FF01}Robun, Tsukikage, Ryubi{FF10:E455:00CE}{FF11}{FF03}",
   "refs": [
    "209C0C"
   ]
@@ -988,7 +988,7 @@
   "id": "0EEC0E",
   "kind": "text",
   "jp": "３人で囲んだ外側に攻撃{FF00}",
-  "en": ""
+  "en": "Hits all around the three.{FF00}"
  },
  {
   "id": "0EEC26",
@@ -1003,7 +1003,7 @@
   "id": "0EEC28",
   "kind": "text",
   "jp": "合体攻撃．ソード　アジャックス{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Combined attack:{FF01}Sword, Ajax{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EEC50",
@@ -1030,7 +1030,7 @@
   "id": "0EEE68",
   "kind": "text",
   "jp": "座の人が，装備して使用すると‥？{FF07}単体に攻撃{FF01}{FF07}{FF03}",
-  "en": "",
+  "en": "-born{FF01}who use it...?{FF07}Hits one foe.{FF01}{FF07}{FF03}",
   "refs": [
    "0EFA5E",
    "0EFA6E",
@@ -1065,7 +1065,7 @@
   "id": "0EEE9E",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EEEAC",
@@ -1080,7 +1080,7 @@
   "id": "0EEEAE",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EEEBC",
@@ -1095,7 +1095,7 @@
   "id": "0EEEBE",
   "kind": "text",
   "jp": "アンデッドに強ダメージ{FF01}装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Hurts undead badly.{FF01}Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EEEE4",
@@ -1110,7 +1110,7 @@
   "id": "0EEEE6",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EEEF4",
@@ -1125,7 +1125,7 @@
   "id": "0EEEF6",
   "kind": "text",
   "jp": "敵を毒におかす{FF01}装．ナ系{FF00}",
-  "en": ""
+  "en": "Poisons the enemy.{FF01}Eq: Knights{FF00}"
  },
  {
   "id": "0EEF10",
@@ -1141,7 +1141,7 @@
   "id": "0EEF12",
   "kind": "text",
   "jp": "使うとブリザードの効果{FF01}装．パ　ダ　ド{FF00}",
-  "en": ""
+  "en": "Use: Blizzard effect.{FF01}Eq: Paladin, D/Dr.Knight{FF00}"
  },
  {
   "id": "0EEF3A",
@@ -1157,7 +1157,7 @@
   "id": "0EEF3C",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EEF4A",
@@ -1172,7 +1172,7 @@
   "id": "0EEF4C",
   "kind": "text",
   "jp": "必殺技ほとんど　消費ＳＰ減少{FF01}装．パ　ダ　ド{FF00}",
-  "en": ""
+  "en": "Less SP for most skills.{FF01}Eq: Paladin, D/Dr.Knight{FF00}"
  },
  {
   "id": "0EEF7A",
@@ -1187,7 +1187,7 @@
   "id": "0EEF7C",
   "kind": "text",
   "jp": "装．パ　ダ{FF00}",
-  "en": ""
+  "en": "Eq: Paladin, Dark Knight{FF00}"
  },
  {
   "id": "0EEF88",
@@ -1203,13 +1203,13 @@
   "id": "0EEF8A",
   "kind": "text",
   "jp": "使うとディバインの効果{FF01}アンデッドに強ダメージ{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Use: Divine effect.{FF01}Hurts undead badly.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EEFC2",
   "kind": "text",
   "jp": "ヒーリング効果有{FF01}　装．パ{FF00}",
-  "en": ""
+  "en": "Has a healing effect.{FF01}Eq: Paladin{FF00}"
  },
  {
   "id": "0EEFDE",
@@ -1224,13 +1224,13 @@
   "id": "0EEFE0",
   "kind": "text",
   "jp": "使うとファイアストームの効果{FF01}装．パ　ダ　ド{FF00}",
-  "en": ""
+  "en": "Use: Firestorm effect.{FF01}Eq: Paladin, D/Dr.Knight{FF00}"
  },
  {
   "id": "0EF00E",
   "kind": "text",
   "jp": "アンデッドに強ダメージ{FF01}ヒーリング効果有{FF00}",
-  "en": "",
+  "en": "Hurts undead badly.{FF01}Has a healing effect.{FF00}",
   "refs": [
    "0EEC7C",
    "172D7F",
@@ -1241,7 +1241,7 @@
   "id": "0EF038",
   "kind": "text",
   "jp": "　　　　　　　専用{FF00}",
-  "en": ""
+  "en": "       only{FF00}"
  },
  {
   "id": "0EF04C",
@@ -1258,7 +1258,7 @@
   "id": "0EF04E",
   "kind": "text",
   "jp": "装．サ系　ニン系{FF00}",
-  "en": ""
+  "en": "Eq: Samurai, Ninjas{FF00}"
  },
  {
   "id": "0EF060",
@@ -1273,7 +1273,7 @@
   "id": "0EF062",
   "kind": "text",
   "jp": "装．サ系{FF00}",
-  "en": "",
+  "en": "Eq: Samurai{FF00}",
   "refs": [
    "2FB437"
   ]
@@ -1292,7 +1292,7 @@
   "id": "0EF06E",
   "kind": "text",
   "jp": "装．ニン系{FF00}",
-  "en": ""
+  "en": "Eq: Ninjas{FF00}"
  },
  {
   "id": "0EF07A",
@@ -1309,7 +1309,7 @@
   "id": "0EF07C",
   "kind": "text",
   "jp": "攻撃をかわしやすくなる{FF01}装．ニン系{FF00}",
-  "en": ""
+  "en": "Attacks are easier to dodge.{FF01}Eq: Ninjas{FF00}"
  },
  {
   "id": "0EF0A0",
@@ -1325,7 +1325,7 @@
   "id": "0EF0A2",
   "kind": "text",
   "jp": "装．サ系{FF00}",
-  "en": ""
+  "en": "Eq: Samurai{FF00}"
  },
  {
   "id": "0EF0AC",
@@ -1340,7 +1340,7 @@
   "id": "0EF0AE",
   "kind": "text",
   "jp": "クリティカルがでやすくなる{FF01}装．サ系　ニマ　シ{FF00}",
-  "en": ""
+  "en": "Criticals come more easily.{FF01}Eq: Samurai, N.Master, Sh.M{FF00}"
  },
  {
   "id": "0EF0DE",
@@ -1355,7 +1355,7 @@
   "id": "0EF0E0",
   "kind": "text",
   "jp": "邪悪な攻撃をはねつける{FF01}装．ケ　ニマ　シ{FF00}",
-  "en": "",
+  "en": "Repels evil attacks.{FF01}Eq: Kengo, N.Master, Sh.M{FF00}",
   "refs": [
    "2E4172"
   ]
@@ -1373,7 +1373,7 @@
   "id": "0EF10C",
   "kind": "text",
   "jp": "使うとバニッシュレイの効果{FF01}装．ケ{FF00}",
-  "en": "",
+  "en": "Use: Banish Ray effect.{FF01}Eq: Kengo{FF00}",
   "refs": [
    "2FBE18"
   ]
@@ -1391,13 +1391,13 @@
   "id": "0EF132",
   "kind": "text",
   "jp": "使うとリカバーの効果{FF01}アンデッドに強ダメージ　{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Use: Recover effect.{FF01}Hurts undead badly.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF16A",
   "kind": "text",
   "jp": "ヒーリング効果有{FF01}　装．ケ{FF00}",
-  "en": ""
+  "en": "Has a healing effect.{FF01}Eq: Kengo{FF00}"
  },
  {
   "id": "0EF186",
@@ -1414,7 +1414,7 @@
   "id": "0EF188",
   "kind": "text",
   "jp": "装．ア系{FF00}",
-  "en": ""
+  "en": "Eq: Amazons{FF00}"
  },
  {
   "id": "0EF192",
@@ -1429,7 +1429,7 @@
   "id": "0EF194",
   "kind": "text",
   "jp": "装．ア系{FF00}",
-  "en": "",
+  "en": "Eq: Amazons{FF00}",
   "refs": [
    "2F31C1"
   ]
@@ -1447,7 +1447,7 @@
   "id": "0EF1A0",
   "kind": "text",
   "jp": "装．ア系{FF00}",
-  "en": ""
+  "en": "Eq: Amazons{FF00}"
  },
  {
   "id": "0EF1AA",
@@ -1463,7 +1463,7 @@
   "id": "0EF1AC",
   "kind": "text",
   "jp": "敵を眠らせることがある{FF01}装．ワル{FF00}",
-  "en": ""
+  "en": "May put enemies to sleep.{FF01}Eq: Valkyrie{FF00}"
  },
  {
   "id": "0EF1CE",
@@ -1478,13 +1478,13 @@
   "id": "0EF1D0",
   "kind": "text",
   "jp": "アンデッドに強ダメージ{FF01}敵を混乱させることがある{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Hurts undead badly.{FF01}May confuse enemies.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF20A",
   "kind": "text",
   "jp": "装．ワル{FF00}",
-  "en": ""
+  "en": "Eq: Valkyrie{FF00}"
  },
  {
   "id": "0EF214",
@@ -1499,13 +1499,13 @@
   "id": "0EF216",
   "kind": "text",
   "jp": "敵を毒でおかすことがある{FF01}敵を一撃でほうむりさることがある{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "May poison enemies.{FF01}May slay in one blow.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF25A",
   "kind": "text",
   "jp": "装．ワル{FF00}",
-  "en": ""
+  "en": "Eq: Valkyrie{FF00}"
  },
  {
   "id": "0EF264",
@@ -1522,7 +1522,7 @@
   "id": "0EF266",
   "kind": "text",
   "jp": "装．僧系　魔系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Clerics, Mages, Wise Man{FF00}"
  },
  {
   "id": "0EF27C",
@@ -1537,7 +1537,7 @@
   "id": "0EF27E",
   "kind": "text",
   "jp": "クリティカルが　でやすくなる{FF01}装．僧系　ワイ{FF00}",
-  "en": ""
+  "en": "Criticals come more easily.{FF01}Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF2AC",
@@ -1552,7 +1552,7 @@
   "id": "0EF2AE",
   "kind": "text",
   "jp": "魔法の消費ＳＰが減少{FF01}装．僧系　ワイ{FF00}",
-  "en": ""
+  "en": "Less SP for spells.{FF01}Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF2D4",
@@ -1568,13 +1568,13 @@
   "id": "0EF2D6",
   "kind": "text",
   "jp": "味方が死んでも　一回だけ生き返らせる{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Revives a fallen ally,{FF01}but only once.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF304",
   "kind": "text",
   "jp": "装．僧系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF314",
@@ -1589,7 +1589,7 @@
   "id": "0EF316",
   "kind": "text",
   "jp": "装．魔系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Mages, Wise Man{FF00}"
  },
  {
   "id": "0EF326",
@@ -1604,7 +1604,7 @@
   "id": "0EF328",
   "kind": "text",
   "jp": "装．魔系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Mages, Wise Man{FF00}"
  },
  {
   "id": "0EF338",
@@ -1621,13 +1621,13 @@
   "id": "0EF33A",
   "kind": "text",
   "jp": "使うとファントムゴアーの効果　{FF01}魔法攻撃を防ぐことがある{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Use: Phantom Gore effect.{FF01}May block magic attacks.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF37C",
   "kind": "text",
   "jp": "装．ハ　スペ　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: High Wiz, Spellm, Wise{FF00}"
  },
  {
   "id": "0EF390",
@@ -1642,7 +1642,7 @@
   "id": "0EF392",
   "kind": "text",
   "jp": "装．僧系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF3A2",
@@ -1658,7 +1658,7 @@
   "id": "0EF3A4",
   "kind": "text",
   "jp": "装．風系{FF00}",
-  "en": ""
+  "en": "Eq: Geomancers{FF00}"
  },
  {
   "id": "0EF3AE",
@@ -1673,7 +1673,7 @@
   "id": "0EF3B0",
   "kind": "text",
   "jp": "アンデッドに強ダメージ{FF01}装．風系{FF00}",
-  "en": ""
+  "en": "Hurts undead badly.{FF01}Eq: Geomancers{FF00}"
  },
  {
   "id": "0EF3D2",
@@ -1688,13 +1688,13 @@
   "id": "0EF3D4",
   "kind": "text",
   "jp": "アンデッドに強ダメージ{FF01}使うとマインドブラストの効果{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Hurts undead badly.{FF01}Use: Mind Blast effect.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF412",
   "kind": "text",
   "jp": "装．風系{FF00}",
-  "en": ""
+  "en": "Eq: Geomancers{FF00}"
  },
  {
   "id": "0EF41C",
@@ -1709,7 +1709,7 @@
   "id": "0EF41E",
   "kind": "text",
   "jp": "クリティカルが　でやすくなる{FF01}装．陰　屍{FF00}",
-  "en": ""
+  "en": "Criticals come more easily.{FF01}Eq: Onmyoji, Immortal{FF00}"
  },
  {
   "id": "0EF448",
@@ -1724,13 +1724,13 @@
   "id": "0EF44A",
   "kind": "text",
   "jp": "バッドステータスを防ぐ{FF01}必殺技を防ぐことがある{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Blocks ailments.{FF01}May block special skills.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF482",
   "kind": "text",
   "jp": "装．陰　屍{FF00}",
-  "en": ""
+  "en": "Eq: Onmyoji, Immortal{FF00}"
  },
  {
   "id": "0EF48E",
@@ -1748,7 +1748,7 @@
   "id": "0EF490",
   "kind": "text",
   "jp": "装．ガ系{FF00}",
-  "en": ""
+  "en": "Eq: Gunmen{FF00}"
  },
  {
   "id": "0EF49A",
@@ -1763,7 +1763,7 @@
   "id": "0EF49C",
   "kind": "text",
   "jp": "装．ガ系{FF00}",
-  "en": ""
+  "en": "Eq: Gunmen{FF00}"
  },
  {
   "id": "0EF4A6",
@@ -1778,7 +1778,7 @@
   "id": "0EF4A8",
   "kind": "text",
   "jp": "装．ガ系{FF00}",
-  "en": "",
+  "en": "Eq: Gunmen{FF00}",
   "refs": [
    "2F0933"
   ]
@@ -1796,7 +1796,7 @@
   "id": "0EF4B4",
   "kind": "text",
   "jp": "装．スナ{FF00}",
-  "en": ""
+  "en": "Eq: Sniper{FF00}"
  },
  {
   "id": "0EF4BE",
@@ -1811,7 +1811,7 @@
   "id": "0EF4C0",
   "kind": "text",
   "jp": "装．スナ{FF00}",
-  "en": ""
+  "en": "Eq: Sniper{FF00}"
  },
  {
   "id": "0EF4CA",
@@ -1828,7 +1828,7 @@
   "id": "0EF4CC",
   "kind": "text",
   "jp": "装．格系{FF00}",
-  "en": "",
+  "en": "Eq: Brawlers{FF00}",
   "refs": [
    "17553A"
   ]
@@ -1846,7 +1846,7 @@
   "id": "0EF4D8",
   "kind": "text",
   "jp": "装．格系{FF00}",
-  "en": ""
+  "en": "Eq: Brawlers{FF00}"
  },
  {
   "id": "0EF4E2",
@@ -1861,7 +1861,7 @@
   "id": "0EF4E4",
   "kind": "text",
   "jp": "装．格系{FF00}",
-  "en": ""
+  "en": "Eq: Brawlers{FF00}"
  },
  {
   "id": "0EF4EE",
@@ -1877,7 +1877,7 @@
   "id": "0EF4F0",
   "kind": "text",
   "jp": "攻撃を防ぐことがある{FF01}装．バ{FF00}",
-  "en": ""
+  "en": "May block attacks.{FF01}Eq: Bounty Hunter{FF00}"
  },
  {
   "id": "0EF50E",
@@ -1894,7 +1894,7 @@
   "id": "0EF510",
   "kind": "text",
   "jp": "装．戦　ナ系　魔系　僧系　風系{FF00}",
-  "en": "",
+  "en": "Eq: Warrior, Knights, Mages,{FF01}Clerics, Geomancers{FF00}",
   "refs": [
    "2C0B5F"
   ]
@@ -1912,7 +1912,7 @@
   "id": "0EF532",
   "kind": "text",
   "jp": "装．戦　ナ系　僧系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights,{FF01}Clerics{FF00}"
  },
  {
   "id": "0EF546",
@@ -1927,7 +1927,7 @@
   "id": "0EF548",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EF556",
@@ -1942,7 +1942,7 @@
   "id": "0EF558",
   "kind": "text",
   "jp": "魔法をはねかえすことがある{FF01}装．ナ系{FF00}",
-  "en": ""
+  "en": "May reflect magic.{FF01}Eq: Knights{FF00}"
  },
  {
   "id": "0EF57E",
@@ -1957,13 +1957,13 @@
   "id": "0EF580",
   "kind": "text",
   "jp": "攻撃を防ぐことがある{FF01}魔法のダメージを半分にする{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "May block attacks.{FF01}Halves magic damage.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF5BA",
   "kind": "text",
   "jp": "装．ナ　パ　ド{FF00}",
-  "en": ""
+  "en": "Eq: Knight, Paladin, Dr.Kn.{FF00}"
  },
  {
   "id": "0EF5CA",
@@ -1978,7 +1978,7 @@
   "id": "0EF5CC",
   "kind": "text",
   "jp": "装．魔系　風系を除く全ての職業{FF00}",
-  "en": ""
+  "en": "Eq: all but Mages{FF01}and Geomancers{FF00}"
  },
  {
   "id": "0EF5EC",
@@ -1993,7 +1993,7 @@
   "id": "0EF5EE",
   "kind": "text",
   "jp": "装．サ系{FF00}",
-  "en": ""
+  "en": "Eq: Samurai{FF00}"
  },
  {
   "id": "0EF5F8",
@@ -2008,7 +2008,7 @@
   "id": "0EF5FA",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EF608",
@@ -2023,7 +2023,7 @@
   "id": "0EF60A",
   "kind": "text",
   "jp": "装．戦　ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights{FF00}"
  },
  {
   "id": "0EF618",
@@ -2038,13 +2038,13 @@
   "id": "0EF61A",
   "kind": "text",
   "jp": "バッドステータスと　クリティカル攻撃を防ぐ{FF10:E455:00CE}{FF11}{FF03}",
-  "en": ""
+  "en": "Blocks ailments and{FF01}critical attacks.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF64E",
   "kind": "text",
   "jp": "ヒーリング効果有{FF01}　装．パ　ド{FF00}",
-  "en": ""
+  "en": "Has a healing effect.{FF01}Eq: Paladin, Dragon Knight{FF00}"
  },
  {
   "id": "0EF66E",
@@ -2059,7 +2059,7 @@
   "id": "0EF670",
   "kind": "text",
   "jp": "装．戦　ナ系　ア系　僧系　ガ系{FF00}",
-  "en": ""
+  "en": "Eq: Warrior, Knights,{FF01}Amazons, Clerics, Gunmen{FF00}"
  },
  {
   "id": "0EF690",
@@ -2075,7 +2075,7 @@
   "id": "0EF692",
   "kind": "text",
   "jp": "装．ナ系{FF00}",
-  "en": ""
+  "en": "Eq: Knights{FF00}"
  },
  {
   "id": "0EF69C",
@@ -2091,7 +2091,7 @@
   "id": "0EF69E",
   "kind": "text",
   "jp": "バッドステータスを防ぐ{FF01}装．全職業{FF00}",
-  "en": ""
+  "en": "Blocks ailments.{FF01}Eq: all classes{FF00}"
  },
  {
   "id": "0EF6C2",
@@ -2106,7 +2106,7 @@
   "id": "0EF6C4",
   "kind": "text",
   "jp": "装．全職業{FF00}",
-  "en": ""
+  "en": "Eq: all classes{FF00}"
  },
  {
   "id": "0EF6D0",
@@ -2121,7 +2121,7 @@
   "id": "0EF6D2",
   "kind": "text",
   "jp": "装．全職業{FF00}",
-  "en": ""
+  "en": "Eq: all classes{FF00}"
  },
  {
   "id": "0EF6DE",
@@ -2136,7 +2136,7 @@
   "id": "0EF6E0",
   "kind": "text",
   "jp": "装．全職業{FF00}",
-  "en": ""
+  "en": "Eq: all classes{FF00}"
  },
  {
   "id": "0EF6EC",
@@ -2151,7 +2151,7 @@
   "id": "0EF6EE",
   "kind": "text",
   "jp": "装．サ系{FF00}",
-  "en": ""
+  "en": "Eq: Samurai{FF00}"
  },
  {
   "id": "0EF6F8",
@@ -2166,7 +2166,7 @@
   "id": "0EF6FA",
   "kind": "text",
   "jp": "装．ニン系　格系{FF00}",
-  "en": ""
+  "en": "Eq: Ninjas, Brawlers{FF00}"
  },
  {
   "id": "0EF70C",
@@ -2181,7 +2181,7 @@
   "id": "0EF70E",
   "kind": "text",
   "jp": "攻撃を防ぐことがある{FF01}装．魔系　風系　ワイ{FF00}",
-  "en": ""
+  "en": "May block attacks.{FF01}Eq: Mages, Geom., Wise Man{FF00}"
  },
  {
   "id": "0EF73A",
@@ -2196,7 +2196,7 @@
   "id": "0EF73C",
   "kind": "text",
   "jp": "装．僧系　ワイ{FF00}",
-  "en": ""
+  "en": "Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF74C",
@@ -2212,7 +2212,7 @@
   "id": "0EF74E",
   "kind": "text",
   "jp": "装．ニン系　格系{FF00}",
-  "en": ""
+  "en": "Eq: Ninjas, Brawlers{FF00}"
  },
  {
   "id": "0EF760",
@@ -2228,7 +2228,7 @@
   "id": "0EF762",
   "kind": "text",
   "jp": "一回だけファイアストームが使える{FF00}",
-  "en": ""
+  "en": "Casts Firestorm once.{FF00}"
  },
  {
   "id": "0EF784",
@@ -2243,7 +2243,7 @@
   "id": "0EF786",
   "kind": "text",
   "jp": "一回だけサンダーストームが使える{FF00}",
-  "en": ""
+  "en": "Casts Thunderstorm once.{FF00}"
  },
  {
   "id": "0EF7A8",
@@ -2258,7 +2258,7 @@
   "id": "0EF7AA",
   "kind": "text",
   "jp": "一回だけブリザードが使える{FF00}",
-  "en": ""
+  "en": "Casts Blizzard once.{FF00}"
  },
  {
   "id": "0EF7C6",
@@ -2273,7 +2273,7 @@
   "id": "0EF7C8",
   "kind": "text",
   "jp": "ＨＰが少し回復{FF00}",
-  "en": ""
+  "en": "Restores a little HP.{FF00}"
  },
  {
   "id": "0EF7D8",
@@ -2288,7 +2288,7 @@
   "id": "0EF7DA",
   "kind": "text",
   "jp": "ＨＰが回復{FF00}",
-  "en": ""
+  "en": "Restores HP.{FF00}"
  },
  {
   "id": "0EF7E6",
@@ -2303,7 +2303,7 @@
   "id": "0EF7E8",
   "kind": "text",
   "jp": "ＳＰが少し回復{FF00}",
-  "en": ""
+  "en": "Restores a little SP.{FF00}"
  },
  {
   "id": "0EF7F8",
@@ -2319,7 +2319,7 @@
   "id": "0EF7FA",
   "kind": "text",
   "jp": "ＳＰが回復{FF00}",
-  "en": ""
+  "en": "Restores SP.{FF00}"
  },
  {
   "id": "0EF806",
@@ -2335,7 +2335,7 @@
   "id": "0EF808",
   "kind": "text",
   "jp": "毒を解除{FF00}",
-  "en": "",
+  "en": "Cures poison.{FF00}",
   "refs": [
    "0B6778"
   ]
@@ -2353,7 +2353,7 @@
   "id": "0EF814",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰを少し回復{FF00}",
-  "en": ""
+  "en": "Restores a little HP{FF01}to all allies.{FF00}"
  },
  {
   "id": "0EF82E",
@@ -2368,7 +2368,7 @@
   "id": "0EF830",
   "kind": "text",
   "jp": "味方全[03AC]の　バッドステータスの解除{FF00}",
-  "en": ""
+  "en": "Cures all allies' ailments.{FF00}"
  },
  {
   "id": "0EF854",
@@ -2383,7 +2383,7 @@
   "id": "0EF856",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰ°ＳＰ°バッドステータスを全回復{FF00}",
-  "en": ""
+  "en": "Fully restores all allies'{FF01}HP, SP and ailments.{FF00}"
  },
  {
   "id": "0EF886",
@@ -2398,7 +2398,7 @@
   "id": "0EF888",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰを回復{FF00}",
-  "en": ""
+  "en": "Restores all allies' HP.{FF00}"
  },
  {
   "id": "0EF89E",
@@ -2413,7 +2413,7 @@
   "id": "0EF8A0",
   "kind": "text",
   "jp": "直前に死んだ味方を　一人よみがえらせる。{FF00}",
-  "en": ""
+  "en": "Revives the ally who{FF01}died last.{FF00}"
  },
  {
   "id": "0EF8CA",
@@ -2430,7 +2430,7 @@
   "id": "0EF8CC",
   "kind": "text",
   "jp": "攻撃力アップ{FF00}",
-  "en": ""
+  "en": "Raises attack.{FF00}"
  },
  {
   "id": "0EF8DA",
@@ -2445,7 +2445,7 @@
   "id": "0EF8DC",
   "kind": "text",
   "jp": "防御力アップ{FF00}",
-  "en": ""
+  "en": "Raises defense.{FF00}"
  },
  {
   "id": "0EF8EA",
@@ -2460,7 +2460,7 @@
   "id": "0EF8EC",
   "kind": "text",
   "jp": "速さアップ{FF00}",
-  "en": "",
+  "en": "Raises speed.{FF00}",
   "refs": [
    "172AC7"
   ]
@@ -2480,7 +2480,7 @@
   "id": "0EF8FA",
   "kind": "text",
   "jp": "魔力アップ{FF00}",
-  "en": ""
+  "en": "Raises magic.{FF00}"
  },
  {
   "id": "0EF906",
@@ -2495,7 +2495,7 @@
   "id": "0EF908",
   "kind": "text",
   "jp": "精神アップ{FF00}",
-  "en": ""
+  "en": "Raises spirit.{FF00}"
  },
  {
   "id": "0EF914",
@@ -2510,7 +2510,7 @@
   "id": "0EF916",
   "kind": "text",
   "jp": "幸運アップ{FF00}",
-  "en": ""
+  "en": "Raises luck.{FF00}"
  },
  {
   "id": "0EF922",
@@ -2525,7 +2525,7 @@
   "id": "0EF924",
   "kind": "text",
   "jp": "最大ＨＰアップ{FF00}",
-  "en": ""
+  "en": "Raises max HP.{FF00}"
  },
  {
   "id": "0EF934",

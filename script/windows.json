@@ -5,7 +5,7 @@
   "width": 9,
   "kind": "text",
   "jp": "　攻防速魔精幸Ａ",
-  "en": "",
+  "en": "　ＡＤＳＭＷＬＡ",
   "refs": [
    "08F25C"
   ]
@@ -25,7 +25,7 @@
   "width": 13,
   "kind": "text",
   "jp": "　編成能力合体攻撃パーティ",
-  "en": "",
+  "en": "[0F1F][0001]Set[0F7F]StsComboParty",
   "refs": [
    "08F271"
   ]
@@ -36,7 +36,7 @@
   "width": 14,
   "kind": "text",
   "jp": "捨てるアイテムを選んで下さい",
-  "en": "",
+  "en": "Pick an item to drop.",
   "refs": [
    "08F280"
   ]
@@ -47,7 +47,7 @@
   "width": 7,
   "kind": "text",
   "jp": "捨てられませ[0001]",
-  "en": "",
+  "en": "Can't drop.",
   "refs": [
    "08F286"
   ]
@@ -58,7 +58,7 @@
   "width": 64,
   "kind": "text",
   "jp": "道具使う交換捨てる装備品所持品がの誰とす？け倉庫引き出す武器不可攻撃防御速さ魔力精神幸運ＡＳ個預はそれぞれ一つまでその他アイテム",
-  "en": "",
+  "en": "Itm[0F7F]Use[0F7F]TrdDropGear[0F7F]Bag[0F1F][0011]Who[0F7F]?   BinTake[0F1F][001C]Wp.No[0F7F]AtkDefAgi[0F7F]Int[0F7F]SprLckAS[0F7F]x[0F7F]+[0F7F]One of each   Misc[0F7F]Items",
   "refs": [
    "08F295"
   ]
@@ -69,7 +69,7 @@
   "width": 11,
   "kind": "text",
   "jp": "捨ててよろしいですか？",
-  "en": "",
+  "en": "Discard it?",
   "refs": [
    "08F3B8",
    "19E56A",
@@ -88,7 +88,7 @@
   "width": 6,
   "kind": "text",
   "jp": "ＹＥＳ／ＮＯ",
-  "en": "",
+  "en": "ＹＥＳ／ＮＯ",
   "refs": [
    "08F3BE"
   ]
@@ -99,7 +99,7 @@
   "width": 44,
   "kind": "text",
   "jp": "　未使用ロードコピー消去最初からプレイ時間到達マップ数ファイル　セーブどれを？どこに？．",
-  "en": "",
+  "en": "[0F1F][0001]Free[0F7F]LoadCopyDel[0F7F]New[0F1F][0010]Time[0F1F][0015]Maps[0F1F][001B]File[0F1F][0020]SaveWhich?[0F7F]Where[0F7F].",
   "refs": [
    "08F44C"
   ]
@@ -110,7 +110,7 @@
   "width": 12,
   "kind": "text",
   "jp": "０１２３４５６７８９　．",
-  "en": "",
+  "en": "０１２３４５６７８９　．",
   "refs": [
    "08EA44",
    "08F47F"
@@ -122,7 +122,7 @@
   "width": 14,
   "kind": "text",
   "jp": "ファイル　に上書きします。を",
-  "en": "",
+  "en": "File[0F1F][0005]overwritten.",
   "refs": [
    "08F48E",
    "08F4EB"
@@ -134,7 +134,7 @@
   "width": 13,
   "kind": "text",
   "jp": "よろしいですか？ＹＥＳＮＯ",
-  "en": "",
+  "en": "Really?[0F1F][0008]YES[0F7F]NO",
   "refs": [
    "08F494",
    "08F4A9",
@@ -148,7 +148,7 @@
   "width": 16,
   "kind": "text",
   "jp": "ファイル　をロードします。",
-  "en": "",
+  "en": "File[0F1F][0005]loaded.",
   "refs": [
    "08F4A3"
   ]
@@ -159,7 +159,7 @@
   "width": 16,
   "kind": "text",
   "jp": "ファイル　を消去します。",
-  "en": "",
+  "en": "File[0F1F][0005]erased.",
   "refs": [
    "08F4B8"
   ]
@@ -170,7 +170,7 @@
   "width": 16,
   "kind": "text",
   "jp": "ファイルのセーブに失敗しました。",
-  "en": "",
+  "en": "Couldn't save the file.",
   "refs": [
    "08F4CD"
   ]
@@ -181,7 +181,7 @@
   "width": 17,
   "kind": "text",
   "jp": "ファイルのデータがこわれています。",
-  "en": "",
+  "en": "This file's data is bad.",
   "refs": [
    "08F4DC"
   ]
@@ -192,7 +192,7 @@
   "width": 32,
   "kind": "text",
   "jp": "　移動指示°自動回復°回復指示°ＨＰ　　％以下７０５０３０　一括",
-  "en": "",
+  "en": "[0F1F][0001]Move[0F1F][0006]Auto[0F1F][000B]Heal[0F1F][0010]HP[0F1F][0014]%low[0F7F]70[0F7F]50[0F7F]30[0F1F][001E]All",
   "refs": [
    "08F500",
    "08F58D"
@@ -204,7 +204,7 @@
   "width": 24,
   "kind": "text",
   "jp": "目標はここだ！　自由に動け！　　その場で待機！",
-  "en": "",
+  "en": "Go here![0F1F][0008]Act freely![0F1F][0010]Hold here!",
   "refs": [
    "08F560"
   ]
@@ -215,7 +215,7 @@
   "width": 13,
   "kind": "text",
   "jp": "ＥＸＩＴ　ＨＰ　　％で回復",
-  "en": "",
+  "en": "EXIT[0F1F][0005]HP[0F1F][0009]%heal",
   "refs": [
    "08F524",
    "08F551"
@@ -227,7 +227,7 @@
   "width": 16,
   "kind": "text",
   "jp": "ＳＰ使え！　　　ＳＰ使うな！",
-  "en": "",
+  "en": "Use SP![0F1F][0008]Save SP!",
   "refs": [
    "08F56F"
   ]
@@ -238,7 +238,7 @@
   "width": 16,
   "kind": "text",
   "jp": "アイテム使え！　アイテム使うな！",
-  "en": "",
+  "en": "Use items![0F1F][0008]No items!",
   "refs": [
    "08F57E"
   ]
@@ -249,7 +249,7 @@
   "width": 28,
   "kind": "text",
   "jp": "　一括指示ＥＸＩＴＨＰ％で回復　移動指示自動回復回復指示",
-  "en": "",
+  "en": "[0F1F][0001]All[0F1F][0005]EXIT[0F1F][0009]HP[0F7F]%heal[0F1F][0010]Move[0F7F]Auto[0F1F][0018]Heal",
   "refs": [
    "08F5A9"
   ]
@@ -260,7 +260,7 @@
   "width": 16,
   "kind": "text",
   "jp": "ＳＰ使え！　　　ＳＰ使うな！",
-  "en": "",
+  "en": "Use SP![0F1F][0008]Save SP!",
   "refs": [
    "08F609"
   ]
@@ -271,7 +271,7 @@
   "width": 16,
   "kind": "text",
   "jp": "アイテム使え！　アイテム使うな！",
-  "en": "",
+  "en": "Use items![0F1F][0008]No items!",
   "refs": [
    "08F618"
   ]
@@ -282,7 +282,7 @@
   "width": 6,
   "kind": "text",
   "jp": "７０５０３０",
-  "en": "",
+  "en": "７０５０３０",
   "refs": [
    "08F64E"
   ]
@@ -293,7 +293,7 @@
   "width": 24,
   "kind": "text",
   "jp": "目標はここだ！　自由に動け！　　その場で待機！",
-  "en": "",
+  "en": "Go here![0F1F][0008]Act freely![0F1F][0010]Hold here!",
   "refs": [
    "08F68A"
   ]
@@ -312,7 +312,7 @@
   "width": 96,
   "kind": "text",
   "jp": "　コンフィグメッセージスピード　スクロールサウンドコントローラーウィンドウカラーステレオモノラル設定を変えるもとにもどす速　　Ｒランドサイトマップでの　速　　Ｇ見せ場きりかえ　あり　なし　　Ｂ",
-  "en": "",
+  "en": "[0F1F][0001]Config[0F1F][0006]Text Speed[0F1F][0010]Scroll[0F1F][0015]Sound[0F7F]Controller[0F7F]Window[0F7F]Tint[0F7F]Dual[0F1F][002C]Mono[0F7F]Change[0F1F][0036]Default[0F1F][003F]R[0F7F]Landsite[0F7F]Map[0F1F][004F]G[0F7F]Highlights[0F1F][0058]On[0F1F][005B]Off[0F1F][005F]B",
   "refs": [
    "08F699"
   ]
@@ -323,7 +323,7 @@
   "width": 48,
   "kind": "text",
   "jp": "　決定キャンセルマップきりかえ　カーソル高速移動キャラおくり　　キャラもどし移動指定",
-  "en": "",
+  "en": "[0F1F][0001]OK[0F7F]Cancel[0F1F][0008]Map view[0F1F][0010]Fast cursor[0F7F]Next unit[0F1F][0020]Prev unit[0F7F]Move",
   "refs": [
    "08F6A8"
   ]
@@ -334,7 +334,7 @@
   "width": 14,
   "kind": "text",
   "jp": "「設定終了」で抜けられます。",
-  "en": "",
+  "en": "Pick \"Done\" to exit.",
   "refs": [
    "08F6AE"
   ]
@@ -345,7 +345,7 @@
   "width": 9,
   "kind": "text",
   "jp": "設定を終わります。",
-  "en": "",
+  "en": "Config done.",
   "refs": [
    "08F6B4"
   ]
@@ -356,7 +356,7 @@
   "width": 11,
   "kind": "text",
   "jp": "Ａ　Ｂ　Ｘ　Ｙ　Ｌ　Ｒ",
-  "en": "",
+  "en": "Ａ　Ｂ　Ｘ　Ｙ　Ｌ　Ｒ",
   "refs": [
    "08F6BA"
   ]
@@ -367,7 +367,7 @@
   "width": 32,
   "kind": "text",
   "jp": "ＳＥＬＥＣＴコントローラー設定　決定°キャンセルを設定して下さい",
-  "en": "",
+  "en": "SELECT[0F1F][0006]Pad setup[0F1F][0010]Set OK and Cancel.",
   "refs": [
    "08F6C0"
   ]
@@ -378,7 +378,7 @@
   "width": 4,
   "kind": "text",
   "jp": "フォント",
-  "en": "",
+  "en": "Font",
   "refs": [
    "08F6D8"
   ]

@@ -144,20 +144,20 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | キャンプ | camp | | | |
 | 作戦指示 | orders | | camp command | |
 | 精霊水 | Spirit Water | | item | |
-| 機神 | Machine God | | ancient weapons; numbered "Machine God No. 8" | |
+| 機神 | Machine God / M.God | | ancient weapons; numbered "Machine God No. 8"; "M.God 1" only in the fixed-length objectives | |
 | 超機神 | Machine God Supreme / Machine God | | the god of destruction Elysion revives; "Machine God" only in the 80 px class field | |
 | 神の代理人 | agent of the gods / agent of us twelve gods | | what the Zodiac Gods call the hero | |
 | 屍解仙 | Corpse Immortal | | boss at the Abadan River | |
 | 悪霊 | evil spirit | | Ruins Town ghost | |
 | ワルキューレ | Valkyrie | | Rune's Valkyrie Corps | |
 | 火竜 | fire dragon | | Salamander | |
-| スカルナイト | Skull Knight | | | |
+| スカルナイト | Skull Knight / Skull Kn. | | "Skull Kn." only in the fixed-length objectives | |
 | 報奨の剣 | Sword of Bounty | | the legendary sword that breaks the dark wall | |
 | 暗黒十二神 | Twelve Dark Gods | | bound together = the ultimate weapon | |
 | 閃光のシュタイア | Steyr the Flash | | | |
 | 寸断のリュウビ | Ryubi the Shredder | | | |
 | ロシィ | Rossy | | Steyr's sister | |
-| 合体攻撃 | Combined attack | | combo shouts in caps (GIGA SMASHER!) | |
+| 合体攻撃 | Combined attack / Combo | | combo shouts in caps (GIGA SMASHER!) | |
 | 賞金かせぎ | bounty chaser / bounty hunter | | {FF31}'s slight ("bounty chaser"), Thetis corrects her: "Bounty HUNTER!"; the hero and Colts use it of themselves | |
 | ニンジャマスター | Ninja Master | | Tsukikage's title | |
 | ドラゴンバスター | Dragon Buster | | Mauser | |

@@ -3,7 +3,7 @@
   "id": "18FD06",
   "kind": "text",
   "jp": "出現する全ての敵を倒せ{FFFE}",
-  "en": "",
+  "en": "Defeat all!{FFFE}",
   "refs": [
    "061221",
    "06123A",
@@ -16,25 +16,25 @@
   "id": "18FD1E",
   "kind": "text",
   "jp": "東（ＭＡＰ右）のはしまでたどり着け{FFFF}",
-  "en": ""
+  "en": "Reach east edge  {FFFF}"
  },
  {
   "id": "18FD42",
   "kind": "text",
   "jp": "出現する全ての敵を倒せ{FFFE}",
-  "en": ""
+  "en": "Defeat all!{FFFE}"
  },
  {
   "id": "18FD5A",
   "kind": "text",
   "jp": "街の入り口の門をくぐり抜けろ{FFFE}",
-  "en": ""
+  "en": "Enter the town{FFFE}"
  },
  {
   "id": "18FD78",
   "kind": "text",
   "jp": "ラグガドルを倒せ{FFFE}",
-  "en": "",
+  "en": "Raggadol{FFFE}",
   "refs": [
    "1F6599"
   ]
@@ -43,49 +43,49 @@
   "id": "18FD8A",
   "kind": "text",
   "jp": "盗賊のボスを倒せ{FFFE}",
-  "en": ""
+  "en": "Get boss{FFFE}"
  },
  {
   "id": "18FD9C",
   "kind": "text",
   "jp": "魔導将軍を倒せ{FFFE}",
-  "en": ""
+  "en": "SorcGen{FFFE}"
  },
  {
   "id": "18FDAC",
   "kind": "text",
   "jp": "機神１号を倒せ{FFFE}",
-  "en": ""
+  "en": "M.God 1{FFFE}"
  },
  {
   "id": "18FDBC",
   "kind": "text",
   "jp": "魔導部隊長を倒せ{FFFE}",
-  "en": ""
+  "en": "SorcCapt{FFFE}"
  },
  {
   "id": "18FDCE",
   "kind": "text",
   "jp": "機神６号を倒せ{FFFE}",
-  "en": ""
+  "en": "M.God 6{FFFE}"
  },
  {
   "id": "18FDDE",
   "kind": "text",
   "jp": "機神４号を倒せ{FFFE}",
-  "en": ""
+  "en": "M.God 4{FFFE}"
  },
  {
   "id": "18FDEE",
   "kind": "text",
   "jp": "サラマンダーを倒せ{FFFE}",
-  "en": ""
+  "en": "Salamandr{FFFE}"
  },
  {
   "id": "18FE02",
   "kind": "text",
   "jp": "自分の影にうち勝て{FFFE}",
-  "en": "",
+  "en": "Self-duel{FFFE}",
   "refs": [
    "072FED",
    "083508",
@@ -97,25 +97,25 @@
   "id": "18FE16",
   "kind": "text",
   "jp": "機神７号を倒せ{FFFE}",
-  "en": ""
+  "en": "M.God 7{FFFE}"
  },
  {
   "id": "18FE26",
   "kind": "text",
   "jp": "最後の敵をバウンティーソードで倒せ{FFFE}",
-  "en": ""
+  "en": "Boss w/ B. Sword {FFFE}"
  },
  {
   "id": "18FE4A",
   "kind": "text",
   "jp": "ラグガドルを倒せ{FFFE}",
-  "en": ""
+  "en": "Raggadol{FFFE}"
  },
  {
   "id": "18FE5C",
   "kind": "text",
   "jp": "アジャックスを倒せ{FFFE}",
-  "en": ""
+  "en": "Beat Ajax{FFFE}"
  },
  {
   "id": "18FE70",
@@ -136,13 +136,13 @@
   "id": "18FEE8",
   "kind": "text",
   "jp": "出現する全ての敵を倒せ{FFFE}",
-  "en": ""
+  "en": "Defeat all!{FFFE}"
  },
  {
   "id": "18FF00",
   "kind": "text",
   "jp": "敵の小隊長を倒せ{FFFE}",
-  "en": "",
+  "en": "Beat ldr{FFFE}",
   "refs": [
    "05188C",
    "0518A9",
@@ -190,7 +190,7 @@
   "id": "18FF12",
   "kind": "text",
   "jp": "敵の海兵隊長を倒せ{FFFE}",
-  "en": "",
+  "en": "Beat capt{FFFE}",
   "refs": [
    "2BAA42"
   ]
@@ -199,12 +199,12 @@
   "id": "18FF26",
   "kind": "text",
   "jp": "ダニエルを倒せ{FFFE}",
-  "en": ""
+  "en": "Daniel!{FFFE}"
  },
  {
   "id": "18FF36",
   "kind": "text",
   "jp": "スカルナイトを倒せ",
-  "en": ""
+  "en": "Skull Kn."
  }
 ]

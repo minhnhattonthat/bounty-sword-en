@@ -1,0 +1,77 @@
+01BFFF	=
+01C0A1	=
+01C0B9	=
+01C0D3	=
+01C0E7	=
+01C103	=
+01C115	=
+01C131	=
+01C149	=
+01C163	=
+01C205	=
+01C283	=
+01C359	=
+01C42F	=
+01C479	1:Party | 5:Tac | 7:Itm | 9:Go! | 11:Map | 16:Orders | 20:File | 24:Config
+01C4B5	0:Inf | 2:Go | 4:Close | 10:Travel
+01C4D3	0:Rheinmetall | 16:North Europea | 32:South Europea
+01C535	1:Party | 5:Itm | 7:Fld | 9:Camp | 16:Map View | 23:[01F6][01F7][01F8]
+01C578	0:Retreat! | 6:Sure? | 16:OK | 18:No | 21:[01F6][01F7][01F8]
+01C5AA	0:Aim | 4:Skill | 8:Itm | 10:Tac | 12:Rtn | 14:Sts | 17:canceled.
+01C60C	1:Pick a target, press A. | 16:pick | 21:Which | 25:one? | 29:Fld | 31:Unit | 35:/
+01C6EE	1:Atk | 3:Agi | 5:Spr | 7:AS | 9:Gdr | 11:Def | 13:Int | 16:Lck | 18:Elm | 20:Sg. | 22:/
+01C722	0:Gear | 3:Bag
+01C730	0:Spell | 3:Skill
+01C73E	0:Combo
+01C748	0:Members
+01C894	0:Gear | 3:Bag | 6:Itm | 8:Bin | 11:Use | 13:Drop | 16:Atk | 18:Def | 20:Agi | 22:Int | 24:Spr | 26:Lck | 28:AS | 30:Trd
+01C8D6	0:Discard it? | 16:YES | 20:/ | 23:NO
+01C90A	0:Can't | 4:One of each only
+01C935	1:Set | 3:Land | 7:Fight! | 11:Hid | 13:m | 14:s | 15:to arrive | 21:Orders
+01C976	1:Spl | 3:Item | 7:SOS Call | 13:KO
+01C9C6	0:Kill Time | 9:Kill Bonus | 16:Time Bonus | 23:Total
+01C9FE	=
+01CA4B	0:Orders | 4:Skill | 8:Ord | 10:Itm | 12:Sts | 16:Move | 21:Action | 26:Healing
+01CA8B	0:HP | 4:% | 5:heal
+01CA9D	0:All Units
+01CAAB	1:Orders | 5:Out | 7:Sts | 9:Sit | 11:Sys. | 16:[01F6][01F7][01F8]
+01CAE0	0:Choose.
+01CAF0	1:Sit | 3:Big Map | 8:Goal | 12:Sys. | 16:Swap
+01CB1A	0:Spell | 3:Skill | 6:Combo | 10:Members
+01CB49	1:Goal
+01CBB8	0:　ＡＤＳＭＷＬＡ
+01CC00	1:Set | 3:Sts | 5:Combo | 9:Party
+01CC1C	0:Pick an item to drop.
+01CC3A	0:Can't drop.
+01CC4A	0:Itm | 2:Use | 4:Trd | 6:Drop | 9:Gear | 12:Bag | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
+01CCCC	0:Discard it?
+01CCE4	=
+01CCF2	1:Free | 4:Load | 7:Copy | 10:Del | 12:New | 16:Time | 21:Maps | 27:File | 32:Save | 35:Which? | 39:Where | 43:.
+01CD4C	=
+01CD66	0:File | 5:overwritten.
+01CD84	0:Really? | 8:YES | 11:NO
+01CDA0	0:File | 5:loaded.
+01CDC2	0:File | 5:erased.
+01CDE4	0:Couldn't save the file.
+01CE06	0:This file's data is bad.
+01CE2A	1:Move | 6:Auto | 11:Heal | 16:HP | 20:% | 21:low | 23:70 | 25:50 | 27:30 | 30:All
+01CE6C	0:Go here! | 8:Act freely! | 16:Hold here!
+01CE9E	0:EXIT | 5:HP | 9:% | 10:heal
+01CEBA	0:Use SP! | 8:Save SP!
+01CEDC	0:Use items! | 8:No items!
+01CEFE	1:All | 5:EXIT | 9:HP | 11:% | 12:heal | 16:Move | 20:Auto | 24:Heal
+01CF38	0:Use SP! | 8:Save SP!
+01CF5A	0:Use items! | 8:No items!
+01CF7C	=
+01CF8A	0:Go here! | 8:Act freely! | 16:Hold here!
+01D03A	1:Config | 6:Text Speed | 16:Scroll | 21:Sound | 25:Controller | 32:Window | 37:Tint | 40:Dual | 44:Mono | 48:Change | 54:Default | 63:R | 64:Landsite | 70:Map | 79:G | 80:Highlights | 88:On | 91:Off | 95:B
+01D0FC	1:OK | 3:Cancel | 8:Map view | 16:Fast cursor | 24:Next unit | 32:Prev unit | 38:Move
+01D15E	0:Pick "Done" to exit.
+01D17C	0:Config done.
+01D190	=
+01D1A8	0:SELECT | 6:Pad setup | 16:Set OK and Cancel.
+01D1EA	0:Font
+01D2B7	=
+01D2F9	0:Atk | 2:Def | 4:Agi | 6:Int | 8:Spr | 10:Lck | 12:AS
+01D31B	0:Wp. | 2:Etc | 5:Gear | 8:Item | 12:Bin | 14:x
+01D38D	0:Promote? | 7:OK | 9:No
