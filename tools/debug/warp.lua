@@ -5,6 +5,7 @@
 --          pointer instead, e.g. a side-table prompt: --var "MSGPTR=0xC41393"), HOLD (frames to run after the expected mode is reached, default the row's),
 --          WARP_STATE (absolute path: save a state at SCENE_OK; only then, so a failed warp never leaves a bad state),
 --          KEEP (don't stop at SCENE_OK; run on to --frames, e.g. to watch a scene play out),
+--          AFTER (with KEEP: a route "N keys;N keys" queued at SCENE_OK, e.g. to open a confirm box past the scene),
 --          HOOK_STATE (msg kind, absolute path: save a state when the message starts; tools/debug/msgcover.py),
 --          POKE (msg kind: "7E379F:4D69..,ADDR:HEX" bytes written when the message starts, e.g. the FF29 name buffer).
 -- How it works (docs/re/debug.md): the main loop runs the 24-bit continuation at $00EB-$00ED every frame. Once the
@@ -148,6 +149,7 @@ L.on_frame(function(f)
       local got, want = rd16(tonumber(a, 16)), tonumber(v)
       L.log(string.format("ASSERT %s %s=%d (want %d)", got == want and "ok" or "FAIL", a, got, want))
     end
+    if AFTER then queue_route(AFTER) end  -- --var "AFTER='6 a;80 -;6 right'" with KEEP: keys after SCENE_OK
     if not KEEP then
       if WARP_STATE then L.save_state(WARP_STATE, function() L.finish(0) end) else L.finish(0) end
     end

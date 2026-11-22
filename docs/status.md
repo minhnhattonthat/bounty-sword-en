@@ -2,14 +2,30 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session u: C4 names done, JP-left list closed, full re-tour + gate
-  green on build b87fef44ac02; **next, the rest of phase 8's done-when: `inkbox.py` on every Yes/No and centred menu
-  box (trade-in Yes/No `shop_trade`, shop Buy/Sell/Quit, file menus, battle/camp menus; compare tour_jp when unsure),
-  stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`), `textcover.py` over side tables (master
-  coverage done, `work/qa/cover`), then the remaining to-do 3 shop lines read in game**; to-dos below).
-  Tour: `work/qa/tour` 146/146 ok, states refreshed, sheets `work/qa/tour/sheets/sheet*.png` (13), manifest
-  `work/qa/manifest.tsv` (build recorded), verdicts `work/qa/verdicts/chunk_077c37329c60_000.tsv` (own fresh pass,
-  13 ok); `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exits 0. Any rebuild needs a new tour + init.
+- **Phase:** 8. QA in the emulator: in progress (session v: inkbox gate built, 10/10 boxes ok on build c014fcdc11f2;
+  **next: (1) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp "Discard it?" (01CCCC, YES/NO; the camp_items
+  menu flow past the item list is not worked out: `AFTER` keys a/down/down/a only toggled the Pack panel), "Promote?
+  OK No" (01D38D, needs a unit able to change class), "Retreat! Sure? OK No" (01C578, not shown on scenario 37);
+  (2) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) `textcover.py` over side tables
+  (master coverage done, `work/qa/cover`); (4) to-do 3 shop lines read in game; (5) the build changed since the
+  tour (shop headers, Yes/No cells): re-run the full tour (`warp_all.py build/bounty_en.sfc --jobs 6 --out
+  work/qa/tour --states --sheet`, then `find work -name _mesen -prune -exec rm -rf {} +`), `qa_gate.py init ...
+  --build`, verdict the changed sheets (shop ones), `qa_gate.py check`**).
+  Old tour: `work/qa/tour` 146/146 ok on build b87fef44ac02 (gate green then; now fails on the build hash).
+- **Session 2026-11-23v (phase 8, inkbox gate):** new **`tools/inkbox_all.py`** + **`docs/inkbox.tsv`** (one row per
+  choice/centred box: warp, keys, frame, rects, mode `centre` or `match` = English ink starts where the JP ink does,
+  options `side=right`, `ink=R,G,B diff=N` for text over sprites; `--shoot` warps both ROMs into
+  `work/qa/ink/<row>_{en,jp}`, report `work/qa/ink/report.tsv`, exit 1 on any fail). `warp.lua` var **`AFTER`**
+  (route queued at SCENE_OK, with KEEP; an emu.py `--route` replaces the scene's own keys, so use AFTER instead).
+  Rows: duel/job Yes/No (engine A lists, MSG=16/17 + `tools/routes/msg_a1.txt`), ceremony date OK?, ceremony
+  guardian Yes/No, shop trade-in Yes/No, file/save label boxes, status name, both shop headers: **10/10 ok**.
+  **Fixes found by it:** (a) engine B Yes/No (7 shop rows 1AF6A0.., ceremony 1DECF7) put "No" one cell right of its
+  cursor (the cursor tables, e.g. 1AF842 x 0x60/0x88, are JP positions; "Yes" is a cell longer than はい): gap
+  `{FF0E:0003}` -> `{FF0E:0002}`, test `test_engine_b_yes_no_keeps_the_cursor_cells`. (b) Shop headers 武器屋1/道具屋1
+  are centred and the digit is fixed: "Weapons 1" was 11 px off, so the labels are now "Arms"/"Item" on JP's 3 cells
+  (D14; `grid_specs.tsv` 01D2B7, `byte_patches.tsv` 05B230/05B25C, rv13). Shop cursor ignores down/left/right in
+  the trade-in warp (the "No" cursor was checked from the cursor table instead). check 59 passed, lint 0, smoke ok,
+  build sha1 c014fcdc11f2. Worker handed back near the context limit.
 - **Session 2026-11-23u (phase 8, C4 names):** static parser **`tools/re/battle_setup.py`** for the battle-setup
   records (C4:2A39, C0:A3AE/A496 format in its docstring): 214 name overrides (copied to `$1132 + 12*slot`), 211
   now English through `script/default_names.tsv` (Soldier, Dragoons, Ranger, Zodiac, M.God 1-12, Captain ...; 48 px
@@ -357,4 +373,5 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
 - **Open bugs:** shop lines not all read in game yet (to-do 3); shop warp ignores input after the greeting (debug
   tool). (C4 battle-setup names: fixed in session u.)
-- **Waiting on the user:** nothing. (Keyboard input in Mesen not checked by hand: headless session.)
+- **Waiting on the user:** (not blocking) D14 shop headers "Arms 1" / "Item 1" (3-cell labels so they stay centred);
+  say if you'd rather have "Weapons"/"Items" off-centre. (Keyboard input in Mesen not checked by hand: headless session.)

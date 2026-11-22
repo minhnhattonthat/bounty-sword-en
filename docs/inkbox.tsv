@@ -1,0 +1,11 @@
+name	scene	vars	route	frames	shot	rects	mode	note
+duel_yesno	msg	MSG=16|KEEP=true	tools/routes/msg_a1.txt	1600	f001600.png	95,134,150,28	match	engine A choice list 26F317 (Yes/No under the cursor indent, like 05EDAF 0414B3)
+job_yesno	msg	MSG=17|KEEP=true	tools/routes/msg_a1.txt	1600	f001600.png	95,134,150,28	match	engine A choice list 26F34D
+cer_date_ok	prologue			7200	f004940.png|f004800.png	16,200,224,14	match	ceremony date entry OK? YES NO (same glyphs in both ROMs)
+cer_guardian_yesno	prologue			7200	f005560.png|f005400.png	90,184,30,16 130,184,40,16	match ink=165,220,235 diff=45	ceremony 1DECF7 guardian spirit Yes / No on their cursor cells (ring sprite behind: text colour only)
+shop_trade_yesno	shop_trade			9000	proof.png	113,176,30,14 146,176,40,14	match	shop 1AFBAC trade-in Yes / No on their cursor cells (cursor table 1AFC16: x 0x60, 0x88)
+file_header	filemenu			9000	proof.png	17,17,40,12	match	file menu label box: JP ファイル is flush left too
+save_where	camp_save			9000	proof.png	12,40,48,15	match	camp save label box Where (JP どこに？ flush left)
+status_name	camp_resolve			9000	proof.png	46,18,74,12	match	status window name field (flush left after the portrait)
+shop_header	town_weapon_shop			9000	proof.png	16,12,128,19	centre	weapon shop header "Arms 1" (JP 武器屋1 is centred; the digit is fixed at col 11, so the label keeps JP's 3 cells)
+shop_header_items	town_item_shop			9000	proof.png	16,12,128,19	centre	item shop header "Item 1" (JP's 3 cells; rect inside the corner rivets, JP measures L48 R50)

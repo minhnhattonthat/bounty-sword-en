@@ -45,6 +45,21 @@ def test_shop_rows_fit_the_20_cell_portrait_box():
     assert batches.shop_row_cells('"{FF06:48CD:007E}{FF0E:0003}{FF06:48F9:007E}G"') == 1 + 16 + 3 + 5 + 2
 
 
+def test_engine_b_yes_no_keeps_the_cursor_cells():
+    """Engine B choices draw one char a cell and put the cursor from a fixed table (1AF842: x 0x60 / 0x88), so "No"
+    must start on the cell いいえ did: len(Yes) + gap == len(はい) + gap_jp (a 3-cell gap left No 8 px off its cursor)."""
+    import re
+    pat = re.compile(r"(\S+?)\{FF0E:([0-9A-F]{4})\}(\{FF05\})?(No|いいえ)")
+    seen = 0
+    for e in batches.index().values():
+        jp, en = pat.search(e.get("jp") or ""), pat.search(e.get("en") or "")
+        if not (jp and en and jp.group(1).endswith("はい")):
+            continue
+        seen += 1
+        assert len("Yes") + int(en.group(2), 16) == len("はい") + int(jp.group(2), 16), e["id"]
+    assert seen >= 8
+
+
 def test_repo_lint_has_no_keep_or_tag_problems():
     assert batches.keep_problems(batches.index()) == []
     assert batches.tag_problems() == []
