@@ -1679,7 +1679,8 @@
    824
   ],
   "jp": "「復讐者」\n",
-  "en": ""
+  "en": "「The Avenger」\n",
+  "pages": "\"The Avenger\""
  },
  {
   "id": "2959C6",
@@ -1687,7 +1688,8 @@
    825
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}　！\n　何だか　不気味な気を　感じる！」\n{next}\n「気をつけて！　強力な魔物が\n　この地に　潜んでいるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! I sense something\n creepy!」\n{next}\n「Be careful! A powerful\n monster is lurking here!」\n",
+  "pages": "\"...{hero}! I sense something creepy!\" || \"Be careful! A powerful monster is lurking here!\""
  },
  {
   "id": "295A48",
@@ -1695,7 +1697,8 @@
    826
   ],
   "jp": "{spk}ミランダ　　\n「この気は‥‥　死をこばんだ\n　アンデッドどもの　気です‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「This aura... It is the aura of\n the undead, who refused\n death...」\n",
+  "pages": "\"This aura... It is the aura of the undead, who refused death...\""
  },
  {
   "id": "295A98",
@@ -1703,7 +1706,8 @@
    827
   ],
   "jp": "{spk}ファウスト　\n「確かに感じますね‥‥\n　強い　やみの力のようです」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I certainly feel it... It seems\n to be a strong power of\n darkness.」\n",
+  "pages": "\"I certainly feel it... It seems to be a strong power of darkness.\""
  },
  {
   "id": "295ADE",
@@ -1711,7 +1715,8 @@
    828
   ],
   "jp": "{spk}アテナ　　　\n「わが　銀色の　技のひらめき\n　今　お目にかけましょう！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I shall show you now the\n flash of my silver skill!」\n",
+  "pages": "\"I shall show you now the flash of my silver skill!\""
  },
  {
   "id": "295B2A",
@@ -1719,7 +1724,8 @@
    829
   ],
   "jp": "{spk}シュタイア　\n「たとえ　敵が何だろうと\n　頭をつらぬけば\n　二度と　立ち上がれるものかよ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Whatever the enemy is, put\n one through its head and it\n won't get up again!」\n",
+  "pages": "\"Whatever the enemy is, put one through its head and it won't get up again!\""
  },
  {
   "id": "295B8A",
@@ -1727,7 +1733,8 @@
    830
   ],
   "jp": "{spk}{FF1F}\n「熱くなりすぎるな　シュタイア\n　戦場で　自分を見失うと\n　まっさきに　死ぬ事になるぞ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Don't get too worked up,\n Steyr. Lose yourself on the\n battlefield and you'll be the」\n{next}\n「first to die.」\n",
+  "pages": "\"Don't get too worked up, Steyr. Lose yourself on the battlefield and you'll be the first to die.\""
  },
  {
   "id": "295BEA",
@@ -1735,7 +1742,8 @@
    831
   ],
   "jp": "{spk}シュタイア　\n「だいじょうぶさ　{hero}\n　連邦を　たたきつぶすまでは\n　何があっても　死ぬものかよ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Don't worry, {hero}. Until\n I've smashed the Federation,\n I'm not dying, no matter」\n{next}\n「what!」\n",
+  "pages": "\"Don't worry, {hero}. Until I've smashed the Federation, I'm not dying, no matter what!\""
  },
  {
   "id": "295C5A",
@@ -1743,7 +1751,8 @@
    832
   ],
   "jp": "{spk}{FF1F}\n「よし　行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's go!」\n",
+  "pages": "\"Right, let's go!\""
  },
  {
   "id": "295C74",
@@ -1751,7 +1760,8 @@
    833
   ],
   "jp": "{spk}ラグガドル　\n「ほほう　会えて　うれしいぞ\n　マスター°オブ°ソード！\n　さて　十年ぶり‥‥かな？」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「Ho ho, how glad I am to see\n you, Master of Swords! Now,\n has it been ten years...?」\n",
+  "pages": "\"Ho ho, how glad I am to see you, Master of Swords! Now, has it been ten years...?\""
  },
  {
   "id": "295CDC",
@@ -1759,7 +1769,8 @@
    834
   ],
   "jp": "{spk}{FF1F}\n「キサマ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「You?」\n",
+  "pages": "\"You?\""
  },
  {
   "id": "295CF0",
@@ -1767,7 +1778,8 @@
    835
   ],
   "jp": "{spk}ラグガドル　\n「おぼえていて　くれたかね\n　この十年　お前に\n　復讐する事だけを　考えていた」\n{next}\n「あの世で　邪神に　毎日\n　ねがいをかけた　かいが\n　あったと　いうものだ‥‥」\n{next}\n「死ぬがいい　{hero}！\n　栄光の思い出を　抱いたまま！」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「So you remember me. For\n these ten years I have\n thought of nothing but my」\n{next}\n「revenge on you.」\n{next}\n「It seems praying to the evil\n god every day in the other\n world was worth it...」\n{next}\n「Die, {hero}! With your\n memories of glory in your\n arms!」\n",
+  "pages": "\"So you remember me. For these ten years I have thought of nothing but my revenge on you.\" || \"It seems praying to the evil god every day in the other world was worth it...\" || \"Die, {hero}! With your memories of glory in your arms!\""
  },
  {
   "id": "295DEC",
@@ -1775,7 +1787,8 @@
    836
   ],
   "jp": "{spk}ラグガドル　\n「バ°カ°ナ‥‥\n　こんな　こんなことが！？\n　このワシが　倒されるなど！？」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「Im... pos... sible... This... this\n can't be!? That I should be\n defeated!?」\n",
+  "pages": "\"Im... pos... sible... This... this can't be!? That I should be defeated!?\""
  },
  {
   "id": "295E4C",
@@ -1783,7 +1796,8 @@
    837
   ],
   "jp": "{spk}{FF1F}\n「たしか十年前　オレは\n　こう言った　はずだな‥‥」\n{next}\n「じぶんの墓に　帰るがいい\n　邪悪な　黒い魔力の怪物よ！」\n{next}\n「同じセリフで　ふたたび\n　死ぬ気持ちは　どうだ！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Ten years ago, I believe I\n said this...」\n{next}\n「Go back to your grave, you\n monster of black and evil\n magic!」\n{next}\n「How does it feel to die again\n to the same words!?」\n",
+  "pages": "\"Ten years ago, I believe I said this...\" || \"Go back to your grave, you monster of black and evil magic!\" || \"How does it feel to die again to the same words!?\""
  },
  {
   "id": "295F04",
@@ -1791,7 +1805,8 @@
    838
   ],
   "jp": "{spk}ラグガドル　\n「‥‥ぐおぁぁッ！？　ちがう！？\n　お前は　十年前と！？\n　‥‥何が　何が　あったのだ！？」\n{next}\n「十年前‥‥お前は‥‥ただ\n　強いだけの‥‥騎士だった！\n　それが‥‥今は‥‥今はァァァッ！？」\n{next}\n「本‥‥物‥‥の‥‥」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「...Gwoaaagh!? It's different!?\n You're not as you were ten\n years ago!? ...What... what」\n{next}\n「happened to you!?」\n{next}\n「Ten years ago... you were...\n just... a strong knight! But\n now... now... nowwww!?」\n{next}\n「The... real... thing...」\n",
+  "pages": "\"...Gwoaaagh!? It's different!? You're not as you were ten years ago!? ...What... what happened to you!?\" || \"Ten years ago... you were... just... a strong knight! But now... now... nowwww!?\" || \"The... real... thing...\""
  },
  {
   "id": "295FF4",
@@ -1799,7 +1814,8 @@
    839
   ],
   "jp": "「とうに　忘れたはずだった‥‥\n　だが　十年前の日々は\n　今もなお　オレに　つきまとう」\n{next}\n「人が　運命から　逃れられぬように\n　自分の　かこからも\n　また　逃れられぬ　ものなのだろうか」\n",
-  "en": ""
+  "en": "「I thought I'd forgotten it\n long ago... But those days\n ten years ago still haunt me.」\n{next}\n「Just as people can't escape\n fate, maybe they can't\n escape their own past either.」\n",
+  "pages": "\"I thought I'd forgotten it long ago... But those days ten years ago still haunt me.\" || \"Just as people can't escape fate, maybe they can't escape their own past either.\""
  },
  {
   "id": "2960B4",
@@ -1807,7 +1823,8 @@
    840
   ],
   "jp": "{spk}村人　　　　\n「良かったよ　これで　夜な夜な\n　ゾンビに　おびえなくて　すむ」\n{next}\n「ところで　アンタ　ここから\n　すぐ南の　紅の湖の伝説を\n　聞いた事は　あるかい？」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「Thank goodness. Now we\n don't have to fear zombies\n every night.」\n{next}\n「By the way, have you heard\n the legend of Crimson Lake,\n just south of here?」\n",
+  "pages": "\"Thank goodness. Now we don't have to fear zombies every night.\" || \"By the way, have you heard the legend of Crimson Lake, just south of here?\""
  },
  {
   "id": "296160",
@@ -1815,7 +1832,8 @@
    841
   ],
   "jp": "{spk}村人　　　　\n「なかなか物知りだね！　でも\n　オレの方が　きっと\n　くわしいよ　話してやろうか？」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「You know your stuff! But I\n bet I know more. Want me to\n tell you?」\n",
+  "pages": "\"You know your stuff! But I bet I know more. Want me to tell you?\""
  },
  {
   "id": "2961C6",
@@ -1823,7 +1841,8 @@
    842
   ],
   "jp": "{spk}村人　　　　\n「紅の湖は　大昔　神様が\n　人を試すため　作った場所なんだ」\n{next}\n「ここで神様に　みとめられると\n　神々の力が　得られるらしい」\n{next}\n「でも　昔から　だれも成功しない\n　失敗した者は　みんな失望し\n　湖に　その身を　投げちまう‥‥」\n{next}\n「それで　湖の水は　いつも\n　血の　色なのさ　どうだい\n　アンタも　挑戦してみるかい？」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「Long ago, the gods made\n Crimson Lake as a place to\n test people.」\n{next}\n「If the gods approve of you\n here, they say you get the\n gods' power.」\n{next}\n「But nobody's ever succeeded.\n Everyone who fails loses\n hope and throws themselves」\n{next}\n「into the lake...」\n{next}\n「That's why the lake water's\n always the colour of blood.\n What do you say? Want to」\n{next}\n「give it a try?」\n",
+  "pages": "\"Long ago, the gods made Crimson Lake as a place to test people.\" || \"If the gods approve of you here, they say you get the gods' power.\" || \"But nobody's ever succeeded. Everyone who fails loses hope and throws themselves into the lake...\" || \"That's why the lake water's always the colour of blood. What do you say? Want to give it a try?\""
  },
  {
   "id": "29631E",
@@ -1831,7 +1850,8 @@
    843
   ],
   "jp": "{spk}村人　　　　\n「えんりょ　するなよ」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「Don't be shy, now.」\n",
+  "pages": "\"Don't be shy, now.\""
  },
  {
   "id": "296346",
@@ -1839,7 +1859,8 @@
    844
   ],
   "jp": "{spk}村人　　　　\n「どうだい　挑戦してみたかい？\n　けど　生きている所を　見ると\n　まだ　やっちゃあ　いないようだね」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「Well? Did you give it a try?\n Then again, seeing you're\n still alive, I guess you」\n{next}\n「haven't yet.」\n",
+  "pages": "\"Well? Did you give it a try? Then again, seeing you're still alive, I guess you haven't yet.\""
  },
  {
   "id": "2963BC",
@@ -1847,7 +1868,8 @@
    845
   ],
   "jp": "{spk}村人　　　　\n「何だって！？　挑戦したぁ！？\n　しかも　成功しただって！？\n　すげぇ‥‥　な！　サインくれよ！」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「What!? You tried it!? And you\n succeeded!? Wow... Hey! Give\n me your autograph!」\n",
+  "pages": "\"What!? You tried it!? And you succeeded!? Wow... Hey! Give me your autograph!\""
  },
  {
   "id": "296430",
@@ -1855,7 +1877,8 @@
    846
   ],
   "jp": "{spk}ロブン　　　\n「もし　そこの方‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Excuse me, you there...」\n",
+  "pages": "\"Excuse me, you there...\""
  },
  {
   "id": "296458",
@@ -1863,7 +1886,8 @@
    847
   ],
   "jp": "{spk}{FF1F}\n「オレのことか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Me?」\n",
+  "pages": "\"Me?\""
  },
  {
   "id": "296472",
@@ -1871,7 +1895,8 @@
    848
   ],
   "jp": "{spk}ロブン　　　\n「この私を　仲間にして\n　もらえない　でしょうか？」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Would you let me join you?」\n",
+  "pages": "\"Would you let me join you?\""
  },
  {
   "id": "2964B8",
@@ -1879,7 +1904,8 @@
    849
   ],
   "jp": "{spk}{FF1F}\n「‥‥なぜ　仲間になりたい？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Why do you want to join\n us?」\n",
+  "pages": "\"...Why do you want to join us?\""
  },
  {
   "id": "2964DE",
@@ -1887,7 +1913,8 @@
    850
   ],
   "jp": "{spk}ロブン　　　\n「風水です　この世の気が\n　あなたへと　ながれています\n　竜の気となって　あなたへと」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Feng shui. The energy of this\n world is flowing toward you.\n Flowing toward you as the」\n{next}\n「energy of the dragon.」\n",
+  "pages": "\"Feng shui. The energy of this world is flowing toward you. Flowing toward you as the energy of the dragon.\""
  },
  {
   "id": "296546",
@@ -1895,7 +1922,8 @@
    851
   ],
   "jp": "{spk}{FF28}\n「‥‥フウスイ　はるか遠く\n　東洋の地に伝わる　うらないの術ね」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Feng shui. A fortune-telling\n art handed down in the\n far-off lands of the East.」\n",
+  "pages": "\"...Feng shui. A fortune-telling art handed down in the far-off lands of the East.\""
  },
  {
   "id": "29658E",
@@ -1903,7 +1931,8 @@
    852
   ],
   "jp": "{spk}ロブン　　　\n「きっと　あなたは\n　私が　もとめている物を\n　見つけて下さるはずです‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I am sure you will find what\n I am searching for...」\n",
+  "pages": "\"I am sure you will find what I am searching for...\""
  },
  {
   "id": "2965EC",
@@ -1911,7 +1940,8 @@
    853
   ],
   "jp": "{spk}{FF1F}\n「おかしな　ヤツだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Strange guy.」\n",
+  "pages": "\"Strange guy.\""
  },
  {
   "id": "296608",
@@ -1919,7 +1949,8 @@
    854
   ],
   "jp": "{spk}ロジャー　　\n「‥‥{hero}さん　何だか\n　うさんくさいですよ　このオッサン」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...{hero}-san, there's\n something fishy about this\n old guy.」\n",
+  "pages": "\"...{hero}-san, there's something fishy about this old guy.\""
  },
  {
   "id": "29665E",
@@ -1927,7 +1958,8 @@
    855
   ],
   "jp": "{spk}ファウスト　\n「私にも　見えません‥‥\n　この出会いが　運命なのか\n　それとも　そうでないのか‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I cannot see it either...\n Whether this meeting is fate,\n or not...」\n",
+  "pages": "\"I cannot see it either... Whether this meeting is fate, or not...\""
  },
  {
   "id": "2966C6",
@@ -1935,7 +1967,8 @@
    856
   ],
   "jp": "{spk}{FF28}\n「でも　悪意は　感じられないわ\n　少なくとも　敵では　なさそうよ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「But I don't sense any malice.\n At least he doesn't seem to\n be an enemy.」\n",
+  "pages": "\"But I don't sense any malice. At least he doesn't seem to be an enemy.\""
  },
  {
   "id": "296710",
@@ -1943,7 +1976,8 @@
    857
   ],
   "jp": "{spk}{FF1F}\n「ああ‥‥　それに　どんな術を\n　使うか知れんが　この男\n　恐るべき力を　秘めている‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah... And I don't know what\n arts he uses, but this man\n hides a fearsome power...」\n",
+  "pages": "\"Yeah... And I don't know what arts he uses, but this man hides a fearsome power...\""
  },
  {
   "id": "296772",
@@ -1951,7 +1985,8 @@
    858
   ],
   "jp": "{spk}ロブン　　　\n「仲間にして下さいますか？」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Will you let me join you?」\n",
+  "pages": "\"Will you let me join you?\""
  },
  {
   "id": "2967A0",
@@ -1959,7 +1994,8 @@
    859
   ],
   "jp": "{spk}ロブン　　　\n「ありがとう　ございます」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Thank you very much.」\n",
+  "pages": "\"Thank you very much.\""
  },
  {
   "id": "2967CC",
@@ -1967,7 +2003,8 @@
    860
   ],
   "jp": "{spk}ロブン　　　\n「そうですか　それでは\n　私は　失礼いたします\n　あなた様の　ご武運を‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I see. Then I shall take my\n leave. May fortune favour\n you in battle...」\n",
+  "pages": "\"I see. Then I shall take my leave. May fortune favour you in battle...\""
  },
  {
   "id": "29682A",
@@ -1975,7 +2012,8 @@
    861
   ],
   "jp": "{spk}{FF31}　　　　　\n「なぜ　仲間にしなかったの？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Why didn't you let him join?」\n",
+  "pages": "\"Why didn't you let him join?\""
  },
  {
   "id": "29685A",
@@ -1983,7 +2021,8 @@
    862
   ],
   "jp": "{spk}{FF1F}\n「危険を　しょいこみたくない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I don't want to take on any\n risk.」\n",
+  "pages": "\"I don't want to take on any risk.\""
  },
  {
   "id": "296880",
@@ -1991,7 +2030,8 @@
    863
   ],
   "jp": "{spk}{FF28}\n「あなたを狙う　暗殺者だったら\n　大変でしょ　{hero}は\n　あなたを　守ってあげたいのよ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It'd be terrible if he were an\n assassin after you. {hero}\n wants to protect you, you」\n{next}\n「know.」\n",
+  "pages": "\"It'd be terrible if he were an assassin after you. {hero} wants to protect you, you know.\""
  },
  {
   "id": "2968E6",
@@ -1999,7 +2039,8 @@
    864
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥ふぅん　バッカみたい」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...Hmm. How stupid.」\n",
+  "pages": "\"...Hmm. How stupid.\""
  },
  {
   "id": "296914",
@@ -2007,7 +2048,8 @@
    865
   ],
   "jp": "{spk}{FF28}\n「カワイくないの！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「You're no fun at all!」\n",
+  "pages": "\"You're no fun at all!\""
  },
  {
   "id": "296930",
@@ -2015,7 +2057,8 @@
    866
   ],
   "jp": "「凶暴な　モンスターの巣として\n　知られる　パドヴァ地方‥‥」\n{next}\n「反乱軍には　若い剣士も多い\n　ここで　彼らの腕を\n　試してみるのも　いいだろう」\n",
-  "en": ""
+  "en": "「The Padova region, known as\n a nest of savage monsters...」\n{next}\n「The rebels have many young\n swordsmen. This would be a\n good place to test their skill.」\n",
+  "pages": "\"The Padova region, known as a nest of savage monsters...\" || \"The rebels have many young swordsmen. This would be a good place to test their skill.\""
  },
  {
   "id": "2969C8",
@@ -2023,7 +2066,8 @@
    867
   ],
   "jp": "「獣たちの巣」\n",
-  "en": ""
+  "en": "「The Beasts' Nest」\n",
+  "pages": "\"The Beasts' Nest\""
  },
  {
   "id": "2969D8",
@@ -2031,7 +2075,8 @@
    868
   ],
   "jp": "{spk}{FF28}\n「すごいわね　{hero}！\n　ウワサ通り　モンスターが\n　あちこちに　いるわよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Amazing, {hero}! Just like\n the rumours, there are\n monsters all over the place!」\n",
+  "pages": "\"Amazing, {hero}! Just like the rumours, there are monsters all over the place!\""
  },
  {
   "id": "296A34",
@@ -2039,7 +2084,8 @@
    869
   ],
   "jp": "{spk}ロジャー　　\n「腕がなりますね‥‥」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「I'm itching for a fight...」\n",
+  "pages": "\"I'm itching for a fight...\""
  },
  {
   "id": "296A5C",
@@ -2047,7 +2093,8 @@
    870
   ],
   "jp": "{spk}ミランダ　　\n「モンスターと　言えども\n　生き物です　むやみに\n　殺すのは　私には　どうも‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Monsters or not, they are\n living things. Killing them\n needlessly does not sit well」\n{next}\n「with me...」\n",
+  "pages": "\"Monsters or not, they are living things. Killing them needlessly does not sit well with me...\""
  },
  {
   "id": "296AC0",
@@ -2055,7 +2102,8 @@
    871
   ],
   "jp": "{spk}ツキカゲ　　\n「くだらん　ただのケモノ\n　殺しがいが　ないな‥‥」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Pointless. Just beasts. Not\n worth the killing...」\n",
+  "pages": "\"Pointless. Just beasts. Not worth the killing...\""
  },
  {
   "id": "296B06",
@@ -2063,7 +2111,8 @@
    872
   ],
   "jp": "{spk}リュウビ　　\n「腕をみがくには\n　確かに　良い場所だ‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「A fine place to hone one's\n skill, certainly...」\n",
+  "pages": "\"A fine place to hone one's skill, certainly...\""
  },
  {
   "id": "296B44",
@@ -2071,7 +2120,8 @@
    873
   ],
   "jp": "{spk}アテナ　　　\n「まだまだ　私の　戦いの技は\n　落ちてはいないと　信じたい」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I would like to believe my\n battle skills have not dulled\n yet.」\n",
+  "pages": "\"I would like to believe my battle skills have not dulled yet.\""
  },
  {
   "id": "296B92",
@@ -2079,7 +2129,8 @@
    874
   ],
   "jp": "{spk}マウザー　　\n「へッ！　ドラゴンが　いないんじゃ\n　オレの出番は　なさそうだな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Heh! No dragons here, so\n looks like it's not my turn!」\n",
+  "pages": "\"Heh! No dragons here, so looks like it's not my turn!\""
  },
  {
   "id": "296BE8",
@@ -2087,7 +2138,8 @@
    875
   ],
   "jp": "{spk}{FF1F}\n「行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Let's go!」\n",
+  "pages": "\"Let's go!\""
  },
  {
   "id": "296BFC",
@@ -2095,7 +2147,8 @@
    876
   ],
   "jp": "{spk}{FF1F}\n「よし　上できだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, well done!」\n",
+  "pages": "\"Right, well done!\""
  },
  {
   "id": "296C18",
@@ -2103,7 +2156,8 @@
    877
   ],
   "jp": "{spk}美少女　　　\n「この地では　今日は一年で一回の\n　守護の月の日なの\n　モンスターたちも　お休みね」\n{next}\n「えっ　火山島に行きたいの？\n　いいわ　剣のみさきの　船のりに　\n　しょうかいじょうを　書いてあげる」\n",
-  "en": ""
+  "en": "{spk}美少女　　　\n「Today here is Guardian Moon\n Day, which comes once a\n year. The monsters take the」\n{next}\n「day off too.」\n{next}\n「Oh, you want to go to the\n volcanic island? All right, I'll\n write you a letter of」\n{next}\n「introduction to the sailors at\n Sword Cape.」\n",
+  "pages": "\"Today here is Guardian Moon Day, which comes once a year. The monsters take the day off too.\" || \"Oh, you want to go to the volcanic island? All right, I'll write you a letter of introduction to the sailors at Sword Cape.\""
  },
  {
   "id": "296CEA",
@@ -2111,7 +2165,8 @@
    878
   ],
   "jp": "{spk}美少女　　　\n「私　モンスターを　恐れずに\n　ここまで　きてくれる人と\n　家を持ちたいの‥‥　うふふ」\n",
-  "en": ""
+  "en": "{spk}美少女　　　\n「I want to make a home with\n someone who'll come all the\n way here without fearing the」\n{next}\n「monsters... Ufufu.」\n",
+  "pages": "\"I want to make a home with someone who'll come all the way here without fearing the monsters... Ufufu.\""
  },
  {
   "id": "296D54",
@@ -2119,7 +2174,8 @@
    879
   ],
   "jp": "{spk}{FF28}\n「あれって　西の砂漠で\n　おジイさんが　言っていた\n　伝説のダークドラゴンじゃない？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Isn't that the legendary Dark\n Dragon the old man in the\n western desert talked」\n{next}\n「about?」\n",
+  "pages": "\"Isn't that the legendary Dark Dragon the old man in the western desert talked about?\""
  },
  {
   "id": "296DB2",
@@ -2127,7 +2183,8 @@
    880
   ],
   "jp": "{spk}{FF1F}\n「どうやら　そのようだな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Looks like it.」\n",
+  "pages": "\"Looks like it.\""
  },
  {
   "id": "296DD4",
@@ -2135,7 +2192,8 @@
    881
   ],
   "jp": "{spk}マウザー　　\n「伝説の　やみのドラゴンだと！？\n　なるほど　ウワサ通りの　デカさ！\n　ここは　オレにまかせてくれ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「The legendary dragon of\n darkness!? It's as huge as\n they say! Leave this one to」\n{next}\n「me!」\n",
+  "pages": "\"The legendary dragon of darkness!? It's as huge as they say! Leave this one to me!\""
  },
  {
   "id": "296E4C",
@@ -2143,7 +2201,8 @@
    882
   ],
   "jp": "{spk}アテナ　　　\n「これほどの　ドラゴン\n　今まで　見た事ないわ‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I have never seen a dragon\n like this before...」\n",
+  "pages": "\"I have never seen a dragon like this before...\""
  },
  {
   "id": "296E92",
@@ -2151,7 +2210,8 @@
    883
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　ダークドラゴン！\n　血が　騒ぐ！　オレに殺させろ！」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... A Dark Dragon!\n My blood stirs! Let me kill it!」\n",
+  "pages": "\"Heh heh heh... A Dark Dragon! My blood stirs! Let me kill it!\""
  },
  {
   "id": "296EE6",
@@ -2159,7 +2219,8 @@
    884
   ],
   "jp": "{spk}ロブン　　　\n「すさまじい　気を感じますな\n　この魔物　わが国の\n　シィエンロンにも　にている‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I sense a tremendous\n energy. This monster\n resembles the Shenlong of」\n{next}\n「my homeland...」\n",
+  "pages": "\"I sense a tremendous energy. This monster resembles the Shenlong of my homeland...\""
  },
  {
   "id": "296F4E",
@@ -2167,7 +2228,8 @@
    885
   ],
   "jp": "{spk}{FF1F}\n「よし　やってみるか！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's give it a try!」\n",
+  "pages": "\"Right, let's give it a try!\""
  },
  {
   "id": "296F6E",
@@ -2175,7 +2237,8 @@
    886
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥だが　倒せぬ相手ではない」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...But it's not an enemy we\n can't beat.」\n",
+  "pages": "\"...But it's not an enemy we can't beat.\""
  },
  {
   "id": "296FA0",
@@ -2183,7 +2246,8 @@
    887
   ],
   "jp": "{spk}ミランダ　　\n「みなさん　おケガには\n　お気をつけください！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Everyone, please take care\n not to get hurt!」\n",
+  "pages": "\"Everyone, please take care not to get hurt!\""
  },
  {
   "id": "296FE2",
@@ -2191,7 +2255,8 @@
    888
   ],
   "jp": "{spk}{FF28}\n「{hero}　見て！\n　ダークドラゴンの　死体から\n　こんな物が　出てきたよ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, look! This came out\n of the Dark Dragon's body!?」\n",
+  "pages": "\"{hero}, look! This came out of the Dark Dragon's body!?\""
  },
  {
   "id": "29703E",
@@ -2199,7 +2264,8 @@
    889
   ],
   "jp": "「魔物たちは　以前にくらべ\n　狂暴さを　増しているようだ\n　これも　やみの力の　えいきょうか」\n{next}\n「それとも　やみの力など　関係なく\n　世界は　破めつへと\n　向かっているのかも　しれない」\n{next}\n「世界を　とりかこむ　運命は\n　野ウサギさえも　狼として\n　生きる事を　しいている‥‥」\n",
-  "en": ""
+  "en": "「The monsters seem to have\n grown more savage than\n before. Is this the influence」\n{next}\n「of the power of darkness\n too?」\n{next}\n「Or maybe, power of darkness\n or not, the world is heading\n for ruin.」\n{next}\n「The fate that surrounds the\n world forces even a hare to\n live as a wolf...」\n",
+  "pages": "\"The monsters seem to have grown more savage than before. Is this the influence of the power of darkness too?\" || \"Or maybe, power of darkness or not, the world is heading for ruin.\" || \"The fate that surrounds the world forces even a hare to live as a wolf...\""
  },
  {
   "id": "29715C",
@@ -2207,7 +2273,8 @@
    890
   ],
   "jp": "「つねに　赤い水を　たたえる　紅の湖\n　まるで　何かに　ひかれるように\n　オレたちは　ここにやってきた‥‥」\n{next}\n「この湖にまつわる　伝説は多い\n　しかし　どれ一つとして\n　楽しくさせてくれるものは　なかった」\n",
-  "en": ""
+  "en": "「Crimson Lake, always\n brimming with red water. As\n if drawn by something, we」\n{next}\n「came here...」\n{next}\n「There are many legends\n about this lake. But not one\n of them was a cheerful one.」\n",
+  "pages": "\"Crimson Lake, always brimming with red water. As if drawn by something, we came here...\" || \"There are many legends about this lake. But not one of them was a cheerful one.\""
  },
  {
   "id": "297230",
@@ -2215,7 +2282,8 @@
    891
   ],
   "jp": "「紅の湖」\n",
-  "en": ""
+  "en": "「Crimson Lake」\n",
+  "pages": "\"Crimson Lake\""
  },
  {
   "id": "29723C",
@@ -2223,7 +2291,8 @@
    892
   ],
   "jp": "{spk}{FF28}\n「{hero}！\n　敵の　お出迎えだわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! The enemy's\n welcoming party!」\n",
+  "pages": "\"{hero}! The enemy's welcoming party!\""
  },
  {
   "id": "29726E",
@@ -2231,7 +2300,8 @@
    893
   ],
   "jp": "{spk}{FF1F}\n「気をつけろ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Watch out!」\n",
+  "pages": "\"Watch out!\""
  },
  {
   "id": "297286",
@@ -2239,7 +2309,8 @@
    894
   ],
   "jp": "{spk}リュウビ　　\n「つまらぬ相手だ　この私が\n　真っ二つに　してみせよう‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「Dull opponents. I shall cut\n them in two...」\n",
+  "pages": "\"Dull opponents. I shall cut them in two...\""
  },
  {
   "id": "2972D4",
@@ -2247,7 +2318,8 @@
    895
   ],
   "jp": "{spk}ロジャー　　\n「すごい数だ　こいつは\n　ちょっと　やっかいですね！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「That's a lot of them. This\n could be a bit tricky!」\n",
+  "pages": "\"That's a lot of them. This could be a bit tricky!\""
  },
  {
   "id": "29731C",
@@ -2255,7 +2327,8 @@
    896
   ],
   "jp": "{spk}ミランダ　　\n「この湖で　死んだ　人々の\n　無念の情が　生んだ魔物です」\n{next}\n「倒しましょう　死んだ人々に\n　安らぎを　あたえるためにも」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「These are monsters born of\n the bitterness of the people\n who died in this lake.」\n{next}\n「Let us defeat them, if only\n to give the dead some peace.」\n",
+  "pages": "\"These are monsters born of the bitterness of the people who died in this lake.\" || \"Let us defeat them, if only to give the dead some peace.\""
  },
  {
   "id": "2973AA",
@@ -2263,7 +2336,8 @@
    897
   ],
   "jp": "{spk}ファウスト　\n「彼らを　ほうむるのも\n　また　一つの　運命ですね‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Laying them to rest is also a\n kind of fate...」\n",
+  "pages": "\"Laying them to rest is also a kind of fate...\""
  },
  {
   "id": "2973F4",
@@ -2271,7 +2345,8 @@
    898
   ],
   "jp": "「群がるスケルトンを\n　オレたちは　なぎ払った‥‥」\n{next}\n「しかし　この地には　何もない\n　ただ　赤い　血の　色をした　湖が\n　謎を秘め　よこたわるのみだ」\n",
-  "en": ""
+  "en": "「We swept away the\n swarming skeletons...」\n{next}\n「But there's nothing here.\n Only a lake the colour of red\n blood, lying there with its」\n{next}\n「secret.」\n",
+  "pages": "\"We swept away the swarming skeletons...\" || \"But there's nothing here. Only a lake the colour of red blood, lying there with its secret.\""
  },
  {
   "id": "297492",
@@ -2279,7 +2354,8 @@
    899
   ],
   "jp": "「これが　神のあたえた　試錬なのか\n　だとしたら　神というのは\n　そうとう意地の悪い　ヤツなのだろう」\n{next}\n「ともかく　オレたちは生きのびた\n　そして　この紅の湖が　ふたたび\n　赤くそまることも　ないはずだ‥‥」\n",
-  "en": ""
+  "en": "「So this is the trial the gods\n gave us? If so, the gods\n must be pretty」\n{next}\n「mean-spirited.」\n{next}\n「Anyway, we survived. And\n this Crimson Lake should\n never be stained red again...」\n",
+  "pages": "\"So this is the trial the gods gave us? If so, the gods must be pretty mean-spirited.\" || \"Anyway, we survived. And this Crimson Lake should never be stained red again...\""
  },
  {
   "id": "297568",
@@ -2287,7 +2363,8 @@
    900
   ],
   "jp": "{spk}おばあさん　\n「この湖には　昔　有名な騎士が\n　身を投げた‥‥という\n　伝説が　あるのですじゃ‥‥」\n",
-  "en": ""
+  "en": "{spk}おばあさん　\n「There's a legend, you know,\n that long ago a famous\n knight threw himself into this」\n{next}\n「lake...」\n",
+  "pages": "\"There's a legend, you know, that long ago a famous knight threw himself into this lake...\""
  },
  {
   "id": "2975D0",

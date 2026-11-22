@@ -82,6 +82,27 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   the Ninja Master (hired against the hero) can be hired for 5000G. The Dark Wall at the royal city falls to the
   equipped Bounty Sword; a Federation guard lets them pass.
 
+## Ship to Cherbourg and the road south (master_280F1B end, b033-b039)
+- On the ship, Federation marines and their captain's roc Hiomaru attack; the dying captain begs "Princess" to come
+  home. {FF31} reveals she is **Ophelia Les Elysion**, daughter of Elysion's eighth wife, sworn to kill her father.
+  Cherbourg: the rebels are gone; the informer sends them to the Frozen Land (Silka fort ruins). The hero may refuse
+  (on a whim) and come back (Thetis pushes him).
+- Arden Forest: samurai captain Koho asks for a duel ("a knight is a knight if there's pride in his heart"). Ruined
+  village (burned by the Federation; a boy guards his house for his mother). Erz plain ("Battlefield of Memories"):
+  Daniel, now a Federation officer who envied the hero's name, dies in a duel.
+- Midgard (secret rebel town) is attacked; the Dark Lord ("the Warlord") recognises the hero and leaves; the hero
+  agrees to lead the rebels. Sage village: rings first; the sages send him to Highland (west of Rheinmetall) for the
+  Bounty Sword; {FF31} is to be a sacrifice. Cape Iberia: airborne troops; Athena joins. Desert (Devil's Nest):
+  Machine God No. 1 (fires on its own side), oasis people, No. 2 (anti-magic shield), Abadan River Corpse Immortal
+  (Robun admits he seeks its art for his war-torn eastern homeland), Atlas Mountains (No. 3 controls allies).
+
+## Game opening in Rheinmetall (master_290400, b040-b043)
+- East End bandits (battle tutorial by Thetis: Deploy, Start Battle, A button, Retreat), Colts and Hammerli (a
+  former nun) join at the tavern; jobs from the informer (Blackburn, frontier watch post overrun by undead, Wolf
+  Forest: Federation platoon leader Taurus searches for something). Macbeth sends the hero to Crystal Cove with
+  the knight Detonics. Optional areas: Eridanus River (Raggadol returns for revenge), Robun (feng shui) asks to join,
+  Padova (monsters, Dark Dragon), Crimson Lake (a gods' trial).
+
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.
 - Map hints by the fairy per location: "This is <place>. We haven't cleared it yet." / memories once cleared.

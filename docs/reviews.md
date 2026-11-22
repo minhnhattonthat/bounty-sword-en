@@ -18,3 +18,4 @@ one is available (the story pass in phase 9 reads every chapter again).
 | b022-b025 (finale, Macbeth, ending, duel/job prompts) | own pass | 0 | 0 | 1 (25C52E page flow) |
 | b026-b030 (Mauser, rebel fort, Gauche, Tsukikage, Dark Wall) | own pass | 0 | 2 fixed (informer choice list lost its cursor indent: pages.py fix + rewrap; 様 kept as -sama) | 1 (278CA8 page flow) |
 | b031-b032 (Crystal Cove opening, Rheinmetall capital, port) | own pass | 0 | 1 fixed (賞金かせぎ = "bounty chaser" everywhere so Thetis's "Bounty HUNTER!" correction lands; b024/b027 re-merged) | 1 (28449F placeholder) |
+| b033-b043 (ship, Ophelia, Cherbourg, Koho, Daniel, Midgard, sages, Athena, desert Machine Gods No. 1-3, Corpse Immortal; game opening: East End tutorial, jobs, undead, Wolf Forest, Macbeth, Raggadol, Padova, Crimson Lake) | own pass | 0 | 1 fixed ({hero}さん written "Mister {hero}" in 2 lines, now {hero}-san like the rest) | 2 (tutorial command labels; 28CA75 open quote) |

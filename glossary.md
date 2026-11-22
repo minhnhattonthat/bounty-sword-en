@@ -74,6 +74,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 黄道十二神 | Zodiac Gods / Twelve Gods / Zodiac | | speaker tag: Zodiac | |
 | 大賢者 | Archsage | | | |
 | 情報屋 | informer / Informer | | | |
+| オフィーリア°レス°エリュシオン | Ophelia Les Elysion | | {FF31}'s real name (Elysion's daughter by his eighth wife) | |
+| コウホウ | Koho | | samurai company captain, duels the hero | |
+| タウルス | Taurus | | Federation assault landing platoon leader, Wolf Forest | |
+| 飛王丸 | Hiomaru | | the marine captain's roc | |
 
 ## Places
 | JP | EN | max | notes | Avoid |
@@ -105,6 +109,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 水晶の入り江 | Crystal Cove | | where {FF31} washes ashore | |
 | 狼の森 | Wolf Forest | | | |
 | 忘れられた谷 | Forgotten Valley / valley forgotten | | | |
+| 氷結の大地 | Frozen Land | | rebel fort (Silka ruins) below the Rhipaean Mountains | |
+| 紅の湖 | Crimson Lake | | | |
+| 悪魔の巣 | Devil's Nest | | the southern desert | |
+| ハイランド | Highland | | lone island west of Rheinmetall | |
+| ヘラクレスの柱 | Pillars of Hercules | | strait between north and south Europea | |
 
 ## Items / skills / terms
 | JP | EN | max | notes | Avoid |
@@ -154,6 +163,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 封印の墓所 | Sealed Tomb | | northern tip of Rheinmetall | |
 | 悪神の代理人 | agent of an evil god | | Macbeth | |
 | 不敗の聖騎士 | Undefeated Paladin | | the hero's old epithet | |
+| 味方殺し | comrade-killer | | what the kingdom calls the hero | |
+| 闘将 | Warlord | | Ajax's title; Roger also calls the Dark Lord this | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,

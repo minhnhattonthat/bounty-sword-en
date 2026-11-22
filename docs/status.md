@@ -2,10 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 1658/3539 entries in English (name tables, b010-b032: prologue,
-  master_1E0000, 214606, 257BD4 incl. the finale, 26F317, 271410, 280F1B up to the ship); dialogue batches
-  b033-b050 left (b033 starts at 「超空の魔王」 aftermath, master_280F1B), then side tables. Pace: ~10 batches per worker context; the Orca brief forbids
-  subagents, so each worker translates itself.
+- **Phase:** 6. Translate in progress: 2238/3539 entries in English (name tables, b010-b043: every master block up to
+  master_290400's Crimson Lake, 297568); dialogue batches b044-b050 left (rest of master_290400 and 2A7D44), then
+  side tables. Pace: ~10 batches per worker context; the Orca brief forbids subagents, so each worker translates itself.
+- **Session 2026-11-22 (b033-b043):** per batch `tl_reuse.py todo bNNN > work/tl/bNNN.todo`, write `bNNN.new.tsv`,
+  `fill`, `check`, `merge`. {hero}さん = "{hero}-san", 様 = "Sir {hero}" (Roger, Ryubi lines already use it), どの =
+  "{hero}-dono" (Robun). Glossary: Ophelia Les Elysion ({FF31}'s real name), Koho, Taurus, Hiomaru, Frozen Land,
+  Crimson Lake, Devil's Nest, Highland, Pillars of Hercules, comrade-killer, Warlord. Tutorial (290558..) names
+  Deploy / Start Battle / Retreat / MAP: match them in the battle menus (polish line).
 - **Session 2026-11-22 (b022-b032):** `pages.py`: a page right before a `{FF14..}` choice code keeps the JP cursor
   indent `　` on every English line (one option a line, `\n` between; test `test_choice_list_keeps_cursor_indent...`);
   `batches.py rewrap` re-lays out merged pages after a `pages.py` change. 賞金かせぎ = "bounty chaser" (glossary).
