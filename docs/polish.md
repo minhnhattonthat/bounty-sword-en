@@ -12,3 +12,10 @@
   check whether any scene reaches them
 - [ ] 2A957C..2A9D28 - {FF12} ring shouts kept to one 3-line box each (the JP fits one); check one on screen
 - [ ] 24F91E - narration pages drop the JP blank first line before 「神暦..」/「神祖連邦オルドバ」; check the layout in game
+- [ ] Class しかいせん is "Immortal" in classes.json (80 px) and the ceremony line 1DF581, but the glossary's 屍解仙 =
+  "Corpse Immortal" (boss; description 0EFBF0 uses it): pick one name for both
+- [ ] Shop menu 1AF5A7 Buy/Sell/Quit and every Yes/No (`FF0E:0003` gaps): the English words are a cell longer than
+  買う/はい, so each later option starts a cell right of its FF09 cursor slot; check the cursor in the shop (phase 8)
+- [ ] 1AF628 (shop re-greeting after a cursor table) keeps the JP 「: the entry is cursor data + text, left in place
+- [ ] Ceremony stat-up lines 1DF0CF.. print "{name}: Attack +{n}!" (1DF0B9 = "!"), and 1DF4C7.. "Dragon Knight open
+  to {name}" (one 28-cell row); see them on a level-up / class-change screen

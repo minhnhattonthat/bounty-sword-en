@@ -2540,7 +2540,7 @@
   "id": "0EF936",
   "kind": "text",
   "jp": "最大ＳＰアップ{FF00}",
-  "en": ""
+  "en": "Raises max SP.{FF00}"
  },
  {
   "id": "0EF946",
@@ -2555,7 +2555,7 @@
   "id": "0EF948",
   "kind": "text",
   "jp": "レベル１アップ{FF00}",
-  "en": ""
+  "en": "Raises level by 1.{FF00}"
  },
  {
   "id": "0EF958",
@@ -2573,7 +2573,7 @@
   "id": "0EF95A",
   "kind": "text",
   "jp": "敵一体を一定時間　移動できなくする{FF00}",
-  "en": ""
+  "en": "Stops one enemy from moving{FF01}for a while.{FF00}"
  },
  {
   "id": "0EF97E",
@@ -2595,7 +2595,7 @@
   "id": "0EF980",
   "kind": "text",
   "jp": "死んでもその場で生き返る{FF00}",
-  "en": ""
+  "en": "Revives on the spot{FF01}after death.{FF00}"
  },
  {
   "id": "0EF99A",
@@ -2612,7 +2612,7 @@
   "id": "0EF99C",
   "kind": "text",
   "jp": "すきな場所に　テレポートできる{FF00}",
-  "en": ""
+  "en": "Teleports to any spot.{FF00}"
  },
  {
   "id": "0EF9BC",
@@ -2627,7 +2627,7 @@
   "id": "0EF9BE",
   "kind": "text",
   "jp": "すきな味方と　場所を入れかえる{FF00}",
-  "en": ""
+  "en": "Swaps places with{FF01}any ally.{FF00}"
  },
  {
   "id": "0EF9DE",
@@ -2642,7 +2642,7 @@
   "id": "0EF9E0",
   "kind": "text",
   "jp": "すきな味方を　自分のそばにテレポートさせる{FF00}",
-  "en": ""
+  "en": "Teleports any ally{FF01}to your side.{FF00}"
  },
  {
   "id": "0EFA0C",
@@ -2663,7 +2663,7 @@
   "id": "0EFA0E",
   "kind": "text",
   "jp": "一定時間　自分以外の敵味方全ての動きを　完全にとめる{FF00}",
-  "en": ""
+  "en": "For a while, stops everyone{FF01}else, friend and foe, dead.{FF00}"
  },
  {
   "id": "0EFA44",
@@ -2681,7 +2681,7 @@
   "id": "0EFA46",
   "kind": "text",
   "jp": "使うと‥？{FF00}",
-  "en": ""
+  "en": "If you use it...?{FF00}"
  },
  {
   "id": "0EFA52",
@@ -2696,7 +2696,7 @@
   "id": "0EFA54",
   "kind": "text",
   "jp": "おひつじ{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Aries{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFA64",
@@ -2711,7 +2711,7 @@
   "id": "0EFA66",
   "kind": "text",
   "jp": "おうし{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Taurus{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFA74",
@@ -2726,7 +2726,7 @@
   "id": "0EFA76",
   "kind": "text",
   "jp": "ふたご{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Gemini{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFA84",
@@ -2741,7 +2741,7 @@
   "id": "0EFA86",
   "kind": "text",
   "jp": "かに{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Cancer{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFA92",
@@ -2756,7 +2756,7 @@
   "id": "0EFA94",
   "kind": "text",
   "jp": "しし{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Leo{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFAA0",
@@ -2771,7 +2771,7 @@
   "id": "0EFAA2",
   "kind": "text",
   "jp": "おとめ{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Virgo{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFAB0",
@@ -2786,7 +2786,7 @@
   "id": "0EFAB2",
   "kind": "text",
   "jp": "てんびん{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Libra{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFAC2",
@@ -2802,7 +2802,7 @@
   "id": "0EFAC4",
   "kind": "text",
   "jp": "さそり{FF06:EE68:00CE}{FF00}",
-  "en": "",
+  "en": "For Scorpio{FF06:EE68:00CE}{FF00}",
   "refs": [
    "196501"
   ]
@@ -2820,7 +2820,7 @@
   "id": "0EFAD4",
   "kind": "text",
   "jp": "いて{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Sagittarius{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFAE0",
@@ -2835,7 +2835,7 @@
   "id": "0EFAE2",
   "kind": "text",
   "jp": "やぎ{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Capricorn{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFAEE",
@@ -2850,7 +2850,7 @@
   "id": "0EFAF0",
   "kind": "text",
   "jp": "みずがめ{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Aquarius{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFB00",
@@ -2866,7 +2866,7 @@
   "id": "0EFB02",
   "kind": "text",
   "jp": "うお{FF06:EE68:00CE}{FF00}",
-  "en": ""
+  "en": "For Pisces{FF06:EE68:00CE}{FF00}"
  },
  {
   "id": "0EFB0E",
@@ -2881,7 +2881,7 @@
   "id": "0EFB10",
   "kind": "text",
   "jp": "ナイト系が使うと　ドラゴンナイトに転職{FF00}",
-  "en": "",
+  "en": "A Knight who uses it{FF01}becomes a Dragon Knight.{FF00}",
   "refs": [
    "2F9BA7"
   ]
@@ -2899,7 +2899,7 @@
   "id": "0EFB3A",
   "kind": "text",
   "jp": "ナイト系が使うと　ダークナイトに転職{FF00}",
-  "en": ""
+  "en": "A Knight who uses it{FF01}becomes a Dark Knight.{FF00}"
  },
  {
   "id": "0EFB60",
@@ -2914,7 +2914,7 @@
   "id": "0EFB62",
   "kind": "text",
   "jp": "ニンジャ系が使うと　シャドウマスターに転職{FF00}",
-  "en": "",
+  "en": "A Ninja who uses it{FF01}becomes a Shadowmaster.{FF00}",
   "refs": [
    "19B33F"
   ]
@@ -2932,7 +2932,7 @@
   "id": "0EFB90",
   "kind": "text",
   "jp": "ハイ°ウィザードが使うと　スペルマスターに転職{FF00}",
-  "en": ""
+  "en": "A High Wizard who uses it{FF01}becomes a Spellmaster.{FF00}"
  },
  {
   "id": "0EFBC0",
@@ -2947,7 +2947,7 @@
   "id": "0EFBC2",
   "kind": "text",
   "jp": "魔術師系か僧侶系が使うと　ワイズマンに転職{FF00}",
-  "en": ""
+  "en": "A Mage or Cleric who uses it{FF01}becomes a Wise Man.{FF00}"
  },
  {
   "id": "0EFBEE",
@@ -2963,7 +2963,7 @@
   "id": "0EFBF0",
   "kind": "text",
   "jp": "風水師系が使うと　屍解仙に転職{FF00}",
-  "en": ""
+  "en": "A Geomancer who uses it{FF01}becomes a Corpse Immortal.{FF00}"
  },
  {
   "id": "0EFC10",
@@ -2978,7 +2978,7 @@
   "id": "0EFC12",
   "kind": "text",
   "jp": "一定時間　テティスのまわりをてらし影を見えるようにする{FF00}",
-  "en": ""
+  "en": "Lights up around Thetis to{FF01}show shadows for a while.{FF00}"
  },
  {
   "id": "0EFC4A",
@@ -2993,7 +2993,7 @@
   "id": "0EFC4C",
   "kind": "text",
   "jp": "マップクリアまで　テティスのまわりをてらし影を見えるようにする{FF00}",
-  "en": ""
+  "en": "Lights around Thetis, shows{FF01}shadows till the map clears.{FF00}"
  },
  {
   "id": "0EFC8C",
@@ -3017,7 +3017,7 @@
   "id": "0EFC8E",
   "kind": "text",
   "jp": "弾丸でつくったネックレス{FF00}",
-  "en": ""
+  "en": "A necklace made of bullets.{FF00}"
  },
  {
   "id": "0EFCA8",
@@ -3032,7 +3032,7 @@
   "id": "0EFCAA",
   "kind": "text",
   "jp": "「辺境の火山島」で手に入れたフエ{FF00}",
-  "en": ""
+  "en": "A whistle found on the{FF01}\"Frontier Volcano Isle\".{FF00}"
  },
  {
   "id": "0EFCCC",
@@ -3048,7 +3048,7 @@
   "id": "0EFCCE",
   "kind": "text",
   "jp": "旅のぎんゆうしじんが愛した楽器{FF00}",
-  "en": ""
+  "en": "The beloved instrument of{FF01}a wandering minstrel.{FF00}"
  },
  {
   "id": "0EFCEE",
@@ -3063,7 +3063,7 @@
   "id": "0EFCF0",
   "kind": "text",
   "jp": "「パドヴァ地方」の美少女からの手紙{FF00}",
-  "en": "",
+  "en": "A letter from a pretty{FF01}girl of \"Padova\".{FF00}",
   "refs": [
    "2E4577"
   ]
@@ -3081,6 +3081,6 @@
   "id": "0EFD16",
   "kind": "text",
   "jp": "封印の墓所のカギ{FF00}",
-  "en": ""
+  "en": "Key to the Sealed Tomb.{FF00}"
  }
 ]

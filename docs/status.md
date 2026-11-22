@@ -2,14 +2,35 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 2812/3584 entries in English; **all master dialogue done**; side tables
+- **Phase:** 6. Translate in progress: 2948/3656 entries in English; **all master dialogue done**; side tables
   left (b052 battle_prompts_b and b062 system_prompts merged). Pace: ~10 batches per worker context; the Orca brief
   forbids subagents, so each worker translates itself.
+- **Session 2026-11-22d (b065, b051, b069, b068 merged):**
+  - Ceremony (b065) in English and seen in game (`work/qa/w_cer65`: date entry, guardian line, Yes/No fit).
+    Its FF09 cursor tables (1DED1D, 1DED25, 1DF03D, 1DF045) are data: dropped from the batch, keep JP.
+  - battle_prompts (b051): region now starts at 05E8A2 (the `[011E]` at 05E8A0 is the tail of the data before it)
+    and is in `RELOCATE` with opcode `2E` (event-script call; 06CCA7 calls 05E8A2, 33 calls of 05EF1E).
+  - **Extractor blind spot fixed:** short_strings flips word phase after the native `FF0C:F617` (one RTL byte at
+    1AF617): the whole shop dialogue (buy/sell/equip/trade-in/storage-full, 1AF618..1AFDC1) was dumped as data.
+    Now two REGIONS segments (1AF53F-1AF617 odd, 1AF618-1AFDC2 even; the 0x1AF349.. head is data, outside).
+    `engine_b_targets(..., name)` scans every segment of a table (shop scripts call `FF06:F59F/F5A7` into the
+    greeting) and cuts after each `FF10` 2-word parameter block (1AF581 `ＸＸ`, 1DECA9). `--dump --refresh` now
+    only refuses a re-split that would drop an entry with English. Shop dialogue = b069, merged; greeting seen in
+    `work/qa/w_shop`. Other engine B regions may hide the same phase flip after an `FF0C`: check descriptions
+    (b067) for `data` entries with kana when you get there.
+  - `batches.py check`: `[hhhh]` glyph words (0x60-0x4FF) are free (drop or keep), e.g. 1DEC7D `[01DE]`.
+  - Descriptions: b068 done (sign items use fragment 0EEE68 "座の人が，装備して使用すると‥？": in b067 write it as
+    "-born users who equip it...?" since b068 reads "For Aries{EE68}"). b067 (150 rows) left.
+  - Still to do: b067 descriptions, b057 menus, b064 windows, b058 menus_c, b059 objectives; skip b056/b060/b063
+    (junk). **menus_c (b058) is not a plain string table:** 01D2B7 is a 32-glyph set uploaded as tiles (layout
+    words in 01D1F5) for the shop screens (武器屋 header etc.), not in `docs/re/slices.tsv`; find its slices (C1Run
+    log on town_weapon_shop) before translating, and give each JP word its own cells with `[0F7F]` TABs (TAB at an
+    exact cell boundary skips a whole cell: `C1Run` adds 8 after rounding down).
 - **Side tables: length is no longer a blocker (session 2026-11-22c, `docs/re/text.md` §Engine B):**
   - Engine A prompts (`script_text.RELOCATE`: system_prompts, battle_prompts_b): a script (entries up to FF00; FF03
     runs on into the next entry) that grows moves whole to `$F0+` and its `03`/`43 ptr24` callers are rewritten; a
     shorter one is padded in place; a grown script with no known caller must fit (04146D "Map clear!" did).
-    battle_prompts (b051) is not in RELOCATE yet: its callers (05E8F8 <- `2E` at 06CCC2?) need confirming first.
+    battle_prompts is in RELOCATE too (opcode `2E`, session d).
   - Engine B (ceremony, short_strings, descriptions, `script_text.trampolines`): an entry whose English has any other
     length gets a 10-byte FF0B jump to its copy in `$F0+`, which jumps back to the next entry. Entries under 5 words
     must keep their exact length (digits `1{FF07}`). Engine B tables now cut at FF00 (ceremony) and at every target of
@@ -22,16 +43,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
     Apollo, Mercury, Aphrodite, Pluto, Zeus, Chronos, Uranus, Poseidon). Full-width ＭＯＮＴＨ/ＤＡＹ/ＮＡＭＥ/ＯＫ？ rows: same
     cell counts in ASCII. 1DF03D (`[0001]　[0001]ｑ奨Ｈ末Ｈ`) is data reached mid-way by FF09: drop it from the batch.
     Yes/No in 1DECF7: "Yes" is a cell longer than はい, check the cursor in phase 8.
-  - Remaining side batches: b051, b056 (skip junk row), b057 menus, b058 menus_c, b059 objectives, b060 (orders junk),
-    b063 unit_records, b064 windows, b065-b068. Then a read-only review line in `docs/reviews.md`.
+  - Remaining side batches: see the session 2026-11-22d list above. Then a read-only review line in `docs/reviews.md`.
   - System/battle prompts are engine A scripts: `script_text.ENGINE_A_TABLES` parses their argument words
     (`{FF09:0000}`, `{FF0A:0000}`, `{FF14:0002}`). English there: ASCII `"` for 「」, keep every code.
-  - b051 (battle_prompts 05E8A0..): `05E8A0` starts with a stray word 0x011E (shows as ぎ) before `{FF09}`; the check
-    rejects both `ぎ` and `[011E]` in English. Decide: split that word into its own `data` entry (rule change in
-    `script_text.SPLIT`) or let the check accept `[hhhh]` words the JP has; then `check b051`.
   - Skip on purpose (junk records): b056 items `1AEDAF`, b060 orders `08E996`.., classes `0BFFF2`; b063
-    unit_records and b061 short_strings `1AF349` are mostly data bytes around a few words: translate only the
-    text part, keep every other word.
+    unit_records are mostly data bytes around a few words (keep JP).
   - Ellipsis-only master lines (`「‥‥」`, 8 entries, e.g. 28418F) are skipped by `needs_english` and keep JP `‥‥`:
     fine on screen; check with `jp_left.py` in phase 9.
 - **Session 2026-11-22 (b044-b050):** {FF12} ring shouts must fit one 3-line box (the JP does): shortened, check
@@ -129,8 +145,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
     in `en`: map them from `speakers.json` en in phase 7 (rule-based, literal names list in the batch tool's
     terms pass). Location labels were centred with JP spaces: centre the English by pixel width.
   - `[00AB]` is 岬 (cape); add it to `tbl/kanji.tsv` and `build.py --dump --refresh` when convenient.
-  - Side tables still repacked in place (exact length): objectives (no reader found), unit_records, battle_prompts
-    (until its callers are confirmed); C1 tables are fixed fields with pair packing.
+  - Side tables still repacked in place (exact length): objectives (no reader found), unit_records; C1 tables are
+    fixed fields with pair packing.
   - Side tables never read on a warp: battle_prompts(_b), system_prompts, descriptions, objectives (phase 8
     `textcover`). unit_records: names inside mixed records marked `data` whole.
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
