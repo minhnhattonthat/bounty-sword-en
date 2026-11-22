@@ -43,3 +43,7 @@
   25BA86 古代人の悪霊 "the evil spirit of an ancient people" is one ancient man's ghost; 25E1A8 page 3 (what the girl
   taught him) reads as "you" believing; 2763B0 "For the first time, I thought so." is vague (he first wished he
   could carve open fate); 281A49 "Hey, or you there, or kid" (quote the three forms of address)
+- [ ] Independent review b033-b036 (minors): 285161 "now it was a forgotten, dying country" (tense: "had become");
+  2890B1 闘将どの "Lord Warlord" reads oddly ("Warlord-dono" per D1, or "my lord Warlord"); 287555 "You avenged
+  our village, and well done..." ("Well done, I tell you..."); 28ACD3 このマウザー "I, Mauser," could be "the great
+  Mauser" (style reference)
