@@ -33,5 +33,6 @@ Standing non-bugs, `ok`:
 - anything identical in the original's sheet.
 - Bounty Sword: speaker tags (48 px) and location labels (80 px) use short whole words by ruling D8 ("Captain",
   "Skull", "General", "D.Knight" for the JP's own Ｄ° cut); name-entry kana grids stay Japanese (D13: they are input
-  characters). The shop screen glyph set (買う/売る/武器屋...) is a known open item (phase 8 to-do 1): still an
-  `issue`, noted "shop glyph set" so the fix can be matched to it.
+  characters). Menu labels squeezed into 2-cell slices ("Itm", "Gdr", "Sg.", "Wp.", "Int", "Spr", "Bin", "Trd")
+  are a known polish item (`docs/polish.md` "Menu grid strings"): `ok`, noted "2-cell label". Gender shows as ♂/♀.
+  Card scenes (card_NN) show a scenario card: "Episode 1" on every warp is the debug select's own (progress not set).

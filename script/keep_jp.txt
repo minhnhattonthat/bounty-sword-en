@@ -28,7 +28,7 @@
 1AFC16	short_strings: shop cursor-table data, not text
 1AFC6C	short_strings: shop cursor-table data, not text
 1AFC74	short_strings: shop cursor-table data, not text
-046CF4	unit_records: record data around a name field (パラディン); whether record name fields show anywhere is a phase 8 to-do (textcover/jp_left)
+046CF4	unit_records: record data around a name field (パラディン); never read (textcover.lua on C4:4E40-C4:73B0 + mirror, session q: status, party, battle menu/status, items, ceremony, scenario 2/31 loads read only C4:56DD-573D, no name field)
 046E4A	unit_records: unit-record data bytes, not text
 04716A	unit_records: unit-record data bytes, not text
 0473A8	unit_records: unit-record data bytes, not text

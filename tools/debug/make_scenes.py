@@ -99,7 +99,9 @@ def scenes():
     for sub, (then, hold, note) in flows.items():
         out.append(row(name=f"shop_{sub}", kind="scenario", map=1, expect=13, hold=hold, route="", then=then,
                        note=f"weapon shop: {note}"))
-    skip = "300 -" + ";6 a;60 -" * 10 + ";400 -"
+    # A presses through the opening lines: the English build pages 12 times (the JP ROM 10; 12 there opens Party,
+    # so the old work/qa/tour_jp battle proofs were made with 10). 12 and 13 both land on the command menu.
+    skip = "300 -" + ";6 a;60 -" * 12 + ";400 -"
     out.append(row(name="battle_menu", kind="scenario", map=37, expect=7, hold=1300, then=skip,
                    note="battle map command menu (party / items / withdraw) after the opening lines"))
     for k, sub in enumerate(["party", "items", "withdraw"]):

@@ -274,7 +274,7 @@
   "width": 6,
   "kind": "text",
   "jp": "装備品所持品",
-  "en": "Gear[0F7F]Bag",
+  "en": "Gear[0F7F]Pack",
   "refs": [
    "08EDDB"
   ]
@@ -329,7 +329,7 @@
   "width": 32,
   "kind": "text",
   "jp": "装備品所持品道具倉庫の使う捨てる攻撃防御速さ魔力精神幸運ＡＳ交換",
-  "en": "Gear[0F7F]Bag[0F7F]ItmBin[0F1F][000B]UseDropAtkDefAgi[0F7F]Int[0F7F]SprLckAS[0F7F]Trd",
+  "en": "Gear[0F7F]Pack[0F7F]ItmBin[0F1F][000B]UseDropAtkDefAgi[0F7F]Int[0F7F]SprLckAS[0F7F]Trd",
   "refs": [
    "08EF14"
   ]

@@ -30,9 +30,9 @@ town_tavern	scenario	1			13	1208				500 -;16 down;60 -;16 down;60 -;6 a;300 -		t
 shop_buy	scenario	1			13	1668				500 -;6 a;300 -;6 a;200 -;6 a;400 -		weapon shop: Buy -> Iron Sword -> price Yes/No
 shop_sell	scenario	1			13	1508				500 -;6 a;300 -;6 right;40 -;6 a;400 -		weapon shop: Sell -> what'll you sell
 shop_trade	scenario	1			13	2152				500 -;6 a;300 -;6 a;200 -;6 a;200 -;6 a;200 -;6 down;60 -;6 a;200 -;6 a;200 -		weapon shop: Buy -> Iron Sword -> Yes -> Steel Sword -> trade-in price Yes/No
-battle_menu	scenario	37			7	1610				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -		battle map command menu (party / items / withdraw) after the opening lines
-battle_items	scenario	37			7	1962				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 a;300 -		battle command menu -> items
-battle_withdraw	scenario	37			7	2008				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 down;40 -;6 a;300 -		battle command menu -> withdraw
+battle_menu	scenario	37			7	1742				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -		battle map command menu (party / items / withdraw) after the opening lines
+battle_items	scenario	37			7	2094				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 a;300 -		battle command menu -> items
+battle_withdraw	scenario	37			7	2140				300 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -;400 -;6 down;40 -;6 down;40 -;6 a;300 -		battle command menu -> withdraw
 battle_status	scenario	37			7	2000			a:40			unit status on the battle map (A mashed)
 scen_01	scenario	1			13	600			a:40			scenario 1 (A-01) opening
 card_02	scenario	2			14	300						scenario 2 (A-02): briefing then chapter card

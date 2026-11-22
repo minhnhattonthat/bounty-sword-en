@@ -20,11 +20,11 @@
 01C5AA	0:Aim | 4:Skill | 8:Itm | 10:Tac | 12:Rtn | 14:Sts | 17:canceled.
 01C60C	1:Pick a target, press A. | 16:pick | 21:Which | 25:one? | 29:Fld | 31:Unit | 35:/
 01C6EE	1:Atk | 3:Agi | 5:Spr | 7:AS | 9:Gdr | 11:Def | 13:Int | 16:Lck | 18:Elm | 20:Sg. | 22:/
-01C722	0:Gear | 3:Bag
+01C722	0:Gear | 3:Pack
 01C730	0:Spell | 3:Skill
 01C73E	0:Combo
 01C748	0:Members
-01C894	0:Gear | 3:Bag | 6:Itm | 8:Bin | 11:Use | 13:Drop | 16:Atk | 18:Def | 20:Agi | 22:Int | 24:Spr | 26:Lck | 28:AS | 30:Trd
+01C894	0:Gear | 3:Pack | 6:Itm | 8:Bin | 11:Use | 13:Drop | 16:Atk | 18:Def | 20:Agi | 22:Int | 24:Spr | 26:Lck | 28:AS | 30:Trd
 01C8D6	0:Discard it? | 16:YES | 20:/ | 23:NO
 01C90A	0:Can't | 4:One of each only
 01C935	1:Set | 3:Land | 7:Fight! | 11:Hid | 13:m | 14:s | 15:to arrive | 21:Orders
@@ -43,7 +43,7 @@
 01CC00	1:Set | 3:Sts | 5:Combo | 9:Party
 01CC1C	0:Pick an item to drop.
 01CC3A	0:Can't drop.
-01CC4A	0:Itm | 2:Use | 4:Trd | 6:Drop | 9:Gear | 12:Bag | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
+01CC4A	0:Itm | 2:Use | 4:Trd | 6:Drop | 9:Gear | 12:Pack | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
 01CCCC	0:Discard it?
 01CCE4	=
 01CCF2	1:Free | 4:Load | 7:Copy | 10:Del | 12:New | 16:Time | 21:Maps | 27:File | 32:Save | 35:Which? | 39:Where | 43:.
