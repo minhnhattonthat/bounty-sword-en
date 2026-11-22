@@ -5,7 +5,8 @@
    2094
   ],
   "jp": "{spk}{FF1F}\n「久しぶりにのった　船の　ゆれが\n　オレに　そんな夢を見せたのか‥‥」\n{next}\n「それとも　何か\n　別の理由でもあるのか‥‥」\n{next}\n「ともかく　オレは夢を見た\n　忘れることの　できない\n　十年前の　あの日‥‥」\n{next}\n「そう‥‥　輝ける\n　十年前の　あの日々の夢をだ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Was it the rocking of a ship,\n my first in years, that\n brought me that dream...?」\n{next}\n「Or was there some other\n reason...?」\n{next}\n「Either way, I dreamed. Of\n that day ten years ago, the\n one I can never forget...」\n{next}\n「Yes... A dream of those\n shining days, ten years ago...」\n",
+  "pages": "\"Was it the rocking of a ship, my first in years, that brought me that dream...?\" || \"Or was there some other reason...?\" || \"Either way, I dreamed. Of that day ten years ago, the one I can never forget...\" || \"Yes... A dream of those shining days, ten years ago...\""
  },
  {
   "id": "24DC68",
@@ -13,7 +14,8 @@
    2095
   ],
   "jp": "『終わりなき夢』\n",
-  "en": ""
+  "en": "'An Endless Dream'\n",
+  "pages": "'An Endless Dream'"
  },
  {
   "id": "24DC7A",
@@ -21,7 +23,8 @@
    2096
   ],
   "jp": "{spk}ダニエル　　\n「かなりの数の敵だ‥‥\n　こいつは　少しばかり\n　やばいことに　なりそうだぜ」\n",
-  "en": ""
+  "en": "{spk}ダニエル　　\n「That's a lot of enemies... This\n could get a little ugly.」\n",
+  "pages": "\"That's a lot of enemies... This could get a little ugly.\""
  },
  {
   "id": "24DCDA",
@@ -29,7 +32,8 @@
    2097
   ],
   "jp": "{spk}マクベス　　\n「だが　わがラインメタル王国のため\n　これ以上　ヤツらを\n　進ませるわけには　いかない！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「But for our Kingdom of\n Rheinmetall, we can't let\n them advance a step」\n{next}\n「further!」\n",
+  "pages": "\"But for our Kingdom of Rheinmetall, we can't let them advance a step further!\""
  },
  {
   "id": "24DD46",
@@ -37,7 +41,8 @@
    2098
   ],
   "jp": "{spk}ダニエル　　\n「いけそうか　{hero}？」\n",
-  "en": ""
+  "en": "{spk}ダニエル　　\n「Think you can do it, {hero}?」\n",
+  "pages": "\"Think you can do it, {hero}?\""
  },
  {
   "id": "24DD76",
@@ -45,7 +50,8 @@
    2099
   ],
   "jp": "{spk}{FF1F}\n「やってみるだけだ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「All we can do is try...」\n",
+  "pages": "\"All we can do is try...\""
  },
  {
   "id": "24DD96",
@@ -53,7 +59,8 @@
    2100
   ],
   "jp": "{spk}アジャックス\n「いかに敵が　多かろうと\n　われわれ　五人の　力があれば\n　なにも　恐れることはない‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「No matter how many they\n are, with the strength of\n the five of us there is」\n{next}\n「nothing to fear...」\n",
+  "pages": "\"No matter how many they are, with the strength of the five of us there is nothing to fear...\""
  },
  {
   "id": "24DE02",
@@ -61,7 +68,8 @@
    2101
   ],
   "jp": "{spk}ノルン　　　\n「じゃあ　決まりね？」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Then it's settled?」\n",
+  "pages": "\"Then it's settled?\""
  },
  {
   "id": "24DE2A",
@@ -69,7 +77,8 @@
    2102
   ],
   "jp": "{spk}{FF1F}\n「もちろんだ　わが王国のために！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Of course. For our kingdom!」\n",
+  "pages": "\"Of course. For our kingdom!\""
  },
  {
   "id": "24DE54",
@@ -77,7 +86,8 @@
    2103
   ],
   "jp": "{spk}ラグガドル　\n「‥‥ぬぅ？\n　あのパラディン　見おぼえがある\n　たしか　不敗の聖騎士と‥‥」\n{next}\n「そうか！　ならば　あの連中\n　不敗と常勝を　うたわれた\n　ラインメタル王国°第十七独立騎団！」\n{next}\n「おもしろい！」\n{next}\n「不敗の聖騎士と　その仲間よ！\n　ワシが　この大地を\n　キサマらの墓場に　してくれよう！」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「...Hmm? I know that paladin.\n They call him the Undefeated\n Paladin...」\n{next}\n「I see! Then that lot must be\n the ones sung of as\n undefeated and」\n{next}\n「ever-victorious...\n Rheinmetall's 17th\n Independent Knight Brigade!」\n{next}\n「Interesting!」\n{next}\n「Undefeated Paladin, and you,\n his comrades! I shall make\n this land your graveyard!」\n",
+  "pages": "\"...Hmm? I know that paladin. They call him the Undefeated Paladin...\" || \"I see! Then that lot must be the ones sung of as undefeated and ever-victorious... Rheinmetall's 17th Independent Knight Brigade!\" || \"Interesting!\" || \"Undefeated Paladin, and you, his comrades! I shall make this land your graveyard!\""
  },
  {
   "id": "24DF90",
@@ -85,7 +95,8 @@
    2104
   ],
   "jp": "{spk}アジャックス\n「なあ{hero}！　オレたち\n　今回の戦争で　すでに\n　何人の　敵を倒したかな！？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Hey, {hero}! How many\n enemies do you figure we've\n beaten in this war so far?!」\n",
+  "pages": "\"Hey, {hero}! How many enemies do you figure we've beaten in this war so far?!\""
  },
  {
   "id": "24DFF8",
@@ -93,7 +104,8 @@
    2105
   ],
   "jp": "{spk}{FF1F}\n「わからん！　いや‥‥\n　二万か‥‥　三万か‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「No idea! Well... Twenty\n thousand... Thirty thousand...」\n",
+  "pages": "\"No idea! Well... Twenty thousand... Thirty thousand...\""
  },
  {
   "id": "24E032",
@@ -101,7 +113,8 @@
    2106
   ],
   "jp": "{spk}アジャックス\n「ともかく！　これで　この地には\n　平和が　おとずれるってことかな？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Anyway! Does this mean\n peace is finally coming to\n this land?」\n",
+  "pages": "\"Anyway! Does this mean peace is finally coming to this land?\""
  },
  {
   "id": "24E08A",
@@ -109,7 +122,8 @@
    2107
   ],
   "jp": "{spk}{FF1F}\n「そのはずだ　いや\n　そうでなければ　われわれの\n　戦っている　意味がない！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「It should. No... If it doesn't,\n then there's no point in our\n fighting!」\n",
+  "pages": "\"It should. No... If it doesn't, then there's no point in our fighting!\""
  },
  {
   "id": "24E0E0",
@@ -117,7 +131,8 @@
    2108
   ],
   "jp": "{spk}アジャックス\n「そうだな　その通りだ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Right. You said it!」\n",
+  "pages": "\"Right. You said it!\""
  },
  {
   "id": "24E10C",
@@ -125,7 +140,8 @@
    2109
   ],
   "jp": "{spk}ノルン　　　\n「ねぇ　{hero}！\n　これで戦いは終わるのね！？」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Hey, {hero}! So this means\n the fighting is over?!」\n",
+  "pages": "\"Hey, {hero}! So this means the fighting is over?!\""
  },
  {
   "id": "24E154",
@@ -133,7 +149,8 @@
    2110
   ],
   "jp": "{spk}{FF1F}\n「そうだ！　だからこそ\n　オレたちは　戦っている！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That's right! That's exactly\n why we fight!」\n",
+  "pages": "\"That's right! That's exactly why we fight!\""
  },
  {
   "id": "24E190",
@@ -141,7 +158,8 @@
    2111
   ],
   "jp": "{spk}ノルン　　　\n「{hero}　この戦いが\n　もしも終わったら‥‥」\n{next}\n「ううん　何でもないわ」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「{hero}... If this fighting\n ever ends...」\n{next}\n「No, never mind. It's nothing.」\n",
+  "pages": "\"{hero}... If this fighting ever ends...\" || \"No, never mind. It's nothing.\""
  },
  {
   "id": "24E1F4",
@@ -149,7 +167,8 @@
    2112
   ],
   "jp": "{spk}{FF28}\n「やったわ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We did it, {hero}!」\n",
+  "pages": "\"We did it, {hero}!\""
  },
  {
   "id": "24E218",
@@ -157,7 +176,8 @@
    2113
   ],
   "jp": "{spk}{FF1F}\n「まだだ！　戦いは　これからだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Not yet! The real fight\n starts now!」\n",
+  "pages": "\"Not yet! The real fight starts now!\""
  },
  {
   "id": "24E242",
@@ -165,7 +185,8 @@
    2114
   ],
   "jp": "{spk}{FF28}\n「ううん　やっぱりアナタは\n　私が　みこんだ　とおりの人よ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Mm-hm. You really are the\n man I took you for.」\n",
+  "pages": "\"Mm-hm. You really are the man I took you for.\""
  },
  {
   "id": "24E286",
@@ -173,7 +194,8 @@
    2115
   ],
   "jp": "{spk}{FF1F}\n「ゆうへいされていた　お前を\n　助け出した時から\n　そう思って　いたのか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Have you thought so ever\n since I rescued you from\n that prison?」\n",
+  "pages": "\"Have you thought so ever since I rescued you from that prison?\""
  },
  {
   "id": "24E2DA",
@@ -181,7 +203,8 @@
    2116
   ],
   "jp": "{spk}{FF28}\n「うん！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Yep!」\n",
+  "pages": "\"Yep!\""
  },
  {
   "id": "24E2EC",
@@ -189,7 +212,8 @@
    2117
   ],
   "jp": "{spk}{FF1F}\n「‥‥ウソつけ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Liar!」\n",
+  "pages": "\"...Liar!\""
  },
  {
   "id": "24E306",
@@ -197,7 +221,8 @@
    2118
   ],
   "jp": "{spk}ラグガドル　\n「な　何という強さだ！\n　ワシの　ワシの部下どもが\n　わずか数分の間に‥‥！？」\n{next}\n「こいつら　バケモノか‥‥！？」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「Wh-what strength! My... My\n troops, in mere minutes...!?」\n{next}\n「Are these people\n monsters...!?」\n",
+  "pages": "\"Wh-what strength! My... My troops, in mere minutes...!?\" || \"Are these people monsters...!?\""
  },
  {
   "id": "24E38E",
@@ -205,7 +230,8 @@
    2119
   ],
   "jp": "{spk}アジャックス\n「ゾンビマスターの　キサマに\n　バケモノよばわり　されるのは\n　どうにも　ふゆかいだな！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Being called a monster by a\n Zombie Master like you\n doesn't sit well with me at」\n{next}\n「all!」\n",
+  "pages": "\"Being called a monster by a Zombie Master like you doesn't sit well with me at all!\""
  },
  {
   "id": "24E3FA",
@@ -213,7 +239,8 @@
    2120
   ],
   "jp": "{spk}ラグガドル　\n「‥‥いや　まだだ！　まだ！\n　ワシの　このワシの\n　恐るべき　真の力を見るがよい！」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「...No, not yet! Not yet! Behold\n the dreadful, true power of\n me, of ME!」\n",
+  "pages": "\"...No, not yet! Not yet! Behold the dreadful, true power of me, of ME!\""
  },
  {
   "id": "24E462",
@@ -221,7 +248,8 @@
    2121
   ],
   "jp": "{spk}ダニエル　　\n「ふふん　見せてみろ！\n　この　ガイコツ野郎！」\n",
-  "en": ""
+  "en": "{spk}ダニエル　　\n「Heh, go on, show us! You bag\n of bones!」\n",
+  "pages": "\"Heh, go on, show us! You bag of bones!\""
  },
  {
   "id": "24E4A4",
@@ -229,7 +257,8 @@
    2122
   ],
   "jp": "{spk}ラグガドル　\n「バ°カ°ナ‥‥\n　こんな　こんなことが！？\n　このワシが　倒されるなど！」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「Im... pos... sible... This, this\n can't be!? That I, of all\n beings, should fall!」\n",
+  "pages": "\"Im... pos... sible... This, this can't be!? That I, of all beings, should fall!\""
  },
  {
   "id": "24E502",
@@ -237,7 +266,8 @@
    2123
   ],
   "jp": "{spk}{FF1F}\n「じぶんの墓に　帰るがいい\n　邪悪な　黒い魔力の怪物よ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Go back to your grave, you\n monster of evil black magic!」\n",
+  "pages": "\"Go back to your grave, you monster of evil black magic!\""
  },
  {
   "id": "24E544",
@@ -245,7 +275,8 @@
    2124
   ],
   "jp": "{spk}ラグガドル　\n「ふ　ふふ‥‥　おろか者どもが\n　ワシが怪物なら　お前らは\n　いったい　何だというんだ‥‥」\n{next}\n「ただの　血に　うえた\n　さつりくと　はかいの\n　侵略者では　ないか‥‥」\n{next}\n「国のため　平和のため‥‥\n　ふふ　まぁ　それもよかろう」\n{next}\n「しかし　おまえたちを　待っているのは\n　ただの無だと　いうことを\n　これから　思い知るがいいて‥‥」\n{next}\n「また会おう！不敗の聖騎士よ！」\n",
-  "en": ""
+  "en": "{spk}ラグガドル　\n「Heh... heh heh... Fools... If I am\n a monster, then what in the\n world are you...?」\n{next}\n「Are you not mere\n bloodthirsty invaders, bent\n on slaughter and ruin...?」\n{next}\n「For your country, for peace...\n Heh heh, well, so be it.」\n{next}\n「But you will soon learn that\n all that awaits you is\n nothingness...」\n{next}\n「We shall meet again!\n Undefeated Paladin!」\n",
+  "pages": "\"Heh... heh heh... Fools... If I am a monster, then what in the world are you...?\" || \"Are you not mere bloodthirsty invaders, bent on slaughter and ruin...?\" || \"For your country, for peace... Heh heh, well, so be it.\" || \"But you will soon learn that all that awaits you is nothingness...\" || \"We shall meet again! Undefeated Paladin!\""
  },
  {
   "id": "24E6D4",
@@ -253,7 +284,8 @@
    2125
   ],
   "jp": "{spk}{FF28}\n「大丈夫　{hero}！？\n　しっかり　しっかりして！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Are you all right, {hero}?!\n Hang in there, hang in there!」\n",
+  "pages": "\"Are you all right, {hero}?! Hang in there, hang in there!\""
  },
  {
   "id": "24E714",
@@ -261,7 +293,8 @@
    2126
   ],
   "jp": "{spk}{FF1F}\n「くっ‥‥　オレは　ここで‥‥\n　何を　して　いたんだ‥‥？\n　オレは　オレは‥‥　ここで‥‥」\n{next}\n「これは夢‥‥なのか‥‥？\n　すでに　何ども　何ども見た\n　あの　十年前の‥‥夢‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Ngh... What was I... doing\n here...? I... I was... here...」\n{next}\n「Is this... a dream...? That\n dream of ten years ago... the\n one I've seen again and」\n{next}\n「again...」\n",
+  "pages": "\"Ngh... What was I... doing here...? I... I was... here...\" || \"Is this... a dream...? That dream of ten years ago... the one I've seen again and again...\""
  },
  {
   "id": "24E7D8",
@@ -269,7 +302,8 @@
    2127
   ],
   "jp": "{spk}アジャックス\n「くっ‥‥　オレとしたことが！\n　すまん{hero}！　いったん　オレは\n　戦場をはなれる！　あとはたのむ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Ngh... How could I let this\n happen! Sorry, {hero}! I'm\n pulling back from the field」\n{next}\n「for now! The rest is up to\n you!」\n",
+  "pages": "\"Ngh... How could I let this happen! Sorry, {hero}! I'm pulling back from the field for now! The rest is up to you!\""
  },
  {
   "id": "24E858",
@@ -277,7 +311,8 @@
    2128
   ],
   "jp": "{spk}マクベス　　\n「もう　これ以上は無理だ！\n　すまんが　戦場をはなれる！\n　あとはまかせたぞ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「I can't take any more! Sorry,\n but I'm leaving the field! I'm\n counting on you, {hero}!」\n",
+  "pages": "\"I can't take any more! Sorry, but I'm leaving the field! I'm counting on you, {hero}!\""
  },
  {
   "id": "24E8C8",
@@ -285,7 +320,8 @@
    2129
   ],
   "jp": "{spk}ダニエル　　\n「もう　これ以上は無理だ！\n　すまんが　戦場をはなれる！\n　あとはまかせたぞ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}ダニエル　　\n「I can't take any more! Sorry,\n but I'm leaving the field! I'm\n counting on you, {hero}!」\n",
+  "pages": "\"I can't take any more! Sorry, but I'm leaving the field! I'm counting on you, {hero}!\""
  },
  {
   "id": "24E938",
@@ -293,7 +329,8 @@
    2130
   ],
   "jp": "{spk}ノルン　　　\n「ごめん{hero}！　もうだめ！\n　戦場をはなれるわ！\n　あとはまかせたわよ！」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Sorry, {hero}! I'm done for!\n I'm leaving the field! I'm\n counting on you!」\n",
+  "pages": "\"Sorry, {hero}! I'm done for! I'm leaving the field! I'm counting on you!\""
  },
  {
   "id": "24E99C",
@@ -301,7 +338,8 @@
    2131
   ],
   "jp": "「そこで　オレの夢は　とぎれた‥‥」\n{next}\n「輝かしい　あの日‥‥\n　たしかにオレたちは　祖国のため\n　数多くの敵を　この手で倒し続けた」\n{next}\n「だが　その果てに待っていたのは\n　あのゾンビマスターの言うとおり\n　ただ底知れぬ　やみと　無だけだった」\n{next}\n「あれから　どれくらいの月日が\n　流れたのだろうか‥‥」\n{next}\n「そしてオレは　船が港についたという\n　テティスの声で　目をさました‥‥」\n{next}\n「この悪い夢を　見たあとは\n　いつも　最悪の気分で　目がさめる\n　ふつかよいよりも　さらにひどい気分で」\n",
-  "en": ""
+  "en": "「That is where my dream\n broke off...」\n{next}\n「Those glorious days... It's\n true, we fought for our\n homeland and struck down」\n{next}\n「enemy after enemy with our\n own hands.」\n{next}\n「But what waited at the end\n of it all was, just as that\n Zombie Master said, nothing」\n{next}\n「but a bottomless darkness\n and void.」\n{next}\n「How many months and years\n have passed since then...?」\n{next}\n「And then I woke to the voice\n of Thetis, telling me the ship\n had made port...」\n{next}\n「Whenever I have that bad\n dream, I always wake up\n feeling awful. Worse than」\n{next}\n「any hangover.」\n",
+  "pages": "\"That is where my dream broke off...\" || \"Those glorious days... It's true, we fought for our homeland and struck down enemy after enemy with our own hands.\" || \"But what waited at the end of it all was, just as that Zombie Master said, nothing but a bottomless darkness and void.\" || \"How many months and years have passed since then...?\" || \"And then I woke to the voice of Thetis, telling me the ship had made port...\" || \"Whenever I have that bad dream, I always wake up feeling awful. Worse than any hangover.\""
  },
  {
   "id": "24EB92",
@@ -309,7 +347,8 @@
    2132
   ],
   "jp": "「疲れていたのだろう‥‥\n　オレは　キャンプにもどる道のりで\n　軽いめまいに　襲われた‥‥」\n{next}\n「そしてまた　あの夢を見たのだ‥‥」\n{next}\n「十年前の　あの日の夢を‥‥」\n",
-  "en": ""
+  "en": "「I must have been tired... On\n the way back to camp, a\n slight dizziness came over」\n{next}\n「me...」\n{next}\n「And then I saw that dream\n again...」\n{next}\n「The dream of that day, ten\n years ago...」\n",
+  "pages": "\"I must have been tired... On the way back to camp, a slight dizziness came over me...\" || \"And then I saw that dream again...\" || \"The dream of that day, ten years ago...\""
  },
  {
   "id": "24EC3E",
@@ -317,7 +356,8 @@
    2133
   ],
   "jp": "『帰らぬ日々』\n",
-  "en": ""
+  "en": "'Days That Never Return'\n",
+  "pages": "'Days That Never Return'"
  },
  {
   "id": "24EC4E",
@@ -325,7 +365,8 @@
    2134
   ],
   "jp": "{spk}アジャックス\n「わかっているはずだ！　われわれは\n　ただの　すてゴマだったのだ！\n　オトリだよ！　敵をあざむくための！」\n{next}\n「{hero}！　それでも　おまえは\n　本隊を　すくいに　もどるというのか！？\n　われわれを　見すてた本隊に！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「You must know it! We were\n nothing but pawns to be\n thrown away! Decoys! To fool」\n{next}\n「the enemy!」\n{next}\n「{hero}! Even so, you're\n going back to save the main\n force?! The main force that」\n{next}\n「abandoned us?!」\n",
+  "pages": "\"You must know it! We were nothing but pawns to be thrown away! Decoys! To fool the enemy!\" || \"{hero}! Even so, you're going back to save the main force?! The main force that abandoned us?!\""
  },
  {
   "id": "24ED40",
@@ -333,7 +374,8 @@
    2135
   ],
   "jp": "{spk}ノルン　　　\n「すでにダニエルは　去ったわ\n　王国にも　軍にも\n　何のみれんもないと　言い残して」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Daniel is already gone. He\n said he had no more\n attachment to the kingdom」\n{next}\n「or the army.」\n",
+  "pages": "\"Daniel is already gone. He said he had no more attachment to the kingdom or the army.\""
  },
  {
   "id": "24EDA6",
@@ -341,7 +383,8 @@
    2136
   ],
   "jp": "{spk}アジャックス\n「オレとともに　去ろう　{hero}！\n　ラインメタル王国には　もはや\n　何のみれんも　ないはずだ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Leave with me, {hero}! You\n can't have any attachment\n left to the Kingdom of」\n{next}\n「Rheinmetall!」\n",
+  "pages": "\"Leave with me, {hero}! You can't have any attachment left to the Kingdom of Rheinmetall!\""
  },
  {
   "id": "24EE1E",
@@ -349,7 +392,8 @@
    2137
   ],
   "jp": "{spk}{FF1F}\n「それでも　オレは行くつもりだ\n　あそこには　逃げることもできず\n　助けを待っている　兵士たちがいる」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I'm going anyway. There are\n soldiers there who can't\n even run, waiting for help.」\n",
+  "pages": "\"I'm going anyway. There are soldiers there who can't even run, waiting for help.\""
  },
  {
   "id": "24EE8C",
@@ -357,7 +401,8 @@
    2138
   ],
   "jp": "{spk}アジャックス\n「‥‥ならば　{hero}！\n　このオレを　倒してから行け！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...Then, {hero}! You'll have\n to get past me first!」\n",
+  "pages": "\"...Then, {hero}! You'll have to get past me first!\""
  },
  {
   "id": "24EEDC",
@@ -365,7 +410,8 @@
    2139
   ],
   "jp": "{spk}{FF1F}\n「アジャックス！？　おまえ！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Ajax!? What are you...!?」\n",
+  "pages": "\"Ajax!? What are you...!?\""
  },
  {
   "id": "24EF04",
@@ -373,7 +419,8 @@
    2140
   ],
   "jp": "{spk}アジャックス\n「さあ　剣を取れ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Come on, draw your sword,\n {hero}!」\n",
+  "pages": "\"Come on, draw your sword, {hero}!\""
  },
  {
   "id": "24EF38",
@@ -381,7 +428,8 @@
    2141
   ],
   "jp": "{spk}{FF1F}\n「いいだろう‥‥\n　おたがいの道を　決めるために！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Very well... To decide which\n path each of us takes!」\n",
+  "pages": "\"Very well... To decide which path each of us takes!\""
  },
  {
   "id": "24EF74",
@@ -389,7 +437,8 @@
    2142
   ],
   "jp": "{spk}アジャックス\n「オレは　このまま　おまえを\n　行かせるわけには　いかない！\n　わかってくれ　{hero}！」\n{next}\n「たがいの道は　剣によって決まる！\n　そうだな{hero}！？　いや‥‥\n　マスター°オブ°ソードよ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「I can't just let you walk\n away like this! Try to\n understand, {hero}!」\n{next}\n「Our paths will be decided by\n the sword! Isn't that right,\n {hero}?! No... Master of」\n{next}\n「Swords!」\n",
+  "pages": "\"I can't just let you walk away like this! Try to understand, {hero}!\" || \"Our paths will be decided by the sword! Isn't that right, {hero}?! No... Master of Swords!\""
  },
  {
   "id": "24F052",
@@ -397,7 +446,8 @@
    2143
   ],
   "jp": "{spk}アジャックス\n「さあ　剣を取れ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Come on, draw your sword,\n {hero}!」\n",
+  "pages": "\"Come on, draw your sword, {hero}!\""
  },
  {
   "id": "24F086",
@@ -405,7 +455,8 @@
    2144
   ],
   "jp": "{spk}ノルン　　　\n「無意味だわ　なんで仲間同士で\n　たがいに　戦わないといけないの？」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「This is pointless. Why do\n comrades have to fight each\n other?」\n",
+  "pages": "\"This is pointless. Why do comrades have to fight each other?\""
  },
  {
   "id": "24F0DC",
@@ -413,7 +464,8 @@
    2145
   ],
   "jp": "{spk}マクベス　　\n「アジャックスには　わかっている\n　行けば{hero}が　どうなるかを\n　だから　こういう手段を選んだんだ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Ajax knows what will happen\n to {hero} if he goes. That's\n why he chose to do it this」\n{next}\n「way.」\n",
+  "pages": "\"Ajax knows what will happen to {hero} if he goes. That's why he chose to do it this way.\""
  },
  {
   "id": "24F15A",
@@ -421,7 +473,8 @@
    2146
   ],
   "jp": "{spk}ノルン　　　\n「どのみち　私たちの運命は\n　すでに　決まっていたんだわ\n　王国をたび立った日から　すでに‥‥」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Either way, our fate was\n already decided. It was\n sealed the day we set out」\n{next}\n「from the kingdom...」\n",
+  "pages": "\"Either way, our fate was already decided. It was sealed the day we set out from the kingdom...\""
  },
  {
   "id": "24F1CC",
@@ -429,7 +482,8 @@
    2147
   ],
   "jp": "{spk}アジャックス\n「腕が落ちたか　{hero}！？\n　これで　おまえの運命は\n　私の手に　にぎられたわけだ！」\n{next}\n「私と　ともにこい！\n　そして二人で　新たな道を\n　切り開こうではないか　{hero}！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Have you lost your edge,\n {hero}?! Now your fate is\n in my hands!」\n{next}\n「Come with me! Let the two\n of us carve out a new path\n together, {hero}!」\n",
+  "pages": "\"Have you lost your edge, {hero}?! Now your fate is in my hands!\" || \"Come with me! Let the two of us carve out a new path together, {hero}!\""
  },
  {
   "id": "24F29A",
@@ -437,7 +491,8 @@
    2148
   ],
   "jp": "{spk}ノルン　　　\n「待って　アジャックス\n　私も{hero}と行くわ‥‥」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Wait, Ajax. I'm going with\n {hero}, too...」\n",
+  "pages": "\"Wait, Ajax. I'm going with {hero}, too...\""
  },
  {
   "id": "24F2E4",
@@ -445,7 +500,8 @@
    2149
   ],
   "jp": "{spk}アジャックス\n「ノルン？　きみはもう少し\n　かしこい女と　思っていたが」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Norn? I took you for a wiser\n woman than that.」\n",
+  "pages": "\"Norn? I took you for a wiser woman than that.\""
  },
  {
   "id": "24F330",
@@ -453,7 +509,8 @@
    2150
   ],
   "jp": "{spk}ノルン　　　\n「そんなことは　関係ないわ\n　りくつでもない　国のためでもない\n　もちろん　正義のためでもない」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「That has nothing to do with\n it. It isn't logic, it isn't for\n the country, and it certainly」\n{next}\n「isn't for justice.」\n",
+  "pages": "\"That has nothing to do with it. It isn't logic, it isn't for the country, and it certainly isn't for justice.\""
  },
  {
   "id": "24F3A2",
@@ -461,7 +518,8 @@
    2151
   ],
   "jp": "{spk}ノルン　　　\n「ただ　行かなくちゃいけない\n　自分自身が　そう思うから\n　行くことを　選んだだけよ‥‥」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「I just have to go. I feel it\n myself, so I chose to go,\n that's all...」\n",
+  "pages": "\"I just have to go. I feel it myself, so I chose to go, that's all...\""
  },
  {
   "id": "24F40E",
@@ -469,7 +527,8 @@
    2152
   ],
   "jp": "{spk}アジャックス\n「そうか」\n{next}\n「ならば　オレは止めん\n　自分の思うままに\n　それならば　何も言うことはない」\n{next}\n「お別れだな　{hero}\n　それにノルン　マクベス　いつかまた\n　どこかで　会うこともあるだろう‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「I see.」\n{next}\n「Then I won't stop you. Follow\n your own heart. If that's\n how it is, I have nothing」\n{next}\n「more to say.」\n{next}\n「This is goodbye, {hero}.\n And Norn, Macbeth...\n Someday, somewhere, we」\n{next}\n「may meet again...」\n",
+  "pages": "\"I see.\" || \"Then I won't stop you. Follow your own heart. If that's how it is, I have nothing more to say.\" || \"This is goodbye, {hero}. And Norn, Macbeth... Someday, somewhere, we may meet again...\""
  },
  {
   "id": "24F4EC",
@@ -477,7 +536,8 @@
    2153
   ],
   "jp": "{spk}アジャックス\n「さすが不敗の聖騎士だな　{hero}‥\n　オレの命を　うばわなかったのは\n　同情か？　それとも仲間だからか？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Just what I'd expect of the\n Undefeated Paladin,\n {hero}... You didn't take my」\n{next}\n「life. Was it pity? Or because\n I'm your comrade?」\n",
+  "pages": "\"Just what I'd expect of the Undefeated Paladin, {hero}... You didn't take my life. Was it pity? Or because I'm your comrade?\""
  },
  {
   "id": "24F56E",
@@ -485,7 +545,8 @@
    2154
   ],
   "jp": "{spk}{FF1F}\n「その両方だ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Both.」\n",
+  "pages": "\"Both.\""
  },
  {
   "id": "24F584",
@@ -493,7 +554,8 @@
    2155
   ],
   "jp": "{spk}アジャックス\n「なるほどな‥‥　わかった‥‥\n　自分の　思う道を行くがいい\n　オレはただ　オレの道を行く‥‥」\n{next}\n「ノルン　君はどうする？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「I see... All right... Go the way\n you believe in. I'll simply go\n my own way...」\n{next}\n「Norn, what will you do?」\n",
+  "pages": "\"I see... All right... Go the way you believe in. I'll simply go my own way...\" || \"Norn, what will you do?\""
  },
  {
   "id": "24F616",
@@ -501,7 +563,8 @@
    2156
   ],
   "jp": "{spk}ノルン　　　\n「私も{hero}と行くわ‥‥\n　りくつでもない　国のためでもない\n　もちろん　正義のためでもない」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「I'm going with {hero}... It\n isn't logic, it isn't for the\n country, and it certainly isn't」\n{next}\n「for justice.」\n",
+  "pages": "\"I'm going with {hero}... It isn't logic, it isn't for the country, and it certainly isn't for justice.\""
  },
  {
   "id": "24F68C",
@@ -509,7 +572,8 @@
    2157
   ],
   "jp": "「それから　オレたちが　どうなったか‥」\n{next}\n「取り残された　友軍の兵士たちは\n　オレたちが　駆けつけた時には　すでに\n　敵の手によって　ほろぼされていた」\n{next}\n「そして　敵地からの脱出の際\n　オレをかばって　ノルンが死んだ」\n{next}\n「やっとの思いで　王国に帰りつくと\n　本隊の全めつは　いつの間にか\n　オレの責任　になっていた‥‥」\n{next}\n「いいわけをすることも　何もかも\n　オレには　どうでも　いいことだった」\n{next}\n「すべては　終わっていたのだ\n　オレのほほと　アジャックスの左目に\n　ふかい刀傷を残した　あの決闘の時に‥」\n{next}\n「オレは　時に身をゆだねた」\n{next}\n「十年の　うつろな日々は\n　ゆいいつオレの心をいやす　\n　やさしい　時のゆりかごだった‥‥」\n",
-  "en": ""
+  "en": "「What became of us after\n that...」\n{next}\n「By the time we rushed in,\n the stranded allied soldiers\n had already been wiped out」\n{next}\n「by the enemy.」\n{next}\n「And as we escaped enemy\n territory, Norn died shielding\n me.」\n{next}\n「When at last I made it back\n to the kingdom, the main\n force's annihilation had」\n{next}\n「somehow become my fault...」\n{next}\n「Making excuses, everything\n else... none of it mattered to\n me anymore.」\n{next}\n「It had all ended in that duel,\n the one that left deep\n sword scars on my cheek」\n{next}\n「and on Ajax's left eye...」\n{next}\n「I gave myself over to time.」\n{next}\n「Ten hollow years were the\n only thing that soothed my\n heart... a gentle cradle of」\n{next}\n「time...」\n",
+  "pages": "\"What became of us after that...\" || \"By the time we rushed in, the stranded allied soldiers had already been wiped out by the enemy.\" || \"And as we escaped enemy territory, Norn died shielding me.\" || \"When at last I made it back to the kingdom, the main force's annihilation had somehow become my fault...\" || \"Making excuses, everything else... none of it mattered to me anymore.\" || \"It had all ended in that duel, the one that left deep sword scars on my cheek and on Ajax's left eye...\" || \"I gave myself over to time.\" || \"Ten hollow years were the only thing that soothed my heart... a gentle cradle of time...\""
  },
  {
   "id": "24F91E",
@@ -517,7 +581,8 @@
    2158
   ],
   "jp": "　\n　　　「神暦四千九十五年‥‥」\n{next}\n「エウロペアの大地の　ひとときの平和は\n　はるか南からの　侵略の手により\n　無残に　引きさかれることになった」\n{next}\n　\n　　　　「神祖連邦オルドバ」\n{next}\n　「その侵略に　七つの国がほろび\n　　多くの森や　山や　川が\n　　戦乱の炎によって　焼かれていった」\n{next}\n　\n　　　　「ラインメタル王国」\n{next}\n「大陸の最北にいちする　この王国にも\n　その侵略の手が　のびようとしていた」\n",
-  "en": ""
+  "en": "\"Year 4095 of the Divine\nCalendar...」\n{next}\n「The brief peace of the land\n of Europea was cruelly torn\n apart by an invasion from」\n{next}\n「the far south.」\n{next}\n\"The Divine Federation of\nOrdoba」\n{next}\n\"Seven nations fell to the\ninvasion, and many forests,\nmountains and rivers were\n{next}\nburned in the flames of war.」\n{next}\n\"The Kingdom of Rheinmetall」\n{next}\n「Now the invaders were\n reaching for this kingdom\n too, in the far north of the」\n{next}\n「continent.」\n",
+  "pages": "\"Year 4095 of the Divine Calendar...\" || \"The brief peace of the land of Europea was cruelly torn apart by an invasion from the far south.\" || \"The Divine Federation of Ordoba\" || \"Seven nations fell to the invasion, and many forests, mountains and rivers were burned in the flames of war.\" || \"The Kingdom of Rheinmetall\" || \"Now the invaders were reaching for this kingdom too, in the far north of the continent.\""
  },
  {
   "id": "24FABE",
@@ -525,7 +590,8 @@
    2159
   ],
   "jp": "{spk}テティス　　\n「{hero}！」\n{next}\n「ねぇ　{hero}！」\n{next}\n「もう　{hero}ったら！\n　こんな所で　お酒なんか\n　のんでる場合じゃ　ないわよ！」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「{hero}!」\n{next}\n「Hey, {hero}!」\n{next}\n「Oh, honestly, {hero}! This is\n no time to be sitting around\n drinking!」\n",
+  "pages": "\"{hero}!\" || \"Hey, {hero}!\" || \"Oh, honestly, {hero}! This is no time to be sitting around drinking!\""
  },
  {
   "id": "24FB5E",
@@ -533,7 +599,8 @@
    2160
   ],
   "jp": "{spk}テティス　　\n「ひさびさの　仕事だわ！\n　どう？　腕が　なるでしょ？」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「We've got a job, our first in\n ages! Well? Itching to get to\n work?」\n",
+  "pages": "\"We've got a job, our first in ages! Well? Itching to get to work?\""
  },
  {
   "id": "24FBA8",
@@ -541,7 +608,8 @@
    2161
   ],
   "jp": "{spk}{FF1F}\n「‥‥仕事だと？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...A job?」\n",
+  "pages": "\"...A job?\""
  },
  {
   "id": "24FBC2",
@@ -549,7 +617,8 @@
    2162
   ],
   "jp": "{spk}テティス　　\n「ラインメタルの騎士団から\n　さっき　使者が　きたのよ！」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「A messenger came from the\n Rheinmetall knights just now!」\n",
+  "pages": "\"A messenger came from the Rheinmetall knights just now!\""
  },
  {
   "id": "24FC0E",
@@ -557,7 +626,8 @@
    2163
   ],
   "jp": "{spk}{FF1F}\n「‥‥ほう？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Oh?」\n",
+  "pages": "\"...Oh?\""
  },
  {
   "id": "24FC24",
@@ -565,7 +635,8 @@
    2164
   ],
   "jp": "{spk}テティス　　\n「さいきん　イーストエンドを\n　あらしまわっている　盗賊たちを\n　退治して　ほしいんですって！」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「They want us to wipe out\n the bandits who've been\n running wild in East End」\n{next}\n「lately!」\n",
+  "pages": "\"They want us to wipe out the bandits who've been running wild in East End lately!\""
  },
  {
   "id": "24FC96",
@@ -573,7 +644,8 @@
    2165
   ],
   "jp": "{spk}{FF1F}\n「くだらんな‥‥　たかが盗賊退治\n　なぜ騎士団がやらん？\n　ほこり高き　ラインメタル騎士団だろう」\n{next}\n「それとも　盗賊すら倒せないほど\n　かの騎士団は　落ちぶれたのか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「How petty... Just hunting\n bandits? Why don't the\n knights do it? They're the」\n{next}\n「proud Rheinmetall knights,\n aren't they?」\n{next}\n「Or have those knights sunk\n so low they can't even beat\n bandits?」\n",
+  "pages": "\"How petty... Just hunting bandits? Why don't the knights do it? They're the proud Rheinmetall knights, aren't they?\" || \"Or have those knights sunk so low they can't even beat bandits?\""
  },
  {
   "id": "24FD4A",
@@ -581,7 +653,8 @@
    2166
   ],
   "jp": "{spk}テティス　　\n「いいじゃないの　{hero}\n　それが　賞金かせぎの\n　バウンティハンターの仕事でしょ？」\n{next}\n「それにもう　前金で１００Ｇ\n　もらっちゃったんだもん！」\n{next}\n「いつも仕事を回してくれる\n　大臣のマクベスに\n　かんしゃ　しなくっちゃね！」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「Oh, who cares, {hero}?\n Isn't that what a bounty\n hunter does, earn bounties?」\n{next}\n「Besides, I already took 100G\n up front!」\n{next}\n「We should thank Minister\n Macbeth for always sending\n work our way!」\n",
+  "pages": "\"Oh, who cares, {hero}? Isn't that what a bounty hunter does, earn bounties?\" || \"Besides, I already took 100G up front!\" || \"We should thank Minister Macbeth for always sending work our way!\""
  },
  {
   "id": "24FE4C",
@@ -589,6 +662,7 @@
    2167
   ],
   "jp": "{spk}{FF1F}\n「‥‥マクベス‥‥か‥‥」\n{next}\n「久しぶりに　その名を聞いたな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Macbeth... huh...」\n{next}\n「It's been a long time since I\n heard that name.」\n",
+  "pages": "\"...Macbeth... huh...\" || \"It's been a long time since I heard that name.\""
  }
 ]

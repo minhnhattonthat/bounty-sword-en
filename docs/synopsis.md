@@ -20,6 +20,18 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   also scouted by the Federation).
 - Others: Athena, Tsukikage (ninja), Ryubi (swordsman, "the Shredder"), Rune, Thetis, Norn, Macbeth, Daniel.
 
+## Prologue (master_24DB56, translated b010-b011)
+- Year 4095 of the Divine Calendar: the Divine Federation of Ordoba invades Europea from the south; seven nations
+  fall; Rheinmetall (far north) is next.
+- Ten years ago the hero, "the Undefeated Paladin" / "Master of Swords", fought in Rheinmetall's 17th Independent
+  Knight Brigade with Ajax, Norn, Daniel and Macbeth; they beat the Zombie Master Raggadol ("all that awaits you is
+  nothingness"). The fairy ({FF28}) was with him then (he had rescued her from confinement).
+- The brigade learned it was a sacrificial decoy. Daniel left; Ajax dueled the hero to stop him going back to save
+  the main force (scars: the hero's cheek, Ajax's left eye) and left; Norn went with the hero and died shielding him;
+  the kingdom blamed the hero for the main force's loss. He drifted for ten years.
+- Now: Thetis (his partner, takes the jobs, cheerful nagging) wakes him in a tavern: a job from the Rheinmetall
+  knights via Minister Macbeth, wipe out the bandits in East End (100G up front).
+
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.
 - Map hints by the fairy per location: "This is <place>. We haven't cleared it yet." / memories once cleared.

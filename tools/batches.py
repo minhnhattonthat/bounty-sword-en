@@ -183,7 +183,7 @@ def problems(entry, en, terms):
             out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):
         out.append('ordinal suffix after a variable (write "No. {FF2B}")')
-    jp_plain = TOKEN.sub("", jp)
+    jp_plain = TOKEN.sub("", re.sub(r"\{spk\}[^\n]*\n", "\n", jp))   # speaker tags are mapped in phase 7 (D8)
     en_terms = " ".join(TOKEN.sub(" ", en).replace("\\n", " ").split()).lower()
     for jps, ens, avoid in terms:
         if any(has_term(jp_plain, j) for j in jps) and not any(" ".join(e.split()).lower() in en_terms for e in ens):

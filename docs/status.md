@@ -2,9 +2,15 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate: not started (phase 5 done 2026-11-22: width gate rows all measured or ruled, marker
-  build verified, kanji table complete). Rebuild with `build.py` / `--marker` before testing. Full marker tour
-  `work/qa/marker2`: 140/140, no garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
+- **Phase:** 6. Translate in progress: 545/3539 entries in English (name tables + prologue b010-b011); 39 dialogue
+  batches b012-b050 left, then side tables. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
+  stays byte-identical.
+- **Phase 6 workflow (first session, 2026-11-22):** dialogue is authored as one paragraph per JP box
+  (`tools/pages.py`, D10): `tools/batches.py` (split/check/merge/zip, adapted from the skill) shows master text as
+  pages (` ‖ `), the English is pages joined by ` || `, merge wraps to 158 px x 3 lines (+`{next}` boxes) into `en`
+  and keeps the paragraphs in `pages`. Brief: `docs/translator-brief.md`; glossary seeded (`glossary.md`, enforced
+  by the check, which `tools/check.py` now runs); `docs/synopsis.md` (prologue); reviews in `docs/reviews.md`,
+  Minors in `docs/polish.md`. Batches live in `work/tl/` (gitignored; `split` rebuilds the queue from empty `en`).
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
   (details and evidence in `docs/re/vwf.md`):
   - Font decision: dialogue VWF; C1 menus/lists VWF with packed pairs (third session); other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
@@ -58,12 +64,24 @@ Updated at the end of every session. Keep it to what the next session needs; his
     canonical one (`tools/mktbl.py`, `docs/re/text.md`). Unknown uses 6,230 -> 37 (19 are later duplicate copies,
     18 truly unread: 0x25 0x7E 0xAB 0xCE 0xF0 0x1F6-0x1F8). 0x3C7 寸 (寸断のリュウビ) is low confidence.
     Identity build still byte-identical; smoke ok.
-- **Next (phase 6, translate; read `$SKILL/references/translation.md` first):**
-  1. Ask-once translation defaults are already in `docs/decisions.md` / `glossary.md` (check before translating).
-  2. Brief translators on the side-table byte-length rule (Open, first item) and the width budgets in
-     `docs/re/vwf.md` (dialogue 160 px VWF; C1 fields cells x 8 px; engine B 28 cells x 2 rows).
-  3. Translate in batches with the batch check; reviewer pass after each batch.
+- **Next (phase 6, translate; read `docs/translator-brief.md`, `glossary.md`, `docs/synopsis.md` first):**
+  1. If `work/tl/` is gone (fresh clone): `python -X utf8 tools/batches.py split --only master_<block>` per block
+     (24DB56 is done; then 1E0000 214606 257BD4 26F317 271410 280F1B 290400 2A7D44), and `--only <file>` for side
+     tables. Translate each batch (`work/tl/bNNN.out.tsv`, `zip` helps for one-line-per-row tables), `check` until
+     OK, `merge`, then an own read-only review line in `docs/reviews.md` (codex back 2026-11-26: use it then).
+  2. Extend the synopsis and glossary as names appear (merge NEW TERMs between batches).
+  3. Side tables last: ceremony/short_strings (engine B, `{FF01}` rows of 28), system/battle prompts (engine A),
+     windows/menus/menus_c (C1 grid strings with `[0F7F]` cells: translate against `docs/re/slices.tsv`),
+     descriptions/objectives (no reader found; translate, keep codes). Skipped rows left JP on purpose: classes
+     `0BFFF2`, items `1AEDAF` (junk-looking records), orders `08E996`.. (role labels across 8-word records).
+  4. First in-game look at the prologue (warp `prologue`) not done yet.
 - **Open (not blocking):**
+  - **Phase 7 engine work from phase 6 (D8):** speaker tag (6 cells, `C2:5641`) and location label (10 cells,
+    `C0:E1B1`) must pack two letters a cell; until then `build.py` keeps the JP for the 43 overflowing entries and
+    prints a warning (`script_text.OVERFLOW`). Speaker headers inside master text (`{spk}<6-word name>`) are still JP
+    in `en`: map them from `speakers.json` en in phase 7 (rule-based, literal names list in the batch tool's
+    terms pass). Location labels were centred with JP spaces: centre the English by pixel width.
+  - `[00AB]` is 岬 (cape); add it to `tbl/kanji.tsv` and `build.py --dump --refresh` when convenient.
   - **Side tables are repacked in place** (`rom_text.repack`: each region keeps its exact size, entries are not
     relocated and their pointers not rewritten), so today an English ceremony/prompt/description line must have the
     JP entry's byte length. Before phase 7: relocate grown entries to `$F0-$FE` and rewrite their pointers (each
