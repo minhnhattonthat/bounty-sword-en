@@ -3567,8 +3567,8 @@
    813
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "28B80D",
@@ -4152,8 +4152,8 @@
    1245
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "28D761",
@@ -4296,8 +4296,8 @@
    1261
   ],
   "jp": "{spk}ミランダ　　\n「できれば　殺したく　ありませんが\n　しかた　ありませんね‥‥\n　われらの　行く手を　ふさぐならば」\n",
-  "en": "{spk}ミランダ　　\n「I'd rather not kill them,\n but it can't be helped...\n if they block our way.」\n",
-  "pages": "\"I'd rather not kill them, but it can't be helped... if they block our way.\""
+  "en": "{spk}ミランダ　　\n「I would rather not kill them,\n but it cannot be helped...\n if they block our way.」\n",
+  "pages": "\"I would rather not kill them, but it cannot be helped... if they block our way.\""
  },
  {
   "id": "28E14B",

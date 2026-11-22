@@ -1796,8 +1796,8 @@
    837
   ],
   "jp": "{spk}{FF1F}\n「たしか十年前　オレは\n　こう言った　はずだな‥‥」\n{next}\n「じぶんの墓に　帰るがいい\n　邪悪な　黒い魔力の怪物よ！」\n{next}\n「同じセリフで　ふたたび\n　死ぬ気持ちは　どうだ！？」\n",
-  "en": "{spk}{FF1F}\n「Ten years ago, I\n believe I said this...」\n{next}\n「Go back to your\n grave, you monster of\n black and evil magic!」\n{next}\n「How does it feel to die\n again to the same words!?」\n",
-  "pages": "\"Ten years ago, I believe I said this...\" || \"Go back to your grave, you monster of black and evil magic!\" || \"How does it feel to die again to the same words!?\""
+  "en": "{spk}{FF1F}\n「Ten years ago, I\n believe I said this...」\n{next}\n「Go back to your grave, you\n monster of evil black magic!」\n{next}\n「How does it feel to die\n again to the same words!?」\n",
+  "pages": "\"Ten years ago, I believe I said this...\" || \"Go back to your grave, you monster of evil black magic!\" || \"How does it feel to die again to the same words!?\""
  },
  {
   "id": "295F04",
@@ -2525,8 +2525,8 @@
    918
   ],
   "jp": "{spk}マウザー　　\n「聞いて　おどろくな！　オレ様は\n　ドラゴンバスターの　マウザーよ！」\n",
-  "en": "{spk}マウザー　　\n「Hear this and tremble! I'm\n the Dragon Buster, Mauser!」\n",
-  "pages": "\"Hear this and tremble! I'm the Dragon Buster, Mauser!\""
+  "en": "{spk}マウザー　　\n「Hear this and tremble!\n I'm the great Mauser,\n the Dragon Buster!」\n",
+  "pages": "\"Hear this and tremble! I'm the great Mauser, the Dragon Buster!\""
  },
  {
   "id": "297BB4",
@@ -2579,8 +2579,8 @@
    924
   ],
   "jp": "{spk}ロブン　　　\n「ロブンです　が　ふるさとでは\n　みな　陰陽道士と　呼びますな」\n",
-  "en": "{spk}ロブン　　　\n「I'm Robun, though back home\n they all call me an onmyoji,\n a master of yin and yang.」\n",
-  "pages": "\"I'm Robun, though back home they all call me an onmyoji, a master of yin and yang.\""
+  "en": "{spk}ロブン　　　\n「I am Robun. Back home,\n they call me an onmyoji,\n a master of yin and yang.」\n",
+  "pages": "\"I am Robun. Back home, they call me an onmyoji, a master of yin and yang.\""
  },
  {
   "id": "297CF8",
@@ -2660,8 +2660,8 @@
    933
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "29813A",
@@ -3989,8 +3989,8 @@
    1842
   ],
   "jp": "{spk}アジャックス\n「なあ　{hero}‥‥」\n",
-  "en": "{spk}アジャックス\n「Right, {hero}...?」\n",
-  "pages": "\"Right, {hero}...?\""
+  "en": "{spk}アジャックス\n「Hey, {hero}...」\n",
+  "pages": "\"Hey, {hero}...\""
  },
  {
   "id": "29C224",
@@ -4034,8 +4034,8 @@
    1847
   ],
   "jp": "{spk}アジャックス\n「同じだな　あの時と‥‥　　　　\n　これも　運命という　ヤツか」\n{next}\n「ならば　オレも　言おう\n　十年前の　あの日と同じく」\n{next}\n「このオレを　倒して行け！」\n{next}\n「たがいの道は　剣によって決まる！\n　そうだな　{hero}！？　いや‥‥\n　マスター°オブ°ソードよ！」\n",
-  "en": "{spk}アジャックス\n「Same as back then... I\n suppose this is what\n they call fate, too.」\n{next}\n「Then I'll say it as well,\n the same as on that\n day ten years ago.」\n{next}\n「Get past me first!」\n{next}\n「A sword decides which\n road each of us takes!」\n{next}\n「Right, {hero}!? No...\n Master of Swords!」\n",
-  "pages": "\"Same as back then... I suppose this is what they call fate, too.\" || \"Then I'll say it as well, the same as on that day ten years ago.\" || \"Get past me first!\" || \"A sword decides which road each of us takes!{next}Right, {hero}!? No... Master of Swords!\""
+  "en": "{spk}アジャックス\n「Same as back then... I\n suppose this is what\n they call fate, too.」\n{next}\n「Then I'll say it as well,\n the same as on that\n day ten years ago.」\n{next}\n「Get past me first!」\n{next}\n「Our paths will be\n decided by the sword!」\n{next}\n「Isn't that right, {hero}?!\n No... Master of Swords!」\n",
+  "pages": "\"Same as back then... I suppose this is what they call fate, too.\" || \"Then I'll say it as well, the same as on that day ten years ago.\" || \"Get past me first!\" || \"Our paths will be decided by the sword!{next}Isn't that right, {hero}?! No... Master of Swords!\""
  },
  {
   "id": "29C4DA",
@@ -4043,8 +4043,8 @@
    1848
   ],
   "jp": "{spk}{FF1F}\n「いいだろう‥‥\n　たがいの道を　決めるために！」\n",
-  "en": "{spk}{FF1F}\n「Very well... To decide which\n road each of us takes!」\n",
-  "pages": "\"Very well... To decide which road each of us takes!\""
+  "en": "{spk}{FF1F}\n「Very well... To decide which\n path each of us takes!」\n",
+  "pages": "\"Very well... To decide which path each of us takes!\""
  },
  {
   "id": "29C514",

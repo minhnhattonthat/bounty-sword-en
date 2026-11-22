@@ -167,8 +167,8 @@
    637
   ],
   "jp": "{spk}マウザー　　\n「オレは　この山々の　みねに\n　古くから住んでいる\n　誇りある　オケアノスの闘士」\n{next}\n「村の子どもを　食っちまった\n　このドラゴンを　追いかけて\n　八の昼と　八の夜を　走り続けた」\n",
-  "en": "{spk}マウザー　　\n「I'm a proud warrior of\n Oceanus, of the folk who've\n lived on these mountain」\n{next}\n「peaks since long ago.」\n{next}\n「This dragon ate a\n child from my village.」\n{next}\n「I chased it eight days and\n eight nights without stopping.」\n",
-  "pages": "\"I'm a proud warrior of Oceanus, of the folk who've lived on these mountain peaks since long ago.\" || \"This dragon ate a child from my village.{next}I chased it eight days and eight nights without stopping.\""
+  "en": "{spk}マウザー　　\n「I'm a proud fighter of\n Oceanus, of the folk who've\n lived on these mountain」\n{next}\n「peaks since long ago.」\n{next}\n「This dragon ate a\n child from my village.」\n{next}\n「I chased it eight days and\n eight nights without stopping.」\n",
+  "pages": "\"I'm a proud fighter of Oceanus, of the folk who've lived on these mountain peaks since long ago.\" || \"This dragon ate a child from my village.{next}I chased it eight days and eight nights without stopping.\""
  },
  {
   "id": "271AFE",
@@ -365,8 +365,8 @@
    659
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "272514",
@@ -1616,8 +1616,8 @@
    1392
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "276AB2",
@@ -1976,8 +1976,8 @@
    1432
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": "{spk}黄道十二神　\n「You who stand before my\n statue... are you the one to\n dispel this world's darkness?」\n",
-  "pages": "\"You who stand before my statue... are you the one to dispel this world's darkness?\""
+  "en": "{spk}黄道十二神　\n「Thou who standest before\n me... art thou the one to\n dispel this world's darkness?」\n",
+  "pages": "\"Thou who standest before me... art thou the one to dispel this world's darkness?\""
  },
  {
   "id": "277F96",

@@ -61,3 +61,12 @@ with the reason; the two engine limits are listed as known issues in README.md.
   Deferred as a known issue (README): it needs a proportional mode in engine B.
 - [x] jp_left C4 names (done, session ae: a whole-ROM scan for op 16/64 + a 6-word name found 11 such records, among
   them 043F2F 海兵隊長 and 04E8B3 ロブン; all 11 written in English through `script/default_names.tsv`; jp_left 0)
+- [x] Story pass (session af, read-only self review, 18 chapters): 295E4C hero repeats his line of ten years ago;
+  now word for word 24E502 ("Go back to your grave, you monster of evil black magic!").
+- [x] 29C3BA / 29C4DA Ajax and the hero repeat their duel words of ten years ago; now match 24EF74 / 24EF38
+  ("Our paths will be decided by the sword! Isn't that right, ...?! No... Master of Swords!", "...which path").
+  29C1F8 なあ "Hey, {hero}..." as in the prologue.
+- [x] Zodiac statue opener (11 copies) "Thou who standest before me... art thou the one..." (the statues use thou).
+- [x] 297B5C Mauser keeps his "the great Mauser" boast; 271A36 "fighter of Oceanus" (the other four agree).
+- [x] No contractions for Elysion (25B592), Miranda (28E0D5), Robun (297CA6).
+- [x] 1E3964 / 28CA75 open quote on a page with no close: kept, the JP pages lack the closing 」 too.

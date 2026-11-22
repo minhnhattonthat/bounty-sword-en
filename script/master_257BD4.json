@@ -1310,8 +1310,8 @@
    1941
   ],
   "jp": "{spk}エリュシオン\n「‥‥‥‥」\n{next}\n「それだけの力を　持ちながら　キサマは\n　国よりも　神よりも　平和よりも\n　たった一人の　むすめを　選ぶのか‥？」\n",
-  "en": "{spk}エリュシオン\n「........」\n{next}\n「With all that power, you'd\n choose one girl over nations,\n the gods, and peace...?」\n",
-  "pages": "\"........\" || \"With all that power, you'd choose one girl over nations, the gods, and peace...?\""
+  "en": "{spk}エリュシオン\n「........」\n{next}\n「With all that power, you\n would choose one girl over\n nations, gods, and peace...?」\n",
+  "pages": "\"........\" || \"With all that power, you would choose one girl over nations, gods, and peace...?\""
  },
  {
   "id": "25B628",
