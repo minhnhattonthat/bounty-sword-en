@@ -12,9 +12,13 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| [text.md](text.md) | encoding, font, both script engines, master pointer table, text ranges | encoding/font/pointer table verified; engine-A arg counts and kanji list open |
+| [text.md](text.md) | encoding, font, both script engines, master pointer table, text inventory | encoding/font/pointer table/engine-A arg counts verified; side tables mostly guess (phase 4 confirms); kanji list open |
 | [rom.md](rom.md) | header, map, free space, expansion, graphics loading | header verified; free space untested |
-| [graphics.md](graphics.md) | graphics-text survey | in progress (tour partial, static sweep not done) |
+| [graphics.md](graphics.md) | graphics-text survey | static sweep done; only the chapter card is tile-drawn Japanese |
+
+Helpers in `tools/re/`: `words.py` (dump words / master message N), `textruns.py` (all text runs), `refs24.py`
+(24-bit pointers into a range), `p24.py` (print a pointer list); `tools/gfx_map.py` + `tools/gfx_sweep_map.py`
+(static graphics sweep).
 
 Prior work: no earlier fan translation or community tools found (web search 2026-11-22; Data Crystal is on the
 denied tcrf.net domain, not read).

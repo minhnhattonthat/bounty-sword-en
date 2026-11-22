@@ -1,6 +1,8 @@
 """Static graphics sweep: render the whole ROM as SNES 2bpp or 4bpp tiles into numbered sheets with offset labels.
 
-    python -X utf8 tools/gfx_sweep.py OUTDIR [--bpp 2|4] [--cols 128] [--rows 128] [--from HEX] [--to HEX]
+    python -X utf8 tools/gfx_sweep.py OUTDIR [--bpp 2|4] [--cols 128] [--rows 128] [--from HEX] [--to HEX] [--zoom N]
+
+Pick ranges with tools/gfx_map.py (GFX-classified 4 KB blocks); 2bpp, 64 cols x 32 rows, zoom 2 reads well.
 
 Each sheet row is labelled with the file offset of its first tile. Nothing is skipped: every byte of the range
 lands on some sheet (the last one may be short). Used for the phase-1 graphics-text survey (docs/re/graphics.md).
@@ -30,6 +32,7 @@ def main():
     ap.add_argument('--rows', type=int, default=128)
     ap.add_argument('--from', dest='lo', default='0')
     ap.add_argument('--to', dest='hi', default=None)
+    ap.add_argument('--zoom', type=int, default=1)
     a = ap.parse_args()
     rom = open(ROM, 'rb').read()
     lo = int(a.lo, 16); hi = int(a.hi, 16) if a.hi else len(rom)
@@ -58,6 +61,8 @@ def main():
                     for x, v in enumerate(row):
                         px[margin + c * 8 + x, r * 8 + y] = pal[v]
         name = os.path.join(a.out, 'sweep%d_%06X.png' % (a.bpp, base))
+        if a.zoom > 1:
+            img = img.resize((img.width * a.zoom, img.height * a.zoom), Image.NEAREST)
         img.save(name)
         print(name)
         n += 1

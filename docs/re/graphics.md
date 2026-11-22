@@ -1,25 +1,44 @@
-# Graphics-text survey (phase 1, IN PROGRESS)
+# Graphics-text survey (phase 1 done; the phase-5 marker tour and phase-8 warps re-check it)
 
 Rule (skill `references/graphics.md` §Survey): every Japanese-on-screen element is either a known string or a row
-here. Tour so far: cold boot -> title -> file menu -> new game -> ceremony -> name entry -> first town scene -> chapter
-card -> first map (`work/qa/orig_boot`, `orig_new`, `orig_g1`). Battle, shop, status/unit menus, game over, ending
-and credits are not toured yet (needs the phase-2 debug tool).
+here. Tour so far: cold boot -> title -> file menu -> new game -> ceremony -> name entry -> first town scene ->
+chapter card -> prologue narration -> first map (`work/qa/orig_boot`, `orig_new`, `orig_g1`, `card`). Battle, shop,
+status/unit menus, game over, ending and credits are not toured yet (phase-2 debug tool).
 
-| Screen | Element | Japanese? | Source (first guess) | State |
+| Screen | Element | Japanese? | Source | State |
 |---|---|---|---|---|
 | Boot | PIONEER LDC logo, staff cards (Tenmi Qual, Kohei Tanaka) | no, English | tiles | ok |
 | Title | BOUNTY SWORD logo, © 1995 PIONEER LDC / ITL line | no, English | tiles | ok (D5: keep) |
-| File menu | ファイル / 最初から / ロード / コピー / 消去 / 未使用 | yes | font (C1 menu strings) | text, not graphics |
+| File menu | ファイル / 最初から / ロード / コピー / 消去 / 未使用 | yes | font, C1 menu strings | text |
 | Ceremony | dialogue box, はい/いいえ | yes | font (engine B) | text |
-| Ceremony | stat sheet (unit stats grid) | yes | font? | check in phase 5 marker build |
-| Name entry | kana keyboard grid, カナ 英字 終わり, NAME label | yes (NAME is English) | font-drawn grid or tilemap: unverified | **check** |
-| Town scene | portrait name plate | yes | font, drawn by C2:565E into $7E:AC00 | text |
+| Ceremony | stat sheet (unit stats grid) | yes | font? | check in the phase-5 marker build |
+| Name entry | kana grid, カナ / 英字 / 終わり | yes | font: the grid is the C1 string at 0x1C285 (あいうえおか…), カナ…終わり follows it | text (verified by string) |
+| Name entry | NAME label | no, English | tiles | ok |
+| Town scene | portrait name plate | yes | font, drawn by `C2:565E` into `$7E:AC00` | text |
 | Town scene | speech bubble frame | no | tiles | ok |
-| Chapter card | 第1話 『…』 | yes | font? unverified | **check** (dump VRAM) |
+| **Chapter card** | 第1部 『迫り来る恐怖』 (and 第2部『遥かな地で』, 第3部『魔の中枢へ』) | **yes** | **graphics**: 16x16 2bpp glyphs, raw, ROM 0x18449A-0x184A99 (第 １ ２ ３ 部 迫 り 来 る 恐 怖 遥 か な 地 で ・ 魔 の 中 枢 へ), loaded to VRAM $8000 (BG3) and placed by a tilemap. Verified: `vramfind.py --fmt snes2` on the card's VRAM dump (`work/qa/card/ppu_000450.*`), BG3 render `work/qa/card/layers.png`. Text search finds no 迫り来る string. | **redraw** (phase 5/8): new glyph tiles, or switch the card to the 8x16 font |
+| Prologue | narration on brown screen (イーストエンドの…) | yes | font (master dialogue msg 0) | text |
+| Location label | map name (ラインメタル…), 10 cells | yes | font via `C0:E1B1`, table 0x0CD7B | text |
+| Battle effects | CRITICAL, MISS, ATK UP, DEF UP, LEVEL UP, digits | no, English | sprite tiles 0x091000, 0x0A0000 | ok |
+| UI | OFF/ON, HP S/G LV EX, arrows, digits | no, English | 4bpp tiles 0x18549A | ok |
+| Font | 8x16 kana/kanji | (it is the font) | 0x2B2D8C | text work (phase 5) |
 
-## Static sweep (not done)
+## Static sweep (done)
 
-`tools/gfx_sweep.py OUT --bpp 2|4 [--from --to --cols --rows]` renders the ROM with offset labels and never skips a
-range. A whole-ROM 512 KB sheet is unreadable (tried: `work/sweep/sweep4_000000.png`): use 32-64 KB per sheet
-(`--rows 16..32`) and only over graphics-looking banks, read in chunks. Graphics are raw or plane-expanded in ROM
-(`docs/re/rom.md`), so a sweep of raw ROM is meaningful.
+1. `tools/gfx_map.py > work/sweep/gfxmap.txt` classes every 4 KB block: fill, text/words (16-bit text, either
+   byte parity), GFX+P (tile-structured, tiles start at byte phase P), other (code/data, scores like random).
+   Phase matters: the card glyphs sit at 0x18449A and read as noise from an aligned start.
+2. `tools/gfx_sweep_map.py work/sweep/gfxmap.txt work/sweep/m` renders the 271 GFX blocks (1,084 KB) at their
+   phase, 2bpp, zoom 2, 8 blocks per sheet: 34 sheets `work/sweep/m/map_*.png`. It prints every non-GFX run it
+   skips (88 runs: code, text, fill).
+3. All 34 sheets read (2026-11-22, one pass by the phase-1 worker; no subagents available under Orca). Japanese
+   found: the chapter-card glyphs (row above) and the font bank. Everything else is sprites, portraits, map
+   tiles, UI frames and English labels.
+4. 8bpp picture blocks (0x1FC000-0x200000, 0x219000-0x21E000, 0x27A000-0x280000) look like noise in 2bpp; rendered
+   as snes8 (`work/sweep/p8.png`) they are backgrounds with no lettering.
+5. Not covered by a static sweep: anything compressed. No decompressor has been found (`docs/re/rom.md`); the
+   expander at `C0:9AB2` is a plane expansion of raw blocks, which the sweep already sees in raw form. Screens
+   whose tiles `vramfind.py` cannot find raw must be re-checked when they are toured.
+
+Whole-ROM sheets at 1x (`tools/gfx_sweep.py`, `work/sweep/s2/`) are kept for orientation only; they are
+unreadable for glyphs.

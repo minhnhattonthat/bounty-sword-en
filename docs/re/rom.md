@@ -27,6 +27,8 @@ Runs of 1 KB+ of one byte value (`0x00` or `0xFF`), 50 KB in all. Candidates onl
 | 0x2EF698-0x2F0000 | 2408 | FF |
 | 0x2FD8CB-0x300000 | 10037 | FF |
 
+Text-block padding: `FFFF` words fill 0x24FE8E-~0x250600 after the last message of that block (~1.9 KB, not in
+the table above because the scan looked for one byte value; `tools/gfx_map.py` lists other fill blocks).
 Smaller 00 runs at 0x11CC04, 0x12F770, 0x2B0B10, 0x2B1386, 0x2B1B5E (1-1.7 KB, inside data banks: likely tables).
 Plan: put the English script in the expanded 1 MB, not in these.
 
