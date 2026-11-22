@@ -27,7 +27,8 @@
   word: check on screen how the game combines them (phase 8, `tools/re/slices.py` on the English build)
 - [ ] Objectives (b059) keep their JP length (no reader found): "SorcGen", "SorcCapt", "M.God 1"; if a reader turns
   up, relocate the table (D8:FC9C pointers) and write full sentences
-- [ ] Status screen: the gender value 男/女 and the default hero name ソード are still JP (tile/graphic or save data)
+- [x] Status screen: the gender value 男/女 and the default hero name ソード are still JP (tile/graphic or save data)
+  (done: name "Sword" via `script/default_names.tsv`, session l; gender ♂/♀ via byte patch 018AA9, session q)
 - [ ] Place names, label vs dialogue (phase 6 review, Minor 9): labels "Blackburn Mts",
   "Rhipaean Mts" (locations 00CDA3, 00CE93; "Atlas Mountains" and "Gibraltar Strait" now spelled out); dialogue spells them out
   ("Blackburn mountains" in 1E01E0 lowercase, "Strait of Gibraltar"). After D8 pair packing (phase 7) give the

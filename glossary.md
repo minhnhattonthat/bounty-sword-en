@@ -126,6 +126,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | バウンティハンター | bounty hunter / Bounty Hunter | | | |
+| 第1部『迫り来る恐怖』 / 第2部『遥かな地で』 / 第3部『魔の中枢へ』 | Part 1 Terror Draws Near / Part 2 In a Faraway Land / Part 3 Into the Heart of Evil | | part cards, graphics (`tools/card_gfx.py`) | |
 | バウンティ°ソード / バウンティソード | Bounty Sword | | | |
 | マスター°オブ°ソード | Master of Swords | | the hero's old title | Sword Master |
 | 連邦 | Federation | | Ordoba Federation | Union |

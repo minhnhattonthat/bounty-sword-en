@@ -58,8 +58,14 @@ def write_sites(data):
     out += [(h, h + HOOK_BYTES, "vwf.asm hook $%06X" % (h + 0xC00000)) for h in hook_sites()]
     out.append((*CHECKSUM, "header checksum"))
     out += [(o, o + 2 * n, f"default name {en}") for o, n, _, en in default_names()]
-    out += [(o, o + len(new), f"byte patch: {note}") for o, _, new, note in byte_patches()]
+    out += [(o, o + len(new), f"byte patch: {note}") for o, _, new, note in byte_patches() + card_patches()]
     return sorted(out)
+
+
+def card_patches():
+    """The part cards drawn in English (tools/card_gfx.py), in byte_patches() form."""
+    from card_gfx import patches
+    return patches()
 
 
 BYTE_PATCHES = ROOT / "script" / "byte_patches.tsv"
@@ -80,7 +86,7 @@ def byte_patches(path=BYTE_PATCHES):
 
 def put_byte_patches(rom, path=BYTE_PATCHES):
     """Write each byte patch into bytearray `rom`; checks the original bytes first."""
-    for off, old, new, note in byte_patches(path):
+    for off, old, new, note in byte_patches(path) + card_patches():
         if rom[off:off + len(old)] != old:
             raise ValueError(f"byte patch at {off:06X} ({note}): ROM holds {rom[off:off + len(old)].hex()}")
         rom[off:off + len(new)] = new

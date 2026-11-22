@@ -49,6 +49,20 @@ def test_shop_tilemaps_point_at_the_english_cells(built):
     assert data[0x32787:0x32791] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Vault")
 
 
+def test_part_cards_and_gender_glyph_are_english(built):
+    """tools/card_gfx.py draws the 3 part cards into the original 93 tiles + 3 maps; the status gender is ♂/♀."""
+    from card_gfx import MAPS_AT, MAP_BYTES, N_TILES, TILES_AT, render
+    _, data, _ = built
+    tiles, maps = render()
+    assert len(tiles) == N_TILES * 16 and tiles[:16] == bytes(16)          # tile 0 = the maps' blank filler
+    assert data[TILES_AT:TILES_AT + len(tiles)] == tiles
+    for i, m in enumerate(maps):
+        words = [int.from_bytes(m[j:j + 2], "little") for j in range(0, MAP_BYTES, 2)]
+        assert max(words) < N_TILES and any(words[:64]) and any(words[96:]), f"card {i + 1}: both lines drawn"
+        assert data[MAPS_AT + i * MAP_BYTES:MAPS_AT + (i + 1) * MAP_BYTES] == m
+    assert data[0x18AA8:0x18AB0] == bytes.fromhex("a94a008003a94900")
+
+
 def test_header_checksum_is_valid(built):
     _, data, _ = built
     total = sum(data[:0xFFDC]) + sum(data[0xFFE0:]) + 0xFF * 2 & 0xFFFF

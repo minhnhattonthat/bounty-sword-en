@@ -9,3 +9,4 @@
 05B282	40ae000302e400	40ae000302ea00	sell screen tab 装備品 -> "Gear" (cells 26-28)
 05B298	40ee020302e700	40ee020302ed00	sell screen tab 所持品 -> "Pack" (cells 29-31)
 01D33B	e0e1c0c1cdf0f1d0d1dde0e1c2c3cdf0f1d2d3dde0eaebedcdf0fafbfddd	e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9	prompts 誰が買う？ 誰が売る？ 誰と話の？ (5x2 maps, op 18 at C5:B2F0..) -> "Who?" (cells 21-25)
+018AA9	a4028003a9f702	4a008003a94900	status gender value (C1:8AA8 `LDA #$02A4 女 / LDA #$02F7 男`, then JSL C1:8EB9 one glyph) -> ♀ 004A / ♂ 0049
