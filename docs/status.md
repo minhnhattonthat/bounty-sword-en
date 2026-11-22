@@ -21,7 +21,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   read clean (`work/qa/cards2/sub.png`, `sub_2.png`). Probe `tools/lua/bufwrites.lua` (per-frame writes to the
   window tile halves). **Disk:** C: was full (0 B): emu.py leaves a 95 MB `_mesen` copy per run (1375 of them);
   removed, 67 GB free; after any tour run `find work -name _mesen -prune -exec rm -rf {} +` (gotcha logged).
-  check 54 passed, lint 0, smoke ok. Tour states/sheets predate this build: re-run the full tour before the gate.
+  To-do 5 closed (warp artifact, same on the JP ROM). check 54 passed, lint 0, smoke ok. Tour states/sheets predate
+  this build: re-run the full tour before the gate. **Next:** to-do 3 leftovers (buy/sell confirm lines in game,
+  stress save for full bags), 4, 6, 7, 2 (polish-line abbreviations), then the chapter-card 第1部 graphics redraw,
+  textcover runner (9), full tour + visual-QA verdicts into `qa_gate.py`. Worker handed back near the context limit.
 - **Session 2026-11-23o (phase 8):** (a) **Tavern fixed**: `C1Run` (menu strings, VWF mode 2) shared `!PX` with
   engine A and left it at the menu's width; a dialogue box whose start `$3729` equalled `LAST` (0 after a cold warp)
   kept that PX and began at the right edge. C1Run now saves/restores PX (`asm/vwf.asm`); `work/qa/w_tav_en2` shows
@@ -67,7 +70,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   and `e do? Sword"` cut on row 2: compare with the JP (`emu.py rom/... --script tools/debug/warp.lua --var
   "SCENE='town_tavern'"`) before fixing; it may be the tavern choice text (と話す screen).
   (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
-  (5) name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
+  (5) **closed in session p: warp artifact.** The original ROM shows the same `NAME フェリス` under the `name_entry`
+  warp (`work/qa/ne_jp/cmp.png`: JP | EN); フェリス is not in the ROM in text codes, byte/word relative search, SJIS,
+  nor in WRAM as text words or keyboard-grid indices, and no script entry has it; the real New Game path (mode 17
+  ceremony) defaults to "Sword" (session l). Old note: name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
   and add it to `script/default_names.tsv` like ソード/テティス. (6) status "Gdr 男" value still JP (polish line).
   (7) camp_items shows 倉庫 (storage tab) in JP and "Itm1": same as to-do 2. (8) **done in session p** (printer stop code). Old note: cards 02/51/53-ish: dialogue
   typed over the card subtitle area overlaps it ("to be thrown away!" eturn'"): compare with `work/qa/tour_jp`
