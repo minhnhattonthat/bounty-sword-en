@@ -127,7 +127,7 @@ def wrap(text, lead="", indent="", reserve=0):
     return lines
 
 
-def layout_page(jp_lines, prefix, en):
+def layout_page(jp_lines, prefix, en, menu=False):
     """English page -> (list of output lines incl. {next} splits, problems)."""
     probs = []
     jp_text = "".join(jp_lines)
@@ -151,6 +151,10 @@ def layout_page(jp_lines, prefix, en):
         boxes += chunks
     if (prefix and any(p in prefix for p in NOSPLIT)) and (len(boxes) > 1 or len(boxes[0]) > 1):
         probs.append("conditional line ({FF2F}/{FF30}) must fit one line")
+    # A choice list (page right before a {FF14} choice code, JP lines indented for the cursor): keep that indent on
+    # every English line, one option a line.
+    if menu and all(ln.startswith("　") for ln in jp_lines):
+        boxes = [["　" + ln.lstrip(" ") for ln in box] for box in boxes]
     out = []
     for i, box in enumerate(boxes):
         box = list(box)
@@ -178,11 +182,13 @@ def build_en(jp, en):
     if len(src) != len(pages):
         return None, [f"{len(src)} English pages for {len(pages)} JP pages"]
     out, probs, k = [], [], 0
-    for it in items:
+    for n, it in enumerate(items):
         if it[0] == "line":
             out.append(it[1])
             continue
-        lines, p = layout_page(it[2], it[1], src[k])
+        after = items[n + 1] if n + 1 < len(items) else None
+        menu = bool(after) and after[0] == "line" and after[1].startswith("{FF14")
+        lines, p = layout_page(it[2], it[1], src[k], menu)
         probs += [f"page {k + 1}: {x}" for x in p]
         out += lines
         k += 1

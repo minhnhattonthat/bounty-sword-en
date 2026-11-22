@@ -32,6 +32,15 @@ def test_build_keeps_skeleton_and_splits_long_pages():
     TextCodec(True).encode(en)                              # encodable as master text
 
 
+def test_choice_list_keeps_cursor_indent_but_narration_does_not():
+    menu = "{spk}{FF28}\n「何？」\n{next}\n　連邦の情報\n　秘密の情報\n{FF14:00C3}{end}\n"
+    en, probs = pages.build_en(menu, '"What?" || A\\nB')
+    assert not probs and "\n　A\n　B\n{FF14:00C3}" in en
+    poem = "{spk}{FF28}\n　地に　やみが\n　あふれ\n{next}\n「ね？」\n"
+    en, probs = pages.build_en(poem, 'Darkness. || "Right?"')
+    assert not probs and "\nDarkness.\n" in en
+
+
 def test_page_count_and_quotes_are_checked():
     assert pages.build_en(JP, '"One page only."')[1]
     assert pages.build_en(JP, 'No quotes. || "Fine."')[1]

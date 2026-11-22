@@ -5,7 +5,7 @@
    16
   ],
   "jp": "{FF09:0000}{FF12}一騎打ちを受けますか？{FF04}{FF03}　はい{FF11}　いいえ{FF14:0002}{end}",
-  "en": ""
+  "en": "{FF09:0000}{FF12}Accept the duel?{FF04}{FF03}  Yes{FF11}  No{FF14:0002}{end}"
  },
  {
   "id": "26F34D",
@@ -13,7 +13,7 @@
    17
   ],
   "jp": "{FF09:0000}{FF12}{FF31}の依頼を受けますか？{FF04}{FF03}　はい{FF11}　いいえ{FF14:0002}{end}",
-  "en": ""
+  "en": "{FF09:0000}{FF12}Accept the job from {FF31}?{FF04}{FF03}  Yes{FF11}  No{FF14:0002}{end}"
  },
  {
   "id": "26F383",
@@ -21,6 +21,7 @@
    64
   ],
   "jp": "{spk}情報屋　　　\n「よお！　さっきの仕事は\n　もう終わったかい　{hero}？」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Hey! Finished that last job\n yet, {hero}?」\n",
+  "pages": "\"Hey! Finished that last job yet, {hero}?\""
  }
 ]

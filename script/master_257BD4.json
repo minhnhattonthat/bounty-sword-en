@@ -1292,7 +1292,8 @@
    1939
   ],
   "jp": "{spk}エリュシオン\n「やりおるわ　神の代理人よ‥‥」\n{next}\n「そして　ラインメタルの使い‥‥」\n{next}\n「そんなキサマが　この私の夢を\n　うちこわそうと　いうのか？\n　キサマが！　わが　千年の夢を！」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「Not bad, agent of the gods...」\n{next}\n「And messenger of\n Rheinmetall...」\n{next}\n「So you, you wretch, mean to\n smash this dream of mine?\n You?! My dream of a」\n{next}\n「thousand years?!」\n",
+  "pages": "\"Not bad, agent of the gods...\" || \"And messenger of Rheinmetall...\" || \"So you, you wretch, mean to smash this dream of mine? You?! My dream of a thousand years?!\""
  },
  {
   "id": "25B528",
@@ -1300,7 +1301,8 @@
    1940
   ],
   "jp": "{spk}{FF1F}\n「あいにくだな　皇帝‥‥　国も\n　黄道十二神も　関係ない\n　ただ　その　むすめを　助けたいだけだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Sorry to disappoint,\n Emperor... I don't care about\n nations or the Zodiac Gods. I」\n{next}\n「just want to save that girl.」\n",
+  "pages": "\"Sorry to disappoint, Emperor... I don't care about nations or the Zodiac Gods. I just want to save that girl.\""
  },
  {
   "id": "25B592",
@@ -1308,7 +1310,8 @@
    1941
   ],
   "jp": "{spk}エリュシオン\n「‥‥‥‥」\n{next}\n「それだけの力を　持ちながら　キサマは\n　国よりも　神よりも　平和よりも\n　たった一人の　むすめを　選ぶのか‥？」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「........」\n{next}\n「With all that power, you\n would choose one single girl\n over nations, over the gods,」\n{next}\n「over peace...?」\n",
+  "pages": "\"........\" || \"With all that power, you would choose one single girl over nations, over the gods, over peace...?\""
  },
  {
   "id": "25B628",
@@ -1316,7 +1319,8 @@
    1942
   ],
   "jp": "{spk}{FF1F}\n「だとしたら‥‥？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「And if I do...?」\n",
+  "pages": "\"And if I do...?\""
  },
  {
   "id": "25B644",
@@ -1324,7 +1328,8 @@
    1943
   ],
   "jp": "{spk}エリュシオン\n「ならば　この場で死ね！」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「Then die here!」\n",
+  "pages": "\"Then die here!\""
  },
  {
   "id": "25B670",
@@ -1332,7 +1337,8 @@
    1944
   ],
   "jp": "{spk}{FF28}\n「戦って！\n　{hero}と　ともに！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Fight! Fight with {hero}!」\n",
+  "pages": "\"Fight! Fight with {hero}!\""
  },
  {
   "id": "25B6A0",
@@ -1340,7 +1346,8 @@
    1945
   ],
   "jp": "{spk}ロジャー　　\n「‥‥こんな　こんな物など！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...Something like this...\n something like this won't\n stop me!」\n",
+  "pages": "\"...Something like this... something like this won't stop me!\""
  },
  {
   "id": "25B6D0",
@@ -1348,7 +1355,8 @@
    1946
   ],
   "jp": "{spk}ミランダ　　\n「‥‥神よ　今こそ力を！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「...O God, grant me strength\n now!」\n",
+  "pages": "\"...O God, grant me strength now!\""
  },
  {
   "id": "25B6FC",
@@ -1356,7 +1364,8 @@
    1947
   ],
   "jp": "{spk}ファウスト　\n「‥‥くだらぬ　結界です‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「...What a trifling barrier...」\n",
+  "pages": "\"...What a trifling barrier...\""
  },
  {
   "id": "25B72C",
@@ -1364,7 +1373,8 @@
    1948
   ],
   "jp": "{spk}シュタイア　\n「‥‥待っていろ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Hang on, {hero}!」\n",
+  "pages": "\"...Hang on, {hero}!\""
  },
  {
   "id": "25B760",
@@ -1372,7 +1382,8 @@
    1949
   ],
   "jp": "{spk}マウザー　　\n「‥‥う‥‥おりゃぁぁぁぁっ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「...Ngh... RAAAAAAH!」\n",
+  "pages": "\"...Ngh... RAAAAAAH!\""
  },
  {
   "id": "25B792",
@@ -1380,7 +1391,8 @@
    1950
   ],
   "jp": "{spk}アテナ　　　\n「‥‥この身が　くち果てようと！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「...Even if this body should fall\n to ruin!」\n",
+  "pages": "\"...Even if this body should fall to ruin!\""
  },
  {
   "id": "25B7C6",
@@ -1388,7 +1400,8 @@
    1951
   ],
   "jp": "{spk}ロブン　　　\n「‥‥天地の気よ　私に力を！」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「...Spirit of heaven and earth,\n lend me your power!」\n",
+  "pages": "\"...Spirit of heaven and earth, lend me your power!\""
  },
  {
   "id": "25B7F6",
@@ -1396,7 +1409,8 @@
    1952
   ],
   "jp": "{spk}ツキカゲ　　\n「‥‥こんな　楽しい戦い\n　見てるだけじゃ‥‥つまらん！」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「...A fight this fun? Just\n watching would be... boring!」\n",
+  "pages": "\"...A fight this fun? Just watching would be... boring!\""
  },
  {
   "id": "25B842",
@@ -1404,7 +1418,8 @@
    1953
   ],
   "jp": "{spk}リュウビ　　\n「‥‥ぬんッ！」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「...Hmph!」\n",
+  "pages": "\"...Hmph!\""
  },
  {
   "id": "25B864",
@@ -1412,7 +1427,8 @@
    1954
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥うせろ　邪悪な気よ！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...Begone, evil aura!」\n",
+  "pages": "\"...Begone, evil aura!\""
  },
  {
   "id": "25B892",
@@ -1420,7 +1436,8 @@
    1955
   ],
   "jp": "{spk}アジャックス\n「‥‥友よ　今行くぞ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...My friend, I'm coming!」\n",
+  "pages": "\"...My friend, I'm coming!\""
  },
  {
   "id": "25B8BC",
@@ -1428,7 +1445,8 @@
    1956
   ],
   "jp": "{spk}{FF28}\n「‥‥見て　{hero}！　みんなが\n　皇帝の結界を　自力で破ったわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Look, {hero}! Everyone\n broke the Emperor's barrier\n on their own!」\n",
+  "pages": "\"...Look, {hero}! Everyone broke the Emperor's barrier on their own!\""
  },
  {
   "id": "25B90C",
@@ -1436,7 +1454,8 @@
    1957
   ],
   "jp": "{spk}{FF1F}\n「よし　行くぞ！\n　これで　戦いは終わる！\n　‥‥いや　終わらせるんだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's go! This ends the\n war! ...No, we'll make it end!」\n",
+  "pages": "\"Right, let's go! This ends the war! ...No, we'll make it end!\""
  },
  {
   "id": "25B95E",
@@ -1444,7 +1463,8 @@
    1958
   ],
   "jp": "{spk}エリュシオン\n「私は　はるかな古代より\n　この時を　待ちわびていた\n　キサマらに　じゃまは　させん‥‥」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「I have awaited this moment\n since the far-off ancient\n age. I will not let you」\n{next}\n「wretches stand in my way...」\n",
+  "pages": "\"I have awaited this moment since the far-off ancient age. I will not let you wretches stand in my way...\""
  },
  {
   "id": "25B9CA",
@@ -1452,7 +1472,8 @@
    1959
   ],
   "jp": "{spk}エリュシオン\n「‥‥この‥‥皇帝の‥‥体を‥‥\n　使って‥‥私は‥‥よみがえった」\n{next}\n「‥‥長年の悲願‥‥はるかな夢\n　千年前は‥‥失敗したが‥‥\n　‥‥今度は‥‥今度こそ‥‥必ず」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「...I used... this... Emperor's...\n body... to return...」\n{next}\n「...My long-cherished wish... my\n distant dream... A thousand\n years ago... I failed... but...」\n{next}\n「this time... this time for\n sure...」\n",
+  "pages": "\"...I used... this... Emperor's... body... to return...\" || \"...My long-cherished wish... my distant dream... A thousand years ago... I failed... but... this time... this time for sure...\""
  },
  {
   "id": "25BA86",
@@ -1460,7 +1481,8 @@
    1960
   ],
   "jp": "{spk}{FF1F}\n「やはりキサマは　皇帝ではない！\n　その実体は　千年前にほろんだ\n　古代人の悪霊　そうだな‥‥？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So you're not the Emperor\n after all! What you really are\n is the evil spirit of an」\n{next}\n「ancient people who perished\n a thousand years ago. Am I\n right...?」\n",
+  "pages": "\"So you're not the Emperor after all! What you really are is the evil spirit of an ancient people who perished a thousand years ago. Am I right...?\""
  },
  {
   "id": "25BAF0",
@@ -1468,7 +1490,8 @@
    1961
   ],
   "jp": "{spk}エリュシオン\n「それが‥‥どうした‥‥！？\n　‥‥おろかな‥‥人間ふぜいが！」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「And what... of it...?! ...You\n foolish... mere human!」\n",
+  "pages": "\"And what... of it...?! ...You foolish... mere human!\""
  },
  {
   "id": "25BB42",
@@ -1476,7 +1499,8 @@
    1962
   ],
   "jp": "{spk}エリュシオン\n「‥‥なぜだ？　‥‥なぜ超機神は\n　よみがえらない‥‥\n　‥‥なぜだ？　‥‥超機神よ！？」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「...Why? ...Why does the\n Machine God Supreme not\n revive...? ...Why? ...Machine God」\n{next}\n「Supreme?!」\n",
+  "pages": "\"...Why? ...Why does the Machine God Supreme not revive...? ...Why? ...Machine God Supreme?!\""
  },
  {
   "id": "25BBAE",
@@ -1484,7 +1508,8 @@
    1963
   ],
   "jp": "{spk}エリュシオン\n「この体が‥‥ほろんで‥‥行く\n　‥‥私の‥‥世界は‥‥\n　超機神は‥‥なぜなのだ‥‥！？」\n{next}\n「‥‥」\n{next}\n「な‥‥ぜ‥‥だ‥‥！？」\n",
-  "en": ""
+  "en": "{spk}エリュシオン\n「This body... is... perishing...\n ...My... world... The Machine\n God Supreme... why...?!」\n{next}\n「...」\n{next}\n「Wh... y...?!」\n",
+  "pages": "\"This body... is... perishing... ...My... world... The Machine God Supreme... why...?!\" || \"...\" || \"Wh... y...?!\""
  },
  {
   "id": "25BC4A",
@@ -1492,7 +1517,8 @@
    1964
   ],
   "jp": "{spk}{FF1F}\n「消えろ！　古代の悪霊よ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Vanish, ancient evil spirit!」\n",
+  "pages": "\"Vanish, ancient evil spirit!\""
  },
  {
   "id": "25BC6E",
@@ -1500,7 +1526,8 @@
    1965
   ],
   "jp": "{spk}{FF28}\n「‥‥終わったのね　{hero}」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...It's over, isn't it, {hero}?」\n",
+  "pages": "\"...It's over, isn't it, {hero}?\""
  },
  {
   "id": "25BC98",
@@ -1508,7 +1535,8 @@
    1966
   ],
   "jp": "{spk}{FF1F}\n「ああ　何もかも　な‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah. All of it...」\n",
+  "pages": "\"Yeah. All of it...\""
  },
  {
   "id": "25BCBA",
@@ -1516,7 +1544,8 @@
    1967
   ],
   "jp": "{spk}{FF28}\n「超機神は　よみがえらなかった\n　皇帝は死に　皇帝に取りついていた\n　古代の悪霊も　消えてしまった‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The Machine God Supreme\n didn't revive. The Emperor is\n dead, and the ancient evil」\n{next}\n「spirit that possessed him is\n gone too...」\n",
+  "pages": "\"The Machine God Supreme didn't revive. The Emperor is dead, and the ancient evil spirit that possessed him is gone too...\""
  },
  {
   "id": "25BD2A",
@@ -1524,7 +1553,8 @@
    1968
   ],
   "jp": "{spk}{FF1F}\n「皇帝に　悪霊が　ついていたのか\n　それとも　皇帝が　古代の悪霊を\n　自分の体に　みちびき入れたのか」\n{next}\n「全ては　やみの中だ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Did the evil spirit possess\n the Emperor? Or did the\n Emperor lead the ancient evil」\n{next}\n「spirit into his own body?」\n{next}\n「It's all lost in darkness now...」\n",
+  "pages": "\"Did the evil spirit possess the Emperor? Or did the Emperor lead the ancient evil spirit into his own body?\" || \"It's all lost in darkness now...\""
  },
  {
   "id": "25BDB8",
@@ -1532,7 +1562,8 @@
    1969
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥いいえ　父は　確かに\n　自分の意志で　超機神を\n　よみがえらせようと　しました」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...No. My father truly did try\n to revive the Machine God\n Supreme of his own will.」\n",
+  "pages": "\"...No. My father truly did try to revive the Machine God Supreme of his own will.\""
  },
  {
   "id": "25BE20",
@@ -1540,7 +1571,8 @@
    1970
   ],
   "jp": "{spk}{FF28}\n「{FF31}　目をさましたの！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{FF31}, you're awake?!」\n",
+  "pages": "\"{FF31}, you're awake?!\""
  },
  {
   "id": "25BE42",
@@ -1548,7 +1580,8 @@
    1971
   ],
   "jp": "{spk}{FF31}　　　　　\n「ありがとう　{hero}‥‥\n　約束通り　父を倒してくれて」\n{next}\n「それと‥‥」\n{next}\n「私を　迎えに　きてくれて」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Thank you, {hero}... for\n defeating my father, as you\n promised.」\n{next}\n「And...」\n{next}\n「for coming to take me home.」\n",
+  "pages": "\"Thank you, {hero}... for defeating my father, as you promised.\" || \"And...\" || \"for coming to take me home.\""
  },
  {
   "id": "25BEC8",
@@ -1556,7 +1589,8 @@
    1972
   ],
   "jp": "{spk}{FF1F}\n「これで　良かったのか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Was this really for the best?」\n",
+  "pages": "\"Was this really for the best?\""
  },
  {
   "id": "25BEEA",
@@ -1564,7 +1598,8 @@
    1973
   ],
   "jp": "{spk}{FF31}　　　　　\n「もちろんよ‥‥もちろん‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Of course it was... of course...」\n",
+  "pages": "\"Of course it was... of course...\""
  },
  {
   "id": "25BF1A",
@@ -1580,7 +1615,8 @@
    1975
   ],
   "jp": "{spk}{FF28}\n「さあ　行きましょう　{hero}」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Come on, let's go, {hero}.」\n",
+  "pages": "\"Come on, let's go, {hero}.\""
  },
  {
   "id": "25BF5A",
@@ -1588,7 +1624,8 @@
    1976
   ],
   "jp": "{spk}{FF1F}\n「‥‥この地ひびきは！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...What's that rumbling?!」\n",
+  "pages": "\"...What's that rumbling?!\""
  },
  {
   "id": "25BF7C",
@@ -1596,7 +1633,8 @@
    1977
   ],
   "jp": "{spk}{FF28}\n「声が！？　頭の中に\n　直接　声がひびいてくる！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「A voice?! A voice is echoing\n right inside my head?!」\n",
+  "pages": "\"A voice?! A voice is echoing right inside my head?!\""
  },
  {
   "id": "25BFB8",
@@ -1604,7 +1642,8 @@
    1978
   ],
   "jp": "{spk}声　　　　　\n「なるほど‥‥そういう事か\n　皇帝の　むすめの　血だけでは\n　超機神の復活には　足りなかった」\n{next}\n「皇帝自身が　死んだ時の　血\n　それが　復活に　必要だった‥‥」\n{next}\n「そして‥‥今こそ超機神が‥‥」\n",
-  "en": ""
+  "en": "{spk}声　　　　　\n「I see... so that's how it is.\n The blood of the Emperor's\n daughter alone was not」\n{next}\n「enough to revive the Machine\n God Supreme.」\n{next}\n「The blood of the Emperor\n himself, shed at his death...\n that was what the revival」\n{next}\n「needed...」\n{next}\n「And now... at last the\n Machine God Supreme...」\n",
+  "pages": "\"I see... so that's how it is. The blood of the Emperor's daughter alone was not enough to revive the Machine God Supreme.\" || \"The blood of the Emperor himself, shed at his death... that was what the revival needed...\" || \"And now... at last the Machine God Supreme...\""
  },
  {
   "id": "25C094",
@@ -1612,7 +1651,8 @@
    1979
   ],
   "jp": "{spk}{FF1F}\n「さがれ！　ここは危険だ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Get back! It's dangerous\n here!」\n",
+  "pages": "\"Get back! It's dangerous here!\""
  },
  {
   "id": "25C0B8",
@@ -1620,7 +1660,8 @@
    1980
   ],
   "jp": "{spk}{FF1F}\n「こ‥‥これが‥‥超機神！？」\n{next}\n「‥‥しかし　なぜだ！？　皇帝は\n　すでに死んでいる！　操る者は\n　この世に　いないはずなのに！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Th... this is... the Machine God\n Supreme?!」\n{next}\n「...But why?! The Emperor is\n already dead! There should\n be no one left in this world」\n{next}\n「to control it!」\n",
+  "pages": "\"Th... this is... the Machine God Supreme?!\" || \"...But why?! The Emperor is already dead! There should be no one left in this world to control it!\""
  },
  {
   "id": "25C148",
@@ -1628,7 +1669,8 @@
    1981
   ],
   "jp": "{spk}{FF28}\n「声よ　{hero}　さっきの声が！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The voice, {hero}! It's the\n voice from before!」\n",
+  "pages": "\"The voice, {hero}! It's the voice from before!\""
  },
  {
   "id": "25C176",
@@ -1636,7 +1678,8 @@
    1982
   ],
   "jp": "{spk}声　　　　　\n「今こそ　超機神は　よみがえった\n　古代の神々の　超兵器\n　大いなるやみ　大いなる破めつが‥‥」\n",
-  "en": ""
+  "en": "{spk}声　　　　　\n「Now the Machine God\n Supreme is revived. The\n super weapon of the ancient」\n{next}\n「gods... Great darkness, great\n destruction...」\n",
+  "pages": "\"Now the Machine God Supreme is revived. The super weapon of the ancient gods... Great darkness, great destruction...\""
  },
  {
   "id": "25C1E8",
@@ -1644,7 +1687,8 @@
    1983
   ],
   "jp": "{spk}{FF1F}\n「‥‥キサマは　何者だ！？\n　このバケモノを使って\n　何を　しようというのだ！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Who are you?! What do you\n mean to do with this\n monster?!」\n",
+  "pages": "\"...Who are you?! What do you mean to do with this monster?!\""
  },
  {
   "id": "25C242",
@@ -1652,7 +1696,8 @@
    1984
   ],
   "jp": "{spk}声　　　　　\n「超機神は　すなわち　神の力\n　私は　この大いなる力を　使い\n　世界の全てを　ほろぼすつもりだ」\n{next}\n「‥‥そして　全てがほろびさり\n　世界が　新しい朝を迎えた時\n　私は　新しい神になるだろう‥‥」\n",
-  "en": ""
+  "en": "{spk}声　　　　　\n「The Machine God Supreme is\n the power of the gods itself.\n I intend to use this great」\n{next}\n「power to destroy everything\n in the world.」\n{next}\n「...And when all has perished\n and the world greets a new\n dawn, I shall become a new」\n{next}\n「god...」\n",
+  "pages": "\"The Machine God Supreme is the power of the gods itself. I intend to use this great power to destroy everything in the world.\" || \"...And when all has perished and the world greets a new dawn, I shall become a new god...\""
  },
  {
   "id": "25C31A",
@@ -1660,7 +1705,8 @@
    1985
   ],
   "jp": "{spk}{FF1F}\n「‥‥バカな事を！\n　そうなる前に　このバケモノを\n　こなごなに　打ち砕くのみ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...That's insane! Before that\n happens, I'll smash this\n monster to pieces!」\n",
+  "pages": "\"...That's insane! Before that happens, I'll smash this monster to pieces!\""
  },
  {
   "id": "25C374",
@@ -1668,7 +1714,8 @@
    1986
   ],
   "jp": "{spk}声　　　　　\n「‥‥バカな事？」\n{next}\n「おろかな‥‥　バカな事を\n　言っているのは　君の方だよ‥‥」\n",
-  "en": ""
+  "en": "{spk}声　　　　　\n「...Insane?」\n{next}\n「How foolish... It is you who is\n talking nonsense...」\n",
+  "pages": "\"...Insane?\" || \"How foolish... It is you who is talking nonsense...\""
  },
  {
   "id": "25C3DC",
@@ -1676,7 +1723,8 @@
    1987
   ],
   "jp": "{spk}声　　　　　\n「超機神は　太古の神々が　作りし\n　最強の兵器‥‥　人が一年かけて\n　歩む所を　まばたきの間に移動する」\n{next}\n「超機神が　最初にほろぼす地は\n　ラインメタル王国　その首都だ」\n{next}\n「‥‥さあ　くるがよい　お前が\n　破めつを　くい止めたいのなら\n　そして　私の正体を　知りたいなら」\n{next}\n「ラインメタルの　首都で待つ‥‥」\n",
-  "en": ""
+  "en": "{spk}声　　　　　\n「The Machine God Supreme is\n the mightiest weapon, made\n by the gods of old... In the」\n{next}\n「blink of an eye it crosses\n ground a man would walk for\n a year.」\n{next}\n「The first land the Machine\n God Supreme will destroy is\n the Kingdom of Rheinmetall.」\n{next}\n「Its capital.」\n{next}\n「...Come, then, if you would\n stop the destruction. And if\n you would learn who I am.」\n{next}\n「I will wait in the capital of\n Rheinmetall...」\n",
+  "pages": "\"The Machine God Supreme is the mightiest weapon, made by the gods of old... In the blink of an eye it crosses ground a man would walk for a year.\" || \"The first land the Machine God Supreme will destroy is the Kingdom of Rheinmetall. Its capital.\" || \"...Come, then, if you would stop the destruction. And if you would learn who I am.\" || \"I will wait in the capital of Rheinmetall...\""
  },
  {
   "id": "25C52E",
@@ -1684,7 +1732,8 @@
    1988
   ],
   "jp": "「それきり　声はとぎれた‥‥」\n{next}\n「自らの　血に　よって　超機神の\n　封印を解き　永遠の眠りについた\n　神祖連邦の皇帝　エリュシオン‥‥」\n{next}\n「復活すると同時に　消えた\n　恐るべき　古代の兵器　超機神‥‥」\n{next}\n「オレたちに　ラインメタルの\n　首都へこいという　謎の声‥‥」\n{next}\n「オレは　確かめねばならない\n　このたびの　本当の意味を‥‥\n　この戦いの　本当の終着点を‥‥」\n「オレたちの戦いは　終わった」\n{next}\n「皇帝エリュシオンは　倒れ\n　フュリスは　その　うつろなひとみで\n　ただ　ちゅうを　見つめている‥‥」\n{next}\n「長き　旅の果てに　待っていたのは\n　あまりにも　苦く　つらい勝利だった」\n{next}\n「だが　オレたちは　それでも\n　生きて行かねば　ならない‥‥」\n{next}\n「この　荒れ果てた世の中で\n　生きぬく事こそが　オレたちの\n　もうひとつの　戦いなのだから‥‥」\n{next}\n「さあ　行こう」\n{next}\n「たとえ　その道のりが\n　苦しみに　みちたものだとしても」\n",
-  "en": ""
+  "en": "「With that, the voice fell\n silent...」\n{next}\n「Elysion, Emperor of the\n Divine Federation, broke the\n seal of the Machine God」\n{next}\n「Supreme with his own blood\n and went to his eternal\n sleep...」\n{next}\n「The Machine God Supreme, a\n terrifying ancient weapon,\n vanished the moment it」\n{next}\n「revived...」\n{next}\n「And a mysterious voice\n telling us to come to the\n capital of Rheinmetall...」\n{next}\n「I have to find out the true\n meaning of this journey... the\n true end of this war...\" 」\n{next}\n「\"Our battle is over.」\n{next}\n「Emperor Elysion has fallen,\n and Furis just stares into\n space with hollow eyes...」\n{next}\n「What waited at the end of\n our long journey was a\n victory far too bitter and」\n{next}\n「painful.」\n{next}\n「But even so, we have to go\n on living...」\n{next}\n「Because in this ruined world,\n surviving is our other\n battle...」\n{next}\n「Come on, let's go.」\n{next}\n「Even if the road ahead is full\n of suffering.」\n",
+  "pages": "\"With that, the voice fell silent...\" || \"Elysion, Emperor of the Divine Federation, broke the seal of the Machine God Supreme with his own blood and went to his eternal sleep...\" || \"The Machine God Supreme, a terrifying ancient weapon, vanished the moment it revived...\" || \"And a mysterious voice telling us to come to the capital of Rheinmetall...\" || \"I have to find out the true meaning of this journey... the true end of this war...\" \\n \"Our battle is over.\" || \"Emperor Elysion has fallen, and Furis just stares into space with hollow eyes...\" || \"What waited at the end of our long journey was a victory far too bitter and painful.\" || \"But even so, we have to go on living...\" || \"Because in this ruined world, surviving is our other battle...\" || \"Come on, let's go.\" || \"Even if the road ahead is full of suffering.\""
  },
  {
   "id": "25C888",
@@ -1692,7 +1741,8 @@
    1989
   ],
   "jp": "{spk}テティス　　\n「だめよ　{hero}！\n　そんな事してる　場合じゃない！」\n{next}\n「早く　ラインメタル王国の\n　首都へ　むかわないと！」\n",
-  "en": ""
+  "en": "{spk}テティス　　\n「No, {hero}! This is no time\n for that!」\n{next}\n「We have to hurry to the\n capital of the Kingdom of\n Rheinmetall!」\n",
+  "pages": "\"No, {hero}! This is no time for that!\" || \"We have to hurry to the capital of the Kingdom of Rheinmetall!\""
  },
  {
   "id": "25C912",
@@ -1700,7 +1750,8 @@
    1990
   ],
   "jp": "「これで　長かった　たびは　終わるのか」\n{next}\n「謎の声に　みちびかれて\n　オレは　ラインメタル王国の\n　首都へと　まいもどってきた」\n{next}\n「{FF31}とたび立ち　数か月\n　そうだ　オレのたびは\n　この地から　始まったのだ‥‥」\n{next}\n「そして今　この地で\n　全てが　終わろうとしている‥‥」\n{next}\n「この　じごくの　戦場で‥‥」\n",
-  "en": ""
+  "en": "「Will this end my long\n journey?」\n{next}\n「Led by the mysterious voice,\n I have returned to the\n capital of the Kingdom of」\n{next}\n「Rheinmetall.」\n{next}\n「It's been a few months since\n I set out with {FF31}.\n That's right... my journey」\n{next}\n「began here...」\n{next}\n「And now, here, it is all about\n to end...」\n{next}\n「On this hellish battlefield...」\n",
+  "pages": "\"Will this end my long journey?\" || \"Led by the mysterious voice, I have returned to the capital of the Kingdom of Rheinmetall.\" || \"It's been a few months since I set out with {FF31}. That's right... my journey began here...\" || \"And now, here, it is all about to end...\" || \"On this hellish battlefield...\""
  },
  {
   "id": "25CA50",
@@ -1708,7 +1759,8 @@
    1991
   ],
   "jp": "「真実の戦い」\n",
-  "en": ""
+  "en": "「The True Battle」\n",
+  "pages": "\"The True Battle\""
  },
  {
   "id": "25CA60",
@@ -1716,7 +1768,8 @@
    1992
   ],
   "jp": "{spk}{FF28}\n「街が‥‥！？　首都が‥‥！？\n　まるで　ガレキの山だわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The city...?! The capital...?! It's\n nothing but a heap of rubble!」\n",
+  "pages": "\"The city...?! The capital...?! It's nothing but a heap of rubble!\""
  },
  {
   "id": "25CAA4",
@@ -1724,7 +1777,8 @@
    1993
   ],
   "jp": "{spk}デトニクス　\n「‥‥{hero}か‥‥？」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「...{hero}... is that you...?」\n",
+  "pages": "\"...{hero}... is that you...?\""
  },
  {
   "id": "25CAD2",
@@ -1732,7 +1786,8 @@
    1994
   ],
   "jp": "{spk}{FF1F}\n「‥‥デトニクスか？　いったい\n　ここで　何があったんだ！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Detonics? What on earth\n happened here?!」\n",
+  "pages": "\"...Detonics? What on earth happened here?!\""
  },
  {
   "id": "25CB18",
@@ -1740,7 +1795,8 @@
    1995
   ],
   "jp": "{spk}デトニクス　\n「‥‥おそかったよ‥‥何もかも」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「...We were too late... for\n everything.」\n",
+  "pages": "\"...We were too late... for everything.\""
  },
  {
   "id": "25CB4A",
@@ -1748,7 +1804,8 @@
    1996
   ],
   "jp": "{spk}デトニクス　\n「‥‥情けない　話だぜ\n　コルツも‥‥やられちまった」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「...It's pathetic... Colts... got\n taken out too.」\n",
+  "pages": "\"...It's pathetic... Colts... got taken out too.\""
  },
  {
   "id": "25CB92",
@@ -1756,7 +1813,8 @@
    1997
   ],
   "jp": "{spk}デトニクス　\n「‥‥ちくしょう‥‥ヘンメリーも\n　コルツをかばって‥‥いっしょに‥‥」\n{next}\n「‥‥おそかったんだよ‥‥全て‥‥」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「...Damn it... Hammerli too...\n shielding Colts... both of\n them...」\n{next}\n「...We were too late... for all\n of it...」\n",
+  "pages": "\"...Damn it... Hammerli too... shielding Colts... both of them...\" || \"...We were too late... for all of it...\""
  },
  {
   "id": "25CC16",
@@ -1764,7 +1822,8 @@
    1998
   ],
   "jp": "{spk}{FF1F}\n「‥‥おそかっただと？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Too late, you say?」\n",
+  "pages": "\"...Too late, you say?\""
  },
  {
   "id": "25CC36",
@@ -1772,7 +1831,8 @@
    1999
   ],
   "jp": "{spk}デトニクス　\n「騎士団も‥‥国防軍も‥‥\n　‥‥みんな‥‥たった数分で\n　やられ‥‥ちまったよ‥‥」\n{next}\n「‥‥勝てない‥‥人間には‥‥\n　決して‥‥あの‥‥\n　バケモノ‥‥には‥‥勝てない」\n{next}\n「しかし　{hero}‥‥」\n{next}\n「アンタ‥‥な‥‥ら‥‥」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「The knights... the national\n army... everyone... wiped out...\n in just a few minutes...」\n{next}\n「...Can't win... humans... can\n never... beat... that...\n monster...」\n{next}\n「But {hero}...」\n{next}\n「You... might... be... able...」\n",
+  "pages": "\"The knights... the national army... everyone... wiped out... in just a few minutes...\" || \"...Can't win... humans... can never... beat... that... monster...\" || \"But {hero}...\" || \"You... might... be... able...\""
  },
  {
   "id": "25CD3C",
@@ -1780,7 +1840,8 @@
    2000
   ],
   "jp": "{spk}{FF1F}\n「この首都は‥‥超機神が！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「This capital... the Machine God\n Supreme did this?!」\n",
+  "pages": "\"This capital... the Machine God Supreme did this?!\""
  },
  {
   "id": "25CD62",
@@ -1788,7 +1849,8 @@
    2001
   ],
   "jp": "{spk}マクベス　　\n「その通りだ　{hero}‥‥\n　これが超機神の力　神が作りし\n　最強の兵器の　はかい力なのだよ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Exactly, {hero}... This is the\n power of the Machine God\n Supreme. The destructive」\n{next}\n「power of the mightiest\n weapon the gods made.」\n",
+  "pages": "\"Exactly, {hero}... This is the power of the Machine God Supreme. The destructive power of the mightiest weapon the gods made.\""
  },
  {
   "id": "25CDD6",
@@ -1796,7 +1858,8 @@
    2002
   ],
   "jp": "{spk}{FF28}\n「‥‥超機神！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...The Machine God Supreme?!」\n",
+  "pages": "\"...The Machine God Supreme?!\""
  },
  {
   "id": "25CDF0",
@@ -1804,7 +1867,8 @@
    2003
   ],
   "jp": "{spk}{FF1F}\n「‥‥マクベスか！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Macbeth?!」\n",
+  "pages": "\"...Macbeth?!\""
  },
  {
   "id": "25CE0E",
@@ -1812,7 +1876,8 @@
    2004
   ],
   "jp": "{spk}マクベス　　\n「私のメッセージを　聞き入れて\n　よく　帰ってきてくれたな‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「So you heeded my message\n and came back. Well done...」\n",
+  "pages": "\"So you heeded my message and came back. Well done...\""
  },
  {
   "id": "25CE60",
@@ -1820,7 +1885,8 @@
    2005
   ],
   "jp": "{spk}{FF1F}\n「連邦の王城に　ひびいた　あの声は\n　お前の物だったのか　マクベス‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That voice that echoed\n through the Federation's\n castle... it was yours,」\n{next}\n「Macbeth...」\n",
+  "pages": "\"That voice that echoed through the Federation's castle... it was yours, Macbeth...\""
  },
  {
   "id": "25CEB0",
@@ -1828,7 +1894,8 @@
    2006
   ],
   "jp": "{spk}マクベス　　\n「いかにも　私の声だ\n　しかし　この超機神の力を見ろ\n　すばらしいとは　思わんか‥‥？」\n{next}\n「連邦の皇帝を　道具にしたて\n　この力を　手に入れた　かいが\n　あったという物だな　{hero}」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Indeed it was my voice. But\n look at the power of this\n Machine God Supreme. Don't」\n{next}\n「you find it magnificent...?」\n{next}\n「It was well worth making a\n tool of the Federation's\n Emperor to get this power,」\n{next}\n「{hero}.」\n",
+  "pages": "\"Indeed it was my voice. But look at the power of this Machine God Supreme. Don't you find it magnificent...?\" || \"It was well worth making a tool of the Federation's Emperor to get this power, {hero}.\""
  },
  {
   "id": "25CF82",
@@ -1836,7 +1903,8 @@
    2007
   ],
   "jp": "{spk}{FF1F}\n「どういう事だ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What do you mean?」\n",
+  "pages": "\"What do you mean?\""
  },
  {
   "id": "25CF9C",
@@ -1844,7 +1912,8 @@
    2008
   ],
   "jp": "{spk}マクベス　　\n「お前が　神の代理人で　あるように\n　この私も　そうなんだよ\n　ただし　悪神の代理人だがね‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Just as you are an agent of\n the gods, so am I. Only, I am\n the agent of an evil god...」\n",
+  "pages": "\"Just as you are an agent of the gods, so am I. Only, I am the agent of an evil god...\""
  },
  {
   "id": "25D00E",
@@ -1852,7 +1921,8 @@
    2009
   ],
   "jp": "{spk}{FF1F}\n「悪神の‥‥代理人‥‥」\n{next}\n「‥‥なるほどな　だからこそ\n　超機神復活に　必要な\n　{FF31}を　オレに　探させた」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Agent... of an evil god...」\n{next}\n「...I see. That's exactly why\n you had me search for\n {FF31}. You needed her to」\n{next}\n「revive the Machine God\n Supreme.」\n",
+  "pages": "\"Agent... of an evil god...\" || \"...I see. That's exactly why you had me search for {FF31}. You needed her to revive the Machine God Supreme.\""
  },
  {
   "id": "25D084",
@@ -1860,7 +1930,8 @@
    2010
   ],
   "jp": "{spk}マクベス　　\n「ふふ‥‥　お前が　小むすめを　連れて\n　反乱軍などに　参加するのは\n　全くの　けいさん違いだったがね」\n{next}\n「だが　もう　どうでもいい‥‥\n　それより　見るがいい！\n　この超機神の　恐るべき力を！」\n{next}\n「わが　ラインメタル王国は\n　神が与えし　この力を持って\n　今こそ　世界の頂点に立つ！」\n{next}\n「‥‥もちろん　神に選ばれた\n　この私が　統治する\n　新たな　ラインメタル王国がね！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Heh... I admit I never counted\n on you taking the little girl\n and joining the rebel army.」\n{next}\n「But it no longer matters...\n Never mind that, look! Behold\n the fearsome power of this」\n{next}\n「Machine God Supreme!」\n{next}\n「With this power the gods\n bestowed, our Kingdom of\n Rheinmetall shall now stand」\n{next}\n「at the summit of the world!」\n{next}\n「...A new Kingdom of\n Rheinmetall, ruled, of course,\n by me, the one chosen by」\n{next}\n「the gods!」\n",
+  "pages": "\"Heh... I admit I never counted on you taking the little girl and joining the rebel army.\" || \"But it no longer matters... Never mind that, look! Behold the fearsome power of this Machine God Supreme!\" || \"With this power the gods bestowed, our Kingdom of Rheinmetall shall now stand at the summit of the world!\" || \"...A new Kingdom of Rheinmetall, ruled, of course, by me, the one chosen by the gods!\""
  },
  {
   "id": "25D218",
@@ -1868,7 +1939,8 @@
    2011
   ],
   "jp": "{spk}{FF1F}\n「今　ようやくわかったよ‥‥」\n{next}\n「神が何者なのか　神が　なぜ\n　この世から　消え去ったのかが‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Now I finally understand...」\n{next}\n「What the gods were, and\n why they vanished from this\n world...」\n",
+  "pages": "\"Now I finally understand...\" || \"What the gods were, and why they vanished from this world...\""
  },
  {
   "id": "25D286",
@@ -1876,7 +1948,8 @@
    2012
   ],
   "jp": "{spk}マクベス　　\n「‥‥何を言っている　{hero}？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...What are you talking about,\n {hero}?」\n",
+  "pages": "\"...What are you talking about, {hero}?\""
  },
  {
   "id": "25D2BE",
@@ -1884,7 +1957,8 @@
    2013
   ],
   "jp": "{spk}{FF1F}\n「神はオレ達より　少しばかり\n　頭のいい　連中だったんだろう\n　だが　それだけの事さ‥‥」\n{next}\n「オレ達と　大して変わらない\n　戦さ好きの　人間だったんだ‥‥」\n{next}\n「自分達の作った　恐怖の兵器で\n　殺し合い　うばいあい　そして\n　最後には　ほろぼしあった‥‥」\n{next}\n「そこにあるのは　ただの　いぶつだ」\n{next}\n「さびついた剣や　ヤリと同じ\n　土にうもれていた\n　大昔の　いぶつにしか　すぎん！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The gods were probably just\n a bit smarter than us. But\n that's all...」\n{next}\n「They were war-loving people,\n not much different from us...」\n{next}\n「With the weapons of terror\n they made, they killed each\n other, robbed each other,」\n{next}\n「and in the end wiped each\n other out...」\n{next}\n「That thing there is nothing\n but a relic.」\n{next}\n「Just like a rusted sword or\n spear, it's a relic from ages\n ago that was buried in the」\n{next}\n「dirt. Nothing more!」\n",
+  "pages": "\"The gods were probably just a bit smarter than us. But that's all...\" || \"They were war-loving people, not much different from us...\" || \"With the weapons of terror they made, they killed each other, robbed each other, and in the end wiped each other out...\" || \"That thing there is nothing but a relic.\" || \"Just like a rusted sword or spear, it's a relic from ages ago that was buried in the dirt. Nothing more!\""
  },
  {
   "id": "25D450",
@@ -1892,7 +1966,8 @@
    2014
   ],
   "jp": "{spk}マクベス　　\n「それが　神の代理人として\n　戦ってきた　お前のセリフか？」\n{next}\n「黄道十二神の　報奨の力である\n　バウンティ°ソードを手にして\n　戦ってきた　お前の言う事か？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Is that how you talk, after\n fighting as an agent of the\n gods?」\n{next}\n「Is that what you say, after\n fighting with the Bounty\n Sword, the reward power of」\n{next}\n「the Zodiac Gods, in your\n hand?」\n",
+  "pages": "\"Is that how you talk, after fighting as an agent of the gods?\" || \"Is that what you say, after fighting with the Bounty Sword, the reward power of the Zodiac Gods, in your hand?\""
  },
  {
   "id": "25D504",
@@ -1900,7 +1975,8 @@
    2015
   ],
   "jp": "{spk}{FF1F}\n「‥‥神は　とうの昔に死んだ！」\n{next}\n「このバウンティ°ソードも\n　ただの　武器にしか　すぎん！\n　お前を討つための　武器にしか！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...The gods died long ago!」\n{next}\n「This Bounty Sword is nothing\n but a weapon! Nothing but a\n weapon to cut you down!」\n",
+  "pages": "\"...The gods died long ago!\" || \"This Bounty Sword is nothing but a weapon! Nothing but a weapon to cut you down!\""
  },
  {
   "id": "25D590",
@@ -1908,7 +1984,8 @@
    2016
   ],
   "jp": "{spk}ロジャー　　\n「神のためでは　ないぞ！\n　われら反乱軍は　人のためにある！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「It's not for the gods! We\n rebel army fight for the\n people!」\n",
+  "pages": "\"It's not for the gods! We rebel army fight for the people!\""
  },
  {
   "id": "25D5E0",
@@ -1916,7 +1993,8 @@
    2017
   ],
   "jp": "{spk}ミランダ　　\n「私たちの神は　心の中にあります\n　平和をいのる　人々の心の中に！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Our God lives in our hearts.\n In the hearts of people who\n pray for peace!」\n",
+  "pages": "\"Our God lives in our hearts. In the hearts of people who pray for peace!\""
  },
  {
   "id": "25D636",
@@ -1924,7 +2002,8 @@
    2018
   ],
   "jp": "{spk}ファウスト　\n「運命‥‥　そうですね‥‥\n　これがもし　運命ならば‥‥\n　私たちは　自由のために　戦います」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Fate... Yes... If this is fate...\n then we will fight for\n freedom.」\n",
+  "pages": "\"Fate... Yes... If this is fate... then we will fight for freedom.\""
  },
  {
   "id": "25D6A6",
@@ -1932,7 +2011,8 @@
    2019
   ],
   "jp": "{spk}シュタイア　\n「過去の　いぶつの　ために　殺し合う‥‥\n　ならば！　そんな　いぶつは\n　オレの手で　たたきこわしてやろう！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Killing each other for relics\n of the past... Then I'll smash\n those relics to pieces with」\n{next}\n「my own hands!」\n",
+  "pages": "\"Killing each other for relics of the past... Then I'll smash those relics to pieces with my own hands!\""
  },
  {
   "id": "25D726",
@@ -1940,7 +2020,8 @@
    2020
   ],
   "jp": "{spk}マウザー　　\n「巨悪には　拳をもって　立ち向かえ\n　古き言い伝えは　まさしく\n　この時のために　あったようだな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Face great evil with your\n fists... Looks like that old\n saying was made for this」\n{next}\n「very moment!」\n",
+  "pages": "\"Face great evil with your fists... Looks like that old saying was made for this very moment!\""
  },
  {
   "id": "25D79C",
@@ -1948,7 +2029,8 @@
    2021
   ],
   "jp": "{spk}アテナ　　　\n「神が殺す事を　求めるなら\n　私は　その神を　斬る！\n　‥‥人として　生きるために！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「If a god demands killing, then\n I will cut that god down! ...So\n that I may live as a human」\n{next}\n「being!」\n",
+  "pages": "\"If a god demands killing, then I will cut that god down! ...So that I may live as a human being!\""
  },
  {
   "id": "25D804",
@@ -1956,7 +2038,8 @@
    2022
   ],
   "jp": "{spk}ロブン　　　\n「超機神‥‥　自分の国を\n　燃やすような兵器は　もはや\n　兵器ですら　ありますまい‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「The Machine God Supreme... A\n weapon that burns its own\n country can no longer even」\n{next}\n「be called a weapon...」\n",
+  "pages": "\"The Machine God Supreme... A weapon that burns its own country can no longer even be called a weapon...\""
  },
  {
   "id": "25D86E",
@@ -1964,7 +2047,8 @@
    2023
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　超機神だと‥‥？\n　オレが好きなのは　強い人間だ\n　強い心を持った　人間だけだ‥‥」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... A Machine God\n Supreme, is it...? What I like\n are strong people. Only」\n{next}\n「people with strong hearts...」\n",
+  "pages": "\"Heh heh heh... A Machine God Supreme, is it...? What I like are strong people. Only people with strong hearts...\""
  },
  {
   "id": "25D8E2",
@@ -1972,7 +2056,8 @@
    2024
   ],
   "jp": "{spk}リュウビ　　\n「{hero}どの‥‥\n　私たちも　ともに戦いますぞ」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「Sir {hero}... we shall fight\n at your side as well.」\n",
+  "pages": "\"Sir {hero}... we shall fight at your side as well.\""
  },
  {
   "id": "25D92A",
@@ -1980,7 +2065,8 @@
    2025
   ],
   "jp": "{spk}ルーネ　　　\n「希望があればこそ　私は\n　連邦にも　参加した　しかし\n　この超機神には　希望などない！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「It was hope that made me\n join the Federation. But this\n Machine God Supreme holds」\n{next}\n「no hope at all!」\n",
+  "pages": "\"It was hope that made me join the Federation. But this Machine God Supreme holds no hope at all!\""
  },
  {
   "id": "25D996",
@@ -1988,7 +2074,8 @@
    2026
   ],
   "jp": "{spk}アジャックス\n「‥‥マクベス　十年前の　お前は\n　たしかに　この国を　愛していた」\n{next}\n「その愛するがゆえの　強き思いが\n　お前を　悪神の代理人に　したてた」\n{next}\n「それは　わかる！」\n{next}\n「だがな　守るべき街を　燃やし\n　神の力を　ふりかざす\n　今の　お前は　ただのはかい者だ‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...Macbeth, ten years ago you\n truly loved this country.」\n{next}\n「And that love, that strong\n feeling, is what made you\n the agent of an evil god.」\n{next}\n「That much I understand!」\n{next}\n「But a man who burns the\n city he should protect and\n brandishes the power of the」\n{next}\n「gods... Today you're nothing\n but a destroyer...」\n",
+  "pages": "\"...Macbeth, ten years ago you truly loved this country.\" || \"And that love, that strong feeling, is what made you the agent of an evil god.\" || \"That much I understand!\" || \"But a man who burns the city he should protect and brandishes the power of the gods... Today you're nothing but a destroyer...\""
  },
  {
   "id": "25DAB6",
@@ -1996,7 +2083,8 @@
    2027
   ],
   "jp": "{spk}マクベス　　\n「‥‥神は‥‥死んだだと？\n　ならば　この私が　神となろう！\n　新たな神となり　世を統治する！」\n{next}\n「この　超機神の力が　あれば！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...The gods... are dead, you\n say? Then I shall become a\n god! A new god, ruling over」\n{next}\n「the world!」\n{next}\n「With the power of this\n Machine God Supreme!」\n",
+  "pages": "\"...The gods... are dead, you say? Then I shall become a god! A new god, ruling over the world!\" || \"With the power of this Machine God Supreme!\""
  },
  {
   "id": "25DB4E",
@@ -2004,7 +2092,8 @@
    2028
   ],
   "jp": "{spk}マクベス　　\n「超機神の　真なる力を見よ！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Behold the true power of\n the Machine God Supreme!」\n",
+  "pages": "\"Behold the true power of the Machine God Supreme!\""
  },
  {
   "id": "25DB7E",
@@ -2012,7 +2101,8 @@
    2029
   ],
   "jp": "{spk}{FF28}\n「超機神の姿が‥‥変わった！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The Machine God Supreme...\n changed shape?!」\n",
+  "pages": "\"The Machine God Supreme... changed shape?!\""
  },
  {
   "id": "25DBA6",
@@ -2020,7 +2110,8 @@
    2030
   ],
   "jp": "{spk}マクベス　　\n「‥‥超機神は　進化する兵器！\n　死んだ人間の　生命をくらい\n　より強力に　変形していくのだ！」\n{next}\n「‥‥{hero}よ\n　神の怒りを　知るがいい！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...The Machine God Supreme is\n a weapon that evolves! It\n devours the life of the dead」\n{next}\n「and transforms into\n something even stronger!」\n{next}\n「...{hero}, know the wrath of\n the gods!」\n",
+  "pages": "\"...The Machine God Supreme is a weapon that evolves! It devours the life of the dead and transforms into something even stronger!\" || \"...{hero}, know the wrath of the gods!\""
  },
  {
   "id": "25DC50",
@@ -2028,7 +2119,8 @@
    2031
   ],
   "jp": "{spk}マクベス　　\n「‥‥きかぬよ　全くな‥‥\n　しょせん　人の力など\n　この程度の物に　すぎぬ‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...That doesn't work. Not at\n all... In the end, human power\n amounts to no more than」\n{next}\n「this...」\n",
+  "pages": "\"...That doesn't work. Not at all... In the end, human power amounts to no more than this...\""
  },
  {
   "id": "25DCB4",
@@ -2036,7 +2128,8 @@
    2032
   ],
   "jp": "{spk}マクベス　　\n「‥‥おろかな者どもよ\n　この地上から　消え失せよ‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...Foolish wretches, vanish\n from the face of this earth...」\n",
+  "pages": "\"...Foolish wretches, vanish from the face of this earth...\""
  },
  {
   "id": "25DCFE",
@@ -2044,7 +2137,8 @@
    2033
   ],
   "jp": "{spk}マクベス　　\n「なるほど‥‥　この力で\n　連邦軍を　ほろぼしたか‥‥」\n{next}\n「‥‥だが　わからぬのか？\n　力で　打ち勝った者は　いつか\n　同じく力で　ほろぼされる‥‥」\n{next}\n「今が　その時だよ　{hero}‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「I see... So this is the power\n you used to destroy the\n Federation army...」\n{next}\n「...But don't you understand?\n Those who win by force will\n one day be destroyed by」\n{next}\n「force just the same...」\n{next}\n「And that day is now,\n {hero}...」\n",
+  "pages": "\"I see... So this is the power you used to destroy the Federation army...\" || \"...But don't you understand? Those who win by force will one day be destroyed by force just the same...\" || \"And that day is now, {hero}...\""
  },
  {
   "id": "25DDD6",
@@ -2052,7 +2146,8 @@
    2034
   ],
   "jp": "{spk}マクベス　　\n「なかなか　しぶとい‥‥\n　十年前も　こうして\n　生きのびたのか　{hero}？」\n{next}\n「あの時　オレは　くやしかったよ\n　思うがままに　生きる\n　お前や　アジャックスが‥‥」\n{next}\n「そして　オレが密かに　愛した\n　ノルンを　うばった　お前が\n　にくかった！　{hero}よ！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「You are a stubborn one... Is\n this how you survived ten\n years ago too, {hero}?」\n{next}\n「Back then I was so bitter. At\n you and Ajax, living just as\n you pleased...」\n{next}\n「And I hated you for taking\n Norn, the woman I secretly\n loved! I hated you, {hero}!」\n",
+  "pages": "\"You are a stubborn one... Is this how you survived ten years ago too, {hero}?\" || \"Back then I was so bitter. At you and Ajax, living just as you pleased...\" || \"And I hated you for taking Norn, the woman I secretly loved! I hated you, {hero}!\""
  },
  {
   "id": "25DEFE",
@@ -2060,7 +2155,8 @@
    2035
   ],
   "jp": "{spk}マクベス　　\n「いい攻撃だ　{hero}‥‥」\n{next}\n「しかし　待たせたな\n　これが超機神の　真の姿だよ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「A fine attack, {hero}...」\n{next}\n「But sorry to keep you\n waiting. This is the true form\n of the Machine God Supreme.」\n",
+  "pages": "\"A fine attack, {hero}...\" || \"But sorry to keep you waiting. This is the true form of the Machine God Supreme.\""
  },
  {
   "id": "25DF6A",
@@ -2068,7 +2164,8 @@
    2036
   ],
   "jp": "{spk}{FF28}\n「{hero}！　超機神が！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! The Machine God\n Supreme is...?!」\n",
+  "pages": "\"{hero}! The Machine God Supreme is...?!\""
  },
  {
   "id": "25DF92",
@@ -2076,7 +2173,8 @@
    2037
   ],
   "jp": "{spk}マクベス　　\n「‥‥くだらぬ　くだらぬ話だ‥‥」\n{next}\n「お前らが　えらそうな事を言って\n　戦っているのも　つまる所は\n　ただの　じこ満足にしか　過ぎぬ‥‥」\n{next}\n「人のため　民のため　そんな大義も\n　自分の心情を　正当に見せる\n　ただの　言い訳にしか　過ぎぬ‥‥」\n{next}\n「仲間のため‥‥　友のため‥‥\n　友情‥‥正義‥‥愛情‥‥\n　どれも　くだらぬ　じこ満足だ‥‥」\n{next}\n「‥‥私は　おろかな人間を\n　こえるため　神になるのだ\n　人をすて　神として生きる‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...Trifling. What trifling talk...」\n{next}\n「All your high-minded words,\n the fighting you do... in the\n end, it is nothing but」\n{next}\n「self-satisfaction...」\n{next}\n「For the people, for the\n nation... such great causes\n are nothing but excuses to」\n{next}\n「make your own feelings look\n righteous...」\n{next}\n「For your comrades... for your\n friends... Friendship... justice...\n love... All of it trifling」\n{next}\n「self-satisfaction...」\n{next}\n「...I will become a god to rise\n above foolish humanity. I will\n cast off being human and」\n{next}\n「live as a god...」\n",
+  "pages": "\"...Trifling. What trifling talk...\" || \"All your high-minded words, the fighting you do... in the end, it is nothing but self-satisfaction...\" || \"For the people, for the nation... such great causes are nothing but excuses to make your own feelings look righteous...\" || \"For your comrades... for your friends... Friendship... justice... love... All of it trifling self-satisfaction...\" || \"...I will become a god to rise above foolish humanity. I will cast off being human and live as a god...\""
  },
  {
   "id": "25E162",
@@ -2084,7 +2182,8 @@
    2038
   ],
   "jp": "{spk}{FF1F}\n「そいつは違うぞ　マクベス」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That's where you're wrong,\n Macbeth.」\n",
+  "pages": "\"That's where you're wrong, Macbeth.\""
  },
  {
   "id": "25E186",
@@ -2092,7 +2191,8 @@
    2039
   ],
   "jp": "{spk}マクベス　　\n「ほほう‥‥？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Oh, is it...?」\n",
+  "pages": "\"Oh, is it...?\""
  },
  {
   "id": "25E1A8",
@@ -2100,7 +2200,8 @@
    2040
   ],
   "jp": "{spk}{FF1F}\n「なるほど　人間は　自分勝手な\n　生き物でしか　ないかもしれん」\n{next}\n「だが　十年前に　そして\n　今回のたびで　オレは\n　一人の少女に　おしえられた‥‥」\n{next}\n「自分自身が　そう思うから\n　いつも　自分の心に\n　正直に　生きていたいから‥‥」\n{next}\n「じこ満足　そうかもしれん‥‥」\n{next}\n「だが　そうやって\n　オレたちは　生きてきたさ」\n{next}\n「じこ満足であろうと　友を作り\n　仲間をいたわり　平和をそだて\n　明日の　安らぎだけを祈った‥‥」\n{next}\n「決して　大義などでは　ない\n　ただ仲間に　死んでほしくないから\n　戦いを見るのが　いやだから」\n{next}\n「それだけで　十分だ！」\n{next}\n「オレは　オレ自身のために\n　戦っている‥‥\n　もちろん　神の代理人でもない」\n{next}\n「こいつは　オレ自身に\n　決着をつけるための　戦いだ！」\n{next}\n「お前を　許せないという\n　オレ自身の　心情に\n　決着をつけるための　戦いだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Sure, maybe humans are\n nothing but selfish\n creatures.」\n{next}\n「But ten years ago, and again\n on this journey, a girl taught\n me something...」\n{next}\n「Because you believe it\n yourself... Because you\n always want to live honest」\n{next}\n「to your own heart...」\n{next}\n「Self-satisfaction? Maybe it\n is...」\n{next}\n「But that's how we've lived.」\n{next}\n「Self-satisfaction or not, we\n made friends, cared for our\n comrades, raised peace, and」\n{next}\n「prayed only for tomorrow's\n rest...」\n{next}\n「It's no great cause. We just\n don't want our comrades to\n die. We just hate seeing war.」\n{next}\n「That's reason enough!」\n{next}\n「I'm fighting for my own\n sake... And I'm no agent of\n the gods, either.」\n{next}\n「This is a battle to settle\n things with myself!」\n{next}\n「A battle to settle my own\n feeling that I can never\n forgive you!」\n",
+  "pages": "\"Sure, maybe humans are nothing but selfish creatures.\" || \"But ten years ago, and again on this journey, a girl taught me something...\" || \"Because you believe it yourself... Because you always want to live honest to your own heart...\" || \"Self-satisfaction? Maybe it is...\" || \"But that's how we've lived.\" || \"Self-satisfaction or not, we made friends, cared for our comrades, raised peace, and prayed only for tomorrow's rest...\" || \"It's no great cause. We just don't want our comrades to die. We just hate seeing war.\" || \"That's reason enough!\" || \"I'm fighting for my own sake... And I'm no agent of the gods, either.\" || \"This is a battle to settle things with myself!\" || \"A battle to settle my own feeling that I can never forgive you!\""
  },
  {
   "id": "25E4D2",
@@ -2108,7 +2209,8 @@
    2041
   ],
   "jp": "{spk}マクベス　　\n「そんな　自分勝手な心が\n　世界を　ほろぼすと　なぜわからぬ‥？」\n{next}\n「ならば　死ぬがいい‥‥\n　マスター°オブ°ソードよ\n　不敗の聖騎士は　ここで敗れるのだ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Why can't you see that\n selfish hearts like yours are\n what destroy the world...?」\n{next}\n「Then die... Master of Swords.\n Here the Undefeated Paladin\n meets his defeat.」\n",
+  "pages": "\"Why can't you see that selfish hearts like yours are what destroy the world...?\" || \"Then die... Master of Swords. Here the Undefeated Paladin meets his defeat.\""
  },
  {
   "id": "25E586",
@@ -2116,7 +2218,8 @@
    2042
   ],
   "jp": "{spk}マクベス　　\n「かつて　この地上の文明　全てを\n　燃やしつくした　超機神の力\n　その目で　見るがいい‥‥！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Behold with your own eyes\n the power of the Machine\n God Supreme, which once」\n{next}\n「burned every civilization on\n this earth to ashes...!」\n",
+  "pages": "\"Behold with your own eyes the power of the Machine God Supreme, which once burned every civilization on this earth to ashes...!\""
  },
  {
   "id": "25E5F6",
@@ -2124,7 +2227,8 @@
    2043
   ],
   "jp": "{spk}マクベス　　\n「‥‥ムダだ　全くのムダだ\n　そんな攻撃が　何になる？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...Useless. Utterly useless.\n What good is an attack like\n that?」\n",
+  "pages": "\"...Useless. Utterly useless. What good is an attack like that?\""
  },
  {
   "id": "25E640",
@@ -2132,7 +2236,8 @@
    2044
   ],
   "jp": "{spk}{FF1F}\n「さすがに　強い‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「It's strong, all right...」\n",
+  "pages": "\"It's strong, all right...\""
  },
  {
   "id": "25E65E",
@@ -2140,7 +2245,8 @@
    2045
   ],
   "jp": "{spk}ロジャー　　\n「われわれ仲間は　今まで\n　不可能に　挑み続けてきました\n　今度も　勝てるはずです！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「All this time, we comrades\n have kept taking on the\n impossible. We can win this」\n{next}\n「time too!」\n",
+  "pages": "\"All this time, we comrades have kept taking on the impossible. We can win this time too!\""
  },
  {
   "id": "25E6C6",
@@ -2148,7 +2254,8 @@
    2046
   ],
   "jp": "{spk}ミランダ　　\n「祈りましょう　神に！\n　心の中の　私たちの神に！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Let us pray to God! To our\n God, in our hearts!」\n",
+  "pages": "\"Let us pray to God! To our God, in our hearts!\""
  },
  {
   "id": "25E70C",
@@ -2156,7 +2263,8 @@
    2047
   ],
   "jp": "{spk}ファウスト　\n「{hero}さん　あなたの話を\n　聞いて　私も　わかりましたよ‥‥」\n{next}\n「運命なんて物は　存在しない\n　あるのは　生きようという\n　自分たちの　強い意志だけです！」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「{hero}-san, hearing what\n you said, I understand now\n too...」\n{next}\n「There is no such thing as\n fate. All there is is our own\n strong will to live!」\n",
+  "pages": "\"{hero}-san, hearing what you said, I understand now too...\" || \"There is no such thing as fate. All there is is our own strong will to live!\""
  },
  {
   "id": "25E7C6",
@@ -2164,7 +2272,8 @@
    2048
   ],
   "jp": "{spk}シュタイア　\n「‥‥あきらめるな　{hero}！\n　自分が　負けたと思うまでは\n　負けた事には　ならないぞ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Don't give up, {hero}! You\n haven't lost until you believe\n you've lost!」\n",
+  "pages": "\"...Don't give up, {hero}! You haven't lost until you believe you've lost!\""
  },
  {
   "id": "25E838",
@@ -2172,7 +2281,8 @@
    2049
   ],
   "jp": "{spk}マウザー　　\n「‥‥まだだ！　オレ達の力は\n　こんなもんじゃ　ないはずだ！\n　ともに戦ってきた　オレ達の力は！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「...Not yet! Our strength can't\n be just this! Not the\n strength of us who've」\n{next}\n「fought side by side!」\n",
+  "pages": "\"...Not yet! Our strength can't be just this! Not the strength of us who've fought side by side!\""
  },
  {
   "id": "25E8AC",
@@ -2180,7 +2290,8 @@
    2050
   ],
   "jp": "{spk}アテナ　　　\n「人を　生かすための　戦い\n　それが　じこ満足ならば\n　私は　それでも　かまわない！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「A battle to let people live...\n If that is self-satisfaction,\n then I do not mind at all!」\n",
+  "pages": "\"A battle to let people live... If that is self-satisfaction, then I do not mind at all!\""
  },
  {
   "id": "25E914",
@@ -2188,7 +2299,8 @@
    2051
   ],
   "jp": "{spk}ロブン　　　\n「大地の気は　われらに　あります\n　人として戦う　われらに‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「The spirit of the earth is\n with us. With us, who fight\n as humans...」\n",
+  "pages": "\"The spirit of the earth is with us. With us, who fight as humans...\""
  },
  {
   "id": "25E966",
@@ -2196,7 +2308,8 @@
    2052
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　強すぎる！\n　しかし{hero}　オレがほれこんだ\n　アンタは　もっと　強いはずだ！」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... Way too\n strong! But {hero}, the guy\n I fell for has to be even」\n{next}\n「stronger!」\n",
+  "pages": "\"Heh heh heh... Way too strong! But {hero}, the guy I fell for has to be even stronger!\""
  },
  {
   "id": "25E9DC",
@@ -2204,7 +2317,8 @@
    2053
   ],
   "jp": "{spk}リュウビ　　\n「‥‥われらは　負けぬ」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「...We will not lose.」\n",
+  "pages": "\"...We will not lose.\""
  },
  {
   "id": "25EA06",
@@ -2212,7 +2326,8 @@
    2054
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥涙は悲しみ　笑いは平和\n　それ以上の　リクツなど　いらぬ！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...Tears are sorrow, laughter\n is peace. No more reasoning\n than that is needed!」\n",
+  "pages": "\"...Tears are sorrow, laughter is peace. No more reasoning than that is needed!\""
  },
  {
   "id": "25EA5A",
@@ -2220,7 +2335,8 @@
    2055
   ],
   "jp": "{spk}アジャックス\n「十年は　やはり長かったな‥‥」\n{next}\n「あの時オレ達は　国のために戦った\n　しかし今は　こうやって\n　自分のために　戦っている‥‥」\n{next}\n「この戦いに　うち勝つために\n　オレ達は　この十年の時を\n　すごしてきたと　思わないか‥‥？」\n{next}\n「‥‥なぁ　{hero}‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Ten years really was a long\n time...」\n{next}\n「Back then we fought for our\n country. But now, here we\n are fighting for ourselves...」\n{next}\n「Don't you think we spent\n these ten years just to win\n this battle...?」\n{next}\n「...Right, {hero}...?」\n",
+  "pages": "\"Ten years really was a long time...\" || \"Back then we fought for our country. But now, here we are fighting for ourselves...\" || \"Don't you think we spent these ten years just to win this battle...?\" || \"...Right, {hero}...?\""
  },
  {
   "id": "25EB78",
@@ -2228,7 +2344,8 @@
    2056
   ],
   "jp": "{spk}{FF28}\n「{hero}！　まだよ！\n　まだ　負けたわけじゃない！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! It's not over! We\n haven't lost yet!」\n",
+  "pages": "\"{hero}! It's not over! We haven't lost yet!\""
  },
  {
   "id": "25EBBA",
@@ -2236,7 +2353,8 @@
    2057
   ],
   "jp": "{spk}{FF1F}\n「みんな　今しばらく\n　このオレに　力を貸してくれ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Everyone, lend me your\n strength just a little longer!」\n",
+  "pages": "\"Everyone, lend me your strength just a little longer!\""
  },
  {
   "id": "25EBF8",
@@ -2244,7 +2362,8 @@
    2058
   ],
   "jp": "{spk}{FF1F}\n「‥‥もちろんだ　テティス\n　オレは　勝ってみせるさ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Of course, Thetis. I'll win,\n you'll see!」\n",
+  "pages": "\"...Of course, Thetis. I'll win, you'll see!\""
  },
  {
   "id": "25EC38",
@@ -2252,7 +2371,8 @@
    2059
   ],
   "jp": "{spk}マクベス　　\n「‥‥な‥‥なぜだ‥‥！？」\n{next}\n「古代の超兵器　神々の作りし\n　超機神が　倒されるなど‥‥！？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...Wh... why...?!」\n{next}\n「The ancient super weapon,\n the Machine God Supreme the\n gods made... defeated...?!」\n",
+  "pages": "\"...Wh... why...?!\" || \"The ancient super weapon, the Machine God Supreme the gods made... defeated...?!\""
  },
  {
   "id": "25ECAC",
@@ -2260,7 +2380,8 @@
    2060
   ],
   "jp": "{spk}{FF1F}\n「終わりだよ　マクベス‥‥」\n{next}\n「十年前から　続いていた\n　オレ達の　戦いは\n　今　ようやく　終わるのさ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「It's over, Macbeth...」\n{next}\n「The fight of ours that's gone\n on since ten years ago is\n finally ending now...」\n",
+  "pages": "\"It's over, Macbeth...\" || \"The fight of ours that's gone on since ten years ago is finally ending now...\""
  },
  {
   "id": "25ED24",
@@ -2268,7 +2389,8 @@
    2061
   ],
   "jp": "{spk}マクベス　　\n「‥‥おろかな‥‥人間‥‥よ‥‥\n　私は‥‥知っている‥‥\n　‥‥この世界の‥‥どこかには‥‥」\n{next}\n「このような‥‥太古の‥‥兵器が\n　‥‥まだまだ‥‥数多く\n　眠って‥‥いるのだぞ‥‥！？」\n{next}\n「お前は‥‥たった一人で‥‥\n　‥‥黄道十二神の‥‥力だけで\n　それらに‥‥うち勝つ気か‥‥？」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...Foolish... humans... I... know...\n ...somewhere... in this world...」\n{next}\n「...ancient... weapons... like this\n one... ...still... lie sleeping... in\n great numbers...!」\n{next}\n「Do you... mean to... defeat\n them all... ...alone...? ...With\n only... the power... of the」\n{next}\n「Zodiac Gods...?」\n",
+  "pages": "\"...Foolish... humans... I... know... ...somewhere... in this world...\" || \"...ancient... weapons... like this one... ...still... lie sleeping... in great numbers...!\" || \"Do you... mean to... defeat them all... ...alone...? ...With only... the power... of the Zodiac Gods...?\""
  },
  {
   "id": "25EE5E",
@@ -2276,7 +2398,8 @@
    2062
   ],
   "jp": "{spk}{FF1F}\n「一人ではないぞ　マクベス」\n{next}\n「自分自身の心に　したがって\n　平安を　求める者が　いる限り\n　その者たち全[03AC]が　戦う仲間だ」\n{next}\n「そして　人々は\n　何が現れても　戦うだろう‥‥」\n{next}\n「たとえ　じこ満足で　あろうと\n　より多くの　幸せを願って‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I'm not alone, Macbeth.」\n{next}\n「As long as there are people\n who follow their own hearts\n and seek peace, every one」\n{next}\n「of them is a comrade in this\n fight.」\n{next}\n「And people will fight, no\n matter what appears...」\n{next}\n「Even if it's self-satisfaction,\n they'll fight, wishing for\n more happiness...」\n",
+  "pages": "\"I'm not alone, Macbeth.\" || \"As long as there are people who follow their own hearts and seek peace, every one of them is a comrade in this fight.\" || \"And people will fight, no matter what appears...\" || \"Even if it's self-satisfaction, they'll fight, wishing for more happiness...\""
  },
  {
   "id": "25EF64",
@@ -2284,7 +2407,8 @@
    2063
   ],
   "jp": "{spk}マクベス　　\n「‥‥それが‥‥人間ならば‥‥\n　お前らは‥‥いつの日か‥‥\n　‥‥必ず‥‥ほろびるだろう‥‥」\n{next}\n「人が‥‥人を‥‥越えねば\n　‥‥ならぬ時代は‥‥間もなく\n　迫って‥‥きている‥‥のだ‥‥」\n{next}\n「わかって‥‥いるはずだ‥‥」\n{next}\n「お前‥‥は‥‥わかって‥‥」\n{next}\n「‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「...If that... is what humans\n are... then one day... ...you\n will... surely... perish...」\n{next}\n「An age... when man... must...\n surpass man... ...is soon...\n drawing... near...」\n{next}\n「You... must know... that...」\n{next}\n「You... know... it...」\n{next}\n「...」\n",
+  "pages": "\"...If that... is what humans are... then one day... ...you will... surely... perish...\" || \"An age... when man... must... surpass man... ...is soon... drawing... near...\" || \"You... must know... that...\" || \"You... know... it...\" || \"...\""
  },
  {
   "id": "25F090",
@@ -2292,7 +2416,8 @@
    2064
   ],
   "jp": "{spk}{FF28}\n「終わったわね　{hero}‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's over, {hero}...」\n",
+  "pages": "\"It's over, {hero}...\""
  },
  {
   "id": "25F0BA",
@@ -2300,7 +2425,8 @@
    2065
   ],
   "jp": "{spk}{FF1F}\n「ああ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah...」\n",
+  "pages": "\"Yeah...\""
  },
  {
   "id": "25F0CE",
@@ -2308,7 +2434,8 @@
    2066
   ],
   "jp": "{spk}{FF28}\n「‥‥十二神の指輪が！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...The rings of the Twelve\n Gods?!」\n",
+  "pages": "\"...The rings of the Twelve Gods?!\""
  },
  {
   "id": "25F0F0",
@@ -2316,7 +2443,8 @@
    2067
   ],
   "jp": "{spk}黄道十二神　\n「‥‥われらが選びし　代理人よ\n　そなたは　苦なんを　はねのけ\n　見事　そのつとめを　果たした‥‥」\n{next}\n「われらは　大いなる眠りにつく\n　だが　再び　太古の兵器の封印が\n　解かれる時　われらを　求めよ‥‥」\n{next}\n「われらは　歴史の守りなり‥‥\n　果てない時を　こえて\n　人の世を　守る者なり‥‥」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「...Agent whom we have\n chosen, thou hast cast off\n every hardship and fulfilled」\n{next}\n「thy duty with honour...」\n{next}\n「We shall enter a great\n slumber. But should the seal\n on the ancient weapons ever」\n{next}\n「be broken again, seek us\n out...」\n{next}\n「We are the guardians of\n history... We are those who,\n across endless ages, watch」\n{next}\n「over the world of men...」\n",
+  "pages": "\"...Agent whom we have chosen, thou hast cast off every hardship and fulfilled thy duty with honour...\" || \"We shall enter a great slumber. But should the seal on the ancient weapons ever be broken again, seek us out...\" || \"We are the guardians of history... We are those who, across endless ages, watch over the world of men...\""
  },
  {
   "id": "25F22C",
@@ -2324,7 +2452,8 @@
    2068
   ],
   "jp": "{spk}{FF28}\n「‥‥いいの　{hero}？\n　指輪も　バウンティ°ソードも\n　光になって　消えていったわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Is this okay, {hero}? The\n rings and the Bounty Sword\n all turned into light and」\n{next}\n「vanished...」\n",
+  "pages": "\"...Is this okay, {hero}? The rings and the Bounty Sword all turned into light and vanished...\""
  },
  {
   "id": "25F294",
@@ -2332,7 +2461,8 @@
    2069
   ],
   "jp": "{spk}{FF1F}\n「‥‥いいのさ　国が燃えても\n　神とやらが　飛び去っても\n　人は残る　それだけで　十分だ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...It's fine. Even if nations\n burn, even if these so-called\n gods fly away, people」\n{next}\n「remain. That's enough.」\n",
+  "pages": "\"...It's fine. Even if nations burn, even if these so-called gods fly away, people remain. That's enough.\""
  },
  {
   "id": "25F2F6",
@@ -2340,7 +2470,8 @@
    2070
   ],
   "jp": "{spk}{FF28}\n「けっきょく　黄道十二神って\n　何だったのかしら‥‥？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So in the end, what were the\n Zodiac Gods, anyway...?」\n",
+  "pages": "\"So in the end, what were the Zodiac Gods, anyway...?\""
  },
  {
   "id": "25F336",
@@ -2348,7 +2479,8 @@
    2071
   ],
   "jp": "{spk}{FF1F}\n「‥‥そうだな　たぶん」\n{next}\n「大昔の連中が　残してくれた\n　人が　生きて行くための\n　ただの道具‥‥ってとこかな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Let's see. Probably...」\n{next}\n「Just tools that folks from\n long ago left behind to help\n people go on living...」\n{next}\n「something like that.」\n",
+  "pages": "\"...Let's see. Probably...\" || \"Just tools that folks from long ago left behind to help people go on living... something like that.\""
  },
  {
   "id": "25F3B2",
@@ -2356,7 +2488,8 @@
    2072
   ],
   "jp": "{spk}{FF31}　　　　　\n「終わったのね　何もかも」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「It's over, isn't it? All of it.」\n",
+  "pages": "\"It's over, isn't it? All of it.\""
  },
  {
   "id": "25F3DE",
@@ -2364,7 +2497,8 @@
    2073
   ],
   "jp": "{spk}{FF28}\n「‥‥{FF31}！？\n　こんな所まで　きたの！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{FF31}?! You came all the\n way out here?!」\n",
+  "pages": "\"...{FF31}?! You came all the way out here?!\""
  },
  {
   "id": "25F410",
@@ -2372,7 +2506,8 @@
    2074
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥ひどいじゃない！\n　私を　あのまま\n　王城に　残して行くなんて！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...That was so mean! Leaving\n me behind at the royal\n castle like that!」\n",
+  "pages": "\"...That was so mean! Leaving me behind at the royal castle like that!\""
  },
  {
   "id": "25F46A",
@@ -2380,7 +2515,8 @@
    2075
   ],
   "jp": "{spk}{FF1F}\n「‥‥そいつは　悪い事を\n　しちまったかな　お嬢ちゃん」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Guess I did you wrong\n there, little lady.」\n",
+  "pages": "\"...Guess I did you wrong there, little lady.\""
  },
  {
   "id": "25F4AA",
@@ -2388,7 +2524,8 @@
    2076
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥バッカじゃないの！」\n{next}\n「まったく　もぅ！」\n{next}\n「でもね　前に　言ったじゃない\n　私が　イヌかネコだったら\n　良かったのになぁ‥‥って」\n{next}\n「でも今は　そうでなくて\n　良かったと　思ってるわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...You're such an idiot!」\n{next}\n「Honestly!」\n{next}\n「But you know, I told you\n before... that I wished I'd\n been a dog or a cat...」\n{next}\n「But now I'm glad I wasn't...」\n",
+  "pages": "\"...You're such an idiot!\" || \"Honestly!\" || \"But you know, I told you before... that I wished I'd been a dog or a cat...\" || \"But now I'm glad I wasn't...\""
  },
  {
   "id": "25F58C",
@@ -2396,7 +2533,8 @@
    2077
   ],
   "jp": "{spk}{FF1F}\n「‥‥何でだ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Why's that?」\n",
+  "pages": "\"...Why's that?\""
  },
  {
   "id": "25F5A4",
@@ -2404,7 +2542,8 @@
    2078
   ],
   "jp": "{spk}{FF31}　　　　　\n「だって　私がイヌだったら\n　きっと今は　ちぎれるくらい\n　しっぽを　ふっている　はずだもの」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Because if I were a dog, I'd\n be wagging my tail so hard\n right now it would fall off.」\n",
+  "pages": "\"Because if I were a dog, I'd be wagging my tail so hard right now it would fall off.\""
  },
  {
   "id": "25F614",
@@ -2412,7 +2551,8 @@
    2079
   ],
   "jp": "{spk}{FF1F}\n「いい子だな　{FF31}」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Good girl, {FF31}.」\n",
+  "pages": "\"Good girl, {FF31}.\""
  },
  {
   "id": "25F62E",
@@ -2420,7 +2560,8 @@
    2080
   ],
   "jp": "{spk}{FF31}　　　　　\n「私は　元から　いい子よ！\n　しがない　賞金かせぎさん！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「I've always been a good girl!\n Mister small-time bounty\n hunter!」\n",
+  "pages": "\"I've always been a good girl! Mister small-time bounty hunter!\""
  },
  {
   "id": "25F67A",
@@ -2428,7 +2569,8 @@
    2081
   ],
   "jp": "{spk}{FF1F}\n「よし　いい返事だ‥‥」\n{next}\n「さあ　もう一度　連邦に戻ろう\n　これで　全部が\n　終わったわけじゃ　ないんだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, good answer...」\n{next}\n「Now, let's head back to the\n Federation once more. This\n isn't the end of everything!」\n",
+  "pages": "\"Right, good answer...\" || \"Now, let's head back to the Federation once more. This isn't the end of everything!\""
  },
  {
   "id": "25F6F2",
@@ -2436,7 +2578,8 @@
    2082
   ],
   "jp": "{spk}ロジャー　　\n「連邦軍の中には　まだまだ\n　戦っている部隊も　あります\n　無意味な戦いを　やめさせねば！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「There are still plenty of\n Federation army units\n fighting out there. We have」\n{next}\n「to put a stop to this\n pointless fighting!」\n",
+  "pages": "\"There are still plenty of Federation army units fighting out there. We have to put a stop to this pointless fighting!\""
  },
  {
   "id": "25F760",
@@ -2444,7 +2587,8 @@
    2083
   ],
   "jp": "{spk}ミランダ　　\n「そうですね　私たちが\n　この世に　生き続ける限り\n　それは　戦いなのですから‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Yes. As long as we go on\n living in this world, that is\n our battle...」\n",
+  "pages": "\"Yes. As long as we go on living in this world, that is our battle...\""
  },
  {
   "id": "25F7C6",
@@ -2452,7 +2596,8 @@
    2084
   ],
   "jp": "{spk}ファウスト　\n「運命などに　しばられず\n　私も　これからは　自分の\n　信じる道を　進みましょう」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「No longer bound by fate,\n from now on I too will follow\n the path I believe in.」\n",
+  "pages": "\"No longer bound by fate, from now on I too will follow the path I believe in.\""
  },
  {
   "id": "25F82A",
@@ -2460,7 +2605,8 @@
    2085
   ],
   "jp": "{spk}シュタイア　\n「オレの手で　ロムルスの都を\n　もう一度　作ってみせるさ」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「I'll rebuild the city of\n Romulus with my own hands,\n you'll see.」\n",
+  "pages": "\"I'll rebuild the city of Romulus with my own hands, you'll see.\""
  },
  {
   "id": "25F876",
@@ -2468,7 +2614,8 @@
    2086
   ],
   "jp": "{spk}マウザー　　\n「やれやれだ！　連邦の　はなした\n　ドラゴンどもも　あちこちで\n　暴れ回って　いるようだしな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「What a pain! Looks like the\n dragons the Federation let\n loose are running wild all」\n{next}\n「over the place too!」\n",
+  "pages": "\"What a pain! Looks like the dragons the Federation let loose are running wild all over the place too!\""
  },
  {
   "id": "25F8E8",
@@ -2476,7 +2623,8 @@
    2087
   ],
   "jp": "{spk}アテナ　　　\n「この戦争で　住む家をなくした\n　人達が　大勢います\n　そんな人を　すくわなければ‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Many people lost their\n homes in this war. We must\n help them...」\n",
+  "pages": "\"Many people lost their homes in this war. We must help them...\""
  },
  {
   "id": "25F952",
@@ -2484,7 +2632,8 @@
    2088
   ],
   "jp": "{spk}ロブン　　　\n「私の国に　帰る前に　まだ\n　知っておきたい　事が　あります\n　平和のための　数多くの事を‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Before I return to my\n country, there are still\n things I wish to learn. Many」\n{next}\n「things, for the sake of\n peace...」\n",
+  "pages": "\"Before I return to my country, there are still things I wish to learn. Many things, for the sake of peace...\""
  },
  {
   "id": "25F9C4",
@@ -2492,7 +2641,8 @@
    2089
   ],
   "jp": "{spk}ツキカゲ　　\n「‥‥ククク　これ以上は\n　タダ働きだが　いいだろう\n　アンタの強さを　見込んでな‥‥」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「...Heh heh heh. Anything more\n is working for free, but fine.\n I'm betting on your」\n{next}\n「strength...」\n",
+  "pages": "\"...Heh heh heh. Anything more is working for free, but fine. I'm betting on your strength...\""
  },
  {
   "id": "25FA2E",
@@ -2500,7 +2650,8 @@
    2090
   ],
   "jp": "{spk}リュウビ　　\n「‥‥そうですな\n　私も　ロムルスの仲間たちの\n　英霊を　とむらわねば‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「...Indeed. I too must honour\n the fallen spirits of my\n comrades from Romulus...」\n",
+  "pages": "\"...Indeed. I too must honour the fallen spirits of my comrades from Romulus...\""
  },
  {
   "id": "25FA8C",
@@ -2508,7 +2659,8 @@
    2091
   ],
   "jp": "{spk}ルーネ　　　\n「連邦の残存兵力と　戦っている\n　抵抗部隊も　数多いだろう‥‥\n　彼らを　一人でも多く　すくいたい」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「There must be many\n resistance units still fighting\n the Federation's remaining」\n{next}\n「forces... I want to save as\n many of them as I can.」\n",
+  "pages": "\"There must be many resistance units still fighting the Federation's remaining forces... I want to save as many of them as I can.\""
  },
  {
   "id": "25FB02",
@@ -2516,7 +2668,8 @@
    2092
   ],
   "jp": "{spk}アジャックス\n「‥‥そうだな　{hero}」\n{next}\n「やり残した事は　数多い\n　十年後に　くやまない　ためにも\n　今　できる事を　やりとげよう」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...You're right, {hero}.」\n{next}\n「There's a lot we left undone.\n So we won't regret it ten\n years from now, let's finish」\n{next}\n「what we can do today.」\n",
+  "pages": "\"...You're right, {hero}.\" || \"There's a lot we left undone. So we won't regret it ten years from now, let's finish what we can do today.\""
  },
  {
   "id": "25FB94",
@@ -2524,6 +2677,7 @@
    2093
   ],
   "jp": "{spk}{FF1F}\n「‥‥さあ　行こう！」\n{next}\n「今まで　たどった　戦いの道を\n　今度は　オレ達の\n　自分自身の　戦いのために！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Come on, let's go!」\n{next}\n「Back down the road of\n battles we've travelled, and\n this time for our own battle!」\n",
+  "pages": "\"...Come on, let's go!\" || \"Back down the road of battles we've travelled, and this time for our own battle!\""
  }
 ]

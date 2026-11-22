@@ -4,6 +4,7 @@
     python -X utf8 tools/batches.py check b001 [b002 ...]   # until it prints OK
     python -X utf8 tools/batches.py merge b001 [--overwrite]
     python -X utf8 tools/batches.py check                   # every English entry in script/
+    python -X utf8 tools/batches.py rewrap                  # after a pages.py change: re-lay out merged pages
     python -X utf8 tools/batches.py --selftest
 
 Batch TSV: id, speaker, form, limit, JP. Output work/tl/bNNN.out.tsv: id<TAB>English, every id once, same order.
@@ -318,6 +319,20 @@ def main(argv):
             sys.exit(f"{len(lines)} lines for {len(ids)} ids")
         (TL / f"{args[0]}.out.tsv").write_text("".join(f"{i}\t{t}\n" for i, t in zip(ids, lines)), encoding="utf-8",
                                                newline="\n")
+        return 0
+    if cmd == "rewrap":   # after a pages.py change: rebuild `en` of every merged master entry from its `pages`
+        changed = 0
+        for path, doc, entries in docs():
+            touched = False
+            for e in entries:
+                if is_master(e) and e.get("pages") and not pages.split(e["jp"])[0]:
+                    en, _ = pages.build_en(e["jp"], e["pages"])
+                    if en is not None and en != e.get("en"):
+                        e["en"], touched = en, True
+                        changed += 1
+            if touched:
+                path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+        print(f"rewrap: {changed} entries changed")
         return 0
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
