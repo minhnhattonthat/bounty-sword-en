@@ -7,8 +7,8 @@
 -- swap, a shot round<N>.png after each round with SHOT=1, and "SIDECOVER_DONE <shown>/<total>" at the end.
 -- WATCH: more addresses to log (entries reached on the way, e.g. continuations); PREP: a route run once first.
 -- Globals: HOOK (exec address), PTR (address of the pointer's low word, default 0x34), BANK (address of its bank
---          byte, default PTR + 2; engine B: PTR 0x7E4A37, BANK 0x7E4A39), OFFSET (optional word that must be 0, i.e.
---          the reader is at the start of a string; engine B 0x7E4A35), LO, HI (CPU range), TARGETS
+--          byte, default PTR + 2; engine B: PTR 0x7E4A37, BANK 0x7E4A39, hooked where a caller stores them),
+--          LO, HI (CPU range), TARGETS
 --          ("DAE003,DAE017,..."), KEYS (route string), STALL (default 4), SHOT, SHOT_DELAY (shoot that many frames
 --          into each round instead of at its end, e.g. while a description box is open).
 local M = emu.memType.snesMemory
@@ -29,7 +29,6 @@ L.on_exec(HOOK, HOOK, function()
   if not ready then return end
   local p = rd(ptrAt) | (rd(ptrAt + 1) << 8) | (rd(bankAt) << 16)
   if p < LO or p >= HI or nextT > #targets then return end
-  if OFFSET and (rd(OFFSET) | rd(OFFSET + 1)) ~= 0 then return end
   while nextT <= #targets and seen[targets[nextT]] do nextT = nextT + 1 end   -- read on the way (FF06 sub-strings)
   if nextT > #targets then return end
   local t = targets[nextT]

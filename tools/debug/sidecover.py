@@ -48,6 +48,8 @@ JOBS = {
                               "6 x;40 -;6 y;40 -",
                          keys="6 select;80 -;6 select;60 -", shot_delay=80),
 }
+# Not a job: swapping engine B's pointer at its word reader (C3:C789, offset $7E4A35 = 0) doesn't take, the reader
+# already holds the address (session x). Hook where a script pointer is stored instead, as for descriptions.
 
 
 DESC_TABLES = (0x0EE459, 0x0EFD28)   # descriptions: 3-byte pointer tables ($CE:E459, $CE:EC58 ..) and text

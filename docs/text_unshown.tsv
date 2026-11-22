@@ -1,0 +1,4 @@
+0EE55E	descriptions: lone {FF00} after the sub-string 0EE54A, which returns with {FF07}; no pointer to it (only the build's own trampoline-back pointer), nothing runs on into it
+0EEE9A	descriptions: lone {FF00} after the sub-string 0EEE68, which returns with {FF07}; no pointer to it, nothing runs on into it
+05EBB0	battle_prompts: Dorn/Lena/Baron tavern roster with no caller in the ROM (the 5 other rosters each have a `2E ptr24`; script/keep_jp.txt)
+022FDC	enemy_lost: no 24- or 16-bit reference in the ROM and never read in the 146-scene region-read tour (work/qa/rr2) nor the textcover tour (docs/re/jp_left.md)

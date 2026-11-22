@@ -3,11 +3,18 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator: in progress (session x: text coverage 3281/3573 on build c014fcdc11f2;
-  **next: (1) close the 292 unshown strings (`work/textcover_report.out`): ceremony 86, short_strings 65 (shop
-  scripts), menus 34, windows 22, objectives 22, battle_prompts 22, system_prompts 12, level_up 8, speakers 7,
-  descriptions 3 (0EE55E lone FF00, 0EEE9A, 0EF038), target_prompts 3, battle_prompts_b 3, menus_c 2, unit_records 2,
-  enemy_lost 1: new `sidecover.py` jobs (engine B: hook where the script pointer `$7E4A37/39` is set, as for
-  descriptions; engine A prompts: their callers), new scenes, or `docs/text_unshown.tsv` waivers with the reason;
+  **next: (1) close the 288 unshown strings (`python -X utf8 tools/debug/textcover_all.py --skip-master
+  --skip-tour --skip-side` re-reports into `work/textcover_report.out` style output; 4 waived in
+  `docs/text_unshown.tsv`): ceremony 86 = mostly the **battle level-up engine B scripts** (DD:F0CF.. "X: Attack +N",
+  "is now Level N!", "Attack rose by N.", digits DD:F091..) and the guardian-deity names (DD:ED5B Ares..Poseidon,
+  FF07 subroutines): needs a level-up scene (poke EXP, win a fight) or a hook where their caller stores `$7E4A37/39`;
+  short_strings 65 (shop scripts: "X is now Y", Who is buying/selling, can't equip, bags full: shop routes or a
+  stress save); menus 34 (PLAYER DATA / BATTLE TOTAL records screen not in the scene list, name-entry kana grids
+  01C283.. are input glyphs: waive with that reason); windows 22 (drop/discard, file overwritten/erased/bad, orders
+  sub-lines); objectives 22 (reader unknown: never read on any warp); battle_prompts 21, system_prompts 12,
+  battle_prompts_b 3, target_prompts 3, level_up 8 (battle events: duel/recruit/job rosters, "Enemy sighted",
+  "Map clear!"); speakers 7; descriptions 1 (0EF038 "…only" 専用: no FF06 call, low word has 67 ambiguous hits);
+  menus_c 2; unit_records 2. Swapping engine B at its word reader C3:C789 does not work (tried, removed);
   (2) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp "Discard it?" (01CCCC), "Promote? OK No" (01D38D),
   "Retreat! Sure? OK No" (01C578); (3) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`);
   (4) to-do 3 shop lines read in game**).
@@ -21,7 +28,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   entry of the table draws the next unread one while a key route redraws the menu; jobs: items, spells,
   constellations, classes, orders, unit_titles via the C1 run `$34`; descriptions via engine B `$7E4A37/39` set at
   `C3:C52D`, Select in the camp item list; readers in `docs/re/text.md`). Results: master 2335/2335, all 7 swap
-  jobs complete (descriptions 193 heads, 402/405 entries read), total **3281/3573**. Open check: a swapped unit
+  jobs complete (descriptions 193 heads, 402/405 entries read), total **3281/3573**, 4 waived with evidence
+  (`docs/text_unshown.tsv`: 2 lone FF00 after FF07 sub-strings, the no-caller roster 05EBB0, enemy_lost 022FDC),
+  288 failing. Open check: a swapped unit
   title is read by window op 26 but was not seen drawn on the status window (`work/qa/sc_try/unit_titles`).
   check 60 passed, lint 0, build sha1 c014fcdc11f2 (unchanged: the tour gate stands).
 - **Session 2026-11-23w (phase 8, tour + gate):** full tour re-run on build c014fcdc11f2: `work/qa/tour` 146/146 ok.
