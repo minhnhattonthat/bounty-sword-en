@@ -34,7 +34,12 @@ EXPANDED_TEXT = (0x300000, 0x3F0000)
 REGIONS = (
     ("locations", 0x00CD7B, 0x00D151),
     ("battle_prompts_b", 0x0073AB, 0x007673),
-    ("menus", 0x01BFFF, 0x01D3AB),
+    # C1 window strings, [count][count words] reached by 24-bit pointers from the C8 window scripts (drawer
+    # C1:8F13), in two word phases: odd from 0x01BFFF, even from 0x01CC00 (file menu, save prompts, battle
+    # orders), odd again from 0x01D1F5. Bytes 0x01CBFF and 0x01D1F4 belong to no string.
+    ("menus", 0x01BFFF, 0x01CBFF),
+    ("windows", 0x01CC00, 0x01D1F4),
+    ("menus_c", 0x01D1F5, 0x01D3AB),
     ("speakers", 0x025D5D, 0x025F7F),
     ("system_prompts", 0x04136F, 0x0418E3),
     ("unit_records", 0x046CF4, 0x0473B0),

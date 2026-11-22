@@ -16,7 +16,7 @@ import re
 from font_en import advance
 
 LINE_PX = 160          # 20 cells; the width gate (docs/re/vwf.md) checks it in game
-TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "speakers": "K", "system_prompts": "Z",
+TAGS = {"locations": "L", "battle_prompts_b": "P", "menus": "M", "windows": "W", "menus_c": "U","speakers": "K", "system_prompts": "Z",
         "unit_records": "R", "battle_prompts": "B", "unit_names": "N", "unit_titles": "T", "classes": "C",
         "descriptions": "D", "objectives": "O", "items": "I", "short_strings": "S", "ceremony": "Y"}
 FILL = "The quick brown fox jumps over the lazy dog. "

@@ -116,10 +116,13 @@ class TextCodec:
 #   ("fixed", width, tail[, lead]): width-word records from `lead` words in; the last `tail` words are data.
 #   ("term",): a string ends after a run of 0000 words.
 #   ("ends", {words}): a string ends after any of these control words.
+#   ("counted",): [count][count words] strings back to back; anything that breaks the chain is a 1-word entry.
 SPLIT = {
     "locations": ("fixed", 10, 0),
     "battle_prompts_b": ("ends", {0xFF00, 0xFF03}),
     "menus": ("term",),
+    "windows": ("counted",),
+    "menus_c": ("term",),
     "speakers": ("fixed", 8, 2, 8),     # records (6-word name + 2 ids) start at 0x025D6D = C2:5D6D
 
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
@@ -153,7 +156,13 @@ def split_region(words, rule, args=None):
                 cuts.append(i)
         cuts = sorted(set(cuts))
         return list(zip(cuts, cuts[1:] + [n]))
-    if kind == "fixed":
+    if kind == "counted":
+        i = 0
+        while i < n:
+            cuts.append(i)
+            c = words[i]
+            i += 1 + c if 0 < c < 0x100 and i + 1 + c <= n else 1
+    elif kind == "fixed":
         width, lead = rule[1], (rule[3] if len(rule) > 3 else 0)
         cuts += [lead] if lead else []
         cuts += list(range(lead + width, n, width))
@@ -216,7 +225,17 @@ def side_entries(rom, name, start, end, codec, ptrs):
             while body and body[-1] == 0:
                 body = body[:-1]
             w = body
-        e["kind"] = "data" if is_data(words[a:b], args) else "text"
+        counted = rule[0] == "counted" and b - a > 1
+        if counted:           # count word kept as `head`; the body is fixed at that many words, 0000 = space
+            e["head"] = "%04X" % w[0]
+            e["width"] = b - a - 1
+            w = w[1:]
+            while w and w[-1] == 0:
+                w = w[:-1]
+        if rule[0] == "counted":
+            e["kind"] = "text" if counted and off in ptrs and not is_data(w, args) else "data"
+        else:
+            e["kind"] = "data" if is_data(words[a:b], args) else "text"
         e["jp"] = codec.decode(w)
         if tail:
             e["tail"] = " ".join("%04X" % t for t in tail)
@@ -237,6 +256,8 @@ def side_words(entry, codec):
         w = w + [0] * (entry["width"] - len(w))
     if entry.get("tail"):
         w = w + [int(t, 16) for t in entry["tail"].split()]
+    if entry.get("head"):
+        w = [int(entry["head"], 16)] + w
     return w
 
 
