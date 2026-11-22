@@ -26,7 +26,7 @@ NAMES = ROOT / "script" / "speaker_tags.tsv"
 # from 0x0720 on wrap to offsets below $A000 (which the hooks read as JP): 544 codes in all.
 TAG_FIRST, TAG_END = 0x0500, 0x0720
 BLOCK_BASE = 0xA000
-TAG_CELLS = {"speakers": 6, "locations": 10}
+TAG_CELLS = {"speakers": 6, "locations": 10, "move_prompt": 12}   # move_prompt: C4:18F1 via C0:E1B1, 12 cells
 CENTRED = {"locations"}                  # the JP centred location labels with spaces; speaker names are left-aligned
 SPACE = 0x0000
 HEADER = re.compile(r"\{spk\}([^\n{\[]{6})")   # a literal 6-word speaker header (variable headers start with "{")

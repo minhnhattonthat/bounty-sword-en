@@ -118,6 +118,11 @@ def scenes():
                        then=steps(skip, downs(k), "6 a;300 -"), note=f"battle command menu -> {sub}"))
     out.append(row(name="battle_status", kind="scenario", map=37, expect=7, hold=2000, mash="a:40",
                    note="unit status on the battle map (A mashed)"))
+    # Scenario 11 (B-01) starts with the deploy menu (X: Set/Land/Orders/Fight!); after Fight!, X starts a move
+    # order and C4:18F1 draws move_prompt 0419DC in the top-right box.
+    out.append(row(name="battle_move", kind="scenario", map=11, expect=7, hold=2900,
+                   then=steps(skip, "6 b;60 -;6 x;100 -;6 down;40 -;6 a;900 -;6 x;150 -"),
+                   note="B-01: deploy menu -> Fight! -> X: move order prompt (move_prompt 0419DC)"))
     for n in range(1, 60):
         if n in UNUSED:
             continue

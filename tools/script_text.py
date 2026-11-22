@@ -125,6 +125,7 @@ class TextCodec:
 #       every stretch between them is one data entry (tile/layout tables: tools/re/winscript.py, docs/re/vwf.md).
 SPLIT = {
     "locations": ("fixed", 10, 0),
+    "move_prompt": ("fixed", 12, 0),
     "battle_prompts_b": ("ends", {0xFF00, 0xFF03}),
     "menus": ("anchored",),
     "windows": ("anchored",),

@@ -2,12 +2,27 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session y: **`textcover.py` exits 0** on build c014fcdc11f2,
-  3544/3573 shown, 29 waived with evidence; **next: (1) the 3 choice boxes not yet in `docs/inkbox.tsv`: camp
-  "Discard it?" (01CCCC), "Promote? OK No" (01D38D), "Retreat! Sure? OK No" (01C578); (2) stress saves
-  (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) to-do 3 shop lines read in game; (4) the swapped
-  engine B level-up / stat-up lines (1DF0CF.., polish.md) were read, not seen laid out: see them on a real level-up
-  if a scene can reach one**).
+- **Phase:** 8. QA in the emulator: in progress (session z: build **f3fd66b97f7d**, so the tour gate and
+  textcover from c014fcdc11f2 are stale: re-run `textcover_all.py` and the full tour (147 scenes now) before the
+  gate; **next: (1) inkbox rows still missing: "Promote? OK No" (01D38D) and "Retreat! Sure? OK No" (01C578), leads
+  below; (2) stress saves (money/items in SRAM not mapped yet: `docs/re/debug.md`); (3) to-do 3 shop lines read in
+  game; (4) the swapped engine B level-up / stat-up lines (1DF0CF.., polish.md) were read, not seen laid out: see
+  them on a real level-up if a scene can reach one; (5) re-tour + textcover + `qa_gate.py check`**).
+- **Session 2026-11-23z (phase 8, inkbox + a live JP box):** (a) **Bug fixed:** the battle-map box
+  「移動目標を選択して下さい」 was still JP (jp_left.md had called 0419DC dead). C4:18F1 runs when X starts a move order
+  after deploy (scenario 11): C4:193D sends 12 glyph words through C0:E1B1. New table **`move_prompt`** (REGIONS
+  0x0419DC-0x0419F4, fixed 12, rendered as tag-font cells like the location labels: `TAG_CELLS`) -> "Pick a
+  destination." (96 px field; "Choose a destination." is 106 px). New scene **`battle_move`** (make_scenes.py);
+  seen `work/qa/w_move_prompt/zoom.png`. (b) inkbox row **`discard_confirm`** (camp Itm -> unit -> item -> Drop:
+  windows 01CCCC "Discard it?", flush left like JP): **11/11 ok**. (c) Leads, not yet reached: *Retreat* confirm
+  01C578: scenario 37 Flee leaves at once; on scenario 11 (B-01) the deploy menu is X (Set/Land/Orders/Fight!),
+  after Fight! A on open ground opens Orders/Flee/Sts/Sit (`work/qa/ib_flee_en`, f5610), but the battle is real
+  time and enemies walk under the cursor, so the A-press lands on a unit in some runs (`ib_flee2/3`); try a scenario
+  with no nearby enemies, or poke the cursor position; the JP ROM pages the opening differently (10 vs 12 A), so a
+  `match` row needs its own JP route. *Promote?* 01D38D: menu record at C8:EB05 (`02 0000 ptr C1:D38D`, then
+  `02 0060 ptr C1:D2F9`), referenced as `24 00 05 EB C8` at file 0x3749C in a word-op script (not engine A/B; the
+  ops around it point to C3:6FC0, C3:BFB0, C3:75C2); class-change lines (ceremony 1DF4C7.. "Dragon Knight open to X")
+  say it follows a level-up. check 60 passed, lint 0, smoke ok.
 - **Session 2026-11-23y (phase 8, text coverage closed):** `textcover_all.py` step 5 "gaps" swaps in whatever the
   report still lists: **sidecover jobs with `catch`** (pointer caught while it holds one table's entry, swapped to
   another table's): `engine_b` (ceremony + short_strings from the description hook C3:C52D; RAM strings the scripts

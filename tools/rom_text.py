@@ -59,6 +59,10 @@ REGIONS = (
     # Starts at the first script (0x041373, called by `03 731344`); 0x04136F-0x041372 is the tail of the event
     # script before it.
     ("system_prompts", 0x041373, 0x0418E3),
+    # 移動目標を選択して下さい: 12 glyph words read by C4:193D (LDA $C419DC,x) and drawn one 8x16 cell each through
+    # C0:E1B1 (the location-label drawer), shown at top right when X starts a move order on the battle map. The
+    # routine C4:18F1 has no direct caller (reached indirectly; read seen in work/qa/ib_rr, scenario 11).
+    ("move_prompt", 0x0419DC, 0x0419F4),
     ("unit_records", 0x046CF4, 0x0473B0),
     # battle_prompts (0x05E8A2-0x05F001) is read byte by byte: tools/byte_scripts.py.
     ("unit_names", 0x06E3AB, 0x06E627),

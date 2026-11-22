@@ -133,8 +133,9 @@ def test_strings_tsv_keys_are_where_each_string_starts(built):
             checked += 1
         elif name in ENGINE_B_TABLES:
             assert data[at:at + 2] == b"\x0b\xff", f"{name} {e['id']}: neither its text nor a trampoline at {at:06X}"
-        else:   # speaker tags and location labels are drawn as tag-font codes, not the plain text
-            assert name in ("speakers", "locations", "unit_records"), f"{name} {e['id']}: {at:06X} isn't its text"
+        else:   # speaker tags, location labels, move_prompt are drawn as tag-font codes, not the plain text
+            from tag_font import TAG_CELLS
+            assert name in {*TAG_CELLS, "unit_records"}, f"{name} {e['id']}: {at:06X} isn't its text"
     assert checked > 850
 
 

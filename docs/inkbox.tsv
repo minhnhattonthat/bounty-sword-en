@@ -9,3 +9,4 @@ save_where	camp_save			9000	proof.png	12,40,48,15	match	camp save label box Wher
 status_name	camp_resolve			9000	proof.png	46,18,74,12	match	status window name field (flush left after the portrait)
 shop_header	town_weapon_shop			9000	proof.png	16,12,128,19	centre	weapon shop header "Arms 1" (JP 武器屋1 is centred; the digit is fixed at col 11, so the label keeps JP's 3 cells)
 shop_header_items	town_item_shop			9000	proof.png	16,12,128,19	centre	item shop header "Item 1" (JP's 3 cells; rect inside the corner rivets, JP measures L48 R50)
+discard_confirm	camp_items	KEEP=true|AFTER='6 a;60 -;6 a;60 -;6 a;60 -;60 -;6 down;40 -;6 down;40 -;6 a;200 -'		2000	f001700.png	78,88,94,16	match	camp item Drop -> windows 01CCCC Discard it? (flush left like JP)

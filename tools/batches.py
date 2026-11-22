@@ -51,7 +51,7 @@ LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "uni
           "town_menu": ("px", 40),
           # location label (C0:E1B1, 10 cells) and name tag (C2:5641, 6 cells) draw one char a cell today: phase 7
           # packs two letters a cell there like C1Run (decision D8), so they get the pair budget too.
-          "locations": ("px", 80), "speakers": ("px", 48),
+          "locations": ("px", 80), "speakers": ("px", 48), "move_prompt": ("px", 96),
           "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("row", 28)}
 EXACT = {"objectives"}
 # Shop dialogue (short_strings 1AF585..1AFDC2) draws in the portrait box: 20 cells a row, measured 2026-11-23
