@@ -137,6 +137,12 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ワルキューレ | Valkyrie | | Rune's Valkyrie Corps | |
 | 火竜 | fire dragon | | Salamander | |
 | スカルナイト | Skull Knight | | | |
+| 報奨の剣 | Sword of Bounty | | the legendary sword that breaks the dark wall | |
+| 暗黒十二神 | Twelve Dark Gods | | bound together = the ultimate weapon | |
+| 閃光のシュタイア | Steyr the Flash | | | |
+| 寸断のリュウビ | Ryubi the Shredder | | | |
+| ロシィ | Rossy | | Steyr's sister | |
+| 合体攻撃 | Combined attack | | combo shouts in caps (GIGA SMASHER!) | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,

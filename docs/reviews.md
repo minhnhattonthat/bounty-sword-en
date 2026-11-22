@@ -12,3 +12,5 @@ one is available (the story pass in phase 9 reads every chapter again).
 | b011 (prologue 2) | own pass | 0 | 0 | 1 (24F91E layout) |
 | b012-b013 (map hints) | own pass | 0 | 1 fixed (1E0000 called the Rheinmetall capital Romulus; Romulus is its own allied realm) | 0 |
 | b014-b016 (Ruins Town, Zodiac statues, Valkyries, Salamander, Isolated Isle) | own pass | 0 | 0 | 0 |
+| b017-b019 (Forgotten Island, Lake Despair, Blood Shield, ruins) | own pass | 0 | 0 | 0 |
+| b020 (spell/skill shouts, combined attacks, castle entrance) | own pass | 0 | 0 | 1 (spaced-out combo shouts written in caps; check on screen in phase 8) |

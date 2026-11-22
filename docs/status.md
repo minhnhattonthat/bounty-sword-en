@@ -2,8 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 795/3539 entries in English (name tables, prologue b010-b011, master_1E0000
-  b012-b016); dialogue batches b017-b050 left, then side tables. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
+- **Phase:** 6. Translate in progress: 1010/3539 entries in English (name tables, prologue b010-b011, master_1E0000
+  b012-b016, master_214606 b017-b019, master_257BD4 b020); dialogue batches b021-b050 left, then side tables.
+  `tools/tl_reuse.py todo|fill bNNN` reuses English for rows whose JP repeats a translated entry (Zodiac statue
+  scenes recur): translate only the `todo` rows into `bNNN.new.tsv`, `fill` writes `bNNN.out.tsv`. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
   stays byte-identical.
 - **Phase 6 workflow (first session, 2026-11-22):** dialogue is authored as one paragraph per JP box
   (`tools/pages.py`, D10): `tools/batches.py` (split/check/merge/zip, adapted from the skill) shows master text as

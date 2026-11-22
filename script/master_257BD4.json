@@ -5,7 +5,8 @@
    2321
   ],
   "jp": "{FF12}「ファイアボール！」\n",
-  "en": ""
+  "en": "{FF12}「Fireball!」\n",
+  "pages": "\"Fireball!\""
  },
  {
   "id": "257BEC",
@@ -13,7 +14,8 @@
    2322
   ],
   "jp": "{FF12}「爆炎よ　嵐となりて　敵をほろぼせ\n　‥‥‥‥ファイアストーム！」\n",
-  "en": ""
+  "en": "{FF12}「Blazing flames, become a\n storm and destroy my foes!\n ......Firestorm!」\n",
+  "pages": "\"Blazing flames, become a storm and destroy my foes! ......Firestorm!\""
  },
  {
   "id": "257C32",
@@ -21,7 +23,8 @@
    2323
   ],
   "jp": "{FF12}「光の水よ　タテとなりて身を守れ\n　‥‥‥‥アクアスクリーン！」\n",
-  "en": ""
+  "en": "{FF12}「Water of light, become a\n shield and protect us!\n ......Aqua Screen!」\n",
+  "pages": "\"Water of light, become a shield and protect us! ......Aqua Screen!\""
  },
  {
   "id": "257C76",
@@ -29,7 +32,8 @@
    2324
   ],
   "jp": "{FF12}「‥‥雷撃の風よ　大気を荒れ狂う\n　刃となりて　地をうごめく\n　魔物のむれに　真なる力を見せよ‥‥」\n{next}\n「サンダーストーム！」\n",
-  "en": ""
+  "en": "{FF12}「...Wind of lightning, become a\n blade that rages through\n the air, and show your true」\n{next}\n「power to the monsters that\n crawl the earth...」\n{next}\n「Thunderstorm!」\n",
+  "pages": "\"...Wind of lightning, become a blade that rages through the air, and show your true power to the monsters that crawl the earth...\" || \"Thunderstorm!\""
  },
  {
   "id": "257CFA",
@@ -37,7 +41,8 @@
    2325
   ],
   "jp": "{FF12}「‥‥ぜったいの氷雪よ　天地も震わせる\n　嵐の牙となりて　迫りくる\n　悪意に　真なる力を見せよ‥‥」\n{next}\n「ブリザード！」\n",
-  "en": ""
+  "en": "{FF12}「...Absolute ice and snow,\n become the fangs of a storm\n that shakes heaven and」\n{next}\n「earth, and show your true\n power to the malice that\n draws near...」\n{next}\n「Blizzard!」\n",
+  "pages": "\"...Absolute ice and snow, become the fangs of a storm that shakes heaven and earth, and show your true power to the malice that draws near...\" || \"Blizzard!\""
  },
  {
   "id": "257D78",
@@ -45,7 +50,8 @@
    2326
   ],
   "jp": "{FF12}「やみよりの　呪いの一撃\n　‥‥‥‥マインドブラスト！」\n",
-  "en": ""
+  "en": "{FF12}「A cursed blow from the\n darkness! ......Mind Blast!」\n",
+  "pages": "\"A cursed blow from the darkness! ......Mind Blast!\""
  },
  {
   "id": "257DB4",
@@ -53,7 +59,8 @@
    2327
   ],
   "jp": "{FF12}「‥‥天よ　地よ　風よ　怒り狂え\n　呪いの　赤い雨となりて\n　その怒りを　降りそそがせよ‥‥」\n{next}\n「ブラッドレイン！」\n",
-  "en": ""
+  "en": "{FF12}「...Heaven, earth, wind, rage!\n Become a red rain of curses\n and pour down your fury...」\n{next}\n「Blood Rain!」\n",
+  "pages": "\"...Heaven, earth, wind, rage! Become a red rain of curses and pour down your fury...\" || \"Blood Rain!\""
  },
  {
   "id": "257E30",
@@ -61,7 +68,8 @@
    2328
   ],
   "jp": "{FF12}「‥‥駆けよ　じごくの　三つの獣\n　なんじの名は　われが　あたえん\n　名をさけべ　この地に集え‥‥」\n{next}\n「ファントムゴアー！」\n",
-  "en": ""
+  "en": "{FF12}「...Run, three beasts of hell! I\n shall give you your names!\n Cry out your names and」\n{next}\n「gather in this land...」\n{next}\n「Phantom Gore!」\n",
+  "pages": "\"...Run, three beasts of hell! I shall give you your names! Cry out your names and gather in this land...\" || \"Phantom Gore!\""
  },
  {
   "id": "257EB4",
@@ -69,7 +77,8 @@
    2329
   ],
   "jp": "{FF12}「生の光‥‥ヒール！」\n",
-  "en": ""
+  "en": "{FF12}「Light of life... Heal!」\n",
+  "pages": "\"Light of life... Heal!\""
  },
  {
   "id": "257ECE",
@@ -77,7 +86,8 @@
    2330
   ],
   "jp": "{FF12}「封殺の光‥‥ターンアンデッド！」\n",
-  "en": ""
+  "en": "{FF12}「Light of sealing... Turn\n Undead!」\n",
+  "pages": "\"Light of sealing... Turn Undead!\""
  },
  {
   "id": "257EF4",
@@ -85,7 +95,8 @@
    2331
   ],
   "jp": "{FF12}「解の光‥‥キュアー！」\n",
-  "en": ""
+  "en": "{FF12}「Light of release... Cure!」\n",
+  "pages": "\"Light of release... Cure!\""
  },
  {
   "id": "257F10",
@@ -93,7 +104,8 @@
    2332
   ],
   "jp": "{FF12}「護の光‥‥ブレスガード！」\n",
-  "en": ""
+  "en": "{FF12}「Light of protection... Bless\n Guard!」\n",
+  "pages": "\"Light of protection... Bless Guard!\""
  },
  {
   "id": "257F30",
@@ -101,7 +113,8 @@
    2333
   ],
   "jp": "{FF12}「希望の光‥‥ヒールオール！」\n",
-  "en": ""
+  "en": "{FF12}「Light of hope... Heal All!」\n",
+  "pages": "\"Light of hope... Heal All!\""
  },
  {
   "id": "257F52",
@@ -109,7 +122,8 @@
    2334
   ],
   "jp": "{FF12}「破邪の光‥‥フォース！」\n",
-  "en": ""
+  "en": "{FF12}「Light that smites evil... Force!」\n",
+  "pages": "\"Light that smites evil... Force!\""
  },
  {
   "id": "257F70",
@@ -117,7 +131,8 @@
    2335
   ],
   "jp": "{FF12}「戦陣の光‥‥ブレスパワー！」\n",
-  "en": ""
+  "en": "{FF12}「Light of battle... Bless Power!」\n",
+  "pages": "\"Light of battle... Bless Power!\""
  },
  {
   "id": "257F92",
@@ -125,7 +140,8 @@
    2336
   ],
   "jp": "{FF12}「線撃の光‥‥バニッシュレイ！」\n",
-  "en": ""
+  "en": "{FF12}「Light that strikes in a line...\n Banish Ray!」\n",
+  "pages": "\"Light that strikes in a line... Banish Ray!\""
  },
  {
   "id": "257FB6",
@@ -133,7 +149,8 @@
    2337
   ],
   "jp": "{FF12}「神々の光輝‥‥リカバー！」\n",
-  "en": ""
+  "en": "{FF12}「Radiance of the gods...\n Recover!」\n",
+  "pages": "\"Radiance of the gods... Recover!\""
  },
  {
   "id": "257FD6",
@@ -141,7 +158,8 @@
    2338
   ],
   "jp": "{FF12}「生動の光輝‥‥メガヒール！」\n",
-  "en": ""
+  "en": "{FF12}「Radiance of life... Mega Heal!」\n",
+  "pages": "\"Radiance of life... Mega Heal!\""
  },
  {
   "id": "257FF8",
@@ -149,7 +167,8 @@
    2339
   ],
   "jp": "{FF12}「聖戦の光輝‥‥ブレスオール！」\n",
-  "en": ""
+  "en": "{FF12}「Radiance of holy war... Bless\n All!」\n",
+  "pages": "\"Radiance of holy war... Bless All!\""
  },
  {
   "id": "25801C",
@@ -157,7 +176,8 @@
    2340
   ],
   "jp": "{FF12}「超撃の光輝‥‥ディバイン！」\n",
-  "en": ""
+  "en": "{FF12}「Radiance of the mighty blow...\n Divine!」\n",
+  "pages": "\"Radiance of the mighty blow... Divine!\""
  },
  {
   "id": "25803E",
@@ -165,7 +185,8 @@
    2341
   ],
   "jp": "{FF12}「‥‥イージス！」\n",
-  "en": ""
+  "en": "{FF12}「...Aegis!」\n",
+  "pages": "\"...Aegis!\""
  },
  {
   "id": "258054",
@@ -173,7 +194,8 @@
    2342
   ],
   "jp": "{FF12}「‥‥イージス２！」\n",
-  "en": ""
+  "en": "{FF12}「...Aegis 2!」\n",
+  "pages": "\"...Aegis 2!\""
  },
  {
   "id": "25806C",
@@ -181,7 +203,8 @@
    2343
   ],
   "jp": "{FF12}「‥‥レスキュー！」\n",
-  "en": ""
+  "en": "{FF12}「...Rescue!」\n",
+  "pages": "\"...Rescue!\""
  },
  {
   "id": "258084",
@@ -189,7 +212,8 @@
    2344
   ],
   "jp": "{FF12}「‥‥くらえ！」\n{next}\n「ソニックシュート！」\n",
-  "en": ""
+  "en": "{FF12}「...Take this!」\n{next}\n「Sonic Shoot!」\n",
+  "pages": "\"...Take this!\" || \"Sonic Shoot!\""
  },
  {
   "id": "2580B4",
@@ -197,7 +221,8 @@
    2345
   ],
   "jp": "{FF12}「‥‥じゃまだ！」\n{next}\n「ハイパーソニック！」\n",
-  "en": ""
+  "en": "{FF12}「...Out of my way!」\n{next}\n「Hypersonic!」\n",
+  "pages": "\"...Out of my way!\" || \"Hypersonic!\""
  },
  {
   "id": "2580E6",
@@ -205,7 +230,8 @@
    2346
   ],
   "jp": "{FF12}「‥‥行くぞ！」\n{next}\n「ソニックライディング！」\n",
-  "en": ""
+  "en": "{FF12}「...Here I go!」\n{next}\n「Sonic Riding!」\n",
+  "pages": "\"...Here I go!\" || \"Sonic Riding!\""
  },
  {
   "id": "25811A",
@@ -213,7 +239,8 @@
    2347
   ],
   "jp": "{FF12}「見よ！　わが投撃必中の技！\n　鋭！　速！　閃！　切！\n　必中‥‥十字しゅりけん！！」\n",
-  "en": ""
+  "en": "{FF12}「Behold! My never-missing\n throwing art! Sharp! Swift!\n Flash! Cut! Sure kill... Cross」\n{next}\n「Shuriken!!」\n",
+  "pages": "\"Behold! My never-missing throwing art! Sharp! Swift! Flash! Cut! Sure kill... Cross Shuriken!!\""
  },
  {
   "id": "258174",
@@ -221,7 +248,8 @@
    2348
   ],
   "jp": "{FF12}「見よ！　わが四方爆散の技！\n　撃！　嵐！　爆！　殺！\n　爆散‥‥み°じ°ん°の°術！！」\n",
-  "en": ""
+  "en": "{FF12}「Behold! My art of bursting in\n all directions! Strike! Storm!\n Blast! Kill! Burst... Mijin Art!!」\n",
+  "pages": "\"Behold! My art of bursting in all directions! Strike! Storm! Blast! Kill! Burst... Mijin Art!!\""
  },
  {
   "id": "2581D2",
@@ -229,7 +257,8 @@
    2349
   ],
   "jp": "{FF12}「見よ！　わが幻影斬撃の技！\n　断！　剣！　斬！　裂！\n　必殺‥‥分°身°斬°り！！」\n",
-  "en": ""
+  "en": "{FF12}「Behold! My phantom slashing\n art! Sever! Sword! Slash!\n Rend! Sure kill... Clone Slash!!」\n",
+  "pages": "\"Behold! My phantom slashing art! Sever! Sword! Slash! Rend! Sure kill... Clone Slash!!\""
  },
  {
   "id": "25822C",
@@ -237,7 +266,8 @@
    2350
   ],
   "jp": "{FF12}「見よ！　わが爆炎速走の技！\n　炎！　撃！　殺！　陣！\n　直撃‥‥火°走°り！！」\n",
-  "en": ""
+  "en": "{FF12}「Behold! My art of the racing\n blaze! Flame! Strike! Kill!\n Formation! Direct hit... Fire」\n{next}\n「Dash!!」\n",
+  "pages": "\"Behold! My art of the racing blaze! Flame! Strike! Kill! Formation! Direct hit... Fire Dash!!\""
  },
  {
   "id": "258282",
@@ -245,7 +275,8 @@
    2351
   ],
   "jp": "{FF12}「走れよ幻！　空走の幻よ！\n　閃動撃走の技‥‥うつしみ！！」\n",
-  "en": ""
+  "en": "{FF12}「Run, phantom! Phantom that\n races the sky! Art of the\n flashing strike... Utsushimi!!」\n",
+  "pages": "\"Run, phantom! Phantom that races the sky! Art of the flashing strike... Utsushimi!!\""
  },
  {
   "id": "2582C2",
@@ -253,7 +284,8 @@
    2352
   ],
   "jp": "{FF12}「しばれよ影！　不動の影よ！\n　封印封殺の技‥‥影ヌイ！！」\n",
-  "en": ""
+  "en": "{FF12}「Bind, shadow! Unmoving\n shadow! Art of the sealing\n kill... Shadow Stitch!!」\n",
+  "pages": "\"Bind, shadow! Unmoving shadow! Art of the sealing kill... Shadow Stitch!!\""
  },
  {
   "id": "258302",
@@ -261,7 +293,8 @@
    2353
   ],
   "jp": "{FF12}「さけべよ風！　暗黒の風よ！\n　毒風召らいの技‥‥黒風！！」\n",
-  "en": ""
+  "en": "{FF12}「Howl, wind! Wind of darkness!\n Art of summoning the poison\n wind... Black Wind!!」\n",
+  "pages": "\"Howl, wind! Wind of darkness! Art of summoning the poison wind... Black Wind!!\""
  },
  {
   "id": "258342",
@@ -269,7 +302,8 @@
    2354
   ],
   "jp": "{FF12}「のびろよ影！　必殺の影よ！\n　幻影必殺の技‥‥鬼影！！」\n",
-  "en": ""
+  "en": "{FF12}「Stretch out, shadow! Deadly\n shadow! Phantom art of the\n sure kill... Demon Shade!!」\n",
+  "pages": "\"Stretch out, shadow! Deadly shadow! Phantom art of the sure kill... Demon Shade!!\""
  },
  {
   "id": "258380",
@@ -277,7 +311,8 @@
    2355
   ],
   "jp": "{FF12}「わが剣の　銀のきらめき！\n　今こそ　その身に受けるがいい！」\n{next}\n「秘剣‥‥Ｘ°の°字°斬°り！」\n",
-  "en": ""
+  "en": "{FF12}「The silver gleam of my\n sword! Now take it upon\n yourself!」\n{next}\n「Secret sword... X Slash!」\n",
+  "pages": "\"The silver gleam of my sword! Now take it upon yourself!\" || \"Secret sword... X Slash!\""
  },
  {
   "id": "2583E8",
@@ -285,7 +320,8 @@
    2356
   ],
   "jp": "{FF12}「聖なる騎士の　魂の一撃！\n　両の目を開けて　見るがよい！」\n{next}\n「光剣‥‥アークバッシャー！」\n",
-  "en": ""
+  "en": "{FF12}「A blow from the soul of a\n holy knight! Open both your\n eyes and behold!」\n{next}\n「Sword of light... Arc Basher!」\n",
+  "pages": "\"A blow from the soul of a holy knight! Open both your eyes and behold!\" || \"Sword of light... Arc Basher!\""
  },
  {
   "id": "25844C",
@@ -293,7 +329,8 @@
    2357
   ],
   "jp": "{FF12}「宿れ　聖なる力！　今こそ\n　破邪の一撃を　悪鬼に与えん！」\n{next}\n「聖剣‥‥ホーリーブレイド！」\n",
-  "en": ""
+  "en": "{FF12}「Holy power, dwell within! Now\n I deal the demon a blow that\n smites evil!」\n{next}\n「Holy sword... Holy Blade!」\n",
+  "pages": "\"Holy power, dwell within! Now I deal the demon a blow that smites evil!\" || \"Holy sword... Holy Blade!\""
  },
  {
   "id": "2584B0",
@@ -301,7 +338,8 @@
    2358
   ],
   "jp": "{FF12}「オレの前に　立つな！」\n{next}\n「くらえ‥‥バーンソニック！」\n",
-  "en": ""
+  "en": "{FF12}「Don't stand in my way!」\n{next}\n「Take this... Burn Sonic!」\n",
+  "pages": "\"Don't stand in my way!\" || \"Take this... Burn Sonic!\""
  },
  {
   "id": "2584F0",
@@ -309,7 +347,8 @@
    2359
   ],
   "jp": "{FF12}「消えろ！　影も残さず！！」\n{next}\n「必殺‥‥ダークブレイド！」\n",
-  "en": ""
+  "en": "{FF12}「Vanish! Leave not even a\n shadow!!」\n{next}\n「Sure kill... Dark Blade!」\n",
+  "pages": "\"Vanish! Leave not even a shadow!!\" || \"Sure kill... Dark Blade!\""
  },
  {
   "id": "258532",
@@ -317,7 +356,8 @@
    2360
   ],
   "jp": "{FF12}「殺しはしない‥‥だが！」\n{next}\n「止まれ‥‥スタンブレイド！」\n",
-  "en": ""
+  "en": "{FF12}「I won't kill you... But!」\n{next}\n「Stop... Stun Blade!」\n",
+  "pages": "\"I won't kill you... But!\" || \"Stop... Stun Blade!\""
  },
  {
   "id": "258574",
@@ -325,7 +365,8 @@
    2361
   ],
   "jp": "{FF12}「竜の牙よ！　力の牙よ！\n　わが身に　眠る力を　よび起こせ！\n　‥‥‥‥ドラゴンファング！！」\n",
-  "en": ""
+  "en": "{FF12}「Fang of the dragon! Fang of\n power! Awaken the power\n sleeping within me! ......Dragon」\n{next}\n「Fang!!」\n",
+  "pages": "\"Fang of the dragon! Fang of power! Awaken the power sleeping within me! ......Dragon Fang!!\""
  },
  {
   "id": "2585D6",
@@ -333,7 +374,8 @@
    2362
   ],
   "jp": "{FF12}「竜の叫びよ！　魂の叫びよ！\n　悪を震わすひびき　よび起こせ！\n　‥‥‥‥ドラゴンクライ！！」\n",
-  "en": ""
+  "en": "{FF12}「Cry of the dragon! Cry of\n the soul! Awaken a roar that\n makes evil tremble! ......Dragon」\n{next}\n「Cry!!」\n",
+  "pages": "\"Cry of the dragon! Cry of the soul! Awaken a roar that makes evil tremble! ......Dragon Cry!!\""
  },
  {
   "id": "258638",
@@ -341,7 +383,8 @@
    2363
   ],
   "jp": "{FF12}「竜の翼よ！　飛越の翼よ！\n　大気の怒りを　よび起こせ！\n　‥‥‥‥ドラゴンストーム！」\n",
-  "en": ""
+  "en": "{FF12}「Wings of the dragon! Wings\n that soar! Awaken the fury\n of the sky! ......Dragon Storm!」\n",
+  "pages": "\"Wings of the dragon! Wings that soar! Awaken the fury of the sky! ......Dragon Storm!\""
  },
  {
   "id": "258694",
@@ -349,7 +392,8 @@
    2364
   ],
   "jp": "{FF12}「‥‥真空斬り‥‥」\n",
-  "en": ""
+  "en": "{FF12}「...Vacuum Slash...」\n",
+  "pages": "\"...Vacuum Slash...\""
  },
  {
   "id": "2586AC",
@@ -357,7 +401,8 @@
    2365
   ],
   "jp": "{FF12}「‥‥ミネウチ‥‥」\n",
-  "en": ""
+  "en": "{FF12}「...Mineuchi...」\n",
+  "pages": "\"...Mineuchi...\""
  },
  {
   "id": "2586C4",
@@ -365,7 +410,8 @@
    2366
   ],
   "jp": "{FF12}「‥‥百鬼斬‥‥」\n",
-  "en": ""
+  "en": "{FF12}「...Demon Horde...」\n",
+  "pages": "\"...Demon Horde...\""
  },
  {
   "id": "2586DA",
@@ -373,7 +419,8 @@
    2367
   ],
   "jp": "{FF12}「この一撃で　じごくの　夢を見よ！\n　夢幻の矢‥‥ヒュプノショット！」\n",
-  "en": ""
+  "en": "{FF12}「Dream of hell with this one\n shot! Arrow of dreams...\n Hypno Shot!」\n",
+  "pages": "\"Dream of hell with this one shot! Arrow of dreams... Hypno Shot!\""
  },
  {
   "id": "258724",
@@ -381,7 +428,8 @@
    2368
   ],
   "jp": "{FF12}「空を駆けよ！　天をつらぬけ！\n　超遠の一撃‥‥レンジプラス！」\n",
-  "en": ""
+  "en": "{FF12}「Race across the sky! Pierce\n the heavens! A blow from\n afar... Range Plus!」\n",
+  "pages": "\"Race across the sky! Pierce the heavens! A blow from afar... Range Plus!\""
  },
  {
   "id": "258768",
@@ -389,7 +437,8 @@
    2369
   ],
   "jp": "{FF12}「わが怒りを秘めし　千本の矢\n　その身に　受けるがいい！\n　必中の矢‥‥サウザンドアロー！」\n",
-  "en": ""
+  "en": "{FF12}「A thousand arrows that hold\n my wrath! Take them upon\n yourself! Never-missing」\n{next}\n「arrows... 1000 Arrows!」\n",
+  "pages": "\"A thousand arrows that hold my wrath! Take them upon yourself! Never-missing arrows... 1000 Arrows!\""
  },
  {
   "id": "2587C8",
@@ -397,7 +446,8 @@
    2370
   ],
   "jp": "{FF12}「わが魂を秘めし　数万の矢\n　迫りくる敵を　つらぬかん！\n　乱撃の矢‥‥ミリオンアロー！」\n",
-  "en": ""
+  "en": "{FF12}「Tens of thousands of\n arrows that hold my soul!\n Pierce the oncoming foe!」\n{next}\n「Arrows of the barrage...\n Million Arrows!」\n",
+  "pages": "\"Tens of thousands of arrows that hold my soul! Pierce the oncoming foe! Arrows of the barrage... Million Arrows!\""
  },
  {
   "id": "258826",
@@ -405,7 +455,8 @@
    2371
   ],
   "jp": "{FF12}「今度のは　ただの弾丸じゃないぞ！\n　チャンバー内に装弾！\n　ハンマーコック！　ターゲット！」\n{next}\n「エレメンタルブレッド！」\n",
-  "en": ""
+  "en": "{FF12}「This one's no ordinary bullet!\n Round in the chamber!\n Hammer cocked! Target!」\n{next}\n「Element Bullet!」\n",
+  "pages": "\"This one's no ordinary bullet! Round in the chamber! Hammer cocked! Target!\" || \"Element Bullet!\""
  },
  {
   "id": "2588A8",
@@ -413,7 +464,8 @@
    2372
   ],
   "jp": "{FF12}「風向きよし！　風速よし！\n　‥‥目標移動方向よし！\n　サイティング！　ターゲット！」\n{next}\n「キルショット！」\n",
-  "en": ""
+  "en": "{FF12}「Wind direction good! Wind\n speed good! ...Target's\n heading good! Sighting!」\n{next}\n「Target!」\n{next}\n「Kill Shot!」\n",
+  "pages": "\"Wind direction good! Wind speed good! ...Target's heading good! Sighting! Target!\" || \"Kill Shot!\""
  },
  {
   "id": "25891A",
@@ -421,7 +473,8 @@
    2373
   ],
   "jp": "{FF12}「ランチャーサイト　オープン！\n　グレネード弾セット！\n　ハイ°エクスプロージョン！」\n{next}\n「メタルグレネード！」\n",
-  "en": ""
+  "en": "{FF12}「Launcher sight open! Grenade\n set! High explosive!」\n{next}\n「Metal Grenade!」\n",
+  "pages": "\"Launcher sight open! Grenade set! High explosive!\" || \"Metal Grenade!\""
  },
  {
   "id": "258990",
@@ -429,7 +482,8 @@
    2374
   ],
   "jp": "{FF12}「うおりゃぁぁぁぁぁぁぁっ！\n　二度と　起き上がるな！\n　‥‥狼°牙°封°殺‥‥！」\n",
-  "en": ""
+  "en": "{FF12}「Hrraaaaaaaaaah! Don't you\n ever get up again! ...Wolf\n Fang Seal...!」\n",
+  "pages": "\"Hrraaaaaaaaaah! Don't you ever get up again! ...Wolf Fang Seal...!\""
  },
  {
   "id": "2589E8",
@@ -437,7 +491,8 @@
    2375
   ],
   "jp": "{FF12}「こぉぉぉぉぉぉぉぉぉぉっ！\n　敵の一撃こそ　わが一撃！\n　‥‥地°竜°逆°撃‥‥！」\n",
-  "en": ""
+  "en": "{FF12}「Hoooooooooooo! The enemy's\n blow becomes my blow!\n ...Earth Dragon...!」\n",
+  "pages": "\"Hoooooooooooo! The enemy's blow becomes my blow! ...Earth Dragon...!\""
  },
  {
   "id": "258A42",
@@ -445,7 +500,8 @@
    2376
   ],
   "jp": "{FF12}「どありゃぁぁぁぁぁぁぁぁっ！\n　燃えろ！　叫べ！　駆けよ！\n　わが熱き魂を　拳にこめて！」\n{next}\n「‥‥破°軍°闘°神‥‥！」\n",
-  "en": ""
+  "en": "{FF12}「Doryaaaaaaaaaah! Burn! Roar!\n Charge! I put my burning soul\n into this fist!」\n{next}\n「...War God Rout...!」\n",
+  "pages": "\"Doryaaaaaaaaaah! Burn! Roar! Charge! I put my burning soul into this fist!\" || \"...War God Rout...!\""
  },
  {
   "id": "258AC4",
@@ -453,7 +509,8 @@
    2377
   ],
   "jp": "{FF12}「天に岩　地には雲！\n　九刻八星‥‥降岩の陣！」\n",
-  "en": ""
+  "en": "{FF12}「Rocks in the sky, clouds on\n the earth! Nine hours, eight\n stars... Rockfall Array!」\n",
+  "pages": "\"Rocks in the sky, clouds on the earth! Nine hours, eight stars... Rockfall Array!\""
  },
  {
   "id": "258AF8",
@@ -461,7 +518,8 @@
    2378
   ],
   "jp": "{FF12}「きたれよ竜　大地の竜よ！\n　八方十六　四方八星！\n　開けよ死門！　通じよ鬼橋！」\n{next}\n「‥‥地脈の陣‥‥！」\n",
-  "en": ""
+  "en": "{FF12}「Come, dragon! Dragon of the\n earth! Eight directions,\n sixteen! Four quarters, eight」\n{next}\n「stars! Open, gate of death!\n Connect, demon bridge!」\n{next}\n「...Ley Line Array...!」\n",
+  "pages": "\"Come, dragon! Dragon of the earth! Eight directions, sixteen! Four quarters, eight stars! Open, gate of death! Connect, demon bridge!\" || \"...Ley Line Array...!\""
  },
  {
   "id": "258B6A",
@@ -469,7 +527,8 @@
    2379
   ],
   "jp": "{FF12}「門は通じる　八つの門よ！\n　‥‥奇門遁甲‥‥八陣の図！」\n",
-  "en": ""
+  "en": "{FF12}「The gates connect, the eight\n gates! ...Kimon Tonko... Chart\n of the Eight Formations!」\n",
+  "pages": "\"The gates connect, the eight gates! ...Kimon Tonko... Chart of the Eight Formations!\""
  },
  {
   "id": "258BA8",
@@ -477,7 +536,8 @@
    2380
   ],
   "jp": "{FF12}「‥‥十°兵°解°命°印°\n　八印に結ぶは　五行なり\n　千°鬼°丹°道°生°式‥‥」\n{next}\n「いでよ‥‥式神ども！」\n",
-  "en": ""
+  "en": "{FF12}「...Seal of the ten soldiers'\n release! The eight seals are\n bound by the five elements!」\n{next}\n「Formula of the thousand\n demons' elixir path...」\n{next}\n「Come forth... shikigami!」\n",
+  "pages": "\"...Seal of the ten soldiers' release! The eight seals are bound by the five elements! Formula of the thousand demons' elixir path...\" || \"Come forth... shikigami!\""
  },
  {
   "id": "258C1E",
@@ -485,7 +545,8 @@
    2381
   ],
   "jp": "{FF12}「‥‥秘仙道八十八法が一つ\n　つながりし　門と門\n　移すその身を　転移の法と！」\n",
-  "en": ""
+  "en": "{FF12}「...One of the eighty-eight\n secret hermit arts! Gate\n joined to gate! The body that」\n{next}\n「moves, by the Teleport Art!」\n",
+  "pages": "\"...One of the eighty-eight secret hermit arts! Gate joined to gate! The body that moves, by the Teleport Art!\""
  },
  {
   "id": "258C72",
@@ -493,7 +554,8 @@
    2382
   ],
   "jp": "{FF12}「‥‥秘仙道八十八法が一つ\n　邪をやどす　心と体\n　斬る刃を　邪仙の法と！」\n",
-  "en": ""
+  "en": "{FF12}「...One of the eighty-eight\n secret hermit arts! Heart\n and body that harbor evil!」\n{next}\n「The blade that cuts them, by\n the Evil Sage Art!」\n",
+  "pages": "\"...One of the eighty-eight secret hermit arts! Heart and body that harbor evil! The blade that cuts them, by the Evil Sage Art!\""
  },
  {
   "id": "258CC2",
@@ -501,7 +563,8 @@
    2383
   ],
   "jp": "{FF12}「‥‥アイスキューブを！」\n{next}\n{spk}○○○○　　\n「わかった！　魔法と剣を合わせる！」\n{next}\n{spk}××××　　\n「‥‥氷の牙よ！　氷雪の力よ！\n　今こそ目覚めん！　その\n　白き光　刃に封じこめて‥‥！」\n{next}\n{spk}○○○○　　\n「合体攻撃！」\n{next}\n{spk}××××　　\n「ア°イ°ス°キ°ュ°ー°ブ！」\n{spk}○○○○　　\n「ア°イ°ス°キ°ュ°ー°ブ！」\n",
-  "en": ""
+  "en": "{FF12}「...Ice Cube!」\n{next}\n{spk}○○○○　　\n「Got it! Let's combine magic\n and sword!」\n{next}\n{spk}××××　　\n「...Fang of ice! Power of ice\n and snow! Awaken now! Seal\n that white light into the」\n{next}\n「blade...!」\n{next}\n{spk}○○○○　　\n「Combined attack!」\n{next}\n{spk}××××　　\n「ICE CUBE!」\n{spk}○○○○　　\n「ICE CUBE!」\n",
+  "pages": "\"...Ice Cube!\" || \"Got it! Let's combine magic and sword!\" || \"...Fang of ice! Power of ice and snow! Awaken now! Seal that white light into the blade...!\" || \"Combined attack!\" || \"ICE CUBE!\" || \"ICE CUBE!\""
  },
  {
   "id": "258E16",
@@ -509,7 +572,8 @@
    2384
   ],
   "jp": "{FF12}「‥‥グラビティホールを！」\n{next}\n{spk}○○○○　　\n「‥‥わかった！」\n{next}\n「‥‥おう！」\n{next}\n{spk}××××　　\n「‥‥開けよ　暗黒のとびら\n　やみを！　光を！　力を！\n　三つのカギ　今こそ回さん‥‥」\n{next}\n{spk}○○○○　　\n「合体攻撃！」\n{next}\n「グ°ラ°ビ°テ°ィ°ホ°ー°ル！」\n",
-  "en": ""
+  "en": "{FF12}「...Gravity Hole!」\n{next}\n{spk}○○○○　　\n「...Got it!」\n{next}\n「...Right!」\n{next}\n{spk}××××　　\n「...Open, door of darkness!\n Darkness! Light! Power! Now I\n turn the three keys...」\n{next}\n{spk}○○○○　　\n「Combined attack!」\n{next}\n「GRAVITY HOLE!」\n",
+  "pages": "\"...Gravity Hole!\" || \"...Got it!\" || \"...Right!\" || \"...Open, door of darkness! Darkness! Light! Power! Now I turn the three keys...\" || \"Combined attack!\" || \"GRAVITY HOLE!\""
  },
  {
   "id": "258F2E",
@@ -517,7 +581,8 @@
    2385
   ],
   "jp": "{spk}{FF1F}\n「‥‥やるぞ　ロジャー　ミランダ」\n{next}\n{spk}ロジャー　　\n「わかりました！」\n{next}\n{spk}ミランダ　　\n「あれを使うのですね！？」\n{next}\n{spk}{FF1F}\n「布陣！」\n{spk}{FF1F}\n「合体攻撃！」\n{next}\n「ギ°ガ°ス°マ°ッ°シ°ャ°ー！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Let's do it, Roger, Miranda.」\n{next}\n{spk}ロジャー　　\n「Understood!」\n{next}\n{spk}ミランダ　　\n「We are using that, are we\n not!?」\n{next}\n{spk}{FF1F}\n「Formation!」\n{spk}{FF1F}\n「Combined attack!」\n{next}\n「GIGA SMASHER!」\n",
+  "pages": "\"...Let's do it, Roger, Miranda.\" || \"Understood!\" || \"We are using that, are we not!?\" || \"Formation!\" || \"Combined attack!\" || \"GIGA SMASHER!\""
  },
  {
   "id": "259006",
@@ -525,7 +590,8 @@
    2386
   ],
   "jp": "{spk}ロブン　　　\n「ファウストどの　お力を！」\n{spk}ファウスト　\n「‥‥わかりました　東洋の風水\n　西洋の魔力　一つに重ねて！」\n{next}\n{spk}ロブン　　　\n「まいりますぞ！」\n{spk}ファウスト　\n「合体攻撃！」\n{spk}ロブン　　　\n「モ°ー°タ°ル°リ°ン°グ！」\n{spk}ファウスト　　\n「モ°ー°タ°ル°リ°ン°グ！」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Faust, lend me your\n strength!」\n{spk}ファウスト　\n「...Very well. Eastern\n geomancy and Western\n magic, joined as one!」\n{next}\n{spk}ロブン　　　\n「Here we go!」\n{spk}ファウスト　\n「Combined attack!」\n{spk}ロブン　　　\n「MORTAL RING!」\n{spk}ファウスト　　\n「MORTAL RING!」\n",
+  "pages": "\"Faust, lend me your strength!\" || \"...Very well. Eastern geomancy and Western magic, joined as one!\" || \"Here we go!\" || \"Combined attack!\" || \"MORTAL RING!\" || \"MORTAL RING!\""
  },
  {
   "id": "259132",
@@ -533,7 +599,8 @@
    2387
   ],
   "jp": "{FF12}「よし　やるぞ！」\n{spk}××××　　\n「‥‥おう！」\n「‥‥わかった！」\n{spk}○○○○　　\n「行けぇぇぇぇーーーっ！」\n{spk}××××　　\n「合体攻撃！」\n「ア°ナ°ザ°\n　デ°ィ°メ°ン°シ°ョ°ン！」\n",
-  "en": ""
+  "en": "{FF12}「All right, let's do it!」\n{spk}××××　　\n「...Right!\"\n \"...Got it!」\n{spk}○○○○　　\n「Goooooooooo!」\n{spk}××××　　\n「Combined attack!\"\n \"ANOTHER WORLD!」\n",
+  "pages": "\"All right, let's do it!\" || \"...Right!\"\\n\"...Got it!\" || \"Goooooooooo!\" || \"Combined attack!\"\\n\"ANOTHER WORLD!\""
  },
  {
   "id": "2591FA",
@@ -541,7 +608,8 @@
    2388
   ],
   "jp": "{spk}{FF1F}\n「‥‥やるか　アジャックス」\n{spk}アジャックス\n「おう！　昔のようにな！」\n{spk}{FF1F}\n「‥‥おくれるな　アジャックス！」\n{spk}アジャックス\n「お前こそ　{hero}！」\n{spk}{FF1F}\n「‥‥合体攻撃！」\n{spk}{FF1F}\n「ダ°ブ°ル°ソ°ニ°ッ°ク！」\n{spk}アジャックス\n「ダ°ブ°ル°ソ°ニ°ッ°ク！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Shall we, Ajax?」\n{spk}アジャックス\n「Yeah! Just like the old days!」\n{spk}{FF1F}\n「...Don't fall behind, Ajax!」\n{spk}アジャックス\n「Look who's talking, {hero}!」\n{spk}{FF1F}\n「...Combined attack!」\n{spk}{FF1F}\n「DOUBLE SONIC!」\n{spk}アジャックス\n「DOUBLE SONIC!」\n",
+  "pages": "\"...Shall we, Ajax?\" || \"Yeah! Just like the old days!\" || \"...Don't fall behind, Ajax!\" || \"Look who's talking, {hero}!\" || \"...Combined attack!\" || \"DOUBLE SONIC!\" || \"DOUBLE SONIC!\""
  },
  {
   "id": "259316",
@@ -549,7 +617,8 @@
    1864
   ],
   "jp": "「そして　オレたちは\n　神祖連邦オルドバの　王城\n　その入り口へと　突入した‥‥」\n",
-  "en": ""
+  "en": "「And then we stormed the\n entrance of the royal castle\n of the Divine Federation of」\n{next}\n「Ordoba...」\n",
+  "pages": "\"And then we stormed the entrance of the royal castle of the Divine Federation of Ordoba...\""
  },
  {
   "id": "25936A",
@@ -557,7 +626,8 @@
    1865
   ],
   "jp": "「閉ざされた戦場」\n",
-  "en": ""
+  "en": "「The Closed Battlefield」\n",
+  "pages": "\"The Closed Battlefield\""
  },
  {
   "id": "25937E",
@@ -565,7 +635,8 @@
    1866
   ],
   "jp": "{spk}{FF28}\n「ここが　敵の王城‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So this is the enemy's royal\n castle...」\n",
+  "pages": "\"So this is the enemy's royal castle...\""
  },
  {
   "id": "25939E",
@@ -573,7 +644,8 @@
    1867
   ],
   "jp": "{spk}ロジャー　　\n「いよいよ　連邦との対決！\n　死んでいった　仲間のためにも\n　ぼくたちは　必ず　勝つ！」\n{next}\n「たとえ　この身が\n　真っ赤な　血で　そまろうと！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「At last, the showdown with\n the Federation! For our\n comrades who died, we will」\n{next}\n「win, no matter what!」\n{next}\n「Even if I end up drenched in\n blood!」\n",
+  "pages": "\"At last, the showdown with the Federation! For our comrades who died, we will win, no matter what!\" || \"Even if I end up drenched in blood!\""
  },
  {
   "id": "259442",
@@ -581,7 +653,8 @@
    1868
   ],
   "jp": "{spk}ミランダ　　\n「神よ　われらに　勝利を‥‥\n　全ての国の　全ての民のために‥‥」\n{next}\n「今いちど　きせきの力を\n　私たち反乱軍に　おあたえ下さい」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「O God, grant us victory... For\n every people of every\n nation...」\n{next}\n「Once more, grant the power\n of miracles to us, the rebel\n army.」\n",
+  "pages": "\"O God, grant us victory... For every people of every nation...\" || \"Once more, grant the power of miracles to us, the rebel army.\""
  },
  {
   "id": "2594D8",
@@ -589,7 +662,8 @@
    1869
   ],
   "jp": "{spk}ロブン　　　\n「なるほど　この城から\n　全ての　わざわいが　広がった\n　歴史とは　おもしろい物ですな」\n{next}\n「ほんの　ささやかな　ぐうぜんが\n　つみ重なり　歴史は　きずかれる\n　誰もが　それと知らないうちに‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I see. All the calamities\n spread from this very castle.\n History is a curious thing.」\n{next}\n「History is built from the\n smallest coincidences piling\n up, without anyone ever」\n{next}\n「realizing it...」\n",
+  "pages": "\"I see. All the calamities spread from this very castle. History is a curious thing.\" || \"History is built from the smallest coincidences piling up, without anyone ever realizing it...\""
  },
  {
   "id": "2595B0",
@@ -597,7 +671,8 @@
    1870
   ],
   "jp": "{spk}マウザー　　\n「さぁ　出てきやがれ！\n　どんな敵でも　ぶちのめす！」\n{next}\n「オケアノスの闘士は\n　どんな物にも　ひるまないぜ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「C'mon, come out already! I'll\n flatten any enemy!」\n{next}\n「A fighter of Oceanus doesn't\n flinch at anything!」\n",
+  "pages": "\"C'mon, come out already! I'll flatten any enemy!\" || \"A fighter of Oceanus doesn't flinch at anything!\""
  },
  {
   "id": "259634",
@@ -605,7 +680,8 @@
    1871
   ],
   "jp": "{spk}シュタイア　\n「ロムルスの民の　カタキは\n　このオレが　必ず　つける！」\n{next}\n「そして　妹ロシィを殺した\n　この戦争を　今日　終わらせる！\n　オレの銃弾に　ちかってな！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「I'll avenge the people of\n Romulus, I swear it!」\n{next}\n「And I'll end this war that\n killed my sister Rossy, today!\n On my bullets!」\n",
+  "pages": "\"I'll avenge the people of Romulus, I swear it!\" || \"And I'll end this war that killed my sister Rossy, today! On my bullets!\""
  },
  {
   "id": "2596E2",
@@ -613,7 +689,8 @@
    1872
   ],
   "jp": "{spk}アテナ　　　\n「これで　むなしい戦いを\n　終わらせる事が　できるのですね」\n{next}\n「ならば私も　最高の剣を\n　ふるいましょう！\n　シルバーナイトの　名にかけて！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「So with this, we can end\n these empty battles.」\n{next}\n「Then I too shall wield my\n finest sword! On my name as\n a Silver Knight!」\n",
+  "pages": "\"So with this, we can end these empty battles.\" || \"Then I too shall wield my finest sword! On my name as a Silver Knight!\""
  },
  {
   "id": "259786",
@@ -621,7 +698,8 @@
    1873
   ],
   "jp": "{spk}リュウビ　　\n「いよいよか‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「So it is time...」\n",
+  "pages": "\"So it is time...\""
  },
  {
   "id": "2597AA",
@@ -629,7 +707,8 @@
    1874
   ],
   "jp": "{spk}ツキカゲ　　\n「‥‥ククク　スリルだな！\n　血が　わきたつほどに\n　ゾクゾクする！　シビれるぜ！」\n{next}\n「{hero}さんよ\n　アンタの　仲間になって\n　本当に　よかったと思うぜ！」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「...Heh heh heh, what a thrill!\n My blood's boiling! I've got\n shivers! I love it!」\n{next}\n「Hey, {hero}. I'm real glad I\n joined up with you!」\n",
+  "pages": "\"...Heh heh heh, what a thrill! My blood's boiling! I've got shivers! I love it!\" || \"Hey, {hero}. I'm real glad I joined up with you!\""
  },
  {
   "id": "259864",
