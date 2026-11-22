@@ -464,7 +464,8 @@
    180
   ],
   "jp": "{spk}情報屋　　　\n「残念だが　仕事の依頼は　ないぜ！」\n{next}\n「ここだけの話だがな　この王国も\n　さすがに　そろそろヤバそうだ」\n{next}\n「何でも連邦は　海上部隊を集めて\n　今度こそ　この大ラインメタルに\n　本格的に　兵を送り込んでくるらしい」\n{next}\n「連日　戦いに敗れた　騎士どもが\n　現実を　忘れようと\n　ヤケ酒を　かっくらいに　きやがる」\n{next}\n「しかし　もう逃げ場は　ねえやな\n　こうなったら　連邦相手に\n　商売を　続けるしか　なさそうだ」\n{next}\n「もっとも　東の大国ロムルスも\n　全[03AC]が　むざんに　殺されたそうだし\n　そいつも　望みうすってとこだな」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Sorry, no jobs going!」\n{next}\n「Between you and me, even\n this kingdom looks about\n done for.」\n{next}\n「Word is the Federation's\n gathering its naval forces,\n and this time it'll send」\n{next}\n「troops into our great\n Rheinmetall for real.」\n{next}\n「Day after day, knights\n who've lost their battles\n come in to drown their」\n{next}\n「sorrows and forget what's\n real.」\n{next}\n「But there's nowhere left to\n run. Way things are, I'll just\n have to keep doing business」\n{next}\n「with the Federation.」\n{next}\n「Then again, they say every\n last soul in the great\n eastern power of Romulus」\n{next}\n「was cruelly killed, so there's\n not much hope in that either.」\n",
+  "pages": "\"Sorry, no jobs going!\" || \"Between you and me, even this kingdom looks about done for.\" || \"Word is the Federation's gathering its naval forces, and this time it'll send troops into our great Rheinmetall for real.\" || \"Day after day, knights who've lost their battles come in to drown their sorrows and forget what's real.\" || \"But there's nowhere left to run. Way things are, I'll just have to keep doing business with the Federation.\" || \"Then again, they say every last soul in the great eastern power of Romulus was cruelly killed, so there's not much hope in that either.\""
  },
  {
   "id": "29224A",
@@ -472,7 +473,8 @@
    181
   ],
   "jp": "{spk}情報屋　　　\n「残念だが　仕事の依頼は　ないぜ！」\n{next}\n「すでに　かくごは　決めたよ\n　連邦に殺されるまで　オレは\n　ここで　客に酒を　出し続けるさ」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Sorry, no jobs going!」\n{next}\n「I've made up my mind. Until\n the Federation kills me, I'll\n keep serving drinks to」\n{next}\n「customers right here.」\n",
+  "pages": "\"Sorry, no jobs going!\" || \"I've made up my mind. Until the Federation kills me, I'll keep serving drinks to customers right here.\""
  },
  {
   "id": "2922E4",
@@ -480,7 +482,8 @@
    182
   ],
   "jp": "「逃走した　盗賊を追って　オレは\n　ブラックバーンの山へ　足をふみいれた\n　遠くから見わたす　この山は美しい」\n{next}\n「しかし　山のふもとの村は\n　見るもむざんに　あれはてていた\n　盗賊‥‥　ぼうどう‥‥　恐怖‥‥」\n{next}\n「この山が　今のラインメタルの姿だ\n　美しい国土とは　うらはらに\n　人々は　死の恐怖に　おびえる‥‥」\n",
-  "en": ""
+  "en": "「Chasing the bandits who'd\n fled, I set foot on Mount\n Blackburn. Seen from afar,」\n{next}\n「this mountain is beautiful.」\n{next}\n「But the village at its foot\n was a wretched ruin.\n Bandits... riots... terror...」\n{next}\n「This mountain is Rheinmetall\n as it is now. Behind the\n beautiful land, the people」\n{next}\n「tremble in fear of death...」\n",
+  "pages": "\"Chasing the bandits who'd fled, I set foot on Mount Blackburn. Seen from afar, this mountain is beautiful.\" || \"But the village at its foot was a wretched ruin. Bandits... riots... terror...\" || \"This mountain is Rheinmetall as it is now. Behind the beautiful land, the people tremble in fear of death...\""
  },
  {
   "id": "292428",
@@ -488,7 +491,8 @@
    183
   ],
   "jp": "「追撃戦」\n",
-  "en": ""
+  "en": "「The Pursuit」\n",
+  "pages": "\"The Pursuit\""
  },
  {
   "id": "292434",
@@ -496,7 +500,8 @@
    184
   ],
   "jp": "{spk}{FF28}\n「いたわ！　北に盗賊のむれ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There they are! A pack of\n bandits to the north!」\n",
+  "pages": "\"There they are! A pack of bandits to the north!\""
  },
  {
   "id": "29245A",
@@ -504,7 +509,8 @@
    185
   ],
   "jp": "{spk}コルツ　　　\n「ふん　たかだか盗賊ども\n　オレたちの　敵ではないな」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Hmph. Mere bandits. They're\n no match for us.」\n",
+  "pages": "\"Hmph. Mere bandits. They're no match for us.\""
  },
  {
   "id": "2924A2",
@@ -512,7 +518,8 @@
    186
   ],
   "jp": "{spk}ヘンメリー　\n「うふふ　コソドロさんね　\n　三分　いえ　二分で\n　ケリは　つくかしら？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Ufufu, petty thieves, are\n they? Three minutes, no,\n two, to settle it?」\n",
+  "pages": "\"Ufufu, petty thieves, are they? Three minutes, no, two, to settle it?\""
  },
  {
   "id": "2924FE",
@@ -520,7 +527,8 @@
    187
   ],
   "jp": "{spk}コルツ　　　\n「どのみち　たあいもない相手だ\n　バウンティハンターとしちゃ\n　これほど　楽な仕事も　あるまいて」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Either way, they're\n pushovers. For a bounty\n hunter, there's no easier job」\n{next}\n「than this.」\n",
+  "pages": "\"Either way, they're pushovers. For a bounty hunter, there's no easier job than this.\""
  },
  {
   "id": "292572",
@@ -528,7 +536,8 @@
    188
   ],
   "jp": "{spk}{FF1F}\n「しかし　ゆだんはするな\n　手負いのケモノは　こわいものだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Don't get careless, though. A\n wounded beast is a\n dangerous thing.」\n",
+  "pages": "\"Don't get careless, though. A wounded beast is a dangerous thing.\""
  },
  {
   "id": "2925B6",
@@ -536,7 +545,8 @@
    189
   ],
   "jp": "{spk}ヘンメリー　\n「あらあら　連中　ケモノあつかい？\n　なら　私たちは　何なのかしら？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Oh my, treating them like\n beasts? Then what does\n that make us?」\n",
+  "pages": "\"Oh my, treating them like beasts? Then what does that make us?\""
  },
  {
   "id": "29260E",
@@ -544,7 +554,8 @@
    190
   ],
   "jp": "{spk}{FF1F}\n「何とでも　連中が　好きに呼ぶさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Whatever they like to call us.」\n",
+  "pages": "\"Whatever they like to call us.\""
  },
  {
   "id": "292638",
@@ -552,7 +563,8 @@
    191
   ],
   "jp": "{spk}コルツ　　　\n「よし　行こうか！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Right, let's go!」\n",
+  "pages": "\"Right, let's go!\""
  },
  {
   "id": "29265E",
@@ -560,7 +572,8 @@
    192
   ],
   "jp": "{spk}盗賊のボス　\n「お　おまえは‥‥　{hero}！？\n　まさか　ここまで追ってくるとは！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Y-you're... {hero}!? I never\n thought you'd chase us all\n the way here!」\n",
+  "pages": "\"Y-you're... {hero}!? I never thought you'd chase us all the way here!\""
  },
  {
   "id": "2926BA",
@@ -568,7 +581,8 @@
    193
   ],
   "jp": "{spk}{FF28}\n「かんねんなさいっ　悪とうっ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Give up, you villain!」\n",
+  "pages": "\"Give up, you villain!\""
  },
  {
   "id": "2926E2",
@@ -576,7 +590,8 @@
    194
   ],
   "jp": "{spk}盗賊のボス　\n「確かに　オレは　悪とうだ\n　だが　その悪とうを　殺して\n　金をもらう　お前らは　何なんだ！？」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Sure, I'm a villain. But what\n does that make you lot, who\n kill villains for money!?」\n",
+  "pages": "\"Sure, I'm a villain. But what does that make you lot, who kill villains for money!?\""
  },
  {
   "id": "292754",
@@ -584,7 +599,8 @@
    195
   ],
   "jp": "{spk}{FF1F}\n「好きに　呼べばいいさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Call us what you like.」\n",
+  "pages": "\"Call us what you like.\""
  },
  {
   "id": "292774",
@@ -592,7 +608,8 @@
    196
   ],
   "jp": "{spk}盗賊のボス　\n「こ‥‥　この‥‥\n　くさった　人殺しやろうめが！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Y... you... you rotten\n murderer!」\n",
+  "pages": "\"Y... you... you rotten murderer!\""
  },
  {
   "id": "2927BA",
@@ -600,7 +617,8 @@
    197
   ],
   "jp": "{spk}{FF1F}\n「おたがいにな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Takes one to know one.」\n",
+  "pages": "\"Takes one to know one.\""
  },
  {
   "id": "2927D2",
@@ -608,7 +626,8 @@
    198
   ],
   "jp": "{spk}盗賊のボス　\n「‥‥い　いてえ！　いてえよ！\n　くそっ！　どうなってる！？\n　‥‥こいつは　オレの　血か！？」\n{next}\n「うすぎたねえ　賞金かせぎが！\n　オレたちがゴミなら　お前らは\n　それにたかる　みにくいハエだ！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「...I-it hurts! It hurts! Damn it!\n What's happening!? ...Is this...\n my blood!?」\n{next}\n「You filthy bounty chaser! If\n we're garbage, you're the\n ugly flies swarming on it!」\n",
+  "pages": "\"...I-it hurts! It hurts! Damn it! What's happening!? ...Is this... my blood!?\" || \"You filthy bounty chaser! If we're garbage, you're the ugly flies swarming on it!\""
  },
  {
   "id": "2928AC",
@@ -616,7 +635,8 @@
    199
   ],
   "jp": "{spk}{FF1F}\n「どっちも　世間じゃ\n　同じ　きたないものなのさ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「As far as the world's\n concerned, we're both the\n same kind of filth...」\n",
+  "pages": "\"As far as the world's concerned, we're both the same kind of filth...\""
  },
  {
   "id": "2928EA",
@@ -624,7 +644,8 @@
    200
   ],
   "jp": "{spk}盗賊のボス　\n「死ね！　オレと同じにな！\n　‥‥う　ぐ　げ　げぐぁはっ！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Die! Just like me! ...Ugh, gh,\n ge, gegwahh!」\n",
+  "pages": "\"Die! Just like me! ...Ugh, gh, ge, gegwahh!\""
  },
  {
   "id": "292938",
@@ -632,7 +653,8 @@
    201
   ],
   "jp": "「オレが　盗賊の最後の言葉に\n　心を　動かされることは　なかった」\n{next}\n「ヤツに　言われる　はるか前から\n　そんなことは　わかっていた\n　そう　そんなことは　わかっていたのだ」\n",
-  "en": ""
+  "en": "「The bandit's last words\n didn't move me at all.」\n{next}\n「I knew all that long before\n he said it. Yes, I knew it\n already.」\n",
+  "pages": "\"The bandit's last words didn't move me at all.\" || \"I knew all that long before he said it. Yes, I knew it already.\""
  },
  {
   "id": "2929EA",
@@ -640,7 +662,8 @@
    202
   ],
   "jp": "{spk}村むすめ　　\n「精霊水を使うと　森の中も\n　自由に見とおす事が　できるわ」\n{next}\n「でも気をつけてね　精霊水は\n　時間がたつと　その効果が\n　じょじょに　うすれていくから」\n",
-  "en": ""
+  "en": "{spk}村むすめ　　\n「With Spirit Water, you can\n see clearly through the\n forest.」\n{next}\n「But be careful. Spirit Water's\n effect wears off little by\n little as time passes.」\n",
+  "pages": "\"With Spirit Water, you can see clearly through the forest.\" || \"But be careful. Spirit Water's effect wears off little by little as time passes.\""
  },
  {
   "id": "292A98",
@@ -648,7 +671,8 @@
    203
   ],
   "jp": "{spk}村むすめ　　\n「目標に向かわせる時　その仲間は\n　敵に　攻撃しなくなるから\n　気をつけたほうが　いいわよ」\n{next}\n「それと　自由に動けと命令しても\n　仲間の職業によって　行動は\n　少しずつ　変わってくるらしいわ」\n",
-  "en": ""
+  "en": "{spk}村むすめ　　\n「When you send an ally\n toward a target, they stop\n attacking enemies, so you'd」\n{next}\n「better be careful.」\n{next}\n「And even if you order them\n to move freely, they say\n what allies do changes a bit」\n{next}\n「depending on their class.」\n",
+  "pages": "\"When you send an ally toward a target, they stop attacking enemies, so you'd better be careful.\" || \"And even if you order them to move freely, they say what allies do changes a bit depending on their class.\""
  },
  {
   "id": "292B6E",
@@ -656,7 +680,8 @@
    204
   ],
   "jp": "「‥‥辺境の　かんし所‥‥\n　そこは古らいより　ばん族や　魔物から\n　大ラインメタルを　守ってきた場所だ」\n{next}\n「そして今また　連邦の進軍と\n　時を同じくして　多くの魔物が\n　北の土地に　出現したのだという」\n{next}\n「それは　歴史の再現なのか」\n{next}\n「オレは北へと　向かいながら\n　かんし所の兵士が　すでに\n　生きてはいないと　確信していた」\n",
-  "en": ""
+  "en": "「...The frontier watch post...\n Since ancient times it has\n guarded great Rheinmetall」\n{next}\n「from barbarians and\n monsters.」\n{next}\n「And now, at the same time\n as the Federation's march,\n many monsters have」\n{next}\n「appeared in the northern\n lands, they say.」\n{next}\n「Is history repeating itself?」\n{next}\n「As I headed north, I was\n sure the soldiers at the\n watch post were already」\n{next}\n「dead.」\n",
+  "pages": "\"...The frontier watch post... Since ancient times it has guarded great Rheinmetall from barbarians and monsters.\" || \"And now, at the same time as the Federation's march, many monsters have appeared in the northern lands, they say.\" || \"Is history repeating itself?\" || \"As I headed north, I was sure the soldiers at the watch post were already dead.\""
  },
  {
   "id": "292CC4",
@@ -664,7 +689,8 @@
    205
   ],
   "jp": "「落日の王国」\n",
-  "en": ""
+  "en": "「The Kingdom of the Setting\n Sun」\n",
+  "pages": "\"The Kingdom of the Setting Sun\""
  },
  {
   "id": "292CD4",
@@ -672,7 +698,8 @@
    206
   ],
   "jp": "{spk}{FF1F}\n「門が　はかい　されている」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The gate's been destroyed.」\n",
+  "pages": "\"The gate's been destroyed.\""
  },
  {
   "id": "292CF8",
@@ -680,7 +707,8 @@
    207
   ],
   "jp": "{spk}{FF28}\n「王国の兵士は　無事なのかしら？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「I wonder if the kingdom's\n soldiers are all right?」\n",
+  "pages": "\"I wonder if the kingdom's soldiers are all right?\""
  },
  {
   "id": "292D22",
@@ -688,7 +716,8 @@
    208
   ],
   "jp": "{spk}{FF1F}\n「‥‥だといいがな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Let's hope so.」\n",
+  "pages": "\"...Let's hope so.\""
  },
  {
   "id": "292D3E",
@@ -696,7 +725,8 @@
    209
   ],
   "jp": "{spk}コルツ　　　\n「ばん族や　盗賊の　しわざじゃない\n　盗みが　目的ならば\n　ここまで　こわしは　しないだろう」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「This isn't the work of\n barbarians or bandits. If\n they were after loot, they」\n{next}\n「wouldn't smash things up\n this much.」\n",
+  "pages": "\"This isn't the work of barbarians or bandits. If they were after loot, they wouldn't smash things up this much.\""
  },
  {
   "id": "292DAE",
@@ -704,7 +734,8 @@
    210
   ],
   "jp": "{spk}ヘンメリー　\n「沼から　やみを　感じるわ\n　何なの　この強さ‥‥\n　今まで　感じたこともない‥‥」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「I feel darkness from the\n swamp. What is this\n strength... I've never felt」\n{next}\n「anything like it...」\n",
+  "pages": "\"I feel darkness from the swamp. What is this strength... I've never felt anything like it...\""
  },
  {
   "id": "292E14",
@@ -712,7 +743,8 @@
    211
   ],
   "jp": "{spk}{FF28}\n「{hero}！　兵士が倒れてるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! A soldier's\n collapsed!」\n",
+  "pages": "\"{hero}! A soldier's collapsed!\""
  },
  {
   "id": "292E42",
@@ -720,7 +752,8 @@
    212
   ],
   "jp": "{spk}敗残兵　　　\n「もう　王国も　終わりだ‥‥\n　オレは見た　再現だ\n　悪夢の時代の　再現だ‥‥」\n{next}\n「やみが　広がって　アンデッドが\n　じごくの　もうじゃ　どもが‥‥」\n{next}\n「ぐ　あ　あ　あ　う　！？」\n",
-  "en": ""
+  "en": "{spk}敗残兵　　　\n「The kingdom's finished... I saw\n it... It's happening again... The\n age of nightmares is」\n{next}\n「happening again...」\n{next}\n「The darkness is spreading,\n and the undead... the dead\n from hell...」\n{next}\n「Gh, a, a, a, uh, !?」\n",
+  "pages": "\"The kingdom's finished... I saw it... It's happening again... The age of nightmares is happening again...\" || \"The darkness is spreading, and the undead... the dead from hell...\" || \"Gh, a, a, a, uh, !?\""
  },
  {
   "id": "292F10",
@@ -728,7 +761,8 @@
    213
   ],
   "jp": "{spk}{FF28}\n「まさか！？　ゾンビですって！？\n　この兵士　アンデッドになってる！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「No way!? A zombie!? This\n soldier's turned undead!」\n",
+  "pages": "\"No way!? A zombie!? This soldier's turned undead!\""
  },
  {
   "id": "292F5E",
@@ -736,7 +770,8 @@
    214
   ],
   "jp": "{spk}{FF1F}\n「盗賊より　たちが悪いな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Worse than bandits...」\n",
+  "pages": "\"Worse than bandits...\""
  },
  {
   "id": "292F84",
@@ -744,7 +779,8 @@
    215
   ],
   "jp": "{spk}ヘンメリー　\n「かまうことないわ　{hero}！\n　ゾンビになった　人間は\n　殺すしか　すくう手は　ないわ！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Don't hold back, {hero}! For\n a person who's become a\n zombie, killing them is the」\n{next}\n「only way to save them!」\n",
+  "pages": "\"Don't hold back, {hero}! For a person who's become a zombie, killing them is the only way to save them!\""
  },
  {
   "id": "292FF6",
@@ -752,7 +788,8 @@
    216
   ],
   "jp": "{spk}{FF1F}\n「かんし所が　連絡を　たったのは\n　こいつが　原因だったらしいな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So this is why the watch\n post stopped reporting...」\n",
+  "pages": "\"So this is why the watch post stopped reporting...\""
  },
  {
   "id": "293044",
@@ -760,7 +797,8 @@
    217
   ],
   "jp": "{spk}ヘンメリー　\n「王国に　アンデッドが出るなんて\n　ざっと　五十年ぶりだわ‥‥」\n{next}\n「気をつけて　まだ　いるはずよ！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Undead in the kingdom...\n That's the first time in fifty\n years or so...」\n{next}\n「Be careful, there must be\n more of them!」\n",
+  "pages": "\"Undead in the kingdom... That's the first time in fifty years or so...\" || \"Be careful, there must be more of them!\""
  },
  {
   "id": "2930BE",
@@ -768,7 +806,8 @@
    218
   ],
   "jp": "{spk}{FF28}\n「{hero}　見て！\n　アンデッドの群れが！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, look! A horde of\n undead!?」\n",
+  "pages": "\"{hero}, look! A horde of undead!?\""
  },
  {
   "id": "2930F8",
@@ -776,7 +815,8 @@
    219
   ],
   "jp": "{spk}{FF1F}\n「さすがに　数が多いな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That's a lot of them, all\n right.」\n",
+  "pages": "\"That's a lot of them, all right.\""
  },
  {
   "id": "293118",
@@ -784,7 +824,8 @@
    220
   ],
   "jp": "{spk}コルツ　　　\n「あの沼地から　わいて出てくるのか\n　こいつは　ちと　やっかいだな」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「So they're welling up out of\n that swamp. This is a bit of a\n pain.」\n",
+  "pages": "\"So they're welling up out of that swamp. This is a bit of a pain.\""
  },
  {
   "id": "29316E",
@@ -792,7 +833,8 @@
    221
   ],
   "jp": "{spk}ヘンメリー　\n「アンデッド°モンスター！\n　わたしの魔法°ターンアンデッドなら\n　一発よ！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Undead monsters! My Turn\n Undead spell will finish them\n in one shot!」\n",
+  "pages": "\"Undead monsters! My Turn Undead spell will finish them in one shot!\""
  },
  {
   "id": "2931CE",
@@ -800,7 +842,8 @@
    222
   ],
   "jp": "{spk}{FF28}\n「アンデッドは　数が多いわ！\n　それに　見かけより　タフよ！」\n{next}\n「殺したはしから　次々に\n　よみがえって　くるわよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There are lots of undead!\n And they're tougher than\n they look!」\n{next}\n「You kill them and they just\n keep coming back, one after\n another!」\n",
+  "pages": "\"There are lots of undead! And they're tougher than they look!\" || \"You kill them and they just keep coming back, one after another!\""
  },
  {
   "id": "293250",
@@ -808,7 +851,8 @@
    223
   ],
   "jp": "{spk}{FF1F}\n「わかっている」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I know.」\n",
+  "pages": "\"I know.\""
  },
  {
   "id": "293268",
@@ -816,7 +860,8 @@
    224
   ],
   "jp": "{spk}{FF1F}\n「‥‥新手か？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...More of them?」\n",
+  "pages": "\"...More of them?\""
  },
  {
   "id": "293280",
@@ -824,7 +869,8 @@
    225
   ],
   "jp": "{spk}{FF28}\n「だいじょうぶ　アンデッドじゃない\n　あの兵士からは　やみを感じないわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's all right, he's not\n undead. I don't feel any\n darkness from that soldier.」\n",
+  "pages": "\"It's all right, he's not undead. I don't feel any darkness from that soldier.\""
  },
  {
   "id": "2932D0",
@@ -832,7 +878,8 @@
    226
   ],
   "jp": "{spk}敗残兵　　　\n「‥‥たのむ　‥‥誰かは　知らんが\n　この先の‥‥　アンデッドの住みかを\n　封印しないと‥‥　う‥‥　く‥‥」\n{next}\n「王国は‥‥　やがて‥‥\n　アンデッドの‥‥　国に‥‥\n　たのむ‥‥　ぐ‥‥　ガハッ！」\n",
-  "en": ""
+  "en": "{spk}敗残兵　　　\n「...Please... I don't know who\n you are... but the undead\n lair... up ahead... it has to be」\n{next}\n「sealed... or... ugh... gh...」\n{next}\n「The kingdom... will soon...\n become... a kingdom of the\n undead... Please... gh... gahh!」\n",
+  "pages": "\"...Please... I don't know who you are... but the undead lair... up ahead... it has to be sealed... or... ugh... gh...\" || \"The kingdom... will soon... become... a kingdom of the undead... Please... gh... gahh!\""
  },
  {
   "id": "2933AE",
@@ -840,7 +887,8 @@
    227
   ],
   "jp": "{spk}{FF1F}\n「アンデッドの住みか　か‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The undead lair, huh...」\n",
+  "pages": "\"The undead lair, huh...\""
  },
  {
   "id": "2933D4",
@@ -848,7 +896,8 @@
    228
   ],
   "jp": "「多くの人が集い　住む場所には\n　しぜんと　光が生まれ\n　やみは遠くへ　はらわれるという」\n{next}\n「アンデッドの復活　それは王国の\n　最後の時が　近いということか‥‥」\n{next}\n「人は死に　そして　死んでさえも\n　なお　休むことも　できず\n　生者をうらやみ　地を　うごめく」\n{next}\n「ここには　もはや　陽の光はない\n　夜を待つだけの　落日の王国だ‥‥」\n",
-  "en": ""
+  "en": "「Where many people gather\n and live, they say light is\n born of itself and darkness」\n{next}\n「is driven far away.」\n{next}\n「Does the return of the\n undead mean the kingdom's\n final hour is near...」\n{next}\n「People die, and even in death\n they can find no rest. They\n envy the living and crawl」\n{next}\n「over the earth.」\n{next}\n「There is no more sunlight\n here. It's a kingdom of the\n setting sun, only waiting for」\n{next}\n「night...」\n",
+  "pages": "\"Where many people gather and live, they say light is born of itself and darkness is driven far away.\" || \"Does the return of the undead mean the kingdom's final hour is near...\" || \"People die, and even in death they can find no rest. They envy the living and crawl over the earth.\" || \"There is no more sunlight here. It's a kingdom of the setting sun, only waiting for night...\""
  },
  {
   "id": "29352E",
@@ -856,7 +905,8 @@
    229
   ],
   "jp": "「かんし所の兵士は　全めつしていた\n　本らいなら　そこで\n　オレの仕事は　終わりのはずだ‥‥」\n{next}\n「しかし　オレは　兵士が言い残した\n　さらに北　アンデッドの巣へ　向かう」\n{next}\n「兵士たちへの　とむらいでもない\n　まして　国のためでもない\n　だが　何かが　オレを動かしていた」\n",
-  "en": ""
+  "en": "「The soldiers at the watch\n post had been wiped out.\n Normally that's where my job」\n{next}\n「would have ended...」\n{next}\n「But I head further north, to\n the undead nest the soldier\n spoke of with his last」\n{next}\n「breath.」\n{next}\n「Not to mourn the soldiers.\n Still less for the country.\n But something was driving」\n{next}\n「me on.」\n",
+  "pages": "\"The soldiers at the watch post had been wiped out. Normally that's where my job would have ended...\" || \"But I head further north, to the undead nest the soldier spoke of with his last breath.\" || \"Not to mourn the soldiers. Still less for the country. But something was driving me on.\""
  },
  {
   "id": "293646",
@@ -864,7 +914,8 @@
    230
   ],
   "jp": "「暗黒の力‥‥」\n",
-  "en": ""
+  "en": "「The Power of Darkness...」\n",
+  "pages": "\"The Power of Darkness...\""
  },
  {
   "id": "293658",
@@ -872,7 +923,8 @@
    231
   ],
   "jp": "{spk}{FF28}\n「見て{hero}　おハカがあるよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}, there are\n graves!」\n",
+  "pages": "\"Look, {hero}, there are graves!\""
  },
  {
   "id": "293686",
@@ -880,7 +932,8 @@
    232
   ],
   "jp": "{spk}{FF1F}\n「古いハカだ　まだラインメタルが\n　連合王国になる　はるか昔\n　おそらく　小王国時代のハカだろう」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Old graves. From long before\n Rheinmetall became a united\n kingdom. Probably from the」\n{next}\n「age of the small kingdoms.」\n",
+  "pages": "\"Old graves. From long before Rheinmetall became a united kingdom. Probably from the age of the small kingdoms.\""
  },
  {
   "id": "2936F0",
@@ -888,7 +941,8 @@
    233
   ],
   "jp": "{spk}{FF28}\n「あそこだよ　{hero}！\n　あの　おハカの中から\n　すごく強い　やみを感じる！」\n{next}\n「見て　アンデッドどもよ！\n　ぞろぞろ　ハカから出てくるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's there, {hero}! I feel\n really strong darkness from\n inside that grave!」\n{next}\n「Look, undead! They're pouring\n out of the graves!」\n",
+  "pages": "\"It's there, {hero}! I feel really strong darkness from inside that grave!\" || \"Look, undead! They're pouring out of the graves!\""
  },
  {
   "id": "293790",
@@ -896,7 +950,8 @@
    234
   ],
   "jp": "{spk}{FF1F}\n「どのみち　全めつさせるだけだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Either way, we just wipe\n them all out.」\n",
+  "pages": "\"Either way, we just wipe them all out.\""
  },
  {
   "id": "2937B8",
@@ -904,7 +959,8 @@
    235
   ],
   "jp": "{spk}コルツ　　　\n「こうなれば　やるしかなかろう！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「If it's come to this, we've\n got no choice but to fight!」\n",
+  "pages": "\"If it's come to this, we've got no choice but to fight!\""
  },
  {
   "id": "2937EC",
@@ -912,7 +968,8 @@
    236
   ],
   "jp": "{spk}ヘンメリー　\n「やればいいんでしょ　やれば！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Fine, I'll do it, I'll do it!」\n",
+  "pages": "\"Fine, I'll do it, I'll do it!\""
  },
  {
   "id": "29381E",
@@ -920,7 +977,8 @@
    237
   ],
   "jp": "{spk}{FF1F}\n「これで　全めつだな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That's all of them...」\n",
+  "pages": "\"That's all of them...\""
  },
  {
   "id": "293840",
@@ -928,7 +986,8 @@
    238
   ],
   "jp": "{spk}{FF28}\n「でもダメよ　どんなに倒しても\n　また　しばらくすれば\n　アンデッドは　地から　わいてくるわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「But it's no good. No matter\n how many we beat, after a\n while the undead well up」\n{next}\n「from the ground again.」\n",
+  "pages": "\"But it's no good. No matter how many we beat, after a while the undead well up from the ground again.\""
  },
  {
   "id": "2938A6",
@@ -936,7 +995,8 @@
    239
   ],
   "jp": "{spk}{FF1F}\n「なぜだ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Why?」\n",
+  "pages": "\"Why?\""
  },
  {
   "id": "2938BA",
@@ -944,7 +1004,8 @@
    240
   ],
   "jp": "{spk}{FF28}\n「こい　やみのせいだわ　アンデッドたちは\n　ここではない　どこからか\n　強いやみの　影響を受けているのよ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's the thick darkness. The\n undead are being influenced\n by some strong darkness」\n{next}\n「from somewhere other than\n here.」\n",
+  "pages": "\"It's the thick darkness. The undead are being influenced by some strong darkness from somewhere other than here.\""
  },
  {
   "id": "29392C",
@@ -952,7 +1013,8 @@
    241
   ],
   "jp": "{spk}{FF1F}\n「そのもとを　断たないと\n　何回全めつさせても　同じか\n　とんだ　むだ足だったな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So unless we cut it off at\n the source, wiping them out\n over and over makes no」\n{next}\n「difference. What a wasted\n trip...」\n",
+  "pages": "\"So unless we cut it off at the source, wiping them out over and over makes no difference. What a wasted trip...\""
  },
  {
   "id": "29398A",
@@ -960,7 +1022,8 @@
    242
   ],
   "jp": "「世界をおおう　やみは　一日ごとに\n　そのこさを　ましていくようだ‥‥」\n{next}\n「夜のやみ　だが　それもいいじゃないか\n　やみは　やさしく　わけへだてなく\n　あらゆる物を　つつみ　かくしてくれる」\n{next}\n「その時の　オレは　ひそかに\n　やみが全てを　かくしてくれる世界を\n　待ち望んでいたのかも　しれない‥‥」\n",
-  "en": ""
+  "en": "「The darkness covering the\n world seems to grow thicker\n with each passing day...」\n{next}\n「The darkness of night. But\n what's wrong with that?\n Darkness gently hides」\n{next}\n「everything away, without\n favour.」\n{next}\n「Back then, maybe I was\n secretly longing for a world\n where darkness hides」\n{next}\n「everything...」\n",
+  "pages": "\"The darkness covering the world seems to grow thicker with each passing day...\" || \"The darkness of night. But what's wrong with that? Darkness gently hides everything away, without favour.\" || \"Back then, maybe I was secretly longing for a world where darkness hides everything...\""
  },
  {
   "id": "293ABE",
@@ -968,7 +1031,8 @@
    243
   ],
   "jp": "「オレは　またしても　この地に\n　足を　ふみ入れることにした‥‥」\n{next}\n「もちろん　何度やっても　同じことだ\n　一度　全めつさせても　また次には\n　アンデッドが　地をうめつくしている」\n{next}\n「だが　オレにとっては　こうつごうだ\n　わき出る敵を　斬ることで\n　剣は　昔の鋭さを　取りもどしていく」\n{next}\n「そう　十年前の　鋭さを‥‥」\n",
-  "en": ""
+  "en": "「Once again, I chose to set\n foot in this land...」\n{next}\n「Of course, it's the same no\n matter how many times I\n come. Wipe them out once,」\n{next}\n「and next time the undead\n cover the ground again.」\n{next}\n「But that suits me fine.\n Cutting down the enemies\n that keep welling up, my」\n{next}\n「sword is getting back its old\n edge.」\n{next}\n「Yes, the edge it had ten\n years ago...」\n",
+  "pages": "\"Once again, I chose to set foot in this land...\" || \"Of course, it's the same no matter how many times I come. Wipe them out once, and next time the undead cover the ground again.\" || \"But that suits me fine. Cutting down the enemies that keep welling up, my sword is getting back its old edge.\" || \"Yes, the edge it had ten years ago...\""
  },
  {
   "id": "293C0A",
@@ -976,7 +1040,8 @@
    244
   ],
   "jp": "「暗黒の力‥‥再び」\n",
-  "en": ""
+  "en": "「The Power of Darkness...\n Again」\n",
+  "pages": "\"The Power of Darkness... Again\""
  },
  {
   "id": "293C20",
@@ -984,7 +1049,8 @@
    245
   ],
   "jp": "{spk}{FF28}\n「やっぱり　同じことよ\n　アンデッドどもを　封印するのは\n　どうやっても　ムリのようね」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Same as before, after all. It\n looks like there's no way to\n seal the undead away.」\n",
+  "pages": "\"Same as before, after all. It looks like there's no way to seal the undead away.\""
  },
  {
   "id": "293C80",
@@ -992,7 +1058,8 @@
    246
   ],
   "jp": "「世界をおおう　やみは　一日ごとに\n　そのこさを　ましていくようだ‥‥」\n{next}\n「夜のやみ　だが　それもいいじゃないか\n　やみは　やさしく　わけへだてなく\n　あらゆる物を　つつみ　かくしてくれる」\n{next}\n「その時の　オレは　ひそかに\n　やみが全てを　かくしてくれる世界を\n　待ち望んでいたのかも　しれない‥‥」\n",
-  "en": ""
+  "en": "「The darkness covering the\n world seems to grow thicker\n with each passing day...」\n{next}\n「The darkness of night. But\n what's wrong with that?\n Darkness gently hides」\n{next}\n「everything away, without\n favour.」\n{next}\n「Back then, maybe I was\n secretly longing for a world\n where darkness hides」\n{next}\n「everything...」\n",
+  "pages": "\"The darkness covering the world seems to grow thicker with each passing day...\" || \"The darkness of night. But what's wrong with that? Darkness gently hides everything away, without favour.\" || \"Back then, maybe I was secretly longing for a world where darkness hides everything...\""
  },
  {
   "id": "293DB4",
@@ -1000,7 +1067,8 @@
    247
   ],
   "jp": "「ラインメタル南西にある　狼の森\n　かつて狼が叫び　夜を駆けていた\n　いまわしき　暗く　しめった森林」\n{next}\n「住人が　連邦の部隊を見たとの情報は\n　おびえが生んだ　幻か　それとも　\n　密かに上陸した　先発隊なのか‥‥」\n{next}\n「全ては　謎につつまれたままだ\n　だが　間もなく　それは明かされる」\n",
-  "en": ""
+  "en": "「Wolf Forest, southwest of\n Rheinmetall. A cursed, dark,\n damp woodland where」\n{next}\n「wolves once howled and ran\n through the night.」\n{next}\n「The locals' report of a\n Federation unit: a phantom\n born of fear, or an advance」\n{next}\n「party that landed in secret...」\n{next}\n「It's all still shrouded in\n mystery. But it would soon\n come to light.」\n",
+  "pages": "\"Wolf Forest, southwest of Rheinmetall. A cursed, dark, damp woodland where wolves once howled and ran through the night.\" || \"The locals' report of a Federation unit: a phantom born of fear, or an advance party that landed in secret...\" || \"It's all still shrouded in mystery. But it would soon come to light.\""
  },
  {
   "id": "293EDA",
@@ -1008,7 +1076,8 @@
    248
   ],
   "jp": "「迫りくる魔の手」\n",
-  "en": ""
+  "en": "「The Evil Hand Draws Near」\n",
+  "pages": "\"The Evil Hand Draws Near\""
  },
  {
   "id": "293EEE",
@@ -1016,7 +1085,8 @@
    249
   ],
   "jp": "{spk}{FF28}\n「しずかね‥‥\n　誰もいないんじゃないの\n　{hero}？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So quiet... Maybe there's\n nobody here, {hero}?」\n",
+  "pages": "\"So quiet... Maybe there's nobody here, {hero}?\""
  },
  {
   "id": "293F32",
@@ -1024,7 +1094,8 @@
    250
   ],
   "jp": "{spk}{FF1F}\n「いや　殺気を感じる\n　静かな　それでいて鋭い‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「No. I sense killing intent.\n Quiet, and sharp with it...」\n",
+  "pages": "\"No. I sense killing intent. Quiet, and sharp with it...\""
  },
  {
   "id": "293F6E",
@@ -1032,7 +1103,8 @@
    251
   ],
   "jp": "{spk}コルツ　　　\n「そのようだな　誰だか知らんが\n　相手は　プロ中のプロだ\n　たくみに　殺気を押さえている」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Looks that way. Whoever\n they are, they're pros among\n pros. They're hiding their」\n{next}\n「killing intent well.」\n",
+  "pages": "\"Looks that way. Whoever they are, they're pros among pros. They're hiding their killing intent well.\""
  },
  {
   "id": "293FDA",
@@ -1040,7 +1112,8 @@
    252
   ],
   "jp": "{spk}ヘンメリー　\n「森は　ふかいわ　うかつに動くと\n　敵の　わなにはまってしまう」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「The forest is deep. Move\n carelessly and we'll fall into\n the enemy's trap.」\n",
+  "pages": "\"The forest is deep. Move carelessly and we'll fall into the enemy's trap.\""
  },
  {
   "id": "29402C",
@@ -1048,7 +1121,8 @@
    253
   ],
   "jp": "{spk}{FF28}\n「‥‥見て　{hero}！\n　向こうから　やってきた！\n　あの軍服‥‥連邦の兵士よ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Look, {hero}! They're\n coming this way! That\n uniform... they're Federation」\n{next}\n「soldiers!」\n",
+  "pages": "\"...Look, {hero}! They're coming this way! That uniform... they're Federation soldiers!\""
  },
  {
   "id": "29408A",
@@ -1056,7 +1130,8 @@
    254
   ],
   "jp": "{spk}小隊長　　　\n「ちッ　王国の兵じゃないな‥‥\n　どうやら　けちな賞金かせぎか」\n{next}\n「どうという事はない相手だが\n　こちらには　重要な使命がある\n　消せ！　死体も残すんじゃない！」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「Tch. Not the kingdom's\n soldiers... Some cheap bounty\n chasers, by the look of it.」\n{next}\n「They're nothing special, but\n we have an important\n mission. Get rid of them!」\n{next}\n「Don't even leave the bodies!」\n",
+  "pages": "\"Tch. Not the kingdom's soldiers... Some cheap bounty chasers, by the look of it.\" || \"They're nothing special, but we have an important mission. Get rid of them! Don't even leave the bodies!\""
  },
  {
   "id": "294142",
@@ -1064,7 +1139,8 @@
    255
   ],
   "jp": "{spk}{FF1F}\n「‥‥おもしろい」\n{next}\n「で　誰が　誰を消すんだって？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Interesting.」\n{next}\n「So who's getting rid of who?」\n",
+  "pages": "\"...Interesting.\" || \"So who's getting rid of who?\""
  },
  {
   "id": "294182",
@@ -1072,7 +1148,8 @@
    256
   ],
   "jp": "{spk}小隊長　　　\n「うっ！？　その剣の　かまえ‥‥！？\n　‥‥ま　まさか　‥‥まさか！」\n{next}\n「キ　キサマ！　キサマは！？\n　あの　伝説に名だかい聖騎士\n　マスター°オブ°ソードか！？」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「Ugh!? That sword stance...!?\n ...N-no, it can't... it can't be!」\n{next}\n「Y-you! You're...!? The\n legendary, famous paladin,\n the Master of Swords!?」\n",
+  "pages": "\"Ugh!? That sword stance...!? ...N-no, it can't... it can't be!\" || \"Y-you! You're...!? The legendary, famous paladin, the Master of Swords!?\""
  },
  {
   "id": "29423C",
@@ -1080,7 +1157,8 @@
    257
   ],
   "jp": "{spk}{FF1F}\n「とうにすてた名だ　今は\n　バウンティハンターの{hero}」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「A name I threw away long\n ago. Now I'm {hero} the\n bounty hunter.」\n",
+  "pages": "\"A name I threw away long ago. Now I'm {hero} the bounty hunter.\""
  },
  {
   "id": "294282",
@@ -1088,7 +1166,8 @@
    258
   ],
   "jp": "{spk}ヘンメリー　\n「あんた方が　プロの軍人なら\n　あたしたちは　プロのハンター\n　相手にとって　不足はないでしょ？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「If you're professional\n soldiers, we're professional\n hunters. We'll make worthy」\n{next}\n「opponents, won't we?」\n",
+  "pages": "\"If you're professional soldiers, we're professional hunters. We'll make worthy opponents, won't we?\""
  },
  {
   "id": "2942F6",
@@ -1096,7 +1175,8 @@
    259
   ],
   "jp": "{spk}小隊長　　　\n「‥‥まさかな！　あれほどの騎士が\n　賞金かせぎに　身をやつしているなど！」\n{next}\n「オレの　かんちがいだった！\n　相手は　ただの賞金かせぎだ！\n　すみやかに　消してしまえ！」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「...It can't be! A knight like\n that, sunk so low he's a\n bounty chaser!」\n{next}\n「I was mistaken! He's just a\n bounty chaser! Get rid of\n him, quickly!」\n",
+  "pages": "\"...It can't be! A knight like that, sunk so low he's a bounty chaser!\" || \"I was mistaken! He's just a bounty chaser! Get rid of him, quickly!\""
  },
  {
   "id": "2943B6",
@@ -1104,7 +1184,8 @@
    260
   ],
   "jp": "{spk}小隊長　　　\n「‥‥強い！　強すぎる！\n　やはり　お前は　{hero}か！\n　おもしろい！　おもしろいぞ！」\n{next}\n「オレは　十年前の戦乱の時から\n　キサマと　戦ってみたかった\n　まさか　こうも　早く実現できるとは」\n{next}\n「戦え　{hero}！\n　このオレと一対一で！」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「...Strong! Too strong! So you\n are {hero} after all!\n Interesting! This is」\n{next}\n「interesting!」\n{next}\n「I've wanted to fight you\n ever since the war ten years\n ago. I never thought I'd get」\n{next}\n「the chance this soon.」\n{next}\n「Fight me, {hero}! One on\n one!」\n",
+  "pages": "\"...Strong! Too strong! So you are {hero} after all! Interesting! This is interesting!\" || \"I've wanted to fight you ever since the war ten years ago. I never thought I'd get the chance this soon.\" || \"Fight me, {hero}! One on one!\""
  },
  {
   "id": "2944C6",
@@ -1112,7 +1193,8 @@
    261
   ],
   "jp": "{spk}小隊長　　　\n「ウワサ通りの男で　うれしいぞ！\n　わが名は　連邦軍　強襲上陸部隊\n　小隊長をつとめる　タウルス！」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「I'm glad you're the man they\n say you are! My name is\n Taurus, platoon leader of」\n{next}\n「the Federation army's\n assault landing force!」\n",
+  "pages": "\"I'm glad you're the man they say you are! My name is Taurus, platoon leader of the Federation army's assault landing force!\""
  },
  {
   "id": "29453C",
@@ -1120,7 +1202,8 @@
    262
   ],
   "jp": "{spk}{FF1F}\n「バウンティハンターの{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「{hero} the bounty hunter!」\n",
+  "pages": "\"{hero} the bounty hunter!\""
  },
  {
   "id": "29456A",
@@ -1128,7 +1211,8 @@
    263
   ],
   "jp": "{spk}小隊長　　　\n「やはり‥‥あの{hero}であるなら\n　一騎打ちを　さけはしない！\n　‥‥が　強いことに　変わりはない」\n{next}\n「離脱だ！　これ以上\n　戦力を　失うわけにはいかない！\n　われらの使命を　全うするために！」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「Just as I thought... If you're\n that {hero}, you won't\n dodge a duel! ...But you're」\n{next}\n「still too strong.」\n{next}\n「Fall back! We can't lose any\n more men! We have a mission\n to carry out!」\n",
+  "pages": "\"Just as I thought... If you're that {hero}, you won't dodge a duel! ...But you're still too strong.\" || \"Fall back! We can't lose any more men! We have a mission to carry out!\""
  },
  {
   "id": "294648",
@@ -1136,7 +1220,8 @@
    264
   ],
   "jp": "{spk}{FF28}\n「あらら！　もう消えちゃった！\n　逃げ足だけは　ずいぶん早いわね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Oh my! They're gone already!\n They sure are quick at\n running away!」\n",
+  "pages": "\"Oh my! They're gone already! They sure are quick at running away!\""
  },
  {
   "id": "294694",
@@ -1144,7 +1229,8 @@
    265
   ],
   "jp": "{spk}小隊長　　　\n「強い！　強すぎる！　この強さ！\n　まぎれもなく　キサマは\n　マスター°オブ°ソード！」\n{next}\n「し　しかし‥‥　なぜ‥‥\n　お前ほどの　男が‥‥\n　賞金かせぎ　なんぞ‥‥　に‥‥」\n",
-  "en": ""
+  "en": "{spk}小隊長　　　\n「Strong! Too strong! This\n strength! There's no doubt\n about it, you're the Master」\n{next}\n「of Swords!」\n{next}\n「B-but... why... would a man\n like you... be a mere... bounty\n chaser...」\n",
+  "pages": "\"Strong! Too strong! This strength! There's no doubt about it, you're the Master of Swords!\" || \"B-but... why... would a man like you... be a mere... bounty chaser...\""
  },
  {
   "id": "29475A",
@@ -1152,7 +1238,8 @@
    266
   ],
   "jp": "{spk}{FF1F}\n「そいつは　オレも知りたいさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I'd like to know that myself.」\n",
+  "pages": "\"I'd like to know that myself.\""
  },
  {
   "id": "294780",
@@ -1160,7 +1247,8 @@
    267
   ],
   "jp": "{spk}{FF28}\n「でも　連邦軍のヤツら\n　何かを　探していたみたいね\n　いったい　何なんだろう？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「But it looked like those\n Federation soldiers were\n searching for something.」\n{next}\n「What could it be?」\n",
+  "pages": "\"But it looked like those Federation soldiers were searching for something. What could it be?\""
  },
  {
   "id": "2947DA",
@@ -1168,7 +1256,8 @@
    268
   ],
   "jp": "{spk}{FF1F}\n「さあな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Who knows...」\n",
+  "pages": "\"Who knows...\""
  },
  {
   "id": "2947F0",
@@ -1176,7 +1265,8 @@
    269
   ],
   "jp": "「マスター°オブ°ソード‥‥\n　なつかしい　その名は\n　わずかに　オレの心を震わせた」\n{next}\n「しかし　それ以上に気にかかるのは\n　連邦軍の　ふかかいな　行動だ」\n{next}\n「ヤツらは　この暗い森で\n　何を探していたのか\n　答えは　どこにもなかった」\n",
-  "en": ""
+  "en": "「Master of Swords... That old\n name stirred my heart, just\n a little.」\n{next}\n「But what bothered me more\n was the Federation army's\n baffling behaviour.」\n{next}\n「What were they searching\n for in this dark forest?\n There was no answer」\n{next}\n「anywhere.」\n",
+  "pages": "\"Master of Swords... That old name stirred my heart, just a little.\" || \"But what bothered me more was the Federation army's baffling behaviour.\" || \"What were they searching for in this dark forest? There was no answer anywhere.\""
  },
  {
   "id": "2948E4",
@@ -1184,7 +1274,8 @@
    270
   ],
   "jp": "{spk}子供　　　　\n「ねぇ　知ってる！？」\n{next}\n「目標を指定する時　仲間を選ぶと\n　その仲間は　指定した仲間を\n　追いかけて　いくらしいよ！」\n{next}\n「でも　むずかしくて　ぼく\n　よくわからないや！　えへへ！」\n",
-  "en": ""
+  "en": "{spk}子供　　　　\n「Hey, did you know!?」\n{next}\n「When you set a target, if\n you pick an ally, that ally\n goes chasing after the one」\n{next}\n「you picked!」\n{next}\n「But it's too hard, I don't\n really get it! Hee hee!」\n",
+  "pages": "\"Hey, did you know!?\" || \"When you set a target, if you pick an ally, that ally goes chasing after the one you picked!\" || \"But it's too hard, I don't really get it! Hee hee!\""
  },
  {
   "id": "2949B2",
@@ -1192,7 +1283,8 @@
    271
   ],
   "jp": "{spk}子供　　　　\n「ねぇ　知ってる！？」\n{next}\n「離脱したら　お金は残らないけど\n　ＥＸＰだけは　残るらしいよ！」\n{next}\n「だから　勝てない戦いでも\n　何度もくり返せば　少しずつ\n　強くなっていくらしいよ！」\n{next}\n「でも　むずかしくて　ぼく\n　よくわからないや！　えへへ！」\n",
-  "en": ""
+  "en": "{spk}子供　　　　\n「Hey, did you know!?」\n{next}\n「If you retreat, you don't\n keep any money, but you get\n to keep the EXP!」\n{next}\n「So even in a fight you can't\n win, if you do it over and\n over, you get stronger bit」\n{next}\n「by bit!」\n{next}\n「But it's too hard, I don't\n really get it! Hee hee!」\n",
+  "pages": "\"Hey, did you know!?\" || \"If you retreat, you don't keep any money, but you get to keep the EXP!\" || \"So even in a fight you can't win, if you do it over and over, you get stronger bit by bit!\" || \"But it's too hard, I don't really get it! Hee hee!\""
  },
  {
   "id": "294AC0",
@@ -1200,7 +1292,8 @@
    272
   ],
   "jp": "{spk}{FF28}\n「{hero}　王国の騎士団が\n　南の要゜から　帰ってきたようよ」\n{next}\n「でも　みんな暗い顔を　してたけど\n　もしかしたら　この戦い‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, looks like the\n kingdom's knights are back\n from the southern fortress.」\n{next}\n「But they all looked so\n gloomy. Maybe this war...」\n",
+  "pages": "\"{hero}, looks like the kingdom's knights are back from the southern fortress.\" || \"But they all looked so gloomy. Maybe this war...\""
  },
  {
   "id": "294B52",
@@ -1208,7 +1301,8 @@
    273
   ],
   "jp": "{spk}{FF1F}\n「ああ　負け戦さのようだな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah. Looks like a losing one.」\n",
+  "pages": "\"Yeah. Looks like a losing one.\""
  },
  {
   "id": "294B76",
@@ -1216,7 +1310,8 @@
    274
   ],
   "jp": "{spk}コルツ　　　\n「ふんっ　この国の騎士たちは\n　みな　こしぬけ　ばかりなのか？」\n{next}\n「このままじゃ　間もなく海を越えて\n　連邦の大部隊が　つなみのように\n　王国へと　押し寄せてくるぞ！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Hmph. Are this country's\n knights all cowards?」\n{next}\n「At this rate, the Federation's\n main army will soon cross\n the sea and come crashing」\n{next}\n「into the kingdom like a tidal\n wave!」\n",
+  "pages": "\"Hmph. Are this country's knights all cowards?\" || \"At this rate, the Federation's main army will soon cross the sea and come crashing into the kingdom like a tidal wave!\""
  },
  {
   "id": "294C34",
@@ -1224,7 +1319,8 @@
    275
   ],
   "jp": "{spk}ヘンメリー　\n「街は　パニックになってるわ\n　バカみたいね　もう逃げ場は\n　どこにも　ないっていうのに！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「The town's in a panic. How\n silly. There's nowhere left to\n run anyway!」\n",
+  "pages": "\"The town's in a panic. How silly. There's nowhere left to run anyway!\""
  },
  {
   "id": "294CA2",
@@ -1232,7 +1328,8 @@
    276
   ],
   "jp": "{spk}{FF28}\n「どうしたの　{hero}？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What's wrong, {hero}?」\n",
+  "pages": "\"What's wrong, {hero}?\""
  },
  {
   "id": "294CC8",
@@ -1240,7 +1337,8 @@
    277
   ],
   "jp": "{spk}{FF1F}\n「いや　なんでもない‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「No, it's nothing...」\n",
+  "pages": "\"No, it's nothing...\""
  },
  {
   "id": "294CEA",
@@ -1248,7 +1346,8 @@
    278
   ],
   "jp": "{spk}{FF28}\n「{hero}！　{hero}ってば！」\n{next}\n「早く起きてよ　{hero}！\n　マクベスが　大臣のマクベスが\n　あなたを　たずねてきたのよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! {hero}, come on!」\n{next}\n「Wake up, {hero}! Macbeth,\n Minister Macbeth, has come\n to see you!」\n",
+  "pages": "\"{hero}! {hero}, come on!\" || \"Wake up, {hero}! Macbeth, Minister Macbeth, has come to see you!\""
  },
  {
   "id": "294D80",
@@ -1256,7 +1355,8 @@
    279
   ],
   "jp": "{spk}{FF1F}\n「マクベス本人がか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Macbeth himself?」\n",
+  "pages": "\"Macbeth himself?\""
  },
  {
   "id": "294D9E",
@@ -1264,7 +1364,8 @@
    280
   ],
   "jp": "{spk}マクベス　　\n「そうだよ　{hero}\n　ずいぶんと　ひさしぶりだな」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「That's right, {hero}. It's\n been a long time.」\n",
+  "pages": "\"That's right, {hero}. It's been a long time.\""
  },
  {
   "id": "294DE8",
@@ -1272,7 +1373,8 @@
    281
   ],
   "jp": "{spk}{FF1F}\n「これは　これは‥‥\n　王国の大臣どのが\n　わざわざ　おいでになるとは」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Well, well... The kingdom's\n minister himself, coming all\n this way.」\n",
+  "pages": "\"Well, well... The kingdom's minister himself, coming all this way.\""
  },
  {
   "id": "294E38",
@@ -1280,7 +1382,8 @@
    282
   ],
   "jp": "{spk}マクベス　　\n「狼の森では　ごくろうだった\n　ついでと言っては　何だが\n　もう一つ　たのみがあるのだ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Good work in Wolf Forest. I\n hate to tack this on, but I\n have another request.」\n",
+  "pages": "\"Good work in Wolf Forest. I hate to tack this on, but I have another request.\""
  },
  {
   "id": "294EA2",
@@ -1288,7 +1391,8 @@
    283
   ],
   "jp": "{spk}{FF1F}\n「‥‥なんだ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...What is it?」\n",
+  "pages": "\"...What is it?\""
  },
  {
   "id": "294EBA",
@@ -1296,7 +1400,8 @@
    284
   ],
   "jp": "{spk}マクベス　　\n「狼の森の向こう‥‥水晶の入り江に\n　再び　連邦軍が上陸したらしい\n　お前に　ぜひ　行ってもらいたい」\n{next}\n「ヤツらが　探している物が\n　何であるかを調べ　可能なら\n　ヤツらより先に　手に入れてほしい」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Beyond Wolf Forest... it\n seems the Federation army\n has landed at Crystal Cove」\n{next}\n「again. I'd very much like you\n to go.」\n{next}\n「Find out what they're\n searching for, and if you can,\n get it before they do.」\n",
+  "pages": "\"Beyond Wolf Forest... it seems the Federation army has landed at Crystal Cove again. I'd very much like you to go.\" || \"Find out what they're searching for, and if you can, get it before they do.\""
  },
  {
   "id": "294F96",
@@ -1304,7 +1409,8 @@
    285
   ],
   "jp": "{spk}{FF1F}\n「騎士団に行かせればいい」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Send the knights.」\n",
+  "pages": "\"Send the knights.\""
  },
  {
   "id": "294FB8",
@@ -1312,7 +1418,8 @@
    286
   ],
   "jp": "{spk}マクベス　　\n「知っているだろう　防戦だけで\n　騎士団は　すでに手いっぱいだ\n　だが　聖騎士と呼ばれたお前なら‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「You know as well as I do.\n The knights already have\n their hands full just」\n{next}\n「defending. But you, the one\n they called the Paladin...」\n",
+  "pages": "\"You know as well as I do. The knights already have their hands full just defending. But you, the one they called the Paladin...\""
  },
  {
   "id": "295030",
@@ -1320,7 +1427,8 @@
    287
   ],
   "jp": "{spk}{FF1F}\n「その名を口に出すな\n　それより　ほうしゅうは？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Don't say that name. More to\n the point, what's the pay?」\n",
+  "pages": "\"Don't say that name. More to the point, what's the pay?\""
  },
  {
   "id": "29506A",
@@ -1328,7 +1436,8 @@
    288
   ],
   "jp": "{spk}マクベス　　\n「５００だ　この場ではらう」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「500. I'll pay you here and\n now.」\n",
+  "pages": "\"500. I'll pay you here and now.\""
  },
  {
   "id": "295098",
@@ -1336,7 +1445,8 @@
    289
   ],
   "jp": "{spk}{FF1F}\n「‥‥いい金だな　わかった\n　オレは　賞金かせぎだ　\n　金が良ければ　何でもうけおう」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Good money. All right. I'm a\n bounty chaser. For good\n money, I'll take on anything.」\n",
+  "pages": "\"...Good money. All right. I'm a bounty chaser. For good money, I'll take on anything.\""
  },
  {
   "id": "2950F6",
@@ -1344,7 +1454,8 @@
    290
   ],
   "jp": "{spk}マクベス　　\n「そうか‥‥すまない‥‥」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「I see... I'm sorry...」\n",
+  "pages": "\"I see... I'm sorry...\""
  },
  {
   "id": "295122",
@@ -1352,7 +1463,8 @@
    291
   ],
   "jp": "{spk}{FF1F}\n「古いつきあいだ　気にするな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「We go back a long way. Don't\n worry about it.」\n",
+  "pages": "\"We go back a long way. Don't worry about it.\""
  },
  {
   "id": "295148",
@@ -1360,7 +1472,8 @@
    292
   ],
   "jp": "{spk}マクベス　　\n「それと　街の酒場に　ひとり\n　騎士を送っておいた\n　今の私には　これが精いっぱいだ」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Also, I've sent a knight to\n the town tavern. That's the\n best I can do right now.」\n",
+  "pages": "\"Also, I've sent a knight to the town tavern. That's the best I can do right now.\""
  },
  {
   "id": "2951B0",
@@ -1368,7 +1481,8 @@
    293
   ],
   "jp": "{spk}デトニクス　\n「おい　あんたが　{hero}か？」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「Hey, you're {hero}?」\n",
+  "pages": "\"Hey, you're {hero}?\""
  },
  {
   "id": "2951E6",
@@ -1376,7 +1490,8 @@
    294
   ],
   "jp": "{spk}{FF1F}\n「何か用か　お若い騎士さん」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Something you want, young\n knight?」\n",
+  "pages": "\"Something you want, young knight?\""
  },
  {
   "id": "29520A",
@@ -1384,7 +1499,8 @@
    295
   ],
   "jp": "{spk}デトニクス　\n「マクベス大臣から　話は\n　聞いているだろう？\n　オレが　騎士団のデトニクスだ」\n{next}\n「これも　任務ってやつでね\n　あんたに　協力しろとの命令だ」\n{next}\n「ま　あんたのウワサは　聞いているが\n　命令とあらば　しかたあるまい\n　せいぜい　べんきょうさせて　もらうさ」\n{next}\n「元　ラインメタル王国近衛騎士団\n　味方殺しの{hero}の　腕前をな」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「Minister Macbeth told you\n about me, right? I'm\n Detonics, of the knights.」\n{next}\n「It's my duty, see. I've been\n ordered to help you.」\n{next}\n「Well, I've heard the rumours\n about you, but orders are\n orders. I'll learn what I can.」\n{next}\n「From the skill of {hero}\n the comrade-killer, formerly\n of the Kingdom of」\n{next}\n「Rheinmetall's Royal Guard\n Knights.」\n",
+  "pages": "\"Minister Macbeth told you about me, right? I'm Detonics, of the knights.\" || \"It's my duty, see. I've been ordered to help you.\" || \"Well, I've heard the rumours about you, but orders are orders. I'll learn what I can.\" || \"From the skill of {hero} the comrade-killer, formerly of the Kingdom of Rheinmetall's Royal Guard Knights.\""
  },
  {
   "id": "295370",
@@ -1392,7 +1508,8 @@
    296
   ],
   "jp": "{spk}{FF1F}\n「言っておくが‥‥\n　戦場で　しゃべりすぎるヤツは\n　真っ先に斬られる　おぼえておけ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Let me tell you something...\n Whoever talks too much on\n the battlefield is the first」\n{next}\n「one cut down. Remember\n that.」\n",
+  "pages": "\"Let me tell you something... Whoever talks too much on the battlefield is the first one cut down. Remember that.\""
  },
  {
   "id": "2953CE",
@@ -1400,7 +1517,8 @@
    297
   ],
   "jp": "{spk}{FF28}\n「なに　あの人　すっごいなまいき！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What? That guy's soooo\n cheeky!」\n",
+  "pages": "\"What? That guy's soooo cheeky!\""
  },
  {
   "id": "2953FA",
@@ -1408,7 +1526,8 @@
    298
   ],
   "jp": "{spk}ヘンメリー　\n「売り出し中の　若い騎士ってとこね\n　かわいいもんじゃない　{hero}」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「A young knight on the way\n up, I'd say. Isn't he cute,\n {hero}.」\n",
+  "pages": "\"A young knight on the way up, I'd say. Isn't he cute, {hero}.\""
  },
  {
   "id": "295456",
@@ -1416,7 +1535,8 @@
    299
   ],
   "jp": "{spk}コルツ　　　\n「あのぼうや　{hero}の剣を見れば\n　胸を　なでおろすだろうよ\n　ああ　斬られなくてよかったってな」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Once that boy sees\n {hero}'s sword, he'll\n breathe a sigh of relief. Glad」\n{next}\n「he didn't get cut, that is.」\n",
+  "pages": "\"Once that boy sees {hero}'s sword, he'll breathe a sigh of relief. Glad he didn't get cut, that is.\""
  },
  {
   "id": "2954D0",
@@ -1424,7 +1544,8 @@
    300
   ],
   "jp": "{spk}{FF28}\n「仲間に　できそうな人は　いないみたい」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Doesn't look like there's\n anyone who could join us.」\n",
+  "pages": "\"Doesn't look like there's anyone who could join us.\""
  },
  {
   "id": "295500",
@@ -1432,7 +1553,8 @@
    301
   ],
   "jp": "{spk}コルツ　　　\n「どうした　{hero}？　そろそろ\n　助けが　必要になったかな？」\n{next}\n「どうだ　昔からの　よしみだ\n　おまえの仕事を　手伝ってもいいが」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「What's up, {hero}? Need\n some help about now?」\n{next}\n「What do you say? We go way\n back. I wouldn't mind lending\n a hand with your job.」\n",
+  "pages": "\"What's up, {hero}? Need some help about now?\" || \"What do you say? We go way back. I wouldn't mind lending a hand with your job.\""
  },
  {
   "id": "29559E",
@@ -1440,7 +1562,8 @@
    302
   ],
   "jp": "{spk}コルツ　　　\n「いい解答だ　この酒と　同じくらいに」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Good answer. As good as this\n drink.」\n",
+  "pages": "\"Good answer. As good as this drink.\""
  },
  {
   "id": "2955D6",
@@ -1448,7 +1571,8 @@
    303
   ],
   "jp": "{spk}{FF1F}\n「ただし　分け前は　きたいするなよ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Just don't expect a share of\n the take.」\n",
+  "pages": "\"Just don't expect a share of the take.\""
  },
  {
   "id": "295602",
@@ -1456,7 +1580,8 @@
    304
   ],
   "jp": "{spk}コルツ　　　\n「いってくれるぜ！　言うだろ\n　ケチは　早死にするってな！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Listen to you! You know what\n they say: misers die young!」\n",
+  "pages": "\"Listen to you! You know what they say: misers die young!\""
  },
  {
   "id": "295650",
@@ -1464,7 +1589,8 @@
    305
   ],
   "jp": "{spk}{FF1F}\n「あんたみたいに　長く生きていても\n　ろくなことは　なさそうだからな」\n{next}\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Living long like you doesn't\n look like it does anyone much\n good, either.」\n{next}\n",
+  "pages": "\"Living long like you doesn't look like it does anyone much good, either.\""
  },
  {
   "id": "2956A2",
@@ -1472,7 +1598,8 @@
    306
   ],
   "jp": "{spk}コルツ　　　\n「まあいいさ　しかし　無理はするな\n　命あってこそ　うまい酒も飲める\n　オレは　いつでも　ここにいる」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Fine, fine. But don't push\n yourself. You've got to be\n alive to enjoy a good drink.」\n{next}\n「I'm always here.」\n",
+  "pages": "\"Fine, fine. But don't push yourself. You've got to be alive to enjoy a good drink. I'm always here.\""
  },
  {
   "id": "29571A",
@@ -1480,7 +1607,8 @@
    307
   ],
   "jp": "{spk}{FF1F}\n「そのうちな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Some time...」\n",
+  "pages": "\"Some time...\""
  },
  {
   "id": "295734",
@@ -1488,7 +1616,8 @@
    308
   ],
   "jp": "{spk}ヘンメリー　\n「うふふ　さすがの　{hero}も\n　どうやら　苦戦しているようね」\n{next}\n「あたしの回復魔法があれば\n　戦いは　ずっと楽に進められる\n　そうでしょ？　{hero}」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Ufufu, looks like even the\n great {hero} is having a\n hard time.」\n{next}\n「With my healing magic, fights\n go a lot more smoothly.\n Right, {hero}?」\n",
+  "pages": "\"Ufufu, looks like even the great {hero} is having a hard time.\" || \"With my healing magic, fights go a lot more smoothly. Right, {hero}?\""
  },
  {
   "id": "2957EA",
@@ -1496,7 +1625,8 @@
    309
   ],
   "jp": "{spk}ヘンメリー　\n「じゃあ　以前の　かしもふくめて\n　分け前は　半々ってことで　どう？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Then, counting what you owe\n me from before, how about\n we split the take half and」\n{next}\n「half?」\n",
+  "pages": "\"Then, counting what you owe me from before, how about we split the take half and half?\""
  },
  {
   "id": "295842",
@@ -1504,7 +1634,8 @@
    310
   ],
   "jp": "{spk}{FF1F}\n「ま　考えておこうか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Well, I'll think about it...」\n",
+  "pages": "\"Well, I'll think about it...\""
  },
  {
   "id": "295864",
@@ -1512,7 +1643,8 @@
    311
   ],
   "jp": "{spk}{FF28}\n「私　この女キラーーーイ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「I HAAATE this woman!」\n",
+  "pages": "\"I HAAATE this woman!\""
  },
  {
   "id": "295888",
@@ -1520,7 +1652,8 @@
    312
   ],
   "jp": "{spk}ヘンメリー　\n「あたしは　ここで待ってるわ\n　気が変わったら　いつでも\n　声を　かけてちょうだいね」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「I'll be waiting here. If you\n change your mind, just call\n me anytime.」\n",
+  "pages": "\"I'll be waiting here. If you change your mind, just call me anytime.\""
  },
  {
   "id": "2958F0",
@@ -1528,7 +1661,8 @@
    313
   ],
   "jp": "{spk}{FF28}\n「べーーだ！　私　あの女キライ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Nyeeeh! I hate that woman!」\n",
+  "pages": "\"Nyeeeh! I hate that woman!\""
  },
  {
   "id": "29591A",
@@ -1536,7 +1670,8 @@
    823
   ],
   "jp": "「アーデンの森を　つらぬいて\n　しずかに　ながれる　エリダヌス川」\n{next}\n「この地では　無数のアンデッドが\n　さまよい　人々を\n　次々に　おそうのだという‥‥」\n",
-  "en": ""
+  "en": "「The Eridanus River flows\n quietly through Arden\n Forest.」\n{next}\n「Here, they say, countless\n undead wander and attack\n people one after another...」\n",
+  "pages": "\"The Eridanus River flows quietly through Arden Forest.\" || \"Here, they say, countless undead wander and attack people one after another...\""
  },
  {
   "id": "2959BA",
