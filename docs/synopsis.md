@@ -11,7 +11,12 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   at the Strait of Gibraltar (guess: the "Saint of the Frontier"). Also used for the client in job prompts.
 - **Rebel army** (反乱軍): Roger (rowdy), Miranda (calm, polite; Roger's old friend), Robun, Mauser, Steyr,
   Colts, Hammerli, Detonics; first met in the Frozen Land.
-- **Kingdom of Rheinmetall** on the continent of Europea; capital Romulus; Ajax (general), the Minister of War.
+- **Kingdom of Rheinmetall**: an island kingdom north of the continent of Europea (its port town is the only
+  gateway to the continent); Ajax (general), the Minister of War. **Romulus** ("the royal city of Romulus") is a
+  separate military power allied with Rheinmetall after the war ten years ago; the Federation destroyed it first.
+- **The fairy is Thetis** ({FF28}; the hero calls her "Thetis" at the first Zodiac statue).
+- **Rune** (Athena's older brother; speaks partly in a feminine register) commands the Federation's Valkyrie Corps;
+  Athena (a Silver Knight of their fallen small homeland) swears to strike him down.
 - **Ordoba Federation** (連邦): the expanding enemy power; soldiers, officers, airborne troops; uses "Machine God"
   ancient weapons late in the game.
 - **Zodiac Gods** (黄道十二神): sealed powers; twelve rings (Ares Ring ... Poseidon Ring) to be gathered and bound
@@ -31,6 +36,15 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   the kingdom blamed the hero for the main force's loss. He drifted for ten years.
 - Now: Thetis (his partner, takes the jobs, cheerful nagging) wakes him in a tavern: a job from the Rheinmetall
   knights via Minister Macbeth, wipe out the bandits in East End (100G up front).
+
+## Mid game (master_1E0000, b012-b016)
+- Map hints by Thetis for every location (b012-b013), then: the Ruins Town (the Fallen City) at Europea's southern
+  tip, an evil spirit guarding "my father's legacy"; Faust reads ancient inscriptions about the gods' weapons and
+  twelve children (Ordoba, Romulus, Rheinmetall, Iberia, Atlas, Rhipaean...) given the Zodiac rings to seal.
+- Zodiac statues name the hero "agent of the gods": bind the twelve rings into one.
+- Accra: Rune's Valkyries stall the rebels with Machine God No. 8. Aldabra Island: the fire dragon Salamander (the
+  informer's job). Ship to the Isolated Isle (marines attack on the way): a 100,000-year-old boy holds the
+  Poseidon Ring; with all twelve, go to the four sages of the Sage Village below the Rhipaean Mountains.
 
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.

@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 545/3539 entries in English (name tables + prologue b010-b011); 39 dialogue
-  batches b012-b050 left, then side tables. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
+- **Phase:** 6. Translate in progress: 795/3539 entries in English (name tables, prologue b010-b011, master_1E0000
+  b012-b016); dialogue batches b017-b050 left, then side tables. Build green (`build.py`, smoke ok), `--identity` now repacks `jp` and
   stays byte-identical.
 - **Phase 6 workflow (first session, 2026-11-22):** dialogue is authored as one paragraph per JP box
   (`tools/pages.py`, D10): `tools/batches.py` (split/check/merge/zip, adapted from the skill) shows master text as

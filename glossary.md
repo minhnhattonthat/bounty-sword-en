@@ -81,7 +81,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ラインメタル | Rheinmetall | | the kingdom; label: Rheinmetall | Rhinemetal |
 | エウロペア | Europea | | the continent | Europa |
 | オルドバ | Ordoba | | the Federation | Ordova / Cordoba |
-| ロムルス | Romulus | | royal capital | |
+| ロムルス | Romulus | | 王都ロムルス "the royal city of Romulus": a military realm allied with Rheinmetall, not its capital | |
 | イーストエンド | East End | | | Eastend |
 | ブラックバーン | Blackburn | | | |
 | アーデン | Arden | | | |
@@ -129,6 +129,14 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | アンデッド | undead / Undead | | | |
 | キャンプ | camp | | | |
 | 作戦指示 | orders | | camp command | |
+| 精霊水 | Spirit Water | | item | |
+| 機神 | Machine God | | ancient weapons (超機神 too) | |
+| 神の代理人 | agent of the gods / agent of us twelve gods | | what the Zodiac Gods call the hero | |
+| 屍解仙 | Corpse Immortal | | boss at the Abadan River | |
+| 悪霊 | evil spirit | | Ruins Town ghost | |
+| ワルキューレ | Valkyrie | | Rune's Valkyrie Corps | |
+| 火竜 | fire dragon | | Salamander | |
+| スカルナイト | Skull Knight | | | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,
