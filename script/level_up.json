@@ -1,0 +1,74 @@
+[
+ {
+  "id": "1AD456",
+  "kind": "text",
+  "jp": "{FF12}攻撃力が{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Attack rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD44C"
+  ]
+ },
+ {
+  "id": "1AD4D1",
+  "kind": "text",
+  "jp": "{FF12}防御力が{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Defense rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD4C7"
+  ]
+ },
+ {
+  "id": "1AD54C",
+  "kind": "text",
+  "jp": "{FF12}速さが{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Agility rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD542"
+  ]
+ },
+ {
+  "id": "1AD5C5",
+  "kind": "text",
+  "jp": "{FF12}魔力が{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Intelligence rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD5BB"
+  ]
+ },
+ {
+  "id": "1AD641",
+  "kind": "text",
+  "jp": "{FF12}精神が{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Spirit rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD637"
+  ]
+ },
+ {
+  "id": "1AD6BD",
+  "kind": "text",
+  "jp": "{FF12}幸運が{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Luck rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD6B3"
+  ]
+ },
+ {
+  "id": "1AD739",
+  "kind": "text",
+  "jp": "{FF12}最大ＨＰが{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Max HP rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD72F"
+  ]
+ },
+ {
+  "id": "1AD7A1",
+  "kind": "text",
+  "jp": "{FF12}最大ＳＰが{FF25:7F70DB}上がった！{FF04}{FF00}",
+  "en": "{FF12}Max SP rose by {FF25:7F70DB}!{FF04}{FF00}",
+  "refs": [
+   "1AD797"
+  ]
+ }
+]

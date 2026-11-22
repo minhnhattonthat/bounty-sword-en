@@ -134,7 +134,6 @@ SPLIT = {
 
     "system_prompts": ("ends", {0xFF00, 0xFF03}),
     "unit_records": ("term",),
-    "battle_prompts": ("ends", {0xFF00, 0xFF03}),
     "unit_names": ("fixed", 6, 0),
     "unit_titles": ("fixed", 16, 0, 10),
     "spells": ("fixed", 10, 0),
@@ -156,7 +155,7 @@ SPLIT = {
 ENGINE_B_TABLES = {"ceremony", "short_strings", "descriptions"}
 # System and battle prompts are engine A scripts (drawn in the dialogue box): parse their argument words too, so
 # `{FF09}　` (a 0x0001 argument read as a character) reads `{FF09:0001}`.
-ENGINE_A_TABLES = {"battle_prompts", "battle_prompts_b", "system_prompts"}
+ENGINE_A_TABLES = {"battle_prompts_b", "system_prompts"}     # + the byte-level tables of tools/byte_scripts.py
 
 
 def split_region(words, rule, args=None, anchors=()):
@@ -365,6 +364,8 @@ def extract(rom):
     ptrs = pointer_index(rom)
     for name, s, e in REGIONS:          # a name listed twice (word-phase segments) fills one file
         files.setdefault(name + ".json", []).extend(side_entries(rom, name, s, e, sc, ptrs))
+    import byte_scripts                 # imports this module
+    files.update(byte_scripts.extract(rom, ptrs))
     return files
 
 
@@ -391,7 +392,8 @@ def dump(rom, out=SCRIPT, force=False, refresh=False):
                 o = old.get(e["id"], {})
                 if o.get("en") and o["jp"] != e["jp"]:
                     requeue.append(e["id"])
-                e.update({k: v for k, v in o.items() if k not in e or k in ("en", "notes", "status")})
+                # refs are extraction output: a stale one (an old split's false 24-bit match) would be rewritten
+                e.update({k: v for k, v in o.items() if (k not in e and k != "refs") or k in ("en", "notes", "status")})
         write_file(path, entries)
         written.append(name)
     return written, requeue
@@ -414,7 +416,7 @@ TAGS = []       # the TagFont of the last apply_script(tags=True) (build.py writ
 # battle_prompts_b: `43 ptr24` in a C0 op list (`43 AB73C0` at C0:7379); battle_prompts: `2E ptr24` in C5/C6 event
 # scripts (`2E A2E8C5` at 0x06CCA7, 33 calls of 05EF1E). A script = entries up to one ending in
 # FF00 (FF03 waits and runs on into the next entry, e.g. a question then its choice list).
-RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}, "battle_prompts": {0x2E}}
+RELOCATE = {"system_prompts": {0x03}, "battle_prompts_b": {0x43}}   # battle_prompts: tools/byte_scripts.py
 
 
 def script_runs(entries, words):
@@ -581,4 +583,6 @@ def apply_script(rom, files, field="jp", tags=False):
                 OVERFLOW.append(f"{r['name']}:{e['id']}")
                 words += side_words(e, codec, pack=pack)
         r["text"] = wc.decode(words)
+    import byte_scripts
+    data["byte_writes"], data["byte_sites"] = byte_scripts.layout(rom, files, field)
     return data

@@ -7,3 +7,4 @@
 1101F	6	ソード	Sword	hero, unit record 4 (C1:101D)
 32787	6	倉庫	Vault	storage entry in the shop sell list (copied to $1132 by C3:2770)
 3980F	6	倉庫	Vault	storage entry, second copy (C3:97FE)
+6E27A	6	フュリス	Furis	name-entry default copied to $7E4D1B by C6:E266 (LDA $C6E27A,x, 12 bytes)

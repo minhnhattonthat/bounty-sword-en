@@ -92,6 +92,11 @@ def scenes():
     for k, sub in enumerate(town):
         out.append(row(name=f"town_{sub}", kind="scenario", map=1, expect=13, hold=600 + 300 * (k == 2), route="",
                        then=steps("500 -", downs(k, 60, 16), "6 a;300 -"), note=f"town (A-01) menu -> {sub}"))
+    # tavern -> "Look for allies" -> "Got it!" (05E8F8, FF03 runs on) -> roster greeting 05E954 -> roster list
+    # (battle_prompts, tools/byte_scripts.py: FF26 skips, FF25 count, FF27 choice)
+    out.append(row(name="town_tavern_roster", kind="scenario", map=1, expect=13, hold=1500, route="",
+                   then=steps("500 -", downs(2, 60, 16), "6 a;300 -;6 a;120 -;6 down;60 -;6 a;300 -;6 a;200 -;6 a;300 -"),
+                   note="town (A-01) tavern -> Look for allies -> roster greeting -> roster list"))
     # shop flows (dialogue in short_strings 1AF585..1AFDC2): Buy -> item -> price confirm; Sell; trade-in confirm
     shop = "500 -;6 a;300 -"
     flows = {"buy": (steps(shop, "6 a;200 -;6 a;400 -"), 1100, "Buy -> Iron Sword -> price Yes/No"),

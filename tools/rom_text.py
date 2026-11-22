@@ -25,9 +25,10 @@ MASTER_END = 0x26F2C9            # first byte after the last slot: 2,462 slots
 MASTER_BLOCKS = (0x1E0000, 0x214606, 0x24DB56, 0x257BD4, 0x26F317, 0x271410, 0x280F1B, 0x290400, 0x2A7D44)
 BLOCK_GAP = 0x400
 # Master messages that no longer fit their block go to the expanded ROM (docs/re/rom.md): file 0x300000-0x3EFFFF
-# ($F0-$FE). Bank $FF holds the engine patch (asm/vwf.asm).
+# ($F0-$FD). Bank $FE holds relocated byte-level scripts (tools/byte_scripts.py BYTE_AREA), bank $FF the engine patch
+# (asm/vwf.asm).
 ROM_EXPANDED = 0x400000
-EXPANDED_TEXT = (0x300000, 0x3F0000)
+EXPANDED_TEXT = (0x300000, 0x3E0000)
 
 # Text found outside the master table (docs/re/text.md §Text inventory), repacked in place, same length.
 # (name, first byte, end exclusive). Phase 4 replaces these with pointer-aware tables as each reader is confirmed.
@@ -56,9 +57,7 @@ REGIONS = (
     # script before it.
     ("system_prompts", 0x041373, 0x0418E3),
     ("unit_records", 0x046CF4, 0x0473B0),
-    # Starts at the first script (0x05E8A2, called by `2E A2E8C5` at 0x06CCA7); the word 0x011E at 0x05E8A0 is the
-    # tail of the data before it.
-    ("battle_prompts", 0x05E8A2, 0x05EF52),
+    # battle_prompts (0x05E8A2-0x05F001) is read byte by byte: tools/byte_scripts.py.
     ("unit_names", 0x06E3AB, 0x06E627),
     # C8 tables read by the C1 string runs (C1:8E90, tools/lua/c1runs.lua): titles (16 words, run n=16 from
     # C8:DF5E), spell/skill names (10 words, record 0 blank), layout bytes, constellations (5 words, run n=5 at
@@ -70,7 +69,9 @@ REGIONS = (
     ("c8_digits", 0x08E890, 0x08E8A6),
     ("orders", 0x08E8A6, 0x08E9D6),
     ("classes", 0x0BF8AE, 0x0C0004),
-    ("descriptions", 0x0EE59E, 0x0EFD28),
+    # Starts at the shared sub-strings the descriptions call with FF06 (単体に攻撃 at CE:E52E, 複数に攻撃 E53C,
+    # 広はんいに攻撃 E54A, each ending FF01 FF07); the 3-byte pointer table before them ends at 0x0EE52D.
+    ("descriptions", 0x0EE52E, 0x0EFD28),
     ("objectives", 0x18FD06, 0x18FF48),
     ("items", 0x1ADFEF, 0x1AEDB9),
     # Starts at the first script (0x1AF53F, "{X}は{Y}になりました。"); 0x1AF349-0x1AF53E are data words (0000 runs and
@@ -257,6 +258,11 @@ def repack(rom, data, codec=None):
         for p in r["refs"]:
             out[p:p + 3] = to_cpu(copy).to_bytes(3, "little")
         spill += size
+    # Byte-level engine A tables (tools/byte_scripts.py layout): in-place units, relocated units, caller operands.
+    for off, b in data.get("byte_writes", ()):
+        if off + len(b) > len(out):
+            out += b"\xff" * (ROM_EXPANDED - len(out))
+        out[off:off + len(b)] = b
     return bytes(out)
 
 

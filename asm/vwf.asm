@@ -68,6 +68,11 @@ org $C18E90
 org $C18F13
     jml C1Run40
 
+; ---- engine A FF29 (C2:63E2: print the 10-word name buffer at a 24-bit address, e.g. the item in a treasure line):
+; English names come packed two letters a word from the C1 tables, so each letter goes to the VWF on its own ----
+org $C263FB
+    jml Ff29Loop
+
 ; The English font sits where the game's 16-bit glyph-offset formula puts codes $0F20-$0F7F when the base is
 ; $FF:0000 (tools/font_en.py font_block): offset(c) = ((c & $FFF0) << 5) + ((c & $F) << 4), truncated to 16 bits.
 org $FFE400
@@ -786,5 +791,45 @@ C1Glyph1:
     lda.w #$0002
     sta.w !MODE
     jmp VwfCommon
+
+; Replaces C2:63FB-C2:640F of the FF29 handler (A/X/Y 16-bit, the script offset pushed): draw the words at [$30] up
+; to a 0000 word or 10 words; a packed pair ($2020-$7EFF) draws as its two English codes, high byte first.
+Ff29Loop:
+    ldy.w #$0000
+-
+    lda [$30],y
+    beq .done
+    cmp.w #$2020
+    bcc .one
+    cmp.w #$7F00
+    bcs .one
+    pha
+    xba
+    and.w #$00FF
+    clc
+    adc.w #$0F00
+    jsr .draw
+    pla
+    and.w #$00FF
+    clc
+    adc.w #$0F00
+.one:
+    jsr .draw
+    iny
+    iny
+    cpy.w #$0014
+    bne -
+.done:
+    jml $C26410         ; PLY / TYA / STA $3727: the handler's own exit
+.draw:                  ; $2E = A, then C2:4922 (the VWF, which returns through an RTS in bank $C2): the RTS takes
+    sta $2E             ; the pushed $63BA and lands on C2:63BB, an RTL (end of the FF26 handler), back to .back
+    phy
+    phk
+    pea.w .back-1
+    pea.w $63BA
+    jml $C24922
+.back:
+    ply
+    rts
 
 assert pc() <= $FF8000

@@ -2,8 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session r: town menu + battle "Flee" fixed, master coverage 2335/2335;
-  **next: the JP-left sweep in `docs/re/jp_left.md`**, then re-tour + verdicts; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session s: JP-left sweep worked, byte-level engine A tables;
+  **next: the 3 open leads in `docs/re/jp_left.md` (022FDC reader, C1/C4 unit-record names), then the full re-tour +
+  verdicts + `qa_gate.py`**; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -14,6 +15,26 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
   Grid strings (menus/windows/menus_c): edit `script/grid_specs.tsv`, put the ids in `work/tl/rvNN.tsv` (rows from
   `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
+- **Session 2026-11-23s (phase 8, JP-left sweep):** verdicts per lead in **`docs/re/jp_left.md` §Worked**. (a) New
+  **`tools/byte_scripts.py`**: engine A tables read byte by byte (FF25/FF27/FF29/FF2A take a 3-byte address, FF26 an
+  address + jump target, `docs/re/text.md`). Syntax `{FF29:7E379F}`, `{FF26:7F72B5>@1}` ... `{@1}` (label in the
+  entry) or `>05E997` (an entry id); a unit (entries to an FF00 no jump leaves) stays in place if it fits, else goes
+  to bank $FE (`BYTE_AREA`; `EXPANDED_TEXT` now ends at 0x3E0000) with its callers rewritten. `battle_prompts` moved
+  there (05E8A2-05F001, was word region to 05EF52): tavern greeting/rosters, recruit, jobs, treasure "Obtained X!" /
+  "In the chest: X!", gold, Buy/Accept/Kill/Ride choices now English. **Bug fixed on the way**: 05E8F8 "Got it!"
+  ends FF03 and was relocated alone, running on into unrelated bank-$F3 bytes; now it moves with the roster greeting.
+  New tables `target_prompts` (05A52E: Choose a target / an area / Where to move?) and `level_up` (1AD456..: "Attack
+  rose by N!" x8). (b) **FF29 hook** `Ff29Loop` (`asm/vwf.asm`, org C2:63FB): English names in `$7E379F` are packed
+  pairs; each letter now goes to the VWF (calls C2:4922 through an RTL at C2:63BB). (c) `descriptions` starts at
+  0EE52E (sub-strings 単体に攻撃.. called by 28 descriptions). (d) Name-entry default フュリス -> Furis
+  (`default_names.tsv` 6E27A). (e) `dump --refresh` no longer carries old `refs` (a stale false match 194AA9 would
+  have been overwritten). (f) `warp.lua` `POKE` var; scene `town_tavern_roster`. **Seen in game**: `work/qa/w_roster2`
+  (greeting, count, roster row Colts), `w_chest/three.png` (chest line with "Mithril Sword" poked into the buffer,
+  "Attack rose by 3!", "Choose a target."), `w_name/proof.png` (NAME Furis). Test `test_byte_scripts_reach_their_english`.
+  check 57 passed, lint 0, batches 0 problems, identity identical, smoke ok. Build sha1 in the commit's status.
+  **Next:** open leads (022FDC 「敵を見失いました。」 reader; C1 0106D3.. and C4 0445A2.. unit-record names: read probe),
+  then the full re-tour on the final build (`warp_all.py build/bounty_en.sfc --jobs 6 --out work/qa/tour --states
+  --sheet`, then `find work -name _mesen -prune -exec rm -rf {} +`), `qa_gate.py init ... --build`, verdicts, gate.
 - **Session 2026-11-23r (phase 8):** (a) Commits of session q (not logged here before): part cards 第1部-第3部 redrawn
   in English (`tools/card_gfx.py`, 66 tiles), status gender ♂/♀ (to-do 6 done), menu label "Pack", unit records
   never read (to-do 4 closed, keep_jp.txt), battle routes page 12 times. (b) **Full tour** on this build's

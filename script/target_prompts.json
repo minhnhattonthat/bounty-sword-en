@@ -1,0 +1,37 @@
+[
+ {
+  "id": "05A52E",
+  "kind": "text",
+  "jp": "{FF12}目標を指定して下さい。{FF04}{FF00}",
+  "en": "{FF12}Choose a target.{FF04}{FF00}",
+  "refs": [
+   "00F1CE",
+   "00F300",
+   "00F35F",
+   "00F37A",
+   "00F395",
+   "00F3B0",
+   "00FDA4"
+  ]
+ },
+ {
+  "id": "05A54A",
+  "kind": "text",
+  "jp": "{FF12}はんいを指定して下さい。{FF04}{FF00}",
+  "en": "{FF12}Choose an area.{FF04}{FF00}",
+  "refs": [
+   "00F21E",
+   "00F2B1",
+   "00F41B"
+  ]
+ },
+ {
+  "id": "05A568",
+  "kind": "text",
+  "jp": "{FF12}どこに移動しますか？{FF04}{FF00}",
+  "en": "{FF12}Where to move?{FF04}{FF00}",
+  "refs": [
+   "00F400"
+  ]
+ }
+]

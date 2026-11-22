@@ -28,6 +28,7 @@ town_menu	scenario	1			13	560						town (A-01) command menu (town_menu table 039
 town_weapon_shop	scenario	1			13	1056				500 -;6 a;300 -		town (A-01) menu -> weapon_shop
 town_item_shop	scenario	1			13	1132				500 -;16 down;60 -;6 a;300 -		town (A-01) menu -> item_shop
 town_tavern	scenario	1			13	1208				500 -;16 down;60 -;16 down;60 -;6 a;300 -		town (A-01) menu -> tavern
+town_tavern_roster	scenario	1			13	2218				500 -;16 down;60 -;16 down;60 -;6 a;300 -;6 a;120 -;6 down;60 -;6 a;300 -;6 a;200 -;6 a;300 -		town (A-01) tavern -> Look for allies -> roster greeting -> roster list
 shop_buy	scenario	1			13	1668				500 -;6 a;300 -;6 a;200 -;6 a;400 -		weapon shop: Buy -> Iron Sword -> price Yes/No
 shop_sell	scenario	1			13	1508				500 -;6 a;300 -;6 right;40 -;6 a;400 -		weapon shop: Sell -> what'll you sell
 shop_trade	scenario	1			13	2152				500 -;6 a;300 -;6 a;200 -;6 a;200 -;6 a;200 -;6 down;60 -;6 a;200 -;6 a;200 -		weapon shop: Buy -> Iron Sword -> Yes -> Steel Sword -> trade-in price Yes/No

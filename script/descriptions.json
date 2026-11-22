@@ -1,9 +1,146 @@
 [
  {
-  "id": "0EE59E",
+  "id": "0EE52E",
   "kind": "text",
-  "jp": "[00CE]マヒさせることもある{FF00}",
-  "en": "[00CE]May also paralyze.{FF00}"
+  "jp": "単体に攻撃{FF01}{FF07}",
+  "en": "Attacks one enemy.{FF01}{FF07}",
+  "refs": [
+   "0EE564",
+   "0EE59C",
+   "0EE700",
+   "0EE798",
+   "0EE7C8",
+   "0EE822",
+   "0EE82C",
+   "0EE836",
+   "0EE8A6",
+   "0EE8C4",
+   "0EE8E2",
+   "0EE900",
+   "0EE9D4",
+   "0EEA38"
+  ]
+ },
+ {
+  "id": "0EE53C",
+  "kind": "text",
+  "jp": "[049B]数に攻撃{FF01}{FF07}",
+  "en": "Attacks several enemies.{FF01}{FF07}",
+  "refs": [
+   "0EE592",
+   "0EE5BA"
+  ]
+ },
+ {
+  "id": "0EE54A",
+  "kind": "text",
+  "jp": "広はんいに攻撃{FF01}{FF07}{FF03}",
+  "en": "Attacks a wide area.{FF01}{FF07}{FF03}",
+  "refs": [
+   "0EE56E",
+   "0EE5C4",
+   "0EE70A",
+   "0EE714",
+   "0EE750",
+   "0EE75A",
+   "0EE764",
+   "0EE76E",
+   "0EE7D2",
+   "0EE818",
+   "0EE930",
+   "0EE9F4",
+   "0EEA42",
+   "0EEB50",
+   "0EEB88",
+   "0EEC52"
+  ]
+ },
+ {
+  "id": "0EE55E",
+  "kind": "text",
+  "jp": "{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE560",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE45C"
+  ]
+ },
+ {
+  "id": "0EE562",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE56A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE45F"
+  ]
+ },
+ {
+  "id": "0EE56C",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE574",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE462"
+  ]
+ },
+ {
+  "id": "0EE576",
+  "kind": "text",
+  "jp": "味方一人の防御力アップ{FF00}",
+  "en": "Raises one ally's defense.{FF00}"
+ },
+ {
+  "id": "0EE58E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE465"
+  ]
+ },
+ {
+  "id": "0EE590",
+  "kind": "text",
+  "jp": "{FF06:E53C:00CE}{FF00}",
+  "en": "",
+  "refs": [
+   "19A45F"
+  ]
+ },
+ {
+  "id": "0EE598",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE468"
+  ]
+ },
+ {
+  "id": "0EE59A",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}マヒさせることもある{FF00}",
+  "en": "{FF06:E52E:00CE}May also paralyze.{FF00}",
+  "refs": [
+   "26EBFB"
+  ]
  },
  {
   "id": "0EE5B6",

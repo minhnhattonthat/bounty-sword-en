@@ -9,6 +9,27 @@ English, and a warp proof. Strong leads: level-up lines 1AD465.. (上がった),
 descriptions), 06E27A フュリス (likely the name-entry default NAME, before unit_names), name lists 0106D3..011439
 (stride 0x46) and 0445A2..047467 (bank C4: unit/event data?).
 
+## Worked (session s, 2026-11-23)
+
+A byte-level sweep for engine A scripts (any opcode start, args by byte, ending FF00, outside the regions) found
+the strings below; they and the other leads are settled as follows.
+
+| lead | verdict |
+|---|---|
+| 05E954-05F001 (after battle_prompts) | **Fixed.** Engine A scripts with FF25/FF26/FF27/FF29 (3- and 6-byte arguments) flip the word phase; the old word region cut there and kept the tavern greeting, the 6 rosters, recruit/job/treasure/choice lines as `data`. `battle_prompts` is now a byte-level table (`tools/byte_scripts.py`, 27 entries). Also fixes a live bug: 05E8F8 ("Got it!", ends FF03) was relocated alone and ran on into whatever followed it in bank $F3 instead of the roster greeting. 05EBB0 (Dorn/Lena/Baron roster) has no caller: kept JP (`keep_jp.txt`). |
+| 05A52E-05A582 | **Fixed**: map-command prompts (target / area / move), table `target_prompts`, callers = 3-byte pointer lists in C0:F1CE..FDA4. |
+| 1AD456-1AD7C0 | **Fixed**: 8 level-up stat lines, table `level_up`, each called by `43 ptr24` just before it. |
+| FF29 name buffer | **Fixed** (`asm/vwf.asm` Ff29Loop): FF29 drew each word of `$7E379F` as one glyph, so English item/spell names (packed 2 letters a word) would have printed as garbage in the chest/obtain lines. |
+| 06E27A フュリス | **Fixed**: name-entry default (C6:E266 copies 12 bytes to `$7E4D1B`), `script/default_names.tsv` -> "Furis"; the name_entry warp shows `NAME Furis` (this was the old to-do 5 "フェリス"). |
+| 0EE52E-0EE59E | **Fixed**: shared description sub-strings (単体に攻撃 / 複数に攻撃 / 広はんいに攻撃, FF01 FF07) called by 28 descriptions with FF06; the region started at 0EE59E, inside one call. `descriptions` now starts at 0EE52E. |
+| 0419DC 移動目標を選択して下さい | **Dead**: drawn vertically by C4:193D (12 cells, `$22` += $20) inside a routine starting C4:18F1 that nothing calls (no 24-bit or 16-bit reference). Left JP. |
+| 022FDC 「敵を見失いました。」 | **Open**: a complete engine A script (FF0A 0000 ... FF04 FF00) in bank C2 after code; no 24-bit pointer, no `LDA #$2FDC`. Find its reader (probably a computed or table pointer) before translating in place (14 words). |
+| 0106D3-011439 (C1, stride 0x46) | **Open**: unit records with names (マウザー, ロジャー, ミランダ...). The hero's name in records 0 and 4 (10EC1, 1101F) is already written by `default_names.tsv`; check with a read probe whether the other names in these records are ever shown (status, party lists draw names from `unit_names` by id). |
+| 0445A2-047467 (C4) | **Open**: same question for the C4 records; `unit_records` (046CF4-0473B0) was never read in session q's probe, these are likely the same structure. |
+| everything else in the table | code, graphics or data bytes that decode as kana by chance (no opcode structure, no reader). |
+
+## Session r list
+
 | offset | bytes | text |
 |---|---|---|
 | 00419A | 10 | グジバヘヰ |

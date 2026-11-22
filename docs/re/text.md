@@ -55,9 +55,16 @@ Addresses: CPU `$BB:AAAA` (HiROM, file offset = `addr & 0x3FFFFF`) or file offse
   - 0 args: FF00 (end), FF01-FF04, FF07, FF08, FF0D, FF0E, FF11-FF13, FF16-FF18, FF2B/FF2C (print the 3-digit
     numbers in `$7E379F`/`$7E37A1`), FF2E, FF2F/FF30 (if a flag is clear skip to after the next `FF18 FFFF`).
   - 1 arg word: FF05, FF06, FF09, FF0A, FF0B, FF0C, FF14 (`FF14 0003 FF00` closes some messages).
-  - FF0F/FF10: 1-2 words (conditional); FF2D: word + two 24-bit pointers (8 bytes, conditional jump);
-    FF25, FF26, FF27, FF29, FF2A read 3-7 bytes. None of these occur in the master text (FF10 once, in data past a
-    block end). Read the handler again if one turns up in another table.
+  - FF0F/FF10: 1-2 words (conditional); FF2D: word + two 24-bit pointers (8 bytes, conditional jump).
+    None of these occur in the master text (FF10 once, in data past a block end).
+  - Byte arguments (read 2026-11-23, session s; `tools/byte_scripts.py` ARG_BYTES): **FF25** addr24 (C2:62BD:
+    print the number at addr, up to 3 digits); **FF26** addr24 + target24 (C2:6360: if the byte at addr is 0, jump
+    to target; the offset is target - `$48` in 16 bits, so the jump never leaves the script's bank; else skip);
+    **FF27** addr24 (C2:63BC: choice count from addr into `$7E3775`, then the FF14 choice code); **FF29** addr24
+    (C2:63E2: print up to 10 words at addr, stop at 0000; English names packed 2 letters a word go through
+    `asm/vwf.asm` Ff29Loop); **FF2A** addr24 (C2:642F: copy spell record [addr] from `$C8:E0BE` (20 bytes) to
+    `$7E379F`). A 3-byte argument flips the word phase of the text after it, so tables using these are read byte
+    by byte (`battle_prompts`, `target_prompts`, `level_up`).
   - FF19-FF1E print hero-name letters 1-6 (always as the run `FF19..FF1E`); FF1F-FF24 and FF31 print other names
     (they rewind the pointer and re-enter the printer at `C2:47DA`), so they act as characters, not codes.
   - Opcodes seen in master text, with counts: FF15 2098, FF18 1569, FF19-1E 377 runs, FF28 487, FF1F 437, FF31 134,

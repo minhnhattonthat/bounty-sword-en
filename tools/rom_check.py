@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
+import byte_scripts  # noqa: E402
 from rom_text import MASTER_TABLE  # noqa: E402
 
 ASM = ROOT / "asm" / "vwf.asm"
@@ -46,6 +47,7 @@ def allowed_ranges(data):
     scattered writes (pointer table, relocated operands, hooks, checksum) are logged instead: see write_sites."""
     out = [(b["start"], b["end"]) for b in data["master"]["blocks"]]
     out += [(r["start"], r["end"]) for r in data["regions"]]
+    out += byte_scripts.ranges()
     out.append(EXPANDED)
     return sorted(out)
 
@@ -55,6 +57,7 @@ def write_sites(data):
     for changed bytes they don't cover (--writes)."""
     out = [(MASTER_TABLE, MASTER_TABLE + 3 * len(data["master"]["slots"]), "master pointer table")]
     out += [(p, p + 3, f"caller of relocated {r['id']}") for r in data.get("relocs", ()) for p in r["refs"]]
+    out += data.get("byte_sites", [])
     out += [(h, h + HOOK_BYTES, "vwf.asm hook $%06X" % (h + 0xC00000)) for h in hook_sites()]
     out.append((*CHECKSUM, "header checksum"))
     out += [(o, o + 2 * n, f"default name {en}") for o, n, _, en in default_names()]

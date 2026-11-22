@@ -32,3 +32,4 @@
 046E4A	unit_records: unit-record data bytes, not text
 04716A	unit_records: unit-record data bytes, not text
 0473A8	unit_records: unit-record data bytes, not text
+05EBB0	battle_prompts: tavern roster (Dorn/Lena/Baron) with no caller in the ROM (no 24-bit pointer to C5:EBB0, the 5 other rosters each have a `2E ptr24`); English is longer than the slot and can't move without a caller

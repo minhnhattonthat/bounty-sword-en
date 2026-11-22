@@ -56,6 +56,41 @@ def test_town_menu_records_are_rewritten(built):
         assert data[rec:rec + 10] != orig[rec:rec + 10], f"town menu record {rec:06X} still Japanese"
 
 
+def test_byte_scripts_reach_their_english(built):
+    """tools/byte_scripts.py: every caller of a translated entry points at its English, and the tavern 'Got it!'
+    script (05E8F8, ends FF03) still runs on into the roster greeting, whose FF26 jump stays in its bank."""
+    import byte_scripts as bs
+    from script_text import load
+    _, data, _ = built
+    files = load(build.SCRIPT)
+    codec = bs._codec()
+    area = lambda t: any(s <= t < e for s, e in bs.ranges()) or bs.BYTE_AREA[0] <= t < bs.BYTE_AREA[1]
+    seen = 0
+    for name in bs.BYTE_TABLES:
+        for e in files[name + ".json"]:
+            if not e.get("en"):
+                continue
+            head = bs.encode_entry(e["en"], codec).data[:4]
+            for r in e.get("refs", ()):
+                r = int(r, 16)
+                t = (data[r] | data[r + 1] << 8 | data[r + 2] << 16) & 0x3FFFFF
+                assert area(t), f"{name} {e['id']}: caller {r:06X} points at {t:06X}"
+                assert data[t:t + 4] == head, f"{name} {e['id']}: caller {r:06X} doesn't reach the English"
+                seen += 1
+    assert seen > 150
+    r = 0x06CCC2                                  # `2E ptr24` caller of 05E8F8
+    t = (data[r] | data[r + 1] << 8 | data[r + 2] << 16) & 0x3FFFFF
+    got_it = next(e for e in files["battle_prompts.json"] if e["id"] == "05E8F8")
+    n = len(bs.encode_entry(got_it["en"], codec).data)
+    toks = bs.tokens(data, t, t + n + 8)          # the script, then the FF26 that opens 05E954
+    assert toks[-2][1] == 0xFF03
+    after = toks[-1]
+    assert after[1] == bs.JUMP, "05E8F8 no longer runs on into the roster greeting"
+    dest = bs._target(after[2])
+    assert dest >> 16 == t >> 16
+    assert data[dest:dest + 6] == bs.encode_entry('"No', codec).data
+
+
 def test_part_cards_and_gender_glyph_are_english(built):
     """tools/card_gfx.py draws the 3 part cards into the original 93 tiles + 3 maps; the status gender is ♂/♀."""
     from card_gfx import MAPS_AT, MAP_BYTES, N_TILES, TILES_AT, render
