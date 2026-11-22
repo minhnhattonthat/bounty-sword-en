@@ -1,0 +1,797 @@
+[
+ {
+  "id": "0BF8AE",
+  "width": 10,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "0BF800",
+   "0BF809",
+   "0BF80C",
+   "0BF80F",
+   "0BF812",
+   "0BF815",
+   "0BF818",
+   "0BF81B",
+   "0BF81E",
+   "0BF821",
+   "0BF824",
+   "0BF827",
+   "0BF82A",
+   "0BF82D",
+   "2D21EA"
+  ]
+ },
+ {
+  "id": "0BF8C2",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0370][02C8]",
+  "en": "",
+  "refs": [
+   "0BF803"
+  ]
+ },
+ {
+  "id": "0BF8D6",
+  "width": 10,
+  "kind": "text",
+  "jp": "バウンティハンター",
+  "en": "",
+  "refs": [
+   "0BF806"
+  ]
+ },
+ {
+  "id": "0BF8EA",
+  "width": 10,
+  "kind": "text",
+  "jp": "コマンダー",
+  "en": ""
+ },
+ {
+  "id": "0BF8FE",
+  "width": 10,
+  "kind": "text",
+  "jp": "ソードマスター",
+  "en": ""
+ },
+ {
+  "id": "0BF912",
+  "width": 10,
+  "kind": "text",
+  "jp": "ロード",
+  "en": ""
+ },
+ {
+  "id": "0BF926",
+  "width": 10,
+  "kind": "text",
+  "jp": "ニンジャ",
+  "en": "",
+  "refs": [
+   "0BF830"
+  ]
+ },
+ {
+  "id": "0BF93A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ニンジャマスター",
+  "en": ""
+ },
+ {
+  "id": "0BF94E",
+  "width": 10,
+  "kind": "text",
+  "jp": "シャドウマスター",
+  "en": ""
+ },
+ {
+  "id": "0BF962",
+  "width": 10,
+  "kind": "text",
+  "jp": "サムライ",
+  "en": "",
+  "refs": [
+   "0BF833"
+  ]
+ },
+ {
+  "id": "0BF976",
+  "width": 10,
+  "kind": "text",
+  "jp": "ケンゴウ",
+  "en": ""
+ },
+ {
+  "id": "0BF98A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ガンマン",
+  "en": "",
+  "refs": [
+   "0BF836"
+  ]
+ },
+ {
+  "id": "0BF99E",
+  "width": 10,
+  "kind": "text",
+  "jp": "スナイパー",
+  "en": ""
+ },
+ {
+  "id": "0BF9B2",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02D9][0282]",
+  "en": "",
+  "refs": [
+   "0BF839"
+  ]
+ },
+ {
+  "id": "0BF9C6",
+  "width": 10,
+  "kind": "text",
+  "jp": "ナイト",
+  "en": ""
+ },
+ {
+  "id": "0BF9DA",
+  "width": 10,
+  "kind": "text",
+  "jp": "パラディン",
+  "en": "",
+  "refs": [
+   "1ACBC4"
+  ]
+ },
+ {
+  "id": "0BF9EE",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダークナイト",
+  "en": ""
+ },
+ {
+  "id": "0BFA02",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンナイト",
+  "en": ""
+ },
+ {
+  "id": "0BFA16",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0345][02BF][0286]",
+  "en": "",
+  "refs": [
+   "0BF83C"
+  ]
+ },
+ {
+  "id": "0BFA2A",
+  "width": 10,
+  "kind": "text",
+  "jp": "おんみょうじ",
+  "en": ""
+ },
+ {
+  "id": "0BFA3E",
+  "width": 10,
+  "kind": "text",
+  "jp": "しかいせん",
+  "en": ""
+ },
+ {
+  "id": "0BFA52",
+  "width": 10,
+  "kind": "text",
+  "jp": "アマゾネス",
+  "en": "",
+  "refs": [
+   "0BF83F",
+   "19708D"
+  ]
+ },
+ {
+  "id": "0BFA66",
+  "width": 10,
+  "kind": "text",
+  "jp": "ワルキューレ",
+  "en": ""
+ },
+ {
+  "id": "0BFA7A",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0359][02A0][0286]",
+  "en": "",
+  "refs": [
+   "0BF842",
+   "0BF845"
+  ]
+ },
+ {
+  "id": "0BFA8E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ウィザード",
+  "en": ""
+ },
+ {
+  "id": "0BFAA2",
+  "width": 10,
+  "kind": "text",
+  "jp": "ハイ°ウィザード",
+  "en": ""
+ },
+ {
+  "id": "0BFAB6",
+  "width": 10,
+  "kind": "text",
+  "jp": "スペルマスター",
+  "en": ""
+ },
+ {
+  "id": "0BFACA",
+  "width": 10,
+  "kind": "text",
+  "jp": "ワイズマン",
+  "en": ""
+ },
+ {
+  "id": "0BFADE",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0240][03AA]",
+  "en": "",
+  "refs": [
+   "0BF848"
+  ]
+ },
+ {
+  "id": "0BFAF2",
+  "width": 10,
+  "kind": "text",
+  "jp": "シューター",
+  "en": ""
+ },
+ {
+  "id": "0BFB06",
+  "width": 10,
+  "kind": "text",
+  "jp": "ボウマスター",
+  "en": ""
+ },
+ {
+  "id": "0BFB1A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ゾンビマスター",
+  "en": "",
+  "refs": [
+   "0BF84B",
+   "0BF84E"
+  ]
+ },
+ {
+  "id": "0BFB2E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ワイズマン",
+  "en": ""
+ },
+ {
+  "id": "0BFB42",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02DF][037A]",
+  "en": "",
+  "refs": [
+   "0BF851"
+  ]
+ },
+ {
+  "id": "0BFB56",
+  "width": 10,
+  "kind": "text",
+  "jp": "プリースト",
+  "en": ""
+ },
+ {
+  "id": "0BFB6A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ビショップ",
+  "en": ""
+ },
+ {
+  "id": "0BFB7E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ワイズマン",
+  "en": ""
+ },
+ {
+  "id": "0BFB92",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03AB][0319][0219]",
+  "en": "",
+  "refs": [
+   "0BF854"
+  ]
+ },
+ {
+  "id": "0BFBA6",
+  "width": 10,
+  "kind": "text",
+  "jp": "バトルマスター",
+  "en": ""
+ },
+ {
+  "id": "0BFBBA",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンナイト",
+  "en": "",
+  "refs": [
+   "0BF857",
+   "0BF85A",
+   "0BF85D"
+  ]
+ },
+ {
+  "id": "0BFBCE",
+  "width": 10,
+  "kind": "text",
+  "jp": "ゾンビ",
+  "en": "",
+  "refs": [
+   "0BF860"
+  ]
+ },
+ {
+  "id": "0BFBE2",
+  "width": 10,
+  "kind": "text",
+  "jp": "グール",
+  "en": ""
+ },
+ {
+  "id": "0BFBF6",
+  "width": 10,
+  "kind": "text",
+  "jp": "ラグーン",
+  "en": "",
+  "refs": [
+   "10DF53"
+  ]
+ },
+ {
+  "id": "0BFC0A",
+  "width": 10,
+  "kind": "text",
+  "jp": "[030F][0239]",
+  "en": ""
+ },
+ {
+  "id": "0BFC1E",
+  "width": 10,
+  "kind": "text",
+  "jp": "スケルトン",
+  "en": "",
+  "refs": [
+   "0BF863"
+  ]
+ },
+ {
+  "id": "0BFC32",
+  "width": 10,
+  "kind": "text",
+  "jp": "ボーンゴーレム",
+  "en": ""
+ },
+ {
+  "id": "0BFC46",
+  "width": 10,
+  "kind": "text",
+  "jp": "スカルナイト",
+  "en": ""
+ },
+ {
+  "id": "0BFC5A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ウォードッグ",
+  "en": "",
+  "refs": [
+   "0BF866"
+  ]
+ },
+ {
+  "id": "0BFC6E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ケルベロス",
+  "en": ""
+ },
+ {
+  "id": "0BFC82",
+  "width": 10,
+  "kind": "text",
+  "jp": "ヘルハウンド",
+  "en": ""
+ },
+ {
+  "id": "0BFC96",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダークロード",
+  "en": "",
+  "refs": [
+   "0BF869"
+  ]
+ },
+ {
+  "id": "0BFCAA",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴン",
+  "en": "",
+  "refs": [
+   "0BF86C"
+  ]
+ },
+ {
+  "id": "0BFCBE",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダークドラゴン",
+  "en": ""
+ },
+ {
+  "id": "0BFCD2",
+  "width": 10,
+  "kind": "text",
+  "jp": "カオスドラゴン",
+  "en": ""
+ },
+ {
+  "id": "0BFCE6",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンゾンビ",
+  "en": ""
+ },
+ {
+  "id": "0BFCFA",
+  "width": 10,
+  "kind": "text",
+  "jp": "[029C][02E3][0067][0238][0282]",
+  "en": "",
+  "refs": [
+   "0BF86F"
+  ]
+ },
+ {
+  "id": "0BFD0E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ゴースト",
+  "en": "",
+  "refs": [
+   "0BF872",
+   "0BF875"
+  ]
+ },
+ {
+  "id": "0BFD22",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダークソウル",
+  "en": ""
+ },
+ {
+  "id": "0BFD36",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0315][02E9]",
+  "en": "",
+  "refs": [
+   "0BF878"
+  ]
+ },
+ {
+  "id": "0BFD4A",
+  "width": 10,
+  "kind": "text",
+  "jp": "アサシン",
+  "en": ""
+ },
+ {
+  "id": "0BFD5E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ヒットマン",
+  "en": ""
+ },
+ {
+  "id": "0BFD72",
+  "width": 10,
+  "kind": "text",
+  "jp": "ミミック",
+  "en": "",
+  "refs": [
+   "0BF87B"
+  ]
+ },
+ {
+  "id": "0BFD86",
+  "width": 10,
+  "kind": "text",
+  "jp": "リビングトラップ",
+  "en": ""
+ },
+ {
+  "id": "0BFD9A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ジャイアント",
+  "en": "",
+  "refs": [
+   "0BF87E"
+  ]
+ },
+ {
+  "id": "0BFDAE",
+  "width": 10,
+  "kind": "text",
+  "jp": "シクロープ",
+  "en": ""
+ },
+ {
+  "id": "0BFDC2",
+  "width": 10,
+  "kind": "text",
+  "jp": "ゴリアテ",
+  "en": ""
+ },
+ {
+  "id": "0BFDD6",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02CF][02E5]",
+  "en": ""
+ },
+ {
+  "id": "0BFDEA",
+  "width": 10,
+  "kind": "text",
+  "jp": "ワイバーン",
+  "en": "",
+  "refs": [
+   "0BF881"
+  ]
+ },
+ {
+  "id": "0BFDFE",
+  "width": 10,
+  "kind": "text",
+  "jp": "グリフォン",
+  "en": ""
+ },
+ {
+  "id": "0BFE12",
+  "width": 10,
+  "kind": "text",
+  "jp": "ロック",
+  "en": ""
+ },
+ {
+  "id": "0BFE26",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03B8]ァルチャー",
+  "en": ""
+ },
+ {
+  "id": "0BFE3A",
+  "width": 10,
+  "kind": "text",
+  "jp": "モンスター[027F]い",
+  "en": "",
+  "refs": [
+   "0BF884"
+  ]
+ },
+ {
+  "id": "0BFE4E",
+  "width": 10,
+  "kind": "text",
+  "jp": "ハイドラ",
+  "en": "",
+  "refs": [
+   "0BF887"
+  ]
+ },
+ {
+  "id": "0BFE62",
+  "width": 10,
+  "kind": "text",
+  "jp": "サラマンダー",
+  "en": ""
+ },
+ {
+  "id": "0BFE76",
+  "width": 10,
+  "kind": "text",
+  "jp": "カオスドラゴン",
+  "en": ""
+ },
+ {
+  "id": "0BFE8A",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンゾンビ",
+  "en": "",
+  "refs": [
+   "0F4F2C"
+  ]
+ },
+ {
+  "id": "0BFE9E",
+  "width": 10,
+  "kind": "text",
+  "jp": "フュリス",
+  "en": "",
+  "refs": [
+   "0BF88A"
+  ]
+ },
+ {
+  "id": "0BFEB2",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0263][008B][03AA][038F]",
+  "en": "",
+  "refs": [
+   "0BF88D",
+   "0BF890",
+   "0BF893",
+   "0BF896",
+   "0BF899",
+   "0BF89C",
+   "0BF89F",
+   "0BF8A5"
+  ]
+ },
+ {
+  "id": "0BFEC6",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0263][008B][03AA][038F]",
+  "en": "",
+  "refs": [
+   "0D5B4B"
+  ]
+ },
+ {
+  "id": "0BFEDA",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0263][008B][03AA][038F]",
+  "en": ""
+ },
+ {
+  "id": "0BFEEE",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0263][008B][03AA][038F]",
+  "en": ""
+ },
+ {
+  "id": "0BFF02",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0300][0234][02B7]",
+  "en": "",
+  "refs": [
+   "0BF8A8",
+   "1A6A3D"
+  ]
+ },
+ {
+  "id": "0BFF16",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0300][0234][02B7]",
+  "en": ""
+ },
+ {
+  "id": "0BFF2A",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0300][0234][02B7]",
+  "en": "",
+  "refs": [
+   "1A6E50"
+  ]
+ },
+ {
+  "id": "0BFF3E",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0300][0234][02B7]",
+  "en": ""
+ },
+ {
+  "id": "0BFF52",
+  "width": 10,
+  "kind": "text",
+  "jp": "[00BF][0305]",
+  "en": "",
+  "refs": [
+   "0BF8A2"
+  ]
+ },
+ {
+  "id": "0BFF66",
+  "width": 10,
+  "kind": "text",
+  "jp": "１２[02B7][02E5]",
+  "en": "",
+  "refs": [
+   "0BF8AB"
+  ]
+ },
+ {
+  "id": "0BFF7A",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}"
+ },
+ {
+  "id": "0BFF8E",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}",
+  "refs": [
+   "11FD29"
+  ]
+ },
+ {
+  "id": "0BFFA2",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}"
+ },
+ {
+  "id": "0BFFB6",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}"
+ },
+ {
+  "id": "0BFFCA",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}"
+ },
+ {
+  "id": "0BFFDE",
+  "width": 10,
+  "kind": "data",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}"
+ },
+ {
+  "id": "0BFFF2",
+  "kind": "text",
+  "jp": "{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}{FFFF}　¨",
+  "en": ""
+ }
+]

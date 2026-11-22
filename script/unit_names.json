@@ -1,0 +1,382 @@
+[
+ {
+  "id": "06E3AB",
+  "width": 6,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "06E38F",
+   "06E644"
+  ]
+ },
+ {
+  "id": "06E3B7",
+  "width": 6,
+  "kind": "text",
+  "jp": "ロジャー",
+  "en": ""
+ },
+ {
+  "id": "06E3C3",
+  "width": 6,
+  "kind": "text",
+  "jp": "ミランダ",
+  "en": ""
+ },
+ {
+  "id": "06E3CF",
+  "width": 6,
+  "kind": "text",
+  "jp": "マウザー",
+  "en": ""
+ },
+ {
+  "id": "06E3DB",
+  "width": 6,
+  "kind": "text",
+  "jp": "ロブン",
+  "en": ""
+ },
+ {
+  "id": "06E3E7",
+  "width": 6,
+  "kind": "text",
+  "jp": "アテナ",
+  "en": ""
+ },
+ {
+  "id": "06E3F3",
+  "width": 6,
+  "kind": "text",
+  "jp": "シュタイア",
+  "en": ""
+ },
+ {
+  "id": "06E3FF",
+  "width": 6,
+  "kind": "text",
+  "jp": "ファウスト",
+  "en": ""
+ },
+ {
+  "id": "06E40B",
+  "width": 6,
+  "kind": "text",
+  "jp": "ツキカゲ",
+  "en": ""
+ },
+ {
+  "id": "06E417",
+  "width": 6,
+  "kind": "text",
+  "jp": "リュウビ",
+  "en": ""
+ },
+ {
+  "id": "06E423",
+  "width": 6,
+  "kind": "text",
+  "jp": "ルーネ",
+  "en": ""
+ },
+ {
+  "id": "06E42F",
+  "width": 6,
+  "kind": "text",
+  "jp": "アジャックス",
+  "en": ""
+ },
+ {
+  "id": "06E43B",
+  "width": 6,
+  "kind": "text",
+  "jp": "テティス",
+  "en": ""
+ },
+ {
+  "id": "06E447",
+  "width": 6,
+  "kind": "text",
+  "jp": "コルツ",
+  "en": ""
+ },
+ {
+  "id": "06E453",
+  "width": 6,
+  "kind": "text",
+  "jp": "ヘンメリー",
+  "en": ""
+ },
+ {
+  "id": "06E45F",
+  "width": 6,
+  "kind": "text",
+  "jp": "デトニクス",
+  "en": ""
+ },
+ {
+  "id": "06E46B",
+  "width": 6,
+  "kind": "text",
+  "jp": "マイア",
+  "en": ""
+ },
+ {
+  "id": "06E477",
+  "width": 6,
+  "kind": "text",
+  "jp": "ボリス",
+  "en": ""
+ },
+ {
+  "id": "06E483",
+  "width": 6,
+  "kind": "text",
+  "jp": "シーナ",
+  "en": ""
+ },
+ {
+  "id": "06E48F",
+  "width": 6,
+  "kind": "text",
+  "jp": "ズール",
+  "en": ""
+ },
+ {
+  "id": "06E49B",
+  "width": 6,
+  "kind": "text",
+  "jp": "ドーン",
+  "en": ""
+ },
+ {
+  "id": "06E4A7",
+  "width": 6,
+  "kind": "text",
+  "jp": "レナ",
+  "en": ""
+ },
+ {
+  "id": "06E4B3",
+  "width": 6,
+  "kind": "text",
+  "jp": "ジーン",
+  "en": ""
+ },
+ {
+  "id": "06E4BF",
+  "width": 6,
+  "kind": "text",
+  "jp": "ミカ",
+  "en": ""
+ },
+ {
+  "id": "06E4CB",
+  "width": 6,
+  "kind": "text",
+  "jp": "ビーン",
+  "en": ""
+ },
+ {
+  "id": "06E4D7",
+  "width": 6,
+  "kind": "text",
+  "jp": "ベン",
+  "en": ""
+ },
+ {
+  "id": "06E4E3",
+  "width": 6,
+  "kind": "text",
+  "jp": "ノルン",
+  "en": ""
+ },
+ {
+  "id": "06E4EF",
+  "width": 6,
+  "kind": "text",
+  "jp": "ダニエル",
+  "en": ""
+ },
+ {
+  "id": "06E4FB",
+  "width": 6,
+  "kind": "text",
+  "jp": "マクベス",
+  "en": ""
+ },
+ {
+  "id": "06E507",
+  "width": 6,
+  "kind": "text",
+  "jp": "ナイト",
+  "en": ""
+ },
+ {
+  "id": "06E513",
+  "width": 6,
+  "kind": "text",
+  "jp": "ラグガドル",
+  "en": ""
+ },
+ {
+  "id": "06E51F",
+  "width": 6,
+  "kind": "text",
+  "jp": "ダークロード",
+  "en": ""
+ },
+ {
+  "id": "06E52B",
+  "width": 6,
+  "kind": "text",
+  "jp": "ボーンナイト",
+  "en": "",
+  "refs": [
+   "19ABCC"
+  ]
+ },
+ {
+  "id": "06E537",
+  "width": 6,
+  "kind": "text",
+  "jp": "Ｌ°トラップ",
+  "en": ""
+ },
+ {
+  "id": "06E543",
+  "width": 6,
+  "kind": "text",
+  "jp": "エレボス",
+  "en": ""
+ },
+ {
+  "id": "06E54F",
+  "width": 6,
+  "kind": "text",
+  "jp": "ニュクス",
+  "en": ""
+ },
+ {
+  "id": "06E55B",
+  "width": 6,
+  "kind": "text",
+  "jp": "Ｄ°ナイト",
+  "en": ""
+ },
+ {
+  "id": "06E567",
+  "width": 6,
+  "kind": "text",
+  "jp": "ゴーシュ",
+  "en": ""
+ },
+ {
+  "id": "06E573",
+  "width": 6,
+  "kind": "text",
+  "jp": "レオパード",
+  "en": ""
+ },
+ {
+  "id": "06E57F",
+  "width": 6,
+  "kind": "text",
+  "jp": "Ｎ°マンサー",
+  "en": ""
+ },
+ {
+  "id": "06E58B",
+  "width": 6,
+  "kind": "text",
+  "jp": "バトルマスタ",
+  "en": ""
+ },
+ {
+  "id": "06E597",
+  "width": 6,
+  "kind": "text",
+  "jp": "おんみょうじ",
+  "en": ""
+ },
+ {
+  "id": "06E5A3",
+  "width": 6,
+  "kind": "text",
+  "jp": "パラディン",
+  "en": ""
+ },
+ {
+  "id": "06E5AF",
+  "width": 6,
+  "kind": "text",
+  "jp": "Ｎ°マスター",
+  "en": ""
+ },
+ {
+  "id": "06E5BB",
+  "width": 6,
+  "kind": "text",
+  "jp": "エリュシオン",
+  "en": ""
+ },
+ {
+  "id": "06E5C7",
+  "width": 6,
+  "kind": "text",
+  "jp": "オヤジ",
+  "en": ""
+ },
+ {
+  "id": "06E5D3",
+  "width": 6,
+  "kind": "text",
+  "jp": "ジイさん",
+  "en": ""
+ },
+ {
+  "id": "06E5DF",
+  "width": 6,
+  "kind": "text",
+  "jp": "ジジイ",
+  "en": ""
+ },
+ {
+  "id": "06E5EB",
+  "width": 6,
+  "kind": "text",
+  "jp": "おばあさん",
+  "en": ""
+ },
+ {
+  "id": "06E5F7",
+  "width": 6,
+  "kind": "text",
+  "jp": "バアさん",
+  "en": "",
+  "refs": [
+   "26EE59"
+  ]
+ },
+ {
+  "id": "06E603",
+  "width": 6,
+  "kind": "text",
+  "jp": "ババア",
+  "en": ""
+ },
+ {
+  "id": "06E60F",
+  "width": 6,
+  "kind": "text",
+  "jp": "むすめ",
+  "en": ""
+ },
+ {
+  "id": "06E61B",
+  "width": 6,
+  "kind": "text",
+  "jp": "フュリス",
+  "en": ""
+ }
+]

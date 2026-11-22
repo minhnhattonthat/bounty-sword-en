@@ -1,0 +1,3066 @@
+[
+ {
+  "id": "0EE59E",
+  "kind": "text",
+  "jp": "[00CE]マヒさせることもある{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE5B6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE46B"
+  ]
+ },
+ {
+  "id": "0EE5B8",
+  "kind": "text",
+  "jp": "{FF06:E53C:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE5C0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE46E"
+  ]
+ },
+ {
+  "id": "0EE5C2",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE5CA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE471"
+  ]
+ },
+ {
+  "id": "0EE5CC",
+  "kind": "text",
+  "jp": "[0307][027C][02ED]に[026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE5DA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE474",
+   "26EDB1"
+  ]
+ },
+ {
+  "id": "0EE5DC",
+  "kind": "text",
+  "jp": "[0307][027C][02ED]に[026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE5EA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "01BC59",
+   "0EE477"
+  ]
+ },
+ {
+  "id": "0EE5EC",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]のＨＰを[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE602",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE47A",
+   "0EE47D"
+  ]
+ },
+ {
+  "id": "0EE604",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]のバッドステータスを[03D9][03DA]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE626",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE480",
+   "17E1A6"
+  ]
+ },
+ {
+  "id": "0EE628",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]のＨＰ[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE63C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE483"
+  ]
+ },
+ {
+  "id": "0EE63E",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]のＨＰ[02DD][0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE654",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE486"
+  ]
+ },
+ {
+  "id": "0EE656",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]の[0356][0395][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE66E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE489"
+  ]
+ },
+ {
+  "id": "0EE670",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]のＨＰと　バッドステータスが[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE69A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE48C"
+  ]
+ },
+ {
+  "id": "0EE69C",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]を　[03FC][034A]のとなりにテレポートさせる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE6C8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE48F"
+  ]
+ },
+ {
+  "id": "0EE6CA",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]の[026A][0254][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE6E2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE492"
+  ]
+ },
+ {
+  "id": "0EE6E4",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]の[026A][0254][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE6FC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE495"
+  ]
+ },
+ {
+  "id": "0EE6FE",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": "",
+  "refs": [
+   "1ED6A2"
+  ]
+ },
+ {
+  "id": "0EE706",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE498"
+  ]
+ },
+ {
+  "id": "0EE708",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE710",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE49B"
+  ]
+ },
+ {
+  "id": "0EE712",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE71A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE49E",
+   "0EE4A1"
+  ]
+ },
+ {
+  "id": "0EE71C",
+  "kind": "text",
+  "jp": "[03FC][034A]への[026A][0254]を[0356]ぐ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE730",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4A4"
+  ]
+ },
+ {
+  "id": "0EE732",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]への　[026A][0254]を[0356]ぐ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE74C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4A7"
+  ]
+ },
+ {
+  "id": "0EE74E",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE756",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4AA"
+  ]
+ },
+ {
+  "id": "0EE758",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE760",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4AD"
+  ]
+ },
+ {
+  "id": "0EE762",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE76A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4B0"
+  ]
+ },
+ {
+  "id": "0EE76C",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE774",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4B3"
+  ]
+ },
+ {
+  "id": "0EE776",
+  "kind": "text",
+  "jp": "テレポートし　[03A2]れた[0307]を[026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE794",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4B6"
+  ]
+ },
+ {
+  "id": "0EE796",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE79E",
+  "kind": "text",
+  "jp": "まわりに　[032E][0331]をおこし[0307]をふきとばす{FF00}",
+  "en": "",
+  "refs": [
+   "0EE4B9"
+  ]
+ },
+ {
+  "id": "0EE7C4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4BC"
+  ]
+ },
+ {
+  "id": "0EE7C6",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE7CE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4BF"
+  ]
+ },
+ {
+  "id": "0EE7D0",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE7D8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4C2"
+  ]
+ },
+ {
+  "id": "0EE7DA",
+  "kind": "text",
+  "jp": "すきな[02AE][0390]にテレポート{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE7F2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4C5"
+  ]
+ },
+ {
+  "id": "0EE7F4",
+  "kind": "text",
+  "jp": "[0206][0304][03B4][022F]　[0307][0206][02ED]の[031A]きをとめる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE814",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4C8"
+  ]
+ },
+ {
+  "id": "0EE816",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE81E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4CB"
+  ]
+ },
+ {
+  "id": "0EE820",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE828",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4CE"
+  ]
+ },
+ {
+  "id": "0EE82A",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE832",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4D1"
+  ]
+ },
+ {
+  "id": "0EE834",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}モンスター[0253]とアンデッド[0253]に{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EE860",
+  "kind": "text",
+  "jp": "[0339]ずクリティカル{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE872",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4D4"
+  ]
+ },
+ {
+  "id": "0EE874",
+  "kind": "text",
+  "jp": "アンデットなどの[0307][0206][02ED]を　[02AB]しさることがある{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE8A2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4D7"
+  ]
+ },
+ {
+  "id": "0EE8A4",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}[0316]たればクリティカル{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE8C0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4DA",
+   "1F774E",
+   "20B464"
+  ]
+ },
+ {
+  "id": "0EE8C2",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}マヒさせることもある{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE8DE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4DD"
+  ]
+ },
+ {
+  "id": "0EE8E0",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}マヒさせることもある{FF00}",
+  "en": "",
+  "refs": [
+   "1F2401"
+  ]
+ },
+ {
+  "id": "0EE8FC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4E0"
+  ]
+ },
+ {
+  "id": "0EE8FE",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}[0361][02FB]すれば[0339]ず[035E]らせる{FF00}",
+  "en": "",
+  "refs": [
+   "20C467"
+  ]
+ },
+ {
+  "id": "0EE91C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4E3"
+  ]
+ },
+ {
+  "id": "0EE91E",
+  "kind": "text",
+  "jp": "[04C1][02ED]に[0244][026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE92C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4E6"
+  ]
+ },
+ {
+  "id": "0EE92E",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE936",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4E9"
+  ]
+ },
+ {
+  "id": "0EE938",
+  "kind": "text",
+  "jp": "[024E][02FB]の[0441]はんいに[026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE94E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4EC"
+  ]
+ },
+ {
+  "id": "0EE950",
+  "kind": "text",
+  "jp": "[0206][0487][03DE][043E]の[0307]にダメージ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE968",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4EF"
+  ]
+ },
+ {
+  "id": "0EE96A",
+  "kind": "text",
+  "jp": "[0339]ず[035E]らせる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE978",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4F2"
+  ]
+ },
+ {
+  "id": "0EE97A",
+  "kind": "text",
+  "jp": "[03E3][04C3][03A1][03A2][026A][0254][0218][0326]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE98C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4F5"
+  ]
+ },
+ {
+  "id": "0EE98E",
+  "kind": "text",
+  "jp": "[04C1][02ED]に[0339]ずクリティカル{FF00}",
+  "en": "",
+  "refs": [
+   "26E136"
+  ]
+ },
+ {
+  "id": "0EE9A6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4F8"
+  ]
+ },
+ {
+  "id": "0EE9A8",
+  "kind": "text",
+  "jp": "[0206][0487][03DE][043E]の[0307]にダメージ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE9C0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4FB"
+  ]
+ },
+ {
+  "id": "0EE9C2",
+  "kind": "text",
+  "jp": "[04C1][02ED]に[0244][026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE9D0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE4FE"
+  ]
+ },
+ {
+  "id": "0EE9D2",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}クリティカルがでやすい{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE9F0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE501"
+  ]
+ },
+ {
+  "id": "0EE9F2",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EE9FA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE504"
+  ]
+ },
+ {
+  "id": "0EE9FC",
+  "kind": "text",
+  "jp": "[0206][0304][03B4][022F]　[0349][00B3]ダメージを[03DF]す{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA1A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE507"
+  ]
+ },
+ {
+  "id": "0EEA1C",
+  "kind": "text",
+  "jp": "[0206][0487][03DE][043E]の[0307]にダメージ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA34",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE50A"
+  ]
+ },
+ {
+  "id": "0EEA36",
+  "kind": "text",
+  "jp": "{FF06:E52E:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA3E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE50D"
+  ]
+ },
+ {
+  "id": "0EEA40",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA48",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE510"
+  ]
+ },
+ {
+  "id": "0EEA4A",
+  "kind": "text",
+  "jp": "すきな[02AE][0390]にテレポート{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA62",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE513"
+  ]
+ },
+ {
+  "id": "0EEA64",
+  "kind": "text",
+  "jp": "[03E8][034F][0206][02BB]と　[03FC][034A]の[02AE][0390]をいれかえる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEA88",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE516"
+  ]
+ },
+ {
+  "id": "0EEA8A",
+  "kind": "text",
+  "jp": "[0206][0487][03DE][043E]の[0307]に[026A][0254]　マヒさせることもある{FF00}",
+  "en": "",
+  "refs": [
+   "26F0D5"
+  ]
+ },
+ {
+  "id": "0EEAB4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE519",
+   "26E241"
+  ]
+ },
+ {
+  "id": "0EEAB6",
+  "kind": "text",
+  "jp": "アンデッド[0253][0206][02ED]を　[0206][0254]でしとめることがある{FF00}",
+  "en": "",
+  "refs": [
+   "196E52"
+  ]
+ },
+ {
+  "id": "0EEAE4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE51C"
+  ]
+ },
+ {
+  "id": "0EEAE6",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ソードとアテナで[0307][04C1][02ED]を[033D]づけにしダメージ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEB1C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE51F"
+  ]
+ },
+ {
+  "id": "0EEB1E",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ソード　マウザー　ファウスト{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EEB4E",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEB56",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE522"
+  ]
+ },
+ {
+  "id": "0EEB58",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ソード　ロジャー　ミランダ{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EEB86",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEB8E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE525",
+   "20D4C0",
+   "20D6E3"
+  ]
+ },
+ {
+  "id": "0EEB90",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ファウスト　ロブン　ツキカゲ{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EEBC0",
+  "kind": "text",
+  "jp": "[0441]はんいの　[0307][026A][0254][037D]をダウン{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEBDE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE528"
+  ]
+ },
+ {
+  "id": "0EEBE0",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ロブン　ツキカゲ　リュウビ{FF10:E455:00CE}{FF11}{FF03}",
+  "en": "",
+  "refs": [
+   "209C0C"
+  ]
+ },
+ {
+  "id": "0EEC0E",
+  "kind": "text",
+  "jp": "３[02BB]で[03FE]んだ[0226][049C]に[026A][0254]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEC26",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EE52B"
+  ]
+ },
+ {
+  "id": "0EEC28",
+  "kind": "text",
+  "jp": "[026F][02ED][026A][0254]．ソード　アジャックス{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EEC50",
+  "kind": "text",
+  "jp": "{FF06:E54A:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEC58",
+  "kind": "data",
+  "jp": "[EE98][9CCE][CEEE][EEAC][BCCE][CEEE][EEE4][F4CE][CEEE][EF10][3ACE][CEEF][EF4A][7ACE][CEEF][EF88][DECE][CEEF][F00E][4CCE][CEF0][F04C][4CCE][CEF0][F060][6CCE][CEF0][F06C][7ACE][CEF0][F07A][A0CE][CEF0][F0AC][DECE][CEF0][F10A][30CE][CEF1][F186][86CE][CEF1][F186][92CE][CEF1][F19E][AACE][CEF1][F1CE][14CE][CEF2][F264][64CE][CEF2][F264][7CCE][CEF2][F2AC][D4CE][CEF2][F2D4][14CE][CEF3][F326][38CE][CEF3][F338][90CE][CEF3][F3A2][A2CE][CEF3][F3AE][D2CE][CEF3][F41C][48CE][CEF4][F48E][8ECE][CEF4][F48E][8ECE][CEF4][F49A][A6CE][CEF4][F4B2][BECE][CEF4][F4CA][CACE][CEF4][F4CA][D6CE][CEF4][F4E2][EECE][CEF4][F50E][0ECE][CEF5][F50E][30CE][CEF5][F546][56CE][CEF5][F57E][CACE][CEF5][F5EC][F8CE][CEF5][F608][18CE][CEF6][F66E][90CE][CEF6][F69C][9CCE][CEF6][F6C2][D0CE][CEF6][F6DE][ECCE][CEF6][F6F8][0CCE][CEF7][F73A][4CCE][CEF7][F760][60CE][CEF7][F784][A8CE][CEF7][F7C6][D8CE][CEF7][F7E6][F8CE][CEF7][F806][12CE][CEF8][F82E][54CE][CEF8][F886][9ECE][CEF8][F8CA][CACE][CEF8][F8CA][DACE][CEF8][F8EA][F8CE][CEF8][F906][14CE][CEF9][F922][34CE][CEF9][F946][58CE][CEF9][F958][58CE][CEF9][F958][7ECE][CEF9][F97E][7ECE][CEF9][F97E][7ECE][CEF9][F97E][7ECE][CEF9][F97E][9ACE][CEF9][F99A][9ACE][CEF9][F9BC][DECE][CEF9][FA0C][0CCE][CEFA][FA0C][0CCE][CEFA][FA0C][0CCE][CEFA][FA0C][44CE][CEFA][FA44][44CE][CEFA][FA44][52CE][CEFA][FA64][74CE][CEFA][FA84][92CE][CEFA][FAA0][B0CE][CEFA][FAC2][D2CE][CEFA][FAE0][EECE][CEFA][FB00][0ECE][CEFB][FB38][60CE][CEFB][FB8E][C0CE][CEFB][FBEE][10CE][CEFC][FC4A][8CCE][CEFC][FC8C][8CCE][CEFC][FC8C][8CCE][CEFC][FC8C][8CCE][CEFC][FC8C][8CCE][CEFC][FCA8][CCCE][CEFC][FCEE][14CE][CEFD][0397]の[02BB]が，[02E3][0337]して[027F][03D7]すると‥？{FF07}[04C1][02ED]に[026A][0254]{FF01}{FF07}{FF03}",
+  "refs": [
+   "030E2F",
+   "031D68",
+   "031F58",
+   "0332AD",
+   "035874",
+   "035D3F",
+   "03B88E",
+   "03B9B1"
+  ]
+ },
+ {
+  "id": "0EEE9A",
+  "kind": "text",
+  "jp": "{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEE9C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC5B"
+  ]
+ },
+ {
+  "id": "0EEE9E",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEEAC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC5E"
+  ]
+ },
+ {
+  "id": "0EEEAE",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEEBC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC61"
+  ]
+ },
+ {
+  "id": "0EEEBE",
+  "kind": "text",
+  "jp": "アンデッドに[0244]ダメージ{FF01}[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEEE4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC64"
+  ]
+ },
+ {
+  "id": "0EEEE6",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEEF4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC67"
+  ]
+ },
+ {
+  "id": "0EEEF6",
+  "kind": "text",
+  "jp": "[0307]を[031D]におかす{FF01}[02E3]．ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEF10",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC6A",
+   "2F4BD1"
+  ]
+ },
+ {
+  "id": "0EEF12",
+  "kind": "text",
+  "jp": "[027F]うとブリザードの[0435][03B9]{FF01}[02E3]．パ　ダ　ド{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEF3A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC6D",
+   "17F75E"
+  ]
+ },
+ {
+  "id": "0EEF3C",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEF4A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC70"
+  ]
+ },
+ {
+  "id": "0EEF4C",
+  "kind": "text",
+  "jp": "[0339][027B][023A]ほとんど　[02AB][048E]ＳＰ[04B9][02A9]{FF01}[02E3]．パ　ダ　ド{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEF7A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC73"
+  ]
+ },
+ {
+  "id": "0EEF7C",
+  "kind": "text",
+  "jp": "[02E3]．パ　ダ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEF88",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC76",
+   "1F9095"
+  ]
+ },
+ {
+  "id": "0EEF8A",
+  "kind": "text",
+  "jp": "[027F]うとディバインの[0435][03B9]{FF01}アンデッドに[0244]ダメージ{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EEFC2",
+  "kind": "text",
+  "jp": "ヒーリング[0435][03B9][040C]{FF01}　[02E3]．パ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EEFDE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC79"
+  ]
+ },
+ {
+  "id": "0EEFE0",
+  "kind": "text",
+  "jp": "[027F]うとファイアストームの[0435][03B9]{FF01}[02E3]．パ　ダ　ド{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF00E",
+  "kind": "text",
+  "jp": "アンデッドに[0244]ダメージ{FF01}ヒーリング[0435][03B9][040C]{FF00}",
+  "en": "",
+  "refs": [
+   "0EEC7C",
+   "172D7F",
+   "172E9A"
+  ]
+ },
+ {
+  "id": "0EF038",
+  "kind": "text",
+  "jp": "　　　　　　　[048C][03D7]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF04C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC7F",
+   "0EEC82",
+   "0EEC85"
+  ]
+ },
+ {
+  "id": "0EF04E",
+  "kind": "text",
+  "jp": "[02E3]．サ[0253]　ニン[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF060",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC88"
+  ]
+ },
+ {
+  "id": "0EF062",
+  "kind": "text",
+  "jp": "[02E3]．サ[0253]{FF00}",
+  "en": "",
+  "refs": [
+   "2FB437"
+  ]
+ },
+ {
+  "id": "0EF06C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC8B",
+   "0EEC8E"
+  ]
+ },
+ {
+  "id": "0EF06E",
+  "kind": "text",
+  "jp": "[02E3]．ニン[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF07A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC91",
+   "0EEC94",
+   "194E8A"
+  ]
+ },
+ {
+  "id": "0EF07C",
+  "kind": "text",
+  "jp": "[026A][0254]をかわしやすくなる{FF01}[02E3]．ニン[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF0A0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC97",
+   "17D964"
+  ]
+ },
+ {
+  "id": "0EF0A2",
+  "kind": "text",
+  "jp": "[02E3]．サ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF0AC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC9A"
+  ]
+ },
+ {
+  "id": "0EF0AE",
+  "kind": "text",
+  "jp": "クリティカルがでやすくなる{FF01}[02E3]．サ[0253]　ニマ　シ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF0DE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEC9D"
+  ]
+ },
+ {
+  "id": "0EF0E0",
+  "kind": "text",
+  "jp": "[0290][0201]な[026A][0254]をはねつける{FF01}[02E3]．ケ　ニマ　シ{FF00}",
+  "en": "",
+  "refs": [
+   "2E4172"
+  ]
+ },
+ {
+  "id": "0EF10A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECA0"
+  ]
+ },
+ {
+  "id": "0EF10C",
+  "kind": "text",
+  "jp": "[027F]うとバニッシュレイの[0435][03B9]{FF01}[02E3]．ケ{FF00}",
+  "en": "",
+  "refs": [
+   "2FBE18"
+  ]
+ },
+ {
+  "id": "0EF130",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECA3"
+  ]
+ },
+ {
+  "id": "0EF132",
+  "kind": "text",
+  "jp": "[027F]うとリカバーの[0435][03B9]{FF01}アンデッドに[0244]ダメージ　{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF16A",
+  "kind": "text",
+  "jp": "ヒーリング[0435][03B9][040C]{FF01}　[02E3]．ケ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF186",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECA6",
+   "0EECA9",
+   "0EECAC"
+  ]
+ },
+ {
+  "id": "0EF188",
+  "kind": "text",
+  "jp": "[02E3]．ア[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF192",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECAF"
+  ]
+ },
+ {
+  "id": "0EF194",
+  "kind": "text",
+  "jp": "[02E3]．ア[0253]{FF00}",
+  "en": "",
+  "refs": [
+   "2F31C1"
+  ]
+ },
+ {
+  "id": "0EF19E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECB2"
+  ]
+ },
+ {
+  "id": "0EF1A0",
+  "kind": "text",
+  "jp": "[02E3]．ア[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF1AA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0C996B",
+   "0EECB5"
+  ]
+ },
+ {
+  "id": "0EF1AC",
+  "kind": "text",
+  "jp": "[0307]を[035E]らせることがある{FF01}[02E3]．ワル{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF1CE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECB8"
+  ]
+ },
+ {
+  "id": "0EF1D0",
+  "kind": "text",
+  "jp": "アンデッドに[0244]ダメージ{FF01}[0307]を[0433][03E7]させることがある{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF20A",
+  "kind": "text",
+  "jp": "[02E3]．ワル{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF214",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECBB"
+  ]
+ },
+ {
+  "id": "0EF216",
+  "kind": "text",
+  "jp": "[0307]を[031D]でおかすことがある{FF01}[0307]を[0206][0254]でほうむりさることがある{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF25A",
+  "kind": "text",
+  "jp": "[02E3]．ワル{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF264",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECBE",
+   "0EECC1",
+   "0EECC4"
+  ]
+ },
+ {
+  "id": "0EF266",
+  "kind": "text",
+  "jp": "[02E3]．[02DF][0253]　[0359][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF27C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECC7"
+  ]
+ },
+ {
+  "id": "0EF27E",
+  "kind": "text",
+  "jp": "クリティカルが　でやすくなる{FF01}[02E3]．[02DF][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF2AC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECCA"
+  ]
+ },
+ {
+  "id": "0EF2AE",
+  "kind": "text",
+  "jp": "[0359][0350]の[02AB][048E]ＳＰが[04B9][02A9]{FF01}[02E3]．[02DF][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF2D4",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECCD",
+   "0EECD0"
+  ]
+ },
+ {
+  "id": "0EF2D6",
+  "kind": "text",
+  "jp": "[03E8][034F]が[0289]んでも　[0206][0220]だけ[02C7]き[03DF]らせる{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF304",
+  "kind": "text",
+  "jp": "[02E3]．[02DF][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF314",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECD3"
+  ]
+ },
+ {
+  "id": "0EF316",
+  "kind": "text",
+  "jp": "[02E3]．[0359][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF326",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECD6"
+  ]
+ },
+ {
+  "id": "0EF328",
+  "kind": "text",
+  "jp": "[02E3]．[0359][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF338",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECD9",
+   "0EECDC",
+   "19CF9B"
+  ]
+ },
+ {
+  "id": "0EF33A",
+  "kind": "text",
+  "jp": "[027F]うとファントムゴアーの[0435][03B9]　{FF01}[0359][0350][026A][0254]を[0356]ぐことがある{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF37C",
+  "kind": "text",
+  "jp": "[02E3]．ハ　スペ　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF390",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECDF"
+  ]
+ },
+ {
+  "id": "0EF392",
+  "kind": "text",
+  "jp": "[02E3]．[02DF][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF3A2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECE2",
+   "0EECE5"
+  ]
+ },
+ {
+  "id": "0EF3A4",
+  "kind": "text",
+  "jp": "[02E3]．[0345][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF3AE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECE8"
+  ]
+ },
+ {
+  "id": "0EF3B0",
+  "kind": "text",
+  "jp": "アンデッドに[0244]ダメージ{FF01}[02E3]．[0345][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF3D2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECEB"
+  ]
+ },
+ {
+  "id": "0EF3D4",
+  "kind": "text",
+  "jp": "アンデッドに[0244]ダメージ{FF01}[027F]うとマインドブラストの[0435][03B9]{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF412",
+  "kind": "text",
+  "jp": "[02E3]．[0345][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF41C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECEE"
+  ]
+ },
+ {
+  "id": "0EF41E",
+  "kind": "text",
+  "jp": "クリティカルが　でやすくなる{FF01}[02E3]．[04D2]　[0285]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF448",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECF1"
+  ]
+ },
+ {
+  "id": "0EF44A",
+  "kind": "text",
+  "jp": "バッドステータスを[0356]ぐ{FF01}[0339][027B][023A]を[0356]ぐことがある{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF482",
+  "kind": "text",
+  "jp": "[02E3]．[04D2]　[0285]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF48E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EECF4",
+   "0EECF7",
+   "0EECFA",
+   "0EECFD"
+  ]
+ },
+ {
+  "id": "0EF490",
+  "kind": "text",
+  "jp": "[02E3]．ガ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF49A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED00"
+  ]
+ },
+ {
+  "id": "0EF49C",
+  "kind": "text",
+  "jp": "[02E3]．ガ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF4A6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED03"
+  ]
+ },
+ {
+  "id": "0EF4A8",
+  "kind": "text",
+  "jp": "[02E3]．ガ[0253]{FF00}",
+  "en": "",
+  "refs": [
+   "2F0933"
+  ]
+ },
+ {
+  "id": "0EF4B2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED06"
+  ]
+ },
+ {
+  "id": "0EF4B4",
+  "kind": "text",
+  "jp": "[02E3]．スナ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF4BE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED09"
+  ]
+ },
+ {
+  "id": "0EF4C0",
+  "kind": "text",
+  "jp": "[02E3]．スナ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF4CA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED0C",
+   "0EED0F",
+   "0EED12"
+  ]
+ },
+ {
+  "id": "0EF4CC",
+  "kind": "text",
+  "jp": "[02E3]．[03AB][0253]{FF00}",
+  "en": "",
+  "refs": [
+   "17553A"
+  ]
+ },
+ {
+  "id": "0EF4D6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED15"
+  ]
+ },
+ {
+  "id": "0EF4D8",
+  "kind": "text",
+  "jp": "[02E3]．[03AB][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF4E2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED18"
+  ]
+ },
+ {
+  "id": "0EF4E4",
+  "kind": "text",
+  "jp": "[02E3]．[03AB][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF4EE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED1B",
+   "2F2E2B"
+  ]
+ },
+ {
+  "id": "0EF4F0",
+  "kind": "text",
+  "jp": "[026A][0254]を[0356]ぐことがある{FF01}[02E3]．バ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF50E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED1E",
+   "0EED21",
+   "0EED24"
+  ]
+ },
+ {
+  "id": "0EF510",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]　[0359][0253]　[02DF][0253]　[0345][0253]{FF00}",
+  "en": "",
+  "refs": [
+   "2C0B5F"
+  ]
+ },
+ {
+  "id": "0EF530",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED27"
+  ]
+ },
+ {
+  "id": "0EF532",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]　[02DF][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF546",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED2A"
+  ]
+ },
+ {
+  "id": "0EF548",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF556",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED2D"
+  ]
+ },
+ {
+  "id": "0EF558",
+  "kind": "text",
+  "jp": "[0359][0350]をはねかえすことがある{FF01}[02E3]．ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF57E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED30"
+  ]
+ },
+ {
+  "id": "0EF580",
+  "kind": "text",
+  "jp": "[026A][0254]を[0356]ぐことがある{FF01}[0359][0350]のダメージを[009E][034A]にする{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF5BA",
+  "kind": "text",
+  "jp": "[02E3]．ナ　パ　ド{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF5CA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED33"
+  ]
+ },
+ {
+  "id": "0EF5CC",
+  "kind": "text",
+  "jp": "[02E3]．[0359][0253]　[0345][0253]を[03DA]く[02DD]ての[0489][045B]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF5EC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED36"
+  ]
+ },
+ {
+  "id": "0EF5EE",
+  "kind": "text",
+  "jp": "[02E3]．サ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF5F8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED39"
+  ]
+ },
+ {
+  "id": "0EF5FA",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF608",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED3C"
+  ]
+ },
+ {
+  "id": "0EF60A",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF618",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED3F"
+  ]
+ },
+ {
+  "id": "0EF61A",
+  "kind": "text",
+  "jp": "バッドステータスと　クリティカル[026A][0254]を[0356]ぐ{FF10:E455:00CE}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "0EF64E",
+  "kind": "text",
+  "jp": "ヒーリング[0435][03B9][040C]{FF01}　[02E3]．パ　ド{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF66E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED42"
+  ]
+ },
+ {
+  "id": "0EF670",
+  "kind": "text",
+  "jp": "[02E3]．[02D9]　ナ[0253]　ア[0253]　[02DF][0253]　ガ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF690",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED45",
+   "1999FA"
+  ]
+ },
+ {
+  "id": "0EF692",
+  "kind": "text",
+  "jp": "[02E3]．ナ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF69C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED48",
+   "0EED4B"
+  ]
+ },
+ {
+  "id": "0EF69E",
+  "kind": "text",
+  "jp": "バッドステータスを[0356]ぐ{FF01}[02E3]．[02DD][0489][045B]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF6C2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED4E"
+  ]
+ },
+ {
+  "id": "0EF6C4",
+  "kind": "text",
+  "jp": "[02E3]．[02DD][0489][045B]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF6D0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED51"
+  ]
+ },
+ {
+  "id": "0EF6D2",
+  "kind": "text",
+  "jp": "[02E3]．[02DD][0489][045B]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF6DE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED54"
+  ]
+ },
+ {
+  "id": "0EF6E0",
+  "kind": "text",
+  "jp": "[02E3]．[02DD][0489][045B]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF6EC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED57"
+  ]
+ },
+ {
+  "id": "0EF6EE",
+  "kind": "text",
+  "jp": "[02E3]．サ[0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF6F8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED5A"
+  ]
+ },
+ {
+  "id": "0EF6FA",
+  "kind": "text",
+  "jp": "[02E3]．ニン[0253]　[03AB][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF70C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED5D"
+  ]
+ },
+ {
+  "id": "0EF70E",
+  "kind": "text",
+  "jp": "[026A][0254]を[0356]ぐことがある{FF01}[02E3]．[0359][0253]　[0345][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF73A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED60"
+  ]
+ },
+ {
+  "id": "0EF73C",
+  "kind": "text",
+  "jp": "[02E3]．[02DF][0253]　ワイ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF74C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED63",
+   "1F004B"
+  ]
+ },
+ {
+  "id": "0EF74E",
+  "kind": "text",
+  "jp": "[02E3]．ニン[0253]　[03AB][0253]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF760",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED66",
+   "0EED69"
+  ]
+ },
+ {
+  "id": "0EF762",
+  "kind": "text",
+  "jp": "[0206][0220]だけファイアストームが[027F]える{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF784",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED6C"
+  ]
+ },
+ {
+  "id": "0EF786",
+  "kind": "text",
+  "jp": "[0206][0220]だけサンダーストームが[027F]える{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF7A8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED6F"
+  ]
+ },
+ {
+  "id": "0EF7AA",
+  "kind": "text",
+  "jp": "[0206][0220]だけブリザードが[027F]える{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF7C6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED72"
+  ]
+ },
+ {
+  "id": "0EF7C8",
+  "kind": "text",
+  "jp": "ＨＰが[02A9]し[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF7D8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED75"
+  ]
+ },
+ {
+  "id": "0EF7DA",
+  "kind": "text",
+  "jp": "ＨＰが[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF7E6",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED78"
+  ]
+ },
+ {
+  "id": "0EF7E8",
+  "kind": "text",
+  "jp": "ＳＰが[02A9]し[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF7F8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED7B",
+   "175A1B"
+  ]
+ },
+ {
+  "id": "0EF7FA",
+  "kind": "text",
+  "jp": "ＳＰが[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF806",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED7E",
+   "21C4E6"
+  ]
+ },
+ {
+  "id": "0EF808",
+  "kind": "text",
+  "jp": "[031D]を[03D9][03DA]{FF00}",
+  "en": "",
+  "refs": [
+   "0B6778"
+  ]
+ },
+ {
+  "id": "0EF812",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED81"
+  ]
+ },
+ {
+  "id": "0EF814",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]のＨＰを[02A9]し[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF82E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED84"
+  ]
+ },
+ {
+  "id": "0EF830",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]の　バッドステータスの[03D9][03DA]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF854",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED87"
+  ]
+ },
+ {
+  "id": "0EF856",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]のＨＰ°ＳＰ°バッドステータスを[02DD][0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF886",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED8A"
+  ]
+ },
+ {
+  "id": "0EF888",
+  "kind": "text",
+  "jp": "[03E8][034F][02DD][03AC]のＨＰを[0220][0346]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF89E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED8D"
+  ]
+ },
+ {
+  "id": "0EF8A0",
+  "kind": "text",
+  "jp": "[0499][02DC]に[0289]んだ[03E8][034F]を　[0206][02BB]よみがえらせる。{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF8CA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED90",
+   "0EED93",
+   "0EED96"
+  ]
+ },
+ {
+  "id": "0EF8CC",
+  "kind": "text",
+  "jp": "[026A][0254][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF8DA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED99"
+  ]
+ },
+ {
+  "id": "0EF8DC",
+  "kind": "text",
+  "jp": "[0356][0395][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF8EA",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED9C"
+  ]
+ },
+ {
+  "id": "0EF8EC",
+  "kind": "text",
+  "jp": "[02E8]さアップ{FF00}",
+  "en": "",
+  "refs": [
+   "172AC7"
+  ]
+ },
+ {
+  "id": "0EF8F8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EED9F",
+   "10E7BC",
+   "17B445"
+  ]
+ },
+ {
+  "id": "0EF8FA",
+  "kind": "text",
+  "jp": "[0359][037D]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF906",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDA2"
+  ]
+ },
+ {
+  "id": "0EF908",
+  "kind": "text",
+  "jp": "[02C8][02B7]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF914",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDA5"
+  ]
+ },
+ {
+  "id": "0EF916",
+  "kind": "text",
+  "jp": "[0269][0396]アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF922",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDA8"
+  ]
+ },
+ {
+  "id": "0EF924",
+  "kind": "text",
+  "jp": "[0275][02F2]ＨＰアップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF934",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDAB"
+  ]
+ },
+ {
+  "id": "0EF936",
+  "kind": "text",
+  "jp": "[0275][02F2]ＳＰアップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF946",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDAE"
+  ]
+ },
+ {
+  "id": "0EF948",
+  "kind": "text",
+  "jp": "レベル１アップ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF958",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDB1",
+   "0EEDB4",
+   "0EEDB7",
+   "0EEDBA"
+  ]
+ },
+ {
+  "id": "0EF95A",
+  "kind": "text",
+  "jp": "[0307][0206][02ED]を[0206][0304][03B4][022F]　[0205][031A]できなくする{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF97E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDBD",
+   "0EEDC0",
+   "0EEDC3",
+   "0EEDC6",
+   "0EEDC9",
+   "0EEDCC",
+   "0EEDCF",
+   "0EEDD2"
+  ]
+ },
+ {
+  "id": "0EF980",
+  "kind": "text",
+  "jp": "[0289]んでもその[02AE]で[02C7]き[03DF]る{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF99A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDD5",
+   "0EEDD8",
+   "0EEDDB"
+  ]
+ },
+ {
+  "id": "0EF99C",
+  "kind": "text",
+  "jp": "すきな[02AE][0390]に　テレポートできる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF9BC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDDE"
+  ]
+ },
+ {
+  "id": "0EF9BE",
+  "kind": "text",
+  "jp": "すきな[03E8][034F]と　[02AE][0390]を[0323]れかえる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EF9DE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDE1"
+  ]
+ },
+ {
+  "id": "0EF9E0",
+  "kind": "text",
+  "jp": "すきな[03E8][034F]を　[03FC][034A]のそばにテレポートさせる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA0C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDE4",
+   "0EEDE7",
+   "0EEDEA",
+   "0EEDED",
+   "0EEDF0",
+   "0EEDF3",
+   "0EEDF6"
+  ]
+ },
+ {
+  "id": "0EFA0E",
+  "kind": "text",
+  "jp": "[0206][0304][03B4][022F]　[03FC][034A][0203][0226]の[0307][03E8][034F][02DD]ての[031A]きを　[022D][02DD]にとめる{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA44",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEDF9",
+   "0EEDFC",
+   "0EEDFF",
+   "0EEE02"
+  ]
+ },
+ {
+  "id": "0EFA46",
+  "kind": "text",
+  "jp": "[027F]うと‥？{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA52",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE05"
+  ]
+ },
+ {
+  "id": "0EFA54",
+  "kind": "text",
+  "jp": "おひつじ{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA64",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE08"
+  ]
+ },
+ {
+  "id": "0EFA66",
+  "kind": "text",
+  "jp": "おうし{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA74",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE0B"
+  ]
+ },
+ {
+  "id": "0EFA76",
+  "kind": "text",
+  "jp": "ふたご{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA84",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE0E"
+  ]
+ },
+ {
+  "id": "0EFA86",
+  "kind": "text",
+  "jp": "かに{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFA92",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE11"
+  ]
+ },
+ {
+  "id": "0EFA94",
+  "kind": "text",
+  "jp": "しし{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFAA0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE14"
+  ]
+ },
+ {
+  "id": "0EFAA2",
+  "kind": "text",
+  "jp": "おとめ{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFAB0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE17"
+  ]
+ },
+ {
+  "id": "0EFAB2",
+  "kind": "text",
+  "jp": "てんびん{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFAC2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE1A",
+   "2F4280"
+  ]
+ },
+ {
+  "id": "0EFAC4",
+  "kind": "text",
+  "jp": "さそり{FF06:EE68:00CE}{FF00}",
+  "en": "",
+  "refs": [
+   "196501"
+  ]
+ },
+ {
+  "id": "0EFAD2",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE1D"
+  ]
+ },
+ {
+  "id": "0EFAD4",
+  "kind": "text",
+  "jp": "いて{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFAE0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE20"
+  ]
+ },
+ {
+  "id": "0EFAE2",
+  "kind": "text",
+  "jp": "やぎ{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFAEE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE23"
+  ]
+ },
+ {
+  "id": "0EFAF0",
+  "kind": "text",
+  "jp": "みずがめ{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFB00",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "08170F",
+   "0EEE26"
+  ]
+ },
+ {
+  "id": "0EFB02",
+  "kind": "text",
+  "jp": "うお{FF06:EE68:00CE}{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFB0E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE29"
+  ]
+ },
+ {
+  "id": "0EFB10",
+  "kind": "text",
+  "jp": "ナイト[0253]が[027F]うと　ドラゴンナイトに[006A][0489]{FF00}",
+  "en": "",
+  "refs": [
+   "2F9BA7"
+  ]
+ },
+ {
+  "id": "0EFB38",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE2C"
+  ]
+ },
+ {
+  "id": "0EFB3A",
+  "kind": "text",
+  "jp": "ナイト[0253]が[027F]うと　ダークナイトに[006A][0489]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFB60",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE2F"
+  ]
+ },
+ {
+  "id": "0EFB62",
+  "kind": "text",
+  "jp": "ニンジャ[0253]が[027F]うと　シャドウマスターに[006A][0489]{FF00}",
+  "en": "",
+  "refs": [
+   "19B33F"
+  ]
+ },
+ {
+  "id": "0EFB8E",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE32"
+  ]
+ },
+ {
+  "id": "0EFB90",
+  "kind": "text",
+  "jp": "ハイ°ウィザードが[027F]うと　スペルマスターに[006A][0489]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFBC0",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE35"
+  ]
+ },
+ {
+  "id": "0EFBC2",
+  "kind": "text",
+  "jp": "[0359][02A0][0286][0253]か[02DF][037A][0253]が[027F]うと　ワイズマンに[006A][0489]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFBEE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE38",
+   "2B9D74"
+  ]
+ },
+ {
+  "id": "0EFBF0",
+  "kind": "text",
+  "jp": "[0345][02BF][0286][0253]が[027F]うと　[0285][03D9][02D4]に[006A][0489]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFC10",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE3B"
+  ]
+ },
+ {
+  "id": "0EFC12",
+  "kind": "text",
+  "jp": "[0206][0304][03B4][022F]　テティスのまわりをてらし[020B]を[025B]えるようにする{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFC4A",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE3E"
+  ]
+ },
+ {
+  "id": "0EFC4C",
+  "kind": "text",
+  "jp": "マップクリアまで　テティスのまわりをてらし[020B]を[025B]えるようにする{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFC8C",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0AF122",
+   "0EEE41",
+   "0EEE44",
+   "0EEE47",
+   "0EEE4A",
+   "0EEE4D",
+   "0EEE50",
+   "0EEE53",
+   "0EEE56",
+   "0EEE59"
+  ]
+ },
+ {
+  "id": "0EFC8E",
+  "kind": "text",
+  "jp": "[02F5][01D5]でつくったネックレス{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFCA8",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE5C"
+  ]
+ },
+ {
+  "id": "0EFCAA",
+  "kind": "text",
+  "jp": "「[03C5][03C6]の[021C][027D][0312]」で[0295]に[0323]れたフエ{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFCCC",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "09730B",
+   "0EEE5F"
+  ]
+ },
+ {
+  "id": "0EFCCE",
+  "kind": "text",
+  "jp": "[037B]のぎんゆうしじんが[0200]した[01D2][038F]{FF00}",
+  "en": ""
+ },
+ {
+  "id": "0EFCEE",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE62"
+  ]
+ },
+ {
+  "id": "0EFCF0",
+  "kind": "text",
+  "jp": "「パド[03B8]ァ[02F9][034F]」の[0091][02A9][02A4]からの[0295][0424]{FF00}",
+  "en": "",
+  "refs": [
+   "2E4577"
+  ]
+ },
+ {
+  "id": "0EFD14",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": "",
+  "refs": [
+   "0EEE65"
+  ]
+ },
+ {
+  "id": "0EFD16",
+  "kind": "text",
+  "jp": "[0344][01CB]の[00A3][0390]のカギ{FF00}",
+  "en": ""
+ }
+]

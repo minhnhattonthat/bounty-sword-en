@@ -1,0 +1,1241 @@
+[
+ {
+  "id": "1ADFEF",
+  "width": 10,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "02DDD2"
+  ]
+ },
+ {
+  "id": "1AE003",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0309]の[0259]",
+  "en": "",
+  "refs": [
+   "070E7B",
+   "071268",
+   "071655",
+   "071963",
+   "071CB5",
+   "072230",
+   "072667"
+  ]
+ },
+ {
+  "id": "1AE017",
+  "width": 10,
+  "kind": "text",
+  "jp": "[026E]の[0259]",
+  "en": ""
+ },
+ {
+  "id": "1AE02B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[024A]の[0259]",
+  "en": ""
+ },
+ {
+  "id": "1AE03F",
+  "width": 10,
+  "kind": "text",
+  "jp": "ミスリルの[0259]",
+  "en": "",
+  "refs": [
+   "2E4468"
+  ]
+ },
+ {
+  "id": "1AE053",
+  "width": 10,
+  "kind": "text",
+  "jp": "ポイズンブレード",
+  "en": ""
+ },
+ {
+  "id": "1AE067",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダークブレード",
+  "en": ""
+ },
+ {
+  "id": "1AE07B",
+  "width": 10,
+  "kind": "text",
+  "jp": "ダインスレイフ",
+  "en": ""
+ },
+ {
+  "id": "1AE08F",
+  "width": 10,
+  "kind": "text",
+  "jp": "マスターブレード",
+  "en": ""
+ },
+ {
+  "id": "1AE0A3",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンスレイヤー",
+  "en": ""
+ },
+ {
+  "id": "1AE0B7",
+  "width": 10,
+  "kind": "text",
+  "jp": "エクスカリバー",
+  "en": ""
+ },
+ {
+  "id": "1AE0CB",
+  "width": 10,
+  "kind": "text",
+  "jp": "レー[03B8]ァテイン",
+  "en": ""
+ },
+ {
+  "id": "1AE0DF",
+  "width": 10,
+  "kind": "text",
+  "jp": "バウンティソード",
+  "en": ""
+ },
+ {
+  "id": "1AE0F3",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE107",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE11B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0343][0282]の[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE12F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0060][0358]の[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE143",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02F2][0360]の[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE157",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0324]びの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE16B",
+  "width": 10,
+  "kind": "text",
+  "jp": "かすみの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE17F",
+  "width": 10,
+  "kind": "text",
+  "jp": "おぼろの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE193",
+  "width": 10,
+  "kind": "text",
+  "jp": "つじ[027E]りの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE1A7",
+  "width": 10,
+  "kind": "text",
+  "jp": "むらまさの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE1BB",
+  "width": 10,
+  "kind": "text",
+  "jp": "まさむねの[0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE1CF",
+  "width": 10,
+  "kind": "text",
+  "jp": "こがらすまるの[03F1][0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE1E3",
+  "width": 10,
+  "kind": "text",
+  "jp": "ふつのみたまの[03F1][0311]",
+  "en": ""
+ },
+ {
+  "id": "1AE1F7",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE20B",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE21F",
+  "width": 10,
+  "kind": "text",
+  "jp": "ショートボウ",
+  "en": ""
+ },
+ {
+  "id": "1AE233",
+  "width": 10,
+  "kind": "text",
+  "jp": "ロングボウ",
+  "en": ""
+ },
+ {
+  "id": "1AE247",
+  "width": 10,
+  "kind": "text",
+  "jp": "コンポジットボウ",
+  "en": ""
+ },
+ {
+  "id": "1AE25B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0370][02C8]の[0240]",
+  "en": ""
+ },
+ {
+  "id": "1AE26F",
+  "width": 10,
+  "kind": "text",
+  "jp": "エロースの[0240]",
+  "en": ""
+ },
+ {
+  "id": "1AE283",
+  "width": 10,
+  "kind": "text",
+  "jp": "アポロンの[0240]",
+  "en": ""
+ },
+ {
+  "id": "1AE297",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE2AB",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE2BF",
+  "width": 10,
+  "kind": "text",
+  "jp": "カシの[0366]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE2D3",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02F0][0359]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE2E7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0061][0348]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE2FB",
+  "width": 10,
+  "kind": "text",
+  "jp": "[01EB][03A8]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE30F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0346][0062]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE323",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03B2][0286]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE337",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0294][039D]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE34B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0065][0359]の[02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE35F",
+  "width": 10,
+  "kind": "text",
+  "jp": "ガンバンテインの[0359][02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE373",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0249][006F][02B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE387",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE39B",
+  "width": 10,
+  "kind": "text",
+  "jp": "らばん",
+  "en": ""
+ },
+ {
+  "id": "1AE3AF",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C9][0366]の[02F4][0259]",
+  "en": ""
+ },
+ {
+  "id": "1AE3C3",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0206][0063][0064]の[02F4][0259]",
+  "en": ""
+ },
+ {
+  "id": "1AE3D7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[026E]のじゅず",
+  "en": ""
+ },
+ {
+  "id": "1AE3EB",
+  "width": 10,
+  "kind": "text",
+  "jp": "[028C][02C5][0259]",
+  "en": ""
+ },
+ {
+  "id": "1AE3FF",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE413",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE427",
+  "width": 10,
+  "kind": "text",
+  "jp": "パーカッション",
+  "en": ""
+ },
+ {
+  "id": "1AE43B",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラグーン",
+  "en": ""
+ },
+ {
+  "id": "1AE44F",
+  "width": 10,
+  "kind": "text",
+  "jp": "ピースメイカー",
+  "en": ""
+ },
+ {
+  "id": "1AE463",
+  "width": 10,
+  "kind": "text",
+  "jp": "ガーランド",
+  "en": ""
+ },
+ {
+  "id": "1AE477",
+  "width": 10,
+  "kind": "text",
+  "jp": "アーマーライト",
+  "en": ""
+ },
+ {
+  "id": "1AE48B",
+  "width": 10,
+  "kind": "text",
+  "jp": "バレット",
+  "en": ""
+ },
+ {
+  "id": "1AE49F",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE4B3",
+  "width": 10,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "19A6E6"
+  ]
+ },
+ {
+  "id": "1AE4C7",
+  "width": 10,
+  "kind": "text",
+  "jp": "バグナグ",
+  "en": ""
+ },
+ {
+  "id": "1AE4DB",
+  "width": 10,
+  "kind": "text",
+  "jp": "ミスリルのかぎつめ",
+  "en": ""
+ },
+ {
+  "id": "1AE4EF",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンのかぎつめ",
+  "en": ""
+ },
+ {
+  "id": "1AE503",
+  "width": 10,
+  "kind": "text",
+  "jp": "しぼえんおうえつ",
+  "en": ""
+ },
+ {
+  "id": "1AE517",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE52B",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE53F",
+  "width": 10,
+  "kind": "text",
+  "jp": "バックラー",
+  "en": ""
+ },
+ {
+  "id": "1AE553",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0309]の[02A1]",
+  "en": ""
+ },
+ {
+  "id": "1AE567",
+  "width": 10,
+  "kind": "text",
+  "jp": "[026E]の[02A1]",
+  "en": ""
+ },
+ {
+  "id": "1AE57B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0247]の[02A1]",
+  "en": ""
+ },
+ {
+  "id": "1AE58F",
+  "width": 10,
+  "kind": "text",
+  "jp": "アイギスの[02A1]",
+  "en": ""
+ },
+ {
+  "id": "1AE5A3",
+  "width": 10,
+  "kind": "text",
+  "jp": "くさりかたびら",
+  "en": ""
+ },
+ {
+  "id": "1AE5B7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0316][02C1][024D][02E7]",
+  "en": ""
+ },
+ {
+  "id": "1AE5CB",
+  "width": 10,
+  "kind": "text",
+  "jp": "プレートメイル",
+  "en": ""
+ },
+ {
+  "id": "1AE5DF",
+  "width": 10,
+  "kind": "text",
+  "jp": "ミスリルプレート",
+  "en": ""
+ },
+ {
+  "id": "1AE5F3",
+  "width": 10,
+  "kind": "text",
+  "jp": "オーディーンプレート",
+  "en": ""
+ },
+ {
+  "id": "1AE607",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02D9][0282]のサレット",
+  "en": ""
+ },
+ {
+  "id": "1AE61B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[036D][028F]のアーメット",
+  "en": ""
+ },
+ {
+  "id": "1AE62F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[01CE][0249]の[038D][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AE643",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0287][006E]の[038D][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AE657",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0249][006F][037D]の[038D][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AE66B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02B7][02E8]の[038D][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AE67F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0294][039D]の[038D][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AE693",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0343][028F][0228]",
+  "en": ""
+ },
+ {
+  "id": "1AE6A7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0324]びしょうぞく",
+  "en": ""
+ },
+ {
+  "id": "1AE6BB",
+  "width": 10,
+  "kind": "text",
+  "jp": "[025F][020B]のローブ",
+  "en": ""
+ },
+ {
+  "id": "1AE6CF",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C9][028F]のローブ",
+  "en": ""
+ },
+ {
+  "id": "1AE6E3",
+  "width": 10,
+  "kind": "text",
+  "jp": "あらはんのころも",
+  "en": ""
+ },
+ {
+  "id": "1AE6F7",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE70B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0211][009B]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE71F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0375][0254]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE733",
+  "width": 10,
+  "kind": "text",
+  "jp": "[033D][02BC]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE747",
+  "width": 10,
+  "kind": "text",
+  "jp": "[036C][02E2]",
+  "en": ""
+ },
+ {
+  "id": "1AE75B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02FF][026F][036C]",
+  "en": ""
+ },
+ {
+  "id": "1AE76F",
+  "width": 10,
+  "kind": "text",
+  "jp": "マナの[03B0]",
+  "en": ""
+ },
+ {
+  "id": "1AE783",
+  "width": 10,
+  "kind": "text",
+  "jp": "マナのエキス",
+  "en": ""
+ },
+ {
+  "id": "1AE797",
+  "width": 10,
+  "kind": "text",
+  "jp": "[031D][02AB]し",
+  "en": ""
+ },
+ {
+  "id": "1AE7AB",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0220][0346]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE7BF",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03D9][03DA]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE7D3",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02DD][0070]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE7E7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0061][0348]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE7FB",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0346][0062]の[0344][0359][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AE80F",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE823",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE837",
+  "width": 10,
+  "kind": "text",
+  "jp": "[037D]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE84B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0294]りのみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE85F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02E8]さのみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE873",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0359][037D]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE887",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C8][02B7]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE89B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0396]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE8AF",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C7][0361]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE8C3",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02B4]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE8D7",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0069][0381]のみなもと",
+  "en": ""
+ },
+ {
+  "id": "1AE8EB",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE8FF",
+  "width": 10,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "19B3C5"
+  ]
+ },
+ {
+  "id": "1AE913",
+  "width": 10,
+  "kind": "text",
+  "jp": "けむりだま",
+  "en": ""
+ },
+ {
+  "id": "1AE927",
+  "width": 10,
+  "kind": "text",
+  "jp": "バインディングネット",
+  "en": ""
+ },
+ {
+  "id": "1AE93B",
+  "width": 10,
+  "kind": "text",
+  "jp": "まきびし",
+  "en": ""
+ },
+ {
+  "id": "1AE94F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[021C][036C]つぼ",
+  "en": ""
+ },
+ {
+  "id": "1AE963",
+  "width": 10,
+  "kind": "text",
+  "jp": "ペルセポネの[032F]",
+  "en": ""
+ },
+ {
+  "id": "1AE977",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03B2][021C][0071]",
+  "en": ""
+ },
+ {
+  "id": "1AE98B",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE99F",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AE9B3",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0066][0067][0068]",
+  "en": ""
+ },
+ {
+  "id": "1AE9C7",
+  "width": 10,
+  "kind": "text",
+  "jp": "よりしろの[0296][006C]",
+  "en": ""
+ },
+ {
+  "id": "1AE9DB",
+  "width": 10,
+  "kind": "text",
+  "jp": "ものいみの[0296][006C]",
+  "en": ""
+ },
+ {
+  "id": "1AE9EF",
+  "width": 10,
+  "kind": "text",
+  "jp": "[01E5][0225]の[0296][006C]",
+  "en": ""
+ },
+ {
+  "id": "1AEA03",
+  "width": 10,
+  "kind": "text",
+  "jp": "ヘルメスのサンダル",
+  "en": ""
+ },
+ {
+  "id": "1AEA17",
+  "width": 10,
+  "kind": "text",
+  "jp": "[00A1]わり[02B9]の[041E][0349]",
+  "en": ""
+ },
+ {
+  "id": "1AEA2B",
+  "width": 10,
+  "kind": "text",
+  "jp": "シルフの[0313]げなわ",
+  "en": ""
+ },
+ {
+  "id": "1AEA3F",
+  "width": 10,
+  "kind": "text",
+  "jp": "ギャッラルホルン",
+  "en": ""
+ },
+ {
+  "id": "1AEA53",
+  "width": 10,
+  "kind": "text",
+  "jp": "ノームの[0495][0284]",
+  "en": ""
+ },
+ {
+  "id": "1AEA67",
+  "width": 10,
+  "kind": "text",
+  "jp": "かくれ[02B9]のマント",
+  "en": ""
+ },
+ {
+  "id": "1AEA7B",
+  "width": 10,
+  "kind": "text",
+  "jp": "ネットトラップ",
+  "en": ""
+ },
+ {
+  "id": "1AEA8F",
+  "width": 10,
+  "kind": "text",
+  "jp": "スピアトラップ",
+  "en": ""
+ },
+ {
+  "id": "1AEAA3",
+  "width": 10,
+  "kind": "text",
+  "jp": "ボウトラップ",
+  "en": ""
+ },
+ {
+  "id": "1AEAB7",
+  "width": 10,
+  "kind": "text",
+  "jp": "モーションストッパー",
+  "en": ""
+ },
+ {
+  "id": "1AEACB",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AEADF",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AEAF3",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AEB07",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AEB1B",
+  "width": 10,
+  "kind": "text",
+  "jp": "アレスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB2F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[03B8]ィナスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB43",
+  "width": 10,
+  "kind": "text",
+  "jp": "ヘルメスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB57",
+  "width": 10,
+  "kind": "text",
+  "jp": "セレネの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB6B",
+  "width": 10,
+  "kind": "text",
+  "jp": "アポロンの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB7F",
+  "width": 10,
+  "kind": "text",
+  "jp": "マーキュリーの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEB93",
+  "width": 10,
+  "kind": "text",
+  "jp": "アフロディーテの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEBA7",
+  "width": 10,
+  "kind": "text",
+  "jp": "プルートゥの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEBBB",
+  "width": 10,
+  "kind": "text",
+  "jp": "ゼウスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEBCF",
+  "width": 10,
+  "kind": "text",
+  "jp": "クロノスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEBE3",
+  "width": 10,
+  "kind": "text",
+  "jp": "ウラヌスの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEBF7",
+  "width": 10,
+  "kind": "text",
+  "jp": "ポセイドンの[0288][037E]",
+  "en": ""
+ },
+ {
+  "id": "1AEC0B",
+  "width": 10,
+  "kind": "text",
+  "jp": "ドラゴンのたづな",
+  "en": ""
+ },
+ {
+  "id": "1AEC1F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0271][0238][0282]のエンブレム",
+  "en": ""
+ },
+ {
+  "id": "1AEC33",
+  "width": 10,
+  "kind": "text",
+  "jp": "[020B][027F]いの[01D0][023B][03BA]",
+  "en": ""
+ },
+ {
+  "id": "1AEC47",
+  "width": 10,
+  "kind": "text",
+  "jp": "[0263][008B]の[0359][03B2][03BA]",
+  "en": ""
+ },
+ {
+  "id": "1AEC5B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02F8][006E]の[0366]の[03B0]",
+  "en": ""
+ },
+ {
+  "id": "1AEC6F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[024B][006A][006B]",
+  "en": ""
+ },
+ {
+  "id": "1AEC83",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C8][0381][02BF]",
+  "en": ""
+ },
+ {
+  "id": "1AEC97",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02C8][0381][02CF]",
+  "en": ""
+ },
+ {
+  "id": "1AECAB",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AECBF",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AECD3",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AECE7",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AECFB",
+  "width": 10,
+  "kind": "data",
+  "jp": "",
+  "refs": [
+   "10EC30"
+  ]
+ },
+ {
+  "id": "1AED0F",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AED23",
+  "width": 10,
+  "kind": "data",
+  "jp": ""
+ },
+ {
+  "id": "1AED37",
+  "width": 10,
+  "kind": "text",
+  "jp": "[042C][01E3]",
+  "en": ""
+ },
+ {
+  "id": "1AED4B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[02F5][01D5]のネックレス",
+  "en": ""
+ },
+ {
+  "id": "1AED5F",
+  "width": 10,
+  "kind": "text",
+  "jp": "[01E1]びのフエ",
+  "en": ""
+ },
+ {
+  "id": "1AED73",
+  "width": 10,
+  "kind": "text",
+  "jp": "リュート",
+  "en": ""
+ },
+ {
+  "id": "1AED87",
+  "width": 10,
+  "kind": "text",
+  "jp": "しょうかいじょう",
+  "en": ""
+ },
+ {
+  "id": "1AED9B",
+  "width": 10,
+  "kind": "text",
+  "jp": "[00A3][0390]のカギ",
+  "en": ""
+ },
+ {
+  "id": "1AEDAF",
+  "kind": "text",
+  "jp": "　〈[00B4]ぺ[02D0]",
+  "en": "",
+  "refs": [
+   "039F6D",
+   "039F79",
+   "03AF62",
+   "03B1D5",
+   "03BC4F",
+   "03BD80",
+   "03BF22"
+  ]
+ }
+]

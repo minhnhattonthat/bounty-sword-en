@@ -1,0 +1,608 @@
+[
+ {
+  "id": "1DEBCF",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEBD1",
+  "kind": "text",
+  "jp": "{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DEBD3",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEBD5",
+  "kind": "text",
+  "jp": "　[02C5]に[03B2]かれし[029E][0361]の[028F]よ，よくぞ[04CB]られた。{FF01}　[03FA]らは，[0288][037E]に[0344][01CB]されし[029A][0321]の[02B7][03BC]なり。{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEC35",
+  "kind": "text",
+  "jp": "　エウロペアの[02F2][02F9]の[01D9][00B0]にもとづき，{FF01}　これよりぎしきを[0398]う。{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEC7D",
+  "kind": "text",
+  "jp": "　まず，なんじの[0396][0361]の[0322]を[01DE]えよ。{FF10:ECA9:00DD}{FF11}{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DECA9",
+  "kind": "text",
+  "jp": "[00F0][00F0]{FF03}",
+  "en": "",
+  "refs": [
+   "1DEC2D",
+   "1DEC75",
+   "1DECA1",
+   "1DECEF",
+   "1DEE4F",
+   "1DEE7D",
+   "1DEEC7",
+   "1DEF05"
+  ]
+ },
+ {
+  "id": "1DECAF",
+  "kind": "text",
+  "jp": "　そなたの[0294][039D][02C8][0381]は{FF0E:0002}{FF06:ED2D:00DD}{FF01}{FF0E:0005}となるが，それでも[037C]いか？{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DECF7",
+  "kind": "text",
+  "jp": "{FF0E:000A}{FF05}はい{FF0E:0003}{FF05}いいえ{FF09:ED1D:00DD:ED25:00DD:0001}{FF0A}{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DED1D",
+  "kind": "data",
+  "jp": "[0001]　[0001]ｑ[0064]８[008E]８{FF0B:4D19:007E:ED37:00DD}[ED5B][67DD][DDED][ED75][85DD][DDED][ED93][A3DD][DDED][EDB5][C9DD][DDED][EDDB][E7DD][DDED][EDF5][05DD][DDEE][0250][02B7]アレス{FF07}",
+  "refs": [
+   "1DED0F"
+  ]
+ },
+ {
+  "id": "1DED67",
+  "kind": "text",
+  "jp": "[0091][02B7][03B8]ィナス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED3A"
+  ]
+ },
+ {
+  "id": "1DED75",
+  "kind": "text",
+  "jp": "[030D][037F][02B7]ヘルメス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED3D"
+  ]
+ },
+ {
+  "id": "1DED85",
+  "kind": "text",
+  "jp": "[0496][0466][02B7]セレネ{FF07}",
+  "en": "",
+  "refs": [
+   "1DED40"
+  ]
+ },
+ {
+  "id": "1DED93",
+  "kind": "text",
+  "jp": "[03F1][0372][02B7]アポロン{FF07}",
+  "en": "",
+  "refs": [
+   "1DED43"
+  ]
+ },
+ {
+  "id": "1DEDA3",
+  "kind": "text",
+  "jp": "[02F8][02B7]マーキュリー{FF07}",
+  "en": "",
+  "refs": [
+   "1DED46"
+  ]
+ },
+ {
+  "id": "1DEDB5",
+  "kind": "text",
+  "jp": "[0091][02B7]アフロディーテ{FF07}",
+  "en": "",
+  "refs": [
+   "1DED49"
+  ]
+ },
+ {
+  "id": "1DEDC9",
+  "kind": "text",
+  "jp": "[0476][0213][02B7]プルートゥ{FF07}",
+  "en": "",
+  "refs": [
+   "1DED4C"
+  ]
+ },
+ {
+  "id": "1DEDDB",
+  "kind": "text",
+  "jp": "[02F2][02B7]ゼウス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED4F",
+   "2E7D17"
+  ]
+ },
+ {
+  "id": "1DEDE7",
+  "kind": "text",
+  "jp": "[03B4][02B7]クロノス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED52"
+  ]
+ },
+ {
+  "id": "1DEDF5",
+  "kind": "text",
+  "jp": "[030A][024E][02B7]ウラヌス{FF07}",
+  "en": "",
+  "refs": [
+   "1DED55"
+  ]
+ },
+ {
+  "id": "1DEE05",
+  "kind": "text",
+  "jp": "[0224][02B7]ポセイドン{FF07}",
+  "en": "",
+  "refs": [
+   "1DED58"
+  ]
+ },
+ {
+  "id": "1DEE15",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEE17",
+  "kind": "text",
+  "jp": "　{FF06:ED2D:00DD}に[0294]られし[028F]よ，{FF01}　なんじに[03AE]けたい[02F7]がいる。{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEE57",
+  "kind": "text",
+  "jp": "　[029E][0361]に[0328]れ，[02D9]いにせを[03EE]けた[02F7]だ。{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEE85",
+  "kind": "text",
+  "jp": "　なんじにこの[02F7]の[0396][0361]をゆだねる。{FF01}　この[02F7]に[0360][02DC]を[03EF]けてくれ。{FF10:ECA9:00DD}{FF11}{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DEECF",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEED1",
+  "kind": "text",
+  "jp": "　{FF06:4D1B:007E}とは[037C]い[0360]だ。{FF01}　{FF06:4D1B:007E}をなんじに[03AE]ける。{FF10:ECA9:00DD}{FF11}{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEF0D",
+  "kind": "text",
+  "jp": "　エウロペアの[02F2][02F9]と[03FA]ら[029A][0321][02B7]の[0360]において，{FF01}　そなたに[0061][0348]あれ°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}°{FF04:001E}{FF0F}{FF0D}",
+  "en": "",
+  "refs": [
+   "1DBF67"
+  ]
+ },
+ {
+  "id": "1DEF6F",
+  "kind": "text",
+  "jp": "{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DEF71",
+  "kind": "text",
+  "jp": "{FF05}　ＭＯＮＴＨ．　　　　　　　　　　　　ＤＡＹ．　　{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DEFA7",
+  "kind": "text",
+  "jp": "{FF05}　ＭＯＮＴＨ．　{FF06:4CF9:007E}{FF05}　　ＤＡＹ．　{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DEFD1",
+  "kind": "text",
+  "jp": "{FF05}　ＭＯＮＴＨ．　{FF06:4CF9:007E}{FF05}　　ＤＡＹ．　{FF06:4D11:007E}{FF01}{FF05}　　　　　　　ＯＫ？　　　ＹＥＳ　　　ＮＯ{FF09:F03D:00DD:F045:00DD:0001}{FF0A}{FF0D}",
+  "en": ""
+ },
+ {
+  "id": "1DF03D",
+  "kind": "text",
+  "jp": "[0001]　[0001]ｑ[0080]Ｈ[00AA]Ｈ{FF03}",
+  "en": "",
+  "refs": [
+   "1DF02F"
+  ]
+ },
+ {
+  "id": "1DF04F",
+  "kind": "text",
+  "jp": "{FF0E:0004}{FF05}ＮＡＭＥ{FF0E:0003}{FF06:4D19:007E}{FF0D}",
+  "en": "",
+  "refs": [
+   "2F0FD7"
+  ]
+ },
+ {
+  "id": "1DF069",
+  "kind": "data",
+  "jp": "{FF0B:476B:007E:F073:00DD}[F091][95DD][DDF0][F099][9DDD][DDF0][F0A1][A5DD][DDF0][F0A9][ADDD][DDF0][F0B1][B5DD][DDF0]０{FF07}",
+  "refs": [
+   "1DF0E1",
+   "1DF0FF",
+   "1DF11B",
+   "1DF137",
+   "1DF153",
+   "1DF16F",
+   "1DF18B",
+   "1DF1A7",
+   "1DF253",
+   "1DF27B",
+   "1DF2A1",
+   "1DF2C7",
+   "1DF2ED",
+   "1DF313"
+  ]
+ },
+ {
+  "id": "1DF095",
+  "kind": "text",
+  "jp": "１{FF07}",
+  "en": "",
+  "refs": [
+   "1DF076"
+  ]
+ },
+ {
+  "id": "1DF099",
+  "kind": "text",
+  "jp": "２{FF07}",
+  "en": "",
+  "refs": [
+   "1DF079"
+  ]
+ },
+ {
+  "id": "1DF09D",
+  "kind": "text",
+  "jp": "３{FF07}",
+  "en": "",
+  "refs": [
+   "1DF07C"
+  ]
+ },
+ {
+  "id": "1DF0A1",
+  "kind": "text",
+  "jp": "４{FF07}",
+  "en": "",
+  "refs": [
+   "1DF07F"
+  ]
+ },
+ {
+  "id": "1DF0A5",
+  "kind": "text",
+  "jp": "５{FF07}",
+  "en": "",
+  "refs": [
+   "1DF082"
+  ]
+ },
+ {
+  "id": "1DF0A9",
+  "kind": "text",
+  "jp": "６{FF07}",
+  "en": "",
+  "refs": [
+   "1DF085"
+  ]
+ },
+ {
+  "id": "1DF0AD",
+  "kind": "text",
+  "jp": "７{FF07}",
+  "en": "",
+  "refs": [
+   "1DF088"
+  ]
+ },
+ {
+  "id": "1DF0B1",
+  "kind": "text",
+  "jp": "８{FF07}",
+  "en": "",
+  "refs": [
+   "1DF08B"
+  ]
+ },
+ {
+  "id": "1DF0B5",
+  "kind": "text",
+  "jp": "９{FF07}",
+  "en": "",
+  "refs": [
+   "1DF08E"
+  ]
+ },
+ {
+  "id": "1DF0B9",
+  "kind": "text",
+  "jp": "[02AC]がった！{FF07}",
+  "en": "",
+  "refs": [
+   "1DF0E7",
+   "1DF105",
+   "1DF121",
+   "1DF13D",
+   "1DF159",
+   "1DF175",
+   "1DF191",
+   "1DF1AD"
+  ]
+ },
+ {
+  "id": "1DF0C5",
+  "kind": "text",
+  "jp": "を[0467]えた{FF07}",
+  "en": "",
+  "refs": [
+   "1DF339",
+   "1DF357",
+   "1DF375",
+   "1DF393",
+   "1DF3B1",
+   "1DF3CF",
+   "1DF3ED",
+   "1DF40B",
+   "1DF429",
+   "1DF447",
+   "1DF465",
+   "1DF483",
+   "1DF4A1",
+   "1DF4BF"
+  ]
+ },
+ {
+  "id": "1DF0CF",
+  "kind": "text",
+  "jp": "{FF06:4D1B:007E}は[026A][0254][037D]が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は[0356][0395][037D]が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は[02E8]さが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は[0359][037D]が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は[02C8][02B7]が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}は[0269][0396]が{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}はＨＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF06:4D1B:007E}はＳＰが{FF06:F069:00DD}{FF06:F0B9:00DD}{FF00}{FF0C:A88E:00C5}{FF0B:70DD:007F:A8AC:00C5}[0275][02F2]レベルです！{FF00}{FF06:4D1B:007E}はレベル{FF06:4CF7:007E}になった！{FF03}",
+  "en": "",
+  "refs": [
+   "1A5C16"
+  ]
+ },
+ {
+  "id": "1DF1F5",
+  "kind": "text",
+  "jp": "{FF0C:A8B2:00C5}[0275][02F2]ＨＰが{FF06:4CF7:007E}になった！{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DF217",
+  "kind": "text",
+  "jp": "{FF0C:A904:00C5}[0275][02F2]ＳＰが{FF06:4CF7:007E}になった！{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DF239",
+  "kind": "text",
+  "jp": "{FF0C:A90D:00C5}{FF0B:70E3:007F:A91F:00C5}[026A][0254][037D]が{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": ""
+ },
+ {
+  "id": "1DF261",
+  "kind": "text",
+  "jp": "{FF0C:A925:00C5}{FF0B:70E5:007F:A937:00C5}[0356][0395][037D]が{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A91F"
+  ]
+ },
+ {
+  "id": "1DF289",
+  "kind": "text",
+  "jp": "{FF0C:A93D:00C5}{FF0B:70E7:007F:A94F:00C5}[02E8]さが{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A937"
+  ]
+ },
+ {
+  "id": "1DF2AF",
+  "kind": "text",
+  "jp": "{FF0C:A955:00C5}{FF0B:70E9:007F:A967:00C5}[0359][037D]が{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A94F"
+  ]
+ },
+ {
+  "id": "1DF2D5",
+  "kind": "text",
+  "jp": "{FF0C:A96D:00C5}{FF0B:70EB:007F:A97F:00C5}[02C8][02B7]が{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A967"
+  ]
+ },
+ {
+  "id": "1DF2FB",
+  "kind": "text",
+  "jp": "{FF0C:A985:00C5}{FF0B:70ED:007F:A997:00C5}[0269][0396]が{FF06:F069:00DD}[02AC]がった{FF03}",
+  "en": "",
+  "refs": [
+   "05A97F"
+  ]
+ },
+ {
+  "id": "1DF321",
+  "kind": "text",
+  "jp": "{FF0C:A99D:00C5}{FF0B:70EF:007F:A9AF:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A997"
+  ]
+ },
+ {
+  "id": "1DF33F",
+  "kind": "text",
+  "jp": "{FF0C:A9B5:00C5}{FF0B:70F1:007F:A9C7:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9AF"
+  ]
+ },
+ {
+  "id": "1DF35D",
+  "kind": "text",
+  "jp": "{FF0C:A9CD:00C5}{FF0B:70F3:007F:A9DF:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9C7"
+  ]
+ },
+ {
+  "id": "1DF37B",
+  "kind": "text",
+  "jp": "{FF0C:A9E5:00C5}{FF0B:70F5:007F:A9F7:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9DF"
+  ]
+ },
+ {
+  "id": "1DF399",
+  "kind": "text",
+  "jp": "{FF0C:A9FD:00C5}{FF0B:70F7:007F:AA0F:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05A9F7"
+  ]
+ },
+ {
+  "id": "1DF3B7",
+  "kind": "text",
+  "jp": "{FF0C:AA15:00C5}{FF0B:70F9:007F:AA27:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA0F"
+  ]
+ },
+ {
+  "id": "1DF3D5",
+  "kind": "text",
+  "jp": "{FF0C:AA2D:00C5}{FF0B:70FB:007F:AA3F:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA27"
+  ]
+ },
+ {
+  "id": "1DF3F3",
+  "kind": "text",
+  "jp": "{FF0C:AA45:00C5}{FF0B:70FD:007F:AA57:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA3F"
+  ]
+ },
+ {
+  "id": "1DF411",
+  "kind": "text",
+  "jp": "{FF0C:AA5D:00C5}{FF0B:70FF:007F:AA72:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA57"
+  ]
+ },
+ {
+  "id": "1DF42F",
+  "kind": "text",
+  "jp": "{FF0C:AA78:00C5}{FF0B:7101:007F:AA8D:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA72"
+  ]
+ },
+ {
+  "id": "1DF44D",
+  "kind": "text",
+  "jp": "{FF0C:AA93:00C5}{FF0B:7103:007F:AAA8:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AA8D"
+  ]
+ },
+ {
+  "id": "1DF46B",
+  "kind": "text",
+  "jp": "{FF0C:AAAE:00C5}{FF0B:7105:007F:AAC3:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAA8"
+  ]
+ },
+ {
+  "id": "1DF489",
+  "kind": "text",
+  "jp": "{FF0C:AAC9:00C5}{FF0B:7107:007F:AADE:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AAC3"
+  ]
+ },
+ {
+  "id": "1DF4A7",
+  "kind": "text",
+  "jp": "{FF0C:AAE4:00C5}{FF0B:7109:007F:AAF9:00C5}{FF06:4CD7:007E}{FF06:F0C5:00DD}{FF03}",
+  "en": "",
+  "refs": [
+   "05AADE"
+  ]
+ },
+ {
+  "id": "1DF4C5",
+  "kind": "text",
+  "jp": "{FF00}{FF06:4D1B:007E}はドラゴンナイトに[006A][0489]できます{FF00}{FF06:4D1B:007E}はダークナイトに[006A][0489]できます{FF00}{FF06:4D1B:007E}はシャドウマスターに[006A][0489]できます{FF00}{FF06:4D1B:007E}はスペルマスターに[006A][0489]できます{FF00}{FF06:4D1B:007E}はワイズマンに[006A][0489]できます{FF00}{FF06:4D1B:007E}はしかいせんに[006A][0489]できます{FF00}",
+  "en": "",
+  "refs": [
+   "05AAF9"
+  ]
+ }
+]

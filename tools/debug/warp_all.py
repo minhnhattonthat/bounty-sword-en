@@ -40,7 +40,7 @@ def frames_for(row):
     return int(row.get("frames") or 0) or (hold + 6000)
 
 
-def run_scene(rom, row, out, states, shot_every, scenes=SCENES):
+def run_scene(rom, row, out, states, shot_every, scenes=SCENES, extra=()):
     name = row["name"]
     d = out / name
     d.mkdir(parents=True, exist_ok=True)
@@ -52,6 +52,7 @@ def run_scene(rom, row, out, states, shot_every, scenes=SCENES):
            "--var", f"SCENES=[[{Path(scenes).resolve().as_posix()}]]"]
     if shot_every:
         cmd += ["--shot-every", str(shot_every)]
+    cmd += list(extra)
     if row.get("sav"):
         sav = ROOT / row["sav"]
         if not sav.exists():
@@ -79,7 +80,11 @@ def main():
     ap.add_argument("--states", action="store_true", help="save work/states/<scene>.mss at SCENE_OK")
     ap.add_argument("--sheet", action="store_true", help="contact sheet of every proof.png")
     ap.add_argument("--shot-every", type=int, default=0)
+    ap.add_argument("--script", action="append", default=[], help="extra Lua probe after warp.lua (repeatable)")
+    ap.add_argument("--var", action="append", default=[], help="extra NAME=LUA global for the probes (repeatable)")
     a = ap.parse_args()
+    extra = [x for s in a.script for x in ("--script", str(Path(s).resolve()))]
+    extra += [x for v in a.var for x in ("--var", v)]
 
     rows = load_scenes(a.scenes)
     if a.only:
@@ -97,7 +102,7 @@ def main():
 
     results = []
     with cf.ThreadPoolExecutor(a.jobs) as ex:
-        futs = [ex.submit(run_scene, Path(a.rom), r, out, a.states, a.shot_every, a.scenes) for r in rows]
+        futs = [ex.submit(run_scene, Path(a.rom), r, out, a.states, a.shot_every, a.scenes, extra) for r in rows]
         for fu in cf.as_completed(futs):
             name, ok, frame, modes, code = fu.result()
             results.append((name, ok, frame, modes, code))
