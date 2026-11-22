@@ -105,6 +105,26 @@ def test_part_cards_and_gender_glyph_are_english(built):
     assert data[0x18AA8:0x18AB0] == bytes.fromhex("a94a008003a94900")
 
 
+def test_battle_setup_name_overrides_are_english(built):
+    """tools/re/battle_setup.py: every name override the parser C0:A3AE copies to $1132 (record table C4:2A39) is
+    English in the build except the {FF31} variable ones, and the English bytes keep the records parsing the same."""
+    sys.path.insert(0, str(ROOT / "tools" / "re"))
+    import battle_setup as bsu
+    rom, data, _ = built
+    fields = bsu.name_fields(rom)
+    assert len(fields) > 200
+    assert bsu.name_fields(data) == fields
+    for off in fields:
+        if rom[off:off + 2] == b"\x31\xff":         # {FF31}: the escorted girl's name variable
+            assert data[off:off + 12] == rom[off:off + 12]
+            continue
+        ascii_ = lambda b: 0x20 <= b < 0x7F
+        pairs = [(data[off + k], data[off + k + 1]) for k in range(0, 12, 2)]
+        english = all(p == (0, 0) or hi == 0x0F and ascii_(lo) or ascii_(lo) and ascii_(hi) for p in pairs
+                      for lo, hi in [p])          # $0F00+ASCII, or two letters packed in one word
+        assert english and data[off:off + 12] != rom[off:off + 12], f"name override {off:06X} still JP"
+
+
 def test_header_checksum_is_valid(built):
     _, data, _ = built
     total = sum(data[:0xFFDC]) + sum(data[0xFFE0:]) + 0xFF * 2 & 0xFFFF

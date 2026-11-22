@@ -58,3 +58,214 @@
 32787	6	倉庫	Vault	storage entry in the shop sell list (copied to $1132 by C3:2770)
 3980F	6	倉庫	Vault	storage entry, second copy (C3:97FE)
 6E27A	6	フュリス	Furis	name-entry default copied to $7E4D1B by C6:E266 (LDA $C6E27A,x, 12 bytes)
+# Battle-setup name overrides (records C4:2A39, parser C0:A3AE, tools/re/battle_setup.py): 6 words copied
+# to $1132 + 12*slot, the unit-name buffer the battle and camp status draw. 48 px forms = speaker tags.
+431F6	6	盗賊のボス	Boss	battle-setup name override, scenario 145
+43243	6	盗賊	Bandit	battle-setup name override, scenario 145
+43265	6	盗賊のボス	Boss	battle-setup name override, scenario 209
+432B2	6	盗賊	Bandit	battle-setup name override, scenario 209
+43397	6	盗賊のボス	Boss	battle-setup name override, scenario 2
+434B1	6	敗残兵	Straggler	battle-setup name override, scenario 211
+437B6	6	小隊長	Officer	battle-setup name override, scenario 214
+438CE	6	分隊長	Sergeant	battle-setup name override, scenario 151
+43A86	6	連邦兵	Soldier	battle-setup name override, scenario 216
+43AC1	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43AE2	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43B0A	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43B32	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43B59	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43B81	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43BA1	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43BC9	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43BE9	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43C09	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43C31	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43C59	6	連邦兵	Soldier	battle-setup name override, scenario 9
+43C82	6	連邦兵	Soldier	battle-setup name override, scenario 153
+43CA3	6	連邦兵	Soldier	battle-setup name override, scenario 153
+43CC4	6	連邦兵	Soldier	battle-setup name override, scenario 153
+43CEA	6	連邦兵	Soldier	battle-setup name override, scenario 153
+43D1B	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43D3B	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43D5B	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43D7B	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43D9B	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43DBB	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43DDB	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43DFB	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43E23	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+43E44	6	降下猟兵	Ranger	battle-setup name override, scenario 10
+44092	6	中隊長	Captain	battle-setup name override, scenario 12
+44171	6	少年	Boy	battle-setup name override, scenario 13
+44189	6	ジジイ	Geezer	battle-setup name override, scenario 13
+441A2	6	連邦兵	Soldier	battle-setup name override, scenario 157
+441C1	6	連邦兵	Soldier	battle-setup name override, scenario 157
+441E0	6	連邦兵	Soldier	battle-setup name override, scenario 157
+441FF	6	連邦兵	Soldier	battle-setup name override, scenario 157
+44223	6	連邦兵	Soldier	battle-setup name override, scenario 157
+44247	6	連邦兵	Soldier	battle-setup name override, scenario 157
+44266	6	連邦兵	Soldier	battle-setup name override, scenario 157
+44288	6	連邦兵	Soldier	battle-setup name override, scenario 157
+442A7	6	連邦兵	Soldier	battle-setup name override, scenario 157
+442C6	6	ナイト	Knight	battle-setup name override, scenario 157
+442EA	6	少年	Boy	battle-setup name override, scenario 14
+44302	6	ジジイ	Geezer	battle-setup name override, scenario 14
+4431B	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4433B	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4435B	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4437B	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4439B	6	連邦兵	Soldier	battle-setup name override, scenario 158
+443BB	6	連邦兵	Soldier	battle-setup name override, scenario 158
+443DB	6	連邦兵	Soldier	battle-setup name override, scenario 158
+443FB	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4441A	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4443A	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4445A	6	連邦兵	Soldier	battle-setup name override, scenario 158
+4447A	6	連邦兵	Soldier	battle-setup name override, scenario 158
+445A2	6	ダニエル	Daniel	battle-setup name override, scenario 159
+4468D	6	マウザー	Mauser	battle-setup name override, scenario 16
+446A7	6	Ｍ°使い	B.Tamer	battle-setup name override, scenario 17
+44787	6	ロジャー	Roger	battle-setup name override, scenario 225
+4479F	6	ミランダ	Miranda	battle-setup name override, scenario 225
+44882	6	ダークロード	Darklord	battle-setup name override, scenario 18
+448A2	6	重装騎士	Ironclad	battle-setup name override, scenario 162
+448F1	6	老人	Old Man	battle-setup name override, scenario 19
+44909	6	火賢者	Fire	battle-setup name override, scenario 19
+44921	6	水賢者	Water	battle-setup name override, scenario 19
+44939	6	土賢者	Earth	battle-setup name override, scenario 19
+44951	6	風賢者	Wind	battle-setup name override, scenario 19
+44979	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 20
+44998	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 20
+449B8	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 20
+449D8	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 20
+449F8	6	空挺部隊長	Captain	battle-setup name override, scenario 20
+44A19	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 164
+44A39	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 164
+44A5A	6	連邦空挺部隊	Airborne	battle-setup name override, scenario 228
+44B90	6	ラグガドル	Raggadol	battle-setup name override, scenario 229
+44C76	6	Ｍ°使い	B.Tamer	battle-setup name override, scenario 22
+44EE7	6	盗賊	Bandit	battle-setup name override, scenario 24
+44FC1	6	空将	Marshal	battle-setup name override, scenario 25
+44FE1	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+45001	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+45021	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+45045	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+45069	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+4508C	6	竜騎士団	Dragoons	battle-setup name override, scenario 25
+450B0	6	竜騎士団	Dragoons	battle-setup name override, scenario 169
+450D8	6	竜騎士団	Dragoons	battle-setup name override, scenario 169
+45100	6	竜騎士団	Dragoons	battle-setup name override, scenario 169
+45123	6	竜騎士団	Dragoons	battle-setup name override, scenario 233
+45144	6	竜騎士団	Dragoons	battle-setup name override, scenario 233
+451EB	6	Ｌ°トラップ	L.Trap	battle-setup name override, scenario 26
+4520B	6	シュタイア	Steyr	battle-setup name override, scenario 26
+45323	6	魔導将軍	General	battle-setup name override, scenario 28
+45345	6	連邦兵	Soldier	battle-setup name override, scenario 28
+4536D	6	連邦兵	Soldier	battle-setup name override, scenario 28
+45395	6	連邦兵	Soldier	battle-setup name override, scenario 28
+453BA	6	連邦兵	Soldier	battle-setup name override, scenario 28
+453E0	6	連邦兵	Soldier	battle-setup name override, scenario 28
+45401	6	連邦兵	Soldier	battle-setup name override, scenario 28
+45422	6	連邦兵	Soldier	battle-setup name override, scenario 28
+45470	6	連邦兵	Soldier	battle-setup name override, scenario 172
+45491	6	連邦兵	Soldier	battle-setup name override, scenario 172
+45507	6	守備隊長	Captain	battle-setup name override, scenario 29
+45640	6	ダークロード	Darklord	battle-setup name override, scenario 174
+456A6	6	エレボス	Erebus	battle-setup name override, scenario 238
+456C6	6	ニュクス	Nyx	battle-setup name override, scenario 238
+45702	6	Ｄ°ナイト	D.Knight	battle-setup name override, scenario 31
+45726	6	機神１号	M.God 1	battle-setup name override, scenario 31
+4574A	6	物知りジジイ	Know-all	battle-setup name override, scenario 32
+45762	6	むすめ	Girl	battle-setup name override, scenario 32
+4577A	6	少年	Boy	battle-setup name override, scenario 32
+45792	6	長老	Elder	battle-setup name override, scenario 32
+457AA	6	黄道十二神	Zodiac	battle-setup name override, scenario 32
+45822	6	巨人部隊長	Captain	battle-setup name override, scenario 33
+4585D	6	機神２号	M.God 2	battle-setup name override, scenario 177
+4588F	6	魔導部隊長	Captain	battle-setup name override, scenario 34
+459FA	6	機神６号	M.God 6	battle-setup name override, scenario 179
+45A85	6	ゴーシュ	Gauche	battle-setup name override, scenario 36
+45D01	6	村人	Villager	battle-setup name override, scenario 245
+45DE3	6	ツキカゲ	Tsukikage	battle-setup name override, scenario 246
+45E15	6	機神４号	M.God 4	battle-setup name override, scenario 183
+45E4D	6	むすめ	Girl	battle-setup name override, scenario 40
+45E65	6	村人	Villager	battle-setup name override, scenario 40
+45E7E	6	空挺部隊長	Captain	battle-setup name override, scenario 184
+45F72	6	機神３号	M.God 3	battle-setup name override, scenario 42
+45FEE	6	狙撃隊長	Captain	battle-setup name override, scenario 42
+46090	6	レオパード	Leopard	battle-setup name override, scenario 43
+46353	6	悪霊	Evil Spirit	battle-setup name override, scenario 189
+46566	6	ルーネ	Rune	battle-setup name override, scenario 46
+46692	6	機神８号	M.God 8	battle-setup name override, scenario 190
+466CF	6	黄道十二神	Zodiac	battle-setup name override, scenario 191
+468A7	6	大賢者	Archsage	battle-setup name override, scenario 50
+468DA	6	ルーネ	Rune	battle-setup name override, scenario 195
+468FB	6	機神５号	M.God 5	battle-setup name override, scenario 259
+4691C	6	機神９号	M.God 9	battle-setup name override, scenario 259
+4693D	6	機神１１号	M.God 11	battle-setup name override, scenario 259
+469FE	6	守備隊長	Captain	battle-setup name override, scenario 52
+46A60	6	機神１０号	M.God 10	battle-setup name override, scenario 52
+46A9B	6	ダークロード	Darklord	battle-setup name override, scenario 53
+46CD2	6	機神７号	M.God 7	battle-setup name override, scenario 198
+46CF6	6	パラディン	Paladin	battle-setup name override, scenario 55
+46D18	6	Ｓ°マスター	S.Master	battle-setup name override, scenario 55
+46D38	6	Ｂ°マスター	B.Master	battle-setup name override, scenario 55
+46D58	6	Ｎ°マンサー	N.Mancer	battle-setup name override, scenario 55
+46D7C	6	しかいせん	Immortal	battle-setup name override, scenario 55
+46E06	6	エリュシオン	Elysion	battle-setup name override, scenario 56
+46E3D	6	機神１２号	M.God 12	battle-setup name override, scenario 200
+46EBA	6	マクベス	Macbeth	battle-setup name override, scenario 57
+46F0B	6	ラグガドル	Raggadol	battle-setup name override, scenario 58
+47075	6	アジャックス	Ajax	battle-setup name override, scenario 59
+47095	6	ノルン	Norn	battle-setup name override, scenario 59
+470B3	6	マクベス	Macbeth	battle-setup name override, scenario 59
+470D3	6	老人	Old Man	battle-setup name override, scenario 65
+470EC	6	村むすめ	Lass	battle-setup name override, scenario 66
+47116	6	商人	Merchant	battle-setup name override, scenario 70
+4712E	6	子供	Child	battle-setup name override, scenario 70
+47147	6	村むすめ	Lass	battle-setup name override, scenario 71
+4715F	6	老人	Old Man	battle-setup name override, scenario 71
+4717C	6	村むすめ	Lass	battle-setup name override, scenario 76
+47194	6	村人	Villager	battle-setup name override, scenario 76
+471BE	6	黄道十二神	Zodiac	battle-setup name override, scenario 80
+471D7	6	ジジイ	Geezer	battle-setup name override, scenario 81
+471EF	6	反乱兵	Rebel	battle-setup name override, scenario 81
+47207	6	ロジャー	Roger	battle-setup name override, scenario 81
+4721F	6	ミランダ	Miranda	battle-setup name override, scenario 81
+47238	6	男	Man	battle-setup name override, scenario 82
+47251	6	アテナ	Athena	battle-setup name override, scenario 83,84
+47269	6	黄道十二神	Zodiac	battle-setup name override, scenario 83,84
+47282	6	村人	Villager	battle-setup name override, scenario 85
+4729A	6	ロブン	Robun	battle-setup name override, scenario 85
+472B9	6	美少女	Beauty	battle-setup name override, scenario 86
+472D2	6	おばあさん	Granny	battle-setup name override, scenario 87
+472EB	6	テティス	Thetis	battle-setup name override, scenario 88
+47303	6	テティス	Thetis	battle-setup name override, scenario 88
+4731B	6	テティス	Thetis	battle-setup name override, scenario 88
+47333	6	テティス	Thetis	battle-setup name override, scenario 88
+4734B	6	テティス	Thetis	battle-setup name override, scenario 88
+47363	6	黄道十二神	Zodiac	battle-setup name override, scenario 88
+4737C	6	ファウスト	Faust	battle-setup name override, scenario 89
+4739C	6	バアさん	Grandma	battle-setup name override, scenario 91
+473B4	6	村人	Villager	battle-setup name override, scenario 91
+473CC	6	黄道十二神	Zodiac	battle-setup name override, scenario 91
+473E8	6	オヤジ	Pops	battle-setup name override, scenario 95
+47402	6	商人	Merchant	battle-setup name override, scenario 97
+4741C	6	山男	Hillman	battle-setup name override, scenario 99
+47436	6	村人	Villager	battle-setup name override, scenario 101
+4744E	6	黄道十二神	Zodiac	battle-setup name override, scenario 101
+47467	6	テティス	Thetis	battle-setup name override, scenario 102
+4747F	6	黄道十二神	Zodiac	battle-setup name override, scenario 102
+47498	6	連邦兵	Soldier	battle-setup name override, scenario 103
+474BF	6	むすめ	Girl	battle-setup name override, scenario 104
+474D7	6	連邦兵	Soldier	battle-setup name override, scenario 104
+474F0	6	バアさん	Grandma	battle-setup name override, scenario 105
+47508	6	村長	Elder	battle-setup name override, scenario 105
+47520	6	老人	Old Man	battle-setup name override, scenario 105
+47538	6	黄道十二神	Zodiac	battle-setup name override, scenario 105
+47551	6	リュウビ	Ryubi	battle-setup name override, scenario 106
+4756A	6	ジイさん	Gramps	battle-setup name override, scenario 107
+47582	6	船頭	Boatman	battle-setup name override, scenario 107
+475CA	6	少年	Boy	battle-setup name override, scenario 113
+475E3	6	大賢者	Archsage	battle-setup name override, scenario 114
+475FC	6	大賢者	Archsage	battle-setup name override, scenario 115

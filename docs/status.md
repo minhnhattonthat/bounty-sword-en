@@ -2,9 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session t: 022FDC and the C1 unit-record names done;
-  **next: the C4 battle-setup name overrides (`docs/re/jp_left.md`, last open row: real JP on enemy status), then
-  the full re-tour + verdicts + `qa_gate.py`**; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session u: C4 battle-setup name overrides done, the JP-left list
+  is closed; **next: the full re-tour on the final build + verdicts + `qa_gate.py`**; to-dos below).
+- **Session 2026-11-23u (phase 8, C4 names):** static parser **`tools/re/battle_setup.py`** for the battle-setup
+  records (C4:2A39, C0:A3AE/A496 format in its docstring): 214 name overrides (copied to `$1132 + 12*slot`), 211
+  now English through `script/default_names.tsv` (Soldier, Dragoons, Ranger, Zodiac, M.God 1-12, Captain ...; 48 px
+  speaker-tag forms), 3 `{FF31}` kept. Probe **`tools/lua/setup_probe.lua`** (record index, name writes, `COPYNAME`
+  proof poke, `FIND` WRAM search; the hero is slot 4 on scenario 37). Seen: `work/qa/w_setup2/zoom.png`
+  "Straggler", `w_setup4/zoom.png` "Evil Spirit" in the status. Test `test_battle_setup_name_overrides_are_english`.
 - **Session 2026-11-23t (phase 8, JP-left leads):** (a) 「敵を見失いました。」 022FDC: new in-place engine A table
   **`enemy_lost`** (`rom_text.REGIONS`, `script_text` SPLIT/ENGINE_A_TABLES/RELOCATE, marker tag `A`) -> `"Foe lost."`
   (JP length = 11 one-char cells; no reader known, never read in the tour; `MSGPTR` can't show FF0A-0000 boxes, the
