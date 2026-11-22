@@ -102,7 +102,7 @@ arithmetic tables such as 0x11B91, data at 0x21E8F6-0x256DD4 and 0x2700D0-0x270F
 | 0x1ADFEF-0x1AEDB9 | weapon / item names (ミスリルの…, エクスカリバー) | 10 words fixed (data words before the names in places) | item records at 0x2DDD2 (8-byte stride, 24-bit pointer) | guess |
 | 0x1AF349-0x1AFDC2 | short strings, 0000-padded | variable, 0000 runs | many 24-bit pointers (0x22xxx, 0x83xxx) | guess |
 | 0x08DF4A-0x08E9D6 | unit titles / epithets (ドラゴンバスター, …のシュタイアー) | 16 words fixed | 24-bit pointers spread in code | guess |
-| 0x06E3AB-0x06E627 | unit names (ロジャー, ミランダ, シュタイア…) | 5 words fixed | `C6:E38F`, `C6:E644` | guess |
+| 0x06E3AB-0x06E627 | unit names (ロジャー, ミランダ, シュタイア…) | 6 words fixed | `C6:E38F`, `C6:E644` | guess |
 | 0x025D5D-0x025F7F | speaker name -> portrait table (ソード___ 01 18, ロジャー__ 04 17…) | 8 words: 6-word name + 2 ids | `C2:4826`.. `C2:5D25..5D61` | guess: FF15 literal names must match it |
 | 0x046CF4-0x0473B0, 0x044E40 | unit/class data records with embedded names (パラディン, …マスター) | mixed records | pointer list at 0x042AE1 | guess |
 | 0x01BFFF-0x01D3AB | menu strings: file menu, name-entry kana grid (0x1C285), options | 0000-terminated | 24-bit pointers in menu records (0x08E9DC-0x08F9xx, 0x05Bxxx) and code; drawn by `C1:8F16` | verified for the file menu |
@@ -114,3 +114,31 @@ arithmetic tables such as 0x11B91, data at 0x21E8F6-0x256DD4 and 0x2700D0-0x270F
 
 Status words: verified = decoded with the reading code found; guess = decoded text and a plausible pointer site,
 reader not confirmed (phase 4 confirms each with a ROM-read log before extracting it).
+
+### Readers seen in the region-read tour (phase 4, 2026-11-22)
+
+`warp_all.py --script tools/lua/regionreads.lua --var "RANGES='...'"` over all 140 scenes (ranges in
+`work/re/regions_var.txt`), summarised by `tools/re/region_reads.py [--entries]`:
+
+| Table | Read by | Scenes | Now |
+|---|---|---|---|
+| locations | `C2:0B77` (whole table), `C0:CB5B` | camp_map, gameover | verified |
+| menus | `C1:8F1D`/`8F18` (menu drawer), `C1:9596` | 11 menu scenes | verified |
+| speakers | `C2:5B3C` (FF15 literal-name match), `C2:5D34/40/4C` | prologue, scen_27/28 | verified |
+| unit_records | `C0:A4AD`..`C0:A55F` (record parser) | scen_25/50/51/56/57/59 | verified (names in records not split out) |
+| unit_names | `C6:E392` | prologue | verified; records are **6 words**, not 5 |
+| unit_titles, classes, items | `C1:8E96` (menu text drawer) | battle_status, camp_file, battle_items, shop | verified; items are 10-word records from 0x1ADFEF (record 0 blank) |
+| short_strings, ceremony | `C3:C78B` (engine B word reader) | scen_01, ceremony, name_entry | verified engine B |
+| battle_prompts(_b), system_prompts, descriptions, objectives | not read on any warp | - | guess: reach them in phase 8 (`textcover`) |
+
+- **objectives** (0x18FD06): one string per map, lines split by `FFFE`, a string ends at `FFFE` before the next one;
+  a 16-bit pointer table (lo words `$FD1E`, `$FD5A`, ... = file 0x18FD1E ...) sits at 0x18FE72-0x18FEE8 inside the
+  range, and the extracted entries start exactly at those values (bank implied: `$D8`).
+- Pointer candidates per entry start (24-bit, `$C0-$FF`/`$40-$7D` mirrors) are listed in each script entry's `refs`.
+
+## Script files (phase 4)
+
+`build.py --dump` writes `script/*.json` (`tools/script_text.py`): `master_<block>.json` (one entry per message,
+`slots` = master-table indices) and one file per side table (`kind` text/data, `width` for fixed records, `tail` data
+words). Token syntax is in the module docstring: newline = FFFF, `　` = 0000, `{spk}` `{next}` `{end}` `{hero}`,
+`{FFxx:args}`, `[hhhh]` for words with no character. Glyph colours: 2 = background, 1 = shadow, 3 = ink.

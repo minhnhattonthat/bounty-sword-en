@@ -14,3 +14,6 @@ One line per gotcha: the skill reference it belongs in, then the fact.
 - references/emulator-qa.md (§Debug tool): some menus take one cursor move and then ignore further presses at any gap (this town menu); routes that need a second Down are flaky. Poke the cursor variable instead of pressing.
 - scripts/sheet.py: `is_blank` takes the tuple from `read_png`, not a path (easy to misuse from a helper).
 - references/emulator-qa.md: under Claude Code's context-mode, a Read or command output over ~4 KB comes back as a stub; write tool output to a file and Read it with offset/limit (even 60-line disassemblies hit this).
+- references/emulator-qa.md (§Text coverage / Hooks): a region-read probe (first read of each byte in given ranges, with PC; tools/lua/regionreads.lua here) run over the whole warp scene list confirms side-table readers in one pass; worth shipping beside textcover.lua, which logs no PC.
+- references/pipeline.md (§Repo layout): Python write_text on Windows writes CRLF; pass newline="\n" when dumping script JSON or git warns and diffs churn.
+- references/pipeline.md (§Recon, code = font cell): shape-matching an 8x16 hand-squeezed kanji font against MS Gothic is near useless (true kanji ranked 40-1000+); budget a context-led visual pass instead.

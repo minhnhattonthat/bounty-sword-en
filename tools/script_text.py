@@ -257,7 +257,7 @@ def extract(rom):
 
 
 def write_file(path, entries):
-    path.write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def dump(rom, out=SCRIPT, force=False, refresh=False):
