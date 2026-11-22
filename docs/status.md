@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session n: shop freeze fixed in the warp, shop lines read in game; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session o: tavern VWF bug and shop glyph set done; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -13,7 +13,26 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
   Grid strings (menus/windows/menus_c): edit `script/grid_specs.tsv`, put the ids in `work/tl/rvNN.tsv` (rows from
   `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
-- **Phase 8 to do (carried from phase 7, graphics text):** (1) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる
+- **Session 2026-11-23o (phase 8):** (a) **Tavern fixed**: `C1Run` (menu strings, VWF mode 2) shared `!PX` with
+  engine A and left it at the menu's width; a dialogue box whose start `$3729` equalled `LAST` (0 after a cold warp)
+  kept that PX and began at the right edge. C1Run now saves/restores PX (`asm/vwf.asm`); `work/qa/w_tav_en2` shows
+  `"What'll we do? Sword"` from the left edge. (b) **To-do 1 done**: shop glyph set 01D2B7 re-laid as English cells
+  (`script/grid_specs.tsv`: Weapons 0-5, Items 6-9, Smith 11-14, Clerk 17-20, Who? 22-25, Gear 26-28, Pack 29-31);
+  the C5 tilemap script ops (`40 pos16 w h tile16`, w x 2 tiles; header 05B230/05B25C, nameplates 05B1C7/05B1D6,
+  sell tabs 05B282/05B298) and the 3 prompt maps 01D33B (op `18`) now point at them through the new
+  **`script/byte_patches.tsv`** (offset, original hex, new hex; build checks the original, romdiff logs each write;
+  test `test_shop_tilemaps_point_at_the_english_cells`). 倉庫 in the sell list is a 6-word name field
+  (C3:2787, C3:980F) -> "Vault" via `script/default_names.tsv`. Seen in game: `work/qa/w_shop2` (weapon/item shop),
+  `work/qa/w_shop3/sell_zoom.png`. 買う/売る/やめる/何を/す were drawn but never mapped (their cells are reused).
+  (c) Full tour re-run on the PX-fix build: `work/qa/tour` 144/144 ok, states refreshed (before the shop patch:
+  re-run `--only` the 6 shop/tavern scenes or the whole tour before the visual-QA gate). (d) **Card lead (to-do 8)**:
+  `work/qa/card02_cmp.png`: under card_02's subtitle the EN build shows lines 2-3 of the first dialogue
+  (290558 "they come, Sword! / The bandits' welcoming party!") typed into the card area; the JP proof at the same
+  scene shows only the subtitle. Next: shots every 10 frames on both ROMs around the card (`--shot-every 10`) to
+  see whether JP draws that message later or into a hidden buffer half (`$7E374F` picks $1400/$2400; the C6
+  printer uses $1400 only), then check whether VwfCommon writes engine A text into the half the card shows.
+  check 53 passed, lint 0, smoke via the tour. Worker handed back at the context limit.
+- **Phase 8 to do (carried from phase 7, graphics text):** (1) **done in session o** (see above). Old notes: shop menu glyph set `menus_c` 01D2B7 (買う売るやめる
   武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): find how the layout words in 01D1F5 place its 32 glyph tiles on
   the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`. Seen JP on screen
   (`work/qa/shopproof/sheet.png`): header 武器屋1/道具屋1, nameplates 武器屋の主人/道具屋の娘 (の shared, 娘 1 cell),
@@ -35,7 +54,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   <= 19 cells before `{FF01}` (test added), 11 rows fixed (rv06), trade-in confirm now right (`work/qa/w_shopx`).
   Still to read in game: buy price confirm (1AF6A0), can't-equip (1AF738), equip-now, sell confirm, bags/storage
   full (needs a full inventory: stress save). Minor: price var prints right-aligned ("Trade-in:  144G").
-  **Tavern** (`work/qa/warp/town_tavern/proof.png`): Thetis's box shows `"What'll we` starting at the right edge
+  **Tavern: fixed in session o (stale VWF PX).** Old note: Thetis's box shows `"What'll we` starting at the right edge
   and `e do? Sword"` cut on row 2: compare with the JP (`emu.py rom/... --script tools/debug/warp.lua --var
   "SCENE='town_tavern'"`) before fixing; it may be the tavern choice text (と話す screen).
   (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
