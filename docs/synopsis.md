@@ -103,6 +103,19 @@ No guide or wiki was used: everything here is read off `script/`. Mark a fact "(
   the knight Detonics. Optional areas: Eridanus River (Raggadol returns for revenge), Robun (feng shui) asks to join,
   Padova (monsters, Dark Dragon), Crimson Lake (a gods' trial).
 
+## Late game (master_290400 end, master_2A7D44, b044-b050)
+- Skull Knight guards a Zodiac statue and demands a one-on-one duel (each ally has a reply and a self-introduction).
+  Ruined village: bandits (former villagers) beg for mercy; sparing or killing them, {FF31} reacts.
+- Spania Plateau: the Federation Dragon Knights (they bombed Romulus first). Faust, the minstrel with the lyre,
+  quizzes the hero (five choices) and joins as "the Ultra-Black Sorcerer". Highland: the Archsage's final trial
+  (fight your own shadow), then the Bounty Sword; Rune (Athena's brother) attacks with Machine Gods No. 5, 9, 11,
+  then joins. Road to the Federation through the Dark Wall; the Dark Lord at the castle is **Ajax** (lost his left
+  eye to the hero; dies hoping to join Norn, or joins).
+- 2A7D44: battle retreat lines for every unit, the ring shouts, the fall of Romulus, Steyr (Mobile Grenadier Corps,
+  his sister's bullet necklace) joins, Sword Cape boatman (a letter from the Padova girl), the volcanic island
+  (sorcerer general, the Shriek Whistle), Tartessos Gate and the three-headed Hydra, {FF31}'s "if I were a dog or
+  a cat" night talk, Gibraltar (Erebus and Nyx), and the Dark Lord kidnaps {FF31} ("the princess is the key").
+
 ## Structure
 - Scenarios are map battles (objectives per scenario, table `D8:FC9C`), with town/camp scenes between them.
 - Map hints by the fairy per location: "This is <place>. We haven't cleared it yet." / memories once cleared.

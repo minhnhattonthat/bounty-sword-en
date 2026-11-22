@@ -5,7 +5,8 @@
    2277
   ],
   "jp": "{spk}コルツ　　　\n「‥‥ちッ　じょうだんじゃねえ！\n　こんな所で　やられるとは！\n　すまねぇ！　この場を　離脱する！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「...Tch, you've gotta be kidding!\n Taken out in a place like this!\n Sorry! I'm pulling out of here!」\n",
+  "pages": "\"...Tch, you've gotta be kidding! Taken out in a place like this! Sorry! I'm pulling out of here!\""
  },
  {
   "id": "2A7DBA",
@@ -13,7 +14,8 @@
    2299
   ],
   "jp": "{spk}{FF28}\n「{hero}！\n　コルツが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! Colts is down!!」\n",
+  "pages": "\"{hero}! Colts is down!!\""
  },
  {
   "id": "2A7DF0",
@@ -21,7 +23,8 @@
    2278
   ],
   "jp": "{spk}ヘンメリー　\n「‥‥くッ！？　ごめん{hero}！\n　ダメージを　受けすぎたわ！\n　さすがに　これ以上は　戦えない！」\n{next}\n「ひとまず　離脱するわ！」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「...Ngh!? Sorry, {hero}! I've\n taken too much damage! I\n can't fight any more than」\n{next}\n「this!」\n{next}\n「I'm pulling out for now!」\n",
+  "pages": "\"...Ngh!? Sorry, {hero}! I've taken too much damage! I can't fight any more than this!\" || \"I'm pulling out for now!\""
  },
  {
   "id": "2A7E8A",
@@ -29,7 +32,8 @@
    2300
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ヘンメリーが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Hammerli is down!!」\n",
+  "pages": "\"...{hero}! Hammerli is down!!\""
  },
  {
   "id": "2A7EC8",
@@ -37,7 +41,8 @@
    2279
   ],
   "jp": "{spk}デトニクス　\n「ちっきしょう！　なんでだ！？\n　オレは騎士なんだぞ！？\n　ラインメタルの　騎士なのに！？」\n{next}\n「すまん！　ここは　離脱する！」\n",
-  "en": ""
+  "en": "{spk}デトニクス　\n「Dammit! Why!? I'm a knight,\n aren't I!? A knight of\n Rheinmetall!?」\n{next}\n「Sorry! I'm pulling out of here!」\n",
+  "pages": "\"Dammit! Why!? I'm a knight, aren't I!? A knight of Rheinmetall!?\" || \"Sorry! I'm pulling out of here!\""
  },
  {
   "id": "2A7F5C",
@@ -45,7 +50,8 @@
    2301
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　デトニクスが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Detonics is down!!」\n",
+  "pages": "\"...{hero}! Detonics is down!!\""
  },
  {
   "id": "2A7F9A",
@@ -53,7 +59,8 @@
    2280
   ],
   "jp": "{spk}××××　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}××××　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A7FCA",
@@ -61,7 +68,8 @@
    2302
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　××××が　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! **** is down!!」\n",
+  "pages": "\"...{hero}! **** is down!!\""
  },
  {
   "id": "2A8006",
@@ -69,7 +77,8 @@
    2281
   ],
   "jp": "{spk}○○○○　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}○○○○　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A8036",
@@ -77,7 +86,8 @@
    2303
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　○○○○が　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! **** is down!!」\n",
+  "pages": "\"...{hero}! **** is down!!\""
  },
  {
   "id": "2A8072",
@@ -85,7 +95,8 @@
    2282
   ],
   "jp": "{spk}{FF1F}\n「‥‥ぐっ！？」\n{next}\n「‥‥やれやれだ　オレも\n　やきが　回っちまったか！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Ugh!?」\n{next}\n「...Well, well. Have I lost my\n touch too!?」\n",
+  "pages": "\"...Ugh!?\" || \"...Well, well. Have I lost my touch too!?\""
  },
  {
   "id": "2A80C8",
@@ -93,7 +104,8 @@
    2304
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！？\n　ダメよ！　しっかりして！\n　おねがい　目を開けてったら！」\n{next}\n「おねがいだから　{hero}\n　‥‥もう一度　立ち上がって！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}!? No! Hang in there!\n Please, open your eyes!」\n{next}\n「Please, {hero}... Get up one\n more time!」\n",
+  "pages": "\"...{hero}!? No! Hang in there! Please, open your eyes!\" || \"Please, {hero}... Get up one more time!\""
  },
  {
   "id": "2A816A",
@@ -101,7 +113,8 @@
    2283
   ],
   "jp": "「‥‥うぐっ！？」\n{next}\n「‥‥{FF31}‥‥待っていろ\n　オレは‥‥必ず‥‥お前を\n　‥‥だから‥‥こんな所で‥‥」\n",
-  "en": ""
+  "en": "「...Ugh!?」\n{next}\n「...{FF31}... wait for me...\n I'll... I'll be sure to... you... So...\n not in a place like this...」\n",
+  "pages": "\"...Ugh!?\" || \"...{FF31}... wait for me... I'll... I'll be sure to... you... So... not in a place like this...\""
  },
  {
   "id": "2A81D8",
@@ -109,7 +122,8 @@
    2305
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！？\n　ダメよ！　しっかりして！\n　おねがい　目を開けてったら！」\n{next}\n「おねがいだから　{hero}\n　‥‥もう一度　立ち上がって！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}!? No! Hang in there!\n Please, open your eyes!」\n{next}\n「Please, {hero}... Get up one\n more time!」\n",
+  "pages": "\"...{hero}!? No! Hang in there! Please, open your eyes!\" || \"Please, {hero}... Get up one more time!\""
  },
  {
   "id": "2A827A",
@@ -117,7 +131,8 @@
    2284
   ],
   "jp": "{spk}{FF1F}\n「‥‥超‥‥機神‥‥だと！？」\n{next}\n「‥‥マクベス‥‥どうやら‥‥\n　お前さんの‥‥勝ちらしい‥‥な」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Machine God... Supreme...!?」\n{next}\n「...Macbeth... looks like... you\n win... after all...」\n",
+  "pages": "\"...Machine God... Supreme...!?\" || \"...Macbeth... looks like... you win... after all...\""
  },
  {
   "id": "2A82E8",
@@ -125,7 +140,8 @@
    2306
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！？\n　ダメよ！　ここまできたのに！\n　おねがい　目を開けてったら！」\n{next}\n「おねがいだから　{hero}！\n　あと少しなのに！\n　‥‥もう一度　立ち上がって！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}!? No! Not after\n we've come this far! Please,\n open your eyes!」\n{next}\n「Please, {hero}! We're so\n close! ...Get up one more time!」\n",
+  "pages": "\"...{hero}!? No! Not after we've come this far! Please, open your eyes!\" || \"Please, {hero}! We're so close! ...Get up one more time!\""
  },
  {
   "id": "2A83A4",
@@ -133,7 +149,8 @@
    2285
   ],
   "jp": "{spk}ロジャー　　\n「くっ！？　‥‥こんな所で！？」\n{next}\n「すみません　{hero}さん！\n　戦場から　離脱させてもらいます！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「Ngh!? ...In a place like this!?」\n{next}\n「I'm sorry, {hero}-san! I\n have to pull out of the\n battle!」\n",
+  "pages": "\"Ngh!? ...In a place like this!?\" || \"I'm sorry, {hero}-san! I have to pull out of the battle!\""
  },
  {
   "id": "2A8422",
@@ -141,7 +158,8 @@
    2307
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ロジャーが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Roger is down!!」\n",
+  "pages": "\"...{hero}! Roger is down!!\""
  },
  {
   "id": "2A845E",
@@ -149,7 +167,8 @@
    2286
   ],
   "jp": "{spk}ミランダ　　\n「く‥‥　すみません‥‥\n　お役に立てず‥‥\n　ひとまず　離脱いたします‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Ngh... I am sorry... I was of\n no use... I will withdraw for\n now...」\n",
+  "pages": "\"Ngh... I am sorry... I was of no use... I will withdraw for now...\""
  },
  {
   "id": "2A84BE",
@@ -157,7 +176,8 @@
    2308
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ミランダが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Miranda is down!!」\n",
+  "pages": "\"...{hero}! Miranda is down!!\""
  },
  {
   "id": "2A84FA",
@@ -165,7 +185,8 @@
    2287
   ],
   "jp": "{spk}ファウスト　\n「これも‥‥運命ですね！\n　{hero}さん　すみません\n　戦場から　離脱いたします！」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「This, too... is fate! I am\n sorry, {hero}-san. I will\n withdraw from the battle!」\n",
+  "pages": "\"This, too... is fate! I am sorry, {hero}-san. I will withdraw from the battle!\""
  },
  {
   "id": "2A8564",
@@ -173,7 +194,8 @@
    2309
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ファウストが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Faust is down!!」\n",
+  "pages": "\"...{hero}! Faust is down!!\""
  },
  {
   "id": "2A85A2",
@@ -181,7 +203,8 @@
    2288
   ],
   "jp": "{spk}シュタイア　\n「‥‥な！？　直撃だと！？\n　くそ！　こんな‥‥所で‥‥\n　‥‥ロシィ‥‥」\n{next}\n「ひとまず　離脱させてくれ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...What!? A direct hit!? Damn!\n In a place... like this...\n ...Rossy...」\n{next}\n「Let me pull out for now!」\n",
+  "pages": "\"...What!? A direct hit!? Damn! In a place... like this... ...Rossy...\" || \"Let me pull out for now!\""
  },
  {
   "id": "2A8624",
@@ -189,7 +212,8 @@
    2310
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　シュタイアが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Steyr is down!!」\n",
+  "pages": "\"...{hero}! Steyr is down!!\""
  },
  {
   "id": "2A8662",
@@ -197,7 +221,8 @@
    2289
   ],
   "jp": "{spk}シュタイア　\n「‥‥オレに‥‥直撃だと！？」\n{next}\n「‥‥あと少しだ‥‥あと少しで\n　オレは‥‥妹の‥‥\n　‥‥カタキを‥‥討てたのに‥‥」\n{next}\n「‥‥くやしいが　離脱する！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...A direct hit... on me!?」\n{next}\n「...So close... I was so close...\n to avenging... my sister...」\n{next}\n「...I hate it, but I'm pulling out!」\n",
+  "pages": "\"...A direct hit... on me!?\" || \"...So close... I was so close... to avenging... my sister...\" || \"...I hate it, but I'm pulling out!\""
  },
  {
   "id": "2A8714",
@@ -205,7 +230,8 @@
    2311
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　シュタイアが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Steyr is down!!」\n",
+  "pages": "\"...{hero}! Steyr is down!!\""
  },
  {
   "id": "2A8752",
@@ -213,7 +239,8 @@
    2290
   ],
   "jp": "{spk}マウザー　　\n「‥‥ぬおあぁぁぁぁっ！？\n　どうやら‥‥ここまでか‥‥」\n{next}\n「すまん！　{hero}！\n　一足先に　離脱させてもらう！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「...Nwoaaaaargh!? Looks like...\n this is it...」\n{next}\n「Sorry! {hero}! I'm pulling\n out ahead of you!」\n",
+  "pages": "\"...Nwoaaaaargh!? Looks like... this is it...\" || \"Sorry! {hero}! I'm pulling out ahead of you!\""
  },
  {
   "id": "2A87E0",
@@ -221,7 +248,8 @@
    2312
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　マウザーが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Mauser is down!!」\n",
+  "pages": "\"...{hero}! Mauser is down!!\""
  },
  {
   "id": "2A881C",
@@ -229,7 +257,8 @@
    2291
   ],
   "jp": "{spk}アテナ　　　\n「‥‥う！？　このキズは‥‥！？」\n{next}\n「すみません　{hero}さん！\n　ひとまず　戦場から　離脱します！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「...Ugh!? This wound...!?」\n{next}\n「I'm sorry, {hero}-san! I'll\n withdraw from the battle for\n now!」\n",
+  "pages": "\"...Ugh!? This wound...!?\" || \"I'm sorry, {hero}-san! I'll withdraw from the battle for now!\""
  },
  {
   "id": "2A889C",
@@ -237,7 +266,8 @@
    2313
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　アテナが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Athena is down!!」\n",
+  "pages": "\"...{hero}! Athena is down!!\""
  },
  {
   "id": "2A88D6",
@@ -245,7 +275,8 @@
    2292
   ],
   "jp": "{spk}アテナ　　　\n「‥‥お‥‥おのれ！\n　わが兄を‥‥目の前にして！」\n{next}\n「く‥‥わが兄‥‥ルーネ‥‥\n　‥‥なぜ‥‥なぜ戦いなどを‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「...Curse it! With my brother...\n right before my eyes!」\n{next}\n「Ngh... My brother... Rune...\n ...Why... why fight at all...」\n",
+  "pages": "\"...Curse it! With my brother... right before my eyes!\" || \"Ngh... My brother... Rune... ...Why... why fight at all...\""
  },
  {
   "id": "2A8962",
@@ -253,7 +284,8 @@
    2314
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　アテナが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Athena is down!!」\n",
+  "pages": "\"...{hero}! Athena is down!!\""
  },
  {
   "id": "2A899C",
@@ -261,7 +293,8 @@
    2293
   ],
   "jp": "{spk}ロブン　　　\n「く‥‥まったく‥‥無念です」\n{next}\n「私が‥‥探し求める‥‥あの力\n　‥‥屍解仙の‥‥力さえ\n　あれば‥‥この‥‥くらい‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Ngh... How... very...\n regrettable.」\n{next}\n「If only I had... that power I\n seek... the power... of the\n Corpse Immortal... this would」\n{next}\n「be... nothing...」\n",
+  "pages": "\"Ngh... How... very... regrettable.\" || \"If only I had... that power I seek... the power... of the Corpse Immortal... this would be... nothing...\""
  },
  {
   "id": "2A8A2C",
@@ -269,7 +302,8 @@
    2315
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ロブンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Robun is down!!」\n",
+  "pages": "\"...{hero}! Robun is down!!\""
  },
  {
   "id": "2A8A66",
@@ -277,7 +311,8 @@
    2294
   ],
   "jp": "{spk}ロブン　　　\n「ほほう？　なかなかの攻撃です\n　残念ながら　私は　ここで離脱します」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Oh ho? Quite an attack.\n Regrettably, this is where I\n withdraw.」\n",
+  "pages": "\"Oh ho? Quite an attack. Regrettably, this is where I withdraw.\""
  },
  {
   "id": "2A8ABE",
@@ -285,7 +320,8 @@
    2316
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ロブンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Robun is down!!」\n",
+  "pages": "\"...{hero}! Robun is down!!\""
  },
  {
   "id": "2A8AF8",
@@ -293,7 +329,8 @@
    2295
   ],
   "jp": "{spk}ツキカゲ　　\n「ク‥‥クク‥‥悪いな‥‥\n　{hero}　だが　代金分は\n　‥‥じゅうぶん‥‥はたらいてるだろ？」\n{next}\n「今回だけは‥‥離脱する‥‥」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh... heh heh... Sorry...\n {hero}. But I've done... more\n than enough... for my fee,」\n{next}\n「right?」\n{next}\n「Just this once... I'm pulling\n out...」\n",
+  "pages": "\"Heh... heh heh... Sorry... {hero}. But I've done... more than enough... for my fee, right?\" || \"Just this once... I'm pulling out...\""
  },
  {
   "id": "2A8B92",
@@ -301,7 +338,8 @@
    2317
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ツキカゲが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Tsukikage is down!!」\n",
+  "pages": "\"...{hero}! Tsukikage is down!!\""
  },
  {
   "id": "2A8BCE",
@@ -309,7 +347,8 @@
    2296
   ],
   "jp": "{spk}リュウビ　　\n「‥‥く‥‥無念！」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「...Ngh... Regrettable!」\n",
+  "pages": "\"...Ngh... Regrettable!\""
  },
  {
   "id": "2A8BF4",
@@ -317,7 +356,8 @@
    2318
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　リュウビが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Ryubi is down!!」\n",
+  "pages": "\"...{hero}! Ryubi is down!!\""
  },
  {
   "id": "2A8C30",
@@ -325,7 +365,8 @@
    2297
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥私が‥‥やられただと！？\n　戦雲の女神の‥‥この私が？\n　すまぬ！　{hero}‥‥！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...I... was beaten!? I, the\n goddess of the war clouds?\n Forgive me! {hero}...!」\n",
+  "pages": "\"...I... was beaten!? I, the goddess of the war clouds? Forgive me! {hero}...!\""
  },
  {
   "id": "2A8CA0",
@@ -333,7 +374,8 @@
    2319
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ルーネが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Rune is down!!」\n",
+  "pages": "\"...{hero}! Rune is down!!\""
  },
  {
   "id": "2A8CDA",
@@ -341,7 +383,8 @@
    2298
   ],
   "jp": "{spk}アジャックス\n「‥‥ぐッ‥‥ここまでか！\n　す‥‥すまんな‥‥{hero}\n　お前の‥‥役に立てずに‥‥」\n{next}\n「ここは‥‥離脱する‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...Ngh... So this is it! S... sorry...\n {hero}... for being... no use\n to you...」\n{next}\n「I'm... pulling out...」\n",
+  "pages": "\"...Ngh... So this is it! S... sorry... {hero}... for being... no use to you...\" || \"I'm... pulling out...\""
  },
  {
   "id": "2A8D68",
@@ -349,7 +392,8 @@
    2320
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　アジャックスが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Ajax is down!!」\n",
+  "pages": "\"...{hero}! Ajax is down!!\""
  },
  {
   "id": "2A8DA8",
@@ -357,7 +401,8 @@
    2414
   ],
   "jp": "{spk}ダニエル　　\n「く‥‥！？　いかん！？\n　ここは　離脱させてもらう！」\n",
-  "en": ""
+  "en": "{spk}ダニエル　　\n「Ngh...!? This is bad!? Let me\n pull out of here!」\n",
+  "pages": "\"Ngh...!? This is bad!? Let me pull out of here!\""
  },
  {
   "id": "2A8DF2",
@@ -365,7 +410,8 @@
    2415
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ダニエルが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Daniel is down!!」\n",
+  "pages": "\"...{hero}! Daniel is down!!\""
  },
  {
   "id": "2A8E2E",
@@ -373,7 +419,8 @@
    2416
   ],
   "jp": "{spk}ノルン　　　\n「ごめん　{hero}！\n　一足先に　ここから離脱する！」\n",
-  "en": ""
+  "en": "{spk}ノルン　　　\n「Sorry, {hero}! I'm pulling\n out of here ahead of you!」\n",
+  "pages": "\"Sorry, {hero}! I'm pulling out of here ahead of you!\""
  },
  {
   "id": "2A8E7A",
@@ -381,7 +428,8 @@
    2417
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ノルンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Norn is down!!」\n",
+  "pages": "\"...{hero}! Norn is down!!\""
  },
  {
   "id": "2A8EB4",
@@ -389,7 +437,8 @@
    2418
   ],
   "jp": "{spk}マクベス　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？\n　す　すまんな‥‥\n　戦場から　離脱する‥‥！」\n",
-  "en": ""
+  "en": "{spk}マクベス　　\n「Nwoooooooaaagh...!? S-sorry...\n I'm withdrawing from the\n battle...!」\n",
+  "pages": "\"Nwoooooooaaagh...!? S-sorry... I'm withdrawing from the battle...!\""
  },
  {
   "id": "2A8F14",
@@ -397,7 +446,8 @@
    2419
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　マクベスが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Macbeth is down!!」\n",
+  "pages": "\"...{hero}! Macbeth is down!!\""
  },
  {
   "id": "2A8F50",
@@ -405,7 +455,8 @@
    2420
   ],
   "jp": "{spk}ダグ　　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ダグ　　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A8F80",
@@ -413,7 +464,8 @@
    2421
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ダグが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Doug is down!!」\n",
+  "pages": "\"...{hero}! Doug is down!!\""
  },
  {
   "id": "2A8FB8",
@@ -421,7 +473,8 @@
    2422
   ],
   "jp": "{spk}マイア　　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}マイア　　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A8FE8",
@@ -429,7 +482,8 @@
    2423
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　マイアが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Maia is down!!」\n",
+  "pages": "\"...{hero}! Maia is down!!\""
  },
  {
   "id": "2A9022",
@@ -437,7 +491,8 @@
    2424
   ],
   "jp": "{spk}ボリス　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ボリス　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A9052",
@@ -445,7 +500,8 @@
    2425
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ボリスが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Boris is down!!」\n",
+  "pages": "\"...{hero}! Boris is down!!\""
  },
  {
   "id": "2A908C",
@@ -453,7 +509,8 @@
    2426
   ],
   "jp": "{spk}シーナ　　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}シーナ　　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A90BC",
@@ -461,7 +518,8 @@
    2427
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　シーナが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Sheena is down!!」\n",
+  "pages": "\"...{hero}! Sheena is down!!\""
  },
  {
   "id": "2A90F6",
@@ -469,7 +527,8 @@
    2428
   ],
   "jp": "{spk}ジン　　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ジン　　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A9126",
@@ -477,7 +536,8 @@
    2429
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ジンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Jin is down!!」\n",
+  "pages": "\"...{hero}! Jin is down!!\""
  },
  {
   "id": "2A915E",
@@ -485,7 +545,8 @@
    2430
   ],
   "jp": "{spk}ズール　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ズール　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A918E",
@@ -493,7 +554,8 @@
    2431
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ズールが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Zool is down!!」\n",
+  "pages": "\"...{hero}! Zool is down!!\""
  },
  {
   "id": "2A91C8",
@@ -501,7 +563,8 @@
    2432
   ],
   "jp": "{spk}ドーン　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ドーン　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A91F8",
@@ -509,7 +572,8 @@
    2433
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ドーンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Dorn is down!!」\n",
+  "pages": "\"...{hero}! Dorn is down!!\""
  },
  {
   "id": "2A9232",
@@ -517,7 +581,8 @@
    2434
   ],
   "jp": "{spk}レナ　　　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}レナ　　　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A9262",
@@ -525,7 +590,8 @@
    2435
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　レナが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Lena is down!!」\n",
+  "pages": "\"...{hero}! Lena is down!!\""
  },
  {
   "id": "2A929A",
@@ -533,7 +599,8 @@
    2436
   ],
   "jp": "{spk}バロン　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}バロン　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A92CA",
@@ -541,7 +608,8 @@
    2437
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　バロンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Baron is down!!」\n",
+  "pages": "\"...{hero}! Baron is down!!\""
  },
  {
   "id": "2A9304",
@@ -549,7 +617,8 @@
    2438
   ],
   "jp": "{spk}ジーン　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ジーン　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A9334",
@@ -557,7 +626,8 @@
    2439
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ジーンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Jean is down!!」\n",
+  "pages": "\"...{hero}! Jean is down!!\""
  },
  {
   "id": "2A936E",
@@ -565,7 +635,8 @@
    2440
   ],
   "jp": "{spk}ミカ　　　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ミカ　　　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A939E",
@@ -573,7 +644,8 @@
    2441
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ミカが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Mika is down!!」\n",
+  "pages": "\"...{hero}! Mika is down!!\""
  },
  {
   "id": "2A93D6",
@@ -581,7 +653,8 @@
    2442
   ],
   "jp": "{spk}ザムス　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ザムス　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A9406",
@@ -589,7 +662,8 @@
    2443
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ザムスが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Zams is down!!」\n",
+  "pages": "\"...{hero}! Zams is down!!\""
  },
  {
   "id": "2A9440",
@@ -597,7 +671,8 @@
    2444
   ],
   "jp": "{spk}リーザ　　　\n「いやぁぁぁぁぁぁ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}リーザ　　　\n「Nooooooooo...!?」\n",
+  "pages": "\"Nooooooooo...!?\""
  },
  {
   "id": "2A9470",
@@ -605,7 +680,8 @@
    2445
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　リーザが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Liza is down!!」\n",
+  "pages": "\"...{hero}! Liza is down!!\""
  },
  {
   "id": "2A94AA",
@@ -613,7 +689,8 @@
    2446
   ],
   "jp": "{spk}ビーン　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ビーン　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A94DA",
@@ -621,7 +698,8 @@
    2447
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ビーンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Bean is down!!」\n",
+  "pages": "\"...{hero}! Bean is down!!\""
  },
  {
   "id": "2A9514",
@@ -629,7 +707,8 @@
    2448
   ],
   "jp": "{spk}ベン　　　　\n「ぬぉぉぉぉぉぉぉ‥‥ッ！？」\n",
-  "en": ""
+  "en": "{spk}ベン　　　　\n「Nwoooooooaaagh...!?」\n",
+  "pages": "\"Nwoooooooaaagh...!?\""
  },
  {
   "id": "2A9544",
@@ -637,7 +716,8 @@
    2449
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}！\n　ベンが　やられたわ！！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}! Ben is down!!」\n",
+  "pages": "\"...{hero}! Ben is down!!\""
  },
  {
   "id": "2A957C",
@@ -645,7 +725,8 @@
    2389
   ],
   "jp": "{FF12}「アレスの指輪よ　火の力よ！\n　封じこめられし　生の力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Ares Ring, power of fire!\n Sealed power of life, show\n yourself now!」\n",
+  "pages": "\"Ares Ring, power of fire! Sealed power of life, show yourself now!\""
  },
  {
   "id": "2A95D6",
@@ -653,7 +734,8 @@
    2390
   ],
   "jp": "{FF12}「アレスの力が　やどった！\n　一定時間　速さＵＰ！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Ares dwells\n within! Speed UP for a time!」\n",
+  "pages": "\"The power of Ares dwells within! Speed UP for a time!\""
  },
  {
   "id": "2A960E",
@@ -661,7 +743,8 @@
    2391
   ],
   "jp": "{FF12}「ヴィナスの指輪よ　大地の力よ！\n　美しき神の　その力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Venus Ring, power of earth!\n Power of the fair goddess,\n show yourself now!」\n",
+  "pages": "\"Venus Ring, power of earth! Power of the fair goddess, show yourself now!\""
  },
  {
   "id": "2A9668",
@@ -669,7 +752,8 @@
    2392
   ],
   "jp": "{FF12}「ヴィナスの力が　やどった！\n　一定時間　仲間たちの　速さＵＰ！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Venus dwells\n within! Allies' speed UP for a\n time!」\n",
+  "pages": "\"The power of Venus dwells within! Allies' speed UP for a time!\""
  },
  {
   "id": "2A96AE",
@@ -677,7 +761,8 @@
    2393
   ],
   "jp": "{FF12}「ヘルメスの指輪よ　風の力よ！\n　天をかけめぐる　速走の力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Hermes Ring, power of wind!\n Swift power racing the\n heavens, show yourself now!」\n",
+  "pages": "\"Hermes Ring, power of wind! Swift power racing the heavens, show yourself now!\""
  },
  {
   "id": "2A970C",
@@ -685,7 +770,8 @@
    2394
   ],
   "jp": "{FF12}「ヘルメスの力が　やどった！\n　一定時間　ＡＳがＵＰ！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Hermes dwells\n within! AS UP for a time!」\n",
+  "pages": "\"The power of Hermes dwells within! AS UP for a time!\""
  },
  {
   "id": "2A9748",
@@ -693,7 +779,8 @@
    2395
   ],
   "jp": "{FF12}「セレネの指輪よ　水の力よ！\n　海に眠りし　しずかなる力\n　　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Selene Ring, power of water!\n Quiet power asleep in the\n sea, show yourself now!」\n",
+  "pages": "\"Selene Ring, power of water! Quiet power asleep in the sea, show yourself now!\""
  },
  {
   "id": "2A97A6",
@@ -701,7 +788,8 @@
    2396
   ],
   "jp": "{FF12}「セレネの力が　やどった！\n　一定時間　敵からの物理攻撃を\n　完全に　防御する！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Selene dwells\n within! Fully blocks enemy\n physical attacks for a time!」\n",
+  "pages": "\"The power of Selene dwells within! Fully blocks enemy physical attacks for a time!\""
  },
  {
   "id": "2A97FC",
@@ -709,7 +797,8 @@
    2397
   ],
   "jp": "{FF12}「アポロンの指輪よ　火の力よ！\n　炎におどりし　一撃の力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Apollo Ring, power of fire!\n Single blow dancing in flame,\n show yourself now!」\n",
+  "pages": "\"Apollo Ring, power of fire! Single blow dancing in flame, show yourself now!\""
  },
  {
   "id": "2A9858",
@@ -717,7 +806,8 @@
    2398
   ],
   "jp": "{FF12}「アポロンの力が　やどった！\n　一定時間　全ての物理攻撃が\n　クリティカルヒットになる！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Apollo dwells\n within! Every physical attack\n is a critical hit for a time!」\n",
+  "pages": "\"The power of Apollo dwells within! Every physical attack is a critical hit for a time!\""
  },
  {
   "id": "2A98B6",
@@ -725,7 +815,8 @@
    2399
   ],
   "jp": "{FF12}「マーキュリーの指輪よ　大地の力よ！\n　母なる大地の　あわれみの力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Mercury Ring, power of\n earth! Mercy of Mother\n Earth, show yourself now!」\n",
+  "pages": "\"Mercury Ring, power of earth! Mercy of Mother Earth, show yourself now!\""
  },
  {
   "id": "2A991C",
@@ -733,7 +824,8 @@
    2400
   ],
   "jp": "{FF12}「マーキュリーの力が　やどった！\n　敵一体の　ＳＰを　０にする！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Mercury dwells\n within! One enemy's SP drops\n to 0!」\n",
+  "pages": "\"The power of Mercury dwells within! One enemy's SP drops to 0!\""
  },
  {
   "id": "2A9962",
@@ -741,7 +833,8 @@
    2401
   ],
   "jp": "{FF12}「アフロディーテの指輪よ　風の力よ！\n　ふき渡る　自由なる力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Aphrodite Ring, power of\n wind! Free power blowing far,\n show yourself now!」\n",
+  "pages": "\"Aphrodite Ring, power of wind! Free power blowing far, show yourself now!\""
  },
  {
   "id": "2A99C2",
@@ -749,7 +842,8 @@
    2402
   ],
   "jp": "{FF12}「アフロディーテの力が　やどった！\n　一定時間　あらゆる魔法攻撃を\n　完全に　防御する！」\n",
-  "en": ""
+  "en": "{FF12}「Aphrodite's power dwells\n within! Fully blocks all magic\n attacks for a time!」\n",
+  "pages": "\"Aphrodite's power dwells within! Fully blocks all magic attacks for a time!\""
  },
  {
   "id": "2A9A20",
@@ -757,7 +851,8 @@
    2403
   ],
   "jp": "{FF12}「プルートゥの指輪よ　水の力よ！\n　じごくの魔王の　怒りの力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Pluto Ring, power of water!\n Wrath of hell's demon king,\n show yourself now!」\n",
+  "pages": "\"Pluto Ring, power of water! Wrath of hell's demon king, show yourself now!\""
  },
  {
   "id": "2A9A80",
@@ -765,7 +860,8 @@
    2404
   ],
   "jp": "{FF12}「プルートゥの力が　やどった！\n　一定時間　受けたダメージを\n　二倍にして　加えた相手に返す！」\n",
-  "en": ""
+  "en": "{FF12}「Pluto's power dwells within!\n For a time, damage taken\n returns doubled!」\n",
+  "pages": "\"Pluto's power dwells within! For a time, damage taken returns doubled!\""
  },
  {
   "id": "2A9AE4",
@@ -773,7 +869,8 @@
    2405
   ],
   "jp": "{FF12}「ゼウスの指輪よ　火の力よ！\n　大神がくりだす　最強の一撃\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Zeus Ring, power of fire!\n Great god's mightiest blow,\n show yourself now!」\n",
+  "pages": "\"Zeus Ring, power of fire! Great god's mightiest blow, show yourself now!\""
  },
  {
   "id": "2A9B42",
@@ -781,7 +878,8 @@
    2406
   ],
   "jp": "{FF12}「ゼウスの力が　やどった！\n　ＭＡＰ上の　全ての敵にダメージ！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Zeus dwells\n within! Damage to every\n enemy on the MAP!」\n",
+  "pages": "\"The power of Zeus dwells within! Damage to every enemy on the MAP!\""
  },
  {
   "id": "2A9B86",
@@ -789,7 +887,8 @@
    2407
   ],
   "jp": "{FF12}「クロノスの指輪よ　大地の力よ！\n　時をつかさどる　大いなる力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Cronus Ring, power of earth!\n Great power ruling time,\n show yourself now!」\n",
+  "pages": "\"Cronus Ring, power of earth! Great power ruling time, show yourself now!\""
  },
  {
   "id": "2A9BE8",
@@ -797,7 +896,8 @@
    2408
   ],
   "jp": "{FF12}「クロノスの力が　やどった！\n　自分以外の者の　時間がとまる！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Cronus dwells\n within! Time stops for\n everyone but you!」\n",
+  "pages": "\"The power of Cronus dwells within! Time stops for everyone but you!\""
  },
  {
   "id": "2A9C2C",
@@ -805,7 +905,8 @@
    2409
   ],
   "jp": "{FF12}「ウラヌスの指輪よ　風の力よ！\n　天空神の　いやしの力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Uranus Ring, power of wind!\n Healing of the sky god, show\n yourself now!」\n",
+  "pages": "\"Uranus Ring, power of wind! Healing of the sky god, show yourself now!\""
  },
  {
   "id": "2A9C86",
@@ -813,7 +914,8 @@
    2410
   ],
   "jp": "{FF12}「ウラヌスの力が　やどった！\n　味方すべてのＳＰが　完全回復！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Uranus dwells\n within! All allies' SP fully\n restored!」\n",
+  "pages": "\"The power of Uranus dwells within! All allies' SP fully restored!\""
  },
  {
   "id": "2A9CCA",
@@ -821,7 +923,8 @@
    2411
   ],
   "jp": "{FF12}「ポセイドンの指輪よ　水の力よ！\n　海神の　あふれでる魔力\n　今こそ　わが前に　しめせ！」\n",
-  "en": ""
+  "en": "{FF12}「Poseidon Ring, power of\n water! Sea god's surging\n magic, show yourself now!」\n",
+  "pages": "\"Poseidon Ring, power of water! Sea god's surging magic, show yourself now!\""
  },
  {
   "id": "2A9D28",
@@ -829,7 +932,8 @@
    2412
   ],
   "jp": "{FF12}「ポセイドンの力が　やどった！\n　一定時間　魔力がＵＰ！」\n",
-  "en": ""
+  "en": "{FF12}「The power of Poseidon\n dwells within! Magic UP for a\n time!」\n",
+  "pages": "\"The power of Poseidon dwells within! Magic UP for a time!\""
  },
  {
   "id": "2A9D66",
@@ -837,7 +941,8 @@
    2413
   ],
   "jp": "{FF12}「星座と　指輪が合わないので\n　使うことは　できないわ！！」\n{spk}テティス　　\n「指輪は　一回の戦闘で\n　一度しか使えないわ！！」\n",
-  "en": ""
+  "en": "{FF12}「The constellation doesn't\n match the ring, so you can't\n use it!!」\n{spk}テティス　　\n「A ring can only be used once\n per battle!!」\n",
+  "pages": "\"The constellation doesn't match the ring, so you can't use it!!\" || \"A ring can only be used once per battle!!\""
  },
  {
   "id": "2A9DEA",
@@ -845,7 +950,8 @@
    1000
   ],
   "jp": "「十年前の　大戦は　東のロムルスと\n　北のラインメタル　二大国の\n　国境をめぐる　イザコザから　始まった」\n{next}\n「だが　千日にわたる　大戦のあと\n　両大国は　その交友を回復し\n　大陸は　平和の時を　迎えていた」\n{next}\n「その平和を　打ち砕いたのが\n　突然　はるかな南方から\n　侵攻してきた　神祖連邦オルドバだ」\n{next}\n「東の大国　ロムルス王国の都は\n　真っ先に　連邦の攻撃を受けた‥‥」\n{next}\n「王都ロムルス‥‥\n　かつて　美しさを誇った　この都は\n　今や　ガレキの山と　化している」\n",
-  "en": ""
+  "en": "「The great war ten years ago\n began with a border\n squabble between the two」\n{next}\n「great powers: Romulus in the\n east and Rheinmetall in the\n north.」\n{next}\n「But after a thousand days\n of war, the two powers\n made friends again, and the」\n{next}\n「continent entered a time of\n peace.」\n{next}\n「What shattered that peace\n was the Divine Federation of\n Ordoba, invading suddenly」\n{next}\n「from the far south.」\n{next}\n「The capital of Romulus, the\n great eastern kingdom, was\n the first to be attacked by」\n{next}\n「the Federation...」\n{next}\n「The royal city of Romulus...\n Once proud of its beauty,\n this city has now become a」\n{next}\n「heap of rubble.」\n",
+  "pages": "\"The great war ten years ago began with a border squabble between the two great powers: Romulus in the east and Rheinmetall in the north.\" || \"But after a thousand days of war, the two powers made friends again, and the continent entered a time of peace.\" || \"What shattered that peace was the Divine Federation of Ordoba, invading suddenly from the far south.\" || \"The capital of Romulus, the great eastern kingdom, was the first to be attacked by the Federation...\" || \"The royal city of Romulus... Once proud of its beauty, this city has now become a heap of rubble.\""
  },
  {
   "id": "2A9FCA",
@@ -853,7 +959,8 @@
    1001
   ],
   "jp": "「王都ロムルス‥‥\n　かつて　美しさを誇った　この都は\n　魔物どもの住みかと　化していた」\n",
-  "en": ""
+  "en": "「The royal city of Romulus...\n Once proud of its beauty,\n this city had become a den」\n{next}\n「of monsters.」\n",
+  "pages": "\"The royal city of Romulus... Once proud of its beauty, this city had become a den of monsters.\""
  },
  {
   "id": "2AA026",
@@ -861,7 +968,8 @@
    1002
   ],
   "jp": "「ロムルスの都」\n",
-  "en": ""
+  "en": "「The City of Romulus」\n",
+  "pages": "\"The City of Romulus\""
  },
  {
   "id": "2AA038",
@@ -869,7 +977,8 @@
    1003
   ],
   "jp": "{spk}{FF28}\n「あの　美しかった都は\n　見る影も　ないわね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「That beautiful city... There's\n nothing left of what it was...」\n",
+  "pages": "\"That beautiful city... There's nothing left of what it was...\""
  },
  {
   "id": "2AA072",
@@ -877,7 +986,8 @@
    1004
   ],
   "jp": "{spk}{FF31}　　　　　\n「連邦は　北エウロペアの中心\n　ロムルスを　真っ先に　つぶして\n　周りの国への　見せしめに　したのよ」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「The Federation crushed\n Romulus first because it was\n the heart of northern」\n{next}\n「Europea. To make an example\n of it for the countries\n around.」\n",
+  "pages": "\"The Federation crushed Romulus first because it was the heart of northern Europea. To make an example of it for the countries around.\""
  },
  {
   "id": "2AA0EA",
@@ -885,7 +995,8 @@
    1005
   ],
   "jp": "{spk}ミランダ　　\n「この街を　うごめく　魔物たちは\n　平和を　こわされた　住人たちの\n　無念の情が　生んだ物でしょう‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「The monsters crawling\n through this town must have\n been born of the bitterness」\n{next}\n「of the people whose peace\n was destroyed...」\n",
+  "pages": "\"The monsters crawling through this town must have been born of the bitterness of the people whose peace was destroyed...\""
  },
  {
   "id": "2AA164",
@@ -893,7 +1004,8 @@
    1006
   ],
   "jp": "{spk}ロジャー　　\n「‥‥ちきしょう！\n　連邦のヤツら　民間人まで！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...Damn it! Those Federation\n bastards, even civilians!」\n",
+  "pages": "\"...Damn it! Those Federation bastards, even civilians!\""
  },
  {
   "id": "2AA1A8",
@@ -901,7 +1013,8 @@
    1007
   ],
   "jp": "{spk}ファウスト　\n「運命とは言え　これは\n　あまりに　悲しい　でき事です‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Fate or not, this is far too\n sad a thing...」\n",
+  "pages": "\"Fate or not, this is far too sad a thing...\""
  },
  {
   "id": "2AA1F6",
@@ -909,7 +1022,8 @@
    1008
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　連邦も\n　なかなか　おもしろい事をする」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... The Federation\n does some pretty amusing\n things.」\n",
+  "pages": "\"Heh heh heh... The Federation does some pretty amusing things.\""
  },
  {
   "id": "2AA23E",
@@ -917,7 +1031,8 @@
    1009
   ],
   "jp": "{spk}アテナ　　　\n「何ていう事なの！　私の兄が\n　こんな　殺りくに\n　手をかして　いるなんて！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「How could this be! My\n brother is lending a hand in\n slaughter like this!」\n",
+  "pages": "\"How could this be! My brother is lending a hand in slaughter like this!\""
  },
  {
   "id": "2AA29E",
@@ -925,7 +1040,8 @@
    1010
   ],
   "jp": "{spk}{FF1F}\n「行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Let's go!」\n",
+  "pages": "\"Let's go!\""
  },
  {
   "id": "2AA2B2",
@@ -933,7 +1049,8 @@
    1011
   ],
   "jp": "{spk}{FF28}\n「気をつけて　{hero}！\n　敵はどこにいるか　わからないわよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Be careful, {hero}! We don't\n know where the enemy is!」\n",
+  "pages": "\"Be careful, {hero}! We don't know where the enemy is!\""
  },
  {
   "id": "2AA2FE",
@@ -941,7 +1058,8 @@
    1012
   ],
   "jp": "{spk}{FF1F}\n「連邦が残した　トラップだ\n　気をつけろ　まだ　あるかもしれん」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「It's a trap the Federation\n left behind. Be careful. There\n may be more.」\n",
+  "pages": "\"It's a trap the Federation left behind. Be careful. There may be more.\""
  },
  {
   "id": "2AA346",
@@ -949,7 +1067,8 @@
    1013
   ],
   "jp": "{spk}Ｌ°トラップ\n「‥‥ブブブ‥‥ブ‥‥\n　敵‥‥発見‥‥セリ‥‥\n　殺ス‥‥殺ス‥‥殺ス‥‥」\n",
-  "en": ""
+  "en": "{spk}Ｌ°トラップ\n「...Bzz bzz... bzz... Enemy...\n found... Kill... Kill... Kill...」\n",
+  "pages": "\"...Bzz bzz... bzz... Enemy... found... Kill... Kill... Kill...\""
  },
  {
   "id": "2AA3A6",
@@ -957,7 +1076,8 @@
    1014
   ],
   "jp": "{spk}Ｌ°トラップ\n「ブブ‥‥ブ‥‥ブブ‥‥\n　‥‥敵‥‥強シ‥‥強シ！」\n",
-  "en": ""
+  "en": "{spk}Ｌ°トラップ\n「Bzz... bzz... bzzz... ...Enemy...\n strong... Strong!」\n",
+  "pages": "\"Bzz... bzz... bzzz... ...Enemy... strong... Strong!\""
  },
  {
   "id": "2AA3EE",
@@ -965,7 +1085,8 @@
    1015
   ],
   "jp": "{spk}{FF28}\n「行きましょう　{hero}\n　ここは　ただの　廃墟だわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Let's go, {hero}. This is\n just a ruin...」\n",
+  "pages": "\"Let's go, {hero}. This is just a ruin...\""
  },
  {
   "id": "2AA434",
@@ -973,7 +1094,8 @@
    1016
   ],
   "jp": "{spk}{FF1F}\n「ああ‥‥　しかし　いずれは\n　ラインメタルも　こうなるのさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah... But sooner or later,\n Rheinmetall will end up like\n this too.」\n",
+  "pages": "\"Yeah... But sooner or later, Rheinmetall will end up like this too.\""
  },
  {
   "id": "2AA47A",
@@ -981,7 +1103,8 @@
    1017
   ],
   "jp": "{spk}{FF28}\n「まだまだ　魔物が　いるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There are still plenty more\n monsters!」\n",
+  "pages": "\"There are still plenty more monsters!\""
  },
  {
   "id": "2AA4A0",
@@ -989,7 +1112,8 @@
    1018
   ],
   "jp": "{spk}シュタイア　\n「‥‥くッ！　オレたちの街を！\n　殺す！　一匹も残さず\n　このオレの手で　殺してやる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Ngh! Our city! I'll kill them!\n Every last one, with my own\n hands!」\n",
+  "pages": "\"...Ngh! Our city! I'll kill them! Every last one, with my own hands!\""
  },
  {
   "id": "2AA50A",
@@ -997,7 +1121,8 @@
    1019
   ],
   "jp": "{spk}{FF1F}\n「シュタイア　自分を　見失うなよ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Steyr. Don't lose yourself.」\n",
+  "pages": "\"Steyr. Don't lose yourself.\""
  },
  {
   "id": "2AA534",
@@ -1005,7 +1130,8 @@
    1020
   ],
   "jp": "{spk}シュタイア　\n「‥‥わかっているさ！　しかし\n　連邦は　このオレの手で\n　いつか必ず　討ってみせる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...I know that! But one day, I\n swear, I'll strike down the\n Federation with my own」\n{next}\n「hands!」\n",
+  "pages": "\"...I know that! But one day, I swear, I'll strike down the Federation with my own hands!\""
  },
  {
   "id": "2AA59E",
@@ -1013,7 +1139,8 @@
    1021
   ],
   "jp": "{spk}{FF1F}\n「よし　行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's go!」\n",
+  "pages": "\"Right, let's go!\""
  },
  {
   "id": "2AA5B8",
@@ -1021,7 +1148,8 @@
    1022
   ],
   "jp": "「ガレキの山となった　ロムルスの都に\n　オレたちは　ラインメタルの\n　明日の姿を　見たような気がした‥‥」\n{next}\n「連邦の力は　あまりに強大だ\n　果たして　ちっぽけな　オレたちに\n　何が　できると　いうのだろうか‥‥」\n",
-  "en": ""
+  "en": "「In the city of Romulus, now a\n heap of rubble, I felt as if\n we had seen the Rheinmetall」\n{next}\n「of tomorrow...」\n{next}\n「The Federation's power is\n just too great. What could\n the likes of us, so small,」\n{next}\n「possibly do...」\n",
+  "pages": "\"In the city of Romulus, now a heap of rubble, I felt as if we had seen the Rheinmetall of tomorrow...\" || \"The Federation's power is just too great. What could the likes of us, so small, possibly do...\""
  },
  {
   "id": "2AA692",
@@ -1029,7 +1157,8 @@
    1023
   ],
   "jp": "{spk}シュタイア　\n「‥‥動くな！」\n{next}\n「‥‥お前たちは　何者だ！？\n　連邦か　それともコソドロか！？」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Don't move!」\n{next}\n「...Who are you!? Federation,\n or a bunch of petty thieves!?」\n",
+  "pages": "\"...Don't move!\" || \"...Who are you!? Federation, or a bunch of petty thieves!?\""
  },
  {
   "id": "2AA6FA",
@@ -1037,7 +1166,8 @@
    1024
   ],
   "jp": "{spk}{FF1F}\n「‥‥反乱軍だ　連邦と戦っている\n　オレは　わけあって\n　リーダーを　つとめる　{hero}」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Rebels. We're fighting the\n Federation. For reasons of\n my own, I'm their leader.」\n{next}\n「{hero}.」\n",
+  "pages": "\"...Rebels. We're fighting the Federation. For reasons of my own, I'm their leader. {hero}.\""
  },
  {
   "id": "2AA760",
@@ -1045,7 +1175,8 @@
    1025
   ],
   "jp": "{spk}シュタイア　\n「{hero}だと！？\n　まさか　あの　不敗の聖騎士\n　マスター°オブ°ソードか！？」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「{hero}, you say!? Not the\n Undefeated Paladin, the\n Master of Swords!?」\n",
+  "pages": "\"{hero}, you say!? Not the Undefeated Paladin, the Master of Swords!?\""
  },
  {
   "id": "2AA7C8",
@@ -1053,7 +1184,8 @@
    1026
   ],
   "jp": "{spk}{FF1F}\n「‥‥そんな風に\n　呼ばれていた　事もある」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...I've been called that, once.」\n",
+  "pages": "\"...I've been called that, once.\""
  },
  {
   "id": "2AA7FC",
@@ -1061,7 +1193,8 @@
    1027
   ],
   "jp": "{spk}シュタイア　\n「オレは　ロムルス王国軍\n　機動トウテキ隊の　シュタイア\n　仲間は　閃光のシュタイアとよぶ」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「I'm Steyr, of the Mobile\n Grenadier Corps of the\n Romulus royal army. My」\n{next}\n「comrades call me Steyr the\n Flash.」\n",
+  "pages": "\"I'm Steyr, of the Mobile Grenadier Corps of the Romulus royal army. My comrades call me Steyr the Flash.\""
  },
  {
   "id": "2AA86A",
@@ -1069,7 +1202,8 @@
    1028
   ],
   "jp": "{spk}ロジャー　　\n「たしか　聞いた事が　ある\n　百発百中の　腕を持つ\n　ロムルスきっての　ガンマンと」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「I'm sure I've heard of you.\n The best gunman in Romulus,\n who never misses a shot.」\n",
+  "pages": "\"I'm sure I've heard of you. The best gunman in Romulus, who never misses a shot.\""
  },
  {
   "id": "2AA8D0",
@@ -1077,7 +1211,8 @@
    1029
   ],
   "jp": "{spk}シュタイア　\n「‥‥情けない話だ　オレは\n　この国を守るため　国境線で\n　仲間たちと　必死に　戦っていた」\n{next}\n「オレを残して　仲間は死んだが\n　何とか　国境を守る事は　できた\n　ところが　帰ってくると‥‥」\n{next}\n「こきょうの街は　この　ありさま\n　栄光ある　王国軍も\n　完全に　かいめつしてしまった‥‥」\n{next}\n「生き残ったヤツの　話では\n　この街にいた　オレの妹も\n　連邦の将軍に　殺されたらしい‥‥」\n{next}\n「{hero}！　このオレを\n　反乱軍に　くわえてくれ！\n　妹のカタキを　討ちたいんだ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...It's a pathetic story. To\n protect this country, I was\n fighting for my life on the」\n{next}\n「border with my comrades.」\n{next}\n「My comrades died and left\n me behind, but somehow we\n held the border. And then,」\n{next}\n「when I came back...」\n{next}\n「My hometown looks like this.\n The glorious royal army has\n been completely wiped out...」\n{next}\n「From what the survivors\n say, my sister, who was in\n this city, was killed by a」\n{next}\n「Federation general too...」\n{next}\n「{hero}! Let me join the\n rebels! I want to avenge my\n sister!」\n",
+  "pages": "\"...It's a pathetic story. To protect this country, I was fighting for my life on the border with my comrades.\" || \"My comrades died and left me behind, but somehow we held the border. And then, when I came back...\" || \"My hometown looks like this. The glorious royal army has been completely wiped out...\" || \"From what the survivors say, my sister, who was in this city, was killed by a Federation general too...\" || \"{hero}! Let me join the rebels! I want to avenge my sister!\""
  },
  {
   "id": "2AAAC8",
@@ -1085,7 +1220,8 @@
    1030
   ],
   "jp": "{spk}シュタイア　\n「‥‥すまない　オレは\n　妹のカタキを　討てるなら\n　死んでもいいと　思っている」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Sorry. If I can avenge my\n sister, I don't care if I die.」\n",
+  "pages": "\"...Sorry. If I can avenge my sister, I don't care if I die.\""
  },
  {
   "id": "2AAB2C",
@@ -1093,7 +1229,8 @@
    1031
   ],
   "jp": "{spk}シュタイア　\n「妹のカタキを　見つけるまで\n　この命　あんたに　たくそう」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Until I find my sister's killer,\n I'll trust my life to you.」\n",
+  "pages": "\"Until I find my sister's killer, I'll trust my life to you.\""
  },
  {
   "id": "2AAB7A",
@@ -1101,7 +1238,8 @@
    1032
   ],
   "jp": "{spk}{FF1F}\n「‥‥もしかして　この\n　弾丸のネックレスは　お前のか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...By any chance, is this bullet\n necklace yours?」\n",
+  "pages": "\"...By any chance, is this bullet necklace yours?\""
  },
  {
   "id": "2AABBC",
@@ -1109,7 +1247,8 @@
    1033
   ],
   "jp": "{spk}シュタイア　\n「そ　そのネックレスは　オレが\n　妹に　お守りとして　やった物だ！」\n{next}\n「‥‥すまなかった　こんな形で\n　妹と　再会するとはな‥‥\n　しかし　妹は‥‥　妹は‥‥」\n{next}\n「オレは‥‥必ず‥‥連邦を討つ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Th-that necklace is the one I\n gave my sister as a charm!」\n{next}\n「...Sorry. To meet my sister\n again like this... But my\n sister... my sister...」\n{next}\n「I'll... strike down... the\n Federation... I swear it!」\n",
+  "pages": "\"Th-that necklace is the one I gave my sister as a charm!\" || \"...Sorry. To meet my sister again like this... But my sister... my sister...\" || \"I'll... strike down... the Federation... I swear it!\""
  },
  {
   "id": "2AAC9A",
@@ -1117,7 +1256,8 @@
    1034
   ],
   "jp": "{spk}シュタイア　\n「オレは　自分の力で　連邦を\n　討つ方法を　見つけよう」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「I'll find my own way to strike\n down the Federation.」\n",
+  "pages": "\"I'll find my own way to strike down the Federation.\""
  },
  {
   "id": "2AACE4",
@@ -1125,7 +1265,8 @@
    1035
   ],
   "jp": "{spk}シュタイア　\n「それじゃあな　{hero}」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「So long, {hero}.」\n",
+  "pages": "\"So long, {hero}.\""
  },
  {
   "id": "2AAD14",
@@ -1133,7 +1274,8 @@
    1036
   ],
   "jp": "「剣のように　突きだした　みさき\n　ここから　東の海の\n　火山島へと　渡れるはずだ‥‥」\n{next}\n「だが　それも平和だったときの事\n　戦争は　日常の全てを\n　跡かたもなく　こわしてしまう‥‥」\n",
-  "en": ""
+  "en": "「A cape jutting out like a\n sword. From here you should\n be able to cross to the」\n{next}\n「volcanic island in the eastern\n sea...」\n{next}\n「But that was back in\n peacetime. War destroys all\n of daily life, without a trace...」\n",
+  "pages": "\"A cape jutting out like a sword. From here you should be able to cross to the volcanic island in the eastern sea...\" || \"But that was back in peacetime. War destroys all of daily life, without a trace...\""
  },
  {
   "id": "2AADD2",
@@ -1141,7 +1283,8 @@
    1037
   ],
   "jp": "「剣のみさき」\n",
-  "en": ""
+  "en": "「Sword Cape」\n",
+  "pages": "\"Sword Cape\""
  },
  {
   "id": "2AADE2",
@@ -1149,7 +1292,8 @@
    1038
   ],
   "jp": "{spk}{FF28}\n「何にもない　場所ね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There's nothing at all here...」\n",
+  "pages": "\"There's nothing at all here...\""
  },
  {
   "id": "2AAE04",
@@ -1157,7 +1301,8 @@
    1039
   ],
   "jp": "{spk}{FF1F}\n「ともかく　行ってみよう」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Anyway, let's go see.」\n",
+  "pages": "\"Anyway, let's go see.\""
  },
  {
   "id": "2AAE26",
@@ -1165,7 +1310,8 @@
    1040
   ],
   "jp": "{spk}バアさん　　\n「ここから　火山島に　渡れるよ\n　じゃが　わしは　船をもっておらん\n　となりの家で　聞いてみるんじゃな」\n",
-  "en": ""
+  "en": "{spk}バアさん　　\n「You can cross to the volcanic\n island from here. But I don't\n have a boat. Go ask at the」\n{next}\n「house next door, dearie.」\n",
+  "pages": "\"You can cross to the volcanic island from here. But I don't have a boat. Go ask at the house next door, dearie.\""
  },
  {
   "id": "2AAEA0",
@@ -1173,7 +1319,8 @@
    1041
   ],
   "jp": "{spk}バアさん　　\n「‥‥そういや　となりの家の　男は\n　パドヴァ地方に住む　むすめに\n　ちょっかいを　出しておったが‥‥」\n{next}\n「何でも　ていよく\n　断られちまった　らしいぞ\n　若い　若いのぅ　イッヒッヒッ！」\n",
-  "en": ""
+  "en": "{spk}バアさん　　\n「...Come to think of it, the man\n next door was making eyes\n at a girl who lives in the」\n{next}\n「Padova region...」\n{next}\n「But it seems she turned him\n down nice and neat. Young,\n so young! Hee hee hee!」\n",
+  "pages": "\"...Come to think of it, the man next door was making eyes at a girl who lives in the Padova region...\" || \"But it seems she turned him down nice and neat. Young, so young! Hee hee hee!\""
  },
  {
   "id": "2AAF72",
@@ -1181,7 +1328,8 @@
    1042
   ],
   "jp": "{spk}バアさん　　\n「みさきの石像を　わしは　毎日\n　おがんでいるのじゃ　だから\n　百をすぎても　元気なんじゃよ」\n",
-  "en": ""
+  "en": "{spk}バアさん　　\n「I pray to the stone statue\n on the cape every day.\n That's why I'm still spry past」\n{next}\n「a hundred.」\n",
+  "pages": "\"I pray to the stone statue on the cape every day. That's why I'm still spry past a hundred.\""
  },
  {
   "id": "2AAFE2",
@@ -1189,7 +1337,8 @@
    1043
   ],
   "jp": "{spk}村人　　　　\n「船は出せんよ　連邦のヤツらが\n　そう命令した　オレだって\n　まだまだ　命が　おしいからな」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「I can't take a boat out.\n Those Federation folk\n ordered it. And I'm still」\n{next}\n「mighty fond of my life, you\n know.」\n",
+  "pages": "\"I can't take a boat out. Those Federation folk ordered it. And I'm still mighty fond of my life, you know.\""
  },
  {
   "id": "2AB050",
@@ -1197,7 +1346,8 @@
    1044
   ],
   "jp": "{spk}村人　　　　\n「‥‥そいつは　パドヴァの子からの\n　しょうかいじょう　じゃないか！？」\n{next}\n「‥‥うむ　いいだろう\n　連邦に秘密で　船を出してやる！」\n{next}\n「‥‥あの子の　頼みは\n　さすがに　ことわれんよ！」\n{next}\n「さあ　すぐに行こう！\n　連邦に　見つからないようにな！」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「...Isn't that a letter of\n introduction from the Padova\n girl!?」\n{next}\n「...Hm. All right. I'll take the\n boat out, and keep it secret\n from the Federation!」\n{next}\n「...I just can't say no to a\n favour from her!」\n{next}\n「Come on, let's go right away!\n Before the Federation spots\n us!」\n",
+  "pages": "\"...Isn't that a letter of introduction from the Padova girl!?\" || \"...Hm. All right. I'll take the boat out, and keep it secret from the Federation!\" || \"...I just can't say no to a favour from her!\" || \"Come on, let's go right away! Before the Federation spots us!\""
  },
  {
   "id": "2AB164",
@@ -1205,7 +1355,8 @@
    1045
   ],
   "jp": "{spk}村人　　　　\n「‥‥その　何だ　えーと\n　パドヴァの子に　オレの事を\n　よく　言っておいてくれよ！」\n",
-  "en": ""
+  "en": "{spk}村人　　　　\n「...Er, um, so... Put in a good\n word for me with the Padova\n girl, would you!」\n",
+  "pages": "\"...Er, um, so... Put in a good word for me with the Padova girl, would you!\""
  },
  {
   "id": "2AB1CC",
@@ -1213,7 +1364,8 @@
    1046
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}　この像って\n　古代の黄道十二神に　そっくり」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}, this statue looks\n just like the ancient Zodiac\n Gods.」\n",
+  "pages": "\"...{hero}, this statue looks just like the ancient Zodiac Gods.\""
  },
  {
   "id": "2AB214",
@@ -1221,7 +1373,8 @@
    1047
   ],
   "jp": "{spk}{FF1F}\n「‥‥黄道十二神？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Zodiac Gods?」\n",
+  "pages": "\"...Zodiac Gods?\""
  },
  {
   "id": "2AB230",
@@ -1229,7 +1382,8 @@
    1048
   ],
   "jp": "{spk}{FF28}\n「人は　とうに　忘れてしまっている\n　天空の星々を　つかさどり\n　世界をみちびいていた　古代の神々」\n{next}\n「そう‥‥連邦の　掘り出した\n　古代神の　いぶつとは　また　ことなる\n　もう一つの　星座の神々たち‥‥」\n{next}\n「古代の書物に　こうあるわ」\n{next}\n　地に　やみがあふれ　空には悪意が満ちる\n　太陽は　すでに　その姿を消し\n　人は　終わる事ない　夜におびえた\n{next}\n　ああ　しかし　見るがいい！\n　太陽が　失われたとしても\n　我らには　天にまたたく　星がある！\n{next}\n　星は　人々のねがいを　受け入れ\n　地上へと　まい降り\n　十二の石像へと　姿を変えた‥‥\n{next}\n　それ　すなわち　黄道十二神なり\n{FF04}{end}\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Ancient gods that people\n forgot long ago. They ruled\n the stars of heaven and」\n{next}\n「guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the\nstars twinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
+  "pages": "\"Ancient gods that people forgot long ago. They ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
  },
  {
   "id": "2AB48C",
@@ -1237,7 +1391,8 @@
    1049
   ],
   "jp": "{spk}{FF1F}\n「テティス？　どうした？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Thetis? What's wrong?」\n",
+  "pages": "\"Thetis? What's wrong?\""
  },
  {
   "id": "2AB4AE",
@@ -1245,7 +1400,8 @@
    1050
   ],
   "jp": "{spk}{FF28}\n「どうしたんだろう？　何だか急に\n　いろんな事を　思い出して‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What's happening? All of a\n sudden, I'm remembering all\n sorts of things...」\n",
+  "pages": "\"What's happening? All of a sudden, I'm remembering all sorts of things...\""
  },
  {
   "id": "2AB4F8",
@@ -1253,7 +1409,8 @@
    1051
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「You who stand before my\n statue, are you the one who\n will drive away the darkness」\n{next}\n「of the world?」\n",
+  "pages": "\"You who stand before my statue, are you the one who will drive away the darkness of the world?\""
  },
  {
   "id": "2AB54E",
@@ -1261,7 +1418,8 @@
    1052
   ],
   "jp": "{spk}{FF1F}\n「何だ？　石像が　しゃべっている？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What? The statue is talking?」\n",
+  "pages": "\"What? The statue is talking?\""
  },
  {
   "id": "2AB57A",
@@ -1269,7 +1427,8 @@
    1053
   ],
   "jp": "{spk}{FF28}\n「声じゃないわ　心の中に\n　意味が　飛び込んでくる！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's not a voice. The meaning\n is flying straight into my\n mind!?」\n",
+  "pages": "\"It's not a voice. The meaning is flying straight into my mind!?\""
  },
  {
   "id": "2AB5BA",
@@ -1277,7 +1436,8 @@
    1054
   ],
   "jp": "{spk}黄道十二神　\n「われは　星々の流れに　したがって\n　この世界の　運命の流れを\n　つかさどる　十二の神の一人　なり」\n{next}\n「そなたに　わが力をたくす\n　われら　十二の神の代理人として\n　この世の　ながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who follow the course of the\n stars and govern the flow」\n{next}\n「of this world's fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set right the course of this」\n{next}\n「world.」\n",
+  "pages": "\"I am one of the twelve gods who follow the course of the stars and govern the flow of this world's fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set right the course of this world.\""
  },
  {
   "id": "2AB694",
@@ -1285,7 +1445,8 @@
    1055
   ],
   "jp": "{spk}{FF1F}\n「あいにく　オレは\n　神なんてものを　信じない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Sorry. I don't believe in gods.」\n",
+  "pages": "\"Sorry. I don't believe in gods.\""
  },
  {
   "id": "2AB6CC",
@@ -1293,7 +1454,8 @@
    1056
   ],
   "jp": "{spk}黄道十二神　\n「あらがう事は　できぬ\n　調和は　二つの力によってのみ\n　初めて行なわれる事を　知れ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Thou canst not resist. Know\n that harmony is achieved\n only through two powers.」\n",
+  "pages": "\"Thou canst not resist. Know that harmony is achieved only through two powers.\""
  },
  {
   "id": "2AB734",
@@ -1301,7 +1463,8 @@
    1057
   ],
   "jp": "{spk}{FF1F}\n「二つの‥‥力？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Two... powers?」\n",
+  "pages": "\"Two... powers?\""
  },
  {
   "id": "2AB74E",
@@ -1309,7 +1472,8 @@
    1058
   ],
   "jp": "{spk}黄道十二神　\n「なんじは　世界にちらばりし\n　十二神の像を　探し出し\n　その全ての力を　束ねるのだ」\n{next}\n「さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Seek out the statues of the\n twelve gods scattered\n across the world and bind all」\n{next}\n「their power together.」\n{next}\n「Then shall we grant thee\n true power...」\n",
+  "pages": "\"Seek out the statues of the twelve gods scattered across the world and bind all their power together.\" || \"Then shall we grant thee true power...\""
  },
  {
   "id": "2AB800",
@@ -1317,7 +1481,8 @@
    1059
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　ここにも　黄道十二神の像が！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! There's a\n statue of the Zodiac Gods\n here too!」\n",
+  "pages": "\"Look, {hero}! There's a statue of the Zodiac Gods here too!\""
  },
  {
   "id": "2AB840",
@@ -1325,7 +1490,8 @@
    1060
   ],
   "jp": "{spk}黄道十二神　\n「なんじを　神の代理人と　みとめる」\n{next}\n「十二の指輪を　一つに束ねよ\n　さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n{next}\n「今　なんじが持ちし　指輪は‥‥」\n{next}\n{FF2F}　アレスの指輪\n{next}\n{FF2F}　ヴィナスの指輪\n{next}\n{FF2F}　ヘルメスの指輪\n{next}\n{FF2F}　セレネの指輪\n{next}\n{FF2F}　アポロンの指輪\n{next}\n{FF2F}　マーキュリーの指輪\n{next}\n{FF2F}　アフロディーテの指輪\n{next}\n{FF2F}　プルートゥの指輪\n{next}\n{FF2F}　ゼウスの指輪\n{next}\n{FF2F}　クロノスの指輪\n{next}\n{FF2F}　ウラヌスの指輪\n{next}\n{FF2F}　ポセイドンの指輪\n{next}\n「いまだ　残る　指輪は‥‥」\n{next}\n{FF30}　アレスの指輪\n{next}\n{FF30}　ヴィナスの指輪\n{next}\n{FF30}　ヘルメスの指輪\n{next}\n{FF30}　セレネの指輪\n{next}\n{FF30}　アポロンの指輪\n{next}\n{FF30}　マーキュリーの指輪\n{next}\n{FF30}　アフロディーテの指輪\n{next}\n{FF30}　プルートゥの指輪\n{next}\n{FF30}　ゼウスの指輪\n{next}\n{FF30}　クロノスの指輪\n{next}\n{FF30}　ウラヌスの指輪\n{next}\n{FF30}　ポセイドンの指輪\n{next}\n「是正せよ　わが力を束ね\n　この世のながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「We acknowledge thee as the\n agent of the gods.」\n{next}\n「Bind the twelve rings into\n one. Then shall we grant\n thee true power...」\n{next}\n「The rings thou now holdest\n are...」\n{next}\n{FF2F}{FF2F}Ares Ring\n{next}\n{FF2F}{FF2F}Venus Ring\n{next}\n{FF2F}{FF2F}Hermes Ring\n{next}\n{FF2F}{FF2F}Selene Ring\n{next}\n{FF2F}{FF2F}Apollo Ring\n{next}\n{FF2F}{FF2F}Mercury Ring\n{next}\n{FF2F}{FF2F}Aphrodite Ring\n{next}\n{FF2F}{FF2F}Pluto Ring\n{next}\n{FF2F}{FF2F}Zeus Ring\n{next}\n{FF2F}{FF2F}Cronus Ring\n{next}\n{FF2F}{FF2F}Uranus Ring\n{next}\n{FF2F}{FF2F}Poseidon Ring\n{next}\n「The rings yet remaining are...」\n{next}\n{FF30}{FF30}Ares Ring\n{next}\n{FF30}{FF30}Venus Ring\n{next}\n{FF30}{FF30}Hermes Ring\n{next}\n{FF30}{FF30}Selene Ring\n{next}\n{FF30}{FF30}Apollo Ring\n{next}\n{FF30}{FF30}Mercury Ring\n{next}\n{FF30}{FF30}Aphrodite Ring\n{next}\n{FF30}{FF30}Pluto Ring\n{next}\n{FF30}{FF30}Zeus Ring\n{next}\n{FF30}{FF30}Cronus Ring\n{next}\n{FF30}{FF30}Uranus Ring\n{next}\n{FF30}{FF30}Poseidon Ring\n{next}\n「Set it right. Bind my power\n together, and set right the\n course of this world.」\n",
+  "pages": "\"We acknowledge thee as the agent of the gods.\" || \"Bind the twelve rings into one. Then shall we grant thee true power...\" || \"The rings thou now holdest are...\" || {FF2F}Ares Ring || {FF2F}Venus Ring || {FF2F}Hermes Ring || {FF2F}Selene Ring || {FF2F}Apollo Ring || {FF2F}Mercury Ring || {FF2F}Aphrodite Ring || {FF2F}Pluto Ring || {FF2F}Zeus Ring || {FF2F}Cronus Ring || {FF2F}Uranus Ring || {FF2F}Poseidon Ring || \"The rings yet remaining are...\" || {FF30}Ares Ring || {FF30}Venus Ring || {FF30}Hermes Ring || {FF30}Selene Ring || {FF30}Apollo Ring || {FF30}Mercury Ring || {FF30}Aphrodite Ring || {FF30}Pluto Ring || {FF30}Zeus Ring || {FF30}Cronus Ring || {FF30}Uranus Ring || {FF30}Poseidon Ring || \"Set it right. Bind my power together, and set right the course of this world.\""
  },
  {
   "id": "2ABBB6",
@@ -1333,7 +1499,8 @@
    1061
   ],
   "jp": "{spk}{FF28}\n「‥‥いよいよ　火山島ね」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...So, the volcanic island at\n last.」\n",
+  "pages": "\"...So, the volcanic island at last.\""
  },
  {
   "id": "2ABBD8",
@@ -1341,7 +1508,8 @@
    1062
   ],
   "jp": "{spk}{FF1F}\n「ああ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah...」\n",
+  "pages": "\"Yeah...\""
  },
  {
   "id": "2ABBEC",
@@ -1349,7 +1517,8 @@
    1063
   ],
   "jp": "{spk}{FF28}\n「でも　ここにくるまでに\n　戦争に　巻き込まれた　たくさんの\n　村や　街を　見てきたわね‥‥」\n{next}\n「ねぇ　{FF31}　あなたは\n　こんな街を　増やしたくないから\n　反乱軍に　参加したのね‥‥？」\n{next}\n「自分の　お父さんである\n　皇帝を　裏切ってまで‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「But on the way here, we've\n seen so many villages and\n towns caught up in the war...」\n{next}\n「Hey, {FF31}... You joined\n the rebels because you don't\n want any more towns like」\n{next}\n「these, right...?」\n{next}\n「Even if it meant betraying\n the Emperor, your own\n father...」\n",
+  "pages": "\"But on the way here, we've seen so many villages and towns caught up in the war...\" || \"Hey, {FF31}... You joined the rebels because you don't want any more towns like these, right...?\" || \"Even if it meant betraying the Emperor, your own father...\""
  },
  {
   "id": "2ABCEC",
@@ -1357,7 +1526,8 @@
    1064
   ],
   "jp": "{spk}{FF31}　　　　　\n「そうじゃないわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「That's not it...」\n",
+  "pages": "\"That's not it...\""
  },
  {
   "id": "2ABD14",
@@ -1365,7 +1535,8 @@
    1065
   ],
   "jp": "{spk}{FF28}\n「え？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Huh?」\n",
+  "pages": "\"Huh?\""
  },
  {
   "id": "2ABD24",
@@ -1373,7 +1544,8 @@
    1066
   ],
   "jp": "{spk}{FF31}　　　　　\n「人が　どこで　のたれ死のうが\n　家を燃やされて　やけ死のうが\n　私には　どうでも　いいのよ」\n{next}\n「一つの国が　ほろんで　それが何なの？\n　地図の上から　小さな地名が\n　一つ　消えて　なくなるだけじゃない」\n{next}\n「そんなの　ありもしない　作り話と\n　どこが　どう違うっていうの？」\n{next}\n「でも　子どものころから\n　親しくしてた　衛兵が\n　ある日　どこかに　いなくなる」\n{next}\n「遊びなれた　きれいな庭が\n　みにくい　武器のおかれた\n　アブラくさい　場所になってしまう」\n{next}\n「それに　それにね　もう帰れないわ\n　だって　やかれた村を\n　私はもう　たくさん　見たんだもの」\n{next}\n「見たものは　決して　忘れられない」\n{next}\n「私がイヤなの！　私が見たくないの！\n　イヤだから　気持ち悪いから！」\n{next}\n「父を殺して　それが終わるなら\n　その方が　よっぽど　マシなのよ！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Where people drop dead, or\n burn to death when their\n houses are torched... I don't」\n{next}\n「care about any of that.」\n{next}\n「So one country is destroyed.\n So what? One little name\n just disappears off the map,」\n{next}\n「that's all.」\n{next}\n「How is that any different\n from some made-up story\n that never happened?」\n{next}\n「But a guard I'd been friends\n with since I was little is just\n gone one day.」\n{next}\n「The pretty garden I always\n played in turns into a place\n that stinks of oil, full of ugly」\n{next}\n「weapons.」\n{next}\n「And... and you know what? I\n can't go back any more.\n Because I've seen so many」\n{next}\n「burned villages now.」\n{next}\n「What I've seen, I can never\n forget.」\n{next}\n「I hate it! I don't want to see\n it! Because I hate it, because\n it makes me sick!」\n{next}\n「If killing my father ends all\n that, then that's far better!」\n",
+  "pages": "\"Where people drop dead, or burn to death when their houses are torched... I don't care about any of that.\" || \"So one country is destroyed. So what? One little name just disappears off the map, that's all.\" || \"How is that any different from some made-up story that never happened?\" || \"But a guard I'd been friends with since I was little is just gone one day.\" || \"The pretty garden I always played in turns into a place that stinks of oil, full of ugly weapons.\" || \"And... and you know what? I can't go back any more. Because I've seen so many burned villages now.\" || \"What I've seen, I can never forget.\" || \"I hate it! I don't want to see it! Because I hate it, because it makes me sick!\" || \"If killing my father ends all that, then that's far better!\""
  },
  {
   "id": "2AC030",
@@ -1381,7 +1553,8 @@
    1067
   ],
   "jp": "{spk}{FF28}\n「自分勝手なのね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「You're so selfish...」\n",
+  "pages": "\"You're so selfish...\""
  },
  {
   "id": "2AC04E",
@@ -1389,7 +1562,8 @@
    1068
   ],
   "jp": "{spk}{FF31}　　　　　\n「そうよ　それの　どこが悪いの？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Yes. So what's wrong with\n that?」\n",
+  "pages": "\"Yes. So what's wrong with that?\""
  },
  {
   "id": "2AC082",
@@ -1397,7 +1571,8 @@
    1069
   ],
   "jp": "{spk}{FF1F}\n「‥‥」\n{next}\n「‥‥島まで　まだ少し　かかる\n　二人とも　少し　休んでおけ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...」\n{next}\n「...It'll be a while yet before\n we reach the island. Both of\n you, get some rest.」\n",
+  "pages": "\"...\" || \"...It'll be a while yet before we reach the island. Both of you, get some rest.\""
  },
  {
   "id": "2AC0D6",
@@ -1405,7 +1580,8 @@
    1070
   ],
   "jp": "{spk}{FF28}\n「はーい！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Oka-ay!」\n",
+  "pages": "\"Oka-ay!\""
  },
  {
   "id": "2AC0EA",
@@ -1413,7 +1589,8 @@
    1071
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥そうするわ」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...I will.」\n",
+  "pages": "\"...I will.\""
  },
  {
   "id": "2AC10E",
@@ -1421,7 +1598,8 @@
    1072
   ],
   "jp": "「オレたちは　火山島へ　たどり着いた\n　だが　この地にも　すでに\n　連邦の手が　およんでいようとは‥‥」\n{next}\n「果たして　この島で\n　オレたちを　待つものは　何か？」\n",
-  "en": ""
+  "en": "「We reached the volcanic\n island. But to think that the\n Federation's hand had」\n{next}\n「already reached this land\n too...」\n{next}\n「What could be waiting for us\n on this island?」\n",
+  "pages": "\"We reached the volcanic island. But to think that the Federation's hand had already reached this land too...\" || \"What could be waiting for us on this island?\""
  },
  {
   "id": "2AC1B6",
@@ -1429,7 +1607,8 @@
    1073
   ],
   "jp": "「げき震の大地」\n",
-  "en": ""
+  "en": "「Land of Tremors」\n",
+  "pages": "\"Land of Tremors\""
  },
  {
   "id": "2AC1C8",
@@ -1437,7 +1616,8 @@
    1074
   ],
   "jp": "{spk}{FF28}\n「{hero}！　連邦軍よ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! It's the Federation\n army!」\n",
+  "pages": "\"{hero}! It's the Federation army!\""
  },
  {
   "id": "2AC1EE",
@@ -1445,7 +1625,8 @@
    1075
   ],
   "jp": "{spk}{FF1F}\n「すでに　この地も\n　ヤツらの　勢力下か‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So this land's already under\n their control too...」\n",
+  "pages": "\"So this land's already under their control too...\""
  },
  {
   "id": "2AC224",
@@ -1453,7 +1634,8 @@
    1076
   ],
   "jp": "{spk}魔導将軍　　\n「待っていたぞ　反乱軍！\n　ダークロードの　命に反し\n　ここで待った　かいがあったわ！」\n{next}\n「フ‥‥ハハハッ！　戦さはいい！\n　出世の道を　あたえてくれる！」\n{next}\n「キサマらを　倒し　このオレが\n　ダークロードにかわり\n　連邦のナンバー２に　なるのだ！」\n{next}\n「オレのために　死ね！　反乱軍！」\n",
-  "en": ""
+  "en": "{spk}魔導将軍　　\n「I've been waiting for you,\n rebels! It was worth defying\n the Dark Lord's orders to」\n{next}\n「wait here!」\n{next}\n「Heh... Hahaha! War is good! It\n opens the way to promotion!」\n{next}\n「When I defeat you, I'll take\n the Dark Lord's place and\n become number two in the」\n{next}\n「Federation!」\n{next}\n「Die for my sake, rebels!」\n",
+  "pages": "\"I've been waiting for you, rebels! It was worth defying the Dark Lord's orders to wait here!\" || \"Heh... Hahaha! War is good! It opens the way to promotion!\" || \"When I defeat you, I'll take the Dark Lord's place and become number two in the Federation!\" || \"Die for my sake, rebels!\""
  },
  {
   "id": "2AC35E",
@@ -1461,7 +1643,8 @@
    1077
   ],
   "jp": "{spk}{FF28}\n「{hero}　空から　敵の援軍！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, enemy\n reinforcements from the sky!」\n",
+  "pages": "\"{hero}, enemy reinforcements from the sky!\""
  },
  {
   "id": "2AC38A",
@@ -1469,7 +1652,8 @@
    1078
   ],
   "jp": "{spk}{FF1F}\n「いい作戦だ　陸と　空からの\n　はさみ撃ち‥‥というわけか」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Good tactics. A pincer attack,\n from the land and the air... is\n that it?」\n",
+  "pages": "\"Good tactics. A pincer attack, from the land and the air... is that it?\""
  },
  {
   "id": "2AC3CE",
@@ -1477,7 +1661,8 @@
    1079
   ],
   "jp": "{spk}ロジャー　　\n「{hero}さん！　感心してる\n　場合じゃ　ないですよ！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「{hero}-san! This is no time\n to be impressed!」\n",
+  "pages": "\"{hero}-san! This is no time to be impressed!\""
  },
  {
   "id": "2AC41C",
@@ -1485,7 +1670,8 @@
    1080
   ],
   "jp": "{spk}ミランダ　　\n「いいえ　ロジャー\n　{hero}さんには　勝てるという\n　ぜったいの自信が　あるんだわ」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「No, Roger. {hero}-san is\n absolutely confident that he\n can win.」\n",
+  "pages": "\"No, Roger. {hero}-san is absolutely confident that he can win.\""
  },
  {
   "id": "2AC488",
@@ -1493,7 +1679,8 @@
    1081
   ],
   "jp": "{spk}ロジャー　　\n「そう　ねがいたいよ！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「I sure hope so!」\n",
+  "pages": "\"I sure hope so!\""
  },
  {
   "id": "2AC4B2",
@@ -1501,7 +1688,8 @@
    1082
   ],
   "jp": "{spk}ファウスト　\n「これもまた　運命‥‥\n　しかし　これを　倒すのも\n　われわれの　運命のはず！」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「This too is fate... But\n defeating it must surely be\n our fate as well!」\n",
+  "pages": "\"This too is fate... But defeating it must surely be our fate as well!\""
  },
  {
   "id": "2AC514",
@@ -1509,7 +1697,8 @@
    1083
   ],
   "jp": "{spk}シュタイア　\n「連邦軍の　ザコどもが！\n　このオレが　かけらも残さず\n　きっちり　全めつさせてやる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Federation small fry! I'll wipe\n you out completely, every\n last scrap of you!」\n",
+  "pages": "\"Federation small fry! I'll wipe you out completely, every last scrap of you!\""
  },
  {
   "id": "2AC57E",
@@ -1517,7 +1706,8 @@
    1084
   ],
   "jp": "{spk}魔導将軍　　\n「バッ　バカな！？　オ　オレは\n　連邦の皇帝に　なる男だぞ！？」\n{next}\n「こんな　こんな‥‥\n　こんな所でーーーーッ！？」\n",
-  "en": ""
+  "en": "{spk}魔導将軍　　\n「N-no way!? B-but I'm the man\n who'll be emperor of the\n Federation!?」\n{next}\n「In a place... a place... a place\n like thiiiiis!?」\n",
+  "pages": "\"N-no way!? B-but I'm the man who'll be emperor of the Federation!?\" || \"In a place... a place... a place like thiiiiis!?\""
  },
  {
   "id": "2AC608",
@@ -1525,7 +1715,8 @@
    1085
   ],
   "jp": "{spk}連邦兵　　　\n「いかん！　将軍どのが！？\n　く‥‥　退け！　退くのだ！\n　この場から　撤退する！」\n",
-  "en": ""
+  "en": "{spk}連邦兵　　　\n「This is bad! The general's\n been...!? Ngh... Fall back! Fall\n back! We're withdrawing from」\n{next}\n「here!」\n",
+  "pages": "\"This is bad! The general's been...!? Ngh... Fall back! Fall back! We're withdrawing from here!\""
  },
  {
   "id": "2AC66E",
@@ -1533,7 +1724,8 @@
    1086
   ],
   "jp": "{spk}{FF1F}\n「どうやら　これが\n　連邦が　守っていた物らしいな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Looks like this is what the\n Federation was guarding.」\n",
+  "pages": "\"Looks like this is what the Federation was guarding.\""
  },
  {
   "id": "2AC6AA",
@@ -1541,7 +1733,8 @@
    1087
   ],
   "jp": "{spk}{FF28}\n「何かしら？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「I wonder what it is?」\n",
+  "pages": "\"I wonder what it is?\""
  },
  {
   "id": "2AC6C0",
@@ -1549,7 +1742,8 @@
    1088
   ],
   "jp": "{spk}{FF31}　　　　　\n「これが　ハイドラを\n　混乱させる　叫びのフエ　なのよ」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「This is the Shriek Whistle. It\n throws the Hydra into\n confusion.」\n",
+  "pages": "\"This is the Shriek Whistle. It throws the Hydra into confusion.\""
  },
  {
   "id": "2AC70A",
@@ -1557,7 +1751,8 @@
    1089
   ],
   "jp": "{spk}{FF28}\n「じゃあ　これさえあれば？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So as long as we have this...?」\n",
+  "pages": "\"So as long as we have this...?\""
  },
  {
   "id": "2AC72E",
@@ -1565,7 +1760,8 @@
    1090
   ],
   "jp": "{spk}{FF1F}\n「‥‥行こう　タルテソスの門へ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Let's go. To Tartessos Gate!」\n",
+  "pages": "\"...Let's go. To Tartessos Gate!\""
  },
  {
   "id": "2AC758",
@@ -1573,7 +1769,8 @@
    1091
   ],
   "jp": "「連邦の　魔導将軍は言った\n　戦さはいい　出世の道を\n　あたえてくれる‥‥と‥‥」\n{next}\n「戦争で　死ぬ者も　いれば\n　それを　食い物にして\n　のし上がっていく　者もいる」\n{next}\n「だからこそ　戦争は\n　人の歴史から　なくならない」\n{next}\n「では　今の　オレたちは\n　いったい　何のために\n　戦っているのだろうか‥‥？」\n",
-  "en": ""
+  "en": "「The Federation's sorcerer\n general said war is good,\n that it opens the way to」\n{next}\n「promotion...」\n{next}\n「In war, some die, and some\n feed on it to climb their way\n up.」\n{next}\n「That's exactly why war\n never disappears from\n human history.」\n{next}\n「Then what exactly are we\n fighting for now...?」\n",
+  "pages": "\"The Federation's sorcerer general said war is good, that it opens the way to promotion...\" || \"In war, some die, and some feed on it to climb their way up.\" || \"That's exactly why war never disappears from human history.\" || \"Then what exactly are we fighting for now...?\""
  },
  {
   "id": "2AC894",
@@ -1581,7 +1778,8 @@
    1092
   ],
   "jp": "「このタルテソスの門を　通れば\n　南エウロペア大陸　いよいよ\n　連邦の　ほんきょへ　乗り込む事になる」\n{next}\n「なりゆきで　リーダーとなった\n　オレが　なぜ　反乱軍と　ともに\n　ここまで　きてしまったのか」\n{next}\n「これもまた　しくまれた\n　運命なのだろうか‥‥？」\n",
-  "en": ""
+  "en": "「Once we pass through\n Tartessos Gate, we'll be in\n southern Europea, at last」\n{next}\n「stepping into the\n Federation's home ground.」\n{next}\n「I became the leader by force\n of circumstance. Why have I\n come this far with the」\n{next}\n「rebels?」\n{next}\n「Is this too some fate that\n was set up for me...?」\n",
+  "pages": "\"Once we pass through Tartessos Gate, we'll be in southern Europea, at last stepping into the Federation's home ground.\" || \"I became the leader by force of circumstance. Why have I come this far with the rebels?\" || \"Is this too some fate that was set up for me...?\""
  },
  {
   "id": "2AC99C",
@@ -1589,7 +1787,8 @@
    1093
   ],
   "jp": "「巨獣ハイドラ」\n",
-  "en": ""
+  "en": "「The Giant Beast Hydra」\n",
+  "pages": "\"The Giant Beast Hydra\""
  },
  {
   "id": "2AC9AE",
@@ -1597,7 +1796,8 @@
    1094
   ],
   "jp": "{spk}{FF28}\n「な　何なの！？\n　あの巨大な　モンスターは！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Wh-what is that!? That huge\n monster!?」\n",
+  "pages": "\"Wh-what is that!? That huge monster!?\""
  },
  {
   "id": "2AC9E8",
@@ -1605,7 +1805,8 @@
    1095
   ],
   "jp": "{spk}{FF31}　　　　　\n「間違いない！　あれは　ハイドラ！\n　連邦陸軍°機甲部隊\n　最強にして最大の　超重攻撃兵器！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「No doubt about it! That's the\n Hydra! The mightiest and\n biggest super-heavy assault」\n{next}\n「weapon of the Federation\n army's armoured corps!」\n",
+  "pages": "\"No doubt about it! That's the Hydra! The mightiest and biggest super-heavy assault weapon of the Federation army's armoured corps!\""
  },
  {
   "id": "2ACA58",
@@ -1613,7 +1814,8 @@
    1096
   ],
   "jp": "{spk}マウザー　　\n「おいおい　じょうだんかよ？\n　首が三つもある　ドラゴンだと！？」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Hey, hey, you've gotta be\n kidding? A dragon with three\n heads!?」\n",
+  "pages": "\"Hey, hey, you've gotta be kidding? A dragon with three heads!?\""
  },
  {
   "id": "2ACAAC",
@@ -1621,7 +1823,8 @@
    1097
   ],
   "jp": "{spk}ロジャー　　\n「‥‥ハイドラだと！？\n　まさか　こんな所に\n　配備されていたなんて！？」\n{next}\n「確か　王都オルドバの守りに\n　ついていたんじゃあ！？」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...The Hydra!? Never thought\n they'd have it stationed in a\n place like this!?」\n{next}\n「Wasn't it supposed to be\n guarding the royal city of\n Ordoba!?」\n",
+  "pages": "\"...The Hydra!? Never thought they'd have it stationed in a place like this!?\" || \"Wasn't it supposed to be guarding the royal city of Ordoba!?\""
  },
  {
   "id": "2ACB46",
@@ -1629,7 +1832,8 @@
    1098
   ],
   "jp": "{spk}シュタイア　\n「これが‥‥連邦の‥‥戦力！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「So this is... the Federation's...\n strength!」\n",
+  "pages": "\"So this is... the Federation's... strength!\""
  },
  {
   "id": "2ACB76",
@@ -1637,7 +1841,8 @@
    1099
   ],
   "jp": "{spk}ロブン　　　\n「ふぅむ‥‥　きょうみぶかい‥‥\n　私の国に　住んでいる\n　ヤマタノオロチに　にている‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Hmm... How very interesting...\n It resembles the Yamata no\n Orochi, the eight-headed」\n{next}\n「serpent of my land...」\n",
+  "pages": "\"Hmm... How very interesting... It resembles the Yamata no Orochi, the eight-headed serpent of my land...\""
  },
  {
   "id": "2ACBE4",
@@ -1645,7 +1850,8 @@
    1100
   ],
   "jp": "{spk}{FF1F}\n「いかん　退くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「This is bad. Fall back!」\n",
+  "pages": "\"This is bad. Fall back!\""
  },
  {
   "id": "2ACC00",
@@ -1653,7 +1859,8 @@
    1101
   ],
   "jp": "{spk}{FF28}\n「あんなの　どうやっても\n　防げっこ　ないじゃない！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There's no way we can stop\n something like that!?」\n",
+  "pages": "\"There's no way we can stop something like that!?\""
  },
  {
   "id": "2ACC40",
@@ -1661,7 +1868,8 @@
    1102
   ],
   "jp": "{spk}{FF1F}\n「いったん退くぞ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「We'll fall back for now...」\n",
+  "pages": "\"We'll fall back for now...\""
  },
  {
   "id": "2ACC5E",
@@ -1669,7 +1877,8 @@
    1103
   ],
   "jp": "{spk}{FF1F}\n「地形的に　あそこは\n　正面からしか　攻められんが‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「With that terrain, we can\n only attack it head-on, but...」\n",
+  "pages": "\"With that terrain, we can only attack it head-on, but...\""
  },
  {
   "id": "2ACC9E",
@@ -1677,7 +1886,8 @@
    1104
   ],
   "jp": "{spk}{FF28}\n「そうしたら　ハイドラの炎で\n　黒コゲになっちゃうわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Then the Hydra's flames will\n burn us to a crisp.」\n",
+  "pages": "\"Then the Hydra's flames will burn us to a crisp.\""
  },
  {
   "id": "2ACCDC",
@@ -1685,7 +1895,8 @@
    1105
   ],
   "jp": "{spk}ファウスト　\n「あの炎の前には　どんな防具も\n　マジックシールドも\n　まったく　役に立たないでしょう」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Against those flames, no\n armour, no magic shield will\n be of any use at all.」\n",
+  "pages": "\"Against those flames, no armour, no magic shield will be of any use at all.\""
  },
  {
   "id": "2ACD46",
@@ -1693,7 +1904,8 @@
    1106
   ],
   "jp": "{spk}シュタイア　\n「‥‥ちくしょう！\n　かつての　オレの仲間が\n　あと十人も　いてくれれば！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「...Damn it! If only I had just\n ten more of my old\n comrades!」\n",
+  "pages": "\"...Damn it! If only I had just ten more of my old comrades!\""
  },
  {
   "id": "2ACDA4",
@@ -1701,7 +1913,8 @@
    1107
   ],
   "jp": "{spk}アテナ　　　\n「まさか　連邦の戦力が\n　これほど　強大な物だとは‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I never imagined the\n Federation's strength was\n this great...」\n",
+  "pages": "\"I never imagined the Federation's strength was this great...\""
  },
  {
   "id": "2ACDEE",
@@ -1709,7 +1922,8 @@
    1108
   ],
   "jp": "{spk}ロジャー　　\n「ここまで　きていながら\n　おめおめ　引き返すなんて！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「After coming this far, to\n turn back with our tails\n between our legs!」\n",
+  "pages": "\"After coming this far, to turn back with our tails between our legs!\""
  },
  {
   "id": "2ACE38",
@@ -1717,7 +1931,8 @@
    1109
   ],
   "jp": "{spk}{FF1F}\n「ヤツの炎さえ　封じられればな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「If only we could seal its\n flames...」\n",
+  "pages": "\"If only we could seal its flames...\""
  },
  {
   "id": "2ACE64",
@@ -1725,7 +1940,8 @@
    1110
   ],
   "jp": "{spk}{FF31}　　　　　\n「方法はあるわ\n　叫びのフエ　を使うのよ」\n{next}\n「むかし　王城で聞いたわ」\n{next}\n「ハイドラは　そのフエの音を\n　聞くと　三つの首が\n　ばらばらに　動き出す‥‥って」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「There is a way. We use the\n Shriek Whistle.」\n{next}\n「I heard about it long ago, in\n the royal castle.」\n{next}\n「They said when the Hydra\n hears that whistle, its three\n heads start moving every」\n{next}\n「which way...」\n",
+  "pages": "\"There is a way. We use the Shriek Whistle.\" || \"I heard about it long ago, in the royal castle.\" || \"They said when the Hydra hears that whistle, its three heads start moving every which way...\""
  },
  {
   "id": "2ACF1A",
@@ -1733,7 +1949,8 @@
    1111
   ],
   "jp": "{spk}ロブン　　　\n「恐らく　神けいを　マヒさせ\n　三つの首の　連結を断つ\n　アイテム　なのでしょうな‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Most likely it's an item that\n numbs the nerves and cuts\n the link between the three」\n{next}\n「heads...」\n",
+  "pages": "\"Most likely it's an item that numbs the nerves and cuts the link between the three heads...\""
  },
  {
   "id": "2ACF84",
@@ -1741,7 +1958,8 @@
    1112
   ],
   "jp": "{spk}{FF28}\n「‥‥で　その\n　叫びのフエは　どこに！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...So where is this Shriek\n Whistle!?」\n",
+  "pages": "\"...So where is this Shriek Whistle!?\""
  },
  {
   "id": "2ACFB8",
@@ -1749,7 +1967,8 @@
    1113
   ],
   "jp": "{spk}{FF31}　　　　　\n「他の使い道も　あるからって‥‥」\n{next}\n「そう　確か　どこかの島に\n　隠しておく‥‥って言ってたけど」\n{next}\n「その島が　どこにあるのかは\n　私にも　わからないわね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Because it had other uses\n too...」\n{next}\n「Yes, I'm sure they said\n they'd hide it on some\n island...」\n{next}\n「But even I don't know where\n that island is...」\n",
+  "pages": "\"Because it had other uses too...\" || \"Yes, I'm sure they said they'd hide it on some island...\" || \"But even I don't know where that island is...\""
  },
  {
   "id": "2AD072",
@@ -1757,7 +1976,8 @@
    1114
   ],
   "jp": "{spk}{FF1F}\n「よし　その島を探そう！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right. Let's find that island!」\n",
+  "pages": "\"Right. Let's find that island!\""
  },
  {
   "id": "2AD094",
@@ -1765,7 +1985,8 @@
    1115
   ],
   "jp": "「このタルテソスの門を　通れば\n　南エウロペア大陸　いよいよ\n　連邦の　ほんきょへ　乗り込む事になる」\n{next}\n「あとは　門の前に　立ちふさがる\n　巨獣ハイドラだけだが‥‥」\n{next}\n「今　オレたちが　頼りにできるのは\n　この　ちっぽけな　フエだけだ」\n",
-  "en": ""
+  "en": "「Once we pass through\n Tartessos Gate, we'll be in\n southern Europea, at last」\n{next}\n「stepping into the\n Federation's home ground.」\n{next}\n「All that's left is the giant\n beast Hydra blocking the\n gate...」\n{next}\n「And all we can rely on right\n now is this tiny whistle.」\n",
+  "pages": "\"Once we pass through Tartessos Gate, we'll be in southern Europea, at last stepping into the Federation's home ground.\" || \"All that's left is the giant beast Hydra blocking the gate...\" || \"And all we can rely on right now is this tiny whistle.\""
  },
  {
   "id": "2AD18A",
@@ -1773,7 +1994,8 @@
    1116
   ],
   "jp": "{spk}{FF28}\n「見て　ハイドラよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, it's the Hydra!」\n",
+  "pages": "\"Look, it's the Hydra!\""
  },
  {
   "id": "2AD1A8",
@@ -1781,7 +2003,8 @@
    1117
   ],
   "jp": "{spk}{FF1F}\n「よし　テティス　頼む！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right. Thetis, go!」\n",
+  "pages": "\"Right. Thetis, go!\""
  },
  {
   "id": "2AD1CA",
@@ -1789,7 +2012,8 @@
    1118
   ],
   "jp": "{spk}守備隊長　　\n「バカな！？　ハ‥‥ハイドラが！？\n　弓隊　直ちに前へ！\n　全力で　ハイドラを援護せよ！」\n",
-  "en": ""
+  "en": "{spk}守備隊長　　\n「Impossible!? Th-the Hydra!?\n Archers, forward at once!\n Support the Hydra with」\n{next}\n「everything you've got!」\n",
+  "pages": "\"Impossible!? Th-the Hydra!? Archers, forward at once! Support the Hydra with everything you've got!\""
  },
  {
   "id": "2AD236",
@@ -1797,7 +2021,8 @@
    1119
   ],
   "jp": "{spk}守備隊長　　\n「うおああぁぁぁっ！？\n　皇帝より　受けたまわった\n　ハ‥‥ハイドラがぁぁっ！？」\n",
-  "en": ""
+  "en": "{spk}守備隊長　　\n「Uwoaaaaagh!? Th-the Hydra...\n entrusted to me by the\n Emperor...!?」\n",
+  "pages": "\"Uwoaaaaagh!? Th-the Hydra... entrusted to me by the Emperor...!?\""
  },
  {
   "id": "2AD29A",
@@ -1805,7 +2030,8 @@
    1120
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}!」\n",
+  "pages": "\"Look, {hero}!\""
  },
  {
   "id": "2AD2BA",
@@ -1813,7 +2039,8 @@
    1121
   ],
   "jp": "{spk}{FF28}\n「この　タルテソスの門を\n　ぬければ　南エウロペア\n　ついに　連邦の　ほんきょ地ね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Once we get through this\n Tartessos Gate, it's\n southern Europea. The」\n{next}\n「Federation's home ground at\n last...」\n",
+  "pages": "\"Once we get through this Tartessos Gate, it's southern Europea. The Federation's home ground at last...\""
  },
  {
   "id": "2AD31A",
@@ -1821,7 +2048,8 @@
    1122
   ],
   "jp": "{spk}{FF1F}\n「ああ　やっときたな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Yeah. We're finally here...」\n",
+  "pages": "\"Yeah. We're finally here...\""
  },
  {
   "id": "2AD33C",
@@ -1829,7 +2057,8 @@
    1123
   ],
   "jp": "「タルテソスの門を　前に\n　オレたちは　キャンプを張った」\n{next}\n「この門を　ぬければ　敵の　ほんきょ\n　恐らく　連邦の大部隊が\n　待ち受けている　はずだ‥‥」\n{next}\n「今　オレたちに　必要なのは\n　わずかばかりの　休息だった」\n",
-  "en": ""
+  "en": "「Before Tartessos Gate, we\n pitched camp.」\n{next}\n「Past this gate lay the\n enemy's home ground. A\n great Federation army was」\n{next}\n「surely waiting for us...」\n{next}\n「What we needed now was a\n little rest.」\n",
+  "pages": "\"Before Tartessos Gate, we pitched camp.\" || \"Past this gate lay the enemy's home ground. A great Federation army was surely waiting for us...\" || \"What we needed now was a little rest.\""
  },
  {
   "id": "2AD41E",
@@ -1837,7 +2066,8 @@
    1124
   ],
   "jp": "{spk}{FF1F}\n「どうした　{FF31}\n　休まないのか‥‥？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What is it, {FF31}? Aren't\n you going to rest...?」\n",
+  "pages": "\"What is it, {FF31}? Aren't you going to rest...?\""
  },
  {
   "id": "2AD44C",
@@ -1845,7 +2075,8 @@
    1125
   ],
   "jp": "{spk}{FF31}　　　　　\n「うん　ちょっと‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Yeah, it's just...」\n",
+  "pages": "\"Yeah, it's just...\""
  },
  {
   "id": "2AD474",
@@ -1853,7 +2084,8 @@
    1126
   ],
   "jp": "{spk}{FF1F}\n「夜明けと　ともに　橋を渡って\n　南エウロペアに　進軍する\n　今のうちに　休んでおくといい」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「At dawn we cross the bridge\n and march into southern\n Europea. Get some rest while」\n{next}\n「you can.」\n",
+  "pages": "\"At dawn we cross the bridge and march into southern Europea. Get some rest while you can.\""
  },
  {
   "id": "2AD4D8",
@@ -1861,7 +2093,8 @@
    1127
   ],
   "jp": "{spk}{FF31}　　　　　\n「あのね‥‥」\n{next}\n「こんなことを　思ってたの」\n{next}\n「私が　イヌか　ネコだったら\n　良かったのに‥‥ってね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「You know...」\n{next}\n「I was thinking something.」\n{next}\n「That it'd be nice if I were a\n dog or a cat...」\n",
+  "pages": "\"You know...\" || \"I was thinking something.\" || \"That it'd be nice if I were a dog or a cat...\""
  },
  {
   "id": "2AD55C",
@@ -1869,7 +2102,8 @@
    1128
   ],
   "jp": "{spk}{FF1F}\n「どうしてだ？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Why's that?」\n",
+  "pages": "\"Why's that?\""
  },
  {
   "id": "2AD574",
@@ -1877,7 +2111,8 @@
    1129
   ],
   "jp": "{spk}{FF31}　　　　　\n「だって　しっぽ　があれば\n　うれしい時も　悲しい時も\n　話さなくて　わかるでしょ？」\n{next}\n「何も言わなくても\n　気持ちが　伝わるでしょ？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Because if you have a tail,\n when you're happy or when\n you're sad, people can tell」\n{next}\n「without you talking, right?」\n{next}\n「Even if you don't say\n anything, your feelings get\n across, right?」\n",
+  "pages": "\"Because if you have a tail, when you're happy or when you're sad, people can tell without you talking, right?\" || \"Even if you don't say anything, your feelings get across, right?\""
  },
  {
   "id": "2AD612",
@@ -1885,7 +2120,8 @@
    1130
   ],
   "jp": "{spk}{FF1F}\n「‥‥そうだな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...I suppose so.」\n",
+  "pages": "\"...I suppose so.\""
  },
  {
   "id": "2AD62A",
@@ -1893,7 +2129,8 @@
    1131
   ],
   "jp": "{spk}{FF31}　　　　　\n「じゃあ　休むわね」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Well, I'm going to rest now.」\n",
+  "pages": "\"Well, I'm going to rest now.\""
  },
  {
   "id": "2AD650",
@@ -1901,7 +2138,8 @@
    1132
   ],
   "jp": "{spk}{FF1F}\n「‥‥{FF31}」\n{next}\n「‥‥もしも　お前さんが\n　イヌや　ネコだったのなら\n　オレと出会う事も　なかったさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...{FF31}.」\n{next}\n「...If you were a dog or a cat,\n you'd never have met me.」\n",
+  "pages": "\"...{FF31}.\" || \"...If you were a dog or a cat, you'd never have met me.\""
  },
  {
   "id": "2AD6BE",
@@ -1909,7 +2147,8 @@
    1133
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥お休み」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...Good night.」\n",
+  "pages": "\"...Good night.\""
  },
  {
   "id": "2AD6DE",
@@ -1917,7 +2156,8 @@
    1134
   ],
   "jp": "「その橋は　いつ　かけられたのか\n　長さ　十マイルにも　およぶ」\n{next}\n「タルテソスの門を　こえて\n　オレたちは　ついに\n　南エウロペアの　大地をふんだ」\n{next}\n「そして　予想通り\n　そこには　連邦の大部隊が\n　オレたちを　待ち受けていたのだ」\n",
-  "en": ""
+  "en": "「No one knows when the\n bridge was built. It stretches\n a full ten miles.」\n{next}\n「Crossing Tartessos Gate, we\n at last set foot on the soil\n of southern Europea.」\n{next}\n「And just as we expected, a\n great Federation army lay in\n wait for us there.」\n",
+  "pages": "\"No one knows when the bridge was built. It stretches a full ten miles.\" || \"Crossing Tartessos Gate, we at last set foot on the soil of southern Europea.\" || \"And just as we expected, a great Federation army lay in wait for us there.\""
  },
  {
   "id": "2AD7D0",
@@ -1925,7 +2165,8 @@
    1135
   ],
   "jp": "「決戦°ジブラルタル」\n",
-  "en": ""
+  "en": "「Decisive Battle: Gibraltar」\n",
+  "pages": "\"Decisive Battle: Gibraltar\""
  },
  {
   "id": "2AD7E8",
@@ -1933,7 +2174,8 @@
    1136
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　とんでもない　大部隊よ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! It's a huge\n army!」\n",
+  "pages": "\"Look, {hero}! It's a huge army!\""
  },
  {
   "id": "2AD824",
@@ -1941,7 +2183,8 @@
    1137
   ],
   "jp": "{spk}{FF1F}\n「{FF31}　お前は\n　キャンプに　戻っていろ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「{FF31}, go back to camp.」\n",
+  "pages": "\"{FF31}, go back to camp.\""
  },
  {
   "id": "2AD854",
@@ -1949,7 +2192,8 @@
    1138
   ],
   "jp": "{spk}{FF31}　　　　　\n「何でよ？　私も　行くわ！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「Why? I'm going too!」\n",
+  "pages": "\"Why? I'm going too!\""
  },
  {
   "id": "2AD882",
@@ -1957,7 +2201,8 @@
    1139
   ],
   "jp": "{spk}{FF1F}\n「今までのように　お前を\n　守りきれん‥‥\n　おとなしく　さがっていろ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I can't protect you like I\n have up to now... Be good\n and stay back.」\n",
+  "pages": "\"I can't protect you like I have up to now... Be good and stay back.\""
  },
  {
   "id": "2AD8D2",
@@ -1965,7 +2210,8 @@
    1140
   ],
   "jp": "{spk}{FF31}　　　　　\n「わかった　待っているわ」\n{next}\n「‥‥だから」\n{next}\n「必ず　迎えに　きなさいよね！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「All right. I'll wait.」\n{next}\n「...So...」\n{next}\n「You'd better come back for\n me, no matter what!」\n",
+  "pages": "\"All right. I'll wait.\" || \"...So...\" || \"You'd better come back for me, no matter what!\""
  },
  {
   "id": "2AD938",
@@ -1973,7 +2219,8 @@
    1141
   ],
   "jp": "{spk}{FF1F}\n「いい子だ　お嬢ちゃん」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Good girl, little miss.」\n",
+  "pages": "\"Good girl, little miss.\""
  },
  {
   "id": "2AD958",
@@ -1981,7 +2228,8 @@
    1142
   ],
   "jp": "{spk}{FF31}　　　　　\n「バカなんだから！」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「You're such an idiot!」\n",
+  "pages": "\"You're such an idiot!\""
  },
  {
   "id": "2AD97E",
@@ -1989,7 +2237,8 @@
    1143
   ],
   "jp": "{spk}{FF1F}\n「よし　行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's go!」\n",
+  "pages": "\"Right, let's go!\""
  },
  {
   "id": "2AD998",
@@ -1997,7 +2246,8 @@
    1144
   ],
   "jp": "{spk}ロジャー　　\n「ついにきたぞ！　ここを\n　突破すれば　南エウロペア！\n　いよいよ　連邦の　ほんきょ地だ！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「It's finally here! Break\n through here and it's\n southern Europea! The」\n{next}\n「Federation's home ground at\n last!」\n",
+  "pages": "\"It's finally here! Break through here and it's southern Europea! The Federation's home ground at last!\""
  },
  {
   "id": "2ADA06",
@@ -2005,7 +2255,8 @@
    1145
   ],
   "jp": "{spk}ミランダ　　\n「まいりましょう　みなさん！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Let us go, everyone!」\n",
+  "pages": "\"Let us go, everyone!\""
  },
  {
   "id": "2ADA36",
@@ -2013,7 +2264,8 @@
    1146
   ],
   "jp": "{spk}ファウスト　\n「運命のままに‥‥\n　この戦い　われらに勝利を」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「As fate wills... Grant us\n victory in this battle.」\n",
+  "pages": "\"As fate wills... Grant us victory in this battle.\""
  },
  {
   "id": "2ADA78",
@@ -2021,7 +2273,8 @@
    1147
   ],
   "jp": "{spk}シュタイア　\n「仲間と　国と　妹の　カタキ！\n　連邦のヤツらを　一人でも多く\n　じごくの　道づれに　してやるぜ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「For my comrades, my\n country and my sister! I'll\n drag as many Federation」\n{next}\n「bastards as I can down to\n hell with me!」\n",
+  "pages": "\"For my comrades, my country and my sister! I'll drag as many Federation bastards as I can down to hell with me!\""
  },
  {
   "id": "2ADAEE",
@@ -2029,7 +2282,8 @@
    1148
   ],
   "jp": "{spk}マウザー　　\n「巨悪には　われらの拳で\n　立ち向かえ‥‥　今こそ\n　その時が　きたってわけだ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Face great evil with our\n fists... Looks like the time for\n that has come at last!」\n",
+  "pages": "\"Face great evil with our fists... Looks like the time for that has come at last!\""
  },
  {
   "id": "2ADB52",
@@ -2037,7 +2291,8 @@
    1149
   ],
   "jp": "{spk}アテナ　　　\n「兄さん　あなたが　自分の道を\n　選んだように　今　私も\n　反乱軍とともに　進みます！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Brother, just as you chose\n your own path, now I too\n march on with the rebels!」\n",
+  "pages": "\"Brother, just as you chose your own path, now I too march on with the rebels!\""
  },
  {
   "id": "2ADBBC",
@@ -2045,7 +2300,8 @@
    1150
   ],
   "jp": "{spk}ロブン　　　\n「すさまじい　大部隊ですな\n　しかし　気の強さでは\n　われらも　負けては　いませんぞ」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「A tremendous army, that.\n But in strength of spirit,\n we're not losing to them」\n{next}\n「either.」\n",
+  "pages": "\"A tremendous army, that. But in strength of spirit, we're not losing to them either.\""
  },
  {
   "id": "2ADC24",
@@ -2053,7 +2309,8 @@
    1151
   ],
   "jp": "{spk}{FF1F}\n「進撃！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Advance!」\n",
+  "pages": "\"Advance!\""
  },
  {
   "id": "2ADC36",
@@ -2061,7 +2318,8 @@
    1152
   ],
   "jp": "{spk}{FF28}\n「敵の援軍よ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Enemy reinforcements,\n {hero}!」\n",
+  "pages": "\"Enemy reinforcements, {hero}!\""
  },
  {
   "id": "2ADC5C",
@@ -2069,7 +2327,8 @@
    1153
   ],
   "jp": "{spk}{FF1F}\n「わかっている\n　戦いは　これからだ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I know. The fight's only just\n begun!」\n",
+  "pages": "\"I know. The fight's only just begun!\""
  },
  {
   "id": "2ADC8C",
@@ -2077,7 +2336,8 @@
    1154
   ],
   "jp": "{spk}ダークロード\n「フフフ‥‥　きたか\n　マスター°オブ°ソード　」\n",
-  "en": ""
+  "en": "{spk}ダークロード\n「Heh heh heh... So you've\n come, Master of Swords.」\n",
+  "pages": "\"Heh heh heh... So you've come, Master of Swords.\""
  },
  {
   "id": "2ADCD0",
@@ -2085,7 +2345,8 @@
    1155
   ],
   "jp": "{spk}{FF1F}\n「キサマ‥‥確か‥‥\n　闘将ダークロードだったな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「You... If I remember right...\n you're the Warlord, the Dark\n Lord.」\n",
+  "pages": "\"You... If I remember right... you're the Warlord, the Dark Lord.\""
  },
  {
   "id": "2ADD0A",
@@ -2093,7 +2354,8 @@
    1156
   ],
   "jp": "{spk}ダークロード\n「お前の力　見せてみろ！」\n",
-  "en": ""
+  "en": "{spk}ダークロード\n「Show me your strength!」\n",
+  "pages": "\"Show me your strength!\""
  },
  {
   "id": "2ADD36",
@@ -2101,7 +2363,8 @@
    1157
   ],
   "jp": "{spk}{FF1F}\n「よかろう！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Very well!」\n",
+  "pages": "\"Very well!\""
  },
  {
   "id": "2ADD4C",
@@ -2109,7 +2372,8 @@
    1158
   ],
   "jp": "{spk}ダークロード\n「‥‥{hero}よ\n　お前と戦うのは　楽しいぞ」\n{next}\n「だが　オレには　すべき事がある　\n　そろそろ　失礼させて　もらうぞ」\n",
-  "en": ""
+  "en": "{spk}ダークロード\n「...{hero}. Fighting you is fun.」\n{next}\n「But I have something I must\n do. I'll take my leave about\n now.」\n",
+  "pages": "\"...{hero}. Fighting you is fun.\" || \"But I have something I must do. I'll take my leave about now.\""
  },
  {
   "id": "2ADDDC",
@@ -2117,7 +2381,8 @@
    1159
   ],
   "jp": "{spk}{FF1F}\n「キサマ！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「You!?」\n",
+  "pages": "\"You!?\""
  },
  {
   "id": "2ADDF2",
@@ -2125,7 +2390,8 @@
    1160
   ],
   "jp": "{spk}ダークロード\n「キサマらの相手は　わが部下　\n　エレボスと　ニュクスが\n　つとめて　くれるだろう！」\n{next}\n「‥‥それでは　さらばだ！\n　不敗の聖騎士\n　マスター°オブ°ソード！」\n",
-  "en": ""
+  "en": "{spk}ダークロード\n「My subordinates Erebus and\n Nyx will deal with you lot!」\n{next}\n「...And so, farewell!\n Undefeated Paladin, Master\n of Swords!」\n",
+  "pages": "\"My subordinates Erebus and Nyx will deal with you lot!\" || \"...And so, farewell! Undefeated Paladin, Master of Swords!\""
  },
  {
   "id": "2ADEA8",
@@ -2133,7 +2399,8 @@
    1161
   ],
   "jp": "{spk}{FF1F}\n「‥‥くッ！？\n　あ　あれは！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Ngh!? Wh-what's that!?」\n",
+  "pages": "\"...Ngh!? Wh-what's that!?\""
  },
  {
   "id": "2ADED2",
@@ -2141,7 +2408,8 @@
    1162
   ],
   "jp": "{spk}エレボス　　\n「‥‥‥‥」\n",
-  "en": ""
+  "en": "{spk}エレボス　　\n「........」\n",
+  "pages": "\"........\""
  },
  {
   "id": "2ADEF0",
@@ -2149,7 +2417,8 @@
    1163
   ],
   "jp": "{spk}ニュクス　　\n「‥‥‥‥」\n",
-  "en": ""
+  "en": "{spk}ニュクス　　\n「........」\n",
+  "pages": "\"........\""
  },
  {
   "id": "2ADF0E",
@@ -2157,7 +2426,8 @@
    1164
   ],
   "jp": "{spk}{FF28}\n「こいつら　強いわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「These two are strong!」\n",
+  "pages": "\"These two are strong!\""
  },
  {
   "id": "2ADF2C",
@@ -2165,7 +2435,8 @@
    1165
   ],
   "jp": "{spk}{FF1F}\n「‥‥どうやら　そのようだな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...So it seems.」\n",
+  "pages": "\"...So it seems.\""
  },
  {
   "id": "2ADF52",
@@ -2173,7 +2444,8 @@
    1166
   ],
   "jp": "{spk}エレボス　　\n「！」\n",
-  "en": ""
+  "en": "{spk}エレボス　　\n「!」\n",
+  "pages": "\"!\""
  },
  {
   "id": "2ADF6A",
@@ -2181,7 +2453,8 @@
    1167
   ],
   "jp": "{spk}ニュクス　　\n「！」\n",
-  "en": ""
+  "en": "{spk}ニュクス　　\n「!」\n",
+  "pages": "\"!\""
  },
  {
   "id": "2ADF82",
@@ -2189,7 +2462,8 @@
    1168
   ],
   "jp": "{spk}エレボス　　\n「‥‥！？」\n",
-  "en": ""
+  "en": "{spk}エレボス　　\n「...!?」\n",
+  "pages": "\"...!?\""
  },
  {
   "id": "2ADFA0",
@@ -2197,7 +2471,8 @@
    1169
   ],
   "jp": "{spk}ニュクス　　\n「‥‥！？」\n",
-  "en": ""
+  "en": "{spk}ニュクス　　\n「...!?」\n",
+  "pages": "\"...!?\""
  },
  {
   "id": "2ADFBE",
@@ -2205,7 +2480,8 @@
    1170
   ],
   "jp": "{spk}{FF28}\n「やったわ！　全めつよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We did it! They're wiped out!」\n",
+  "pages": "\"We did it! They're wiped out!\""
  },
  {
   "id": "2ADFE0",
@@ -2213,7 +2489,8 @@
    1171
   ],
   "jp": "{spk}{FF1F}\n「しかし　ダークロードのことば\n　何か　むなさわぎが　する‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「But what the Dark Lord said...\n It gives me a bad feeling...」\n",
+  "pages": "\"But what the Dark Lord said... It gives me a bad feeling...\""
  },
  {
   "id": "2AE028",
@@ -2221,7 +2498,8 @@
    1172
   ],
   "jp": "「オレたちは　大部隊を　撃破し\n　ついに　南エウロペアへ\n　その進撃の足を　進めた‥‥」\n{next}\n「だが　この　むなさわぎは‥‥」\n{next}\n「昔から　いつもだ\n　こんな時の　オレのよかんは\n　いやというほど　当たる‥‥」\n",
-  "en": ""
+  "en": "「We crushed the great army,\n and at last our advance\n pressed on into southern」\n{next}\n「Europea...」\n{next}\n「But this bad feeling...」\n{next}\n「It's always been this way. At\n times like this, my hunches\n are right far too often...」\n",
+  "pages": "\"We crushed the great army, and at last our advance pressed on into southern Europea...\" || \"But this bad feeling...\" || \"It's always been this way. At times like this, my hunches are right far too often...\""
  },
  {
   "id": "2AE0FE",
@@ -2229,7 +2507,8 @@
    1173
   ],
   "jp": "{spk}{FF28}\n「‥‥大変よ　{hero}！　\n　見て！　キャンプが\n　メチャクチャになってる！？」\n{next}\n「私たちが　戦っている間に\n　何かが　おこったんだわ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...This is bad, {hero}! Look!\n The camp's been wrecked!?」\n{next}\n「Something happened while we\n were fighting!?」\n",
+  "pages": "\"...This is bad, {hero}! Look! The camp's been wrecked!?\" || \"Something happened while we were fighting!?\""
  },
  {
   "id": "2AE19A",
@@ -2237,7 +2516,8 @@
    1174
   ],
   "jp": "{spk}{FF1F}\n「‥‥くッ！　どうやら\n　悪いよかんが　当たったらしい」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Ngh! Looks like my bad\n hunch was right.」\n",
+  "pages": "\"...Ngh! Looks like my bad hunch was right.\""
  },
  {
   "id": "2AE1DA",
@@ -2245,7 +2525,8 @@
    1175
   ],
   "jp": "{spk}{FF28}\n「やっぱり！　{FF31}が\n　連邦の　闘将ダークロードに\n　さらわれた　らしいわ！」\n{next}\n「あっという間で　仲間も\n　止められなかった　みたい！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「I knew it! It looks like\n {FF31} was kidnapped by\n the Federation's Warlord, the」\n{next}\n「Dark Lord!」\n{next}\n「It happened in a flash, and it\n seems our friends couldn't\n stop him!」\n",
+  "pages": "\"I knew it! It looks like {FF31} was kidnapped by the Federation's Warlord, the Dark Lord!\" || \"It happened in a flash, and it seems our friends couldn't stop him!\""
  },
  {
   "id": "2AE26C",
@@ -2253,7 +2534,8 @@
    1176
   ],
   "jp": "{spk}ロジャー　　\n「くそっ！　ダークロード！\n　まさか　姫様を　狙うとは！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「Damn it! The Dark Lord! To\n think he'd go after the\n Princess!」\n",
+  "pages": "\"Damn it! The Dark Lord! To think he'd go after the Princess!\""
  },
  {
   "id": "2AE2B8",
@@ -2261,7 +2543,8 @@
    1177
   ],
   "jp": "{spk}ミランダ　　\n「何という事でしょう‥‥」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「How terrible...」\n",
+  "pages": "\"How terrible...\""
  },
  {
   "id": "2AE2E4",
@@ -2269,7 +2552,8 @@
    1178
   ],
   "jp": "{spk}ファウスト　\n「運命とは　いつも　ざんこくな物\n　しかし　これは　あまりにも‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Fate is always cruel. But this\n is far too...」\n",
+  "pages": "\"Fate is always cruel. But this is far too...\""
  },
  {
   "id": "2AE33A",
@@ -2285,7 +2569,8 @@
    1180
   ],
   "jp": "{spk}{FF28}\n「それと‥‥　ダークロードから\n　{hero}あての　メッセージが！」\n{next}\n「読むわね！」\n{next}\n　封印の扉は　開かれた\n　姫は　全ての　カギとなる‥‥\n{next}\n　やみの十二の力は　束ねられ\n　姫の　心を　伝わり\n　巨大な　暗黒の力が　よみがえる\n{next}\n　急ぐがいい　あせるがいい\n　よみがえる物は　暗黒\n　はかい　そして　世界の破めつ\n{next}\n「どういう事かしら！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「And... there's a message from\n the Dark Lord, addressed to\n {hero}!」\n{next}\n「I'll read it!」\n{next}\nThe sealed door has been\nopened. The princess is the\nkey to all...\n{next}\nThe twelve powers of\ndarkness are bound, and\npassing through the princess's\n{next}\nheart, a vast power of\ndarkness is revived.\n{next}\nHurry, then. Panic, then. What\nrevives is darkness,\ndestruction, and the ruin of\n{next}\nthe world.\n{next}\n「What does that mean!?」\n",
+  "pages": "\"And... there's a message from the Dark Lord, addressed to {hero}!\" || \"I'll read it!\" || The sealed door has been opened. The princess is the key to all... || The twelve powers of darkness are bound, and passing through the princess's heart, a vast power of darkness is revived. || Hurry, then. Panic, then. What revives is darkness, destruction, and the ruin of the world. || \"What does that mean!?\""
  },
  {
   "id": "2AE4BC",
@@ -2293,7 +2578,8 @@
    1181
   ],
   "jp": "{spk}{FF1F}\n「‥‥」\n{next}\n「わからん　わからんが‥‥\n　ただ一つだけ　確かな事は‥‥」\n{next}\n「どうあっても　連邦の中心に\n　向かわねば　ならない‥‥って事だ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...」\n{next}\n「I don't know. I don't know,\n but... there's only one thing\n I'm sure of...」\n{next}\n「No matter what, we have to\n head for the heart of the\n Federation.」\n",
+  "pages": "\"...\" || \"I don't know. I don't know, but... there's only one thing I'm sure of...\" || \"No matter what, we have to head for the heart of the Federation.\""
  },
  {
   "id": "2AE556",
@@ -2301,7 +2587,8 @@
    1182
   ],
   "jp": "{spk}ロブン　　　\n「巨大な　暗黒の力ですか‥‥\n　気になりますな\n　果たして　それが　何なのか」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「A vast power of darkness, is\n it... That does concern me.\n What could it be, I wonder.」\n",
+  "pages": "\"A vast power of darkness, is it... That does concern me. What could it be, I wonder.\""
  },
  {
   "id": "2AE5B6",
@@ -2309,7 +2596,8 @@
    1183
   ],
   "jp": "{spk}{FF28}\n「そんな場合じゃ　ないでしょ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「This is no time for that!」\n",
+  "pages": "\"This is no time for that!\""
  },
  {
   "id": "2AE5DE",
@@ -2317,7 +2605,8 @@
    1184
   ],
   "jp": "{spk}ロブン　　　\n「あいや　失礼をば‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Ah, my apologies...」\n",
+  "pages": "\"Ah, my apologies...\""
  },
  {
   "id": "2AE608",
@@ -2325,7 +2614,8 @@
    1185
   ],
   "jp": "{spk}マウザー　　\n「小さな　女の子をさらうとは\n　連邦の　やり口　許せねぇな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Kidnapping a little girl! I can't\n forgive the way the\n Federation does things!」\n",
+  "pages": "\"Kidnapping a little girl! I can't forgive the way the Federation does things!\""
  },
  {
   "id": "2AE658",
@@ -2333,7 +2623,8 @@
    1186
   ],
   "jp": "{spk}シュタイア　\n「行こうぜ　{hero}！\n　神祖連邦の　中心部へと！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Let's go, {hero}! To the\n heart of the Divine\n Federation!」\n",
+  "pages": "\"Let's go, {hero}! To the heart of the Divine Federation!\""
  },
  {
   "id": "2AE6A2",
@@ -2341,7 +2632,8 @@
    1187
   ],
   "jp": "{spk}アテナ　　　\n「{hero}どの　われら\n　あなたとともに　参ります！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「{hero}-dono, we will go\n with you!」\n",
+  "pages": "\"{hero}-dono, we will go with you!\""
  },
  {
   "id": "2AE6EE",
@@ -2349,7 +2641,8 @@
    1188
   ],
   "jp": "{spk}{FF28}\n「じゃあ　{hero}！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So, {hero}!?」\n",
+  "pages": "\"So, {hero}!?\""
  },
  {
   "id": "2AE712",
@@ -2357,6 +2650,7 @@
    1189
   ],
   "jp": "{spk}{FF1F}\n「必ず　迎えに　こいと\n　嬢ちゃんは　言っていた‥‥」\n{next}\n「だからさ‥‥」\n{next}\n「よし　行こう！\n　全ての　わざわいの中心\n　神祖連邦　オルドバへと！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The little miss told me to be\n sure to come back for her...」\n{next}\n「So...」\n{next}\n「Right, let's go! To the heart\n of all this calamity, the\n Divine Federation of Ordoba!」\n",
+  "pages": "\"The little miss told me to be sure to come back for her...\" || \"So...\" || \"Right, let's go! To the heart of all this calamity, the Divine Federation of Ordoba!\""
  }
 ]

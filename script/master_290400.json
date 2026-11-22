@@ -2372,7 +2372,8 @@
    901
   ],
   "jp": "{spk}スカルナイト\n「‥‥神の力は‥‥オレの物だ\n　なんびと‥‥たりとも‥‥\n　‥‥この像には‥‥近づけん」\n{next}\n「‥‥戦え！」\n{next}\n「像の力が‥‥欲しくば‥‥\n　‥‥オレと‥‥一対一で戦え！\n　騎士の力を‥‥しめすのだ！」\n{next}\n「オレと戦うのは‥‥誰だ！？」\n",
-  "en": ""
+  "en": "{spk}スカルナイト\n「...The power of the gods... is\n mine... No one... no one at all...\n may approach... this statue...」\n{next}\n「...Fight!」\n{next}\n「If you want... the statue's\n power... then fight me... one\n on one...! Show me... a knight's」\n{next}\n「strength!」\n{next}\n「Who... will fight me!?」\n",
+  "pages": "\"...The power of the gods... is mine... No one... no one at all... may approach... this statue...\" || \"...Fight!\" || \"If you want... the statue's power... then fight me... one on one...! Show me... a knight's strength!\" || \"Who... will fight me!?\""
  },
  {
   "id": "2976D2",
@@ -2380,7 +2381,8 @@
    902
   ],
   "jp": "{spk}{FF28}\n「どうするの　{hero}！？\n　戦うしか　なさそうよ！？\n　‥‥誰が　あいつと戦う？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What do we do, {hero}!?\n Looks like there's no way out\n but to fight!? ...Who's going」\n{next}\n「to take him on?」\n",
+  "pages": "\"What do we do, {hero}!? Looks like there's no way out but to fight!? ...Who's going to take him on?\""
  },
  {
   "id": "297732",
@@ -2388,7 +2390,8 @@
    903
   ],
   "jp": "{spk}{FF1F}\n「‥‥よかろう　オレが相手だ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Very well. I'll face you.」\n",
+  "pages": "\"...Very well. I'll face you.\""
  },
  {
   "id": "297758",
@@ -2396,7 +2399,8 @@
    904
   ],
   "jp": "{spk}ロジャー　　\n「わかりました　{hero}さん！\n　あなたの信頼に　こたえてみせます！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「Understood, {hero}-san! I'll\n live up to your trust!」\n",
+  "pages": "\"Understood, {hero}-san! I'll live up to your trust!\""
  },
  {
   "id": "2977B4",
@@ -2404,7 +2408,8 @@
    905
   ],
   "jp": "{spk}ミランダ　　\n「わかりました　{hero}さん\n　この　あわれな騎士に\n　魂の安らぎを　あたえましょう」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Understood, {hero}-san.\n Let us give this pitiful\n knight's soul its rest.」\n",
+  "pages": "\"Understood, {hero}-san. Let us give this pitiful knight's soul its rest.\""
  },
  {
   "id": "297820",
@@ -2412,7 +2417,8 @@
    906
   ],
   "jp": "{spk}マウザー　　\n「へっ！　こんなホネやろう\n　バラバラに　してくれるぜ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Heh! I'll smash this bag of\n bones to pieces!」\n",
+  "pages": "\"Heh! I'll smash this bag of bones to pieces!\""
  },
  {
   "id": "29786C",
@@ -2420,7 +2426,8 @@
    907
   ],
   "jp": "{spk}ファウスト　\n「運命には　さからえません\n　そして　彼が　眠りにつくのも\n　あらかじめ　定められた運命」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「One cannot defy fate. And\n that he should fall asleep at\n last was fated from the」\n{next}\n「start.」\n",
+  "pages": "\"One cannot defy fate. And that he should fall asleep at last was fated from the start.\""
  },
  {
   "id": "2978D8",
@@ -2428,7 +2435,8 @@
    908
   ],
   "jp": "{spk}シュタイア　\n「わかったよ　{hero}！\n　こんな所では　死ねない\n　だからオレは勝つ　必ずな！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Got it, {hero}! I can't die in\n a place like this. So I'll win.\n No matter what!」\n",
+  "pages": "\"Got it, {hero}! I can't die in a place like this. So I'll win. No matter what!\""
  },
  {
   "id": "297940",
@@ -2436,7 +2444,8 @@
    909
   ],
   "jp": "{spk}アテナ　　　\n「御安心を　{hero}さん\n　私は　決して　死にませんから」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Rest easy, {hero}-san. I\n shall not die, not ever.」\n",
+  "pages": "\"Rest easy, {hero}-san. I shall not die, not ever.\""
  },
  {
   "id": "297990",
@@ -2444,7 +2453,8 @@
    910
   ],
   "jp": "{spk}リュウビ　　\n「勝負は‥‥いっしゅん！」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「It will be over... in an instant!」\n",
+  "pages": "\"It will be over... in an instant!\""
  },
  {
   "id": "2979BC",
@@ -2452,7 +2462,8 @@
    911
   ],
   "jp": "{spk}ツキカゲ　　\n「フフフ‥‥　血が　さわぐ\n　この　命のかけひき\n　たまらなく　シビれるぜ」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... My blood's\n stirring. A game with our\n lives on the table... It's」\n{next}\n「thrilling as hell.」\n",
+  "pages": "\"Heh heh heh... My blood's stirring. A game with our lives on the table... It's thrilling as hell.\""
  },
  {
   "id": "297A1A",
@@ -2460,7 +2471,8 @@
    912
   ],
   "jp": "{spk}ロブン　　　\n「いいでしょう　まかせて下さい」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Very well. Leave it to me.」\n",
+  "pages": "\"Very well. Leave it to me.\""
  },
  {
   "id": "297A4C",
@@ -2468,7 +2480,8 @@
    913
   ],
   "jp": "{spk}ルーネ　　　\n「わかりました　参りましょう」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Understood. Let us go.」\n",
+  "pages": "\"Understood. Let us go.\""
  },
  {
   "id": "297A7C",
@@ -2476,7 +2489,8 @@
    914
   ],
   "jp": "{spk}スカルナイト\n「キサマが‥‥オレに‥‥\n　‥‥殺される‥‥者か‥‥\n　名を‥‥聞いて‥‥おこう！」\n",
-  "en": ""
+  "en": "{spk}スカルナイト\n「So you... are the one... who\n will be... killed by me... I will\n hear... your name!」\n",
+  "pages": "\"So you... are the one... who will be... killed by me... I will hear... your name!\""
  },
  {
   "id": "297AE2",
@@ -2484,7 +2498,8 @@
    915
   ],
   "jp": "{spk}{FF1F}\n「バウンティハンターの　{hero}」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「{hero}, bounty hunter.」\n",
+  "pages": "\"{hero}, bounty hunter.\""
  },
  {
   "id": "297B10",
@@ -2492,7 +2507,8 @@
    916
   ],
   "jp": "{spk}ロジャー　　\n「ロジャーだ！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「I'm Roger!」\n",
+  "pages": "\"I'm Roger!\""
  },
  {
   "id": "297B32",
@@ -2500,7 +2516,8 @@
    917
   ],
   "jp": "{spk}ミランダ　　\n「ミランダと　申します」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「My name is Miranda.」\n",
+  "pages": "\"My name is Miranda.\""
  },
  {
   "id": "297B5C",
@@ -2508,7 +2525,8 @@
    918
   ],
   "jp": "{spk}マウザー　　\n「聞いて　おどろくな！　オレ様は\n　ドラゴンバスターの　マウザーよ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Hear this and tremble! I'm\n the Dragon Buster, Mauser!」\n",
+  "pages": "\"Hear this and tremble! I'm the Dragon Buster, Mauser!\""
  },
  {
   "id": "297BB4",
@@ -2516,7 +2534,8 @@
    919
   ],
   "jp": "{spk}ファウスト　\n「ファウスト‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Faust...」\n",
+  "pages": "\"Faust...\""
  },
  {
   "id": "297BD8",
@@ -2524,7 +2543,8 @@
    920
   ],
   "jp": "{spk}シュタイア　\n「人は　こう呼ぶ‥‥\n　閃光のシュタイアと！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「People call me... Steyr the\n Flash!」\n",
+  "pages": "\"People call me... Steyr the Flash!\""
  },
  {
   "id": "297C18",
@@ -2532,7 +2552,8 @@
    921
   ],
   "jp": "{spk}アテナ　　　\n「わが名は　アテナ！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「My name is Athena!」\n",
+  "pages": "\"My name is Athena!\""
  },
  {
   "id": "297C40",
@@ -2540,7 +2561,8 @@
    922
   ],
   "jp": "{spk}リュウビ　　\n「人呼んで　寸断のリュウビ‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「They call me Ryubi the\n Shredder...」\n",
+  "pages": "\"They call me Ryubi the Shredder...\""
  },
  {
   "id": "297C72",
@@ -2548,7 +2570,8 @@
    923
   ],
   "jp": "{spk}ツキカゲ　　\n「静かなる殺りく者‥‥ツキカゲ！」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「The silent slaughterer...\n Tsukikage!」\n",
+  "pages": "\"The silent slaughterer... Tsukikage!\""
  },
  {
   "id": "297CA6",
@@ -2556,7 +2579,8 @@
    924
   ],
   "jp": "{spk}ロブン　　　\n「ロブンです　が　ふるさとでは\n　みな　陰陽道士と　呼びますな」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I'm Robun, though back home\n they all call me an onmyoji, a\n master of yin and yang.」\n",
+  "pages": "\"I'm Robun, though back home they all call me an onmyoji, a master of yin and yang.\""
  },
  {
   "id": "297CF8",
@@ -2564,7 +2588,8 @@
    925
   ],
   "jp": "{spk}ルーネ　　　\n「戦雲の女神　ルーネ！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Rune, goddess of the war\n clouds!」\n",
+  "pages": "\"Rune, goddess of the war clouds!\""
  },
  {
   "id": "297D22",
@@ -2572,7 +2597,8 @@
    926
   ],
   "jp": "{spk}スカルナイト\n「‥‥フフフ‥‥行くぞ！」\n",
-  "en": ""
+  "en": "{spk}スカルナイト\n「...Heh heh heh... Here I come!」\n",
+  "pages": "\"...Heh heh heh... Here I come!\""
  },
  {
   "id": "297D4E",
@@ -2580,7 +2606,8 @@
    927
   ],
   "jp": "{spk}スカルナイト\n「強い！　そなたら‥‥こそ‥‥\n　真に‥‥神の力を‥‥\n　‥‥受けるのに‥‥ふさわしい」\n",
-  "en": ""
+  "en": "{spk}スカルナイト\n「Strong! You... you are the\n ones... truly worthy... of\n receiving... the power of the」\n{next}\n「gods...」\n",
+  "pages": "\"Strong! You... you are the ones... truly worthy... of receiving... the power of the gods...\""
  },
  {
   "id": "297DB8",
@@ -2588,7 +2615,8 @@
    928
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}　この像って\n　古代の黄道十二神に　そっくり」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}, this statue looks\n just like the ancient Zodiac\n Gods.」\n",
+  "pages": "\"...{hero}, this statue looks just like the ancient Zodiac Gods.\""
  },
  {
   "id": "297E00",
@@ -2596,7 +2624,8 @@
    929
   ],
   "jp": "{spk}{FF1F}\n「‥‥黄道十二神？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Zodiac Gods?」\n",
+  "pages": "\"...Zodiac Gods?\""
  },
  {
   "id": "297E1C",
@@ -2604,7 +2633,8 @@
    930
   ],
   "jp": "{spk}{FF28}\n「人は　とうに　忘れてしまっている\n　天空の星々を　つかさどり\n　世界をみちびいていた　古代の神々」\n{next}\n「そう‥‥連邦の　掘り出した\n　古代神の　いぶつとは　また　ことなる\n　もう一つの　星座の神々たち‥‥」\n{next}\n「古代の書物に　こうあるわ」\n{next}\n　地に　やみがあふれ　空には悪意が満ちる\n　太陽は　すでに　その姿を消し\n　人は　終わる事ない　夜におびえた\n{next}\n　ああ　しかし　見るがいい！\n　太陽が　失われたとしても\n　我らには　天にまたたく　星がある！\n{next}\n　星は　人々のねがいを　受け入れ\n　地上へと　まい降り\n　十二の石像へと　姿を変えた‥‥\n{next}\n　それ　すなわち　黄道十二神なり\n{FF04}{end}\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Ancient gods that people\n forgot long ago. They ruled\n the stars of heaven and」\n{next}\n「guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the\nstars twinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
+  "pages": "\"Ancient gods that people forgot long ago. They ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
  },
  {
   "id": "298078",
@@ -2612,7 +2642,8 @@
    931
   ],
   "jp": "{spk}{FF1F}\n「テティス？　どうした？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Thetis? What's wrong?」\n",
+  "pages": "\"Thetis? What's wrong?\""
  },
  {
   "id": "29809A",
@@ -2620,7 +2651,8 @@
    932
   ],
   "jp": "{spk}{FF28}\n「どうしたんだろう？　何だか急に\n　いろんな事を　思い出して‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What's happening? All of a\n sudden, I'm remembering all\n sorts of things...」\n",
+  "pages": "\"What's happening? All of a sudden, I'm remembering all sorts of things...\""
  },
  {
   "id": "2980E4",
@@ -2628,7 +2660,8 @@
    933
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「You who stand before my\n statue, are you the one who\n will drive away the darkness」\n{next}\n「of the world?」\n",
+  "pages": "\"You who stand before my statue, are you the one who will drive away the darkness of the world?\""
  },
  {
   "id": "29813A",
@@ -2636,7 +2669,8 @@
    934
   ],
   "jp": "{spk}{FF1F}\n「何だ？　石像が　しゃべっている？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What? The statue is talking?」\n",
+  "pages": "\"What? The statue is talking?\""
  },
  {
   "id": "298166",
@@ -2644,7 +2678,8 @@
    935
   ],
   "jp": "{spk}{FF28}\n「声じゃないわ　心の中に\n　意味が　飛び込んでくる！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's not a voice. The meaning\n is flying straight into my\n mind!?」\n",
+  "pages": "\"It's not a voice. The meaning is flying straight into my mind!?\""
  },
  {
   "id": "2981A6",
@@ -2652,7 +2687,8 @@
    936
   ],
   "jp": "{spk}黄道十二神　\n「われは　星々の流れに　したがって\n　この世界の　運命の流れを\n　つかさどる　十二の神の一人　なり」\n{next}\n「そなたに　わが力をたくす\n　われら　十二の神の代理人として\n　この世の　ながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who follow the course of the\n stars and govern the flow」\n{next}\n「of this world's fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set right the course of this」\n{next}\n「world.」\n",
+  "pages": "\"I am one of the twelve gods who follow the course of the stars and govern the flow of this world's fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set right the course of this world.\""
  },
  {
   "id": "298280",
@@ -2660,7 +2696,8 @@
    937
   ],
   "jp": "{spk}{FF1F}\n「あいにく　オレは\n　神なんてものを　信じない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Sorry. I don't believe in gods.」\n",
+  "pages": "\"Sorry. I don't believe in gods.\""
  },
  {
   "id": "2982B8",
@@ -2668,7 +2705,8 @@
    938
   ],
   "jp": "{spk}黄道十二神　\n「あらがう事は　できぬ\n　調和は　二つの力によってのみ\n　初めて行なわれる事を　知れ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Thou canst not resist. Know\n that harmony is achieved\n only through two powers.」\n",
+  "pages": "\"Thou canst not resist. Know that harmony is achieved only through two powers.\""
  },
  {
   "id": "298320",
@@ -2676,7 +2714,8 @@
    939
   ],
   "jp": "{spk}{FF1F}\n「二つの‥‥力？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Two... powers?」\n",
+  "pages": "\"Two... powers?\""
  },
  {
   "id": "29833A",
@@ -2684,7 +2723,8 @@
    940
   ],
   "jp": "{spk}黄道十二神　\n「なんじは　世界にちらばりし\n　十二神の像を　探し出し\n　その全ての力を　束ねるのだ」\n{next}\n「さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Seek out the statues of the\n twelve gods scattered\n across the world and bind all」\n{next}\n「their power together.」\n{next}\n「Then shall we grant thee\n true power...」\n",
+  "pages": "\"Seek out the statues of the twelve gods scattered across the world and bind all their power together.\" || \"Then shall we grant thee true power...\""
  },
  {
   "id": "2983EC",
@@ -2692,7 +2732,8 @@
    941
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　ここにも　黄道十二神の像が！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! There's a\n statue of the Zodiac Gods\n here too!」\n",
+  "pages": "\"Look, {hero}! There's a statue of the Zodiac Gods here too!\""
  },
  {
   "id": "29842C",
@@ -2700,7 +2741,8 @@
    942
   ],
   "jp": "{spk}黄道十二神　\n「なんじを　神の代理人と　みとめる」\n{next}\n「十二の指輪を　一つに束ねよ\n　さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n{next}\n「今　なんじが持ちし　指輪は‥‥」\n{next}\n{FF2F}　アレスの指輪\n{next}\n{FF2F}　ヴィナスの指輪\n{next}\n{FF2F}　ヘルメスの指輪\n{next}\n{FF2F}　セレネの指輪\n{next}\n{FF2F}　アポロンの指輪\n{next}\n{FF2F}　マーキュリーの指輪\n{next}\n{FF2F}　アフロディーテの指輪\n{next}\n{FF2F}　プルートゥの指輪\n{next}\n{FF2F}　ゼウスの指輪\n{next}\n{FF2F}　クロノスの指輪\n{next}\n{FF2F}　ウラヌスの指輪\n{next}\n{FF2F}　ポセイドンの指輪\n{next}\n「いまだ　残る　指輪は‥‥」\n{next}\n{FF30}　アレスの指輪\n{next}\n{FF30}　ヴィナスの指輪\n{next}\n{FF30}　ヘルメスの指輪\n{next}\n{FF30}　セレネの指輪\n{next}\n{FF30}　アポロンの指輪\n{next}\n{FF30}　マーキュリーの指輪\n{next}\n{FF30}　アフロディーテの指輪\n{next}\n{FF30}　プルートゥの指輪\n{next}\n{FF30}　ゼウスの指輪\n{next}\n{FF30}　クロノスの指輪\n{next}\n{FF30}　ウラヌスの指輪\n{next}\n{FF30}　ポセイドンの指輪\n{next}\n「是正せよ　わが力を束ね\n　この世のながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「We acknowledge thee as the\n agent of the gods.」\n{next}\n「Bind the twelve rings into\n one. Then shall we grant\n thee true power...」\n{next}\n「The rings thou now holdest\n are...」\n{next}\n{FF2F}{FF2F}Ares Ring\n{next}\n{FF2F}{FF2F}Venus Ring\n{next}\n{FF2F}{FF2F}Hermes Ring\n{next}\n{FF2F}{FF2F}Selene Ring\n{next}\n{FF2F}{FF2F}Apollo Ring\n{next}\n{FF2F}{FF2F}Mercury Ring\n{next}\n{FF2F}{FF2F}Aphrodite Ring\n{next}\n{FF2F}{FF2F}Pluto Ring\n{next}\n{FF2F}{FF2F}Zeus Ring\n{next}\n{FF2F}{FF2F}Cronus Ring\n{next}\n{FF2F}{FF2F}Uranus Ring\n{next}\n{FF2F}{FF2F}Poseidon Ring\n{next}\n「The rings yet remaining are...」\n{next}\n{FF30}{FF30}Ares Ring\n{next}\n{FF30}{FF30}Venus Ring\n{next}\n{FF30}{FF30}Hermes Ring\n{next}\n{FF30}{FF30}Selene Ring\n{next}\n{FF30}{FF30}Apollo Ring\n{next}\n{FF30}{FF30}Mercury Ring\n{next}\n{FF30}{FF30}Aphrodite Ring\n{next}\n{FF30}{FF30}Pluto Ring\n{next}\n{FF30}{FF30}Zeus Ring\n{next}\n{FF30}{FF30}Cronus Ring\n{next}\n{FF30}{FF30}Uranus Ring\n{next}\n{FF30}{FF30}Poseidon Ring\n{next}\n「Set it right. Bind my power\n together, and set right the\n course of this world.」\n",
+  "pages": "\"We acknowledge thee as the agent of the gods.\" || \"Bind the twelve rings into one. Then shall we grant thee true power...\" || \"The rings thou now holdest are...\" || {FF2F}Ares Ring || {FF2F}Venus Ring || {FF2F}Hermes Ring || {FF2F}Selene Ring || {FF2F}Apollo Ring || {FF2F}Mercury Ring || {FF2F}Aphrodite Ring || {FF2F}Pluto Ring || {FF2F}Zeus Ring || {FF2F}Cronus Ring || {FF2F}Uranus Ring || {FF2F}Poseidon Ring || \"The rings yet remaining are...\" || {FF30}Ares Ring || {FF30}Venus Ring || {FF30}Hermes Ring || {FF30}Selene Ring || {FF30}Apollo Ring || {FF30}Mercury Ring || {FF30}Aphrodite Ring || {FF30}Pluto Ring || {FF30}Zeus Ring || {FF30}Cronus Ring || {FF30}Uranus Ring || {FF30}Poseidon Ring || \"Set it right. Bind my power together, and set right the course of this world.\""
  },
  {
   "id": "2987A2",
@@ -2708,7 +2750,8 @@
    943
   ],
   "jp": "「ここには　小さな村落が　あった」\n{next}\n「だが　この荒れようは　どうだ‥‥\n　恐らくは　戦場に　なったのだろう\n　今では　ただの　ゴーストタウンだ」\n{next}\n「エウロペアの地を　つつむ戦雲は\n　大きな　つなみとなって\n　あらゆる物を　のみ込んでいく‥‥」\n",
-  "en": ""
+  "en": "「There was a small village\n here once.」\n{next}\n「But look at the ruin of it... It\n must have become a\n battlefield. Now it's nothing」\n{next}\n「but a ghost town.」\n{next}\n「The war clouds covering the\n land of Europea have become\n a great tidal wave,」\n{next}\n「swallowing everything...」\n",
+  "pages": "\"There was a small village here once.\" || \"But look at the ruin of it... It must have become a battlefield. Now it's nothing but a ghost town.\" || \"The war clouds covering the land of Europea have become a great tidal wave, swallowing everything...\""
  },
  {
   "id": "29889E",
@@ -2716,7 +2759,8 @@
    944
   ],
   "jp": "「騎士として」\n",
-  "en": ""
+  "en": "「As a Knight」\n",
+  "pages": "\"As a Knight\""
  },
  {
   "id": "2988AE",
@@ -2724,7 +2768,8 @@
    945
   ],
   "jp": "{spk}{FF28}\n「ひどい　ありさまね‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「How awful...」\n",
+  "pages": "\"How awful...\""
  },
  {
   "id": "2988D0",
@@ -2732,7 +2777,8 @@
    946
   ],
   "jp": "{spk}{FF1F}\n「このあたりの　小国は　連邦に\n　最後の最後まで　抵抗した\n　この村も　戦場に　なったんだろう」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The small countries around\n here resisted the Federation\n to the very last. This village」\n{next}\n「must have become a\n battlefield too.」\n",
+  "pages": "\"The small countries around here resisted the Federation to the very last. This village must have become a battlefield too.\""
  },
  {
   "id": "298938",
@@ -2740,7 +2786,8 @@
    947
   ],
   "jp": "{spk}盗賊　　　　\n「おおっと！　そこの　お前ら！\n　命だけは助けてやる！\n　身ぐるみ　おいてきやがれ！」\n",
-  "en": ""
+  "en": "{spk}盗賊　　　　\n「Whoa there! You lot! We'll let\n you live! Just hand over\n everything you've got!」\n",
+  "pages": "\"Whoa there! You lot! We'll let you live! Just hand over everything you've got!\""
  },
  {
   "id": "2989A0",
@@ -2748,7 +2795,8 @@
    948
   ],
   "jp": "{spk}{FF1F}\n「盗賊どもか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Bandits...」\n",
+  "pages": "\"Bandits...\""
  },
  {
   "id": "2989BA",
@@ -2756,7 +2804,8 @@
    949
   ],
   "jp": "{spk}{FF28}\n「話してわかる　相手じゃないし\n　やるしか　なさそうね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「They're not the type you can\n talk to. Looks like we'll have\n to fight!」\n",
+  "pages": "\"They're not the type you can talk to. Looks like we'll have to fight!\""
  },
  {
   "id": "2989FC",
@@ -2764,7 +2813,8 @@
    950
   ],
   "jp": "{spk}盗賊のボス　\n「わ　悪かった！　すまない！\n　どうか　命だけは　助けてくれ！」\n{next}\n「な？　た　頼むよ！　子どもも\n　にょうぼうも　いるんだ！\n　おねがいだ！　見逃してくれよ！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「I-I was wrong! I'm sorry!\n Please, just spare my life!」\n{next}\n「See? P-please! I've got kids,\n and a wife too! I'm begging\n you! Let me go!」\n",
+  "pages": "\"I-I was wrong! I'm sorry! Please, just spare my life!\" || \"See? P-please! I've got kids, and a wife too! I'm begging you! Let me go!\""
  },
  {
   "id": "298AB2",
@@ -2772,7 +2822,8 @@
    951
   ],
   "jp": "{spk}盗賊のボス　\n「す　すまねえ！\n　本当に　すまねえなぁ！」\n{next}\n「この村の　家に隠した　お宝は\n　みんな　アンタに　やるよ！\n　それで‥‥連邦を　倒してくれ！」\n{next}\n「それじゃあな　剣士さん！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Th-thank you! Thank you so\n much!」\n{next}\n「The treasure we hid in the\n houses of this village... It's\n all yours! And with it... beat」\n{next}\n「the Federation!」\n{next}\n「So long, swordsman!」\n",
+  "pages": "\"Th-thank you! Thank you so much!\" || \"The treasure we hid in the houses of this village... It's all yours! And with it... beat the Federation!\" || \"So long, swordsman!\""
  },
  {
   "id": "298B78",
@@ -2780,7 +2831,8 @@
    952
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥あいつら　盗賊よ？\n　人の物を　盗む連中なのよ？\n　何で　見逃したり　したの！？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...They're bandits, you know?\n People who steal other\n people's things, you know?」\n{next}\n「Why did you let them go!?」\n",
+  "pages": "\"...They're bandits, you know? People who steal other people's things, you know? Why did you let them go!?\""
  },
  {
   "id": "298BE2",
@@ -2788,7 +2840,8 @@
    953
   ],
   "jp": "{spk}{FF1F}\n「単なる　気まぐれだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Just a whim.」\n",
+  "pages": "\"Just a whim.\""
  },
  {
   "id": "298C00",
@@ -2796,7 +2849,8 @@
    954
   ],
   "jp": "{spk}{FF31}　　　　　\n「ずいぶん　えらいのね\n　戦争だから　あの人たちに\n　同情した‥‥っていうわけ？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「How very noble of you.\n Because it's war, you felt\n sorry for those people... is」\n{next}\n「that it?」\n",
+  "pages": "\"How very noble of you. Because it's war, you felt sorry for those people... is that it?\""
  },
  {
   "id": "298C64",
@@ -2812,7 +2866,8 @@
    956
   ],
   "jp": "{spk}{FF28}\n「ねぇ　{hero}‥‥\n　あの盗賊たち　もともと\n　この村の　住人みたいだね」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Hey, {hero}... Those bandits\n used to live in this village,\n didn't they?」\n",
+  "pages": "\"Hey, {hero}... Those bandits used to live in this village, didn't they?\""
  },
  {
   "id": "298CD0",
@@ -2820,7 +2875,8 @@
    957
   ],
   "jp": "{spk}{FF1F}\n「サカナをとるための　船をやかれ\n　はたけを　踏みにじられれば\n　村人は　生活する術を　失う」\n{next}\n「連中も　生きるためには\n　何だってしなきゃ　ならんのさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Burn the boats they fish\n from, trample their fields,\n and villagers lose their」\n{next}\n「means of living.」\n{next}\n「If they want to live, they\n have to do whatever it\n takes.」\n",
+  "pages": "\"Burn the boats they fish from, trample their fields, and villagers lose their means of living.\" || \"If they want to live, they have to do whatever it takes.\""
  },
  {
   "id": "298D76",
@@ -2836,7 +2892,8 @@
    959
   ],
   "jp": "{spk}{FF28}\n「行きましょう　{hero}\n　ここは　何だか　寒いわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Let's go, {hero}. It feels\n kind of cold here.」\n",
+  "pages": "\"Let's go, {hero}. It feels kind of cold here.\""
  },
  {
   "id": "298DD4",
@@ -2844,7 +2901,8 @@
    960
   ],
   "jp": "{spk}盗賊のボス　\n「‥‥そうだろうな\n　いいさ　好きにするがいい」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「...I suppose so. Fine. Do as\n you like.」\n",
+  "pages": "\"...I suppose so. Fine. Do as you like.\""
  },
  {
   "id": "298E16",
@@ -2852,7 +2910,8 @@
    961
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥殺したのね」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...You killed them.」\n",
+  "pages": "\"...You killed them.\""
  },
  {
   "id": "298E3A",
@@ -2860,7 +2919,8 @@
    962
   ],
   "jp": "{spk}{FF1F}\n「‥‥ああ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Yeah.」\n",
+  "pages": "\"...Yeah.\""
  },
  {
   "id": "298E4E",
@@ -2868,7 +2928,8 @@
    963
   ],
   "jp": "{spk}{FF31}　　　　　\n「‥‥そう‥‥そうよね‥‥\n　相手は　盗賊だもの\n　殺されて　当然‥‥だものね」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「...I see... Of course... They\n were bandits. They deserved\n to be killed... didn't they.」\n",
+  "pages": "\"...I see... Of course... They were bandits. They deserved to be killed... didn't they.\""
  },
  {
   "id": "298EB0",
@@ -2876,7 +2937,8 @@
    964
   ],
   "jp": "{spk}{FF28}\n「行きましょう　{hero}\n　ここは　何だか　寒いわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Let's go, {hero}. It feels\n kind of cold here.」\n",
+  "pages": "\"Let's go, {hero}. It feels kind of cold here.\""
  },
  {
   "id": "298EF0",
@@ -2884,7 +2946,8 @@
    965
   ],
   "jp": "「騎士は　つねに正しき義を持ち\n　自らの信念と　剣にかけて\n　弱き者を　助けるのだという」\n{next}\n「果たして　今の　オレに\n　騎士としての　資格があるのか」\n{next}\n「どっちにしろ　つまらぬ事だ\n　その問いに　こたえる者は\n　誰一人　いるはずは　ないのだから」\n",
-  "en": ""
+  "en": "「They say a knight always\n holds to what is right, and\n by his beliefs and his sword,」\n{next}\n「helps the weak.」\n{next}\n「Am I still fit to be called a\n knight?」\n{next}\n「Either way, it doesn't matter.\n There's no one who could\n answer that question」\n{next}\n「anyway.」\n",
+  "pages": "\"They say a knight always holds to what is right, and by his beliefs and his sword, helps the weak.\" || \"Am I still fit to be called a knight?\" || \"Either way, it doesn't matter. There's no one who could answer that question anyway.\""
  },
  {
   "id": "298FF0",
@@ -2892,7 +2955,8 @@
    966
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　お宝が　いっぱいよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! There's loads\n of treasure!」\n",
+  "pages": "\"Look, {hero}! There's loads of treasure!\""
  },
  {
   "id": "299028",
@@ -2900,7 +2964,8 @@
    967
   ],
   "jp": "{spk}{FF28}\n「家の中は　もぬけのカラだわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The house is completely\n empty.」\n",
+  "pages": "\"The house is completely empty.\""
  },
  {
   "id": "29904E",
@@ -2908,7 +2973,8 @@
    968
   ],
   "jp": "「連邦竜騎士団は　連邦空軍のかなめ\n　その翼を見た者は　誰だろうと\n　生きのびる事は　かなわぬという」\n{next}\n「それを　つぶす事は　反乱軍の\n　一つの　もくひょうだった‥‥」\n{next}\n「そして　このスパニア高原は\n　連邦の奥ふかくへ　進軍するためにも\n　さけては通れぬ　地でもあった」\n{next}\n「なりゆきで　リーダーとなった\n　オレも　そろそろ\n　ハラをくくる時が　きたらしい」\n",
-  "en": ""
+  "en": "「The Federation Dragon\n Knights are the core of the\n Federation air force. They」\n{next}\n「say no one who sees their\n wings lives to tell of it.」\n{next}\n「Crushing them was one of\n the rebels' goals...」\n{next}\n「And this Spania Plateau was\n ground we couldn't avoid if\n we were to march deep into」\n{next}\n「the Federation.」\n{next}\n「I became the leader by force\n of circumstance. It seems\n the time has come to steel」\n{next}\n「myself for it.」\n",
+  "pages": "\"The Federation Dragon Knights are the core of the Federation air force. They say no one who sees their wings lives to tell of it.\" || \"Crushing them was one of the rebels' goals...\" || \"And this Spania Plateau was ground we couldn't avoid if we were to march deep into the Federation.\" || \"I became the leader by force of circumstance. It seems the time has come to steel myself for it.\""
  },
  {
   "id": "2991C0",
@@ -2916,7 +2982,8 @@
    969
   ],
   "jp": "「連邦竜騎士団」\n",
-  "en": ""
+  "en": "「Federation Dragon Knights」\n",
+  "pages": "\"Federation Dragon Knights\""
  },
  {
   "id": "2991D2",
@@ -2924,7 +2991,8 @@
    970
   ],
   "jp": "{spk}{FF28}\n「空を飛ぶ　モンスターが\n　あんなに　集まっているわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「So many flying monsters\n gathered over there!」\n",
+  "pages": "\"So many flying monsters gathered over there!\""
  },
  {
   "id": "299212",
@@ -2932,7 +3000,8 @@
    971
   ],
   "jp": "{spk}マウザー　　\n「空を飛ぶ　ドラゴンだと！？\n　相手にとって　不足はないな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Flying dragons, you say!?\n Now there's a worthy foe!」\n",
+  "pages": "\"Flying dragons, you say!? Now there's a worthy foe!\""
  },
  {
   "id": "299262",
@@ -2940,7 +3009,8 @@
    972
   ],
   "jp": "{spk}シュタイア　\n「連邦竜騎士団！　ロムルスの都を\n　真っ先に　空爆したヤツらだ！\n　このオレの手で　必ず　ほうむる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「The Federation Dragon\n Knights! The first ones to\n bomb the city of Romulus」\n{next}\n「from the air! I'll bury them\n with my own hands!」\n",
+  "pages": "\"The Federation Dragon Knights! The first ones to bomb the city of Romulus from the air! I'll bury them with my own hands!\""
  },
  {
   "id": "2992DA",
@@ -2948,7 +3018,8 @@
    973
   ],
   "jp": "{spk}ロジャー　　\n「ついに　あの空の騎士団と\n　戦う日が　きたのか‥‥」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「So the day has finally come\n to fight those knights of the\n sky...」\n",
+  "pages": "\"So the day has finally come to fight those knights of the sky...\""
  },
  {
   "id": "299322",
@@ -2956,7 +3027,8 @@
    974
   ],
   "jp": "{spk}ロブン　　　\n「なるほど　航空戦力の　増強は\n　これからの　戦争にとって\n　重要なカギに　なりそうですな」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「I see. Building up air power\n looks to be a key part of the\n wars to come.」\n",
+  "pages": "\"I see. Building up air power looks to be a key part of the wars to come.\""
  },
  {
   "id": "299390",
@@ -2964,7 +3036,8 @@
    975
   ],
   "jp": "{spk}{FF31}　　　　　\n「どうするのよ　{hero}！？\n　こんな地形じゃ　空を飛べる\n　敵の方が　有利なんじゃない？」\n",
-  "en": ""
+  "en": "{spk}{FF31}　　　　　\n「What do we do, {hero}!? On\n ground like this, don't the\n enemies who can fly have」\n{next}\n「the edge?」\n",
+  "pages": "\"What do we do, {hero}!? On ground like this, don't the enemies who can fly have the edge?\""
  },
  {
   "id": "299402",
@@ -2972,7 +3045,8 @@
    976
   ],
   "jp": "{spk}{FF1F}\n「有利か不利か　そいつは\n　オレたちが　決める事だ‥‥」\n{next}\n「行くぞ！\n　遠距離戦を　主体にせよ！\n　魔法と　技を　フルに使え！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Edge or no edge, that's for\n us to decide...」\n{next}\n「Let's go! Fight them at\n range! Use every spell and\n skill you've got!」\n",
+  "pages": "\"Edge or no edge, that's for us to decide...\" || \"Let's go! Fight them at range! Use every spell and skill you've got!\""
  },
  {
   "id": "29948E",
@@ -2980,7 +3054,8 @@
    977
   ],
   "jp": "{spk}{FF28}\n「{hero}　敵の増援！\n　まだまだ　やってくるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, enemy\n reinforcements! And more\n are still coming!」\n",
+  "pages": "\"{hero}, enemy reinforcements! And more are still coming!\""
  },
  {
   "id": "2994CE",
@@ -2988,7 +3063,8 @@
    978
   ],
   "jp": "{spk}ロジャー　　\n「さすがは　連邦空軍の主力！\n　まさに　空を飛ぶ　騎士の軍団！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「That's the Federation air\n force's main strength for\n you! A real army of flying」\n{next}\n「knights!」\n",
+  "pages": "\"That's the Federation air force's main strength for you! A real army of flying knights!\""
  },
  {
   "id": "299520",
@@ -2996,7 +3072,8 @@
    979
   ],
   "jp": "{spk}ミランダ　　\n「皆さん　くじけては　いけません\n　われらには　神の守りが　あります！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「Everyone, you must not lose\n heart. We have the\n protection of the gods!」\n",
+  "pages": "\"Everyone, you must not lose heart. We have the protection of the gods!\""
  },
  {
   "id": "29957A",
@@ -3004,7 +3081,8 @@
    980
   ],
   "jp": "{spk}ロジャー　　\n「‥‥そうだな　こんなヤツらを\n　倒せないようじゃ　強大な連邦を\n　倒す事など　夢のまた夢だもんな！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...You're right. If we can't\n beat guys like these, beating\n the mighty Federation is a」\n{next}\n「dream within a dream!」\n",
+  "pages": "\"...You're right. If we can't beat guys like these, beating the mighty Federation is a dream within a dream!\""
  },
  {
   "id": "2995F2",
@@ -3012,7 +3090,8 @@
    981
   ],
   "jp": "{spk}アテナ　　　\n「そのとおり！　戦士ならば\n　勝利に向かって　突き進むのみ！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Exactly! A warrior has only\n to charge on toward victory!」\n",
+  "pages": "\"Exactly! A warrior has only to charge on toward victory!\""
  },
  {
   "id": "299642",
@@ -3020,7 +3099,8 @@
    982
   ],
   "jp": "{spk}シュタイア　\n「さあ　くるならこい！\n　わがロムルスの　そして妹のかたき！\n　この命が　つきるまで　戦ってやる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Come on, then, if you're\n coming! For my Romulus, and\n to avenge my sister! I'll fight」\n{next}\n「until this life runs out!」\n",
+  "pages": "\"Come on, then, if you're coming! For my Romulus, and to avenge my sister! I'll fight until this life runs out!\""
  },
  {
   "id": "2996B8",
@@ -3028,7 +3108,8 @@
    983
   ],
   "jp": "{spk}空将　　　　\n「‥‥し‥‥信じられん！\n　地をはう　ムシけら　どもに\n　わが連邦空軍の　エースたちが！」\n{next}\n「し°ん°じ°ら°れ°ん！」\n",
-  "en": ""
+  "en": "{spk}空将　　　　\n「...I... I can't believe it! Crawling\n insects... beat the aces of\n our Federation air force!」\n{next}\n「I... can't... be... lieve... it!」\n",
+  "pages": "\"...I... I can't believe it! Crawling insects... beat the aces of our Federation air force!\" || \"I... can't... be... lieve... it!\""
  },
  {
   "id": "299746",
@@ -3036,7 +3117,8 @@
    984
   ],
   "jp": "{spk}竜騎士団　　\n「われらの‥‥栄光が‥‥\n　‥‥栄光の‥‥翼がァァッ！？」\n",
-  "en": ""
+  "en": "{spk}竜騎士団　　\n「Our... glory... Our... wings... of\n glory...!?」\n",
+  "pages": "\"Our... glory... Our... wings... of glory...!?\""
  },
  {
   "id": "299792",
@@ -3044,7 +3126,8 @@
    985
   ],
   "jp": "「オレたち　反乱軍の手によって\n　竜騎士団は　その翼をもがれた」\n{next}\n「それにしても‥‥\n　オレたち‥‥反乱軍‥‥か」\n{next}\n「気まぐれも　また　運命ならば\n　今は　その運命に\n　したがうのも　いいかも知れん」\n{next}\n「オレは　ふと\n　そんな事を　思った‥‥」\n",
-  "en": ""
+  "en": "「By our hands, the hands of\n the rebels, the Dragon\n Knights had their wings torn」\n{next}\n「off.」\n{next}\n「Even so... We... the rebels...\n huh.」\n{next}\n「If a whim is fate too, then\n maybe it's fine to follow that\n fate for now.」\n{next}\n「That's what I suddenly found\n myself thinking...」\n",
+  "pages": "\"By our hands, the hands of the rebels, the Dragon Knights had their wings torn off.\" || \"Even so... We... the rebels... huh.\" || \"If a whim is fate too, then maybe it's fine to follow that fate for now.\" || \"That's what I suddenly found myself thinking...\""
  },
  {
   "id": "299894",
@@ -3052,7 +3135,8 @@
    986
   ],
   "jp": "{spk}{FF28}\n「{hero}　誰かいるわ？\n　あの身なりだと　たびの人か\n　それとも　ぎんゆうしじん？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, someone's there?\n Dressed like that, a\n traveller? Or maybe a」\n{next}\n「minstrel?」\n",
+  "pages": "\"{hero}, someone's there? Dressed like that, a traveller? Or maybe a minstrel?\""
  },
  {
   "id": "2998F6",
@@ -3060,7 +3144,8 @@
    987
   ],
   "jp": "{spk}{FF1F}\n「こいつは　信じられん\n　押さえこんでいるが\n　あの　すさまじい魔力は‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I can't believe this. He's\n holding it in, but that\n tremendous magic power...」\n",
+  "pages": "\"I can't believe this. He's holding it in, but that tremendous magic power...\""
  },
  {
   "id": "29994A",
@@ -3068,7 +3153,8 @@
    988
   ],
   "jp": "{spk}ロブン　　　\n「たしかに　この気は‥‥\n　まるで　鋭く　とぎすました\n　刀のような　キレ味ですな‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Indeed, this aura... It has an\n edge like a keenly honed\n blade...」\n",
+  "pages": "\"Indeed, this aura... It has an edge like a keenly honed blade...\""
  },
  {
   "id": "2999B4",
@@ -3076,7 +3162,8 @@
    989
   ],
   "jp": "{spk}ファウスト　\n「あなたがた　この私に\n　何か　ご用なのですか？」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Do you have some business\n with me?」\n",
+  "pages": "\"Do you have some business with me?\""
  },
  {
   "id": "2999F8",
@@ -3092,7 +3179,8 @@
    991
   ],
   "jp": "{spk}ファウスト　\n「あなたも　この私を\n　仲間にしたいのですね？」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「You, too, wish to make me\n your companion, then?」\n",
+  "pages": "\"You, too, wish to make me your companion, then?\""
  },
  {
   "id": "299A4A",
@@ -3100,7 +3188,8 @@
    992
   ],
   "jp": "{spk}ファウスト　\n「私は　自分の力を　恐れています\n　できれば　使いたくはない\n　どうか　お帰り下さい‥‥」\n{next}\n「それが　私を\n　悪しき運命から　逃れさせる\n　ゆいいつの　方法なのです‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I fear my own power. If I\n can, I would rather not use\n it. Please, go back...」\n{next}\n「That is the only way for me\n to escape an evil fate...」\n",
+  "pages": "\"I fear my own power. If I can, I would rather not use it. Please, go back...\" || \"That is the only way for me to escape an evil fate...\""
  },
  {
   "id": "299B0A",
@@ -3108,7 +3197,8 @@
    993
   ],
   "jp": "{spk}ファウスト　\n「そうですか　それなら\n　私を　どうか\n　一人に　しておいて下さい」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I see. In that case, please,\n leave me alone.」\n",
+  "pages": "\"I see. In that case, please, leave me alone.\""
  },
  {
   "id": "299B60",
@@ -3116,7 +3206,8 @@
    994
   ],
   "jp": "{spk}ファウスト　\n「言わずとも　わかります\n　あなたも　この私を\n　仲間にしたいのですね？」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「You need not say it. I\n understand. You, too, wish to\n make me your companion,」\n{next}\n「don't you?」\n",
+  "pages": "\"You need not say it. I understand. You, too, wish to make me your companion, don't you?\""
  },
  {
   "id": "299BBC",
@@ -3124,7 +3215,8 @@
    995
   ],
   "jp": "{spk}ファウスト　\n「私は　自分の力を　恐れています\n　できれば　使いたくはない‥‥」\n{next}\n「しかし　この地から　戦いを\n　無くすためならば　協力しましょう\n　あなたは　竪琴を持っていらっしゃる」\n{next}\n「音楽を　愛する者に\n　悪人はいません‥‥」\n{next}\n「では　私の質問に　お答え下さい\n　それによって　あなた方が\n　信用できるかを　見きわめます」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I fear my own power. If I\n can, I would rather not use\n it...」\n{next}\n「But if it is to rid this land of\n fighting, I will help. You carry\n a lyre.」\n{next}\n「No one who loves music is\n wicked...」\n{next}\n「Then please answer my\n questions. By them I will\n judge whether you can be」\n{next}\n「trusted.」\n",
+  "pages": "\"I fear my own power. If I can, I would rather not use it...\" || \"But if it is to rid this land of fighting, I will help. You carry a lyre.\" || \"No one who loves music is wicked...\" || \"Then please answer my questions. By them I will judge whether you can be trusted.\""
  },
  {
   "id": "299D14",
@@ -3132,7 +3224,8 @@
    2171
   ],
   "jp": "{spk}ファウスト　\n「あなたは　人の命を　どう考えますか？」\n{next}\n　あらゆる物より　重い\n　小さく　はかない物だ\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「What do you think of human\n life?」\n{next}\n　Heavier than anything\n　Small and fleeting\n{FF14:00C2}{end}\n",
+  "pages": "\"What do you think of human life?\" || Heavier than anything\\nSmall and fleeting"
  },
  {
   "id": "299D8A",
@@ -3140,7 +3233,8 @@
    2172
   ],
   "jp": "{spk}ファウスト　\n「善と悪は　いかに分けられますか？」\n{next}\n　立場の違い\n　信じる物の違い\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「How are good and evil\n divided?」\n{next}\n　Where you stand\n　What you believe in\n{FF14:00C2}{end}\n",
+  "pages": "\"How are good and evil divided?\" || Where you stand\\nWhat you believe in"
  },
  {
   "id": "299DEC",
@@ -3148,7 +3242,8 @@
    2173
   ],
   "jp": "{spk}ファウスト　\n「あなたにとっての　正義とは？」\n{next}\n　神のおしえに　そって生きる\n　自分の良心に　そって生きる\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「What is justice to you?」\n{next}\n　Living by the gods' teachings\n　Living by my own conscience\n{FF14:00C2}{end}\n",
+  "pages": "\"What is justice to you?\" || Living by the gods' teachings\\nLiving by my own conscience"
  },
  {
   "id": "299E66",
@@ -3156,7 +3251,8 @@
    2174
   ],
   "jp": "{spk}ファウスト　\n「苦しみは　人間にとって‥‥」\n{next}\n　生きるために　必要な物だ\n　できれば　ない方が　いい\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Suffering, for human beings,\n is...」\n{next}\n　Needed in order to live\n　Better avoided if possible\n{FF14:00C2}{end}\n",
+  "pages": "\"Suffering, for human beings, is...\" || Needed in order to live\\nBetter avoided if possible"
  },
  {
   "id": "299EDA",
@@ -3164,7 +3260,8 @@
    2175
   ],
   "jp": "{spk}ファウスト　\n「では　最後に‥‥」\n{next}\n「あなたは　運命を信じていますか？」\n{next}\n　信じている\n　信じていない\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「Then, lastly...」\n{next}\n「Do you believe in fate?」\n{next}\n　I do\n　I don't\n{FF14:00C2}{end}\n",
+  "pages": "\"Then, lastly...\" || \"Do you believe in fate?\" || I do\\nI don't"
  },
  {
   "id": "299F54",
@@ -3172,7 +3269,8 @@
    996
   ],
   "jp": "{spk}ファウスト　\n「よく　わかりました‥‥\n　あなたと　出会ったのも\n　私の　運命だったようですね」\n{next}\n「私の力　あなた方のために\n　使う事に　いたしましょう‥‥」\n{next}\n「私の名は　ファウスト\n　しかし　人は\n　超黒の魔導士‥‥とよびます」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I understand you well now...\n It seems meeting you was\n my fate, too.」\n{next}\n「I will use my power for your\n sake...」\n{next}\n「My name is Faust. But people\n call me... the Ultra-Black\n Sorcerer.」\n",
+  "pages": "\"I understand you well now... It seems meeting you was my fate, too.\" || \"I will use my power for your sake...\" || \"My name is Faust. But people call me... the Ultra-Black Sorcerer.\""
  },
  {
   "id": "29A046",
@@ -3180,7 +3278,8 @@
    997
   ],
   "jp": "{spk}ファウスト　\n「残念ですが　あなたとともに\n　行く事は　私の\n　運命では　ないようですね‥‥」\n{next}\n「どうか　お帰り下さい」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I am sorry, but it seems it is\n not my fate to go with you...」\n{next}\n「Please, go back.」\n",
+  "pages": "\"I am sorry, but it seems it is not my fate to go with you...\" || \"Please, go back.\""
  },
  {
   "id": "29A0C6",
@@ -3188,7 +3287,8 @@
    998
   ],
   "jp": "{spk}ファウスト　\n「そうですか　それなら\n　私を　どうか\n　一人に　しておいて下さい」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I see. In that case, please,\n leave me alone.」\n",
+  "pages": "\"I see. In that case, please, leave me alone.\""
  },
  {
   "id": "29A11C",
@@ -3196,7 +3296,8 @@
    999
   ],
   "jp": "{spk}ファウスト　\n「私は　自分の　悪しき運命から\n　逃れたいのです\n　どうか　お帰り下さい‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「I wish to escape my own evil\n fate. Please, go back...」\n",
+  "pages": "\"I wish to escape my own evil fate. Please, go back...\""
  },
  {
   "id": "29A17C",
@@ -3204,7 +3305,8 @@
    1767
   ],
   "jp": "「ラインメタル王国の　西方\n　海をへだてた　ハイランド地方」\n{next}\n「そこは　数多くの　モンスターや\n　ばん族が　出没し　長らく\n　誰も　足をふみ入れていない場所だ」\n{next}\n「四人の賢者に会った　オレ達は\n　この辺境の地を　訪れた‥‥」\n",
-  "en": ""
+  "en": "「West of the Kingdom of\n Rheinmetall, across the sea,\n lies the Highland region.」\n{next}\n「Countless monsters and\n barbarians roam it, and for a\n long time no one has set」\n{next}\n「foot there.」\n{next}\n「Having met the four sages,\n we came to this remote\n land...」\n",
+  "pages": "\"West of the Kingdom of Rheinmetall, across the sea, lies the Highland region.\" || \"Countless monsters and barbarians roam it, and for a long time no one has set foot there.\" || \"Having met the four sages, we came to this remote land...\""
  },
  {
   "id": "29A266",
@@ -3212,7 +3314,8 @@
    1768
   ],
   "jp": "「影との戦い」\n",
-  "en": ""
+  "en": "「Battle with the Shadow」\n",
+  "pages": "\"Battle with the Shadow\""
  },
  {
   "id": "29A276",
@@ -3220,7 +3323,8 @@
    1769
   ],
   "jp": "{spk}{FF28}\n「ずーっと　向こうに\n　小屋があるわ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「There's a hut way, way over\n there, {hero}!」\n",
+  "pages": "\"There's a hut way, way over there, {hero}!\""
  },
  {
   "id": "29A2B4",
@@ -3228,7 +3332,8 @@
    1770
   ],
   "jp": "{spk}{FF1F}\n「よし‥‥行ってみよう」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right... Let's go take a look.」\n",
+  "pages": "\"Right... Let's go take a look.\""
  },
  {
   "id": "29A2D4",
@@ -3236,7 +3341,8 @@
    1771
   ],
   "jp": "{spk}大賢者　　　\n「長らく　待ちわびたぞ　神の代理人よ\n　いや　やはり　そなたの　本らいの名\n　{hero}　と呼ぶべきか」\n{next}\n「この地を駆け抜け　よくぞ\n　黄道十二神の指輪を　全て集めた」\n{next}\n「‥‥しかし　{hero}よ　私は\n　太古からの　定めにのっとり　そなたに\n　最後の試錬を　与えねば　ならない」\n{next}\n「これを　打ち破れずして\n　そなたに　真の代理人としての\n　資格は　ない事を　知るがいい‥‥」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Long have I awaited thee,\n agent of the gods. Nay,\n perhaps I should call thee by」\n{next}\n「thy true name, {hero}.」\n{next}\n「Thou hast crossed this land\n and gathered every ring of\n the Zodiac Gods. Well done.」\n{next}\n「...But, {hero}, by the law\n handed down from ancient\n times, I must give thee one」\n{next}\n「final trial.」\n{next}\n「Know that unless thou\n overcomest it, thou art not\n fit to be the true agent...」\n",
+  "pages": "\"Long have I awaited thee, agent of the gods. Nay, perhaps I should call thee by thy true name, {hero}.\" || \"Thou hast crossed this land and gathered every ring of the Zodiac Gods. Well done.\" || \"...But, {hero}, by the law handed down from ancient times, I must give thee one final trial.\" || \"Know that unless thou overcomest it, thou art not fit to be the true agent...\""
  },
  {
   "id": "29A46E",
@@ -3244,7 +3350,8 @@
    1772
   ],
   "jp": "{spk}{FF1F}\n「最後の‥‥試錬？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「A final... trial?」\n",
+  "pages": "\"A final... trial?\""
  },
  {
   "id": "29A48A",
@@ -3252,7 +3359,8 @@
    1773
   ],
   "jp": "{spk}大賢者　　　\n「いかにも！」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Indeed!」\n",
+  "pages": "\"Indeed!\""
  },
  {
   "id": "29A4AA",
@@ -3260,7 +3368,8 @@
    1774
   ],
   "jp": "{spk}{FF1F}\n「これは‥‥！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What's this...!?」\n",
+  "pages": "\"What's this...!?\""
  },
  {
   "id": "29A4C4",
@@ -3268,7 +3377,8 @@
    1775
   ],
   "jp": "{spk}{FF28}\n「‥‥そ　そんな！？\n　もう一人の　{hero}が！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...N-no way!? Another\n {hero}!?」\n",
+  "pages": "\"...N-no way!? Another {hero}!?\""
  },
  {
   "id": "29A504",
@@ -3276,7 +3386,8 @@
    1776
   ],
   "jp": "{spk}大賢者　　　\n「自分自身にすら　勝てぬ者に\n　神の力を　使う資格は　ない」\n{next}\n「戦うがいい　{hero}\n　そして　打ち勝つのだ\n　自分自身の　影との戦いに！」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「One who cannot defeat even\n himself is not fit to wield the\n power of the gods.」\n{next}\n「Fight, {hero}. And triumph\n in the battle with thine own\n shadow!」\n",
+  "pages": "\"One who cannot defeat even himself is not fit to wield the power of the gods.\" || \"Fight, {hero}. And triumph in the battle with thine own shadow!\""
  },
  {
   "id": "29A5AA",
@@ -3284,7 +3395,8 @@
    1777
   ],
   "jp": "{spk}{FF28}\n「負けないでね　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Don't lose, {hero}!」\n",
+  "pages": "\"Don't lose, {hero}!\""
  },
  {
   "id": "29A5D2",
@@ -3292,7 +3404,8 @@
    1778
   ],
   "jp": "{spk}{FF1F}\n「まさか　自分自身と\n　戦う事に　なるとはな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Never thought I'd end up\n fighting myself...」\n",
+  "pages": "\"Never thought I'd end up fighting myself...\""
  },
  {
   "id": "29A60C",
@@ -3300,7 +3413,8 @@
    1779
   ],
   "jp": "{spk}{FF1F}\n「‥‥くッ！\n　自分に　負けるとは」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Ngh! Beaten by myself...」\n",
+  "pages": "\"...Ngh! Beaten by myself...\""
  },
  {
   "id": "29A638",
@@ -3308,7 +3422,8 @@
    1780
   ],
   "jp": "{spk}大賢者　　　\n「自分自身に　負けるのは\n　おのれの　心の中に\n　迷いがある‥‥という事だ」\n{next}\n「その迷いを　断ち切るがよい\n　自分の　剣を　腕を　心を\n　見極め　そして　信じるのだ」\n{next}\n「自分を　知る事は　自分に\n　打ち勝つ事と　知るがよい」\n{next}\n「今いちど　戦うがよい\n　そして　神の代理人の　あかしを\n　自分の手で　つかみとるのだ」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「To lose to oneself means\n there is doubt within one's\n own heart.」\n{next}\n「Cut that doubt away. Thy\n sword, thine arm, thy heart:\n see them clearly, and trust」\n{next}\n「them.」\n{next}\n「Know that to know thyself is\n to overcome thyself.」\n{next}\n「Fight once more. And seize\n the proof of the agent of\n the gods with thine own」\n{next}\n「hand.」\n",
+  "pages": "\"To lose to oneself means there is doubt within one's own heart.\" || \"Cut that doubt away. Thy sword, thine arm, thy heart: see them clearly, and trust them.\" || \"Know that to know thyself is to overcome thyself.\" || \"Fight once more. And seize the proof of the agent of the gods with thine own hand.\""
  },
  {
   "id": "29A790",
@@ -3316,7 +3431,8 @@
    1781
   ],
   "jp": "{spk}{FF1F}\n「今までで　いちばん\n　イヤな戦いだったな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That was the nastiest fight\n I've had yet...」\n",
+  "pages": "\"That was the nastiest fight I've had yet...\""
  },
  {
   "id": "29A7C8",
@@ -3324,7 +3440,8 @@
    1782
   ],
   "jp": "{spk}大賢者　　　\n「よくぞ　最後の試錬に　打ち勝った\n　そなたこそ　まこと\n　神の代理人に　ふさわしき者なり」\n{next}\n「黄道十二神の　代理人として\n　今こそ　報奨の剣\n　バウンティ°ソードを　さずけん」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Thou hast overcome the final\n trial. Thou art truly worthy\n to be the agent of the gods.」\n{next}\n「As agent of the Zodiac Gods,\n I now bestow upon thee the\n Sword of Bounty, the Bounty」\n{next}\n「Sword.」\n",
+  "pages": "\"Thou hast overcome the final trial. Thou art truly worthy to be the agent of the gods.\" || \"As agent of the Zodiac Gods, I now bestow upon thee the Sword of Bounty, the Bounty Sword.\""
  },
  {
   "id": "29A890",
@@ -3332,7 +3449,8 @@
    1783
   ],
   "jp": "{spk}{FF1F}\n「こいつが　神の報奨の剣\n　バウンティ°ソード‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So this is the gods' Sword of\n Bounty, the Bounty Sword...」\n",
+  "pages": "\"So this is the gods' Sword of Bounty, the Bounty Sword...\""
  },
  {
   "id": "29A8CC",
@@ -3340,7 +3458,8 @@
    1784
   ],
   "jp": "{spk}大賢者　　　\n「いかにも‥‥」\n{next}\n「はるかな　太古の世　邪悪な\n　神々が作りし　やみの十二の力に\n　対抗するために　星々の神々‥‥」\n{next}\n「すなわち　黄道十二神が　作りし\n　星々の力を　集めた　光の武具」\n{next}\n「それこそが　お前が手にする\n　バウンティ°ソード　なのだ‥‥」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Indeed...」\n{next}\n「In the distant, ancient age,\n to oppose the twelve\n powers of darkness made by」\n{next}\n「the evil gods, the gods of\n the stars...」\n{next}\n「...that is, the Zodiac Gods,\n made arms of light gathering\n the power of the stars.」\n{next}\n「That is the Bounty Sword\n thou now holdest...」\n",
+  "pages": "\"Indeed...\" || \"In the distant, ancient age, to oppose the twelve powers of darkness made by the evil gods, the gods of the stars...\" || \"...that is, the Zodiac Gods, made arms of light gathering the power of the stars.\" || \"That is the Bounty Sword thou now holdest...\""
  },
  {
   "id": "29A9E4",
@@ -3348,7 +3467,8 @@
    1785
   ],
   "jp": "{spk}{FF1F}\n「黄道十二神の　作りし\n　光の武具‥‥か‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Arms of light made by the\n Zodiac Gods... huh...」\n",
+  "pages": "\"Arms of light made by the Zodiac Gods... huh...\""
  },
  {
   "id": "29AA1A",
@@ -3356,7 +3476,8 @@
    1786
   ],
   "jp": "{spk}大賢者　　　\n「急ぐがいい　{hero}」\n{next}\n「わが父らを　ほろぼした\n　大いなる　やみの力を\n　永遠に　封印するために‥‥」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Make haste, {hero}.」\n{next}\n「To seal away forever the\n great power of darkness\n that destroyed our fathers...」\n",
+  "pages": "\"Make haste, {hero}.\" || \"To seal away forever the great power of darkness that destroyed our fathers...\""
  },
  {
   "id": "29AA9E",
@@ -3364,7 +3485,8 @@
    1787
   ],
   "jp": "「宿命」\n",
-  "en": ""
+  "en": "「Destiny」\n",
+  "pages": "\"Destiny\""
  },
  {
   "id": "29AAA8",
@@ -3372,7 +3494,8 @@
    1788
   ],
   "jp": "{spk}大賢者　　　\n「行くがよい　神祖連邦オルドバへ」\n{next}\n「その　報奨の剣の　力があれば\n　王都を　取り囲む　悪しき\n　やみの結界も　切り裂けるはずだ」\n{next}\n「バウンティ°ソードを　身につけ\n　連邦の入り口である\n　龍の亀裂へと　向かうがいい‥‥」\n{next}\n「そして　悪神に　とりつかれた\n　連邦の皇帝　エリュシオンを\n　やみの力　はかい神を　討つのだ！」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「Go to the Divine Federation\n of Ordoba.」\n{next}\n「With the power of the Sword\n of Bounty, thou shouldst be\n able to cut through the evil」\n{next}\n「barrier of darkness that\n surrounds the royal city.」\n{next}\n「Bear the Bounty Sword and\n make for the Dragon Rift,\n the entrance to the」\n{next}\n「Federation...」\n{next}\n「And strike down Elysion,\n Emperor of the Federation,\n possessed by an evil god:」\n{next}\n「the power of darkness, the\n god of destruction!」\n",
+  "pages": "\"Go to the Divine Federation of Ordoba.\" || \"With the power of the Sword of Bounty, thou shouldst be able to cut through the evil barrier of darkness that surrounds the royal city.\" || \"Bear the Bounty Sword and make for the Dragon Rift, the entrance to the Federation...\" || \"And strike down Elysion, Emperor of the Federation, possessed by an evil god: the power of darkness, the god of destruction!\""
  },
  {
   "id": "29AC08",
@@ -3380,7 +3503,8 @@
    1789
   ],
   "jp": "{spk}{FF1F}\n「‥‥だが　その前に\n　お客さんを　歓迎しなきゃ\n　いけない　ようだな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...But before that, it looks\n like we'll have to welcome\n some guests...」\n",
+  "pages": "\"...But before that, it looks like we'll have to welcome some guests...\""
  },
  {
   "id": "29AC5C",
@@ -3388,7 +3512,8 @@
    1790
   ],
   "jp": "{spk}大賢者　　　\n「‥‥さすがは　神の代理人だ\n　そなたも　気づいて　いたか」\n",
-  "en": ""
+  "en": "{spk}大賢者　　　\n「...As expected of the agent\n of the gods. So thou hast\n noticed too.」\n",
+  "pages": "\"...As expected of the agent of the gods. So thou hast noticed too.\""
  },
  {
   "id": "29ACAA",
@@ -3396,7 +3521,8 @@
    1791
   ],
   "jp": "{spk}ルーネ　　　\n「くだらぬ　古い言い伝えだと\n　ばかり　思っていたがな‥‥」\n{next}\n「皇帝じきじきの　命令を受け\n　この　ハイランドの地の\n　探索に　おもむいて　みれば‥‥」\n{next}\n「まさか　バウンティ°ソードを\n　本当に手に入れて　いようとは！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「And I thought it was just\n some silly old legend...」\n{next}\n「I came on the Emperor's own\n orders to search this land of\n Highland, and what do I find...」\n{next}\n「You really have got your\n hands on the Bounty Sword!」\n",
+  "pages": "\"And I thought it was just some silly old legend...\" || \"I came on the Emperor's own orders to search this land of Highland, and what do I find...\" || \"You really have got your hands on the Bounty Sword!\""
  },
  {
   "id": "29ADA0",
@@ -3404,7 +3530,8 @@
    1792
   ],
   "jp": "{spk}{FF1F}\n「どうやら　少しばかり\n　おそかった　ようだな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Looks like you're a little too\n late...」\n",
+  "pages": "\"Looks like you're a little too late...\""
  },
  {
   "id": "29ADDC",
@@ -3412,7 +3539,8 @@
    1793
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥反乱軍とやらも　少しは\n　見直したぞ　まさか　大昔の\n　伝説を頼りに　ここまで　くるとは」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...I think a little better of you\n rebels now. Imagine coming\n all this way, relying on an」\n{next}\n「ancient legend.」\n",
+  "pages": "\"...I think a little better of you rebels now. Imagine coming all this way, relying on an ancient legend.\""
  },
  {
   "id": "29AE4E",
@@ -3420,7 +3548,8 @@
    1794
   ],
   "jp": "{spk}アテナ　　　\n「私達は　戦います！　そして私は\n　兄であるルーネ！　あなたを\n　この手で　討ってみせます！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「We will fight! And you, Rune,\n my own brother! I will strike\n you down with my own hand!」\n",
+  "pages": "\"We will fight! And you, Rune, my own brother! I will strike you down with my own hand!\""
  },
  {
   "id": "29AEBE",
@@ -3428,7 +3557,8 @@
    1795
   ],
   "jp": "{spk}ルーネ　　　\n「できる物かよ！　わぁわぁ\n　泣いてばかりいた　お前に！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「As if you could! You, who did\n nothing but bawl and cry!」\n",
+  "pages": "\"As if you could! You, who did nothing but bawl and cry!\""
  },
  {
   "id": "29AF0A",
@@ -3436,7 +3566,8 @@
    1796
   ],
   "jp": "{spk}アテナ　　　\n「できる！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I can!」\n",
+  "pages": "\"I can!\""
  },
  {
   "id": "29AF28",
@@ -3444,7 +3575,8 @@
    1797
   ],
   "jp": "{spk}ルーネ　　　\n「まあいい！　どちらにせよ\n　お前達は　この地で　つき果てる\n　黄道十二神の　伝説と　ともに！」\n{next}\n「まずは　わが部隊と　戦うがいい！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Oh, very well! Either way,\n you will all perish here, along\n with the legend of the Zodiac」\n{next}\n「Gods!」\n{next}\n「First, you can fight my\n troops!」\n",
+  "pages": "\"Oh, very well! Either way, you will all perish here, along with the legend of the Zodiac Gods!\" || \"First, you can fight my troops!\""
  },
  {
   "id": "29AFC4",
@@ -3452,7 +3584,8 @@
    1798
   ],
   "jp": "{spk}{FF28}\n「‥‥機神が‥‥三体も！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Three... Machine Gods!?」\n",
+  "pages": "\"...Three... Machine Gods!?\""
  },
  {
   "id": "29AFE8",
@@ -3460,7 +3593,8 @@
    1799
   ],
   "jp": "{spk}ロジャー　　\n「こいつは　きびしいですね‥‥」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「This is going to be rough...」\n",
+  "pages": "\"This is going to be rough...\""
  },
  {
   "id": "29B01A",
@@ -3468,7 +3602,8 @@
    1800
   ],
   "jp": "{spk}シュタイア　\n「よりによって　三体もか！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Three of them, of all things!」\n",
+  "pages": "\"Three of them, of all things!\""
  },
  {
   "id": "29B048",
@@ -3476,7 +3611,8 @@
    1801
   ],
   "jp": "{spk}マウザー　　\n「‥‥ったく　ジョウダンだろう！？」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「...Come on, you've gotta be\n kidding!?」\n",
+  "pages": "\"...Come on, you've gotta be kidding!?\""
  },
  {
   "id": "29B07E",
@@ -3484,7 +3620,8 @@
    1802
   ],
   "jp": "{spk}アテナ　　　\n「くッ！　そこまで　やるか！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Ngh! You'd go that far!?」\n",
+  "pages": "\"Ngh! You'd go that far!?\""
  },
  {
   "id": "29B0AE",
@@ -3492,7 +3629,8 @@
    1803
   ],
   "jp": "{spk}ルーネ　　　\n「この三体の　機神だけで　ゆうに\n　一国の軍隊をも　かいめつ　させる\n　力を　秘めているのだ！」\n{next}\n「こいつらに　殺される事を\n　幸せに　思うのだな！　行け！\n　機神５号！　９号！　１１号！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「These three Machine Gods\n alone hold power enough to\n wipe out a whole nation's」\n{next}\n「army!」\n{next}\n「You should be grateful to be\n killed by them! Go! Machine\n Gods No. 5! No. 9! No. 11!」\n",
+  "pages": "\"These three Machine Gods alone hold power enough to wipe out a whole nation's army!\" || \"You should be grateful to be killed by them! Go! Machine Gods No. 5! No. 9! No. 11!\""
  },
  {
   "id": "29B182",
@@ -3500,7 +3638,8 @@
    1804
   ],
   "jp": "{spk}{FF28}\n「気をつけて！　こいつらに\n　囲まれると　あっという間に\n　燃えカスに　なっちゃうわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Be careful! If they surround\n us, we'll be burnt to a crisp\n in no time!」\n",
+  "pages": "\"Be careful! If they surround us, we'll be burnt to a crisp in no time!\""
  },
  {
   "id": "29B1E2",
@@ -3508,7 +3647,8 @@
    1805
   ],
   "jp": "{spk}{FF1F}\n「これで　例の\n　合体攻撃は　使えまい！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Now they can't use that\n combined attack of theirs!」\n",
+  "pages": "\"Now they can't use that combined attack of theirs!\""
  },
  {
   "id": "29B214",
@@ -3516,7 +3656,8 @@
    1806
   ],
   "jp": "{spk}{FF1F}\n「機神とて　今の\n　われわれの　敵ではない！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Machine Gods or not, they're\n no match for us now!」\n",
+  "pages": "\"Machine Gods or not, they're no match for us now!\""
  },
  {
   "id": "29B24A",
@@ -3524,7 +3665,8 @@
    1807
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥強くなったな　アテナ\n　昔は　ただ　泣いているだけの\n　小さな女の子だった　お前が‥‥」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「...You've grown strong,\n Athena. You, who were once\n just a little girl who did」\n{next}\n「nothing but cry...」\n",
+  "pages": "\"...You've grown strong, Athena. You, who were once just a little girl who did nothing but cry...\""
  },
  {
   "id": "29B2BA",
@@ -3532,7 +3674,8 @@
    1808
   ],
   "jp": "{spk}アテナ　　　\n「仲間のために　人のために\n　その思いが　私を\n　ここまで　強くしたのよ‥‥」\n{next}\n「私は　もう兄さんを　うらまない\n　兄さんを　ここまで　追いつめた\n　この戦争を　憎む‥‥」\n{next}\n「私達の国のような　弱き国々が\n　こうしている間にも　ほろんで行く\n　そんな戦争を　憎む‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「For my friends, for people...\n That feeling is what made me\n this strong...」\n{next}\n「I don't resent you any more,\n brother. I hate this war that\n drove you so far...」\n{next}\n「I hate a war in which weak\n countries like ours are being\n destroyed even as we」\n{next}\n「speak...」\n",
+  "pages": "\"For my friends, for people... That feeling is what made me this strong...\" || \"I don't resent you any more, brother. I hate this war that drove you so far...\" || \"I hate a war in which weak countries like ours are being destroyed even as we speak...\""
  },
  {
   "id": "29B3E0",
@@ -3540,7 +3683,8 @@
    1809
   ],
   "jp": "{spk}ルーネ　　　\n「アテナよ‥‥」\n{next}\n「‥‥私は　金や力が　人を\n　幸せにすると　信じていた\n　今も　その考えは　変わらない」\n{next}\n「しかし　金や力と　ひきかえに\n　自分自身の　大事な物を\n　失うわけにも　いかない‥‥」\n{next}\n「許されるなら　私も　お前達と\n　ともに　行きたい\n　この戦いを　終わらせるために」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Athena...」\n{next}\n「...I believed that money and\n power made people happy.\n Even now, I haven't changed」\n{next}\n「my mind.」\n{next}\n「But I can't lose what\n matters most to me in\n exchange for money and」\n{next}\n「power...」\n{next}\n「If I may be forgiven, I would\n like to go with you too. To\n put an end to this war.」\n",
+  "pages": "\"Athena...\" || \"...I believed that money and power made people happy. Even now, I haven't changed my mind.\" || \"But I can't lose what matters most to me in exchange for money and power...\" || \"If I may be forgiven, I would like to go with you too. To put an end to this war.\""
  },
  {
   "id": "29B518",
@@ -3548,7 +3692,8 @@
    1810
   ],
   "jp": "{spk}アテナ　　　\n「その言葉を　待っていたわ\n　行きましょう　お兄さん\n　一刻も早く　戦いを終わらせ‥‥」\n{next}\n「私たちみたいな　迷える者を\n　これ以上　出さないためにも\n　いいでしょ　{hero}？」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「I was waiting for you to say\n that. Let's go, brother. To\n end the fighting as soon as」\n{next}\n「we can...」\n{next}\n「So that no more lost souls\n like us are made. That's all\n right, isn't it, {hero}?」\n",
+  "pages": "\"I was waiting for you to say that. Let's go, brother. To end the fighting as soon as we can...\" || \"So that no more lost souls like us are made. That's all right, isn't it, {hero}?\""
  },
  {
   "id": "29B5E2",
@@ -3556,7 +3701,8 @@
    1811
   ],
   "jp": "{spk}{FF1F}\n「ともに戦う者は　誰だろうと\n　オレたちの　仲間だ\n　行こう　神祖連邦を倒しに」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Whoever fights with us is\n one of us. Let's go and bring\n down the Divine Federation.」\n",
+  "pages": "\"Whoever fights with us is one of us. Let's go and bring down the Divine Federation.\""
  },
  {
   "id": "29B63A",
@@ -3564,7 +3710,8 @@
    1812
   ],
   "jp": "{spk}ルーネ　　　\n「すまん‥‥」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Thank you...」\n",
+  "pages": "\"Thank you...\""
  },
  {
   "id": "29B65A",
@@ -3572,7 +3719,8 @@
    1813
   ],
   "jp": "{spk}ルーネ　　　\n「う‥‥お‥‥おお‥‥！？\n　私に　力があれば！\n　もっと　もっと　力が！？」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Ugh... oh... ohhh...!? If only I\n had the power! More... more\n power!?」\n",
+  "pages": "\"Ugh... oh... ohhh...!? If only I had the power! More... more power!?\""
  },
  {
   "id": "29B6BA",
@@ -3580,7 +3728,8 @@
    1814
   ],
   "jp": "{spk}{FF28}\n「この地の　連邦軍は\n　全て　倒したわね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We've beaten every\n Federation soldier in this\n area!」\n",
+  "pages": "\"We've beaten every Federation soldier in this area!\""
  },
  {
   "id": "29B6EE",
@@ -3588,7 +3737,8 @@
    1815
   ],
   "jp": "「神が　選んだ者に　あたえる\n　伝説の　報奨の剣\n　その名は　バウンティ°ソード」\n{next}\n「‥‥ふと　オレは思う\n　神よ　お前は　何者なのかと‥‥」\n",
-  "en": ""
+  "en": "「The legendary Sword of\n Bounty, given to the one the\n gods chose. Its name: the」\n{next}\n「Bounty Sword.」\n{next}\n「...And it suddenly makes me\n wonder. Gods, just what are\n you...?」\n",
+  "pages": "\"The legendary Sword of Bounty, given to the one the gods chose. Its name: the Bounty Sword.\" || \"...And it suddenly makes me wonder. Gods, just what are you...?\""
  },
  {
   "id": "29B782",
@@ -3596,7 +3746,8 @@
    2454
   ],
   "jp": "{spk}ルーネ　　　\n「バ　バカな！！\n　これが　ほうしょうの剣の力なのか」\n{next}\n「だが　だが　ここで引くわけにはいかぬ\n　戦雲の女神の名にかけて‥！！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Im-impossible!! Is this the\n power of the Sword of\n Bounty!?」\n{next}\n「But... but I cannot retreat\n here! In the name of the\n goddess of the war clouds...!!」\n",
+  "pages": "\"Im-impossible!! Is this the power of the Sword of Bounty!?\" || \"But... but I cannot retreat here! In the name of the goddess of the war clouds...!!\""
  },
  {
   "id": "29B818",
@@ -3604,7 +3755,8 @@
    1816
   ],
   "jp": "「ついに　オレ達は　結界を破り\n　神祖連邦の中心　王都オルドバを\n　目指して　ひたすら　突き進む」\n{next}\n「ここから先は　オレ達の\n　見る物　聞く物　その全てが\n　敵だと言っても　いいだろう‥‥」\n",
-  "en": ""
+  "en": "「At last we broke through the\n barrier, and drove on and on\n toward the heart of the」\n{next}\n「Divine Federation, the royal\n city of Ordoba.」\n{next}\n「From here on, everything we\n see and hear might as well\n be the enemy...」\n",
+  "pages": "\"At last we broke through the barrier, and drove on and on toward the heart of the Divine Federation, the royal city of Ordoba.\" || \"From here on, everything we see and hear might as well be the enemy...\""
  },
  {
   "id": "29B8DC",
@@ -3612,7 +3764,8 @@
    1817
   ],
   "jp": "「連邦への道」\n",
-  "en": ""
+  "en": "「The Road to the Federation」\n",
+  "pages": "\"The Road to the Federation\""
  },
  {
   "id": "29B8EC",
@@ -3620,7 +3773,8 @@
    1818
   ],
   "jp": "{spk}{FF28}\n「敵よ！　‥‥と言っても\n　ここは　連邦の中心\n　出てくるのが　当たり前ね！」\n{next}\n「敵は　遠きょり戦が　主体の\n　スナイパー部隊らしいわ\n　それに　機神も　いるわよ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Enemies! ...Well, this is the\n heart of the Federation, so\n of course they'd show up!」\n{next}\n「Looks like the enemy's a\n sniper unit that fights\n mostly at range. And there's」\n{next}\n「a Machine God too!?」\n",
+  "pages": "\"Enemies! ...Well, this is the heart of the Federation, so of course they'd show up!\" || \"Looks like the enemy's a sniper unit that fights mostly at range. And there's a Machine God too!?\""
  },
  {
   "id": "29B9A0",
@@ -3628,7 +3782,8 @@
    1819
   ],
   "jp": "{spk}ロジャー　　\n「もう　連邦の王都は　目の前！\n　一歩たりとも　しりぞきません！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「The Federation's royal city is\n right before us! We won't fall\n back a single step!」\n",
+  "pages": "\"The Federation's royal city is right before us! We won't fall back a single step!\""
  },
  {
   "id": "29B9F4",
@@ -3636,7 +3791,8 @@
    1820
   ],
   "jp": "{spk}ルーネ　　　\n「重攻撃猟兵どもか‥‥　連中の\n　ふところに　飛び込むか\n　こちらも　遠きょり戦を　挑むか」\n{next}\n「二つに　一つだな‥‥」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Heavy assault chasseurs, is\n it... Do we dive into their\n midst, or take them on at」\n{next}\n「range too?」\n{next}\n「It's one or the other...」\n",
+  "pages": "\"Heavy assault chasseurs, is it... Do we dive into their midst, or take them on at range too?\" || \"It's one or the other...\""
  },
  {
   "id": "29BA80",
@@ -3644,7 +3800,8 @@
    1821
   ],
   "jp": "{spk}アテナ　　　\n「怖いの？　お兄さん？」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Are you scared, brother?」\n",
+  "pages": "\"Are you scared, brother?\""
  },
  {
   "id": "29BAAA",
@@ -3652,7 +3809,8 @@
    1822
   ],
   "jp": "{spk}ルーネ　　　\n「ふッ　バカな事を‥‥」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Hmph. Don't be silly...」\n",
+  "pages": "\"Hmph. Don't be silly...\""
  },
  {
   "id": "29BAD4",
@@ -3660,7 +3818,8 @@
    1823
   ],
   "jp": "{spk}アテナ　　　\n「そうこなくちゃ！　お兄さん！\n　私達ふたり　力を合わせ\n　みんなの道を　切り開きましょう」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「That's the spirit, brother!\n Let's join our strength, the\n two of us, and cut a path」\n{next}\n「for everyone.」\n",
+  "pages": "\"That's the spirit, brother! Let's join our strength, the two of us, and cut a path for everyone.\""
  },
  {
   "id": "29BB42",
@@ -3668,7 +3827,8 @@
    1824
   ],
   "jp": "{spk}ルーネ　　　\n「うむ！」\n",
-  "en": ""
+  "en": "{spk}ルーネ　　　\n「Right!」\n",
+  "pages": "\"Right!\""
  },
  {
   "id": "29BB5E",
@@ -3676,7 +3836,8 @@
    1825
   ],
   "jp": "{spk}ロブン　　　\n「ふぅむ‥‥　あの機神\n　１号機と　同型の　ようですな\n　いかなる力を　秘めているのか」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Hmm... That Machine God looks\n to be the same model as No.\n 1. I wonder what power it」\n{next}\n「hides.」\n",
+  "pages": "\"Hmm... That Machine God looks to be the same model as No. 1. I wonder what power it hides.\""
  },
  {
   "id": "29BBC8",
@@ -3684,7 +3845,8 @@
    1826
   ],
   "jp": "{spk}シュタイア　\n「ここまでくれば　迷う事はない！\n　一気に　敵をけちらすのみ！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Now that we've come this\n far, there's no need to\n hesitate! We just scatter the」\n{next}\n「enemy in one go!」\n",
+  "pages": "\"Now that we've come this far, there's no need to hesitate! We just scatter the enemy in one go!\""
  },
  {
   "id": "29BC1A",
@@ -3692,7 +3854,8 @@
    1827
   ],
   "jp": "{spk}{FF1F}\n「全[03AC]　進撃だ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「All units, advance!」\n",
+  "pages": "\"All units, advance!\""
  },
  {
   "id": "29BC34",
@@ -3700,7 +3863,8 @@
    1828
   ],
   "jp": "{spk}守備隊長　　\n「ここから　先は　一歩も通さん！\n　聖なる　わが連邦は　キサマらが\n　立ち入れるような　土地では無い！」\n{next}\n「おろかな　反乱軍どもよ！\n　くるがよい！　ここが\n　キサマらの　墓場となるのだ！」\n",
-  "en": ""
+  "en": "{spk}守備隊長　　\n「You will not pass one step\n beyond this point! Our holy\n Federation is no land for the」\n{next}\n「likes of you to set foot in!」\n{next}\n「Foolish rebels! Come, then!\n This will be your grave!」\n",
+  "pages": "\"You will not pass one step beyond this point! Our holy Federation is no land for the likes of you to set foot in!\" || \"Foolish rebels! Come, then! This will be your grave!\""
  },
  {
   "id": "29BD08",
@@ -3708,7 +3872,8 @@
    1829
   ],
   "jp": "{spk}守備隊長　　\n「わが軍にまで　攻撃をするとは‥‥\n　この機神は　狂っているぞ！　　　」\n{next}\n「こんなものに頼るのですか\n　エリュシオン様！　」\n",
-  "en": ""
+  "en": "{spk}守備隊長　　\n「Attacking even our own\n army... This Machine God has\n gone mad!」\n{next}\n「Must we rely on a thing like\n this, Elysion-sama!?」\n",
+  "pages": "\"Attacking even our own army... This Machine God has gone mad!\" || \"Must we rely on a thing like this, Elysion-sama!?\""
  },
  {
   "id": "29BD9A",
@@ -3716,7 +3881,8 @@
    1830
   ],
   "jp": "{spk}{FF28}\n「やったわ　{hero}！\n　これで機神　{FF2B}体　撃破！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We did it, {hero}! That's\n {FF2B} Machine Gods destroyed!」\n",
+  "pages": "\"We did it, {hero}! That's {FF2B} Machine Gods destroyed!\""
  },
  {
   "id": "29BDDA",
@@ -3724,7 +3890,8 @@
    1831
   ],
   "jp": "{spk}守備隊長　　\n「わが皇帝　エリュシオン様！\n　どうか‥‥お許し‥‥を‥‥！」\n",
-  "en": ""
+  "en": "{spk}守備隊長　　\n「My Emperor, Elysion-sama!\n Please... forgive... me...!」\n",
+  "pages": "\"My Emperor, Elysion-sama! Please... forgive... me...!\""
  },
  {
   "id": "29BE2A",
@@ -3732,7 +3899,8 @@
    1832
   ],
   "jp": "{spk}{FF28}\n「この地の　守備部隊は\n　全めつしたわ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The garrison here has been\n wiped out, {hero}!」\n",
+  "pages": "\"The garrison here has been wiped out, {hero}!\""
  },
  {
   "id": "29BE6A",
@@ -3740,7 +3908,8 @@
    1833
   ],
   "jp": "「王都は　目前に　迫っていた」\n{next}\n「オレ達の　歩みは　より\n　力強さを増し　神祖連邦の\n　さらに奥地へと　進み続ける」\n",
-  "en": ""
+  "en": "「The royal city was close at\n hand.」\n{next}\n「Our steps grew ever more\n forceful as we pressed on,\n deeper into the Divine」\n{next}\n「Federation.」\n",
+  "pages": "\"The royal city was close at hand.\" || \"Our steps grew ever more forceful as we pressed on, deeper into the Divine Federation.\""
  },
  {
   "id": "29BEE4",
@@ -3748,7 +3917,8 @@
    1834
   ],
   "jp": "{spk}連邦臣民　　\n「は　反乱軍が　ここまで！？\n　おのれ！　われら臣民\n　キサマらを　許しはせんぞ！」\n",
-  "en": ""
+  "en": "{spk}連邦臣民　　\n「Th-the rebels, this far!?\n Curse you! We, the people of\n the Federation, will never」\n{next}\n「forgive you!」\n",
+  "pages": "\"Th-the rebels, this far!? Curse you! We, the people of the Federation, will never forgive you!\""
  },
  {
   "id": "29BF4A",
@@ -3756,7 +3926,8 @@
    1835
   ],
   "jp": "{spk}連邦臣民　　\n「反乱軍どもが　また　きたか！\n　キサマらは　死ぬのだ！\n　この　神祖連邦の地でな！」\n",
-  "en": ""
+  "en": "{spk}連邦臣民　　\n「The rebels again! You will die!\n Right here, on the soil of the\n Divine Federation!」\n",
+  "pages": "\"The rebels again! You will die! Right here, on the soil of the Divine Federation!\""
  },
  {
   "id": "29BFB2",
@@ -3764,7 +3935,8 @@
    1836
   ],
   "jp": "{spk}連邦臣民　　\n「また　きおったか　反乱軍が！\n　この神祖連邦の　聖なる地を\n　けがされて　なるものか！」\n",
-  "en": ""
+  "en": "{spk}連邦臣民　　\n「So you've come again, rebels!\n We'll not let you defile the\n holy land of the Divine」\n{next}\n「Federation!」\n",
+  "pages": "\"So you've come again, rebels! We'll not let you defile the holy land of the Divine Federation!\""
  },
  {
   "id": "29C01E",
@@ -3772,7 +3944,8 @@
    1837
   ],
   "jp": "「‥‥長い　長い　道のりだった」\n{next}\n「しかし　今　森の向こうには\n　神祖連邦オルドバの　王城が\n　天高く　そびえ立っている‥‥」\n{next}\n「そして　オレは　王城の入り口で\n　あの男と　再会したのだ‥‥\n　はげしい対決の　よかんと　ともに」\n",
-  "en": ""
+  "en": "「...It had been a long, long\n road.」\n{next}\n「But now, beyond the forest,\n the royal castle of the Divine\n Federation of Ordoba」\n{next}\n「towered high into the sky...」\n{next}\n「And at the castle entrance, I\n met that man again... with a\n premonition of a fierce」\n{next}\n「showdown.」\n",
+  "pages": "\"...It had been a long, long road.\" || \"But now, beyond the forest, the royal castle of the Divine Federation of Ordoba towered high into the sky...\" || \"And at the castle entrance, I met that man again... with a premonition of a fierce showdown.\""
  },
  {
   "id": "29C10C",
@@ -3780,7 +3953,8 @@
    1838
   ],
   "jp": "「対決」\n",
-  "en": ""
+  "en": "「Showdown」\n",
+  "pages": "\"Showdown\""
  },
  {
   "id": "29C116",
@@ -3788,7 +3962,8 @@
    1839
   ],
   "jp": "{spk}{FF28}\n「ダークロードよ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's the Dark Lord, {hero}!」\n",
+  "pages": "\"It's the Dark Lord, {hero}!\""
  },
  {
   "id": "29C140",
@@ -3796,7 +3971,8 @@
    1840
   ],
   "jp": "{spk}{FF1F}\n「やはり　現れたか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So he showed up after all...」\n",
+  "pages": "\"So he showed up after all...\""
  },
  {
   "id": "29C160",
@@ -3804,7 +3980,8 @@
    1841
   ],
   "jp": "{spk}ダークロード\n「よく　ここまできたな　{hero}」\n{next}\n「十年前　オレはいつか\n　こんな日が　くるんじゃないかと\n　ずっと　思っていたんだよ‥‥」\n",
-  "en": ""
+  "en": "{spk}ダークロード\n「So you've made it this far,\n {hero}.」\n{next}\n「Ten years ago, I had a\n feeling a day like this would\n come one day. I've been」\n{next}\n「thinking so all along...」\n",
+  "pages": "\"So you've made it this far, {hero}.\" || \"Ten years ago, I had a feeling a day like this would come one day. I've been thinking so all along...\""
  },
  {
   "id": "29C1F8",
@@ -3812,7 +3989,8 @@
    1842
   ],
   "jp": "{spk}アジャックス\n「なあ　{hero}‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Right, {hero}...?」\n",
+  "pages": "\"Right, {hero}...?\""
  },
  {
   "id": "29C224",
@@ -3820,7 +3998,8 @@
    1843
   ],
   "jp": "{spk}{FF1F}\n「やはり　お前だったか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So it was you after all...」\n",
+  "pages": "\"So it was you after all...\""
  },
  {
   "id": "29C248",
@@ -3828,7 +4007,8 @@
    1844
   ],
   "jp": "{spk}{FF28}\n「あ　あなた　アジャックス！？」\n{next}\n「{hero}や　マクベスと　ともに\n　十年前　いっしょに戦った\n　あの　アジャックスじゃないの！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Y-you're Ajax!?」\n{next}\n「Aren't you the Ajax who\n fought alongside {hero}\n and Macbeth ten years ago!?」\n",
+  "pages": "\"Y-you're Ajax!?\" || \"Aren't you the Ajax who fought alongside {hero} and Macbeth ten years ago!?\""
  },
  {
   "id": "29C2DC",
@@ -3836,7 +4016,8 @@
    1845
   ],
   "jp": "{spk}アジャックス\n「テティスも‥‥久しぶりだな」\n{next}\n「さて　{hero}よ」\n{next}\n「十年は　オレ達にとって\n　長かったのか　それとも\n　短かったのか　どうなのかな？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Thetis too... It's been a while.」\n{next}\n「Now then, {hero}.」\n{next}\n「Those ten years, were they\n long for us? Or were they\n short? Which do you think?」\n",
+  "pages": "\"Thetis too... It's been a while.\" || \"Now then, {hero}.\" || \"Those ten years, were they long for us? Or were they short? Which do you think?\""
  },
  {
   "id": "29C384",
@@ -3844,7 +4025,8 @@
    1846
   ],
   "jp": "{spk}{FF1F}\n「‥‥アジャックス\n　そこを　通してもらうぞ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Ajax. I'm going through\n there.」\n",
+  "pages": "\"...Ajax. I'm going through there.\""
  },
  {
   "id": "29C3BA",
@@ -3852,7 +4034,8 @@
    1847
   ],
   "jp": "{spk}アジャックス\n「同じだな　あの時と‥‥　　　　\n　これも　運命という　ヤツか」\n{next}\n「ならば　オレも　言おう\n　十年前の　あの日と同じく」\n{next}\n「このオレを　倒して行け！」\n{next}\n「たがいの道は　剣によって決まる！\n　そうだな　{hero}！？　いや‥‥\n　マスター°オブ°ソードよ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Same as back then... I\n suppose this is what they\n call fate, too.」\n{next}\n「Then I'll say it as well, the\n same as on that day ten\n years ago.」\n{next}\n「Get past me first!」\n{next}\n「A sword decides which road\n each of us takes! Right,\n {hero}!? No... Master of」\n{next}\n「Swords!」\n",
+  "pages": "\"Same as back then... I suppose this is what they call fate, too.\" || \"Then I'll say it as well, the same as on that day ten years ago.\" || \"Get past me first!\" || \"A sword decides which road each of us takes! Right, {hero}!? No... Master of Swords!\""
  },
  {
   "id": "29C4DA",
@@ -3860,7 +4043,8 @@
    1848
   ],
   "jp": "{spk}{FF1F}\n「いいだろう‥‥\n　たがいの道を　決めるために！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Very well... To decide which\n road each of us takes!」\n",
+  "pages": "\"Very well... To decide which road each of us takes!\""
  },
  {
   "id": "29C514",
@@ -3868,7 +4052,8 @@
    1849
   ],
   "jp": "{spk}アジャックス\n「くだらん　くだらんな！\n　オレと　お前が　組んでいた時は\n　そんな力では　なかったはずだ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Pathetic, pathetic! When you\n and I were partners, your\n strength was nothing like」\n{next}\n「this!」\n",
+  "pages": "\"Pathetic, pathetic! When you and I were partners, your strength was nothing like this!\""
  },
  {
   "id": "29C584",
@@ -3876,7 +4061,8 @@
    1850
   ],
   "jp": "{spk}アジャックス\n「どうした　{hero}！？\n　オレの　左目を　つぶした男は\n　そのていどの　腕だったのか！？」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「What's wrong, {hero}!? Is\n that all the skill the man\n who took my left eye has!?」\n",
+  "pages": "\"What's wrong, {hero}!? Is that all the skill the man who took my left eye has!?\""
  },
  {
   "id": "29C5F6",
@@ -3884,7 +4070,8 @@
    1851
   ],
   "jp": "{spk}アジャックス\n「そうだ！　ここへこい！\n　そして　オレと戦え　{hero}！」\n{next}\n「この十年間　オレは　お前と\n　決着を　つけるために\n　生き長らえて　きたのだからな！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「That's it! Come here! And\n fight me, {hero}!」\n{next}\n「For these ten years, I've\n stayed alive only to settle\n things with you!」\n",
+  "pages": "\"That's it! Come here! And fight me, {hero}!\" || \"For these ten years, I've stayed alive only to settle things with you!\""
  },
  {
   "id": "29C6A6",
@@ -3892,7 +4079,8 @@
    1852
   ],
   "jp": "{spk}アジャックス\n「やっと　きたな　{hero}！\n　うれしいぞ！　こうして　再び\n　剣を　合わせる事ができて！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「You're finally here, {hero}!\n I'm glad! Glad we can cross\n swords again like this!」\n",
+  "pages": "\"You're finally here, {hero}! I'm glad! Glad we can cross swords again like this!\""
  },
  {
   "id": "29C718",
@@ -3900,7 +4088,8 @@
    1853
   ],
   "jp": "{spk}アジャックス\n「どうした　{hero}！？\n　お前自身の　剣で\n　このオレを　倒してみせろ！」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「What's wrong, {hero}!?\n Beat me with your own\n sword!」\n",
+  "pages": "\"What's wrong, {hero}!? Beat me with your own sword!\""
  },
  {
   "id": "29C77A",
@@ -3908,7 +4097,8 @@
    1854
   ],
   "jp": "{spk}アジャックス\n「‥‥ふふ‥‥{hero}\n　いい仲間を　持ったな‥‥」\n{next}\n「やって見せろ　たった一人の\n　男が　世界を　すくうなんて\n　えらく　痛快じゃないか‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...Heh heh... {hero}. You've\n got good comrades...」\n{next}\n「Show me. One single man\n saving the world... It'd be\n damn satisfying, wouldn't it...」\n",
+  "pages": "\"...Heh heh... {hero}. You've got good comrades...\" || \"Show me. One single man saving the world... It'd be damn satisfying, wouldn't it...\""
  },
  {
   "id": "29C824",
@@ -3916,7 +4106,8 @@
    1855
   ],
   "jp": "{spk}{FF1F}\n「アジャックス　お前‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Ajax, you...」\n",
+  "pages": "\"Ajax, you...\""
  },
  {
   "id": "29C846",
@@ -3924,7 +4115,8 @@
    1856
   ],
   "jp": "{spk}アジャックス\n「これで　オレも　ノルンのもとへ‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「Now I too can go to Norn...」\n",
+  "pages": "\"Now I too can go to Norn...\""
  },
  {
   "id": "29C87E",
@@ -3932,7 +4124,8 @@
    1857
   ],
   "jp": "{spk}アジャックス\n「さすが　不敗の聖騎士だな‥‥\n　だが　オレを　殺せなかったか？」\n{next}\n「‥‥ふふ　あいかわらずだ\n　十年前と　変わらず　お前は\n　はき気の　しそうな　あまちゃんだ」\n{next}\n「‥‥しかし\n　昔の　まんまだよ　お前は」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「As expected of the\n Undefeated Paladin... But\n couldn't you kill me?」\n{next}\n「...Heh. Same as ever. Just like\n ten years ago, you're so\n soft it makes me sick.」\n{next}\n「...But you haven't changed a\n bit from the old days.」\n",
+  "pages": "\"As expected of the Undefeated Paladin... But couldn't you kill me?\" || \"...Heh. Same as ever. Just like ten years ago, you're so soft it makes me sick.\" || \"...But you haven't changed a bit from the old days.\""
  },
  {
   "id": "29C966",
@@ -3940,7 +4133,8 @@
    1858
   ],
   "jp": "{spk}{FF1F}\n「お前もな　アジャックス‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Neither have you, Ajax...」\n",
+  "pages": "\"Neither have you, Ajax...\""
  },
  {
   "id": "29C98C",
@@ -3948,7 +4142,8 @@
    1859
   ],
   "jp": "{spk}アジャックス\n「うれしいぞ　{hero}\n　お前は　自分の思うままに\n　ここまで　きたのだな‥‥」\n{next}\n「ならばオレも　残りの人生は\n　自分の　思うままに\n　進む事に　するとしよう‥‥」\n{next}\n「オレの力を使え　{hero}\n　お前が　お前の信じる事を\n　成しとげる　ためにな‥‥」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「I'm glad, {hero}. You came\n all this way following your\n own heart...」\n{next}\n「Then I'll live the rest of my\n life following my own heart\n too...」\n{next}\n「Use my strength, {hero}.\n So you can accomplish what\n you believe in...」\n",
+  "pages": "\"I'm glad, {hero}. You came all this way following your own heart...\" || \"Then I'll live the rest of my life following my own heart too...\" || \"Use my strength, {hero}. So you can accomplish what you believe in...\""
  },
  {
   "id": "29CAA8",
@@ -3956,7 +4151,8 @@
    1860
   ],
   "jp": "{spk}{FF1F}\n「十年は　長くも　短くもない\n　‥‥オレ達は　ずっと\n　仲間だったはずだ　アジャックス」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Ten years is neither long nor\n short... We were always\n comrades, weren't we, Ajax?」\n",
+  "pages": "\"Ten years is neither long nor short... We were always comrades, weren't we, Ajax?\""
  },
  {
   "id": "29CB08",
@@ -3964,7 +4160,8 @@
    1861
   ],
   "jp": "{spk}アジャックス\n「‥‥ふッ　今にして　思えば\n　オレは　ずっと　そのコトバを\n　聞きたかったのかも　しれんな」\n",
-  "en": ""
+  "en": "{spk}アジャックス\n「...Heh. Thinking about it now,\n maybe I've been wanting to\n hear those words all along.」\n",
+  "pages": "\"...Heh. Thinking about it now, maybe I've been wanting to hear those words all along.\""
  },
  {
   "id": "29CB78",
@@ -3972,7 +4169,8 @@
    1862
   ],
   "jp": "{spk}{FF28}\n「敵は　全めつしたわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「The enemy's been wiped out...」\n",
+  "pages": "\"The enemy's been wiped out...\""
  },
  {
   "id": "29CB9A",
@@ -3980,6 +4178,7 @@
    1863
   ],
   "jp": "「十年の　時をへて　オレ達の\n　剣は　再び　斬り結ばれた\n　これもまた　運命だったのか？」\n{next}\n「やみの力の復活も　黄道十二神との\n　出会いも　{FF31}がさらわれ\n　アジャックスと　再会した事も‥‥」\n{next}\n「違う　何かが違うと\n　オレの頭の中に　声がひびく」\n",
-  "en": ""
+  "en": "「After ten years, our swords\n crossed once more. Was this\n fate too?」\n{next}\n「The return of the power of\n darkness, the meeting with\n the Zodiac Gods, {FF31}」\n{next}\n「being taken, meeting Ajax\n again...」\n{next}\n「No, something's wrong. A\n voice echoes in my head,\n telling me something is」\n{next}\n「wrong.」\n",
+  "pages": "\"After ten years, our swords crossed once more. Was this fate too?\" || \"The return of the power of darkness, the meeting with the Zodiac Gods, {FF31} being taken, meeting Ajax again...\" || \"No, something's wrong. A voice echoes in my head, telling me something is wrong.\""
  }
 ]

@@ -8,4 +8,7 @@
 - [ ] 290558, 290B80, 2949B2 - the tutorial names commands "Deploy", "Start Battle", "Retreat" and "MAP": when the
   battle menus (side tables) are translated, make the labels match these words (or reword the tutorial)
 - [ ] 28CA75 - the JP's first page has no closing 」 (a game typo); the English keeps the open quote only
+- [ ] 2A7F9A..2A8036 - speakers ××××/○○○○ are JP placeholder names (unused unit slots?); English uses "****":
+  check whether any scene reaches them
+- [ ] 2A957C..2A9D28 - {FF12} ring shouts kept to one 3-line box each (the JP fits one); check one on screen
 - [ ] 24F91E - narration pages drop the JP blank first line before 「神暦..」/「神祖連邦オルドバ」; check the layout in game

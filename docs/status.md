@@ -2,9 +2,13 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 2238/3539 entries in English (name tables, b010-b043: every master block up to
-  master_290400's Crimson Lake, 297568); dialogue batches b044-b050 left (rest of master_290400 and 2A7D44), then
-  side tables. Pace: ~10 batches per worker context; the Orca brief forbids subagents, so each worker translates itself.
+- **Phase:** 6. Translate in progress: 2731/3539 entries in English; **all master dialogue done** (b010-b050);
+  side tables left (see Next 3). Pace: ~10 batches per worker context; the Orca brief forbids subagents, so each
+  worker translates itself.
+- **Session 2026-11-22 (b044-b050):** {FF12} ring shouts must fit one 3-line box (the JP does): shortened, check
+  with a scan for `{next}` in `{FF12}` messages. Choice pages (before `{FF14}`): options joined by `\n`, no quotes
+  (Faust's quiz 299D14..). 叫びのフエ = "Shriek Whistle" (the 80 px item name already said so). Placeholder
+  speakers ××××/○○○○ -> "****" (polish line). Dark Lord = Ajax; Faust = "the Ultra-Black Sorcerer".
 - **Session 2026-11-22 (b033-b043):** per batch `tl_reuse.py todo bNNN > work/tl/bNNN.todo`, write `bNNN.new.tsv`,
   `fill`, `check`, `merge`. {hero}さん = "{hero}-san", 様 = "Sir {hero}" (Roger, Ryubi lines already use it), どの =
   "{hero}-dono" (Robun). Glossary: Ophelia Les Elysion ({FF31}'s real name), Koho, Taurus, Hiomaru, Frozen Land,

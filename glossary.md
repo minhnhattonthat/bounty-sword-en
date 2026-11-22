@@ -113,6 +113,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 紅の湖 | Crimson Lake | | | |
 | 悪魔の巣 | Devil's Nest | | the southern desert | |
 | ハイランド | Highland | | lone island west of Rheinmetall | |
+| タルテソスの門 | Tartessos Gate | | | |
+| 剣のみさき | Sword Cape | | | |
 | ヘラクレスの柱 | Pillars of Hercules | | strait between north and south Europea | |
 
 ## Items / skills / terms
@@ -165,6 +167,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 不敗の聖騎士 | Undefeated Paladin | | the hero's old epithet | |
 | 味方殺し | comrade-killer | | what the kingdom calls the hero | |
 | 闘将 | Warlord | | Ajax's title; Roger also calls the Dark Lord this | |
+| 竜騎士団 | Dragon Knights | | 連邦竜騎士団 "Federation Dragon Knights", Spania Plateau | |
+| 叫びのフエ | Shriek Whistle | 80px | confuses the Hydra (item name) | Screaming Flute |
+| ハイドラ | Hydra | | three-headed super-heavy weapon at Tartessos Gate | |
+| 超黒の魔導士 | Ultra-Black Sorcerer | | Faust's epithet | |
+| 機動トウテキ隊 | Mobile Grenadier Corps | | Steyr's Romulus army unit | |
 
 ## Decisions from earlier batches
 - b001-b009 (wave 0, name tables): see the tables above; short forms where the field is 48 px (B.Knight,
