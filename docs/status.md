@@ -2,9 +2,27 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: 2731/3539 entries in English; **all master dialogue done** (b010-b050);
-  side tables left (see Next 3). Pace: ~10 batches per worker context; the Orca brief forbids subagents, so each
-  worker translates itself.
+- **Phase:** 6. Translate in progress: 2797/3539 entries in English; **all master dialogue done** (b010-b050; b038
+  had been translated but never merged: fixed, merged); side tables left. Pace: ~10 batches per worker context; the
+  Orca brief forbids subagents, so each worker translates itself.
+- **Side tables (started 2026-11-22, batches b051-b064 split in `work/tl/`):**
+  - **Blocker for merging side tables: the build repacks each side region in place** (`rom_text.repack` raises
+    "region X: N bytes, slot is M" when English outgrows it). b052 (battle_prompts_b) and b062 (system_prompts) are
+    translated and pass `check` (`work/tl/b052.out.tsv`, `b062.out.tsv`) but merging them broke the build (790 vs
+    712 bytes), so they are NOT merged. Next step (do it first, it is phase-7 engine work pulled forward): relocate
+    grown side entries to free space `$F0-$FE` and rewrite their pointers (per table `refs`; engine A prompts are
+    reached through the engine A pointer list, confirm with `regionreads.lua`), with a test, then merge b052/b062.
+  - System/battle prompts are engine A scripts: `script_text.ENGINE_A_TABLES` now parses their argument words
+    (`{FF09:0000}`, `{FF0A:0000}`, `{FF14:0002}`; the old dump showed them as `　`/`、`/`。`). Identity still
+    byte-identical. English there: ASCII `"` for 「」, keep every code.
+  - b051 (battle_prompts 05E8A0..): `05E8A0` starts with a stray word 0x011E (shows as ぎ) before `{FF09}`; the check
+    rejects both `ぎ` and `[011E]` in English. Decide: split that word into its own `data` entry (rule change in
+    `script_text.SPLIT`) or let the check accept `[hhhh]` words the JP has; then `check b051`.
+  - Skip on purpose (junk records): b056 items `1AEDAF`, b060 orders `08E996`.., classes `0BFFF2`; b063
+    unit_records and b061 short_strings `1AF349` are mostly data bytes around a few words: translate only the
+    text part, keep every other word.
+  - Ellipsis-only master lines (`「‥‥」`, 8 entries, e.g. 28418F) are skipped by `needs_english` and keep JP `‥‥`:
+    fine on screen; check with `jp_left.py` in phase 9.
 - **Session 2026-11-22 (b044-b050):** {FF12} ring shouts must fit one 3-line box (the JP does): shortened, check
   with a scan for `{next}` in `{FF12}` messages. Choice pages (before `{FF14}`): options joined by `\n`, no quotes
   (Faust's quiz 299D14..). 叫びのフエ = "Shriek Whistle" (the 80 px item name already said so). Placeholder

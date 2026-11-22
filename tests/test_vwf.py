@@ -68,7 +68,7 @@ def test_torture_line_wraps_inside_the_box():
 
 def test_c1_fields_pack_letter_pairs():
     from script_text import pack_pairs, side_words, side_codecs
-    codec = side_codecs()[False]
+    codec = side_codecs()[None]
     # "Abc" + JP space: A,b pack into one word (high byte first), c stays single, JP words untouched
     assert pack_pairs(codec.encode("Abc　")) == [0x4162, EN_BASE + ord("c"), 0]
     # a 3-cell field takes 6 letters and pads with JP spaces; JP text is never packed (identity build)

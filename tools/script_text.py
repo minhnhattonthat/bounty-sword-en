@@ -148,6 +148,9 @@ SPLIT = {
 # Tables run by engine B: verified for ceremony and short_strings (read by C3:C78B in the region-read tour,
 # tools/re/region_reads.py); descriptions per docs/re/text.md (FF06 calls), not yet seen read.
 ENGINE_B_TABLES = {"ceremony", "short_strings", "descriptions"}
+# System and battle prompts are engine A scripts (drawn in the dialogue box): parse their argument words too, so
+# `{FF09}　` (a 0x0001 argument read as a character) reads `{FF09:0001}`.
+ENGINE_A_TABLES = {"battle_prompts", "battle_prompts_b", "system_prompts"}
 
 
 def split_region(words, rule, args=None, anchors=()):
@@ -210,9 +213,19 @@ def is_data(words, args=None):
     return False
 
 
+def side_args(name):
+    """Argument words per opcode for a side table's script engine, or None for plain strings."""
+    return ENGINE_B_ARGS if name in ENGINE_B_TABLES else ENGINE_A_ARGS if name in ENGINE_A_TABLES else None
+
+
 def side_codecs():
-    """(plain side-table codec, engine B codec), indexed by `name in ENGINE_B_TABLES`."""
-    return TextCodec(False), TextCodec(False, args=ENGINE_B_ARGS)
+    """Side-table codecs; pick one with `codec_for(codecs, name)`."""
+    return {None: TextCodec(False), "B": TextCodec(False, args=ENGINE_B_ARGS),
+            "A": TextCodec(False, args=ENGINE_A_ARGS)}
+
+
+def codec_for(codecs, name):
+    return codecs["B" if name in ENGINE_B_TABLES else "A" if name in ENGINE_A_TABLES else None]
 
 
 def pointer_index(rom):
@@ -245,8 +258,8 @@ def window_anchors(rom, start, end):
 def side_entries(rom, name, start, end, codec, ptrs):
     words = words_at(rom, start, end)
     rule = SPLIT[name]
-    args = ENGINE_B_ARGS if name in ENGINE_B_TABLES else None
-    codec = codec[bool(args)]
+    args = side_args(name)
+    codec = codec_for(codec, name)
     anchors = window_anchors(rom, start, end) if rule[0] == "anchored" else set()
     out = []
     for a, b in split_region(words, rule, args, anchors):
@@ -399,7 +412,7 @@ def apply_script(rom, files, field="jp"):
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e
-            codec, pack = sc[r["name"] in ENGINE_B_TABLES], r["name"] in C1_TABLES
+            codec, pack = codec_for(sc, r["name"]), r["name"] in C1_TABLES
             try:
                 words += side_words(src, codec, pack=pack)
             except ValueError:

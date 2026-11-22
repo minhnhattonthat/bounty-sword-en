@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from rom_text import REGIONS, WordCodec, read_slots, repack, unpack, words_at  # noqa: E402
-from script_text import (ENGINE_B_TABLES, SCRIPT, TextCodec, apply_script, dump, extract, load,  # noqa: E402
+from script_text import (SCRIPT, TextCodec, apply_script, codec_for, dump, extract, load,  # noqa: E402
                          region_entries, side_codecs, side_words)
 
 ROM = ROOT / "rom" / "Bounty Sword (Japan).sfc"
@@ -52,7 +52,7 @@ def test_every_side_string_roundtrips(rom, files):
     sc = side_codecs()
     for name, start, end in REGIONS:
         for e in files[name + ".json"]:
-            w = side_words(e, sc[name in ENGINE_B_TABLES])
+            w = side_words(e, codec_for(sc, name))
             off = int(e["id"], 16)
             assert w == words_at(rom, off, off + 2 * len(w)), (name, e["id"])
 
@@ -83,7 +83,7 @@ def test_side_entries_tile_regions(files):
         p = start
         for e in region_entries(files, name, start, end):
             assert int(e["id"], 16) == p, f"{name}: gap or overlap before {e['id']}"
-            p += 2 * len(side_words(e, sc[name in ENGINE_B_TABLES]))
+            p += 2 * len(side_words(e, codec_for(sc, name)))
         assert p == end, name
 
 

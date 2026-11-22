@@ -4170,7 +4170,8 @@
    1247
   ],
   "jp": "{spk}{FF28}\n「声じゃないわ　心の中に\n　意味が　飛び込んでくる！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「It's not a voice. The meaning\n is flying straight into my\n mind!?」\n",
+  "pages": "\"It's not a voice. The meaning is flying straight into my mind!?\""
  },
  {
   "id": "28D7CD",
@@ -4178,7 +4179,8 @@
    1248
   ],
   "jp": "{spk}黄道十二神　\n「われは　星々の流れに　したがって\n　この世界の　運命の流れを\n　つかさどる　十二の神の一人　なり」\n{next}\n「そなたに　わが力をたくす\n　われら　十二の神の代理人として\n　この世の　ながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「I am one of the twelve gods\n who follow the course of the\n stars and govern the flow」\n{next}\n「of this world's fate.」\n{next}\n「To thee I entrust my power.\n As agent of us twelve gods,\n set right the course of this」\n{next}\n「world.」\n",
+  "pages": "\"I am one of the twelve gods who follow the course of the stars and govern the flow of this world's fate.\" || \"To thee I entrust my power. As agent of us twelve gods, set right the course of this world.\""
  },
  {
   "id": "28D8A7",
@@ -4186,7 +4188,8 @@
    1249
   ],
   "jp": "{spk}{FF1F}\n「あいにく　オレは\n　神なんてものを　信じない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Sorry. I don't believe in gods.」\n",
+  "pages": "\"Sorry. I don't believe in gods.\""
  },
  {
   "id": "28D8DF",
@@ -4194,7 +4197,8 @@
    1250
   ],
   "jp": "{spk}黄道十二神　\n「あらがう事は　できぬ\n　調和は　二つの力によってのみ\n　初めて行なわれる事を　知れ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Thou canst not resist. Know\n that harmony is achieved\n only through two powers.」\n",
+  "pages": "\"Thou canst not resist. Know that harmony is achieved only through two powers.\""
  },
  {
   "id": "28D947",
@@ -4202,7 +4206,8 @@
    1251
   ],
   "jp": "{spk}{FF1F}\n「二つの‥‥力？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Two... powers?」\n",
+  "pages": "\"Two... powers?\""
  },
  {
   "id": "28D961",
@@ -4210,7 +4215,8 @@
    1252
   ],
   "jp": "{spk}黄道十二神　\n「なんじは　世界にちらばりし\n　十二神の像を　探し出し\n　その全ての力を　束ねるのだ」\n{next}\n「さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「Seek out the statues of the\n twelve gods scattered\n across the world and bind all」\n{next}\n「their power together.」\n{next}\n「Then shall we grant thee\n true power...」\n",
+  "pages": "\"Seek out the statues of the twelve gods scattered across the world and bind all their power together.\" || \"Then shall we grant thee true power...\""
  },
  {
   "id": "28DA13",
@@ -4218,7 +4224,8 @@
    1253
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　ここにも　黄道十二神の像が！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! There's a\n statue of the Zodiac Gods\n here too!」\n",
+  "pages": "\"Look, {hero}! There's a statue of the Zodiac Gods here too!\""
  },
  {
   "id": "28DA53",
@@ -4226,7 +4233,8 @@
    1254
   ],
   "jp": "{spk}黄道十二神　\n「なんじを　神の代理人と　みとめる」\n{next}\n「十二の指輪を　一つに束ねよ\n　さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n{next}\n「今　なんじが持ちし　指輪は‥‥」\n{next}\n{FF2F}　アレスの指輪\n{next}\n{FF2F}　ヴィナスの指輪\n{next}\n{FF2F}　ヘルメスの指輪\n{next}\n{FF2F}　セレネの指輪\n{next}\n{FF2F}　アポロンの指輪\n{next}\n{FF2F}　マーキュリーの指輪\n{next}\n{FF2F}　アフロディーテの指輪\n{next}\n{FF2F}　プルートゥの指輪\n{next}\n{FF2F}　ゼウスの指輪\n{next}\n{FF2F}　クロノスの指輪\n{next}\n{FF2F}　ウラヌスの指輪\n{next}\n{FF2F}　ポセイドンの指輪\n{next}\n「いまだ　残る　指輪は‥‥」\n{next}\n{FF30}　アレスの指輪\n{next}\n{FF30}　ヴィナスの指輪\n{next}\n{FF30}　ヘルメスの指輪\n{next}\n{FF30}　セレネの指輪\n{next}\n{FF30}　アポロンの指輪\n{next}\n{FF30}　マーキュリーの指輪\n{next}\n{FF30}　アフロディーテの指輪\n{next}\n{FF30}　プルートゥの指輪\n{next}\n{FF30}　ゼウスの指輪\n{next}\n{FF30}　クロノスの指輪\n{next}\n{FF30}　ウラヌスの指輪\n{next}\n{FF30}　ポセイドンの指輪\n{next}\n「是正せよ　わが力を束ね\n　この世のながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「We acknowledge thee as the\n agent of the gods.」\n{next}\n「Bind the twelve rings into\n one. Then shall we grant\n thee true power...」\n{next}\n「The rings thou now holdest\n are...」\n{next}\n{FF2F}{FF2F}Ares Ring\n{next}\n{FF2F}{FF2F}Venus Ring\n{next}\n{FF2F}{FF2F}Hermes Ring\n{next}\n{FF2F}{FF2F}Selene Ring\n{next}\n{FF2F}{FF2F}Apollo Ring\n{next}\n{FF2F}{FF2F}Mercury Ring\n{next}\n{FF2F}{FF2F}Aphrodite Ring\n{next}\n{FF2F}{FF2F}Pluto Ring\n{next}\n{FF2F}{FF2F}Zeus Ring\n{next}\n{FF2F}{FF2F}Cronus Ring\n{next}\n{FF2F}{FF2F}Uranus Ring\n{next}\n{FF2F}{FF2F}Poseidon Ring\n{next}\n「The rings yet remaining are...」\n{next}\n{FF30}{FF30}Ares Ring\n{next}\n{FF30}{FF30}Venus Ring\n{next}\n{FF30}{FF30}Hermes Ring\n{next}\n{FF30}{FF30}Selene Ring\n{next}\n{FF30}{FF30}Apollo Ring\n{next}\n{FF30}{FF30}Mercury Ring\n{next}\n{FF30}{FF30}Aphrodite Ring\n{next}\n{FF30}{FF30}Pluto Ring\n{next}\n{FF30}{FF30}Zeus Ring\n{next}\n{FF30}{FF30}Cronus Ring\n{next}\n{FF30}{FF30}Uranus Ring\n{next}\n{FF30}{FF30}Poseidon Ring\n{next}\n「Set it right. Bind my power\n together, and set right the\n course of this world.」\n",
+  "pages": "\"We acknowledge thee as the agent of the gods.\" || \"Bind the twelve rings into one. Then shall we grant thee true power...\" || \"The rings thou now holdest are...\" || {FF2F}Ares Ring || {FF2F}Venus Ring || {FF2F}Hermes Ring || {FF2F}Selene Ring || {FF2F}Apollo Ring || {FF2F}Mercury Ring || {FF2F}Aphrodite Ring || {FF2F}Pluto Ring || {FF2F}Zeus Ring || {FF2F}Cronus Ring || {FF2F}Uranus Ring || {FF2F}Poseidon Ring || \"The rings yet remaining are...\" || {FF30}Ares Ring || {FF30}Venus Ring || {FF30}Hermes Ring || {FF30}Selene Ring || {FF30}Apollo Ring || {FF30}Mercury Ring || {FF30}Aphrodite Ring || {FF30}Pluto Ring || {FF30}Zeus Ring || {FF30}Cronus Ring || {FF30}Uranus Ring || {FF30}Poseidon Ring || \"Set it right. Bind my power together, and set right the course of this world.\""
  },
  {
   "id": "28DDC9",
@@ -4234,7 +4242,8 @@
    1255
   ],
   "jp": "「砂漠は　どこまでも続く‥‥」\n{next}\n「この　広大な砂漠は　連邦への\n　足をにぶらせる　天然の\n　要゜にも　なっているようだ」\n{next}\n「だが　こうしている間にも\n　連邦は　恐るべき　たくらみを\n　密かに　進めているだろう‥‥」\n{next}\n「オレは　あせり始めていた」\n{next}\n「‥‥おかしな話だ　なりゆきで\n　反乱軍の　リーダーになったのに」\n{next}\n「何かが　オレの中で\n　変わりつつ　あるのだろうか‥‥」\n",
-  "en": ""
+  "en": "「The desert goes on and on...」\n{next}\n「This vast desert seems to\n be a natural fortress too,\n slowing anyone heading for」\n{next}\n「the Federation.」\n{next}\n「But even now, the\n Federation is surely pressing\n ahead with some terrible」\n{next}\n「scheme in secret...」\n{next}\n「I was starting to get\n impatient.」\n{next}\n「...Funny. I only became the\n rebels' leader by chance.」\n{next}\n「Is something changing inside\n me...?」\n",
+  "pages": "\"The desert goes on and on...\" || \"This vast desert seems to be a natural fortress too, slowing anyone heading for the Federation.\" || \"But even now, the Federation is surely pressing ahead with some terrible scheme in secret...\" || \"I was starting to get impatient.\" || \"...Funny. I only became the rebels' leader by chance.\" || \"Is something changing inside me...?\""
  },
  {
   "id": "28DF51",
@@ -4242,7 +4251,8 @@
    1256
   ],
   "jp": "「荒ぶる魔神」\n",
-  "en": ""
+  "en": "「The Raging Demon」\n",
+  "pages": "\"The Raging Demon\""
  },
  {
   "id": "28DF61",
@@ -4250,7 +4260,8 @@
    1257
   ],
   "jp": "{spk}{FF28}\n「{hero}　連邦の部隊よ！\n　大きい‥‥巨人の群れだわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, a Federation unit!\n They're big... a pack of giants!」\n",
+  "pages": "\"{hero}, a Federation unit! They're big... a pack of giants!\""
  },
  {
   "id": "28DFA7",
@@ -4258,7 +4269,8 @@
    1258
   ],
   "jp": "{spk}ファウスト　\n「ぜつめつ　すんぜんの　巨人族ですか‥‥\n　そんな物まで　使うとは\n　連邦の力は　はかりしれませんね」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「The giants, a race on the\n brink of extinction... To use\n even them, the Federation's」\n{next}\n「power is beyond measure.」\n",
+  "pages": "\"The giants, a race on the brink of extinction... To use even them, the Federation's power is beyond measure.\""
  },
  {
   "id": "28E01F",
@@ -4266,7 +4278,8 @@
    1259
   ],
   "jp": "{spk}ツキカゲ　　\n「ククク‥‥　巨人か\n　血が　騒ぐ　強そうなヤツらだ」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Heh heh heh... Giants, eh.\n Strong-looking brutes. Makes\n my blood stir.」\n",
+  "pages": "\"Heh heh heh... Giants, eh. Strong-looking brutes. Makes my blood stir.\""
  },
  {
   "id": "28E067",
@@ -4274,7 +4287,8 @@
    1260
   ],
   "jp": "{spk}ロブン　　　\n「ふむ　巨人を　戦士にするとは\n　なるほど　手間がかからず\n　強力な部隊が　作れますな‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Hm. Making warriors of\n giants. I see, a powerful unit\n with little effort...」\n",
+  "pages": "\"Hm. Making warriors of giants. I see, a powerful unit with little effort...\""
  },
  {
   "id": "28E0D5",
@@ -4282,7 +4296,8 @@
    1261
   ],
   "jp": "{spk}ミランダ　　\n「できれば　殺したく　ありませんが\n　しかた　ありませんね‥‥\n　われらの　行く手を　ふさぐならば」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「I would rather not kill them\n if I can help it, but it cannot\n be helped... if they block our」\n{next}\n「way.」\n",
+  "pages": "\"I would rather not kill them if I can help it, but it cannot be helped... if they block our way.\""
  },
  {
   "id": "28E14B",
@@ -4290,7 +4305,8 @@
    1262
   ],
   "jp": "{spk}シュタイア　\n「でかい相手だ　あれなら\n　どんな攻撃でも　当てられる！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「Big targets. Any attack'll hit\n something that size!」\n",
+  "pages": "\"Big targets. Any attack'll hit something that size!\""
  },
  {
   "id": "28E197",
@@ -4298,7 +4314,8 @@
    1263
   ],
   "jp": "{spk}アテナ　　　\n「本当かしら？」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「Is that so?」\n",
+  "pages": "\"Is that so?\""
  },
  {
   "id": "28E1B9",
@@ -4306,7 +4323,8 @@
    1264
   ],
   "jp": "{spk}{FF1F}\n「よし　行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Right, let's go!」\n",
+  "pages": "\"Right, let's go!\""
  },
  {
   "id": "28E1D3",
@@ -4314,7 +4332,8 @@
    1265
   ],
   "jp": "{spk}巨人部隊長　\n「ぐはァ‥‥ッ‥‥！？\n　もう少し　時間が　あれば\n　アレを　使えたものを‥‥！」\n",
-  "en": ""
+  "en": "{spk}巨人部隊長　\n「Gwaah...!? If I'd only had... a\n little more time... I could have\n used that thing...!」\n",
+  "pages": "\"Gwaah...!? If I'd only had... a little more time... I could have used that thing...!\""
  },
  {
   "id": "28E237",
@@ -4322,7 +4341,8 @@
    1266
   ],
   "jp": "{spk}{FF28}\n「見て！　機械のバケモノよ！？\n　巨人部隊は　こいつが\n　くるのを　待っていたのね！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look! A machine monster!?\n The giant unit was waiting\n for this thing to come!?」\n",
+  "pages": "\"Look! A machine monster!? The giant unit was waiting for this thing to come!?\""
  },
  {
   "id": "28E297",
@@ -4330,7 +4350,8 @@
    1267
   ],
   "jp": "{spk}{FF1F}\n「機神とかいう　兵器だな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「One of those weapons they\n call Machine Gods.」\n",
+  "pages": "\"One of those weapons they call Machine Gods.\""
  },
  {
   "id": "28E2B9",
@@ -4338,7 +4359,8 @@
    1268
   ],
   "jp": "{spk}{FF28}\n「機神２号‥‥ってところね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Machine God No. 2, I'd say!」\n",
+  "pages": "\"Machine God No. 2, I'd say!\""
  },
  {
   "id": "28E2DF",
@@ -4346,7 +4368,8 @@
    1269
   ],
   "jp": "{spk}{FF1F}\n「あの八本の腕　それぞれの\n　動きに注意だ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Watch how each of those\n eight arms moves!」\n",
+  "pages": "\"Watch how each of those eight arms moves!\""
  },
  {
   "id": "28E315",
@@ -4354,7 +4377,8 @@
    1270
   ],
   "jp": "{spk}ロブン　　　\n「魔法が　きかないだと！？\n　‥‥す‥‥すばらしい！\n　これぞ　まさしく　究極の兵器！」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Magic doesn't work on it!?\n ...M... magnificent! Truly the\n ultimate weapon!」\n",
+  "pages": "\"Magic doesn't work on it!? ...M... magnificent! Truly the ultimate weapon!\""
  },
  {
   "id": "28E37F",
@@ -4362,7 +4386,8 @@
    1271
   ],
   "jp": "{spk}{FF1F}\n「対魔法防御シールドだ\n　ヤツに　魔法はきかない\n　技か　直接攻撃で　つぶすぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「An anti-magic shield. Magic\n won't work on it. We'll crush\n it with skills and direct」\n{next}\n「attacks!」\n",
+  "pages": "\"An anti-magic shield. Magic won't work on it. We'll crush it with skills and direct attacks!\""
  },
  {
   "id": "28E3D9",
@@ -4370,7 +4395,8 @@
    1272
   ],
   "jp": "{spk}ファウスト　\n「‥‥アンチ°マジック°シールド」\n{next}\n「ふふ　やりますね　まさか\n　魔法防御の　カベまで\n　装備している　兵器だとは‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「...An Anti-Magic Shield.」\n{next}\n「Heh, not bad. Who would\n have thought a weapon\n would be equipped with a」\n{next}\n「wall against magic...」\n",
+  "pages": "\"...An Anti-Magic Shield.\" || \"Heh, not bad. Who would have thought a weapon would be equipped with a wall against magic...\""
  },
  {
   "id": "28E467",
@@ -4378,7 +4404,8 @@
    1273
   ],
   "jp": "{spk}{FF1F}\n「ヤツに　魔法はきかない\n　技か　直接攻撃で　つぶすぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Magic won't work on it. We'll\n crush it with skills and direct\n attacks!」\n",
+  "pages": "\"Magic won't work on it. We'll crush it with skills and direct attacks!\""
  },
  {
   "id": "28E4A9",
@@ -4386,7 +4413,8 @@
    1274
   ],
   "jp": "{spk}{FF28}\n「ま‥‥魔法が‥‥きかない！？」\n{next}\n「アンチ°マジック°シールド！\n　機械なのに　そんなものまで\n　持っている‥‥って言うの！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「M... magic... doesn't work!?」\n{next}\n「An Anti-Magic Shield! You\n mean it's a machine and it\n even has one of those!?」\n",
+  "pages": "\"M... magic... doesn't work!?\" || \"An Anti-Magic Shield! You mean it's a machine and it even has one of those!?\""
  },
  {
   "id": "28E535",
@@ -4402,7 +4430,8 @@
    1276
   ],
   "jp": "{spk}{FF1F}\n「ヤツに　魔法はきかない\n　技か　直接攻撃で　つぶすぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Magic won't work on it. We'll\n crush it with skills and direct\n attacks!」\n",
+  "pages": "\"Magic won't work on it. We'll crush it with skills and direct attacks!\""
  },
  {
   "id": "28E57D",
@@ -4410,7 +4439,8 @@
    1277
   ],
   "jp": "{spk}{FF28}\n「やったわね　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We did it, {hero}!」\n",
+  "pages": "\"We did it, {hero}!\""
  },
  {
   "id": "28E5A3",
@@ -4418,7 +4448,8 @@
    1278
   ],
   "jp": "{spk}{FF1F}\n「苦しい　戦いだったな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That was a tough fight...」\n",
+  "pages": "\"That was a tough fight...\""
  },
  {
   "id": "28E5C7",
@@ -4426,7 +4457,8 @@
    1279
   ],
   "jp": "「オレたちは　苦心の末　機神を倒した」\n{next}\n「だが　ダークロードは言った\n　十二の力が　束ねられ\n　巨大な暗黒の力が　よみがえると」\n{next}\n「巨大な　暗黒の力‥‥\n　どうやら　オレは　この戦いを\n　少し　あまく見ていたようだ」\n{next}\n「世界は　確実に　破めつに向かってる\n　果たして　それも\n　定められた　運命なのだろうか‥‥」\n{next}\n「{FF31}が　さらわれた事も\n　オレが　反乱軍と　出会った事も\n　全て　定められていた事なのか」\n{next}\n「だとしたら　運命と　いうヤツは‥‥」\n",
-  "en": ""
+  "en": "「After a hard struggle, we\n defeated the Machine God.」\n{next}\n「But the Dark Lord said that\n when the twelve powers are\n bound, a vast power of」\n{next}\n「darkness will be revived.」\n{next}\n「A vast power of darkness...\n Looks like I took this fight a\n little too lightly.」\n{next}\n「The world is surely heading\n for ruin. Is that, too, a fate\n decided from the start...?」\n{next}\n「{FF31} being kidnapped,\n me meeting the rebels... Was\n it all decided?」\n{next}\n「If so, this thing called fate...」\n",
+  "pages": "\"After a hard struggle, we defeated the Machine God.\" || \"But the Dark Lord said that when the twelve powers are bound, a vast power of darkness will be revived.\" || \"A vast power of darkness... Looks like I took this fight a little too lightly.\" || \"The world is surely heading for ruin. Is that, too, a fate decided from the start...?\" || \"{FF31} being kidnapped, me meeting the rebels... Was it all decided?\" || \"If so, this thing called fate...\""
  },
  {
   "id": "28E799",
@@ -4434,7 +4466,8 @@
    1280
   ],
   "jp": "{spk}商人　　　　\n「オレ　たびの商人\n　この砂漠　人いない\n　商売　ぜんぜん　できない」\n{next}\n「あんた　かうか？」\n{next}\n　調合薬\n　古代の魔道書\n{FF14:00C2}{end}\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Me, travelling merchant. This\n desert, no people. Business,\n no good at all.」\n{next}\n「You buy?」\n{next}\n　Potion\n　Ancient Grimoire\n{FF14:00C2}{end}\n",
+  "pages": "\"Me, travelling merchant. This desert, no people. Business, no good at all.\" || \"You buy?\" || Potion\\nAncient Grimoire"
  },
  {
   "id": "28E831",
@@ -4442,7 +4475,8 @@
    1281
   ],
   "jp": "{spk}商人　　　　\n「それは５０００Ｇ」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「That one, 5000G.」\n",
+  "pages": "\"That one, 5000G.\""
  },
  {
   "id": "28E857",
@@ -4450,7 +4484,8 @@
    2455
   ],
   "jp": "{spk}商人　　　　\n「それは１２０Ｇ」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「That one, 120G.」\n",
+  "pages": "\"That one, 120G.\""
  },
  {
   "id": "28E87B",
@@ -4458,7 +4493,8 @@
    1282
   ],
   "jp": "{spk}商人　　　　\n「‥‥すまない」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「...Sorry.」\n",
+  "pages": "\"...Sorry.\""
  },
  {
   "id": "28E89D",
@@ -4466,7 +4502,8 @@
    1283
   ],
   "jp": "{spk}商人　　　　\n「やめるか？」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「You quit?」\n",
+  "pages": "\"You quit?\""
  },
  {
   "id": "28E8BD",
@@ -4474,7 +4511,8 @@
    1284
   ],
   "jp": "{spk}商人　　　　\n「金　たりない」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Money, not enough.」\n",
+  "pages": "\"Money, not enough.\""
  },
  {
   "id": "28E8DF",
@@ -4482,7 +4520,8 @@
    1285
   ],
   "jp": "{spk}商人　　　　\n「それは　もうない」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「That one, no more.」\n",
+  "pages": "\"That one, no more.\""
  },
  {
   "id": "28E905",
@@ -4490,7 +4529,8 @@
    1286
   ],
   "jp": "「広大な　砂漠の東に　ながれる\n　アバタン川は　このあたりで\n　ゆいいつ　みどりが　ひろがる地だ」\n{next}\n「だが　ここは　連邦の中心地\n　美しき　みどりに\n　見とれている　ゆとりはない」\n{next}\n「やはり　この地にも　敵はいた」\n",
-  "en": ""
+  "en": "「The Abadan River flows east\n of the vast desert, the only\n place around here where」\n{next}\n「green spreads.」\n{next}\n「But this is the heart of the\n Federation. No time to stand\n admiring the lovely green.」\n{next}\n「Sure enough, there were\n enemies here too.」\n",
+  "pages": "\"The Abadan River flows east of the vast desert, the only place around here where green spreads.\" || \"But this is the heart of the Federation. No time to stand admiring the lovely green.\" || \"Sure enough, there were enemies here too.\""
  },
  {
   "id": "28E9E5",
@@ -4498,7 +4538,8 @@
    1287
   ],
   "jp": "「不死なる者」\n",
-  "en": ""
+  "en": "「The Undying One」\n",
+  "pages": "\"The Undying One\""
  },
  {
   "id": "28E9F5",
@@ -4506,7 +4547,8 @@
    1288
   ],
   "jp": "{spk}{FF28}\n「{hero}　敵の待ち伏せよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, an enemy ambush!」\n",
+  "pages": "\"{hero}, an enemy ambush!\""
  },
  {
   "id": "28EA1F",
@@ -4514,7 +4556,8 @@
    1289
   ],
   "jp": "{spk}{FF1F}\n「‥‥魔導部隊か\n　ならば　せっきん戦に\n　持ち込むのが　正攻法だな」\n{next}\n「よし　行くぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...A sorcery unit. Then the\n textbook move is to get in\n close.」\n{next}\n「Right, let's go!」\n",
+  "pages": "\"...A sorcery unit. Then the textbook move is to get in close.\" || \"Right, let's go!\""
  },
  {
   "id": "28EA85",
@@ -4522,7 +4565,8 @@
    1290
   ],
   "jp": "{spk}{FF1F}\n「なんだ　この力は！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What is this power!?」\n",
+  "pages": "\"What is this power!?\""
  },
  {
   "id": "28EAA5",
@@ -4530,7 +4574,8 @@
    1291
   ],
   "jp": "{spk}ファウスト　\n「魔力とは　少し　違いますね\n　恐らく東洋の秘術‥‥」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「It is a little different from\n magic. Most likely a secret\n art of the East...」\n",
+  "pages": "\"It is a little different from magic. Most likely a secret art of the East...\""
  },
  {
   "id": "28EAED",
@@ -4538,7 +4583,8 @@
    1292
   ],
   "jp": "{spk}ロブン　　　\n「あ‥‥　あれは！　あれこそ\n　屍解仙（しかいせん）の　妖術！」\n{next}\n「私が　探しもとめていた\n　仙道のきょくげん！　東洋の秘術！\n　あれだ！　あの力さえ　あれば！」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Th... that's...! That is the\n sorcery of the Corpse\n Immortal!」\n{next}\n「The ultimate of the hermits'\n way that I have been\n searching for! The secret art」\n{next}\n「of the East! That's it! With\n that power...!」\n",
+  "pages": "\"Th... that's...! That is the sorcery of the Corpse Immortal!\" || \"The ultimate of the hermits' way that I have been searching for! The secret art of the East! That's it! With that power...!\""
  },
  {
   "id": "28EBA5",
@@ -4546,7 +4592,8 @@
    1293
   ],
   "jp": "{spk}{FF1F}\n「屍解仙‥‥だと！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The Corpse Immortal...!?」\n",
+  "pages": "\"The Corpse Immortal...!?\""
  },
  {
   "id": "28EBC3",
@@ -4554,7 +4601,8 @@
    1294
   ],
   "jp": "{spk}ロブン　　　\n「死さえ　乗り越えた\n　最上にして　最強の　仙人！\n　まさしく　不死の魔人ですよ！」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「The highest and mightiest of\n hermits, who has overcome\n even death! A truly undying」\n{next}\n「demon!」\n",
+  "pages": "\"The highest and mightiest of hermits, who has overcome even death! A truly undying demon!\""
  },
  {
   "id": "28EC29",
@@ -4570,7 +4618,8 @@
    1296
   ],
   "jp": "{spk}魔導部隊長　\n「‥‥くおああおおおああおッ！？\n　いまだ　不完全だったのか？\n　屍解仙としての　わが肉体は！？」\n{next}\n「‥‥しかし\n　いつの日か‥‥死を‥‥\n　‥‥乗り越えて‥‥見せ‥‥」\n",
-  "en": ""
+  "en": "{spk}魔導部隊長　\n「...Kwoaaaoooaaah!? Was it\n still incomplete? My body as\n a Corpse Immortal!?」\n{next}\n「...But... one day... I will...\n overcome... death... you'll s...」\n",
+  "pages": "\"...Kwoaaaoooaaah!? Was it still incomplete? My body as a Corpse Immortal!?\" || \"...But... one day... I will... overcome... death... you'll s...\""
  },
  {
   "id": "28ECFD",
@@ -4578,7 +4627,8 @@
    1297
   ],
   "jp": "{spk}{FF28}\n「やったわね　{hero}！」\n{next}\n「‥‥あそこ　見て！？\n　敵が　アイテムを落としてる！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「You did it, {hero}!」\n{next}\n「...Look over there!? The\n enemy dropped an item!」\n",
+  "pages": "\"You did it, {hero}!\" || \"...Look over there!? The enemy dropped an item!\""
  },
  {
   "id": "28ED61",
@@ -4586,7 +4636,8 @@
    1298
   ],
   "jp": "{spk}ロブン　　　\n「まさしく　屍解仙の秘術！\n　私は　それを求め\n　ここまで　やってきたのです」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Truly the secret art of the\n Corpse Immortal! That is\n what I came all this way to」\n{next}\n「find.」\n",
+  "pages": "\"Truly the secret art of the Corpse Immortal! That is what I came all this way to find.\""
  },
  {
   "id": "28EDC1",
@@ -4594,7 +4645,8 @@
    1299
   ],
   "jp": "{spk}{FF28}\n「どういう　こと？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What do you mean?」\n",
+  "pages": "\"What do you mean?\""
  },
  {
   "id": "28EDDD",
@@ -4602,7 +4654,8 @@
    1300
   ],
   "jp": "{spk}ロブン　　　\n「‥‥隠していて　もうしわけない」\n{next}\n「わたしの　こきょうの国では\n　長き戦乱が　つづいています」\n{next}\n「その戦いを　終わらせるための\n　強力な武器や　アイテムを\n　私は　探しもとめて　いたのです」\n{next}\n「その　屍解仙の法も　私が\n　探しもとめていた物の　一つ‥‥」\n{next}\n「かつて　東洋から　何者かに\n　持ち出され　今まで\n　行方知れずに　なっていたのです」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「...I am sorry I hid it from you.」\n{next}\n「In my homeland, a long war\n is still going on.」\n{next}\n「I have been searching for\n powerful weapons and items\n to end that war.」\n{next}\n「The method of the Corpse\n Immortal was one of the\n things I sought...」\n{next}\n「Long ago it was carried out\n of the East by someone, and\n its whereabouts were」\n{next}\n「unknown until now.」\n",
+  "pages": "\"...I am sorry I hid it from you.\" || \"In my homeland, a long war is still going on.\" || \"I have been searching for powerful weapons and items to end that war.\" || \"The method of the Corpse Immortal was one of the things I sought...\" || \"Long ago it was carried out of the East by someone, and its whereabouts were unknown until now.\""
  },
  {
   "id": "28EF57",
@@ -4610,7 +4663,8 @@
    1301
   ],
   "jp": "{spk}{FF1F}\n「なるほど‥‥　で　あわよくば\n　連邦が　ほり出した\n　古代兵器の　秘密も　探ると？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「I see... And if you got the\n chance, you'd dig into the\n secrets of the ancient」\n{next}\n「weapons the Federation\n unearthed, too?」\n",
+  "pages": "\"I see... And if you got the chance, you'd dig into the secrets of the ancient weapons the Federation unearthed, too?\""
  },
  {
   "id": "28EFB5",
@@ -4618,7 +4672,8 @@
    1302
   ],
   "jp": "{spk}ロブン　　　\n「‥‥‥‥」\n{next}\n「さすがは　{hero}どの\n　あなたの目は　ごまかせませぬ」\n{next}\n「いかにも　その通りです\n　それで　私を\n　仲間から　はずされますか？」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「......」\n{next}\n「As expected of you,\n {hero}-dono. Your eyes\n cannot be fooled.」\n{next}\n「Exactly so. Will you put me\n out of the party for it?」\n",
+  "pages": "\"......\" || \"As expected of you, {hero}-dono. Your eyes cannot be fooled.\" || \"Exactly so. Will you put me out of the party for it?\""
  },
  {
   "id": "28F065",
@@ -4626,7 +4681,8 @@
    1303
   ],
   "jp": "{spk}ロブン　　　\n「‥‥しかた　ありますまい」\n{next}\n「では　ここで　お別れです\n　{hero}どのの　ご武運を‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「...It cannot be helped.」\n{next}\n「Then this is where we part.\n May fortune favour you in\n battle, {hero}-dono...」\n",
+  "pages": "\"...It cannot be helped.\" || \"Then this is where we part. May fortune favour you in battle, {hero}-dono...\""
  },
  {
   "id": "28F0D9",
@@ -4634,7 +4690,8 @@
    1304
   ],
   "jp": "{spk}{FF28}\n「いいの　{hero}？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Is that all right, {hero}?」\n",
+  "pages": "\"Is that all right, {hero}?\""
  },
  {
   "id": "28F0FB",
@@ -4642,7 +4699,8 @@
    1305
   ],
   "jp": "{spk}{FF1F}\n「人には　それぞれの道があるのさ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Everyone's got their own\n road.」\n",
+  "pages": "\"Everyone's got their own road.\""
  },
  {
   "id": "28F125",
@@ -4650,7 +4708,8 @@
    1306
   ],
   "jp": "{spk}{FF1F}\n「今では　あんたも\n　オレたちの　仲間だ‥‥」\n{next}\n「信用する」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「You're one of us now...」\n{next}\n「I trust you.」\n",
+  "pages": "\"You're one of us now...\" || \"I trust you.\""
  },
  {
   "id": "28F16D",
@@ -4658,7 +4717,8 @@
    1307
   ],
   "jp": "{spk}ロブン　　　\n「ありがとう　ございます」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Thank you very much.」\n",
+  "pages": "\"Thank you very much.\""
  },
  {
   "id": "28F199",
@@ -4666,7 +4726,8 @@
    1308
   ],
   "jp": "「強力なモンスターに　魔導部隊\n　そして　古代の兵器の　機神‥‥」\n{next}\n「連邦の力は　底がふかく　また\n　果てしないように　思えた」\n{next}\n「オレたち反乱軍の　運命は\n　さて　どのように\n　定められて　いるのだろう‥‥」\n",
-  "en": ""
+  "en": "「Powerful monsters, sorcery\n units, and the ancient\n weapons, the Machine Gods...」\n{next}\n「The Federation's power\n seemed bottomless, without\n end.」\n{next}\n「And how, I wonder, has the\n fate of us rebels been\n decided...」\n",
+  "pages": "\"Powerful monsters, sorcery units, and the ancient weapons, the Machine Gods...\" || \"The Federation's power seemed bottomless, without end.\" || \"And how, I wonder, has the fate of us rebels been decided...\""
  },
  {
   "id": "28F275",
@@ -4674,7 +4735,8 @@
    1309
   ],
   "jp": "「連邦の　王都への　最大の　なん所\n　アトラス山脈　この山々は\n　たとえて　言うなら　連邦のタテだ」\n{next}\n「北にひろがる　砂漠と　そして\n　それに続く　この巨大な山脈‥‥」\n{next}\n「これらの　おかげで　今まで連邦は\n　王都を攻められた事は　一度もない」\n{next}\n「もっとも　それは　今までの話だ\n　オレたちは　確実に\n　連邦のノドもとへ　迫っている」\n",
-  "en": ""
+  "en": "「The greatest obstacle on\n the way to the Federation's\n royal city: the Atlas」\n{next}\n「Mountains. These peaks are\n the Federation's shield, so to\n speak.」\n{next}\n「The desert spreading to the\n north, and this huge range\n of mountains beyond it...」\n{next}\n「Thanks to them, the\n Federation's royal city had\n never once been attacked.」\n{next}\n「But that was before. We\n were closing in on the\n Federation's throat.」\n",
+  "pages": "\"The greatest obstacle on the way to the Federation's royal city: the Atlas Mountains. These peaks are the Federation's shield, so to speak.\" || \"The desert spreading to the north, and this huge range of mountains beyond it...\" || \"Thanks to them, the Federation's royal city had never once been attacked.\" || \"But that was before. We were closing in on the Federation's throat.\""
  },
  {
   "id": "28F3CF",
@@ -4682,7 +4744,8 @@
    1310
   ],
   "jp": "「アトラス山脈」\n",
-  "en": ""
+  "en": "「The Atlas Mountains」\n",
+  "pages": "\"The Atlas Mountains\""
  },
  {
   "id": "28F3E1",
@@ -4690,7 +4753,8 @@
    1311
   ],
   "jp": "{spk}{FF28}\n「‥‥うわぁ！　すごい山ね！\n　私みたいに　飛べない\n　{hero}たちは　たいへんよね」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...Wow! What mountains! It\n must be hard for {hero}\n and the rest, who can't fly」\n{next}\n「like me.」\n",
+  "pages": "\"...Wow! What mountains! It must be hard for {hero} and the rest, who can't fly like me.\""
  },
  {
   "id": "28F443",
@@ -4698,7 +4762,8 @@
    1312
   ],
   "jp": "{spk}{FF1F}\n「よけいな　お世話だ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Mind your own business.」\n",
+  "pages": "\"Mind your own business.\""
  },
  {
   "id": "28F461",
@@ -4706,7 +4771,8 @@
    1313
   ],
   "jp": "{spk}{FF1F}\n「きたぞ　敵だ！」\n{next}\n「‥‥あれは　機神だな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Here they come, enemies!」\n{next}\n「...That's a Machine God.」\n",
+  "pages": "\"Here they come, enemies!\" || \"...That's a Machine God.\""
  },
  {
   "id": "28F499",
