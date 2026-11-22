@@ -40,3 +40,5 @@ translator. One row per batch range when done.
 
 | Batches | Reviewer | Critical | Important | Minors |
 |---|---|---|---|---|
+| b001-b009 (name tables) | fresh Orca worker, read-only pass (2026-11-23, did not translate) | 0 | 0 | 2 (0BFA3E "Immortal", 1AE963 "Persephone"; `docs/polish.md`) |
+| b010-b016 (prologue, map hints, Ruins Town, Accra/Valkyries, Salamander, Isolated Isle) | same | 0 | 1 fixed (Rune's feminine register flattened: 1E58AE, 1E59AE, 1E5DA6 now "dear"/"darling", `work/tl/rv01_fix.tsv` via `repage`) | 2 (24E242, 1E1176) |

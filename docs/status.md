@@ -10,12 +10,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (2) **independent review** of every batch (`tools/pairs.py bNNN --out work/qa/review/bNNN.txt`; codex is out of
   quota until 2026-11-26 10:32, Orca workers can't start subagents: a fresh worker reviews pairs it did not
   translate), rows in `docs/reviews.md` "Independent review"; fix Critical/Important, Minors to `docs/polish.md`.
+  **Done: b001-b016** (session h). **Resume at b017** (b017-b050 master, then b051-b069 side tables). A big batch
+  is ~8k tokens: about 8 batches a worker. Fix a finding with `work/tl/rvNN_fix.tsv` rows `id<TAB>page<TAB>text`,
+  `batches.py repage rvNN FILE`, `check rvNN`, `merge rvNN --overwrite` (the old `bNNN.out.tsv` files predate the
+  fit pass: never re-merge them). Rune's later lines (b048 Highland etc.): check the feminine register (brief).
   Then phase 7. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
   keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (phase 7).
 - **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);
   (2) shop menu glyph set `menus_c` 01D2B7 (買う売るやめる 武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): rewrite
   its layout words in 01D1F5 so each English word gets 3+ cells, then translate it with `tools/grid.py`;
   (3) widen the 2-cell menu slices that force abbreviations (polish line "Menu grid strings"); (4) `[00AB]` kanji.
+- **Session 2026-11-23h (independent review b001-b016):** fresh worker, read-only pass of the pairs files: 0
+  Critical, 1 Important fixed (Rune's feminine register, rv01), 4 Minors to `docs/polish.md`. Condensed reading:
+  one line per entry `id | JP => EN` from `work/qa/review/bNNN.txt` (drop the context lines; read with offset/limit).
 - **Session 2026-11-22g (fit pass):** widow fit pass finished and merged (see Phase). Seen in game: split box
   1E8298 (`work/qa/w_fit03`, `msg` scene, MSG=1759 = the entry's `slots` value, not its id) ends cleanly with its
   quote. Build green, smoke ok. Independent review table in `docs/reviews.md` is still empty: start at b010.

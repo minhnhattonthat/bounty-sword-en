@@ -32,3 +32,7 @@
   "Gibraltar Str.", "Rhipaean Mts" (locations 00CDA3, 00D023, 00CFBF, 00CE93); dialogue spells them out
   ("Blackburn mountains" in 1E01E0 lowercase, "Strait of Gibraltar"). After D8 pair packing (phase 7) give the
   labels the full names and add label/dialogue forms to the glossary Places table so the lint keeps them consistent
+- [ ] Independent review b001-b016 (minors): class 0BFA3E しかいせん = "Immortal" (glossary 屍解仙 "Corpse
+  Immortal"; widen if the field allows); item 1AE963 ペルセポネの箱 = "Persephone" (drops "Box"); 24E242 ううん
+  rendered "Mm-hm" (it contradicts his "Not yet": "No, no..."); 1E1176 "Old memories of {hero}" reads as memories
+  about him (the fairy speaks to him: "Your old memories are buried here...")

@@ -42,6 +42,8 @@ Read with offset/limit (files over ~4 KB come back as a stub otherwise): `glossa
 - One god, one spelling: Cronus (not Chronos/Kronos). Place names as in the glossary (Isolated Isle, not a
   description of it).
 - Placeholder speakers ××××/○○○○ -> "****".
+- Rune (Athena's brother) speaks partly in a feminine register (のよ, わね): keep it audible ("dear", "darling",
+  softer phrasing) where the JP uses it; his plain/commanding lines stay plain.
 
 ## Report (final message)
 `NEW TERM: jp -> en`, `UNSURE: id - note`, `CUT: id - what was dropped`.

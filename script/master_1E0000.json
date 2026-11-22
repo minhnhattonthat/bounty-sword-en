@@ -1356,8 +1356,8 @@
    1667
   ],
   "jp": "{spk}ルーネ　　　\n「‥‥妹の　アテナか！？」\n{next}\n「まさか　反乱軍に　いようとは\n　あなたは　いくつになっても\n　この私を　こまらせるのね‥‥」\n",
-  "en": "{spk}ルーネ　　　\n「...My sister, Athena!?」\n{next}\n「To think you'd join the\n rebels... However old you get,\n you always give me trouble...」\n",
-  "pages": "\"...My sister, Athena!?\" || \"To think you'd join the rebels... However old you get, you always give me trouble...\""
+  "en": "{spk}ルーネ　　　\n「...My sister, Athena!?」\n{next}\n「To think you'd side with the\n rebels... All grown up and still\n such trouble, dear...」\n",
+  "pages": "\"...My sister, Athena!?\" || \"To think you'd side with the rebels... All grown up and still such trouble, dear...\""
  },
  {
   "id": "1E593E",
@@ -1374,8 +1374,8 @@
    1669
   ],
   "jp": "{spk}ルーネ　　　\n「忘れないで　アテナ！　わが国が\n　その小ささゆえ　周りの大国から\n　常に　食い物に　されてきた事を！」\n{next}\n「おぼえている！？　私たちと\n　同じ年の　むすめが　泣きながら\n　売られていく　あの時の顔を！？」\n{next}\n「力があれば！　金があれば！\n　だからこそ　私は　連邦へと\n　入る　決心を　固めたのよ！」\n",
-  "en": "{spk}ルーネ　　　\n「Don't forget, Athena! Our tiny\n country was always prey to\n the great powers around it!」\n{next}\n「Do you remember!? The faces\n of girls our own age, crying\n as they were sold off!?」\n{next}\n「If only we'd had power! Or\n money! That is why I chose\n to join the Federation!」\n",
-  "pages": "\"Don't forget, Athena! Our tiny country was always prey to the great powers around it!\" || \"Do you remember!? The faces of girls our own age, crying as they were sold off!?\" || \"If only we'd had power! Or money! That is why I chose to join the Federation!\""
+  "en": "{spk}ルーネ　　　\n「Don't forget, Athena darling!\n Our tiny land was always\n prey to the great powers!」\n{next}\n「Do you remember!? The faces\n of girls our own age, crying\n as they were sold off!?」\n{next}\n「If only we'd had power! Or\n money! That is why I chose\n to join the Federation!」\n",
+  "pages": "\"Don't forget, Athena darling! Our tiny land was always prey to the great powers!\" || \"Do you remember!? The faces of girls our own age, crying as they were sold off!?\" || \"If only we'd had power! Or money! That is why I chose to join the Federation!\""
  },
  {
   "id": "1E5AF0",
@@ -1428,8 +1428,8 @@
    1675
   ],
   "jp": "{spk}ルーネ　　　\n「変わらないわね　アテナ‥‥\n　むやみに　戦うだけでは\n　戦さには勝てない　わかる？」\n",
-  "en": "{spk}ルーネ　　　\n「You haven't changed,\n Athena... Just fighting blindly\n won't win you a war.」\n{next}\n「Understand?」\n",
-  "pages": "\"You haven't changed, Athena... Just fighting blindly won't win you a war. Understand?\""
+  "en": "{spk}ルーネ　　　\n「Still the same, Athena dear...\n Fighting blindly won't win you\n a war. Do you see?」\n",
+  "pages": "\"Still the same, Athena dear... Fighting blindly won't win you a war. Do you see?\""
  },
  {
   "id": "1E5E0E",
