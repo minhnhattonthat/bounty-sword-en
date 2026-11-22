@@ -21,7 +21,7 @@
    64
   ],
   "jp": "{spk}情報屋　　　\n「よお！　さっきの仕事は\n　もう終わったかい　{hero}？」\n",
-  "en": "{spk}情報屋　　　\n「Hey! Finished that last job\n yet, {hero}?」\n",
+  "en": "{spk}情報屋　　　\n「Hey! Finished that last\n job yet, {hero}?」\n",
   "pages": "\"Hey! Finished that last job yet, {hero}?\""
  }
 ]

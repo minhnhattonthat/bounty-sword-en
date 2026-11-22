@@ -69,3 +69,24 @@ def test_every_master_message_has_a_page_view():
             raw, items = pages.split(e["jp"])
             assert "\n".join(it[1] if it[0] == "line" else "\n".join(
                 [it[1] + it[2][0]] + it[2][1:]) for it in items) == e["jp"]
+
+
+def test_wrap_keeps_greedy_line_count_and_leaves_no_stub():
+    lines = pages.wrap("But was it okay to just run off and leave the people of the town?", "「", " ")
+    greedy = pages.greedy_wrap("But was it okay to just run off and leave the people of the town?", "「", " ")
+    assert len(lines) == len(greedy)
+    assert min(len(ln.strip()) for ln in lines) >= pages.STUB_CHARS
+    assert all(pages.px(("「" if k == 0 else "") + ln) <= pages.LINE_PX for k, ln in enumerate(lines))
+
+
+def test_stub_rule_flags_wrapped_stub_not_forced_line():
+    stub_jp = "「ああ\n　うん」\n"
+    assert pages.stubs(stub_jp, '"Yes\\nNo"') == []                 # forced line: a choice, not a stub
+    orig = pages.wrap
+    try:
+        pages.wrap = lambda text, lead="", indent="", reserve=0, owner=None: (
+            owner.extend([0, 0]) if owner is not None else None) or ["But was it okay to just run", " off?"]
+        assert pages.stubs(stub_jp, '"But was it okay to just run off?"') == ["page 1: 'off?'"]
+    finally:
+        pages.wrap = orig
+    assert pages.stubs(stub_jp, '"But was it okay to just run off?"') == []

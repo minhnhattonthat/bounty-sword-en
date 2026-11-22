@@ -107,9 +107,8 @@ def jp_view(jp, names=None):
     return " ‖ ".join(out)
 
 
-def wrap(text, lead="", indent="", reserve=0):
-    """Greedy word wrap of one paragraph to LINE_PX - reserve; line 1 starts after `lead`, later lines with `indent`
-    (both counted, neither returned in line 1). `\\n` forces a break."""
+def greedy_wrap(text, lead="", indent="", reserve=0):
+    """Greedy word wrap (the line count `wrap` keeps); same arguments as wrap."""
     lines = []
     for para in text.split("\\n"):
         cur = None
@@ -124,6 +123,77 @@ def wrap(text, lead="", indent="", reserve=0):
                 lines.append(cur)
                 cur = indent + word
         lines.append(cur or "")
+    return lines
+
+
+def _balance(words, n, head0, head, reserve):
+    """Split words into n lines (n = the greedy count, so always possible) minimising the sum of squared slack over
+    every line, the last included: no one-word stub at the end. Line 1 is measured after head0, the rest after head.
+    A line over the width is allowed only for a single word (greedy does the same)."""
+    sp, ws = px(" "), [px(w) for w in words]
+    pre = [0]
+    for w in ws:
+        pre.append(pre[-1] + w)
+    W, INF = len(words), float("inf")
+
+    def cost(i, j, first):
+        width = px(head0 if first else head) + pre[j] - pre[i] + sp * (j - i - 1) + reserve
+        if width > LINE_PX:
+            return INF if j - i > 1 else 0
+        return (LINE_PX - width) ** 2
+
+    best = [[INF] * (W + 1) for _ in range(n + 1)]
+    back = [[0] * (W + 1) for _ in range(n + 1)]
+    best[0][0] = 0
+    for k in range(1, n + 1):
+        for j in range(k, W - (n - k) + 1):
+            for i in range(k - 1, j):
+                if best[k - 1][i] < INF and (c := best[k - 1][i] + cost(i, j, k == 1)) < best[k][j]:
+                    best[k][j], back[k][j] = c, i
+    if best[n][W] == INF:
+        return None
+    cuts, j = [], W
+    for k in range(n, 0, -1):
+        cuts.append((back[k][j], j))
+        j = back[k][j]
+    return [" ".join(words[i:j]) for i, j in reversed(cuts)]
+
+
+def _greedy_starts(words, head0, head, reserve):
+    """Word index where each greedy line starts."""
+    starts, cur = [0], None
+    for k, word in enumerate(words):
+        if cur is None:
+            cur = head0 + word
+        elif px(cur + " " + word) + reserve <= LINE_PX:
+            cur += " " + word
+        else:
+            starts.append(k)
+            cur = head + word
+    return starts
+
+
+def wrap(text, lead="", indent="", reserve=0, owner=None):
+    """Word wrap of one paragraph to LINE_PX - reserve: greedy, then the lines that fall in the paragraph's last
+    box (LINES a box) are re-spread over the same line count so the box ends on no one-word stub (review of
+    phase 7). Line and box counts stay the greedy ones. Line 1 starts after `lead`, later lines with `indent` (both
+    counted, neither returned in line 1). `\\n` forces a break. `owner` (a list) gets each line's paragraph index."""
+    lines = []
+    for p, para in enumerate(text.split("\\n")):
+        s, words = len(lines), para.split(" ")
+        head0 = lead if not s else indent
+        starts = _greedy_starts(words, head0, indent, reserve)
+        n = len(starts)
+        k0 = max(0, ((s + n - 1) // LINES) * LINES - s)       # first line of this paragraph in its last box
+        bal = None
+        if n - k0 > 1:
+            bal = _balance(words[starts[k0]:], n - k0, head0 if k0 == 0 else indent, indent, reserve)
+        cuts = starts[:k0] if bal else starts
+        para_lines = [" ".join(words[a:b]) for a, b in zip(cuts, cuts[1:] + [starts[k0] if bal else len(words)])]
+        para_lines += bal or []
+        lines += [ln if not lines and k == 0 else indent + ln for k, ln in enumerate(para_lines)]
+        if owner is not None:
+            owner += [p] * len(para_lines)
     return lines
 
 
@@ -201,6 +271,37 @@ def widows(jp, en):
                 short = len(re.sub(r"\{[^}]*\}", "xxxxxx", c[0].strip())) <= WIDOW_CHARS
                 if len(c) == 1 and short and not SENTENCE_END.search(prev[-1].strip()):
                     out.append(f"page {k + 1}: {c[0].strip()!r}")
+    return out
+
+
+STUB_CHARS = 6     # a wrapped box whose last line is shorter than this ends on a stub ("...run / off?")
+
+
+def stubs(jp, en):
+    """Boxes whose last line is a wrap-made stub: under STUB_CHARS characters, with the line above it from the
+    same paragraph (a forced `\\n` line such as a choice is never a stub). Returns ["page N: 'line'"]."""
+    raw, items = split(jp)
+    if raw:
+        return []
+    pages = [p for p in items if p[0] == "page"]
+    src = [p.strip() for p in en.split("||")]
+    if len(src) != len(pages):
+        return []
+    out = []
+    for k, (it, text) in enumerate(zip(pages, src)):
+        jp_text = "".join(it[2])
+        q_open, q_close = jp_text.startswith("「"), jp_text.endswith("」")
+        body = text.strip()
+        body = body[1:] if q_open and body.startswith('"') else body
+        body = body[:-1] if q_close and body.endswith('"') else body
+        for b in body.split("{next}"):
+            owner = []
+            lines = wrap(b.strip(), "「" if q_open else "", " " if q_open else "", px("」") if q_close else 0, owner)
+            for i in range(0, len(lines), LINES):
+                j = min(i + LINES, len(lines)) - 1
+                short = len(re.sub(r"\{[^}]*\}", "xxxxxx", lines[j].strip())) < STUB_CHARS
+                if j > i and owner[j] == owner[j - 1] and short:
+                    out.append(f"page {k + 1}: {lines[j].strip()!r}")
     return out
 
 

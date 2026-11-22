@@ -182,6 +182,50 @@ def glossary():
     return rows
 
 
+KEEP_JP = SCRIPT / "keep_jp.txt"
+SPEAKER_TAGS = SCRIPT / "speaker_tags.tsv"
+
+
+def keep_problems(entries):
+    """Text entries with jp and no en must be in script/keep_jp.txt (id TAB reason); listed ids must still need it."""
+    keep = {}
+    for n, line in enumerate(KEEP_JP.read_text(encoding="utf-8").splitlines() if KEEP_JP.exists() else (), 1):
+        if line.strip() and not line.startswith("#"):
+            eid, _, why = line.partition("\t")
+            if not why.strip():
+                return [f"keep_jp.txt:{n}: want ID<TAB>reason"]
+            keep[eid.strip()] = why
+    out = [f"{i}: Japanese with no English and not in script/keep_jp.txt" for i, e in entries.items()
+           if needs_english(e) and i not in keep]
+    return out + [f"keep_jp.txt: {i} " + ("is gone" if i not in entries else "needs no keep line (has English)")
+                  for i in keep if i not in entries or not needs_english(entries[i])]
+
+
+def glossary_tags():
+    """[(JP forms, allowed tag forms)]: a row's EN forms plus `tag "X"` forms named in its notes (D8 short tags)."""
+    rows = []
+    for line in GLOSSARY.read_text(encoding="utf-8").splitlines() if GLOSSARY.exists() else ():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if line.startswith("|") and len(cells) >= 4 and cells[0] not in ("JP", "") and not set(cells[0]) <= set("-: "):
+            ens = [x.strip() for x in cells[1].split("/")] + re.findall(r'tag "([^"]+)"', cells[3])
+            rows.append(([x.strip() for x in cells[0].split("/")], ens))
+    return rows
+
+
+def tag_problems(terms=None):
+    """Each speaker tag whose JP name holds a glossary term must use one of that row's EN or tag forms."""
+    out = []
+    for n, line in enumerate(SPEAKER_TAGS.read_text(encoding="utf-8").splitlines() if SPEAKER_TAGS.exists() else (), 1):
+        if not line.strip() or line.startswith("#"):
+            continue
+        jp, _, en = line.partition("\t")
+        for jps, ens in glossary_tags():
+            if any(has_term(jp, j) for j in jps) and not any(e.lower() in en.lower() for e in ens if e):
+                out.append(f"speaker_tags.tsv:{n}: {jp} -> {en!r}: glossary wants {' / '.join(ens)}"
+                           ' (or add `tag "X"` to the row\'s notes, D8)')
+    return out
+
+
 def master_tokens(text):
     return Counter(t for t in pages.TOKEN.findall(text) if t in pages.INLINE_PX)
 
@@ -298,7 +342,10 @@ def split(size, only=None):
 
 def widows(entry, en):
     """Master pages whose wrap leaves a one-line box starting mid-sentence (pages.widows)."""
-    return [f"widow box {w}" for w in pages.widows(entry["jp"], en)] if is_master(entry) else []
+    if not is_master(entry):
+        return []
+    return ([f"widow box {w}" for w in pages.widows(entry["jp"], en)]
+            + [f"stub last line {s}" for s in pages.stubs(entry["jp"], en)])
 
 
 def check_batch(batch, entries, terms):
@@ -426,6 +473,7 @@ def main(argv):
         return 0
     if cmd == "check" and not names:
         bad = [f"{i}: {p}" for i, e in entries.items() if e.get("en") for p in problems(e, authored(e), terms)]
+        bad += keep_problems(entries) + tag_problems(terms)
         print(f"{len(entries)} entries, {sum(1 for e in entries.values() if e.get('en'))} in English, "
               f"{len(bad)} problems (widow boxes count: `batches.py widows` lists them for a fit pass)")
         print("\n".join(bad[:200]))

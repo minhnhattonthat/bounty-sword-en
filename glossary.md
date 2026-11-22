@@ -150,14 +150,14 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | キャンプ | camp | | | |
 | 作戦指示 | orders | | camp command | |
 | 精霊水 | Spirit Water | | item | |
-| 機神 | Machine God / M.God | | ancient weapons; numbered "Machine God No. 8"; "M.God 1" only in the fixed-length objectives | |
+| 機神 | Machine God / M.God | | ancient weapons; numbered "Machine God No. 8"; "M.God 1" only in the fixed-length objectives; 機神１号 speaker tag "Machine 1" (48 px, D8): tag "Machine 1" | |
 | 超機神 | Machine God Supreme / Machine God | | the god of destruction Elysion revives; "Machine God" only in the 80 px class field | |
 | 神の代理人 | agent of the gods / agent of us twelve gods | | what the Zodiac Gods call the hero | |
 | 屍解仙 | Corpse Immortal | | boss at the Abadan River | |
 | 悪霊 | evil spirit | | Ruins Town ghost | |
 | ワルキューレ | Valkyrie | | Rune's Valkyrie Corps | |
 | 火竜 | fire dragon | | Salamander | |
-| スカルナイト | Skull Knight / Skull Kn. | | "Skull Kn." only in the fixed-length objectives | |
+| スカルナイト | Skull Knight / Skull Kn. | | "Skull Kn." only in the fixed-length objectives; speaker tag "Skull" (48 px, D8): tag "Skull" (Skeleton is a different class, クラス 0BFC1E) | |
 | 報奨の剣 | Sword of Bounty | | the legendary sword that breaks the dark wall | |
 | 暗黒十二神 | Twelve Dark Gods | | bound together = the ultimate weapon | |
 | 閃光のシュタイア | Steyr the Flash | | | |
@@ -173,7 +173,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 不敗の聖騎士 | Undefeated Paladin | | the hero's old epithet | |
 | 味方殺し | comrade-killer | | what the kingdom calls the hero | |
 | 闘将 | Warlord | | Ajax's title; Roger also calls the Dark Lord this | |
-| 竜騎士団 | Dragon Knights | | 連邦竜騎士団 "Federation Dragon Knights", Spania Plateau | |
+| 竜騎士団 | Dragon Knights | | 連邦竜騎士団 "Federation Dragon Knights", Spania Plateau; speaker tag (48 px, D8): tag "Dragoons" | |
+| 魔導将軍 | Sorcerer General / General | | "General" only in the speaker tag (48 px, D8; not "Archmage": too close to 大賢者 "Archsage") and the 7-char objective 18FD9C | |
+| 降下猟兵 | airborne ranger | | the paratroop unit; speaker tag (48 px): tag "Ranger" | |
 | 叫びのフエ | Shriek Whistle | 80px | confuses the Hydra (item name) | Screaming Flute |
 | ハイドラ | Hydra | | three-headed super-heavy weapon at Tartessos Gate | |
 | 超黒の魔導士 | Ultra-Black Sorcerer | | Faust's epithet | |

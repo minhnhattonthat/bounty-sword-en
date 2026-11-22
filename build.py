@@ -18,10 +18,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 
+from bps import snes_checksum  # noqa: E402
 from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
-from rom_check import allowed_ranges, check_ranges  # noqa: E402
+from rom_check import allowed_ranges, check_ranges, write_sites  # noqa: E402
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
 from script_text import OVERFLOW, SCRIPT, TAGS, apply_script, dump, load  # noqa: E402
 from tag_font import TagFont  # noqa: E402
@@ -79,8 +80,9 @@ def build(out=OUT, identity=False, marker=False, qa=()):
     out.write_bytes(built)
     if not identity:
         assemble(out)
-        built = out.read_bytes()
-        code, text = check_ranges(ORIG, out, allowed_ranges(data), BUILD / "romdiff_ranges.txt")
+        built, _ = snes_checksum(out.read_bytes())     # last write: a valid header checksum for carts/emulators
+        out.write_bytes(built)
+        code, text = check_ranges(ORIG, out, allowed_ranges(data), BUILD / "romdiff_ranges.txt", write_sites(data))
         if code:
             out.unlink(missing_ok=True)
             sys.exit("romdiff: bytes changed outside the allowed ranges (tools/rom_check.py):\n" + text)

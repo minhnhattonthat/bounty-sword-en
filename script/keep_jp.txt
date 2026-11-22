@@ -1,0 +1,34 @@
+# Text-kind entries that keep their Japanese on purpose: one `ID<TAB>reason` per line. `batches.py check` fails on
+# any entry with jp and no en that is not listed here, and on a listed id that has English or is gone.
+1DED1D	ceremony: FF09 cursor-table data (ASCII-range words), not shown as text
+1DED25	ceremony: FF09 cursor-table data, not shown as text
+1DF03D	ceremony: FF09 cursor-table data reached mid-way by FF09, not shown as text
+1DF045	ceremony: FF09 cursor-table data, not shown as text
+1AEDAF	items: junk record between item names (data bytes read as kana)
+08E996	orders: records 15+ of the 8-word orders table ($C8:E8A6, menu uses 1-14); leftover dev list (定義なし/マスター/老人...), no pointer to $C8:E996 in the ROM
+08E9A6	orders: same leftover dev list as 08E996, unreferenced
+08E9B6	orders: same leftover dev list as 08E996, unreferenced
+08E9C6	orders: same leftover dev list as 08E996, unreferenced
+1AF565	short_strings: ＰＸ parameter word pair (FF10 block), not text
+1AF581	short_strings: ＸＸ FF10 parameter block, not text
+1AF618	short_strings: shop-script data words, not text
+1AF61C	short_strings: shop-script data words, not text
+1AF628	short_strings: shop-script data words before the greeting call, not text
+1AF726	short_strings: shop cursor-table data ([0001] runs), not text
+1AF72E	short_strings: shop cursor-table data, not text
+1AF7A8	short_strings: shop cursor-table data, not text
+1AF7B0	short_strings: shop cursor-table data, not text
+1AF83A	short_strings: shop cursor-table data, not text
+1AF842	short_strings: shop cursor-table data, not text
+1AFA36	short_strings: shop cursor-table data, not text
+1AFA3E	short_strings: shop cursor-table data, not text
+1AFAA2	short_strings: shop cursor-table data, not text
+1AFAAA	short_strings: shop cursor-table data, not text
+1AFC0E	short_strings: shop cursor-table data, not text
+1AFC16	short_strings: shop cursor-table data, not text
+1AFC6C	short_strings: shop cursor-table data, not text
+1AFC74	short_strings: shop cursor-table data, not text
+046CF4	unit_records: record data around a name field (パラディン); whether record name fields show anywhere is a phase 8 to-do (textcover/jp_left)
+046E4A	unit_records: unit-record data bytes, not text
+04716A	unit_records: unit-record data bytes, not text
+0473A8	unit_records: unit-record data bytes, not text
