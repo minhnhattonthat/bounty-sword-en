@@ -65,3 +65,4 @@
   pray to the stone statue on the cape every day..."; the princess's taunt is capitalised two ways: 25F62E "Mister
   small-time bounty chaser!" vs 2739F0/282FAB/285D57 "Mister Bounty Chaser" / "Mister Coward Bounty Chaser": pick
   the capitalised mock title everywhere
+- [ ] Engine B rows (shop box, ceremony) are one char a cell: narrow letters leave gaps ("Wel come", "Qui t"); centre narrow glyphs in their cell for engine B or pack it like C1Run (session r tour)

@@ -2,7 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session p: card subtitle overrun fixed, to-do 8; to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session r: town menu + battle "Flee" fixed, master coverage 2335/2335;
+  **next: the JP-left sweep in `docs/re/jp_left.md`**, then re-tour + verdicts; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -13,6 +14,30 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
   Grid strings (menus/windows/menus_c): edit `script/grid_specs.tsv`, put the ids in `work/tl/rvNN.tsv` (rows from
   `b057.tsv`), `grid.py fill rvNN script/grid_specs.tsv`, `check`, `merge --overwrite` (done that way for rv04).
+- **Session 2026-11-23r (phase 8):** (a) Commits of session q (not logged here before): part cards 第1部-第3部 redrawn
+  in English (`tools/card_gfx.py`, 66 tiles), status gender ♂/♀ (to-do 6 done), menu label "Pack", unit records
+  never read (to-do 4 closed, keep_jp.txt), battle routes page 12 times. (b) **Full tour** on this build's
+  predecessor: `work/qa/tour` 144/144 ok, states refreshed, sheets `work/qa/tour/sheets/sheet*.png` read (own fresh
+  pass; verdicts `work/qa/verdicts/chunk_8365e7211a5d_000.tsv`: 4 issue, 8 ok), manifest `work/qa/manifest.tsv`
+  (old one `manifest_old_p.tsv`). Issue: the battle-map command menu showed JP 離脱 = glyph words
+  `[01F6][01F7][01F8]` kept in 3 grid strings (01C535, 01C578, 01CAAB) -> **"Flee"** (grid_specs `23+3:Flee` etc.;
+  tutorial 290B80 now says 'Flee'); seen in game `work/qa/w_flee/zoom.png`. 01C578 ("Retreat! Sure? OK No") is not
+  shown on scenario 37 (Flee leaves at once); not yet seen in game. (c) **Town command menu was all JP** (no tour
+  proof showed it): 5-word records at 0x0396B2 read by `C3:966D` -> new table **`script/town_menu.json`** (Arms, Items,
+  Tavern, Map, Leave, Info, Party, Pack; 40 px; glossary rows 武器屋/情報屋 allow Arms/Info), new scene `town_menu`,
+  test `test_town_menu_records_are_rewritten`; seen `work/qa/w_townmenu2/z.png`. (d) **To-do 9 done: master-message
+  coverage** `tools/debug/msgcover.py` (+ `msgcover.lua`, warp.lua `HOOK_STATE`): one hook state, then every slot
+  swapped in and its first-byte read logged; `work/qa/cover` 2335/2335 shown, 0 waived (~10 min, 6 jobs; strings.tsv
+  kept with the run). Side tables are not in its strings.tsv yet (tour + sheets cover them). (e) **JP-left sweep**
+  (`jp_left.py --orig`): real JP strings remain outside the extracted regions: list + leads in
+  **`docs/re/jp_left.md`** (level-up "…が上がった" 1AD465.., battle prompts 05A530.., choice words 05EF54.. after the
+  battle_prompts end, 0419DC, 022FE2, 0EE54A, フュリス 06E27A = probably the name-entry default (to-do 5 reopened),
+  name lists 0106D3.. and 0445A2..). **Next:** work that list (confirm each reader, add REGIONS/SPLIT, dump,
+  translate, warp proof), then re-run the full tour on the final build (`warp_all.py build/bounty_en.sfc --jobs 6
+  --out work/qa/tour --states --sheet`, sheets with `sheet.py ... --max 12`), `qa_gate.py init ... --build`, verdict
+  the changed sheets, `qa_gate.py check`. Still open: stress saves (money/items not mapped in SRAM), inkbox on Yes/No
+  and centred boxes, engine B one-char-a-cell gaps ("Qui t", polish line). check 56 passed, lint 0, identity ok.
+  Worker handed back near the context limit.
 - **Session 2026-11-23p (phase 8, card subtitles):** **To-do 8 done.** The C6 card printer ends a message only at a
   line whose last word is 」/』 (`C6:DDE7`); 3 cards written 『』 in JP (290540 card_02, 24DC68 card_59, 24EC3E
   table index 59, no warp scene) had become `'Title'` and ran on into the next message (card_02 showed 290558).
