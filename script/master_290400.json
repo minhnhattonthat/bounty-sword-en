@@ -5,7 +5,8 @@
    129
   ],
   "jp": "{spk}{FF1F}\n「イーストエンドの野‥‥」\n{next}\n「連邦の侵略により　王国は荒れ果て\n　都にほど近い　この地にも\n　多くの盗賊どもが　出没しはじめた」\n{next}\n「まったく　ケチな盗賊どもだが\n　いまのオレには\n　にあいの相手かも　しれない」\n{next}\n「しかしオレは　こうして\n　くらしてきた　昨日も　今日も\n　そして　たぶん　明日も‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「The fields of East End...」\n{next}\n「The Federation's invasion has\n left the kingdom in ruins, and\n swarms of bandits have」\n{next}\n「started turning up even\n here, close to the capital.」\n{next}\n「Petty bandits, all of them.\n But maybe they're the right\n sort of opponent for me」\n{next}\n「now.」\n{next}\n「This is how I've lived.\n Yesterday, today, and\n probably tomorrow too...」\n",
+  "pages": "\"The fields of East End...\" || \"The Federation's invasion has left the kingdom in ruins, and swarms of bandits have started turning up even here, close to the capital.\" || \"Petty bandits, all of them. But maybe they're the right sort of opponent for me now.\" || \"This is how I've lived. Yesterday, today, and probably tomorrow too...\""
  },
  {
   "id": "290540",
@@ -13,7 +14,8 @@
    130
   ],
   "jp": "『バウンティハンター』\n",
-  "en": ""
+  "en": "'Bounty Hunter'\n",
+  "pages": "'Bounty Hunter'"
  },
  {
   "id": "290558",
@@ -21,7 +23,8 @@
    131
   ],
   "jp": "{spk}{FF28}\n「きたわ　{hero}！\n　盗賊どもの　お出迎えよ！」\n{next}\n「盗賊どもは　力は　弱いけど\n　数で　攻めてくるわ\n　囲まれないよう　気をつけて！」\n{next}\n「配置の時には　あなたと仲間の\n　行動や　回復する　タイミングを\n　決めることが　できるわ！」\n{next}\n「戦闘開始で　戦いは　始まるわよ！」\n{next}\n「そうそう　あなたの技は　強力だけど\n　ＳＰがなくなると　技も魔法も\n　使えなくなるから　注意してね！」\n{next}\n「さあ　配置で　布陣を決めて\n　盗賊なんか　やっつけましょう！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Here they come, {hero}!\n The bandits' welcoming party!」\n{next}\n「Bandits aren't strong, but\n they attack in numbers. Be\n careful not to get」\n{next}\n「surrounded!」\n{next}\n「In Deploy, you can decide\n when you and your allies act\n and when you heal!」\n{next}\n「The fight starts with Start\n Battle!」\n{next}\n「Oh, and your skills are\n powerful, but once you're\n out of SP you can't use skills」\n{next}\n「or magic, so be careful!」\n{next}\n「Now, set up your formation\n in Deploy and let's beat\n those bandits!」\n",
+  "pages": "\"Here they come, {hero}! The bandits' welcoming party!\" || \"Bandits aren't strong, but they attack in numbers. Be careful not to get surrounded!\" || \"In Deploy, you can decide when you and your allies act and when you heal!\" || \"The fight starts with Start Battle!\" || \"Oh, and your skills are powerful, but once you're out of SP you can't use skills or magic, so be careful!\" || \"Now, set up your formation in Deploy and let's beat those bandits!\""
  },
  {
   "id": "290732",
@@ -29,7 +32,8 @@
    132
   ],
   "jp": "{spk}{FF28}\n「{hero}！　攻撃を受けると\n　あなたの体力を　しめすＨＰが\n　少しずつ　へっていくわよ！」\n{next}\n「表示される　数字は\n　ダメージを受けた\n　ポイントを　しめしているわ！」\n{next}\n「その下のゲージは　現在のＨＰの\n　残りの　りょうを　しめしているわ！」\n{next}\n「気をつけてね！　ＨＰが０になると\n　戦いに負けたことに　なるんだから！」\n{next}\n「技や魔法　道具を　使いたい時や\n　どこかに　移動したい時は\n　すぐに　Ａのボタンを押すのよ！」\n{next}\n「時間が止まって　自由に命令できるわ」\n{next}\n「戦いのプロである　あなたしか\n　一分一秒を争う　戦場で\n　命令を下せる人は　いないのよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! When you get hit,\n your HP, which shows your\n health, goes down bit by bit!」\n{next}\n「The number that shows up is\n how many points of damage\n you took!」\n{next}\n「The gauge under it shows\n how much HP you have left\n right now!」\n{next}\n「Be careful! If your HP hits 0,\n you lose the fight!」\n{next}\n「When you want to use a skill,\n magic or an item, or move\n somewhere, press the A」\n{next}\n「button right away!」\n{next}\n「Time stops, and you can give\n orders freely.」\n{next}\n「On a battlefield where every\n second counts, you're the\n only one, the pro, who can」\n{next}\n「give the orders!」\n",
+  "pages": "\"{hero}! When you get hit, your HP, which shows your health, goes down bit by bit!\" || \"The number that shows up is how many points of damage you took!\" || \"The gauge under it shows how much HP you have left right now!\" || \"Be careful! If your HP hits 0, you lose the fight!\" || \"When you want to use a skill, magic or an item, or move somewhere, press the A button right away!\" || \"Time stops, and you can give orders freely.\" || \"On a battlefield where every second counts, you're the only one, the pro, who can give the orders!\""
  },
  {
   "id": "29097C",
@@ -37,7 +41,8 @@
    133
   ],
   "jp": "{spk}{FF28}\n「それで相手を　ひとりに\n　しぼることが　できるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「That lets you narrow it down\n to one target!」\n",
+  "pages": "\"That lets you narrow it down to one target!\""
  },
  {
   "id": "2909BA",
@@ -45,7 +50,8 @@
    134
   ],
   "jp": "{spk}{FF28}\n「それで　行きたい場所に\n　移動することが　できるわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「That lets you move where\n you want to go!」\n",
+  "pages": "\"That lets you move where you want to go!\""
  },
  {
   "id": "2909FA",
@@ -53,7 +59,8 @@
    135
   ],
   "jp": "{spk}{FF28}\n「気をつけて！　ＳＰは精神の力\n　魔法や技の　みなもとよ\n　あまり　使いすぎないようにね！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Careful! SP is spirit power,\n the source of magic and\n skills. Don't use too much of」\n{next}\n「it!」\n",
+  "pages": "\"Careful! SP is spirit power, the source of magic and skills. Don't use too much of it!\""
  },
  {
   "id": "290A5E",
@@ -61,7 +68,8 @@
    136
   ],
   "jp": "{spk}{FF28}\n「道具には　一度使えば　なくなる物\n　何回でも　使える物があるわ\n　くわしくは　ＳＥＬＥＣＴのボタンよ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Some items are gone once\n you use them, and some can\n be used again and again.」\n{next}\n「Press the SELECT button for\n details.」\n",
+  "pages": "\"Some items are gone once you use them, and some can be used again and again. Press the SELECT button for details.\""
  },
  {
   "id": "290ACE",
@@ -69,7 +77,8 @@
    137
   ],
   "jp": "{spk}{FF28}\n「{hero}！　合体技は　仲間たちと\n　心をつなげて　はなつ　必殺の技\n　あなた　ひとりじゃ　使えないわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}! A combined attack\n is a special move you\n unleash with your heart」\n{next}\n「linked to your allies. You\n can't use it alone!」\n",
+  "pages": "\"{hero}! A combined attack is a special move you unleash with your heart linked to your allies. You can't use it alone!\""
  },
  {
   "id": "290B44",
@@ -77,7 +86,8 @@
    138
   ],
   "jp": "{spk}{FF28}\n「作戦を　どうえらぶかが\n　勝利への　ちかみちよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「How you choose your orders\n is the shortcut to victory!」\n",
+  "pages": "\"How you choose your orders is the shortcut to victory!\""
  },
  {
   "id": "290B80",
@@ -85,7 +95,8 @@
    139
   ],
   "jp": "{spk}{FF28}\n「このままだと　死んじゃうわ\n　いったん　離脱しましょう！」\n{next}\n「『離脱』のコマンドで\n　すぐに　ＭＡＰの外に\n　出ることが　できるわ！」\n{next}\n「いったんＭＡＰの　外に出ると\n　次は　最初から　やり直しだけど\n　戦った　経験値だけは　残るわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「At this rate you'll die! Let's\n retreat for now!」\n{next}\n「With the 'Retreat' command,\n you can leave the MAP at\n once!」\n{next}\n「Once you leave the MAP, you\n have to start over next\n time, but you keep the」\n{next}\n「experience from the fight!」\n",
+  "pages": "\"At this rate you'll die! Let's retreat for now!\" || \"With the 'Retreat' command, you can leave the MAP at once!\" || \"Once you leave the MAP, you have to start over next time, but you keep the experience from the fight!\""
  },
  {
   "id": "290C7E",
@@ -93,7 +104,8 @@
    140
   ],
   "jp": "{spk}{FF28}\n「もうＨＰがないわ　{hero}！\n　いったん　離脱しましょう！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「You're out of HP, {hero}!\n Let's retreat for now!」\n",
+  "pages": "\"You're out of HP, {hero}! Let's retreat for now!\""
  },
  {
   "id": "290CC8",
@@ -101,7 +113,8 @@
    141
   ],
   "jp": "{spk}盗賊　　　　\n「ぐぐぐ‥‥　な　なんという強さ！\n　キ‥‥　キサマ‥‥　ただの\n　バウンティハンターでは　ないな！？」\n",
-  "en": ""
+  "en": "{spk}盗賊　　　　\n「Grr... Wh-what strength! Y...\n you... you're no ordinary\n bounty hunter, are you!?」\n",
+  "pages": "\"Grr... Wh-what strength! Y... you... you're no ordinary bounty hunter, are you!?\""
  },
  {
   "id": "290D42",
@@ -109,7 +122,8 @@
    142
   ],
   "jp": "{spk}盗賊のボス　\n「たかが　賞金かせぎに\n　キサマら　何を手こずっている！\n　囲め！　囲んで　たたき殺せ！！」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「What are you lot struggling\n with a mere bounty chaser\n for! Surround him! Surround」\n{next}\n「him and beat him to death!!」\n",
+  "pages": "\"What are you lot struggling with a mere bounty chaser for! Surround him! Surround him and beat him to death!!\""
  },
  {
   "id": "290DB0",
@@ -117,7 +131,8 @@
    143
   ],
   "jp": "{spk}盗賊のボス　\n「そ‥‥　そうか　キサマが\n　あの　バウンティハンターの\n　{hero}だな‥‥！？」\n{next}\n「た‥‥　確かに　強い！\n　‥‥ウワサ通りの　強さだ！」\n{next}\n「だ‥‥　だがな　{hero}\n　連邦は　すぐそこまで　迫っている\n　オレたちが　何も　しなくても」\n{next}\n「‥‥ぐ　‥‥ぐふッ！　\n　この王国は　ラインメタルは\n　どのみち　おしまい　なのさ‥‥」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「S... so you're {hero}, that\n bounty hunter...!?」\n{next}\n「Y... you're strong all right!\n ...As strong as they say!」\n{next}\n「B... but listen, {hero}. The\n Federation's right on our\n doorstep. Even if we didn't」\n{next}\n「do a thing...」\n{next}\n「...Gh... gahh! This kingdom,\n Rheinmetall... it's finished\n anyway...」\n",
+  "pages": "\"S... so you're {hero}, that bounty hunter...!?\" || \"Y... you're strong all right! ...As strong as they say!\" || \"B... but listen, {hero}. The Federation's right on our doorstep. Even if we didn't do a thing...\" || \"...Gh... gahh! This kingdom, Rheinmetall... it's finished anyway...\""
  },
  {
   "id": "290F20",
@@ -125,7 +140,8 @@
    144
   ],
   "jp": "{spk}{FF1F}\n「あいにくだな　そんなこと\n　オレの　知ったことじゃない」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Too bad. That's none of my\n business.」\n",
+  "pages": "\"Too bad. That's none of my business.\""
  },
  {
   "id": "290F62",
@@ -133,7 +149,8 @@
    145
   ],
   "jp": "{spk}盗賊のボス　\n「く‥‥　さすがは\n　味方殺しの　{hero}か‥‥」\n",
-  "en": ""
+  "en": "{spk}盗賊のボス　\n「Gh... Just what I'd expect...\n from {hero} the\n comrade-killer...」\n",
+  "pages": "\"Gh... Just what I'd expect... from {hero} the comrade-killer...\""
  },
  {
   "id": "290FAA",
@@ -141,7 +158,8 @@
    146
   ],
   "jp": "{spk}{FF28}\n「{hero}‥‥\n　盗賊の言ったことなんて\n　ほっとけば　いいわ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}... Just ignore what\n the bandit said...」\n",
+  "pages": "\"{hero}... Just ignore what the bandit said...\""
  },
  {
   "id": "290FFA",
@@ -149,7 +167,8 @@
    147
   ],
   "jp": "{spk}{FF1F}\n「気にするな　テティス」\n{next}\n「オレは　味方殺しの　{hero}\n　そして　しがない賞金かせぎ\n　バウンティハンターだ‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Don't worry about it, Thetis.」\n{next}\n「I'm {hero} the\n comrade-killer. And a lowly\n bounty chaser. A bounty」\n{next}\n「hunter...」\n",
+  "pages": "\"Don't worry about it, Thetis.\" || \"I'm {hero} the comrade-killer. And a lowly bounty chaser. A bounty hunter...\""
  },
  {
   "id": "29107E",
@@ -157,7 +176,8 @@
    148
   ],
   "jp": "「オルドバ連邦の　北方侵略\n　ラインメタル王国の　運命‥‥」\n{next}\n「そんなことは　騎士に任せればいい\n　オレは　バウンティハンター\n　その日ぐらしの　賞金かせぎ」\n{next}\n「オレが求めるのは\n　ただ　日々を生きることだけだ」\n",
-  "en": ""
+  "en": "「The Ordoba Federation's\n invasion of the north. The\n fate of the Kingdom of」\n{next}\n「Rheinmetall...」\n{next}\n「Leave that to the knights.\n I'm a bounty hunter. A\n bounty chaser living day to」\n{next}\n「day.」\n{next}\n「All I want is to live from one\n day to the next.」\n",
+  "pages": "\"The Ordoba Federation's invasion of the north. The fate of the Kingdom of Rheinmetall...\" || \"Leave that to the knights. I'm a bounty hunter. A bounty chaser living day to day.\" || \"All I want is to live from one day to the next.\""
  },
  {
   "id": "29115C",
@@ -165,7 +185,8 @@
    149
   ],
   "jp": "{spk}老人　　　　\n「盗賊が　増えて\n　国は　荒れる一方だ‥‥」\n{next}\n「力のない者は　このまま\n　死を待つ以外にないのか‥‥」\n",
-  "en": ""
+  "en": "{spk}老人　　　　\n「The bandits keep multiplying,\n and the country goes from\n bad to worse...」\n{next}\n「Is there nothing for the\n weak but to wait for death...」\n",
+  "pages": "\"The bandits keep multiplying, and the country goes from bad to worse...\" || \"Is there nothing for the weak but to wait for death...\""
  },
  {
   "id": "2911D8",
@@ -173,7 +194,8 @@
    150
   ],
   "jp": "{spk}老人　　　　\n「アンタも　気をつけな‥‥\n　盗賊と言えど　数が多ければ\n　手強い相手じゃからな‥‥」\n{next}\n「死にたくなければ　つねに薬草を\n　持っていることじゃて‥‥」\n{next}\n「じゃが　ワシらには　その\n　薬草を　かう　金すらもない‥‥」\n{spk}老人　　　　\n「帰ってくれんか‥‥\n　これからワシらは　孫の\n　そうしきを　せにゃならん‥‥」\n",
-  "en": ""
+  "en": "{spk}老人　　　　\n「You be careful too... They\n may only be bandits, but in\n numbers they're tough」\n{next}\n「customers...」\n{next}\n「If you don't want to die,\n always carry healing herbs, I\n tell you...」\n{next}\n「But we don't even have the\n money to buy those herbs...」\n{spk}老人　　　　\n「Would you please leave... We\n have to hold our grandson's\n funeral now...」\n",
+  "pages": "\"You be careful too... They may only be bandits, but in numbers they're tough customers...\" || \"If you don't want to die, always carry healing herbs, I tell you...\" || \"But we don't even have the money to buy those herbs...\" || \"Would you please leave... We have to hold our grandson's funeral now...\""
  },
  {
   "id": "29132A",
@@ -181,7 +203,8 @@
    151
   ],
   "jp": "{spk}コルツ　　　\n「どういう風の　ふきまわしだ？\n　盗賊退治を　うけおったそうだが\n　おまえが　国のために　動くのか？」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「What's got into you? I hear\n you took on a bandit-hunting\n job. You, working for the」\n{next}\n「country?」\n",
+  "pages": "\"What's got into you? I hear you took on a bandit-hunting job. You, working for the country?\""
  },
  {
   "id": "2913A2",
@@ -189,7 +212,8 @@
    152
   ],
   "jp": "{spk}{FF1F}\n「国のため？　よしてくれ\n　金がいいから　やとわれたまでだ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「For the country? Give me a\n break. The pay was good, so\n I got hired, that's all.」\n",
+  "pages": "\"For the country? Give me a break. The pay was good, so I got hired, that's all.\""
  },
  {
   "id": "2913E6",
@@ -197,7 +221,8 @@
    153
   ],
   "jp": "{spk}コルツ　　　\n「そうだな　オレたちは　ハンターだ\n　金がよければ　じごくへでも行く\n　ただ自分の命だけが　ざいさんだ」\n{next}\n「時に　大きいヤマだそうだな\n　お前とは　昔からの　よしみだ\n　手伝ってやっても　いいんだが‥‥」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「True enough. We're hunters.\n For good money we'd go to\n hell itself. Our own lives are」\n{next}\n「all we own.」\n{next}\n「By the way, I hear it's a big\n job. We go way back, you and\n me. I wouldn't mind lending a」\n{next}\n「hand...」\n",
+  "pages": "\"True enough. We're hunters. For good money we'd go to hell itself. Our own lives are all we own.\" || \"By the way, I hear it's a big job. We go way back, you and me. I wouldn't mind lending a hand...\""
  },
  {
   "id": "2914C8",
@@ -205,7 +230,8 @@
    154
   ],
   "jp": "{spk}コルツ　　　\n「どうした　{hero}？　そろそろ\n　助けが　必要になったかな？」\n{next}\n「お前とは　昔からの　よしみだ\n　手伝ってやっても　いいんだが‥‥」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「What's up, {hero}? Need\n some help about now?」\n{next}\n「We go way back, you and me.\n I wouldn't mind lending a\n hand...」\n",
+  "pages": "\"What's up, {hero}? Need some help about now?\" || \"We go way back, you and me. I wouldn't mind lending a hand...\""
  },
  {
   "id": "291568",
@@ -213,7 +239,8 @@
    155
   ],
   "jp": "{spk}コルツ　　　\n「いい解答だ　この酒と　同じくらいに」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Good answer. As good as this\n drink.」\n",
+  "pages": "\"Good answer. As good as this drink.\""
  },
  {
   "id": "2915A0",
@@ -221,7 +248,8 @@
    156
   ],
   "jp": "{spk}{FF1F}\n「ただし　分け前は　きたいするなよ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Just don't expect a share of\n the take.」\n",
+  "pages": "\"Just don't expect a share of the take.\""
  },
  {
   "id": "2915CC",
@@ -229,7 +257,8 @@
    157
   ],
   "jp": "{spk}コルツ　　　\n「言ってくれるぜ！　言うだろ\n　ケチは　早死にするってな！」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Listen to you! You know what\n they say: misers die young!」\n",
+  "pages": "\"Listen to you! You know what they say: misers die young!\""
  },
  {
   "id": "29161A",
@@ -237,7 +266,8 @@
    158
   ],
   "jp": "{spk}{FF1F}\n「あんたみたいに　長く生きていても\n　ろくなことは　なさそうだからな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Living long like you doesn't\n look like it does anyone much\n good, either.」\n",
+  "pages": "\"Living long like you doesn't look like it does anyone much good, either.\""
  },
  {
   "id": "291668",
@@ -245,7 +275,8 @@
    159
   ],
   "jp": "{spk}コルツ　　　\n「まあいいさ　しかし　無理はするな\n　命あってこそ　うまい酒も飲める\n　オレは　いつでも　ここにいる」\n",
-  "en": ""
+  "en": "{spk}コルツ　　　\n「Fine, fine. But don't push\n yourself. You've got to be\n alive to enjoy a good drink.」\n{next}\n「I'm always here.」\n",
+  "pages": "\"Fine, fine. But don't push yourself. You've got to be alive to enjoy a good drink. I'm always here.\""
  },
  {
   "id": "2916E0",
@@ -253,7 +284,8 @@
    160
   ],
   "jp": "{spk}{FF1F}\n「そのうちな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Some time...」\n",
+  "pages": "\"Some time...\""
  },
  {
   "id": "2916FA",
@@ -261,7 +293,8 @@
    161
   ],
   "jp": "{spk}ヘンメリー　\n「あら　味方殺しの　{hero}と\n　おいぼれハンターさんが\n　仲良く　手をつないで　お仕事？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Oh my, {hero} the\n comrade-killer and Mister\n Old-Timer Hunter, working」\n{next}\n「hand in hand like the best of\n friends?」\n",
+  "pages": "\"Oh my, {hero} the comrade-killer and Mister Old-Timer Hunter, working hand in hand like the best of friends?\""
  },
  {
   "id": "29176C",
@@ -269,7 +302,8 @@
    162
   ],
   "jp": "{spk}{FF1F}\n「ふん　ヘンメリーじゃないか\n　それでも　もと　シスターか？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Hmph. If it isn't Hammerli. Call\n yourself a former nun?」\n",
+  "pages": "\"Hmph. If it isn't Hammerli. Call yourself a former nun?\""
  },
  {
   "id": "2917B2",
@@ -277,7 +311,8 @@
    163
   ],
   "jp": "{spk}ヘンメリー　\n「あら　言ってくれるわね‥‥\n　それより　あんたには\n　ポートランドでの　かしがあったわね」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「My, you've got a mouth on\n you... Anyway, you owe me\n one from Portland, don't you.」\n",
+  "pages": "\"My, you've got a mouth on you... Anyway, you owe me one from Portland, don't you.\""
  },
  {
   "id": "291820",
@@ -285,7 +320,8 @@
    164
   ],
   "jp": "{spk}{FF1F}\n「そうだったかな‥‥？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Do I...?」\n",
+  "pages": "\"Do I...?\""
  },
  {
   "id": "291840",
@@ -293,7 +329,8 @@
    165
   ],
   "jp": "{spk}ヘンメリー　\n「ふふ　あいかわらずね　とにかく\n　私の力が　欲しければ\n　仲間になっても　いいんだけどな」\n{next}\n「私の回復魔法があれば\n　戦いは　ずっと楽に進められる\n　そうでしょ　{hero}？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Heh, same as ever. Anyway,\n if you want my power, I\n wouldn't mind joining you.」\n{next}\n「With my healing magic, fights\n go a lot more smoothly.\n Right, {hero}?」\n",
+  "pages": "\"Heh, same as ever. Anyway, if you want my power, I wouldn't mind joining you.\" || \"With my healing magic, fights go a lot more smoothly. Right, {hero}?\""
  },
  {
   "id": "29190A",
@@ -301,7 +338,8 @@
    166
   ],
   "jp": "{spk}ヘンメリー　\n「うふふ　さすがの　{hero}も\n　どうやら　苦戦しているようね」\n{next}\n「私の回復魔法があれば\n　戦いは　ずっと楽に進められる\n　そうでしょ　{hero}？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Ufufu, looks like even the\n great {hero} is having a\n hard time.」\n{next}\n「With my healing magic, fights\n go a lot more smoothly.\n Right, {hero}?」\n",
+  "pages": "\"Ufufu, looks like even the great {hero} is having a hard time.\" || \"With my healing magic, fights go a lot more smoothly. Right, {hero}?\""
  },
  {
   "id": "2919BC",
@@ -309,7 +347,8 @@
    167
   ],
   "jp": "{spk}ヘンメリー　\n「じゃあ　以前の　かしもふくめて\n　分け前は　半々ってことで　どう？」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「Then, counting what you owe\n me from before, how about\n we split the take half and」\n{next}\n「half?」\n",
+  "pages": "\"Then, counting what you owe me from before, how about we split the take half and half?\""
  },
  {
   "id": "291A14",
@@ -317,7 +356,8 @@
    168
   ],
   "jp": "{spk}{FF1F}\n「ま　考えておこうか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Well, I'll think about it...」\n",
+  "pages": "\"Well, I'll think about it...\""
  },
  {
   "id": "291A36",
@@ -325,7 +365,8 @@
    169
   ],
   "jp": "{spk}{FF28}\n「私　この女キラーーーイ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「I HAAATE this woman!」\n",
+  "pages": "\"I HAAATE this woman!\""
  },
  {
   "id": "291A5A",
@@ -333,7 +374,8 @@
    170
   ],
   "jp": "{spk}ヘンメリー　\n「私は　ここで待ってるわ\n　気が変わったら　いつでも\n　声を　かけてちょうだいね」\n",
-  "en": ""
+  "en": "{spk}ヘンメリー　\n「I'll be waiting here. If you\n change your mind, just call\n me anytime.」\n",
+  "pages": "\"I'll be waiting here. If you change your mind, just call me anytime.\""
  },
  {
   "id": "291ABE",
@@ -341,7 +383,8 @@
    171
   ],
   "jp": "{spk}{FF28}\n「べーーだ！　私　あの女キライ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Nyeeeh! I hate that woman!」\n",
+  "pages": "\"Nyeeeh! I hate that woman!\""
  },
  {
   "id": "291AE8",
@@ -349,7 +392,8 @@
    172
   ],
   "jp": "{spk}情報屋　　　\n「きたか　{hero}！\n　連邦のおかげで　大はんじょうだな」\n{next}\n「スポンサーは　わが大ラインメタル王国\n　騎士団や軍じゃ　手におえない仕事が\n　おまえさんを　待っているぜ！」\n{next}\n「どの話から聞きたい？」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「There you are, {hero}!\n Business is booming thanks\n to the Federation.」\n{next}\n「The sponsor is our great\n Kingdom of Rheinmetall. Jobs\n the knights and the army」\n{next}\n「can't handle are waiting for\n you!」\n{next}\n「Which job do you want to\n hear about?」\n",
+  "pages": "\"There you are, {hero}! Business is booming thanks to the Federation.\" || \"The sponsor is our great Kingdom of Rheinmetall. Jobs the knights and the army can't handle are waiting for you!\" || \"Which job do you want to hear about?\""
  },
  {
   "id": "291BCA",
@@ -357,7 +401,8 @@
    173
   ],
   "jp": "{spk}情報屋　　　\n「イーストエンドにいた　盗賊の\n　生きのこりの　連中が\n　ブラックバーン山へ　逃げ込んだ」\n{next}\n「ヤツラを　完全に　全めつさせれば\n　ほうびは　なんと２５０Ｇだぜ！」\n{next}\n「どうだ　この仕事　うけおうかい？」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「The surviving bandits from\n East End have fled into\n Mount Blackburn.」\n{next}\n「Wipe them out completely,\n and the reward's a whole\n 250G!」\n{next}\n「Well? Will you take this job?」\n",
+  "pages": "\"The surviving bandits from East End have fled into Mount Blackburn.\" || \"Wipe them out completely, and the reward's a whole 250G!\" || \"Well? Will you take this job?\""
  },
  {
   "id": "291CAC",
@@ -365,7 +410,8 @@
    174
   ],
   "jp": "{spk}情報屋　　　\n「ここから　北へ　四百マイル\n　辺境の　かんし所が\n　何者かに　おそわれたらしい」\n{next}\n「かんし所の　ようすと\n　おそったヤツらの　調査に\n　国は　３００Ｇだすと言ってるぜ」\n{next}\n「どうだ　この仕事　うけおうかい？」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Four hundred miles north of\n here, a frontier watch post\n seems to have been」\n{next}\n「attacked by someone.」\n{next}\n「The kingdom says it'll pay\n 300G to check the post and\n find out who attacked it.」\n{next}\n「Well? Will you take this job?」\n",
+  "pages": "\"Four hundred miles north of here, a frontier watch post seems to have been attacked by someone.\" || \"The kingdom says it'll pay 300G to check the post and find out who attacked it.\" || \"Well? Will you take this job?\""
  },
  {
   "id": "291D96",
@@ -373,7 +419,8 @@
    175
   ],
   "jp": "{spk}情報屋　　　\n「南西にある　狼の森で\n　連邦軍を見たという　情報がある\n　ガセネタかも　知れないが‥‥」\n{next}\n「騎士団は　南の防戦で大わらわだ\n　もんだいの狼の森を　調査すれば\n　国は　４００Ｇ出すと言ってるぜ」\n{next}\n「どうだ　この仕事　うけおうかい？」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「There's word of Federation\n troops seen in Wolf Forest\n to the southwest. Could be a」\n{next}\n「false lead...」\n{next}\n「The knights have their hands\n full defending the south. The\n kingdom says it'll pay 400G」\n{next}\n「to look into that Wolf Forest.」\n{next}\n「Well? Will you take this job?」\n",
+  "pages": "\"There's word of Federation troops seen in Wolf Forest to the southwest. Could be a false lead...\" || \"The knights have their hands full defending the south. The kingdom says it'll pay 400G to look into that Wolf Forest.\" || \"Well? Will you take this job?\""
  },
  {
   "id": "291E98",
@@ -381,7 +428,8 @@
    176
   ],
   "jp": "{spk}情報屋　　　\n「よし　さっそく行ってくれ\n　仕事をかたづけたら　またきてくれ\n　国からの　報奨金をわたす」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Good, get going right away.\n Come back when the job's\n done, and I'll hand over the」\n{next}\n「kingdom's reward.」\n",
+  "pages": "\"Good, get going right away. Come back when the job's done, and I'll hand over the kingdom's reward.\""
  },
  {
   "id": "291F06",
@@ -389,7 +437,8 @@
    177
   ],
   "jp": "{spk}情報屋　　　\n「そうかい　まあ　いいさ\n　気が変わったら　きてくれ」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Is that so. Well, fine. Come\n back if you change your mind.」\n",
+  "pages": "\"Is that so. Well, fine. Come back if you change your mind.\""
  },
  {
   "id": "291F4E",
@@ -397,7 +446,8 @@
    178
   ],
   "jp": "{spk}情報屋　　　\n「最後の仕事だ　どうする？\n　もう一度　仕事の説明をするから\n　じっくりと　考えてみてくれ」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「Last job. What'll it be? I'll\n explain the job once more,\n so think it over carefully.」\n",
+  "pages": "\"Last job. What'll it be? I'll explain the job once more, so think it over carefully.\""
  },
  {
   "id": "291FBC",
@@ -405,7 +455,8 @@
    179
   ],
   "jp": "{spk}情報屋　　　\n「さすがは　{hero}！\n　みごとな手ぎわだ！　さっそく\n　国から金が届いているぜ！」\n",
-  "en": ""
+  "en": "{spk}情報屋　　　\n「That's {hero} for you! Fine\n work! The kingdom's money\n has already arrived!」\n",
+  "pages": "\"That's {hero} for you! Fine work! The kingdom's money has already arrived!\""
  },
  {
   "id": "292026",

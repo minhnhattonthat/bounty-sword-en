@@ -3639,7 +3639,8 @@
    821
   ],
   "jp": "{spk}{FF28}\n「見て　{hero}！\n　ここにも　黄道十二神の像が！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look, {hero}! There's a\n statue of the Zodiac Gods\n here too!」\n",
+  "pages": "\"Look, {hero}! There's a statue of the Zodiac Gods here too!\""
  },
  {
   "id": "28BAFF",
@@ -3647,7 +3648,8 @@
    822
   ],
   "jp": "{spk}黄道十二神　\n「なんじを　神の代理人と　みとめる」\n{next}\n「十二の指輪を　一つに束ねよ\n　さすれば　われらは　なんじに\n　真の力を　さずけるで　あろう‥‥」\n{next}\n「今　なんじが持ちし　指輪は‥‥」\n{next}\n{FF2F}　アレスの指輪\n{next}\n{FF2F}　ヴィナスの指輪\n{next}\n{FF2F}　ヘルメスの指輪\n{next}\n{FF2F}　セレネの指輪\n{next}\n{FF2F}　アポロンの指輪\n{next}\n{FF2F}　マーキュリーの指輪\n{next}\n{FF2F}　アフロディーテの指輪\n{next}\n{FF2F}　プルートゥの指輪\n{next}\n{FF2F}　ゼウスの指輪\n{next}\n{FF2F}　クロノスの指輪\n{next}\n{FF2F}　ウラヌスの指輪\n{next}\n{FF2F}　ポセイドンの指輪\n{next}\n「いまだ　残る　指輪は‥‥」\n{next}\n{FF30}　アレスの指輪\n{next}\n{FF30}　ヴィナスの指輪\n{next}\n{FF30}　ヘルメスの指輪\n{next}\n{FF30}　セレネの指輪\n{next}\n{FF30}　アポロンの指輪\n{next}\n{FF30}　マーキュリーの指輪\n{next}\n{FF30}　アフロディーテの指輪\n{next}\n{FF30}　プルートゥの指輪\n{next}\n{FF30}　ゼウスの指輪\n{next}\n{FF30}　クロノスの指輪\n{next}\n{FF30}　ウラヌスの指輪\n{next}\n{FF30}　ポセイドンの指輪\n{next}\n「是正せよ　わが力を束ね\n　この世のながれを　是正せよ」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「We acknowledge thee as the\n agent of the gods.」\n{next}\n「Bind the twelve rings into\n one. Then shall we grant\n thee true power...」\n{next}\n「The rings thou now holdest\n are...」\n{next}\n{FF2F}{FF2F}Ares Ring\n{next}\n{FF2F}{FF2F}Venus Ring\n{next}\n{FF2F}{FF2F}Hermes Ring\n{next}\n{FF2F}{FF2F}Selene Ring\n{next}\n{FF2F}{FF2F}Apollo Ring\n{next}\n{FF2F}{FF2F}Mercury Ring\n{next}\n{FF2F}{FF2F}Aphrodite Ring\n{next}\n{FF2F}{FF2F}Pluto Ring\n{next}\n{FF2F}{FF2F}Zeus Ring\n{next}\n{FF2F}{FF2F}Cronus Ring\n{next}\n{FF2F}{FF2F}Uranus Ring\n{next}\n{FF2F}{FF2F}Poseidon Ring\n{next}\n「The rings yet remaining are...」\n{next}\n{FF30}{FF30}Ares Ring\n{next}\n{FF30}{FF30}Venus Ring\n{next}\n{FF30}{FF30}Hermes Ring\n{next}\n{FF30}{FF30}Selene Ring\n{next}\n{FF30}{FF30}Apollo Ring\n{next}\n{FF30}{FF30}Mercury Ring\n{next}\n{FF30}{FF30}Aphrodite Ring\n{next}\n{FF30}{FF30}Pluto Ring\n{next}\n{FF30}{FF30}Zeus Ring\n{next}\n{FF30}{FF30}Cronus Ring\n{next}\n{FF30}{FF30}Uranus Ring\n{next}\n{FF30}{FF30}Poseidon Ring\n{next}\n「Set it right. Bind my power\n together, and set right the\n course of this world.」\n",
+  "pages": "\"We acknowledge thee as the agent of the gods.\" || \"Bind the twelve rings into one. Then shall we grant thee true power...\" || \"The rings thou now holdest are...\" || {FF2F}Ares Ring || {FF2F}Venus Ring || {FF2F}Hermes Ring || {FF2F}Selene Ring || {FF2F}Apollo Ring || {FF2F}Mercury Ring || {FF2F}Aphrodite Ring || {FF2F}Pluto Ring || {FF2F}Zeus Ring || {FF2F}Cronus Ring || {FF2F}Uranus Ring || {FF2F}Poseidon Ring || \"The rings yet remaining are...\" || {FF30}Ares Ring || {FF30}Venus Ring || {FF30}Hermes Ring || {FF30}Selene Ring || {FF30}Apollo Ring || {FF30}Mercury Ring || {FF30}Aphrodite Ring || {FF30}Pluto Ring || {FF30}Zeus Ring || {FF30}Cronus Ring || {FF30}Uranus Ring || {FF30}Poseidon Ring || \"Set it right. Bind my power together, and set right the course of this world.\""
  },
  {
   "id": "28BE75",
@@ -3655,7 +3657,8 @@
    1190
   ],
   "jp": "「南エウロペアへと　入った\n　オレたちを　迎えた広大な砂漠\n　ここは　悪魔の巣と　よばれている」\n{next}\n「単なる　地名だ‥‥\n　だが　ここで　本物の悪魔に\n　会う事に　なろうとは‥‥」\n{next}\n「そして　これも\n　悪夢の始まりに　すぎない‥‥」\n",
-  "en": ""
+  "en": "「The vast desert that\n greeted us as we entered\n southern Europea. They call」\n{next}\n「this place the Devil's Nest.」\n{next}\n「Just a place name... But who\n knew we'd meet a real devil\n here...」\n{next}\n「And even this was only the\n start of the nightmare...」\n",
+  "pages": "\"The vast desert that greeted us as we entered southern Europea. They call this place the Devil's Nest.\" || \"Just a place name... But who knew we'd meet a real devil here...\" || \"And even this was only the start of the nightmare...\""
  },
  {
   "id": "28BF65",
@@ -3663,7 +3666,8 @@
    1191
   ],
   "jp": "「最終兵器」\n",
-  "en": ""
+  "en": "「The Ultimate Weapon」\n",
+  "pages": "\"The Ultimate Weapon\""
  },
  {
   "id": "28BF73",
@@ -3671,7 +3675,8 @@
    1192
   ],
   "jp": "{spk}{FF28}\n「{hero}　何？　あれ！？\n　魔物じゃない！？\n　‥‥でも　機械でもないわ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, what's that!? Isn't\n it a monster!? ...But it's not a\n machine, either!?」\n",
+  "pages": "\"{hero}, what's that!? Isn't it a monster!? ...But it's not a machine, either!?\""
  },
  {
   "id": "28BFCF",
@@ -3679,7 +3684,8 @@
    1193
   ],
   "jp": "{spk}{FF1F}\n「こ　この光は！？\n　何なんだ　これは！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Wh-what's this light!? What is\n this thing!?」\n",
+  "pages": "\"Wh-what's this light!? What is this thing!?\""
  },
  {
   "id": "28C003",
@@ -3687,7 +3693,8 @@
    1194
   ],
   "jp": "{spk}ロジャー　　\n「‥‥か‥‥勝てない\n　これが　連邦の兵器だとしたら！」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「...W... we can't win... Not if this\n is the Federation's weapon!」\n",
+  "pages": "\"...W... we can't win... Not if this is the Federation's weapon!\""
  },
  {
   "id": "28C04D",
@@ -3695,7 +3702,8 @@
    1195
   ],
   "jp": "{spk}ファウスト　\n「これは　魔法では　ありません！\n　われわれの　知らない\n　もっと恐ろしい　べつの力です！」\n",
-  "en": ""
+  "en": "{spk}ファウスト　\n「This is not magic! It is\n another power, one we do\n not know, far more terrible!」\n",
+  "pages": "\"This is not magic! It is another power, one we do not know, far more terrible!\""
  },
  {
   "id": "28C0BB",
@@ -3703,7 +3711,8 @@
    1196
   ],
   "jp": "{spk}{FF28}\n「‥‥わかったわ　{hero}\n　これが　連邦の手に入れた\n　古代の兵器の　真の姿なのよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...I get it, {hero}. This is the\n true form of the ancient\n weapons the Federation got」\n{next}\n「hold of!」\n",
+  "pages": "\"...I get it, {hero}. This is the true form of the ancient weapons the Federation got hold of!\""
  },
  {
   "id": "28C11F",
@@ -3711,7 +3720,8 @@
    1197
   ],
   "jp": "{spk}{FF1F}\n「これが‥‥古代兵器」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「So this is... an ancient\n weapon.」\n",
+  "pages": "\"So this is... an ancient weapon.\""
  },
  {
   "id": "28C13D",
@@ -3719,7 +3729,8 @@
    1198
   ],
   "jp": "{spk}ロブン　　　\n「すばらしい！　これが\n　太古の神々が　作り出した\n　はかい人形の力だと　言うのか！」\n{next}\n「この力さえ　あれば‥‥」\n",
-  "en": ""
+  "en": "{spk}ロブン　　　\n「Magnificent! So this is the\n power of the destruction\n dolls created by the gods of」\n{next}\n「old!」\n{next}\n「With this power...」\n",
+  "pages": "\"Magnificent! So this is the power of the destruction dolls created by the gods of old!\" || \"With this power...\""
  },
  {
   "id": "28C1C5",
@@ -3727,7 +3738,8 @@
    1199
   ],
   "jp": "{spk}Ｄ°ナイト　\n「おやおや　機神１号の\n　試運転をしていたら　これは\n　思わぬ　お客さんだな‥‥」\n{next}\n「ちょうどいい‥‥\n　機神１号へ　指令伝達！\n　反乱軍を　速やかに抹殺せよ！」\n",
-  "en": ""
+  "en": "{spk}Ｄ°ナイト　\n「Well, well. Test-running\n Machine God No. 1, and look,\n unexpected guests...」\n{next}\n「How convenient... Orders to\n Machine God No. 1! Wipe out\n the rebels at once!」\n",
+  "pages": "\"Well, well. Test-running Machine God No. 1, and look, unexpected guests...\" || \"How convenient... Orders to Machine God No. 1! Wipe out the rebels at once!\""
  },
  {
   "id": "28C27D",
@@ -3735,7 +3747,8 @@
    1200
   ],
   "jp": "{spk}{FF28}\n「機神１号‥‥？\n　あの　兵器の名前だわ」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Machine God No. 1...? That's\n the weapon's name.」\n",
+  "pages": "\"Machine God No. 1...? That's the weapon's name.\""
  },
  {
   "id": "28C2AF",
@@ -3743,7 +3756,8 @@
    1201
   ],
   "jp": "{spk}{FF1F}\n「名前がある‥‥という事は\n　ただの　物　という事だ\n　ひるむな　倒せるぞ！」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「If it has a name, then it's\n just a thing. Don't flinch, we\n can beat it!」\n",
+  "pages": "\"If it has a name, then it's just a thing. Don't flinch, we can beat it!\""
  },
  {
   "id": "28C305",
@@ -3751,7 +3765,8 @@
    1202
   ],
   "jp": "{spk}{FF28}\n「くるわ　{hero}！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Here it comes, {hero}!」\n",
+  "pages": "\"Here it comes, {hero}!\""
  },
  {
   "id": "28C327",
@@ -3759,7 +3774,8 @@
    1203
   ],
   "jp": "{spk}{FF1F}\n「‥‥いや！？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Wait!?」\n",
+  "pages": "\"...Wait!?\""
  },
  {
   "id": "28C33F",
@@ -3767,7 +3783,8 @@
    1204
   ],
   "jp": "{spk}Ｄ°ナイト　\n「さあ　ヤツらを　やきはらえ！」\n",
-  "en": ""
+  "en": "{spk}Ｄ°ナイト　\n「Now, burn them to ashes!」\n",
+  "pages": "\"Now, burn them to ashes!\""
  },
  {
   "id": "28C371",
@@ -3775,7 +3792,8 @@
    1205
   ],
   "jp": "{spk}機神１号　　\n「‥‥‥‥」\n",
-  "en": ""
+  "en": "{spk}機神１号　　\n「......」\n",
+  "pages": "\"......\""
  },
  {
   "id": "28C38F",
@@ -3783,7 +3801,8 @@
    1206
   ],
   "jp": "{spk}Ｄ°ナイト　\n「バ　バカなぁぁぁぁッ！？\n　まだ‥‥まだ‥‥制御が\n　不完全だと‥‥いうの‥‥か！？」\n",
-  "en": ""
+  "en": "{spk}Ｄ°ナイト　\n「I-impossiiiible!? Is the\n control... still... still...\n incomplete...!?」\n",
+  "pages": "\"I-impossiiiible!? Is the control... still... still... incomplete...!?\""
  },
  {
   "id": "28C3F9",
@@ -3791,7 +3810,8 @@
    1207
   ],
   "jp": "{spk}{FF28}\n「あの機械　味方を撃ったわ！？」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「That machine shot its own\n side!?」\n",
+  "pages": "\"That machine shot its own side!?\""
  },
  {
   "id": "28C421",
@@ -3799,7 +3819,8 @@
    1208
   ],
   "jp": "{spk}{FF1F}\n「ほり出した　大昔の物を\n　使おうというんだ\n　どこかに　無理は出る」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「They're using something they\n dug up from long ago. It's\n bound to break down」\n{next}\n「somewhere.」\n",
+  "pages": "\"They're using something they dug up from long ago. It's bound to break down somewhere.\""
  },
  {
   "id": "28C46F",
@@ -3807,7 +3828,8 @@
    1209
   ],
   "jp": "{spk}ミランダ　　\n「あの光にさえ　気をつければ！」\n",
-  "en": ""
+  "en": "{spk}ミランダ　　\n「As long as we watch out for\n that light!」\n",
+  "pages": "\"As long as we watch out for that light!\""
  },
  {
   "id": "28C4A1",
@@ -3815,7 +3837,8 @@
    1210
   ],
   "jp": "{spk}シュタイア　\n「神々が　作ったとは言え\n　しょせん　兵器は兵器\n　道具にしか　すぎないはず！」\n",
-  "en": ""
+  "en": "{spk}シュタイア　\n「The gods may have made it,\n but a weapon's a weapon.\n It's nothing but a tool!」\n",
+  "pages": "\"The gods may have made it, but a weapon's a weapon. It's nothing but a tool!\""
  },
  {
   "id": "28C503",
@@ -3823,7 +3846,8 @@
    1211
   ],
   "jp": "{spk}マウザー　　\n「ドラゴンよりも　でっかいが\n　その分　こわしがいは　ありそうだ！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「It's bigger than a dragon,\n but that just means it'll be\n all the more fun to smash!」\n",
+  "pages": "\"It's bigger than a dragon, but that just means it'll be all the more fun to smash!\""
  },
  {
   "id": "28C559",
@@ -3831,7 +3855,8 @@
    1212
   ],
   "jp": "{spk}アテナ　　　\n「この世の物で　ある限り\n　切れぬ物は　ないはず！\n　それが　神の道具で　あろうと！」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「As long as it is a thing of\n this world, there is nothing\n that cannot be cut! Even if it」\n{next}\n「is a tool of the gods!」\n",
+  "pages": "\"As long as it is a thing of this world, there is nothing that cannot be cut! Even if it is a tool of the gods!\""
  },
  {
   "id": "28C5C1",
@@ -3839,7 +3864,8 @@
    1213
   ],
   "jp": "{spk}{FF1F}\n「あの機械は　攻撃する前に\n　目らしき　部分が\n　光輝くらしい　気をつけろ」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Looks like the part that\n seems to be its eye glows\n before that machine attacks.」\n{next}\n「Watch out.」\n",
+  "pages": "\"Looks like the part that seems to be its eye glows before that machine attacks. Watch out.\""
  },
  {
   "id": "28C615",
@@ -3847,7 +3873,8 @@
    1214
   ],
   "jp": "{spk}{FF28}\n「見て！　機神が\n　消えて‥‥いく‥‥！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Look! The Machine God is...\n vanishing...!」\n",
+  "pages": "\"Look! The Machine God is... vanishing...!\""
  },
  {
   "id": "28C647",
@@ -3855,7 +3882,8 @@
    1215
   ],
   "jp": "「連邦のはなつ　最終兵器\n　その恐るべき名は　機神‥‥」\n{next}\n「敵はアレを　機神１号と　よんだ」\n{next}\n「ダークロードの言う\n　十二の力が　機神の事ならば‥‥」\n{next}\n「われわれは　これから\n　あのような機械と　十一回も\n　戦わねば　ならないのか？」\n{next}\n「じごくの　戦いは　まだ\n　始まった　ばかりだ‥‥」\n",
-  "en": ""
+  "en": "「The ultimate weapon the\n Federation unleashes. Its\n dreadful name: Machine God...」\n{next}\n「The enemy called it Machine\n God No. 1.」\n{next}\n「If the twelve powers the\n Dark Lord spoke of are the\n Machine Gods...」\n{next}\n「...are we going to have to\n fight machines like that\n eleven more times?」\n{next}\n「The hellish fight has only\n just begun...」\n",
+  "pages": "\"The ultimate weapon the Federation unleashes. Its dreadful name: Machine God...\" || \"The enemy called it Machine God No. 1.\" || \"If the twelve powers the Dark Lord spoke of are the Machine Gods...\" || \"...are we going to have to fight machines like that eleven more times?\" || \"The hellish fight has only just begun...\""
  },
  {
   "id": "28C779",
@@ -3863,7 +3891,8 @@
    1216
   ],
   "jp": "{spk}オヤジ　　　\n「し‥‥信じられねェ‥‥\n　‥‥な‥‥何なんだよ\n　あの　機械のバケモノは！？」\n",
-  "en": ""
+  "en": "{spk}オヤジ　　　\n「I... I can't believe it... ...Wh...\n what the hell was that\n machine monster!?」\n",
+  "pages": "\"I... I can't believe it... ...Wh... what the hell was that machine monster!?\""
  },
  {
   "id": "28C7DB",
@@ -3871,7 +3900,8 @@
    1217
   ],
   "jp": "「果てしなくつづく　砂漠\n　この地のオアシスで　オレたちは\n　砂漠の民の　キャンプを見つけた」\n",
-  "en": ""
+  "en": "「A desert that went on\n forever. At an oasis here, we\n found a camp of the desert」\n{next}\n「people.」\n",
+  "pages": "\"A desert that went on forever. At an oasis here, we found a camp of the desert people.\""
  },
  {
   "id": "28C83B",
@@ -3879,7 +3909,8 @@
    1218
   ],
   "jp": "「砂漠の民」\n",
-  "en": ""
+  "en": "「The Desert People」\n",
+  "pages": "\"The Desert People\""
  },
  {
   "id": "28C849",
@@ -3887,7 +3918,8 @@
    1219
   ],
   "jp": "{spk}{FF28}\n「{hero}　オアシスで\n　砂漠の民が　キャンプしてる」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「{hero}, the desert people\n are camping at the oasis.」\n",
+  "pages": "\"{hero}, the desert people are camping at the oasis.\""
  },
  {
   "id": "28C88B",
@@ -3895,7 +3927,8 @@
    1220
   ],
   "jp": "{spk}ロジャー　　\n「何か　情報が\n　得られるかも　しれませんね」\n",
-  "en": ""
+  "en": "{spk}ロジャー　　\n「We might be able to get\n some information.」\n",
+  "pages": "\"We might be able to get some information.\""
  },
  {
   "id": "28C8CB",
@@ -3903,7 +3936,8 @@
    1221
   ],
   "jp": "{spk}リュウビ　　\n「砂漠の　恵みか‥‥」\n",
-  "en": ""
+  "en": "{spk}リュウビ　　\n「A blessing of the desert,\n then...」\n",
+  "pages": "\"A blessing of the desert, then...\""
  },
  {
   "id": "28C8F3",
@@ -3911,7 +3945,8 @@
    1222
   ],
   "jp": "{spk}ツキカゲ　　\n「ワナって事は　なさそうだ\n　ふッ　つまらんな‥‥」\n",
-  "en": ""
+  "en": "{spk}ツキカゲ　　\n「Doesn't look like a trap. Heh.\n Boring...」\n",
+  "pages": "\"Doesn't look like a trap. Heh. Boring...\""
  },
  {
   "id": "28C939",
@@ -3919,7 +3954,8 @@
    1223
   ],
   "jp": "{spk}マウザー　　\n「まずは　水と　食い物だ！\n　さあ　行こうぜ　みんな！」\n",
-  "en": ""
+  "en": "{spk}マウザー　　\n「Water and grub first! Come\n on, everybody, let's go!」\n",
+  "pages": "\"Water and grub first! Come on, everybody, let's go!\""
  },
  {
   "id": "28C983",
@@ -3927,7 +3963,8 @@
    1224
   ],
   "jp": "{spk}アテナ　　　\n「‥‥下品な男だ‥‥」\n",
-  "en": ""
+  "en": "{spk}アテナ　　　\n「...What a vulgar man...」\n",
+  "pages": "\"...What a vulgar man...\""
  },
  {
   "id": "28C9AB",
@@ -3935,7 +3972,8 @@
    1225
   ],
   "jp": "{spk}{FF1F}\n「行ってみよう　だが\n　ここはすでに　連邦の　ほんきょ地だ\n　要注意だな‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Let's take a look. But we're\n already in the Federation's\n home ground. Stay alert...」\n",
+  "pages": "\"Let's take a look. But we're already in the Federation's home ground. Stay alert...\""
  },
  {
   "id": "28CA01",
@@ -3943,7 +3981,8 @@
    1226
   ],
   "jp": "{spk}少年　　　　\n「メッシーナの街は　楽器づくりで\n　有名なんだ　ボクは　将らい\n　ぎんゆうしじんに　なりたいな！」\n",
-  "en": ""
+  "en": "{spk}少年　　　　\n「The town of Messina's\n famous for making\n instruments. When I grow up,」\n{next}\n「I want to be a minstrel!」\n",
+  "pages": "\"The town of Messina's famous for making instruments. When I grow up, I want to be a minstrel!\""
  },
  {
   "id": "28CA75",
@@ -3951,7 +3990,8 @@
    1227
   ],
   "jp": "{spk}少年　　　　\n「ああ‥‥ボクも\n　りっぱなリュートが\n　ほしいなあ‥‥\n{next}\n「おじさん　音楽は好きかい？\n　そういえば　この間　たびの\n　ぎんゆうしじんに　会ったよ！」\n{next}\n「何でも　海をこえて\n　スパニア高原に\n　行くって　言ってたなぁ」\n{next}\n「名前は‥‥　そうだ！\n　たしか　ファ‥‥なんとかって！」\n{next}\n「ボクも　リュートが　あれば\n　ぎんゆうしじんに　なれるかなあ\n　ほしいなあ‥‥」\n",
-  "en": ""
+  "en": "{spk}少年　　　　\n「Ah... I want a fine lute too...\n{next}\n「Mister, do you like music? Oh\n yeah, the other day I met a\n travelling minstrel!」\n{next}\n「He said he was going over\n the sea to the Spania\n Plateau.」\n{next}\n「His name was... oh, right!\n Fa-something, I think!」\n{next}\n「If I had a lute, could I be a\n minstrel too? I really want\n one...」\n",
+  "pages": "\"Ah... I want a fine lute too... || \"Mister, do you like music? Oh yeah, the other day I met a travelling minstrel!\" || \"He said he was going over the sea to the Spania Plateau.\" || \"His name was... oh, right! Fa-something, I think!\" || \"If I had a lute, could I be a minstrel too? I really want one...\""
  },
  {
   "id": "28CC01",
@@ -3959,7 +3999,8 @@
    1228
   ],
   "jp": "{spk}むすめ　　　\n「うばわれる　ような物を\n　持っているから\n　戦いに　まきこまれるのです」\n{next}\n「守る物が　あるから\n　戦いに　まきこまれるのです」\n{next}\n「砂漠の民は　平和を愛しています\n　だから　何もない\n　この砂漠に　住んでいるんです」\n",
-  "en": ""
+  "en": "{spk}むすめ　　　\n「You get dragged into fights\n because you have things\n worth stealing.」\n{next}\n「You get dragged into fights\n because you have things to\n protect.」\n{next}\n「The desert people love\n peace. That is why we live in\n this desert, where there is」\n{next}\n「nothing.」\n",
+  "pages": "\"You get dragged into fights because you have things worth stealing.\" || \"You get dragged into fights because you have things to protect.\" || \"The desert people love peace. That is why we live in this desert, where there is nothing.\""
  },
  {
   "id": "28CCF3",
@@ -3967,7 +4008,8 @@
    1229
   ],
   "jp": "{spk}むすめ　　　\n「あっ　いきなり　入ってこないで！」\n",
-  "en": ""
+  "en": "{spk}むすめ　　　\n「Ah! Don't just barge in!」\n",
+  "pages": "\"Ah! Don't just barge in!\""
  },
  {
   "id": "28CD29",
@@ -3975,7 +4017,8 @@
    1230
   ],
   "jp": "{spk}{FF28}\n「あらら！？　この　むすめさん　ゆか下に\n　お金をいっぱい　ためこんでるよ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Oh my!? This young lady's got\n loads of money stashed\n under the floor!」\n",
+  "pages": "\"Oh my!? This young lady's got loads of money stashed under the floor!\""
  },
  {
   "id": "28CD7F",
@@ -3983,7 +4026,8 @@
    1231
   ],
   "jp": "{spk}むすめ　　　\n「‥‥どうか　仲間には\n　ないしょに　して下さい　いつも\n　えらそうな事を　言っていますので」\n{next}\n「そのかわり　これを‥‥」\n",
-  "en": ""
+  "en": "{spk}むすめ　　　\n「...Please keep it a secret\n from the others. I am always\n telling them such high-minded」\n{next}\n「things.」\n{next}\n「In exchange, take this...」\n",
+  "pages": "\"...Please keep it a secret from the others. I am always telling them such high-minded things.\" || \"In exchange, take this...\""
  },
  {
   "id": "28CE0F",
@@ -3991,7 +4035,8 @@
    1232
   ],
   "jp": "{spk}むすめ　　　\n「あの事は　誰にも　話さないでね」\n",
-  "en": ""
+  "en": "{spk}むすめ　　　\n「Don't tell anyone about that,\n all right?」\n",
+  "pages": "\"Don't tell anyone about that, all right?\""
  },
  {
   "id": "28CE43",
@@ -3999,7 +4044,8 @@
    1233
   ],
   "jp": "{spk}物知りジジイ\n「‥‥わしは　砂漠の事ならば\n　その砂の　つぶの数まで\n　あらゆる事を　知っておるぞ‥‥」\n{next}\n「何について　知りたい？」\n{next}\n　砂漠の楽しい話\n　砂漠の色っぽい話\n　砂漠のもうかる話\n{FF14:00C3}{end}\n",
-  "en": ""
+  "en": "{spk}物知りジジイ\n「...When it comes to the\n desert, I know everything,\n eh, right down to the number」\n{next}\n「of grains of sand...」\n{next}\n「What would you like to know?」\n{next}\n　Fun desert tales\n　Saucy desert tales\n　Profitable desert tales\n{FF14:00C3}{end}\n",
+  "pages": "\"...When it comes to the desert, I know everything, eh, right down to the number of grains of sand...\" || \"What would you like to know?\" || Fun desert tales\\nSaucy desert tales\\nProfitable desert tales"
  },
  {
   "id": "28CF15",
@@ -4007,7 +4053,8 @@
    1234
   ],
   "jp": "{spk}物知りジジイ\n「砂漠に楽しい話など　ありやせん！」\n{next}\n「だが　連邦の王都では\n　もうじき　大きな祭りが\n　始まる‥‥という話じゃ」\n{next}\n「何でも　新月の夜に\n　神がよみがえる‥‥という話じゃ」\n",
-  "en": ""
+  "en": "{spk}物知りジジイ\n「There's no such thing as a\n fun tale in the desert!」\n{next}\n「But they say a big festival\n will soon begin in the\n Federation's royal city.」\n{next}\n「On the night of the new\n moon, a god will be revived,\n they say.」\n",
+  "pages": "\"There's no such thing as a fun tale in the desert!\" || \"But they say a big festival will soon begin in the Federation's royal city.\" || \"On the night of the new moon, a god will be revived, they say.\""
  },
  {
   "id": "28CFDB",
@@ -4015,7 +4062,8 @@
    1235
   ],
   "jp": "{spk}物知りジジイ\n「砂漠に色っぽい話など　ありやせん！」\n{next}\n「だが　北エウロペア大陸の\n　パドヴァ地方には　カワイイむすめが\n　一人で　住んでおる　らしいぞ！」\n{next}\n「しかも　そこには　伝説の\n　ダークドラゴンも出るらしい！」\n{next}\n「ダークドラゴンを　倒すと\n　すごい宝が　手に入るらしいが‥‥」\n",
-  "en": ""
+  "en": "{spk}物知りジジイ\n「There's no such thing as a\n saucy tale in the desert!」\n{next}\n「But I hear a pretty girl lives\n all alone in the Padova\n region of northern Europea!」\n{next}\n「And what's more, the\n legendary Dark Dragon is\n said to show up there!」\n{next}\n「They say if you beat the\n Dark Dragon, you get some\n amazing treasure, but...」\n",
+  "pages": "\"There's no such thing as a saucy tale in the desert!\" || \"But I hear a pretty girl lives all alone in the Padova region of northern Europea!\" || \"And what's more, the legendary Dark Dragon is said to show up there!\" || \"They say if you beat the Dark Dragon, you get some amazing treasure, but...\""
  },
  {
   "id": "28D105",
@@ -4023,7 +4071,8 @@
    1236
   ],
   "jp": "{spk}物知りジジイ\n「砂漠にもうかる話など　ありやせん！」\n{next}\n「だが　この世界の　どこかには\n　太古の神々の　力が　封じられた\n　伝説の指輪が　１２コあるらしい」\n{next}\n「これを手にいれれば　神の力を使える\n　さらに　１２コ全部　そろえれば\n　神の武器も　もらえるらしいぞ！」\n",
-  "en": ""
+  "en": "{spk}物知りジジイ\n「There's no such thing as a\n profitable tale in the desert!」\n{next}\n「But somewhere in this world,\n they say, there are 12\n legendary rings holding the」\n{next}\n「sealed power of the gods of\n old.」\n{next}\n「Get one, and you can use a\n god's power. And if you\n collect all 12, I hear you」\n{next}\n「even get a god's weapon!」\n",
+  "pages": "\"There's no such thing as a profitable tale in the desert!\" || \"But somewhere in this world, they say, there are 12 legendary rings holding the sealed power of the gods of old.\" || \"Get one, and you can use a god's power. And if you collect all 12, I hear you even get a god's weapon!\""
  },
  {
   "id": "28D217",
@@ -4031,7 +4080,8 @@
    1237
   ],
   "jp": "{spk}物知りジジイ\n「なんと　十二の指輪の一つが\n　この地にも　あったのか！\n　砂漠にも　いい事は　あるのじゃな」\n",
-  "en": ""
+  "en": "{spk}物知りジジイ\n「Well, I never! One of the\n twelve rings was right here!\n Even the desert has its good」\n{next}\n「points, I tell you.」\n",
+  "pages": "\"Well, I never! One of the twelve rings was right here! Even the desert has its good points, I tell you.\""
  },
  {
   "id": "28D287",
@@ -4039,7 +4089,8 @@
    1238
   ],
   "jp": "{spk}長老　　　　\n「わしらの　キャラバンの無事を\n　このオアシスにある　神像に\n　毎日　おいのり　しております」\n{next}\n「あなたがたも　たびの　無事を\n　いのられたら　いかがですか？」\n",
-  "en": ""
+  "en": "{spk}長老　　　　\n「Every day we pray to the\n statue of the god here at\n this oasis for our caravan's」\n{next}\n「safety.」\n{next}\n「Why don't you pray for a\n safe journey too?」\n",
+  "pages": "\"Every day we pray to the statue of the god here at this oasis for our caravan's safety.\" || \"Why don't you pray for a safe journey too?\""
  },
  {
   "id": "28D33D",
@@ -4047,7 +4098,8 @@
    1239
   ],
   "jp": "「オレたちは　オアシスを出ると\n　さらに　連邦の奥へと　進む‥‥」\n{next}\n「一刻も早く　{FF31}を\n　助け出さねば‥‥　そんな思いが\n　頭にこびりつき　はなれなかった」\n",
-  "en": ""
+  "en": "「Leaving the oasis, we pushed\n deeper into the Federation...」\n{next}\n「We had to rescue {FF31}\n as soon as possible... That\n thought stuck in my head」\n{next}\n「and wouldn't leave.」\n",
+  "pages": "\"Leaving the oasis, we pushed deeper into the Federation...\" || \"We had to rescue {FF31} as soon as possible... That thought stuck in my head and wouldn't leave.\""
  },
  {
   "id": "28D3DF",
@@ -4055,7 +4107,8 @@
    1240
   ],
   "jp": "{spk}{FF28}\n「‥‥{hero}　この像って\n　古代の黄道十二神に　そっくり」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「...{hero}, this statue looks\n just like the ancient Zodiac\n Gods.」\n",
+  "pages": "\"...{hero}, this statue looks just like the ancient Zodiac Gods.\""
  },
  {
   "id": "28D427",
@@ -4063,7 +4116,8 @@
    1241
   ],
   "jp": "{spk}{FF1F}\n「‥‥黄道十二神？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...Zodiac Gods?」\n",
+  "pages": "\"...Zodiac Gods?\""
  },
  {
   "id": "28D443",
@@ -4071,7 +4125,8 @@
    1242
   ],
   "jp": "{spk}{FF28}\n「人は　とうに　忘れてしまっている\n　天空の星々を　つかさどり\n　世界をみちびいていた　古代の神々」\n{next}\n「そう‥‥連邦の　掘り出した\n　古代神の　いぶつとは　また　ことなる\n　もう一つの　星座の神々たち‥‥」\n{next}\n「古代の書物に　こうあるわ」\n{next}\n　地に　やみがあふれ　空には悪意が満ちる\n　太陽は　すでに　その姿を消し\n　人は　終わる事ない　夜におびえた\n{next}\n　ああ　しかし　見るがいい！\n　太陽が　失われたとしても\n　我らには　天にまたたく　星がある！\n{next}\n　星は　人々のねがいを　受け入れ\n　地上へと　まい降り\n　十二の石像へと　姿を変えた‥‥\n{next}\n　それ　すなわち　黄道十二神なり\n{FF04}{end}\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Ancient gods that people\n forgot long ago. They ruled\n the stars of heaven and」\n{next}\n「guided the world.」\n{next}\n「Yes... They're different from\n the ancient relics the\n Federation dug up. They're」\n{next}\n「another set of gods, the\n gods of the constellations...」\n{next}\n「An ancient book says this:」\n{next}\nDarkness overflowed the land\nand malice filled the sky. The\nsun had already vanished, and\n{next}\nmen trembled in a night\nwithout end.\n{next}\nAh, but behold! Though the sun\nbe lost, we still have the\nstars twinkling in the heavens!\n{next}\nThe stars heard the people's\nprayers, descended to the\nearth, and took the form of\n{next}\ntwelve stone statues...\n{next}\nThese are the Zodiac Gods.\n{FF04}{end}\n",
+  "pages": "\"Ancient gods that people forgot long ago. They ruled the stars of heaven and guided the world.\" || \"Yes... They're different from the ancient relics the Federation dug up. They're another set of gods, the gods of the constellations...\" || \"An ancient book says this:\" || Darkness overflowed the land and malice filled the sky. The sun had already vanished, and men trembled in a night without end. || Ah, but behold! Though the sun be lost, we still have the stars twinkling in the heavens! || The stars heard the people's prayers, descended to the earth, and took the form of twelve stone statues... || These are the Zodiac Gods."
  },
  {
   "id": "28D69F",
@@ -4079,7 +4134,8 @@
    1243
   ],
   "jp": "{spk}{FF1F}\n「テティス？　どうした？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「Thetis? What's wrong?」\n",
+  "pages": "\"Thetis? What's wrong?\""
  },
  {
   "id": "28D6C1",
@@ -4087,7 +4143,8 @@
    1244
   ],
   "jp": "{spk}{FF28}\n「どうしたんだろう？　何だか急に\n　いろんな事を　思い出して‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「What's happening? All of a\n sudden, I'm remembering all\n sorts of things...」\n",
+  "pages": "\"What's happening? All of a sudden, I'm remembering all sorts of things...\""
  },
  {
   "id": "28D70B",
@@ -4095,7 +4152,8 @@
    1245
   ],
   "jp": "{spk}黄道十二神　\n「わが像の前に　立ちし者よ\n　なんじは　世界のやみを　はらう者か？」\n",
-  "en": ""
+  "en": "{spk}黄道十二神　\n「You who stand before my\n statue, are you the one who\n will drive away the darkness」\n{next}\n「of the world?」\n",
+  "pages": "\"You who stand before my statue, are you the one who will drive away the darkness of the world?\""
  },
  {
   "id": "28D761",
@@ -4103,7 +4161,8 @@
    1246
   ],
   "jp": "{spk}{FF1F}\n「何だ？　石像が　しゃべっている？」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「What? The statue is talking?」\n",
+  "pages": "\"What? The statue is talking?\""
  },
  {
   "id": "28D78D",
@@ -4655,7 +4714,8 @@
    1314
   ],
   "jp": "{spk}{FF28}\n「たいへん！」\n{next}\n「機神に　あやつられているわ！\n　はやく　機神を倒さないと\n　みんなが　おかしくなっちゃうわ！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「Oh no!」\n{next}\n「They're being controlled by\n the Machine God! If we don't\n beat it quick, everyone'll go」\n{next}\n「crazy!」\n",
+  "pages": "\"Oh no!\" || \"They're being controlled by the Machine God! If we don't beat it quick, everyone'll go crazy!\""
  },
  {
   "id": "28F515",
@@ -4663,7 +4723,8 @@
    1315
   ],
   "jp": "{spk}{FF1F}\n「‥‥機神に　操られてるんだ」\n{next}\n「うかつに　攻撃はできん！\n　あの術を　断ち切るには\n　機神を　倒すしか　ないか‥‥」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「...They're being controlled by\n the Machine God.」\n{next}\n「We can't attack carelessly!\n The only way to break that\n spell is to beat the Machine」\n{next}\n「God...」\n",
+  "pages": "\"...They're being controlled by the Machine God.\" || \"We can't attack carelessly! The only way to break that spell is to beat the Machine God...\""
  },
  {
   "id": "28F597",
@@ -4671,7 +4732,8 @@
    1316
   ],
   "jp": "{spk}{FF28}\n「やったわ　{hero}！\n　これで　機神{FF2B}体　撃破！」\n",
-  "en": ""
+  "en": "{spk}{FF28}\n「We did it, {hero}! That\n makes Machine Gods\n destroyed: {FF2B}!」\n",
+  "pages": "\"We did it, {hero}! That makes Machine Gods destroyed: {FF2B}!\""
  },
  {
   "id": "28F5D7",
@@ -4679,7 +4741,8 @@
    1317
   ],
   "jp": "{spk}{FF1F}\n「やっかいな　敵だったな」\n",
-  "en": ""
+  "en": "{spk}{FF1F}\n「That was a nasty enemy.」\n",
+  "pages": "\"That was a nasty enemy.\""
  },
  {
   "id": "28F5F9",
@@ -4687,7 +4750,8 @@
    1318
   ],
   "jp": "「敵の攻撃をかわし　オレたちは\n　何とか　山脈をこえた‥‥」\n",
-  "en": ""
+  "en": "「Dodging the enemy's attacks,\n we somehow made it over\n the mountains...」\n",
+  "pages": "\"Dodging the enemy's attacks, we somehow made it over the mountains...\""
  },
  {
   "id": "28F637",
@@ -4695,7 +4759,8 @@
    1319
   ],
   "jp": "{spk}山男　　　　\n「この間　めずらしいアイテムを\n　見つけたダ　たびの商人に\n　売ったら　いい金に　なったズラ」\n{next}\n「んで　その商人は　何だっけ？\n　ラメタ‥‥ラタル‥‥とかに\n　帰っていったズラよ」\n",
-  "en": ""
+  "en": "{spk}山男　　　　\n「Found me a rare item t'other\n day, I did. Sold it to a\n travellin' merchant for a fine」\n{next}\n「bit o' money, see.」\n{next}\n「And that merchant, what\n was it now? Went back home\n to Ramet... Ratal... somethin',」\n{next}\n「see.」\n",
+  "pages": "\"Found me a rare item t'other day, I did. Sold it to a travellin' merchant for a fine bit o' money, see.\" || \"And that merchant, what was it now? Went back home to Ramet... Ratal... somethin', see.\""
  },
  {
   "id": "28F701",
@@ -4703,7 +4768,8 @@
    2456
   ],
   "jp": "{spk}商人　　　　\n「砂漠からもどったら\n　はたらくのがいやになって\n　こんなところにいるんだ」\n{next}\n「わざわざ砂漠から来てくれたんだろ\n　ゆっくりしていけよ」\n{next}\n「まっ，そういうわけにもいかないか\n　これがほしいなら売ってやるよ」\n{next}\n　影使いの奥義書　　１００００Ｇ\n{FF14:00C1}{end}\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「After I got back from the\n desert, I didn't feel like\n working anymore, so here I」\n{next}\n「am.」\n{next}\n「You came all the way from\n the desert, right? Take it\n easy here.」\n{next}\n「Well, guess that won't do for\n you. If you want this, I'll sell\n it to you.」\n{next}\n　Shadow Scroll  10000G\n{FF14:00C1}{end}\n",
+  "pages": "\"After I got back from the desert, I didn't feel like working anymore, so here I am.\" || \"You came all the way from the desert, right? Take it easy here.\" || \"Well, guess that won't do for you. If you want this, I'll sell it to you.\" || Shadow Scroll  10000G"
  },
  {
   "id": "28F817",
@@ -4711,7 +4777,8 @@
    2457
   ],
   "jp": "{spk}商人　　　　\n「オレは，やっぱり商人なんだな\n　もういちど　ガンバッてみようかな」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Guess I'm a merchant after\n all. Maybe I'll give it another\n go.」\n",
+  "pages": "\"Guess I'm a merchant after all. Maybe I'll give it another go.\""
  },
  {
   "id": "28F86D",
@@ -4719,7 +4786,8 @@
    2458
   ],
   "jp": "{spk}商人　　　　\n「まっ　いいさ\n　こんな　オレから\n　買いたくなんてないよな」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「Well, fine. Who'd want to buy\n from a guy like me, right?」\n",
+  "pages": "\"Well, fine. Who'd want to buy from a guy like me, right?\""
  },
  {
   "id": "28F8BD",
@@ -4727,6 +4795,7 @@
    2459
   ],
   "jp": "{spk}商人　　　　\n「お金が足りないよ」\n",
-  "en": ""
+  "en": "{spk}商人　　　　\n「You don't have enough\n money.」\n",
+  "pages": "\"You don't have enough money.\""
  }
 ]
