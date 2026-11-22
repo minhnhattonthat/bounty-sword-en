@@ -26,7 +26,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 - The hero speaks as {hero} ({FF1F} as speaker): terse, dry, a professional bounty hunter, "I" (オレ) not "me".
 - The fairy ({FF28}, his guide and narrator of the map hints) is chatty, teasing, motherly: "you know", "huh?".
 - {FF31}: a second variable name word (the girl the hero escorts, the client of a job). Keep it inline, never
-  glue a suffix or "'s" onto it; use "of {FF31}" or rephrase.
+  glue "'s" onto it (use "of {FF31}" or rephrase); honorific suffixes per D11 ("{FF31}-sama") are fine.
 - Villains (Elysion, Gauche, the Dark Lord, Federation officers) sneer: キサマ -> "you" with venom ("you wretch").
 - Old men (ジジイ, 物知りジジイ) ramble: "eh?", "my boy"; ～じゃ/のう -> "I tell you", "hm?".
 - Roger: rough, hot-headed soldier. Miranda: polite, calm, uses です/ます -> no contractions, gentle. Ajax: blunt

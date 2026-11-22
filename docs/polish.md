@@ -59,3 +59,8 @@
   allies' HP, SP and ailments" (ailments are cured, not restored); 0EFA0E "stops everyone else, friend and foe,
   dead" ("dead" can read as killed: "freezes everyone else"); 0EFCAA whistle quotes "Frontier Volcano Isle" but
   the map label and dialogue say "Volcano Isle"
+- [ ] Phase 6 review (minors): old-woman じゃ lines read neutral, give them the "dearie", slow folksy voice
+  (`docs/style-reference.md`): 215E30 "Head far south from here...", 216008 "Machine Gods, you say?...", 2AAF72 "I
+  pray to the stone statue on the cape every day..."; the princess's taunt is capitalised two ways: 25F62E "Mister
+  small-time bounty chaser!" vs 2739F0/282FAB/285D57 "Mister Bounty Chaser" / "Mister Coward Bounty Chaser": pick
+  the capitalised mock title everywhere

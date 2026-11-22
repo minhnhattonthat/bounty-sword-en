@@ -6,8 +6,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `batches.py check` 0 problems (widows included), 0 widow boxes, independent review of every batch b001-b069 done
   (`docs/reviews.md` "Independent review": 0 Critical, 3 Important fixed in rv01-rv02, Minors in `docs/polish.md`).
   Done-when for phase 7 (skill): build green, width/overflow lint clean, control codes matched, `romdiff.py` shows
-  no writes outside allowed ranges. Left JP on purpose: junk/data rows (see "Skip on purpose" below), name-entry
-  keyboards 01C283/01C359/01C42F (char grids; their ひら/カナ/英字/終わり labels too), shop glyph set 01D2B7 (below).
+  no writes outside allowed ranges. Left JP on purpose: junk/data rows (see "Skip on purpose" below), the kana
+  grids of the name-entry keyboards 01C283/01C359/01C42F (input characters; their keys are English per D13), shop
+  glyph set 01D2B7 (below).
   Fixing a text finding: `work/tl/rvNN_fix.tsv` rows `id<TAB>page<TAB>text`, `batches.py repage rvNN FILE`,
   `check rvNN`, `merge rvNN --overwrite` (never re-merge the old `bNNN.out.tsv` files: they predate the fit pass).
 - **Phase 7 to do (from phase 6):** (1) speaker tag / location label pair packing and speaker headers (Open, D8);

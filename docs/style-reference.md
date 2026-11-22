@@ -19,7 +19,7 @@ that carry them: a voice with no device on the page comes out neutral.
 | Ajax (as ally, prologue) | オレたち, なあ, blunt | blunt, comradely, "Hey, {hero}!" | |
 | Faust, Robun | Robun: ～ですな, ～ですぞ, どの; Faust: polite, scholarly | Robun: formal, a little old-fashioned ("It has been a long time, {hero}-dono."); Faust: precise | contractions for Robun |
 | {FF31} (the princess) | ～じゃない, ～なぁ, warm then haughty | natural young woman's voice: "That was so mean!", "you know" | archaic royal register |
-| Old men (ジジイ, 物知りジジイ, 村長) | じゃ, じゃろう, のう, わし | "I tell you", "my boy", "eh?", "hm?", rambling clauses | neutral modern lines (most old-man lines in b012-b019 lost this: fix when touched) |
+| Old men (ジジイ, 物知りジジイ, 村長) | じゃ, じゃろう, のう, わし | "I tell you", "my boy", "eh?", "hm?", rambling clauses | neutral modern lines |
 | Old women (ババア) | ～じゃ, ～ですじゃ, おる | "dearie", "that is the rule", slow and folksy | |
 | Elysion, Gauche, villains | キサマ, ～ぬ, ～がよい, 様を‥‥ | cold and grand: "So you've come...", "you wretch", "Stand there and watch", no contractions for Elysion | modern slang |
 | Zodiac Gods, Sages | archaic ～じゃ/～である, 神の代理人 | the only archaic register (D9): "thou/thee" allowed, "agent of the gods" | jokes |

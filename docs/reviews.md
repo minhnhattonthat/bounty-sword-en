@@ -47,4 +47,4 @@ translator. One row per batch range when done.
 | b037-b050 (Messina/desert people, Machine Gods No. 1-3, Corpse Immortal, Atlas Mts; game opening: East End, Colts/Hammerli, Blackburn, watch post undead, Wolf Forest/Taurus, Macbeth/Detonics, Raggadol, Robun, Padova, Crimson Lake, Skull Knight duel, ruined village, Dragon Knights, Faust's quiz, Highland trial/Bounty Sword/Rune, road to Ordoba, Ajax; knock-out lines, ring shouts, Romulus/Steyr, Sword Cape, Volcano Isle, Hydra, Gibraltar) | fresh Orca worker, read-only pass (2026-11-23j, did not translate) | 0 | 0 | 8 (`docs/polish.md`); Zodiac statue scenes all share one wording (10 copies checked) |
 | b051-b069 (battle/system prompts, objectives, menus/windows/menus_c grids, ceremony, descriptions, shop dialogue) | same worker, 2026-11-23j | 0 | 0 | 4 (`docs/polish.md`: US spellings, 0EF856, 0EFA0E, 0EFCAA "Frontier Volcano Isle") |
 
-**Independent review complete (b001-b069): 0 Critical, 3 Important fixed (rv01-rv03), Minors in `docs/polish.md`.**
+**Independent review complete (b001-b069): 0 Critical, 3 Important fixed (rv01-rv02), Minors in `docs/polish.md`.**

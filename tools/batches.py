@@ -140,7 +140,8 @@ def width_problems(entry, en):
     return []
 
 
-GRID_GLYPHS = set("　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９")   # JP font, 8 px a cell
+# JP font, 8 px a cell; あ/ア: the name-entry keyboards' page keys (D13)
+GRID_GLYPHS = set("　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９あア")
 
 
 def encodable(char):
