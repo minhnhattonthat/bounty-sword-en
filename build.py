@@ -43,7 +43,18 @@ def assemble(rom_path):
         sys.exit("asar failed:\n" + r.stdout + r.stderr)
 
 
-def build(out=OUT, identity=False, marker=False):
+def apply_qa(files, overrides):
+    """--qa ID=text: replace the `en` of one entry (script syntax) for a stress build of single lines."""
+    for item in overrides:
+        eid, _, text = item.partition("=")
+        hits = [e for es in files.values() for e in es if str(e["id"]).upper() == eid.upper()]
+        if len(hits) != 1:
+            sys.exit(f"--qa {eid}: {len(hits)} entries have that id")
+        hits[0]["en"] = text
+    return files
+
+
+def build(out=OUT, identity=False, marker=False, qa=()):
     check()
     rom = ORIG.read_bytes()
     if not any(SCRIPT.glob("*.json")):
@@ -51,6 +62,7 @@ def build(out=OUT, identity=False, marker=False):
     files = load(SCRIPT)
     if marker:
         files = marker_files(files, rom)
+    files = apply_qa(files, qa)
     data = apply_script(rom, files, field="en")
     built = repack(rom, data, WordCodec())
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -73,6 +85,8 @@ def main():
     ap.add_argument("--force", action="store_true", help="with --dump: overwrite existing files (loses English)")
     ap.add_argument("--refresh", action="store_true",
                     help="with --dump: re-render jp in existing files after a table change, keeping en")
+    ap.add_argument("--qa", action="append", default=[], metavar="ID=TEXT",
+                    help="stress build: set one entry's en (script syntax); repeatable; default out build/bounty_qa.sfc")
     a = ap.parse_args()
     if a.dump:
         check()
@@ -82,9 +96,11 @@ def main():
         if requeue:
             print(f"{len(requeue)} translated entries have new jp; re-check them: {' '.join(requeue)}")
         return
-    if a.marker and a.out == OUT:
+    if a.qa and a.out == OUT:
+        a.out = BUILD / "bounty_qa.sfc"
+    elif a.marker and a.out == OUT:
         a.out = MARKER_OUT
-    rom, built = build(a.out, identity=a.identity, marker=a.marker)
+    rom, built = build(a.out, identity=a.identity, marker=a.marker, qa=a.qa)
     diff = sum(1 for x, y in zip(rom, built) if x != y) + abs(len(rom) - len(built))
     print(f"{a.out.relative_to(ROOT) if a.out.is_relative_to(ROOT) else a.out}: {len(built)} bytes, "
           f"sha1 {hashlib.sha1(built).hexdigest()}, {diff} bytes differ from the dump")

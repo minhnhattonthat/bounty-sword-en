@@ -1,7 +1,8 @@
 -- Bounty Sword debug warp (Mesen, via emu.py --script). Cold boot -> any scene in tools/debug/scenes.tsv.
 --   emu.py ROM --out DIR --script tools/debug/warp.lua --var "SCENE='scen_31'" --frames 3000 --sheet
 -- Globals: SCENE (row name), SCENES (tsv path; default <repo>/tools/debug/scenes.tsv found from --out under work/),
---          MSG (override the msg column), HOLD (frames to run after the expected mode is reached, default the row's),
+--          MSG (override the msg column), MSGPTR (msg kind: swap in any engine A script by its 24-bit CPU
+--          pointer instead, e.g. a side-table prompt: --var "MSGPTR=0xC41393"), HOLD (frames to run after the expected mode is reached, default the row's),
 --          WARP_STATE (absolute path: save a state at SCENE_OK; only then, so a failed warp never leaves a bad state),
 --          KEEP (don't stop at SCENE_OK; run on to --frames, e.g. to watch a scene play out).
 -- How it works (docs/re/debug.md): the main loop runs the 24-bit continuation at $00EB-$00ED every frame. Once the
@@ -80,9 +81,10 @@ if kind == "msg" then
   L.on_exec(MSG_HOOK, MSG_HOOK, function()
     if msgDone or state ~= "warped" then return end
     local p = MSG_TABLE + msg * 3
-    emu.write(MSG_PTR, rd(p), M); emu.write(MSG_PTR + 1, rd(p + 1), M); emu.write(MSG_PTR + 2, rd(p + 2), M)
+    local ptr = MSGPTR or (rd(p) | (rd(p + 1) << 8) | (rd(p + 2) << 16))
+    emu.write(MSG_PTR, ptr & 0xFF, M); emu.write(MSG_PTR + 1, (ptr >> 8) & 0xFF, M); emu.write(MSG_PTR + 2, ptr >> 16, M)
     msgDone = L.frame
-    L.log(string.format("MSG %d ptr %02X%02X%02X f%d", msg, rd(p + 2), rd(p + 1), rd(p), L.frame))
+    L.log(string.format("MSG %d ptr %06X f%d", MSGPTR and -1 or msg, ptr, L.frame))
   end)
 end
 

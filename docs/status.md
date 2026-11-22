@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (marker bug fixed, width gate mostly measured; left:
-  engine B / prompts / objectives budgets, slice table, kanji table). Builds 2026-11-22 (fourth session): rebuild
-  with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no garbled screen;
-  menu re-tour `work/qa/mk_c4` 21/21.
+- **Phase:** 5. Engine spike and marker build in progress (width gate: engine B and engine A prompts measured;
+  left: descriptions, objectives, spells/orders lists, slice table, kanji table). Builds 2026-11-22 (fifth
+  session): rebuild with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no
+  garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
   (details and evidence in `docs/re/vwf.md`):
   - Font decision: dialogue VWF; C1 menus/lists VWF with packed pairs (third session); other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
@@ -36,10 +36,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
     Width gate rows updated in `docs/re/vwf.md` (name tag, window slices, C1 fields measured).
     Own visual pass of `work/qa/marker2/proofs*.png` (4 sheets): every screen shows markers or art, no garbage;
     still JP: graphics only (chapter-card 第1部 title, already in the graphics survey).
+  - Fifth session: `build.py --qa ID=TEXT` (stress build of single entries -> `build/bounty_qa.sfc`; side-table
+    entries must keep their exact byte length, see Open). `warp.lua` `MSGPTR` var: the `msg` scene shows any engine A
+    script by CPU pointer. Width gate rows (`docs/re/vwf.md`): engine B = 28 cells x 2 rows a page, hard wrap at
+    cell 28, a 3rd `FF01` row overwrites (measured, ceremony ruler); system/battle prompts are engine A scripts and
+    draw in the dialogue box with the VWF (measured via MSGPTR). Probes with no hit for objectives/descriptions:
+    card_02 run into battle, every battle-map button, camp item menu, item shop (`tools/routes/*_keys.txt`, emu.py `--route` beside the warp, `KEEP=true`).
 - **Next (phase 5, in this order):**
-  1. Width gate, remaining rows (`docs/re/vwf.md`): engine B boxes (ceremony box looks ~28 cells; make the engine B
-     marker fill a line to find the edge), battle prompts, system prompts, objectives (need a warp that shows them:
-     add scenes to `tools/debug/scenes.tsv`), spells and orders lists (add a warp to a spell / orders menu).
+  1. Width gate, remaining rows (`docs/re/vwf.md`): descriptions (392, spell/item help: try a battle spell menu;
+     `regionreads.lua` with `RANGES='0EE59E-0EFD28'`), objectives (reader unknown: find who reads the C6 table at
+     `C6:11xx`, 25-byte records holding `06FDD8`.., e.g. `snes_romreads.lua` / a read watch on `C6:1221`; if no code
+     reads it, mark unused), spells and orders lists (add a warp to a spell / orders menu in `scenes.tsv`).
   2. Slice table for translators: per window string, the slices the tilemaps show (start cell, cells), read off
      `work/qa/mk_c4` shots; put it in each entry's `notes` (or `docs/re/slices.tsv`) and make the fit lint use it.
   3. Kanji table (translators need readable `jp`, needed before phase 6): 777 codes still `[hhhh]` (20,883 uses).
@@ -47,6 +54,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
      (`tools/font_sheet.py`) with script context, most used first, write `tbl/kanji.tsv`, `mktbl.py --kanji`,
      `build.py --dump --refresh`, `tools/check.py`. Codes 0x10-0x1A may be Latin Q-Z. Known: 消=2AB 去=1F1 最=275.
 - **Open (not blocking):**
+  - **Side tables are repacked in place** (`rom_text.repack`: each region keeps its exact size, entries are not
+    relocated and their pointers not rewritten), so today an English ceremony/prompt/description line must have the
+    JP entry's byte length. Before phase 7: relocate grown entries to `$F0-$FE` and rewrite their pointers (each
+    entry's `refs` lists candidates; confirm per table), or pad shorter ones; tell translators the rule in phase 6.
   - Side tables never read on a warp: battle_prompts(_b), system_prompts, descriptions, objectives (phase 8
     `textcover`). unit_records: names inside mixed records marked `data` whole.
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
