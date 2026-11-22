@@ -33,6 +33,15 @@ def test_speaker_tag_must_use_a_glossary_form(tmp_path, monkeypatch):
     assert len(batches.tag_problems()) == 1
 
 
+def test_shop_rows_fit_the_20_cell_portrait_box():
+    entry = {"id": "1AF7FC", "_file": "short_strings", "jp": "「さっそく装備しますか？」{FF01}{FF0E:0006}はい"}
+    assert batches.width_problems(entry, '"Equip it now?"{FF01}{FF0E:0006}Yes') == []
+    assert batches.width_problems(entry, '"Will you equip it now?"{FF01}{FF0E:0006}Yes')       # 24 cells
+    assert batches.width_problems(entry, '"Equip it{FF01}now?"{FF01}{FF0E:0006}Yes')          # a 4th row
+    # variables count at their longest English value: item 16, price 5
+    assert batches.shop_row_cells('"{FF06:48CD:007E}{FF0E:0003}{FF06:48F9:007E}G"') == 1 + 16 + 3 + 5 + 2
+
+
 def test_repo_lint_has_no_keep_or_tag_problems():
     assert batches.keep_problems(batches.index()) == []
     assert batches.tag_problems() == []

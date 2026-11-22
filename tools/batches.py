@@ -37,7 +37,8 @@ FREE = {"{FF01}", "[00AB]"}  # engine B row break (the English places its own, 2
 def free_token(t):
     """FREE codes and `[hhhh]` glyph words (0x0060-0x04FF: a kanji the table prints as a code, or a stray glyph
     word such as 05E8A0's [011E]): the English may drop or keep them."""
-    return t in FREE or (t.startswith("[") and 0x60 <= int(t[1:5], 16) <= 0x4FF)
+    # {FF0E:n} = engine B "advance the cursor n cells" (docs/re/text.md): layout, like {FF01}
+    return t in FREE or t.startswith("{FF0E:") or (t.startswith("[") and 0x60 <= int(t[1:5], 16) <= 0x4FF)
 VARIABLE = r"\{(?:FF2B|FF2C)\}"
 # Glossary "Honorifics" (D1): every honorific after a name or name variable keeps its suffix.
 HONORIFICS = {"さん": "-san", "様": "-sama", "さま": "-sama", "殿": "-dono", "どの": "-dono", "ちゃん": "-chan",
@@ -52,6 +53,17 @@ LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "uni
           "locations": ("px", 80), "speakers": ("px", 48),
           "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("row", 28)}
 EXACT = {"objectives"}
+# Shop dialogue (short_strings 1AF585..1AFDC2) draws in the portrait box: 20 cells a row, measured 2026-11-23
+# (`work/qa/w_shopruler`: a ruler row wraps after cell 20 and pushes the Buy/Sell/Quit row back to row 1).
+# Rows count {FF0E:n} as n cells and each {FF06} variable at its longest English value.
+SHOP = (0x1AF585, 0x1AFDC2, 20)
+SHOP_VARS = {"48CD": 16, "48E3": 16, "48F9": 5, "4905": 9, "F569": 16}   # item, item, price, unit name, greeting
+
+
+def shop_row_cells(row):
+    n = sum(int(k, 16) for k in re.findall(r"\{FF0E:([0-9A-F]{4})\}", row))
+    n += sum(SHOP_VARS.get(k, 0) for k in re.findall(r"\{FF06:([0-9A-F]{4})", row))
+    return n + len(TOKEN.sub("", row))
 NAMES = {"{FF1F}": "HERO", "{FF28}": "FF28", "{FF31}": "FF31"}
 
 
@@ -135,6 +147,13 @@ def width_problems(entry, en):
             return [f"over {entry.get('width') or n} characters"]
     elif kind == "row":
         rows = re.split(r"\{FF01\}|\{FFFF\}", en)
+        if file_of(entry) == "short_strings" and SHOP[0] <= int(entry["id"], 16) <= SHOP[1]:
+            out = [f"shop row over {SHOP[2]} cells ({shop_row_cells(r)}): {TOKEN.sub('', r)!r}"
+                   for r in rows if shop_row_cells(r) > SHOP[2]]
+            jp_rows = entry["jp"].split("{FF01}")    # a JP row past 20 cells wraps on its own: one more row
+            if en.count("{FF01}") > len(jp_rows) - 1 + sum(shop_row_cells(r) > SHOP[2] for r in jp_rows):
+                out.append("more {FF01} rows than the JP shows (the shop box holds 3 rows)")
+            return out
         if any(len(TOKEN.sub("", r)) > n for r in rows):
             return [f"a row over {n} characters (break rows with {{FF01}})"]
     return []

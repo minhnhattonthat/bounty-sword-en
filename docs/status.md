@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: in progress (session l: phase 7 review fixed, first tour read, to-dos below).
+- **Phase:** 8. QA in the emulator: in progress (session m: shop box measured and every shop line fitted; to-dos below).
   Phase 7 closed 2026-11-23 (session k): build green and self-checking
   (`build.py` now fails on any fixed-field overflow and runs `romdiff.py` over the layout's ranges + the 8 `jml`
   hook sites, `tools/rom_check.py`); `batches.py check` 0 problems (control codes, widths, glossary); 43 tests;
@@ -17,9 +17,14 @@ Updated at the end of every session. Keep it to what the next session needs; his
   武器屋..., 2-cell words: "Buy"/"Sell" are 18 px): find how the layout words in 01D1F5 place its 32 glyph tiles on
   the shop screens, give each English word 3+ cells, then translate it with `tools/grid.py`; (2) widen the 2-cell
   menu slices that force abbreviations (polish line "Menu grid strings"; e.g. 01D31B "Wp.Etc Gear Item Binx").
-  (3) **shop dialogue box is ~20 cells, not engine B's 28**: a row past it wraps and the Buy/Sell/Quit row then
-  lands on row 1 (seen: greeting, fixed in session l, `work/qa/w_shop7`). Measure the box, add the width to the
-  lint for the shop rows (short_strings 1AF618..1AFDC2) and re-check every shop line in game (sell/equip/trade-in).
+  (3) shop dialogue box: **done in session m** except the in-game read of the buy/sell lines. Measured 20 cells
+  (ruler build, `work/qa/w_shopruler`); lint `batches.SHOP` (rows <= 20 cells, `{FF0E:n}` = n cells, `{FF06}`
+  variables at their longest English: item 16, price 5, unit name 9; no more rows than the JP shows), test
+  `test_shop_rows_fit_the_20_cell_portrait_box`; `{FF0E:n}` is now a free layout code like `{FF01}`; 24 lines
+  rewritten (rv05). **Blocker for the in-game read:** after the `town_weapon_shop` warp the shop ignores input
+  once the greeting is up (original ROM too: `work/qa/w_shopbuy_jp`; and from `work/states/town_weapon_shop.mss`
+  with `play.py`, `work/play/shop`), so Buy/Sell can't be driven. Find what the warp leaves unset (the scene's
+  own route presses A at +500; maybe a menu/input flag), fix the scene, then read every shop line in game.
   (4) unit_records name fields (046CF4 パラディン, 046D02 マスター/マンサー): find out if they are shown (keep_jp.txt).
   (5) name entry shows default "NAME フェリス" (not found as text-codec bytes; another encoding or table): find it
   and add it to `script/default_names.tsv` like ソード/テティス. (6) status "Gdr 男" value still JP (polish line).
@@ -34,6 +39,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (original, same scene names). Proof sheets at full scale: `sheet.py "work/qa/tour/*/proof.png" --div 1 --cols 4
   --max 12 --out work/qa/tour/sheets/sheet.png` (sorted scene order = `ls`). Own read so far: sheets 1-8 of 12
   (scenes battle_items..scen_18); verdicts not written into a gate yet. Brief: `docs/visual-qa-brief.md`.
+- **Session 2026-11-23m (phase 8, shop box):** to-do 3 (see above). Shop states in `work/states/` refreshed on
+  this build (states made on an older build show stale text tiles: cold boot or re-run `warp_all.py --states`).
+  check 52 passed, lint 0 problems, smoke ok. Worker handed back at the context limit.
 - **Session 2026-11-23l (phase 7 review fixes, phase 8 start):** review Important 1-4 + minors fixed:
   `tests/test_build.py` builds the English ROM (overflow/asar/romdiff gates now in `check.py`); romdiff write log
   `build/writes.txt` (pointer table, reloc callers, hooks, checksum, default names); header checksum fixed;
@@ -226,5 +234,6 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF state at `$7F:FF80` is free by a 3-scene probe only (`tools/lua/wramfree.lua`); recheck if garbage appears.
   - Debug tool: town tavern, Mode 9 and the real ending not in the scene list; GOD/NOENC/FAST not built.
   - codex exec (used for independent visual QA) was out of quota until 2026-11-26.
-- **Open bugs:** phase 8 to-dos 3-8 above (shop box width, card subtitle overlap, default name フェリス, 男, 倉庫).
+- **Open bugs:** phase 8 to-dos 3-8 above (shop lines not yet read in game, card subtitle overlap, default name
+  フェリス, 男, 倉庫); shop warp ignores input after the greeting (debug tool).
 - **Waiting on the user:** nothing. (Keyboard input in Mesen not checked by hand: headless session.)
