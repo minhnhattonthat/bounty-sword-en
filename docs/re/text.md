@@ -79,6 +79,14 @@ Addresses: CPU `$BB:AAAA` (HiROM, file offset = `addr & 0x3FFFFF`) or file offse
   blocks: 0x1E0008-0x1E8B5E, 0x214610-0x21864C, 0x24DB60-0x24FE8A, 0x257BD8-0x25FBFE, 0x27141A-0x279DEE,
   0x280F25-0x28F8D9, 0x29040C-0x29CC8E, 0x2A7D46-0x2AE7A8 (~300 KB). Pointers inside scripts (FF06/FF09/FF0B-style)
   are not counted yet.
+- **Layout used by the build (verified: identity build, `tools/rom_text.py`, `tests/test_identity.py`)**: the table is
+  0x26D5EF-0x26F2C8, **2,462 slots** (126 zero), 2,335 distinct targets. Grouping targets with gaps < 0x400 gives nine
+  blocks starting 0x1E0000, 0x214606, 0x24DB56, 0x257BD4, 0x26F317, 0x271410, 0x280F1B, 0x290400, 0x2A7D44 (the
+  first message of each block starts a few bytes before the ranges above). A message runs to the next target; 22
+  messages hold more text after their first 」FFFF with no FF18 (two speakers, gap up to 0x1DC bytes), so "end at
+  」FFFF" is wrong inside a block. The last message of a block ends after its first 」FFFF not followed by FF18; after
+  it comes data or 0000/FFFF fill (block ends 0x1E8B74, 0x218658, 0x24FE94, 0x25FC0A, 0x26F3D3, 0x279DFA, 0x28F8E3,
+  0x29CC98, 0x2AE7B4). Pointers are `$C0|bank`: file 0x1E0000 = `$DE:0000`.
 ## Text inventory (every 16-bit text run in the ROM)
 
 `tools/re/textruns.py` lists every run of text-like words (both byte parities, >= 6 kana, master blocks excluded);
