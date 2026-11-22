@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (width gate: engine B and engine A prompts measured;
+- **Phase:** 5. Engine spike and marker build in progress (width gate: engine B, engine A prompts measured; objectives/descriptions unreached;
   left: descriptions, objectives, spells/orders lists, slice table, kanji table). Builds 2026-11-22 (fifth
   session): rebuild with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no
   garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
@@ -42,11 +42,14 @@ Updated at the end of every session. Keep it to what the next session needs; his
     cell 28, a 3rd `FF01` row overwrites (measured, ceremony ruler); system/battle prompts are engine A scripts and
     draw in the dialogue box with the VWF (measured via MSGPTR). Probes with no hit for objectives/descriptions:
     card_02 run into battle, every battle-map button, camp item menu, item shop (`tools/routes/*_keys.txt`, emu.py `--route` beside the warp, `KEEP=true`).
+  - Sixth session: objectives pointer table is `D8:FC9C` (53 words, one per scenario; the old C6 `refs` were OAM
+    sprite data). Full 140-scene tour `work/qa/rr_all` with `regionreads.lua` on objectives (table + text) and
+    descriptions: **no read anywhere**; rows in `docs/re/vwf.md` marked "not reached, keep JP byte length".
+    Route `tools/routes/orders_keys.txt` (camp_orders + KEEP) only reaches the formation grid, not an orders list.
 - **Next (phase 5, in this order):**
-  1. Width gate, remaining rows (`docs/re/vwf.md`): descriptions (392, spell/item help: try a battle spell menu;
-     `regionreads.lua` with `RANGES='0EE59E-0EFD28'`), objectives (reader unknown: find who reads the C6 table at
-     `C6:11xx`, 25-byte records holding `06FDD8`.., e.g. `snes_romreads.lua` / a read watch on `C6:1221`; if no code
-     reads it, mark unused), spells and orders lists (add a warp to a spell / orders menu in `scenes.tsv`).
+  1. Width gate, remaining rows: spells and orders lists (C1 field 10 / 8 cells, guessed = field width; a warp
+     to a battle spell menu or the orders list would measure them). Objectives/descriptions: no reader on any
+     warp (see above); treat as measured-by-rule unless phase 8 textcover finds them.
   2. Slice table for translators: per window string, the slices the tilemaps show (start cell, cells), read off
      `work/qa/mk_c4` shots; put it in each entry's `notes` (or `docs/re/slices.tsv`) and make the fit lint use it.
   3. Kanji table (translators need readable `jp`, needed before phase 6): 777 codes still `[hhhh]` (20,883 uses).
