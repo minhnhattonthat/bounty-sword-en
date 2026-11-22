@@ -36,3 +36,10 @@
   Immortal"; widen if the field allows); item 1AE963 ペルセポネの箱 = "Persephone" (drops "Box"); 24E242 ううん
   rendered "Mm-hm" (it contradicts his "Not yet": "No, no..."); 1E1176 "Old memories of {hero}" reads as memories
   about him (the fairy speaks to him: "Your old memories are buried here...")
+- [ ] Independent review b017-b032 (minors): shouts use the 80 px spell-table short forms "1000 Arrows" (258768,
+  サウザンドアロー) and "Earth Dragon" (2589E8, 地竜逆撃 drops "Counter"): give the dialogue the full names
+  ("Thousand Arrows", "Earth Dragon Counter") or widen the spell field; 2165A6 当たらなければどうという事はない is a
+  famous quote, "If they don't hit you, it's nothing!" could be punchier ("Can't hurt you if it doesn't hit!");
+  25BA86 古代人の悪霊 "the evil spirit of an ancient people" is one ancient man's ghost; 25E1A8 page 3 (what the girl
+  taught him) reads as "you" believing; 2763B0 "For the first time, I thought so." is vague (he first wished he
+  could carve open fate); 281A49 "Hey, or you there, or kid" (quote the three forms of address)

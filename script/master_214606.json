@@ -392,8 +392,8 @@
    1526
   ],
   "jp": "{spk}バアさん　　\n「わしは　この島で　海から\n　とどけられる　さまざまな\n　情報に　耳をすませておる」\n{next}\n「何か　聞きたい事は　あるか？」\n{next}\n　暗黒のカベについて\n　大陸の南について\n　最終兵器について\n{FF14:00C3}{end}\n",
-  "en": "{spk}バアさん　　\n「I sit on this island listening\n to all sorts of news the sea\n brings me.」\n{next}\n「Is there anything you'd like\n to ask?」\n{next}\n　About the dark wall\n　About the south\n　About the ultimate weapon\n{FF14:00C3}{end}\n",
-  "pages": "\"I sit on this island listening to all sorts of news the sea brings me.\" || \"Is there anything you'd like to ask?\" || About the dark wall\\nAbout the south\\nAbout the ultimate weapon"
+  "en": "{spk}バアさん　　\n「I sit on this island, dearie,\n listening to all the news the\n sea brings me.」\n{next}\n「Is there anything you'd like\n to ask?」\n{next}\n　About the dark wall\n　About the south\n　About the ultimate weapon\n{FF14:00C3}{end}\n",
+  "pages": "\"I sit on this island, dearie, listening to all the news the sea brings me.\" || \"Is there anything you'd like to ask?\" || About the dark wall\\nAbout the south\\nAbout the ultimate weapon"
  },
  {
   "id": "215CCC",
@@ -437,8 +437,8 @@
    1531
   ],
   "jp": "{spk}老人　　　　\n「わしの息子は　連邦に入るのを\n　断ったために　殺されてしまった\n　どうか　カタキを　とってくれ」\n{next}\n「これは　大した物では　ないが\n　祖先から　伝わる　武器じゃ\n　これを使って　どうか連邦を‥‥」\n",
-  "en": "{spk}老人　　　　\n「My son was killed for\n refusing to join the\n Federation.」\n{next}\n「Please, avenge him.」\n{next}\n「This isn't much, but it's a\n weapon handed down from\n our ancestors. Use it, please,」\n{next}\n「and take down the\n Federation...」\n",
-  "pages": "\"My son was killed for refusing to join the Federation.{next}Please, avenge him.\" || \"This isn't much, but it's a weapon handed down from our ancestors. Use it, please, and take down the Federation...\""
+  "en": "{spk}老人　　　　\n「They killed my son, I tell you,\n for refusing to join the\n Federation. Avenge him!」\n{next}\n「It isn't much, mind you, but\n it's a weapon handed down\n from our ancestors. Use it, I」\n{next}\n「beg you, and take down the\n Federation...」\n",
+  "pages": "\"They killed my son, I tell you, for refusing to join the Federation. Avenge him!\" || \"It isn't much, mind you, but it's a weapon handed down from our ancestors. Use it, I beg you, and take down the Federation...\""
  },
  {
   "id": "216264",
@@ -1049,8 +1049,8 @@
    1599
   ],
   "jp": "{spk}ジイさん　　\n「ここにある　船着場から\n　アクラの島の　小さな街へ\n　行けるんだよ　知ってたかい？」\n",
-  "en": "{spk}ジイさん　　\n「From the jetty here you can\n get to the little town on\n Accra island, you know.」\n{next}\n「Did you know that?」\n",
-  "pages": "\"From the jetty here you can get to the little town on Accra island, you know.{next}Did you know that?\""
+  "en": "{spk}ジイさん　　\n「This jetty takes you to the\n little town on Accra island.\n Did you know, eh?」\n",
+  "pages": "\"This jetty takes you to the little town on Accra island. Did you know, eh?\""
  },
  {
   "id": "217EF6",
@@ -1058,8 +1058,8 @@
    1600
   ],
   "jp": "{spk}ジイさん　　\n「アクラの島には　何もない\n　だから　連邦の支配も\n　受けずに　すんでおるらしい」\n",
-  "en": "{spk}ジイさん　　\n「There's nothing on Accra\n island. That's why it seems\n it's escaped Federation rule.」\n",
-  "pages": "\"There's nothing on Accra island. That's why it seems it's escaped Federation rule.\""
+  "en": "{spk}ジイさん　　\n「Nothing's on Accra island, you\n see. So the Federation leaves\n it be.」\n",
+  "pages": "\"Nothing's on Accra island, you see. So the Federation leaves it be.\""
  },
  {
   "id": "217F5A",

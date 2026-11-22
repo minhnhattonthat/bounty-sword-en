@@ -581,8 +581,8 @@
    2385
   ],
   "jp": "{spk}{FF1F}\n「‥‥やるぞ　ロジャー　ミランダ」\n{next}\n{spk}ロジャー　　\n「わかりました！」\n{next}\n{spk}ミランダ　　\n「あれを使うのですね！？」\n{next}\n{spk}{FF1F}\n「布陣！」\n{spk}{FF1F}\n「合体攻撃！」\n{next}\n「ギ°ガ°ス°マ°ッ°シ°ャ°ー！」\n",
-  "en": "{spk}{FF1F}\n「...Let's do it, Roger, Miranda.」\n{next}\n{spk}ロジャー　　\n「Understood!」\n{next}\n{spk}ミランダ　　\n「We are using that, are we\n not!?」\n{next}\n{spk}{FF1F}\n「Formation!」\n{spk}{FF1F}\n「Combined attack!」\n{next}\n「GIGA SMASHER!」\n",
-  "pages": "\"...Let's do it, Roger, Miranda.\" || \"Understood!\" || \"We are using that, are we not!?\" || \"Formation!\" || \"Combined attack!\" || \"GIGA SMASHER!\""
+  "en": "{spk}{FF1F}\n「...Let's do it, Roger, Miranda.」\n{next}\n{spk}ロジャー　　\n「Understood!」\n{next}\n{spk}ミランダ　　\n「You mean to use that\n technique!?」\n{next}\n{spk}{FF1F}\n「Formation!」\n{spk}{FF1F}\n「Combined attack!」\n{next}\n「GIGA SMASHER!」\n",
+  "pages": "\"...Let's do it, Roger, Miranda.\" || \"Understood!\" || \"You mean to use that technique!?\" || \"Formation!\" || \"Combined attack!\" || \"GIGA SMASHER!\""
  },
  {
   "id": "259006",
@@ -599,8 +599,8 @@
    2387
   ],
   "jp": "{FF12}「よし　やるぞ！」\n{spk}××××　　\n「‥‥おう！」\n「‥‥わかった！」\n{spk}○○○○　　\n「行けぇぇぇぇーーーっ！」\n{spk}××××　　\n「合体攻撃！」\n「ア°ナ°ザ°\n　デ°ィ°メ°ン°シ°ョ°ン！」\n",
-  "en": "{FF12}「All right, let's do it!」\n{spk}××××　　\n「...Right!\"\n \"...Got it!」\n{spk}○○○○　　\n「Goooooooooo!」\n{spk}××××　　\n「Combined attack!\"\n \"ANOTHER WORLD!」\n",
-  "pages": "\"All right, let's do it!\" || \"...Right!\"\\n\"...Got it!\" || \"Goooooooooo!\" || \"Combined attack!\"\\n\"ANOTHER WORLD!\""
+  "en": "{FF12}「All right, let's do it!」\n{spk}××××　　\n「...Right!\"\n \"...Got it!」\n{spk}○○○○　　\n「Goooooooooo!」\n{spk}××××　　\n「Combined attack!\"\n \"ANOTHER DIMENSION!」\n",
+  "pages": "\"All right, let's do it!\" || \"...Right!\"\\n\"...Got it!\" || \"Goooooooooo!\" || \"Combined attack!\"\\n\"ANOTHER DIMENSION!\""
  },
  {
   "id": "2591FA",
@@ -1714,8 +1714,8 @@
    1986
   ],
   "jp": "{spk}声　　　　　\n「‥‥バカな事？」\n{next}\n「おろかな‥‥　バカな事を\n　言っているのは　君の方だよ‥‥」\n",
-  "en": "{spk}声　　　　　\n「...Insane?」\n{next}\n「How foolish... It is you who is\n talking nonsense...」\n",
-  "pages": "\"...Insane?\" || \"How foolish... It is you who is talking nonsense...\""
+  "en": "{spk}声　　　　　\n「...Insane?」\n{next}\n「How foolish... It is you who\n are talking nonsense...」\n",
+  "pages": "\"...Insane?\" || \"How foolish... It is you who are talking nonsense...\""
  },
  {
   "id": "25C3DC",
