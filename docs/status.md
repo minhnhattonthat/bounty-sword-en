@@ -2,10 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (width gate rows all measured or ruled, slice table
-  done; left: kanji table for blocks 0x38C-0x4FF, 0x1C8-0x1F8, 0x10-0x1C7). Builds 2026-11-22 (fifth
-  session): rebuild with `build.py` / `--marker` before testing. Full marker tour `work/qa/marker2`: 140/140, no
-  garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
+- **Phase:** 6. Translate: not started (phase 5 done 2026-11-22: width gate rows all measured or ruled, marker
+  build verified, kanji table complete). Rebuild with `build.py` / `--marker` before testing. Full marker tour
+  `work/qa/marker2`: 140/140, no garbled screen; menu re-tour `work/qa/mk_c4` 21/21.
 - **Done:** Step 0. Phases 1-4 (`docs/re/`, `tools/debug/`, identity + roundtrip tests, `script/`). Phase 5 so far
   (details and evidence in `docs/re/vwf.md`):
   - Font decision: dialogue VWF; C1 menus/lists VWF with packed pairs (third session); other paths one char per cell. English = `$0F00 + ASCII`; own 8x16 font
@@ -53,15 +52,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `test_slice_table_names_real_cells`. **Kanji**: codes 0x200-0x38B are JIS level-1 order (愛..和, a few local
     swaps such as 大 谷 第); all 388 used codes there identified in `tbl/kanji.tsv` (`eye` = read off the sheet,
     `context` = picked from the script context among `tools/kanji_align.py` DP candidates). Unknown uses 20,883 -> 6,230.
-- **Next (phase 5, in this order):**
-  1. Kanji table, remaining blocks (no order, so no DP: read each zoomed glyph with its script context):
-     `0x38C-0x4FF` (4,603 uses; starts 所 持 品 性 別 ? 運 座 行 禁 止 通 常...; sheet
-     `python -X utf8 tools/font_sheet.py work/re/fs_c.png 0x390 0xC0 --zoom 4`, count is hex), `0x1C8-0x1F8`
-     (472 uses; 去=1F1, 江 越 黄 許 再 支 市 末 到 示 visible), `0x10-0x1C7` (1,155 uses; 0x60-0xBF look like kanji
-     too; 0x10-0x1A may be Latin Q-Z). Contexts: `python -X utf8 tools/kanji_match.py` -> `work/re/kanji_cand.tsv`.
-     Append `code<TAB>kanji<TAB>how` to `tbl/kanji.tsv` (keep chars unique), then `mktbl.py --kanji tbl/kanji.tsv >
-     tbl/jp.tbl`, `build.py --dump --refresh`, `tools/check.py`. Read sheets of ~64 codes at a time: context fills fast.
-  2. Then phase 5 is done (width gate rows all measured or ruled; marker build verified): move to phase 6.
+  - Eighth session: **kanji table complete**: blocks 0x38C-0x4FF, 0x1C8-0x1F5, 0x60-0xBF read from zoomed sheets
+    with script context (423 rows; `tbl/kanji.tsv` 811 rows). Proofreading the decoded script fixed four older
+    picks (0x2DE 狙, 0x2E6 憎, 0x2F4 短, 0x4A3 笑). Duplicate glyphs: `canonical` in `how` makes the used code the
+    canonical one (`tools/mktbl.py`, `docs/re/text.md`). Unknown uses 6,230 -> 37 (19 are later duplicate copies,
+    18 truly unread: 0x25 0x7E 0xAB 0xCE 0xF0 0x1F6-0x1F8). 0x3C7 寸 (寸断のリュウビ) is low confidence.
+    Identity build still byte-identical; smoke ok.
+- **Next (phase 6, translate; read `$SKILL/references/translation.md` first):**
+  1. Ask-once translation defaults are already in `docs/decisions.md` / `glossary.md` (check before translating).
+  2. Brief translators on the side-table byte-length rule (Open, first item) and the width budgets in
+     `docs/re/vwf.md` (dialogue 160 px VWF; C1 fields cells x 8 px; engine B 28 cells x 2 rows).
+  3. Translate in batches with the batch check; reviewer pass after each batch.
 - **Open (not blocking):**
   - **Side tables are repacked in place** (`rom_text.repack`: each region keeps its exact size, entries are not
     relocated and their pointers not rewritten), so today an English ceremony/prompt/description line must have the

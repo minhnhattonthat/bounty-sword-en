@@ -14,10 +14,14 @@ Addresses: CPU `$BB:AAAA` (HiROM, file offset = `addr & 0x3FFFFF`) or file offse
     0123456789 in the file-menu block at 0x1CD4C).
   - `0x0111-0x0163` hiragana ぁ-ん (JIS order), `0x0171-0x01C6` katakana ァ-ヶ. Verified (しますか, ロード, を).
   - `0x0400` = two-dot leader (‥), written in pairs. Verified visually (「‥‥マクベス‥‥か‥」).
-  - **Kanji**: codes `0x20-0x2F`, `0x60-0xBF`, `0x1C8-~0x4FF`, in no standard order (消=0x2AB 去=0x1F1 最=0x275
-    初=0x2A2). Not identified yet: the next step is a code->kanji list `tbl/kanji.tsv` read off zoomed font sheets
-    (`tools/font_sheet.py`) with script context, then `mktbl.py --kanji`. Some code-0x10-0x1A cells hold Latin Q-Z
-    glyphs; check with the font before mapping.
+  - **Kanji**: codes `0x60-0xBF`, `0x1C8-0x4FF` (消=0x2AB 去=0x1F1 最=0x275 初=0x2A2). `0x200-0x38B` follow JIS
+    level-1 order with local swaps; the other blocks have no order. All identified in `tbl/kanji.tsv` (read off zoomed
+    font sheets with script context), then `mktbl.py --kanji`. `0x401-0x41F`/`0x478`/`0x48F` also hold symbols
+    (（）『』〜←○×→). Left unidentified (18 uses): `0x25`, `0x7E`, `0xAB` (円?), `0xCE`, `0xF0`, and `0x1F6-0x1F8`
+    (three cells ending three C1 menus: probably a drawn icon, not text).
+  - **Duplicate glyphs**: some characters exist twice (体 0x2ED/0x3AC, 数 0x1DE/0x2C0, 々 0x19/0x3BC, ヴ, （）『』○×).
+    The first tbl line for a character is its canonical code; `kanji.tsv` rows with `canonical` in `how` are emitted
+    first (the code the script actually uses), other copies decode as `[hhhh]`, which keeps the roundtrip exact.
   - `0x0000`: full-width space in dialogue; string terminator in menu tables (C1 bank).
 - `tools/tbl.py` decodes byte-greedily; with 16-bit codes it can desync on `FF xx` words (FFFF then 00FF). The extractor
   must tokenise word by word (control word = `0xFFxx`), and only use the table for character words.
