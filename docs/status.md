@@ -4,9 +4,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
 
 - **Phase:** 6. Translate: reopened by the phase 6 review (`.harness/reviews/bounty-sword-en-phase6.md`). 3197/3656
   entries in English, `batches.py check` 0 problems. Left to close phase 6: (1) **widow fit pass** (D12): `check`
-  warns N widow boxes; `batches.py widows` lists `id page JP EN`; write `work/tl/fitNN.fix.tsv` rows
-  `id<TAB>page<TAB>new page`, dry-run with `batches.py fit '"text"'`, then `batches.py repage fitNN
-  work/tl/fitNN.fix.tsv`, `check fitNN` (also flags widows on the entry's other pages), `merge fitNN --overwrite`.
+  warns 437 widow boxes (498 at the start; fit01-fit02 done = the first 60 rows of the list, ids 1E0350..1E7B52);
+  `batches.py widows > work/tl/widows.tsv` lists `id page JP EN`; write `work/tl/fit03.fix.tsv` rows
+  `id<TAB>page<TAB>new page` (~30 a chunk, aim at <= 72 chars with the quotes, keep the speaker's voice per
+  `docs/style-reference.md`; reuse the same wording for repeated scenes such as the Zodiac statue speeches), dry-run
+  with `batches.py fit '"text"' ...`, then `batches.py repage fit03 work/tl/fit03.fix.tsv [work/tl/fit03b.fix.tsv
+  retries]`, `check fit03` (also flags widows on the entry's other pages), `merge fit03 --overwrite`; commit per
+  chunk or two. When the count is 0, make widows a `check` error (move `widows()` into `problems`).
   (2) **independent review** of every batch (`tools/pairs.py bNNN --out work/qa/review/bNNN.txt`; codex is out of
   quota until 2026-11-26 10:32, Orca workers can't start subagents: a fresh worker reviews pairs it did not
   translate), rows in `docs/reviews.md` "Independent review"; fix Critical/Important, Minors to `docs/polish.md`.
@@ -21,6 +25,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   275EE6), `{hero}'s` lint (295456), Mauser's オレ様 (1E6B6C, 25B114), `docs/style-reference.md` (prologue seen in
   game: `work/qa/w_prologue6`, English in the box), brief "Notes from earlier batches", minor 9 in `docs/polish.md`.
   New tools: `pages.widows`, `batches.py widows|fit|repage`, `tools/pairs.py`; tests in `tests/test_pages.py`.
+  Fit pass fit01-fit02 merged (60 widow pages). Worker handed back at the context limit; resume the fit pass.
 - **Session 2026-11-22e (b067, b057, b064, b058, b059 merged; phase 6 closed, reopened in f):**
   - Descriptions b067 (sign items: fragment 0EEE68 = "-born / who use it...?"; equip rows "Eq: Warrior, Knights").
   - **Grid strings** (menus/windows/menus_c): `tools/grid.py` lays English out cell by cell from
