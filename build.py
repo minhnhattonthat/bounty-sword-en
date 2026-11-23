@@ -11,6 +11,7 @@ asm/vwf.asm with asar (English font, VWF).
 """
 import argparse
 import hashlib
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -22,10 +23,11 @@ from bps import snes_checksum  # noqa: E402
 from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
-from rom_check import allowed_ranges, check_ranges, put_byte_patches, put_default_names, write_sites  # noqa: E402
+from rom_check import (ASM_FILES, allowed_ranges, check_ranges, default_names, put_byte_patches,  # noqa: E402
+                       put_default_names, write_sites)
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
 from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load, strings_tsv  # noqa: E402
-from tag_font import TagFont  # noqa: E402
+from tag_font import TagFont, speaker_names  # noqa: E402
 
 ORIG = ROOT / "rom" / "Bounty Sword (Japan).sfc"
 BUILD = ROOT / "build"
@@ -39,11 +41,32 @@ def assemble(rom_path):
     write_bins(BUILD)
     if not ASAR.exists():
         sys.exit(f"{ASAR} missing: unzip asar191.zip from github.com/RPGHacker/asar/releases into tools/asar/")
-    r = subprocess.run([str(ASAR), "--fix-checksum=off", str(ROOT / "asm" / "vwf.asm"), str(rom_path)],
-                       capture_output=True, text=True)
-    if r.returncode:
-        rom_path.unlink(missing_ok=True)      # never leave a stale ROM to test
-        sys.exit("asar failed:\n" + r.stdout + r.stderr)
+    for asm in ASM_FILES:
+        r = subprocess.run([str(ASAR), "--fix-checksum=off", str(ROOT / "asm" / asm), str(rom_path)],
+                           capture_output=True, text=True)
+        if r.returncode:
+            rom_path.unlink(missing_ok=True)      # never leave a stale ROM to test
+            sys.exit(f"asar failed on {asm}:\n" + r.stdout + r.stderr)
+
+
+def speaker_map(built, tf):
+    """build/spk_map.bin for asm/speaker_match.asm: 24-byte rows (speaker header words, a unit name's words as the
+    build wrote it) for every speaker whose JP name is also a battle unit name (default_names.tsv overrides,
+    unit_names), so the battle-map portrait match (C2:5C9B, C2:5CDA) still pairs them; then a $FFFF word."""
+    units = {}
+    for off, n, jp, _ in default_names():
+        units.setdefault(jp, set()).add(bytes(built[off:off + 12]) if n == 6 else None)
+    for e in json.loads((SCRIPT / "unit_names.json").read_text(encoding="utf-8")):
+        if e.get("kind", "text") == "text" and e.get("en"):
+            off = int(e["id"], 16)
+            units.setdefault(e["jp"].rstrip("　"), set()).add(bytes(built[off:off + 12]))
+    rows = []
+    for jp, en in speaker_names().items():
+        if tf is None or jp not in units:
+            continue
+        key = b"".join(w.to_bytes(2, "little") for w in tf.words(en, 6))
+        rows += [key + v for v in sorted(v for v in units[jp] if v and v != key)]
+    return b"".join(rows) + b"\xff\xff"
 
 
 def apply_qa(files, overrides):
@@ -81,6 +104,8 @@ def build(out=OUT, identity=False, marker=False, qa=()):
             put_default_names(built, TextCodec(True))     # script/default_names.tsv: new-game names in English
             put_byte_patches(built)                       # script/byte_patches.tsv: shop tilemaps etc.
         built = bytes(built) + b"\xff" * (ROM_EXPANDED - len(built))
+        tf = None if marker else (TAGS[0] if TAGS else TagFont())
+        (BUILD / "spk_map.bin").write_bytes(speaker_map(built, tf))
     out.write_bytes(built)
     if not identity:
         assemble(out)
