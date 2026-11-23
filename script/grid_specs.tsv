@@ -43,7 +43,7 @@
 01CC00	0:Party | 4:Formation | 11:Status
 01CC1C	0:Pick an item to drop.
 01CC3A	0:Can't drop.
-01CC4A	0:Trade | 4:Use | 6:Drop | 9:Gear | 12:Pack | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
+01CC4A	0:Trade | 4:Use | 6:Drop | 9:Gear | 12:Pack | 17:Who? | 21:Vault | 25:Other Gear | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 48:Store | 52:Weapons | 60:Items
 01CCCC	0:Discard it?
 01CCE4	=
 01CCF2	1:Free | 4:Load | 7:Copy | 10:Del | 12:New | 16:Time | 21:Maps | 27:File | 32:Save | 35:Which? | 39:Where | 43:.
