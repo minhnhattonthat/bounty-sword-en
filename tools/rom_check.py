@@ -21,7 +21,7 @@ import byte_scripts  # noqa: E402
 from rom_text import MASTER_TABLE  # noqa: E402
 
 ASM = ROOT / "asm" / "vwf.asm"
-ASM_FILES = ("vwf.asm", "speaker_match.asm")     # applied in this order by build.py; hooks read from all
+ASM_FILES = ("vwf.asm", "speaker_match.asm", "loc_label.asm")     # applied in this order by build.py; hooks read from all
 EXPANDED = (0x300000, 0x400000)
 HOOK_BYTES = 4                       # each low-bank hook is one `jml Label`
 

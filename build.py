@@ -26,7 +26,7 @@ from marker import marker_files  # noqa: E402
 from rom_check import (ASM_FILES, allowed_ranges, check_ranges, default_names, put_byte_patches, put_ff28_tag,  # noqa: E402
                        put_default_names, write_sites)
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
-from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load, strings_tsv  # noqa: E402
+from script_text import OVERFLOW, SCRIPT, TAGS, WIDE, TextCodec, apply_script, dump, load, strings_tsv  # noqa: E402
 from tag_font import TagFont, speaker_names  # noqa: E402
 
 ORIG = ROOT / "rom" / "Bounty Sword (Japan).sfc"
@@ -93,6 +93,8 @@ def build(out=OUT, identity=False, marker=False, qa=()):
     data = apply_script(rom, files, field="jp" if identity else "en", tags=not (identity or marker))
     BUILD.mkdir(exist_ok=True)
     (TAGS[0] if TAGS else TagFont()).write(BUILD / "font_tag.bin")
+    # asm/loc_label.asm: the 14-cell location labels (D20), 14 words a row, index map-1
+    (BUILD / "loc_wide.bin").write_bytes(b"".join(w.to_bytes(2, "little") for row in WIDE["locations"] for w in row))
     if OVERFLOW:     # tags and labels render proportionally since phase 7 (tools/tag_font.py): nothing may overflow
         sys.exit(f"{len(OVERFLOW)} English entries overflow a fixed field: "
                  + " ".join(OVERFLOW[:12]) + (" ..." if len(OVERFLOW) > 12 else ""))

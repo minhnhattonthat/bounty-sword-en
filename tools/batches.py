@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import grid  # noqa: E402
 import pages  # noqa: E402
 from font_en import text_px  # noqa: E402
+from tag_font import WIDE_CELLS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 TL = ROOT / "work/tl"
@@ -51,9 +52,9 @@ NOT_NAMES = {"バア", "ジイ", "オバ", "オレ", "ハンター", "コソド�
 LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "unit_names": ("px", 48),
           "unit_titles": ("px", 128), "constellations": ("px", 40), "orders": ("px", 64),
           "town_menu": ("px", 40),
-          # location label (C0:E1B1, 10 cells) and name tag (C2:5641, 6 cells) draw one char a cell today: phase 7
-          # packs two letters a cell there like C1Run (decision D8), so they get the pair budget too.
-          "locations": ("px", 80), "speakers": ("px", 48), "move_prompt": ("px", 96),
+          # location label and name tag (C2:5641, 6 cells): English pre-rendered by tools/tag_font.py (D8); the label
+          # is drawn 14 cells wide from bank $FF (D20, asm/loc_label.asm, tag_font.WIDE_CELLS)
+          "locations": ("px", 112), "speakers": ("px", 48), "move_prompt": ("px", 96),
           "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("desc", 128)}
 EXACT = {"objectives"}
 # Shop dialogue (short_strings 1AF585..1AFDC2) draws in the portrait box: 20 cells a row, measured 2026-11-23
@@ -170,7 +171,7 @@ def width_problems(entry, en):
         return []
     kind, n = lim
     if kind == "px":
-        cells = entry.get("width") or n // 8
+        cells = WIDE_CELLS.get(file_of(entry)) or entry.get("width") or n // 8
         plain = TOKEN.sub("", en)
         if text_px(plain) > cells * 8 or len(plain) > 2 * cells:
             return [f"over {cells * 8} px ({text_px(plain)})"]

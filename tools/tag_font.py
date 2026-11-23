@@ -27,7 +27,10 @@ NAMES = ROOT / "script" / "speaker_tags.tsv"
 TAG_FIRST, TAG_END = 0x0500, 0x0720
 BLOCK_BASE = 0xA000
 TAG_CELLS = {"speakers": 6, "locations": 10, "move_prompt": 12}   # move_prompt: C4:18F1 via C0:E1B1, 12 cells
-CENTRED = {"locations"}                  # the JP centred location labels with spaces; speaker names are left-aligned
+# Fields drawn from a wider copy in bank $FF instead of their table (D20): locations, asm/loc_label.asm LocWide,
+# 14 words a row, index map-1 (build/loc_wide.bin); the 10-word table keeps the JP, unread.
+WIDE_CELLS = {"locations": 14}
+CENTRED = {"locations"}                # the JP centred location labels with spaces; speaker names are left-aligned
 SPACE = 0x0000
 HEADER = re.compile(r"\{spk\}([^\n{\[]{6})")   # a literal 6-word speaker header (variable headers start with "{")
 

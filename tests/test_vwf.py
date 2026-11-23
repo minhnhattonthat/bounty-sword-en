@@ -107,8 +107,8 @@ def test_tag_font_renders_every_speaker_and_label_in_its_cells():
     for en in names.values():
         assert len(tf.words(en, 6)) == 6, en
     for e in json.loads((SCRIPT / "locations.json").read_text(encoding="utf-8")):
-        if e.get("en") and e.get("width") == 10:
-            assert len(tf.words(e["en"], 10, centre=True)) == 10, e["id"]
+        if e.get("en") and e.get("width") == 10:     # drawn 14 cells wide from bank $FF (D20, asm/loc_label.asm)
+            assert len(tf.words(e["en"], 14, centre=True)) == 14, e["id"]
     assert all(TAG_FIRST <= c < TAG_END and 0xA000 <= offset(c) < 0xE400 for c in tf.codes.values())
     assert len(tf.block()) <= 0x4400
     # same name, same codes: a header and its speakers-table row must match for the portrait

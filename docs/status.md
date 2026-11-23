@@ -8,6 +8,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
   **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23am (D20, build 0305432e8572):** world-map location label widened 10 -> 14 cells
+  (`asm/loc_label.asm`, hook `C0:CB1E`; `docs/re/vwf.md` location row): the four "... Mts" labels are now
+  "... Mountains". Seen: "Blackburn Mountains" from the owner state (`work/qa/map_wide/sheet.png`); Rhipaean, East and
+  South Atlas Mountains not seen in game (same code path, all fit 112 px; `check.py` holds them). The chapter cards
+  (`card_02`) show no location label. Release gate not re-run.
 - **Session 2026-11-23al (3 user reports, build c35ae5806e71):** (1) **Item descriptions** (`rom/bounty_item_desc.mss`,
   shop Select): the box is 2 rows x 16 cells (`C3:C63C`), not the guessed 28; 32 letters filled it and an `{FF01}`
   after a 16+ letter row wrapped to row 1 over it. `EngBGlyph` now counts that box's cells by ink, lint

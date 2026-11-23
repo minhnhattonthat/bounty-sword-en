@@ -22,7 +22,7 @@ from pathlib import Path
 
 from font_en import EN_BASE, FIRST as EN_FIRST, LAST as EN_LAST
 from rom_text import MASTER_TABLE, REGIONS, TBL, WordCodec, to_cpu, unpack, word, words_at
-from tag_font import CENTRED, TAG_CELLS, TagFont, speaker_names
+from tag_font import CENTRED, TAG_CELLS, WIDE_CELLS, TagFont, speaker_names
 from tag_font import headers as tag_headers
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -574,11 +574,33 @@ def tag_source(e, region, field, names, tf):
     return dict(e, jp=tf.script(en, TAG_CELLS[region], region in CENTRED))
 
 
+WIDE = {}       # region -> rows of WIDE_CELLS words, in table order (build.py writes build/loc_wide.bin)
+
+
+def wide_words(e, src, region, field, tags, sc):
+    """A WIDE_CELLS row: English rendered into the wide field (D20), else the entry's own words centred in it."""
+    n = WIDE_CELLS[region]
+    en = e.get(field) if field != "jp" else None
+    if tags and en and not re.search(r"[{\[]", en):
+        try:
+            return TAGS[0].words(en, n, region in CENTRED)
+        except ValueError:
+            OVERFLOW.append(f"{region}:{e['id']}")
+    try:
+        w = side_words(src, codec_for(sc, region))
+    except ValueError:
+        w = side_words(e, codec_for(sc, region))
+    pad = n - len(w)
+    return [SPACE] * (pad // 2) + w + [SPACE] * (pad - pad // 2)
+
+
 def apply_script(rom, files, field="jp", tags=False):
     """rom_text.unpack() layout with each entry's `field` encoded back in (the build's text step). `tags`: render
     English speaker tags and location labels with tools/tag_font.py (the font is left in TAGS for the build)."""
     OVERFLOW.clear()
     ADDR.clear()
+    WIDE.clear()
+    WIDE.update({k: [] for k in WIDE_CELLS})
     TAGS[:]= [TagFont()] if tags else []
     names = speaker_names() if tags else {}
     mc, sc, wc = TextCodec(True), side_codecs(), WordCodec()
@@ -602,7 +624,10 @@ def apply_script(rom, files, field="jp", tags=False):
         words = []
         for e in region_entries(files, r["name"], r["start"], r["end"]):
             src = dict(e, jp=e[field]) if e.get(field) else e
-            if (tags and r["name"] in TAG_CELLS and e.get("width") == TAG_CELLS[r["name"]] and e.get(field)
+            if r["name"] in WIDE_CELLS and e.get("width"):
+                WIDE[r["name"]].append(wide_words(e, src, r["name"], field, tags, sc))
+                src = e          # the table itself keeps the JP: the game reads the wide copy (asm/loc_label.asm)
+            if (tags and r["name"] not in WIDE_CELLS and r["name"] in TAG_CELLS and e.get("width") == TAG_CELLS[r["name"]] and e.get(field)
                     and not re.search(r"[{\[]", e[field])):
                 src = tag_source(e, r["name"], field, names, TAGS[0])
             codec, pack = codec_for(sc, r["name"]), r["name"] in C1_TABLES

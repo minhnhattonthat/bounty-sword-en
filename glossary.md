@@ -91,10 +91,10 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | オルドバ | Ordoba | | the Federation | Ordova / Cordoba |
 | ロムルス | Romulus | | 王都ロムルス "the royal city of Romulus": a military realm allied with Rheinmetall, not its capital | |
 | イーストエンド | East End | | | Eastend |
-| ブラックバーン | Blackburn | | ブラックバーンの山々: map label "Blackburn Mts" (10-cell tag label), dialogue "the Blackburn Mountains" | |
+| ブラックバーン | Blackburn | | ブラックバーンの山々: map label and dialogue "the Blackburn Mountains" | |
 | アーデン | Arden | | | |
 | エルツ | Erz | | | |
-| リパイオス | Rhipaean | | リパイオス山脈: dialogue "Rhipaean Mountains", map label "Rhipaean Mts" (10-cell tag label) | Ripaios |
+| リパイオス | Rhipaean | | リパイオス山脈: map label and dialogue "Rhipaean Mountains" | Ripaios |
 | イベリア | Iberia | | | |
 | エリダヌス | Eridanus | | | |
 | パドヴァ | Padova | | | Padua |
