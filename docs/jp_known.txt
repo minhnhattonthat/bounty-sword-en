@@ -1,10 +1,10 @@
 00419A	noise	グジバヘヰ
-0073B7	region battle_prompts_b	体力回復の手が
-0073C9	region battle_prompts_b	つきてしまったか
-0073E1	region battle_prompts_b	防御行動にしますか
-0073FB	region battle_prompts_b	そのまま攻撃
-00740B	region battle_prompts_b	防御する
-00764D	region battle_prompts_b	よりしろの呪符が効果を発揮した
+0073B7	region battle_prompts_b 0073AB translated	体力回復の手が
+0073C9	region battle_prompts_b 0073AB translated	つきてしまったか
+0073E1	region battle_prompts_b 0073E1 translated	防御行動にしますか
+0073FB	region battle_prompts_b 0073F9 translated	そのまま攻撃
+00740B	region battle_prompts_b 0073F9 translated	防御する
+00764D	region battle_prompts_b 007645 translated	よりしろの呪符が効果を発揮した
 00C95A	noise	ダ補ゲム
 00C980	noise	補約ダゲ活ムヒベ
 00EFA2	noise	・奨゜銭
@@ -19,9 +19,8 @@
 0177CE	noise	コザぇざ
 01869F	noise	ぉぐ可家南
 01ADE4	noise	ヽヾゝゞ
-01C06B	region menus	ヽヾゝゞ
-01C305	region menus	だぢづでどばびぶべぼぱぴぷぺぽ
-01C3DB	region menus	ダヂヅデドバビブベボパピプペポ
+01C06B	region menus 01BFFF translated	ヽヾゝゞ
+01C3DB	region menus 01C359 translated	ダヂヅデドバビブベボパピプペポ
 01D4AF	noise	遁首ざて
 01D6D3	noise	遁賞ブレ
 0249E0	noise	ぐばゐグバヰ狂
@@ -37,51 +36,50 @@
 0369BE	noise	仲ヂ弱品
 03AEB1	noise	路・以達
 03BB53	noise	ぶヶ橋正復
-041379	region system_prompts	敵を発見しました
-041399	region system_prompts	戦闘しますか
-0413AF	region system_prompts	戦闘する時は
-0413BD	region system_prompts	戦闘コマンドを実行してください
-0413ED	region system_prompts	敵に発見されました
-04140B	region system_prompts	戦闘をかいしします
-04142D	region system_prompts	戦闘をかいしします
-04144D	region system_prompts	目標にとうちゃくしました
-041497	region system_prompts	一騎打ちを受けますか
-0414DD	region system_prompts	はレベル
-0414EA	region system_prompts	になった
-041511	region system_prompts	になった
-04153A	region system_prompts	になった
-041554	region system_prompts	攻撃力が
-041561	region system_prompts	上がった
-04157B	region system_prompts	防御力が
-041588	region system_prompts	上がった
-0415AD	region system_prompts	上がった
-0415D2	region system_prompts	上がった
-0415F7	region system_prompts	上がった
-04161C	region system_prompts	上がった
-041640	region system_prompts	を覚えた
-041664	region system_prompts	を覚えた
-041688	region system_prompts	を覚えた
-0416AC	region system_prompts	を覚えた
-0416D0	region system_prompts	を覚えた
-0416F4	region system_prompts	を覚えた
-041718	region system_prompts	を覚えた
-04173C	region system_prompts	を覚えた
-041756	region system_prompts	アイスキューブを覚えた
-04177E	region system_prompts	グラビティホールを覚えた
-0417A8	region system_prompts	ギガスマッシャーを覚えた
-0417D2	region system_prompts	モータルリングを覚えた
-0417FA	region system_prompts	アナザディメンションを覚えた
-041828	region system_prompts	ツインソニックを覚えた
-041851	region system_prompts	を手に入れた
-041887	region system_prompts	この戦場からは
-04189F	region system_prompts	できないわよ
-0418C7	region system_prompts	森の中に敵がいるわよ
+041379	region system_prompts 041373 translated	敵を発見しました
+041399	region system_prompts 041393 translated	戦闘しますか
+0413AF	region system_prompts 0413AD translated	戦闘する時は
+0413BD	region system_prompts 0413AD translated	戦闘コマンドを実行してください
+0413ED	region system_prompts 0413E7 translated	敵に発見されました
+04140B	region system_prompts 041409 translated	戦闘をかいしします
+04142D	region system_prompts 041427 translated	戦闘をかいしします
+04144D	region system_prompts 041449 translated	目標にとうちゃくしました
+041497	region system_prompts 04148F translated	一騎打ちを受けますか
+0414DD	noise	はレベル
+0414EA	noise	になった
+041511	noise	になった
+04153A	noise	になった
+041554	noise	攻撃力が
+041561	noise	上がった
+04157B	noise	防御力が
+041588	noise	上がった
+0415AD	noise	上がった
+0415D2	noise	上がった
+0415F7	noise	上がった
+04161C	noise	上がった
+041640	noise	を覚えた
+041664	noise	を覚えた
+041688	noise	を覚えた
+0416AC	noise	を覚えた
+0416D0	noise	を覚えた
+0416F4	noise	を覚えた
+041718	noise	を覚えた
+04173C	noise	を覚えた
+041756	noise	アイスキューブを覚えた
+04177E	noise	グラビティホールを覚えた
+0417A8	noise	ギガスマッシャーを覚えた
+0417D2	noise	モータルリングを覚えた
+0417FA	noise	アナザディメンションを覚えた
+041828	noise	ツインソニックを覚えた
+041851	noise	を手に入れた
+041887	region system_prompts 041865 translated	この戦場からは
+04189F	region system_prompts 041865 translated	できないわよ
+0418C7	region system_prompts 0418B9 translated	森の中に敵がいるわよ
 043312	noise	組ぢ信愛
 0436B9	noise	調捨ゐヽ
 043848	noise	組ゴれ愛
 043865	noise	組ゴれ愛
 043882	noise	組ゴれ愛
-046E5E	region unit_records	答エリュシオン
 04CAC9	noise	ヴ宮愛系
 04CCC5	noise	こぎ宮愛
 04E2B7	noise	ぎ宮愛系
@@ -143,7 +141,7 @@
 06F8C4	noise	ズ銀天認
 07BC0D	noise	ヽ゜゛゛
 088DFF	noise	ジ・ダ・ト・バ
-08E9A2	region orders	マスター
+08E9A2	region orders 08E996 keep	マスター
 09113F	noise	令敵引・
 0924C1	noise	おぎおか
 094041	noise	任゜届弾
@@ -170,119 +168,119 @@
 0E67AC	noise	え超長長
 0EAC5D	noise	憶みわわわ娘
 0EB45D	noise	憶みわわわ娘
-0EE580	region descriptions	防御力アップ
-0EE5A4	region descriptions	させることもある
-0EE60E	region descriptions	バッドステータスを解除
-0EE660	region descriptions	防御力アップ
-0EE682	region descriptions	バッドステータスが回復
-0EE6A8	region descriptions	自分のとなりにテレポートさせる
-0EE6D4	region descriptions	攻撃力アップ
-0EE6EE	region descriptions	攻撃力アップ
-0EE726	region descriptions	撃を防ぐ
-0EE740	region descriptions	攻撃を防ぐ
-0EE784	region descriptions	離れた敵を攻撃
-0EE7A8	region descriptions	爆発をおこし敵をふきとばす
-0EE7E4	region descriptions	にテレポート
-0EE7FE	region descriptions	敵一体の動きをとめる
-0EE83E	region descriptions	スター系とアンデッド系に
-0EE87E	region descriptions	などの敵一体を
-0EE88E	region descriptions	消しさることがある
-0EE8AE	region descriptions	ればクリティカル
-0EE8CC	region descriptions	させることもある
-0EE8EA	region descriptions	させることもある
-0EE908	region descriptions	すれば必ず眠らせる
-0EE942	region descriptions	んいに攻撃
-0EE95A	region descriptions	敵にダメージ
-0EE998	region descriptions	クリティカル
-0EE9B2	region descriptions	敵にダメージ
-0EE9DC	region descriptions	ティカルがでやすい
-0EEA06	region descriptions	物理ダメージを返す
-0EEA26	region descriptions	敵にダメージ
-0EEA54	region descriptions	にテレポート
-0EEA70	region descriptions	自分の場所をいれかえる
-0EEA94	region descriptions	敵に攻撃
-0EEA9E	region descriptions	マヒさせることもある
-0EEAC0	region descriptions	系一体を
-0EEACA	region descriptions	一撃でしとめることがある
-0EEAF0	region descriptions	ソードとアテナで敵単体を氷づけにしダメージ
-0EEB30	region descriptions	マウザー
-0EEB3A	region descriptions	ファウスト
-0EEB6A	region descriptions	ロジャー
-0EEB74	region descriptions	ミランダ
-0EEB9A	region descriptions	ファウスト
-0EEBAE	region descriptions	ツキカゲ
-0EEBCC	region descriptions	敵攻撃力をダウン
-0EEBF2	region descriptions	ツキカゲ
-0EEBFC	region descriptions	リュウビ
-0EEC18	region descriptions	だ外側に攻撃
-0EEC3A	region descriptions	アジャックス
-0EEE72	region descriptions	装備して使用すると
-0EEEC8	region descriptions	に強ダメージ
-0EEF1C	region descriptions	ザードの効果
-0EEF94	region descriptions	バインの効果
-0EEFA2	region descriptions	アンデッドに強ダメージ
-0EEFEA	region descriptions	イアストームの効果
-0EF018	region descriptions	に強ダメージ
-0EF026	region descriptions	ヒーリング効果有
-0EF086	region descriptions	しやすくなる
-0EF0B8	region descriptions	ルがでやすくなる
-0EF0EA	region descriptions	をはねつける
-0EF116	region descriptions	ッシュレイの効果
-0EF13C	region descriptions	バーの効果
-0EF148	region descriptions	アンデッドに強ダメージ
-0EF1B6	region descriptions	ることがある
-0EF1DA	region descriptions	に強ダメージ
-0EF1E8	region descriptions	敵を混乱させることがある
-0EF220	region descriptions	かすことがある
-0EF230	region descriptions	敵を一撃でほうむりさることがある
-0EF28E	region descriptions	でやすくなる
-0EF2E6	region descriptions	一回だけ生き返らせる
-0EF344	region descriptions	ントムゴアーの効果
-0EF35A	region descriptions	魔法攻撃を防ぐことがある
-0EF3BA	region descriptions	に強ダメージ
-0EF3DE	region descriptions	に強ダメージ
-0EF3EC	region descriptions	使うとマインドブラストの効果
-0EF42E	region descriptions	でやすくなる
-0EF454	region descriptions	ータスを防ぐ
-0EF462	region descriptions	必殺技を防ぐことがある
-0EF4FA	region descriptions	ことがある
-0EF562	region descriptions	かえすことがある
-0EF58A	region descriptions	ことがある
-0EF596	region descriptions	魔法のダメージを半分にする
-0EF5D6	region descriptions	風系を除く全ての職業
-0EF624	region descriptions	ータスと
-0EF62E	region descriptions	クリティカル攻撃を防ぐ
-0EF6A8	region descriptions	ータスを防ぐ
-0EF718	region descriptions	ことがある
-0EF76C	region descriptions	ァイアストームが使える
-0EF790	region descriptions	ンダーストームが使える
-0EF7B4	region descriptions	リザードが使える
-0EF822	region descriptions	を少し回復
-0EF83C	region descriptions	バッドステータスの解除
-0EF86C	region descriptions	バッドステータスを全回復
-0EF8AA	region descriptions	だ味方を
-0EF8B4	region descriptions	一人よみがえらせる
-0EF96C	region descriptions	移動できなくする
-0EF98A	region descriptions	の場で生き返る
-0EF9AA	region descriptions	テレポートできる
-0EF9CC	region descriptions	場所を入れかえる
-0EF9EE	region descriptions	自分のそばにテレポートさせる
-0EFA18	region descriptions	自分以外の敵味方全ての動きを
-0EFA36	region descriptions	完全にとめる
-0EFB22	region descriptions	ドラゴンナイトに転職
-0EFB4C	region descriptions	ダークナイトに転職
-0EFB6C	region descriptions	が使うと
-0EFB76	region descriptions	シャドウマスターに転職
-0EFB9A	region descriptions	ザードが使うと
-0EFBAA	region descriptions	スペルマスターに転職
-0EFBCC	region descriptions	僧侶系が使うと
-0EFBDC	region descriptions	ワイズマンに転職
-0EFC1C	region descriptions	テティスのまわりをてらし影を見えるようにする
-0EFC5E	region descriptions	テティスのまわりをてらし影を見えるようにする
-0EFC98	region descriptions	ったネックレス
-0EFCBA	region descriptions	で手に入れたフエ
-0EFCD8	region descriptions	うしじんが愛した楽器
-0EFD00	region descriptions	の美少女からの手紙
+0EE580	region descriptions 0EE576 translated	防御力アップ
+0EE5A4	region descriptions 0EE59A translated	させることもある
+0EE60E	region descriptions 0EE604 translated	バッドステータスを解除
+0EE660	region descriptions 0EE656 translated	防御力アップ
+0EE682	region descriptions 0EE670 translated	バッドステータスが回復
+0EE6A8	region descriptions 0EE69C translated	自分のとなりにテレポートさせる
+0EE6D4	region descriptions 0EE6CA translated	攻撃力アップ
+0EE6EE	region descriptions 0EE6E4 translated	攻撃力アップ
+0EE726	region descriptions 0EE71C translated	撃を防ぐ
+0EE740	region descriptions 0EE732 translated	攻撃を防ぐ
+0EE784	region descriptions 0EE776 translated	離れた敵を攻撃
+0EE7A8	region descriptions 0EE79E translated	爆発をおこし敵をふきとばす
+0EE7E4	region descriptions 0EE7DA translated	にテレポート
+0EE7FE	region descriptions 0EE7F4 translated	敵一体の動きをとめる
+0EE83E	region descriptions 0EE834 translated	スター系とアンデッド系に
+0EE87E	region descriptions 0EE874 translated	などの敵一体を
+0EE88E	region descriptions 0EE874 translated	消しさることがある
+0EE8AE	region descriptions 0EE8A4 translated	ればクリティカル
+0EE8CC	region descriptions 0EE8C2 translated	させることもある
+0EE8EA	region descriptions 0EE8E0 translated	させることもある
+0EE908	region descriptions 0EE8FE translated	すれば必ず眠らせる
+0EE942	region descriptions 0EE938 translated	んいに攻撃
+0EE95A	region descriptions 0EE950 translated	敵にダメージ
+0EE998	region descriptions 0EE98E translated	クリティカル
+0EE9B2	region descriptions 0EE9A8 translated	敵にダメージ
+0EE9DC	region descriptions 0EE9D2 translated	ティカルがでやすい
+0EEA06	region descriptions 0EE9FC translated	物理ダメージを返す
+0EEA26	region descriptions 0EEA1C translated	敵にダメージ
+0EEA54	region descriptions 0EEA4A translated	にテレポート
+0EEA70	region descriptions 0EEA64 translated	自分の場所をいれかえる
+0EEA94	region descriptions 0EEA8A translated	敵に攻撃
+0EEA9E	region descriptions 0EEA8A translated	マヒさせることもある
+0EEAC0	region descriptions 0EEAB6 translated	系一体を
+0EEACA	region descriptions 0EEAB6 translated	一撃でしとめることがある
+0EEAF0	region descriptions 0EEAE6 translated	ソードとアテナで敵単体を氷づけにしダメージ
+0EEB30	region descriptions 0EEB1E translated	マウザー
+0EEB3A	region descriptions 0EEB1E translated	ファウスト
+0EEB6A	region descriptions 0EEB58 translated	ロジャー
+0EEB74	region descriptions 0EEB58 translated	ミランダ
+0EEB9A	region descriptions 0EEB90 translated	ファウスト
+0EEBAE	region descriptions 0EEB90 translated	ツキカゲ
+0EEBCC	region descriptions 0EEBC0 translated	敵攻撃力をダウン
+0EEBF2	region descriptions 0EEBE0 translated	ツキカゲ
+0EEBFC	region descriptions 0EEBE0 translated	リュウビ
+0EEC18	region descriptions 0EEC0E translated	だ外側に攻撃
+0EEC3A	region descriptions 0EEC28 translated	アジャックス
+0EEE72	region descriptions 0EEE68 translated	装備して使用すると
+0EEEC8	region descriptions 0EEEBE translated	に強ダメージ
+0EEF1C	region descriptions 0EEF12 translated	ザードの効果
+0EEF94	region descriptions 0EEF8A translated	バインの効果
+0EEFA2	region descriptions 0EEF8A translated	アンデッドに強ダメージ
+0EEFEA	region descriptions 0EEFE0 translated	イアストームの効果
+0EF018	region descriptions 0EF00E translated	に強ダメージ
+0EF026	region descriptions 0EF00E translated	ヒーリング効果有
+0EF086	region descriptions 0EF07C translated	しやすくなる
+0EF0B8	region descriptions 0EF0AE translated	ルがでやすくなる
+0EF0EA	region descriptions 0EF0E0 translated	をはねつける
+0EF116	region descriptions 0EF10C translated	ッシュレイの効果
+0EF13C	region descriptions 0EF132 translated	バーの効果
+0EF148	region descriptions 0EF132 translated	アンデッドに強ダメージ
+0EF1B6	region descriptions 0EF1AC translated	ることがある
+0EF1DA	region descriptions 0EF1D0 translated	に強ダメージ
+0EF1E8	region descriptions 0EF1D0 translated	敵を混乱させることがある
+0EF220	region descriptions 0EF216 translated	かすことがある
+0EF230	region descriptions 0EF216 translated	敵を一撃でほうむりさることがある
+0EF28E	region descriptions 0EF27E translated	でやすくなる
+0EF2E6	region descriptions 0EF2D6 translated	一回だけ生き返らせる
+0EF344	region descriptions 0EF33A translated	ントムゴアーの効果
+0EF35A	region descriptions 0EF33A translated	魔法攻撃を防ぐことがある
+0EF3BA	region descriptions 0EF3B0 translated	に強ダメージ
+0EF3DE	region descriptions 0EF3D4 translated	に強ダメージ
+0EF3EC	region descriptions 0EF3D4 translated	使うとマインドブラストの効果
+0EF42E	region descriptions 0EF41E translated	でやすくなる
+0EF454	region descriptions 0EF44A translated	ータスを防ぐ
+0EF462	region descriptions 0EF44A translated	必殺技を防ぐことがある
+0EF4FA	region descriptions 0EF4F0 translated	ことがある
+0EF562	region descriptions 0EF558 translated	かえすことがある
+0EF58A	region descriptions 0EF580 translated	ことがある
+0EF596	region descriptions 0EF580 translated	魔法のダメージを半分にする
+0EF5D6	region descriptions 0EF5CC translated	風系を除く全ての職業
+0EF624	region descriptions 0EF61A translated	ータスと
+0EF62E	region descriptions 0EF61A translated	クリティカル攻撃を防ぐ
+0EF6A8	region descriptions 0EF69E translated	ータスを防ぐ
+0EF718	region descriptions 0EF70E translated	ことがある
+0EF76C	region descriptions 0EF762 translated	ァイアストームが使える
+0EF790	region descriptions 0EF786 translated	ンダーストームが使える
+0EF7B4	region descriptions 0EF7AA translated	リザードが使える
+0EF822	region descriptions 0EF814 translated	を少し回復
+0EF83C	region descriptions 0EF830 translated	バッドステータスの解除
+0EF86C	region descriptions 0EF856 translated	バッドステータスを全回復
+0EF8AA	region descriptions 0EF8A0 translated	だ味方を
+0EF8B4	region descriptions 0EF8A0 translated	一人よみがえらせる
+0EF96C	region descriptions 0EF95A translated	移動できなくする
+0EF98A	region descriptions 0EF980 translated	の場で生き返る
+0EF9AA	region descriptions 0EF99C translated	テレポートできる
+0EF9CC	region descriptions 0EF9BE translated	場所を入れかえる
+0EF9EE	region descriptions 0EF9E0 translated	自分のそばにテレポートさせる
+0EFA18	region descriptions 0EFA0E translated	自分以外の敵味方全ての動きを
+0EFA36	region descriptions 0EFA0E translated	完全にとめる
+0EFB22	region descriptions 0EFB10 translated	ドラゴンナイトに転職
+0EFB4C	region descriptions 0EFB3A translated	ダークナイトに転職
+0EFB6C	region descriptions 0EFB62 translated	が使うと
+0EFB76	region descriptions 0EFB62 translated	シャドウマスターに転職
+0EFB9A	region descriptions 0EFB90 translated	ザードが使うと
+0EFBAA	region descriptions 0EFB90 translated	スペルマスターに転職
+0EFBCC	region descriptions 0EFBC2 translated	僧侶系が使うと
+0EFBDC	region descriptions 0EFBC2 translated	ワイズマンに転職
+0EFC1C	region descriptions 0EFC12 translated	テティスのまわりをてらし影を見えるようにする
+0EFC5E	region descriptions 0EFC4C translated	テティスのまわりをてらし影を見えるようにする
+0EFC98	region descriptions 0EFC8E translated	ったネックレス
+0EFCBA	region descriptions 0EFCAA translated	で手に入れたフエ
+0EFCD8	region descriptions 0EFCCE translated	うしじんが愛した楽器
+0EFD00	region descriptions 0EFCF0 translated	の美少女からの手紙
 100560	noise	専老親コ
 101FFF	noise	ロ愛長超
 10200F	noise	じ悪追以
@@ -401,43 +399,43 @@
 1AD7B2	noise	上がった
 1AEEAD	noise	脱疲味ぜば
 1AEEB9	noise	食ぜ閉ばガ味
-1AF54D	region short_strings	になりました
-1AF573	region short_strings	しましょう
-1AF58F	region short_strings	ゃいませ
-1AF5DF	region short_strings	いますか
-1AF5FD	region short_strings	りますか
-1AF64A	region short_strings	って下さるんですか
-1AF676	region short_strings	って下さるんですか
-1AF6BC	region short_strings	なりますが
-1AF6C8	region short_strings	よろしいですか
-1AF754	region short_strings	装備できませんがよろしいですか
-1AF806	region short_strings	装備しますか
-1AF856	region short_strings	がいっぱいなので
-1AF86C	region short_strings	倉庫にいれておきます
-1AF89A	region short_strings	庫もいっぱいでした
-1AF8B2	region short_strings	この取引はなかったことにしましょう
-1AF8EE	region short_strings	の持ち物も倉庫もいっぱいです
-1AF924	region short_strings	たしますか
-1AF950	region short_strings	持ち物はいっぱいです
-1AF97C	region short_strings	たしますか
-1AF9A2	region short_strings	持ち物がいっぱいですね
-1AF9D0	region short_strings	たしますか
-1AF9F4	region short_strings	って下さるものはありますか
-1AFA66	region short_strings	で買い取りましょうか
-1AFAC0	region short_strings	そのお金では足りませんよ
-1AFB08	region short_strings	気がむいたらまた来てください
-1AFB4E	region short_strings	所に入れておきます
-1AFB7C	region short_strings	それは買えません
-1AFBC6	region short_strings	買い取りましょう
-1AFBD8	region short_strings	よろしいですか
-1AFC2A	region short_strings	って下さるものはありますか
-1AFC88	region short_strings	ぱいです
-1AFCAE	region short_strings	いっぱいなので
-1AFCBE	region short_strings	倉庫に入れます
-1AFD2C	region short_strings	になります
-1AFD3E	region short_strings	よろしいですか
-1AFD64	region short_strings	のおかえしになります
-1AFD80	region short_strings	よろしいですか
+1AF54D	region short_strings 1AF53F translated	になりました
+1AF573	region short_strings 1AF569 translated	しましょう
+1AF58F	region short_strings 1AF585 translated	ゃいませ
+1AF5DF	region short_strings 1AF5D5 translated	いますか
+1AF5FD	region short_strings 1AF5F3 translated	りますか
+1AF64A	region short_strings 1AF640 translated	って下さるんですか
+1AF676	region short_strings 1AF66C translated	って下さるんですか
+1AF6BC	region short_strings 1AF6A0 translated	なりますが
+1AF6C8	region short_strings 1AF6A0 translated	よろしいですか
+1AF754	region short_strings 1AF738 translated	装備できませんがよろしいですか
+1AF806	region short_strings 1AF7FC translated	装備しますか
+1AF856	region short_strings 1AF84C translated	がいっぱいなので
+1AF86C	region short_strings 1AF84C translated	倉庫にいれておきます
+1AF89A	region short_strings 1AF890 translated	庫もいっぱいでした
+1AF8B2	region short_strings 1AF890 translated	この取引はなかったことにしましょう
+1AF8EE	region short_strings 1AF8E4 translated	の持ち物も倉庫もいっぱいです
+1AF924	region short_strings 1AF91A translated	たしますか
+1AF950	region short_strings 1AF93E translated	持ち物はいっぱいです
+1AF97C	region short_strings 1AF972 translated	たしますか
+1AF9A2	region short_strings 1AF996 translated	持ち物がいっぱいですね
+1AF9D0	region short_strings 1AF9C6 translated	たしますか
+1AF9F4	region short_strings 1AF9EA translated	って下さるものはありますか
+1AFA66	region short_strings 1AFA48 translated	で買い取りましょうか
+1AFAC0	region short_strings 1AFAB4 translated	そのお金では足りませんよ
+1AFB08	region short_strings 1AFAF4 translated	気がむいたらまた来てください
+1AFB4E	region short_strings 1AFB44 translated	所に入れておきます
+1AFB7C	region short_strings 1AFB6E translated	それは買えません
+1AFBC6	region short_strings 1AFBAC translated	買い取りましょう
+1AFBD8	region short_strings 1AFBAC translated	よろしいですか
+1AFC2A	region short_strings 1AFC20 translated	って下さるものはありますか
+1AFC88	region short_strings 1AFC7E translated	ぱいです
+1AFCAE	region short_strings 1AFCA4 translated	いっぱいなので
+1AFCBE	region short_strings 1AFCA4 translated	倉庫に入れます
+1AFD2C	region short_strings 1AFD1A translated	になります
+1AFD3E	region short_strings 1AFD1A translated	よろしいですか
+1AFD64	region short_strings 1AFD5A translated	のおかえしになります
+1AFD80	region short_strings 1AFD5A translated	よろしいですか
 1B4548	noise	足待ク調
 1B7F22	noise	栄・意と
 1BBCAF	noise	ョ悪以以
@@ -453,38 +451,38 @@
 1D0152	noise	げョ新会
 1D1AF4	noise	み鏡を械
 1DA987	noise	・・賞旗
-1DEBDF	region ceremony	れし宿命の者よ
-1DEBEF	region ceremony	よくぞ参られた
-1DEC0B	region ceremony	指輪に封印されし十二の神
-1DEC3F	region ceremony	アの大地の契約にもとづき
-1DEC5D	region ceremony	これよりぎしきを行う
-1DEC87	region ceremony	んじの運命の日を数えよ
-1DECD3	region ceremony	となるが
-1DECDD	region ceremony	それでも良いか
-1DEE21	region ceremony	守られし者よ
-1DEE33	region ceremony	なんじに預けたい男がいる
-1DEE65	region ceremony	戦いにせを向けた男だ
-1DEE8F	region ceremony	この男の運命をゆだねる
-1DEEAB	region ceremony	この男に名前を付けてくれ
-1DEEDB	region ceremony	は良い名だ
-1DEEF1	region ceremony	をなんじに預ける
-1DEF17	region ceremony	アの大地と我ら十二神の名において
-1DEF3D	region ceremony	そなたに祝福あれ
-1DF1E9	region ceremony	になった
-1DF20B	region ceremony	になった
-1DF22D	region ceremony	になった
-1DF257	region ceremony	上がった
-1DF27F	region ceremony	上がった
-1DF2A5	region ceremony	上がった
-1DF2CB	region ceremony	上がった
-1DF2F1	region ceremony	上がった
-1DF317	region ceremony	上がった
-1DF4D1	region ceremony	ラゴンナイトに転職できます
-1DF4F7	region ceremony	ークナイトに転職できます
-1DF51B	region ceremony	ャドウマスターに転職できます
-1DF543	region ceremony	ペルマスターに転職できます
-1DF569	region ceremony	イズマンに転職できます
-1DF58B	region ceremony	かいせんに転職できます
+1DEBDF	region ceremony 1DEBD5 translated	れし宿命の者よ
+1DEBEF	region ceremony 1DEBD5 translated	よくぞ参られた
+1DEC0B	region ceremony 1DEBD5 translated	指輪に封印されし十二の神
+1DEC3F	region ceremony 1DEC35 translated	アの大地の契約にもとづき
+1DEC5D	region ceremony 1DEC35 translated	これよりぎしきを行う
+1DEC87	region ceremony 1DEC7D translated	んじの運命の日を数えよ
+1DECD3	region ceremony 1DECAF translated	となるが
+1DECDD	region ceremony 1DECAF translated	それでも良いか
+1DEE21	region ceremony 1DEE17 translated	守られし者よ
+1DEE33	region ceremony 1DEE17 translated	なんじに預けたい男がいる
+1DEE65	region ceremony 1DEE57 translated	戦いにせを向けた男だ
+1DEE8F	region ceremony 1DEE85 translated	この男の運命をゆだねる
+1DEEAB	region ceremony 1DEE85 translated	この男に名前を付けてくれ
+1DEEDB	region ceremony 1DEED1 translated	は良い名だ
+1DEEF1	region ceremony 1DEED1 translated	をなんじに預ける
+1DEF17	region ceremony 1DEF0D translated	アの大地と我ら十二神の名において
+1DEF3D	region ceremony 1DEF0D translated	そなたに祝福あれ
+1DF1E9	region ceremony 1DF1D5 translated	になった
+1DF20B	region ceremony 1DF1F5 translated	になった
+1DF22D	region ceremony 1DF217 translated	になった
+1DF257	region ceremony 1DF249 translated	上がった
+1DF27F	region ceremony 1DF271 translated	上がった
+1DF2A5	region ceremony 1DF299 translated	上がった
+1DF2CB	region ceremony 1DF2BF translated	上がった
+1DF2F1	region ceremony 1DF2E5 translated	上がった
+1DF317	region ceremony 1DF30B translated	上がった
+1DF4D1	region ceremony 1DF4C7 translated	ラゴンナイトに転職できます
+1DF4F7	region ceremony 1DF4ED translated	ークナイトに転職できます
+1DF51B	region ceremony 1DF511 translated	ャドウマスターに転職できます
+1DF543	region ceremony 1DF539 translated	ペルマスターに転職できます
+1DF569	region ceremony 1DF55F translated	イズマンに転職できます
+1DF58B	region ceremony 1DF581 translated	かいせんに転職できます
 1E8AEE	master	つの間にか
 1E8AFC	master	このオレが
 1E8B16	master	なんて物に

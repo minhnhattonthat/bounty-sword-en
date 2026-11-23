@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 
 TABLE = 0x042A39          # C4:2A39, 3-byte pointers
-COUNT = 263
+COUNT = 592              # the table runs to 0x043129, where the first record starts (was 263: 300 records unread)
 T1_ARGS = {1: 0, 2: 0, 3: 2, 4: 8, 5: 1, 6: 0, 7: 1, 8: 4}     # JSR ($A69E,x): bytes each handler reads
 T2_ARGS = {1: 4, 2: 0, 3: 0, 4: 1}                               # JSR ($A72B,x)
 

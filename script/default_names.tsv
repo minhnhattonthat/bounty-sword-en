@@ -283,3 +283,12 @@
 4E88B	6	マウザー	Mauser	op-64 name record, C4:E85C chain
 4E89F	6	ファウスト	Faust	op-64 name record, C4:E85C chain
 4E8B3	6	ロブン	Robun	op-64 name record, C4:E85C chain
+44E5F	6	黄道十二神	Zodiac	battle-setup name override, scenario 359 (table entries 263-591, read since session ak)
+4630A	6	悪霊	Evil Spirit	battle-setup name override, scenario 380
+46443	6	悪霊	Evil Spirit	battle-setup name override, scenario 445
+46464	6	悪霊	Evil Spirit	battle-setup name override, scenario 509
+46484	6	悪霊	Evil Spirit	battle-setup name override, scenario 509
+464A4	6	悪霊	Evil Spirit	battle-setup name override, scenario 509
+464C4	6	悪霊	Evil Spirit	battle-setup name override, scenario 509
+4653F	6	黄道十二神	Zodiac	battle-setup name override, scenario 573
+46E60	6	エリュシオン	Elysion	battle-setup name override, scenario 264
