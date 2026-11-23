@@ -54,12 +54,12 @@
 01CDC2	0:File | 5:erased.
 01CDE4	0:Couldn't save the file.
 01CE06	0:This file's data is bad.
-01CE2A	1:Move | 6:Auto | 11:Heal | 16:HP | 20:% | 21:low | 23:70 | 25:50 | 27:30 | 30:All
+01CE2A	1:Move | 6:Action | 11:Heal | 16:HP | 20:% | 21:low | 23:70 | 25:50 | 27:30 | 30:All
 01CE6C	0:Go here! | 8:Act freely! | 16:Hold here!
 01CE9E	0:EXIT | 5:HP | 9:% | 10:heal
 01CEBA	0:Use SP! | 8:Save SP!
 01CEDC	0:Use items! | 8:No items!
-01CEFE	1:All | 5:EXIT | 9:HP | 11:% | 12:heal | 16:Move | 20:Auto | 24:Heal
+01CEFE	1:All | 5:EXIT | 9:HP | 11:% | 12:heal | 16:Move | 20:Action | 24:Heal
 01CF38	0:Use SP! | 8:Save SP!
 01CF5A	0:Use items! | 8:No items!
 01CF7C	=

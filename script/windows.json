@@ -193,7 +193,7 @@
   "width": 32,
   "kind": "text",
   "jp": "　移動指示°自動回復°回復指示°ＨＰ　　％以下７０５０３０　一括",
-  "en": "[0F1F][0001]Move[0F1F][0006]Auto[0F1F][000B]Heal[0F1F][0010]HP[0F1F][0014]%low[0F7F]70[0F7F]50[0F7F]30[0F1F][001E]All",
+  "en": "[0F1F][0001]Move[0F1F][0006]Action[0F1F][000B]Heal[0F1F][0010]HP[0F1F][0014]%low[0F7F]70[0F7F]50[0F7F]30[0F1F][001E]All",
   "refs": [
    "08F500",
    "08F58D"
@@ -250,7 +250,7 @@
   "width": 28,
   "kind": "text",
   "jp": "　一括指示ＥＸＩＴＨＰ％で回復　移動指示自動回復回復指示",
-  "en": "[0F1F][0001]All[0F1F][0005]EXIT[0F1F][0009]HP[0F7F]%heal[0F1F][0010]Move[0F7F]Auto[0F1F][0018]Heal",
+  "en": "[0F1F][0001]All[0F1F][0005]EXIT[0F1F][0009]HP[0F7F]%heal[0F1F][0010]Move[0F7F]Action[0F7F]Heal",
   "refs": [
    "08F5A9"
   ]
