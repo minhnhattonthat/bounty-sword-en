@@ -22,5 +22,11 @@
 05BD10	40860102020701	40860104020501	  the same slice in the camp menu variant C5:BD03
 05B3FD	40060102020501	40060104020501	battle map menu (string 01C535, layout C5:B3F6, the only one its window script C8:ECB3 uses) 道具 slice 2 -> 4 cells, "Items" over the unshown 地図 cells 7-8
 05C09D	40880002028000	4084000402ec00	item window title (string 01CC4A at tile $80, window def C1:E1BD): 道具 cell 0, 2 cells at col 4 -> アイテム "Items" cells 60-63 (tile $EC), 4 cells at col 2, clear of the page digit at col 6
+05C102	401c0302028200409c0302028400401c0403028600	401a0302028400409a0304028000401a0403028600	item action sub-menu (01CC4A): Use cells 2-3 -> 4-5, 交換 2 cells 4-5 -> "Trade" 4 cells 0-3 (道具 cells, free since the title shows cells 60-63), labels col 14 -> 13
+01E2A6	0608d802e2029804a204	0708d602e2029604a204	  its window def C1:E2A4: 6 -> 7 wide, one column left (col 11) so it stays clear of the Pack window at col 18
+031C54	21000c0b0608	21000b0b0708	  its C3 op 21 box: x 12 -> 11, w 6 -> 7
+05C1DA	4044020202a10040480202028400404c020102a300404e02010288004050020102a400	4044020402a1004044020402a1004044020402a1004044020402a1004044020402a100	trade prompt 誰と交換する？ (cells 17-18, 4-5, 19, 8, 20 = "Who"+"Trd"+...) -> "Who?" (cells 17-20), the record repeated to keep the block length (op 22 follows)
+05C241	4044020102a10040460201028f004048020402a8004050020102a400	4044020402a1004044020402a1004044020402a1004044020402a100	take-out prompt 誰が引き出す？ (showed "W Take?") -> "Who?" (cells 17-20)
+05B8A2	408600020280004006010202820040860106028400	408600030280004006010202830040860105028500	world map place menu (01C4B5 at tile $80, layout C5:B8A2): 情報 2 cells -> "Info" cells 0-2, Go 3-4, Close 5-9
 01E180	07074200	08074200	camp party window def C1:E17E (two-item variant): 7 -> 8 wide
 01E184	4e00c201ce01040015380401050600011138020106000112380e01	5000c201d001040015380401060600011138020106000112381001	  its corners (004E -> 0050, 01CE -> 01D0), divider 5 -> 6 cells, right T col 7 -> col 8

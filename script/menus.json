@@ -172,7 +172,7 @@
   "width": 14,
   "kind": "text",
   "jp": "情報移動地図を閉じる世界移動",
-  "en": "Inf[0F7F]Go[0F7F]Close[0F1F][000A]Travel",
+  "en": "Info[0F7F]Go[0F7F]Close[0F1F][000A]Travel",
   "refs": [
    "08EFC3"
   ]

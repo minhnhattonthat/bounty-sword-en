@@ -13,7 +13,7 @@
 01C359	0:アイウエオカキクケコサシスセソ　タチツテトナニヌネノハヒフヘホ　マミムメモヤ　ユ　ヨラリルレロ　ワヰン　　ガギグゲゴザジズゼゾ　ダヂヅデドバビブベボパピプペポ　ァィゥェォャ　ュ　ョー　ッ　ヴ　 | 96:Aa | 99:A-Z | 101:←→ | 103:End
 01C42F	0:[0F41][0F42][0F43][0F44][0F45][0F46][0F47][0F48][0F49][0F4A][0F4B][0F4C][0F4D][0F4E][0F4F][0F50][0F51][0F52][0F53][0F54][0F55][0F56][0F57][0F58][0F59][0F5A] | 26:Aa | 29:ア | 31:←→ | 33:End
 01C479	1:Party | 5:Items | 9:Go! | 11:Map | 16:Orders | 20:File | 24:Config
-01C4B5	0:Inf | 2:Go | 4:Close | 10:Travel
+01C4B5	0:Info | 3:Go | 5:Close | 10:Travel
 01C4D3	0:Rheinmetall | 16:North Europea | 32:South Europea
 01C535	1:Party | 5:Items | 9:Camp | 16:Map View | 23+3:Flee
 01C578	2:now! | 6:Sure? | 16:OK | 18:No | 21+3:Flee
@@ -43,7 +43,7 @@
 01CC00	0:Party | 4:Formation | 11:Status
 01CC1C	0:Pick an item to drop.
 01CC3A	0:Can't drop.
-01CC4A	0:Itm | 2:Use | 4:Trd | 6:Drop | 9:Gear | 12:Pack | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
+01CC4A	0:Trade | 4:Use | 6:Drop | 9:Gear | 12:Pack | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items
 01CCCC	0:Discard it?
 01CCE4	=
 01CCF2	1:Free | 4:Load | 7:Copy | 10:Del | 12:New | 16:Time | 21:Maps | 27:File | 32:Save | 35:Which? | 39:Where | 43:.

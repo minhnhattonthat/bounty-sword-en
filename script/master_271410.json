@@ -2453,7 +2453,7 @@
    2170
   ],
   "jp": "{spk}テティス　　\n「‥‥そう言えば　{hero}」\n{next}\n「新しい情報を　入手すると\n　今まで　行けなかった場所に\n　行ける事も　あるわよ‥‥！！」\n{next}\n「地図で　光ってる場所が\n　今　あなたが　行ける場所よ！」\n{next}\n「その場所で　知りたい事が\n　あったら　情報を　選んでね！」\n{next}\n「私が　知っている事なら\n　何でも　おしえてあげるから！」\n",
-  "en": "{spk}テティス　　\n「...Oh, by the way, {hero}.」\n{next}\n「With new information,\n sometimes you can go places\n you couldn't go before...!!」\n{next}\n「The places glowing on\n the map are where\n you can go right now!」\n{next}\n「If there's something you\n want to know about a\n place, choose 'Inf' there!」\n{next}\n「If it's something I know,\n I'll tell you anything!」\n",
-  "pages": "\"...Oh, by the way, {hero}.\" || \"With new information, sometimes you can go places you couldn't go before...!!\" || \"The places glowing on the map are where you can go right now!\" || \"If there's something you want to know about a place, choose 'Inf' there!\" || \"If it's something I know, I'll tell you anything!\""
+  "en": "{spk}テティス　　\n「...Oh, by the way, {hero}.」\n{next}\n「With new information,\n sometimes you can go places\n you couldn't go before...!!」\n{next}\n「The places glowing on\n the map are where\n you can go right now!」\n{next}\n「If there's something you\n want to know about a\n place, choose 'Info' there!」\n{next}\n「If it's something I know,\n I'll tell you anything!」\n",
+  "pages": "\"...Oh, by the way, {hero}.\" || \"With new information, sometimes you can go places you couldn't go before...!!\" || \"The places glowing on the map are where you can go right now!\" || \"If there's something you want to know about a place, choose 'Info' there!\" || \"If it's something I know, I'll tell you anything!\""
  }
 ]

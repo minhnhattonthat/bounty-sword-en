@@ -32,6 +32,10 @@ with the reason; the two engine limits are listed as known issues in README.md.
   Deferred as a known issue (README): the slices come from tilemaps the menu code builds; no tilemap data for them
   is in the ROM (searched for the camp rows' tile words) and the window scripts (C8:ECB3, C8:EFB4..) only draw the
   strings and DMA them. The tutorial 279CA6 now says "choose 'Inf'" to match the label.
+  (session ak, D19: the tilemaps are C5 layout records and the frames C1 window defs, `docs/re/vwf.md` "Widening a
+  menu slice". Full words now: camp Party/Formation/Status, Items x3, Use/Trade/Drop, world map Info. Left: battle
+  command windows 01CA4B/01CAAB/01CAF0, cancel labels 01C5AA, target prompt "Fld" 01C60C, unit item window 01C894,
+  sell tabs 01D31B, the vault jigsaw in 01CC4A (Bin, Wp., No; titles built from の/誰/が cells).)
 - [x] Fragment pools 01C60C (target prompt) and 01CC4A (item window sentences): shown in the phase 8 tours and
   textcover (0 failing); the sheets were read ok.
 - [x] Objectives (b059) keep their JP length (no reader found): "SorcGen", "SorcCapt", "M.God 1". Kept until a

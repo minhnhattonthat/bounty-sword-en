@@ -17,6 +17,18 @@ Updated at the end of every session. Keep it to what the next session needs; his
   Seen in game: `work/qa/engb1` (ceremony), `engb_ov2` (Aphrodite), `engb_date` (Yes/No cursor), `engb_ne` (name
   entry type/delete, field kept on the grid), `engb_shop_*`/`engb_trade2`, `engb_desc` (item description).
   README known issue removed. The release gate (tour verdicts, stress, textcover, release.py) needs a re-run.
+- **Session 2026-11-23ak (user report, menu abbreviations, D19; battle-setup table):** (1) battle-setup table
+  read in full (592 entries, was 263), 9 more unit names English (`f4c4f74`). (2) **Menu labels in full words**
+  (user `rom/bounty_en_013.png`, camp "Party / Set / Sts"). Found the slice and frame data (`docs/re/vwf.md`
+  "Widening a menu slice"): C5 layout records `40 pos16 n 02 tile16` and C1 window defs (box w h pos, corners,
+  divider, T tiles), both patched in `script/byte_patches.tsv`. New entry field **`cells`** (script_text.widened):
+  a grid string longer than its JP count gets a bigger copy in the expanded ROM, window-script pointer moved
+  (camp 01CC00 13 -> 16 cells). Seen in game: camp Party/Formation/Status + Status sub-screens + close
+  (`work/qa/w_camp_party_status`), camp and battle-map "Items", item window title "Items" (cells 60-63, clear of the
+  page digit), item sub-menu Use/Trade/Drop (`work/qa/w_item_sub/zoom2.png`). Not seen: world map place menu "Info"
+  (layout C5:B8A2; camp_map/worldmap scenes are view-only), the trade/take prompts now "Who?" (need 2 members).
+  Left (README known issue, polish line): battle command windows 01CA4B/01CAAB/01CAF0, cancel labels 01C5AA,
+  target prompt 01C60C, unit item window 01C894, sell tabs 01D31B, vault labels in 01CC4A. Release gate: re-run.
 - **Session 2026-11-23aj (user reports, worktree `work/wt` while session ai edited asm/vwf.asm; merged after it):**
   (1) **Bug fixed, wrong boss portrait** (user `rom/bounty_wrong_avatar.mss`, `rom/bounty_en_012.png`: 盗賊のボス
   "Boss" showed Thetis). Battle-map FF15 matches the header against unit names (docs/re/text.md speakers row);

@@ -59,7 +59,7 @@
   "width": 64,
   "kind": "text",
   "jp": "道具使う交換捨てる装備品所持品がの誰とす？け倉庫引き出す武器不可攻撃防御速さ魔力精神幸運ＡＳ個預はそれぞれ一つまでその他アイテム",
-  "en": "Itm[0F7F]Use[0F7F]TrdDropGear[0F7F]Pack[0F1F][0011]Who[0F7F]?   BinTake[0F1F][001C]Wp.No[0F7F]AtkDefAgi[0F7F]Int[0F7F]SprLckAS[0F7F]x[0F7F]+[0F7F]One of each   Misc[0F7F]Items",
+  "en": "Trade[0F7F]UseDropGear[0F7F]Pack[0F1F][0011]Who[0F7F]?   BinTake[0F1F][001C]Wp.No[0F7F]AtkDefAgi[0F7F]Int[0F7F]SprLckAS[0F7F]x[0F7F]+[0F7F]One of each   Misc[0F7F]Items",
   "refs": [
    "08F295"
   ]
