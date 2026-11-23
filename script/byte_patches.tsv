@@ -8,6 +8,13 @@
 05B25C	4090000302ca00	4090000302c600	item shop header 道具屋 -> "Item" (cells 6-8, cols 8-10 as in JP: only a 3-cell label centres against the fixed digit, docs/inkbox.tsv; "Items" was 4 cells, 6 px off)
 05B282	40ae000302e400	40ae000302ea00	sell screen tab 装備品 -> "Gear" (cells 26-28)
 05B298	40ee020302e700	40ee020302ed00	sell screen tab 所持品 -> "Pack" (cells 29-31)
+05B2BC	40ae0002020c01	40ac0004020a01	shop vault window C5:B2BC (01D31B): 倉庫 "Bin" cells 12-13 col 23 -> "Vault" cells 10-13 cols 22-25
+05B2C3	40680102020001	40680103020001	shop vault window C5:B2C3: 武器 "Wp." -> "Arms" cells 0-2 (01D31B stays 15 cells: list rows start at slot $20, docs/re/vwf.md)
+05B2CA	40e80106020201	40e80103020301	shop vault window C5:B2CA: その他装備品 "Etc Gear" cells 2-7 -> "Gear" cells 3-5
+05B2D1	40680204020801	40680204020601	shop vault window C5:B2D1: アイテム "Item" cells 8-11 -> "Items" cells 6-9
+05C458	40ae0002020001	40ac0003020001	shop vault list title C5:C458: 武器 col 23 -> "Arms" cells 0-2 cols 22-24 (count digit at col 26)
+05C463	40aa0006020201	40ac0003020301	shop vault list title C5:C463: その他装備品 col 21 -> "Gear" cells 3-5 cols 22-24
+05C46E	40ac0004020801	40ac0004020601	shop vault list title C5:C46E: アイテム -> "Items" cells 6-9 cols 22-25
 01D33B	e0e1c0c1cdf0f1d0d1dde0e1c2c3cdf0f1d2d3dde0eaebedcdf0fafbfddd	e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9	prompts 誰が買う？ 誰が売る？ 誰と話の？ (5x2 maps, op 18 at C5:B2F0..) -> "Who?" (cells 21-25)
 018AA9	a4028003a9f702	4a008003a94900	status gender value (C1:8AA8 `LDA #$02A4 女 / LDA #$02F7 男`, then JSL C1:8EB9 one glyph) -> ♀ 004A / ♂ 0049
 06E368	066e0d000400	066e0d000500	name-entry cursor start (script op 06: object var $0D6E = 4, after フュリス) -> 5, after the default "Furis" (default_names 6E27A)

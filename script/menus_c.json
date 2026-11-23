@@ -33,7 +33,7 @@
   "width": 15,
   "kind": "text",
   "jp": "武器その他装備品アイテム倉庫個",
-  "en": "Wp.Etc  Gear[0F7F]Item   Binx",
+  "en": "ArmsGear[0F7F]Items[0F7F]Vault[0F7F]x",
   "refs": [
    "08EB83"
   ]
