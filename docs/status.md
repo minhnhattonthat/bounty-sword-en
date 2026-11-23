@@ -8,6 +8,23 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
   **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23ai (user reports, worktree `work/wt` while another session edited asm/vwf.asm):**
+  (1) **Bug fixed, wrong boss portrait** (user `rom/bounty_wrong_avatar.mss`, `rom/bounty_en_012.png`: 盗賊のボス
+  "Boss" showed Thetis). Battle-map FF15 matches the header against unit names (docs/re/text.md speakers row);
+  headers are tag codes, units English letters, so no unit matched and slot 1 kept its old portrait. New
+  `asm/speaker_match.asm` (hooks C2:5C9B, C2:5CDA; code at $FF:8000) + `build/spk_map.bin` (build.py
+  `speaker_map`: 129 rows, header codes -> unit-name codes from default_names.tsv and unit_names). Proof: msg 142
+  with the unit name poked (`work/qa/pk_*`: JP = boss portrait, EN before = none, EN after = boss portrait). The
+  tour also showed scen_51 (Ajax) had a different portrait from the JP before; now it matches JP
+  (`work/qa/s51jp.png`). Tour on the fixed build: 147/147 (`work/qa/tour_spk`). rom_check reads hooks from
+  `ASM_FILES`. Test `test_speaker_map_pairs_a_boss_header_with_its_unit_name`.
+  (2) **Results title fixed** (user `rom/bounty_battle_done.mss`): 戦果報告 is menus **01CA20**, drawn by C1Run into
+  `$7E:A000` and DMA'd to tiles $100 (traced with `tools/lua/vram_dma_probe.lua`, `rom_read_probe.lua`,
+  `dump_at.lua`). jp.tbl decodes it as symbols (＼～∥｜…) because the menu font has kanji halves at those codes, so
+  `needs_english` skipped it. The 14 cells are 戦果報告 (8) + 治療費 (6): English "Results" at cell 2, "Heal Cost" at
+  cell 8. Seen: `work/qa/res_cmp.png`. 治療費 itself not seen yet (shown when units need healing?).
+  Checked: no other C1-table text entry without English decodes to symbols only (the one other hit, classes
+  0BFFF2, is FFFF padding).
 - **Session 2026-11-23ah (user report, name entry, D17):** **Bugs fixed** (user `rom/bounty_name_input.mss`):
   (1) the keyboards typed JP full-width codes (Ａ = $00D1) next to the English default ($0F53..), so typed letters
   drew in the JP font; (2) the cursor started after the JP default's length (ソード 3, フュリス 4), on the "r" of

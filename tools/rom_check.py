@@ -21,21 +21,24 @@ import byte_scripts  # noqa: E402
 from rom_text import MASTER_TABLE  # noqa: E402
 
 ASM = ROOT / "asm" / "vwf.asm"
+ASM_FILES = ("vwf.asm", "speaker_match.asm")     # applied in this order by build.py; hooks read from all
 EXPANDED = (0x300000, 0x400000)
 HOOK_BYTES = 4                       # each low-bank hook is one `jml Label`
 
 
-def hook_sites(asm=ASM):
-    """File offsets of the `org $XXXXXX` + `jml` hooks in the game's own banks (HiROM $C0-$EF -> file - $C00000)."""
-    lines = asm.read_text(encoding="utf-8").splitlines()
+def hook_sites(asm=None):
+    """File offsets of the `org $XXXXXX` + `jml` hooks in the game's own banks (HiROM $C0-$EF -> file - $C00000),
+    from every file in ASM_FILES (or just `asm`)."""
     out = []
-    for i, line in enumerate(lines):
-        m = re.match(r"org \$([0-9A-Fa-f]{6})\b", line.strip())
-        if m and int(m.group(1), 16) < 0xF00000:
-            nxt = lines[i + 1].split(";")[0].strip()
-            if not nxt.startswith("jml "):
-                raise ValueError(f"vwf.asm:{i + 2}: hook at ${m.group(1)} is not a single jml")
-            out.append(int(m.group(1), 16) - 0xC00000)
+    for path in [asm] if asm else [ASM.parent / f for f in ASM_FILES]:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        for i, line in enumerate(lines):
+            m = re.match(r"org \$([0-9A-Fa-f]{6})\b", line.strip())
+            if m and int(m.group(1), 16) < 0xF00000:
+                nxt = lines[i + 1].split(";")[0].strip()
+                if not nxt.startswith("jml "):
+                    raise ValueError(f"{path.name}:{i + 2}: hook at ${m.group(1)} is not a single jml")
+                out.append(int(m.group(1), 16) - 0xC00000)
     return out
 
 

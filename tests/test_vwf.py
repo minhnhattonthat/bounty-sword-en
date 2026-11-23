@@ -116,11 +116,33 @@ def test_tag_font_renders_every_speaker_and_label_in_its_cells():
     assert tf.words("", 6) == [0] * 6
 
 
+def test_speaker_map_pairs_a_boss_header_with_its_unit_name():
+    """Battle-map portraits match the FF15 header against unit names (asm/speaker_match.asm): the boss of the
+    bandit maps (盗賊のボス, user report: Thetis's portrait) needs a row from its tag codes to "Boss" as the build
+    writes it into the unit record."""
+    import pytest
+    orig = ROOT / "rom" / "Bounty Sword (Japan).sfc"
+    if not orig.exists():
+        pytest.skip("original ROM not present")
+    sys.path.insert(0, str(ROOT))
+    from build import speaker_map
+    from rom_check import put_default_names
+    from tag_font import TagFont, speaker_names
+    built = bytearray(orig.read_bytes())
+    put_default_names(built, TextCodec(True))
+    tf = TagFont()
+    rows = speaker_map(bytes(built), tf)
+    assert rows.endswith(b"\xff\xff") and (len(rows) - 2) % 24 == 0
+    key = b"".join(w.to_bytes(2, "little") for w in tf.words(speaker_names()["盗賊のボス"], 6))
+    boss = b"".join(w.to_bytes(2, "little") for w in TextCodec(True).encode("Boss")).ljust(12, b"\0")
+    assert key + boss in [rows[i:i + 24] for i in range(0, len(rows) - 2, 24)]
+
+
 def test_rom_check_knows_every_hook_site():
     """build.py fails on any changed byte outside the allowed ranges (tools/rom_check.py); each low-bank hook of
-    vwf.asm is a 4-byte jml inside the 3 MB dump."""
-    from rom_check import hook_sites
+    every asm file (rom_check.ASM_FILES) is a 4-byte jml inside the 3 MB dump."""
+    from rom_check import ASM_FILES, hook_sites
     sites = hook_sites()
-    asm = (ROOT / "asm" / "vwf.asm").read_text(encoding="utf-8")
+    asm = "".join((ROOT / "asm" / f).read_text(encoding="utf-8") for f in ASM_FILES)
     assert len(sites) == len(re.findall(r"^org \$[C-E][0-9A-F]{5}\b", asm, re.M)) >= 8
     assert all(0 <= s < 0x300000 for s in sites)
