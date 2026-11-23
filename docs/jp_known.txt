@@ -7,6 +7,45 @@
 00764D	region battle_prompts_b 007645 translated	よりしろの呪符が効果を発揮した
 00C95A	noise	ダ補ゲム
 00C980	noise	補約ダゲ活ムヒベ
+00CD7B	region locations 00CD7B translated	ラインメタル王国首都
+00CD91	region locations 00CD8F translated	イーストエンド
+00CDA3	region locations 00CDA3 translated	ブラックバーンの山
+00CDB9	region locations 00CDB7 translated	辺境のかんしじょ
+00CDCD	region locations 00CDCB translated	アンデッドの巣
+00CDF7	region locations 00CDF3 translated	水晶の入り江
+00CE33	region locations 00CE2F translated	ハイランド
+00CE47	region locations 00CE43 translated	アーデンの森
+00CE5D	region locations 00CE57 translated	廃墟の村
+00CE81	region locations 00CE7F translated	エルツの大平原
+00CE95	region locations 00CE93 translated	リパイオス山脈
+00CEAD	region locations 00CEA7 translated	賢者の里
+00CEBF	region locations 00CEBB translated	イベリアの岬
+00CED3	region locations 00CECF translated	エリダヌス川
+00CEE7	region locations 00CEE3 translated	パドヴァ地方
+00CF25	region locations 00CF1F translated	西の平原
+00CF37	region locations 00CF33 translated	スパニア高原
+00CF4B	region locations 00CF47 translated	王都ロムルス
+00CF71	region locations 00CF6F translated	タルテソスの門
+00CF85	region locations 00CF83 translated	シェブールの街
+00CF99	region locations 00CF97 translated	ミッドガルドの街
+00CFC1	region locations 00CFBF translated	ジブラルタル海峡
+00CFD7	region locations 00CFD3 translated	アトラス砂漠
+00CFED	region locations 00CFE7 translated	西の砂漠
+00D001	region locations 00CFFB translated	南の砂漠
+00D013	region locations 00D00F translated	アバダンの川
+00D027	region locations 00D023 translated	アトラス山脈
+00D039	region locations 00D037 translated	アトラス山脈
+00D04F	region locations 00D04B translated	閉ざされた島
+00D061	region locations 00D05F translated	アトラス山脈
+00D079	region locations 00D073 translated	龍の亀裂
+00D0A1	region locations 00D09B translated	西の小島
+00D0B3	region locations 00D0AF translated	ぜつ望の湖
+00D0C5	region locations 00D0C3 translated	ぜつ望の湖
+00D0EB	region locations 00D0EB translated	アルダブラ島
+00D101	region locations 00D0FF translated	オルドバ連邦内
+00D115	region locations 00D113 translated	メッシーナの街
+00D12B	region locations 00D127 translated	遺跡の街
+00D13F	region locations 00D13B translated	アクラの街
 00EFA2	noise	・奨゜銭
 010406	noise	強ぐ望エ超じ口じ口門ボゐ高約
 010428	noise	い薬ガピ
@@ -21,6 +60,7 @@
 01ADE4	noise	ヽヾゝゞ
 01C06B	region menus 01BFFF translated	ヽヾゝゞ
 01C3DB	region menus 01C359 translated	ダヂヅデドバビブベボパピプペポ
+01CC04	region windows 01CC00 translated	編成能力合体攻撃パーティ
 01D4AF	noise	遁首ざて
 01D6D3	noise	遁賞ブレ
 0249E0	noise	ぐばゐグバヰ狂

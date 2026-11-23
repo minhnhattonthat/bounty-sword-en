@@ -2,17 +2,22 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release ready (session af): `tools/release.py` exit 0 on build **80c0851383f1** ->
-  `release/Bounty_Sword_EN_v1.0.zip` (147451 bytes: .bps + README.txt; patch sha1 3694f0ef7263; re-applied by hand
-  to the clean dump: sha1 80c0851383f1 = build). Publishing (GitHub release, tag v1.0) is the owner's: never run
-  `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
-  again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
-  **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
-- **Session 2026-11-23am (D20, build 0305432e8572):** world-map location label widened 10 -> 14 cells
-  (`asm/loc_label.asm`, hook `C0:CB1E`; `docs/re/vwf.md` location row): the four "... Mts" labels are now
+- **Phase:** 9. **v1.0 published** (session am, owner's request "prepare release and publish"): `tools/release.py`
+  exit 0 on build **0305432e8572** -> `release/Bounty_Sword_EN_v1.0.zip` (151342 bytes: .bps + README.txt; patch
+  sha1 9b8836aa08fd). Next: player bug reports (`gh issue list --label bug`) -> v1.x. Any text change needs the whole
+  gate again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py), and publishing a
+  new version is the owner's call.
+- **Session 2026-11-23am (D20 + release gate, build 0305432e8572):** world-map location label widened 10 -> 14
+  cells (`asm/loc_label.asm`, hook `C0:CB1E`; `docs/re/vwf.md` location row): the four "... Mts" labels are now
   "... Mountains". Seen: "Blackburn Mountains" from the owner state (`work/qa/map_wide/sheet.png`); Rhipaean, East and
   South Atlas Mountains not seen in game (same code path, all fit 112 px; `check.py` holds them). The chapter cards
-  (`card_02`) show no location label. Release gate not re-run.
+  show no location label. Gate: tour 147/147 (`work/qa/tour`, old one `tour_80c0851383f1`), 13 sheets read
+  (`verdicts/tour_0305432e8572.tsv`; the plugin visual-qa agent type was not loaded, own read-only pass); stress
+  15/15 (`verdicts_stress/stress_0305432e8572.tsv`); textcover 3572/3601, 29 waived, 0 failing after three `msg`
+  runs for the level-up talk (`work/qa/textcover/extra_lvl`, `extra_lvl0` with `$7F7109`=0 for the lone 041846
+  `{FF00}`, `extra_item` MSGPTR=0xFE10C6): textcover_all's tour never reaches them, re-run these after it.
+  `jp_known.py --write`: the unread 10-word location table and 01CC04 (camp grid, D19 copy). Story pass stands (only
+  271410 'Inf' -> 'Info' since).
 - **Session 2026-11-23al (3 user reports, build c35ae5806e71):** (1) **Item descriptions** (`rom/bounty_item_desc.mss`,
   shop Select): the box is 2 rows x 16 cells (`C3:C63C`), not the guessed 28; 32 letters filled it and an `{FF01}`
   after a 16+ letter row wrapped to row 1 over it. `EngBGlyph` now counts that box's cells by ink, lint
