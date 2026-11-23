@@ -8,6 +8,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
   **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23al (3 user reports, build c35ae5806e71):** (1) **Item descriptions** (`rom/bounty_item_desc.mss`,
+  shop Select): the box is 2 rows x 16 cells (`C3:C63C`), not the guessed 28; 32 letters filled it and an `{FF01}`
+  after a 16+ letter row wrapped to row 1 over it. `EngBGlyph` now counts that box's cells by ink, lint
+  `batches.desc_problems` (128 px rows, 120 before `{FF01}`), 39 descriptions refitted (docs/re/vwf.md Descriptions
+  row). Seen: shop + camp (`work/qa/fix_desc_cmp.png`, `fix_desc_herb_cmp.png`). Not seen: a spell description with a
+  shared piece (E52E..) and a 2-page one (FF10/FF11/FF03). (2) **Villager tag** (`rom/bounty_village.mss`, 老人):
+  the tag drew the matched unit name, packed "Old Man" -> "l 村mn"; hook C2:5525 (`TagSrc`, speaker_match.asm) draws
+  the header's tag codes; also fixes "Theti s" on battle-map speakers. Seen: `work/qa/fix3_village` (state rewound by
+  `work/qa/rewind.lua`), `fix_msg2176`. (3) **Thetis tag on the world map** (`rom/bounty_map_thetis.mss`): FF28
+  wrote テティス from code immediates C2:5BFB; build copies the speakers row in (`rom_check.put_ff28_tag`; swept the
+  ROM for other `LDA #kana / STA` name runs: none). Seen: `work/qa/fix2_map_thetis/final.png`. Release gate still stale.
 - **Session 2026-11-23ai (user report, engine B VWF, D18):** the owner's screenshot (`rom/bounty_en_011.png`,
   ceremony "Guardian spirit: Aphrodite") showed engine B's one-letter-a-cell gaps. **Engine B is now VWF**
   (`asm/vwf.asm` EngBGlyph/EngBDma, core mode 3; hooks C3:C71E/C722/C99A; `docs/re/vwf.md`). The cell counter

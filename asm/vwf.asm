@@ -688,6 +688,26 @@ EngBGlyph:
     jsr .vwf
     lda.w !PX
     sta.w !PXB
+    lda.l $7E4A3D       ; the description box (position table C3:C63C: 2 rows of 16 cells, $7E4A29 = 32 cells)
+    cmp.w #$C63C        ; counts cells by ink, not one a letter: else 32 letters fill it, and an FF01 after 16
+    bne .cells          ; wraps to row 1 over the first row (user report rom/bounty_item_desc.mss)
+    lda.l $7E4A3F
+    and.w #$00FF
+    cmp.w #$00C3
+    bne .cells
+    lda.w !PXB          ; cell of the last ink = BASEB + ceil(PX / 8) - 1; the engine then steps to the next
+    clc
+    adc.w #7
+    lsr
+    lsr
+    lsr
+    dec
+    clc
+    adc.w !BASEB
+    sta.l $7E4A27
+    inc
+    sta.w !LASTB
+.cells:
     lda.w #$0001
     sta.w !BFLAG
     pla

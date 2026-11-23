@@ -25,7 +25,7 @@
   "id": "0EE53C",
   "kind": "text",
   "jp": "[049B]数に攻撃{FF01}{FF07}",
-  "en": "Attacks several enemies.{FF01}{FF07}",
+  "en": "Attacks many enemies.{FF01}{FF07}",
   "refs": [
    "0EE592",
    "0EE5BA"
@@ -403,7 +403,7 @@
   "id": "0EE71C",
   "kind": "text",
   "jp": "自分への攻撃を防ぐ{FF00}",
-  "en": "Blocks attacks on yourself.{FF00}"
+  "en": "Blocks attacks{FF01}on yourself.{FF00}"
  },
  {
   "id": "0EE730",
@@ -418,7 +418,7 @@
   "id": "0EE732",
   "kind": "text",
   "jp": "味方一人への　攻撃を防ぐ{FF00}",
-  "en": "Blocks attacks on one ally.{FF00}"
+  "en": "Blocks attacks{FF01}on one ally.{FF00}"
  },
  {
   "id": "0EE74C",
@@ -514,7 +514,7 @@
   "id": "0EE79E",
   "kind": "text",
   "jp": "まわりに　爆発をおこし敵をふきとばす{FF00}",
-  "en": "A blast that blows away{FF01}nearby enemies.{FF00}",
+  "en": "A blast that blows{FF01}away nearby enemies.{FF00}",
   "refs": [
    "0EE4B9"
   ]
@@ -577,7 +577,7 @@
   "id": "0EE7F4",
   "kind": "text",
   "jp": "一定時間　敵一体の動きをとめる{FF00}",
-  "en": "Stops one enemy from moving{FF01}for a while.{FF00}"
+  "en": "Stops one enemy{FF01}from moving for a while.{FF00}"
  },
  {
   "id": "0EE814",
@@ -637,7 +637,7 @@
   "id": "0EE834",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}モンスター系とアンデッド系に{FF10:E455:00CE}{FF11}{FF03}",
-  "en": "{FF06:E52E:00CE}Against monsters and undead,{FF10:E455:00CE}{FF11}{FF03}"
+  "en": "{FF06:E52E:00CE}On monsters and undead,{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EE860",
@@ -658,7 +658,7 @@
   "id": "0EE874",
   "kind": "text",
   "jp": "アンデットなどの敵一体を　消しさることがある{FF00}",
-  "en": "May wipe out one enemy,{FF01}such as the undead.{FF00}"
+  "en": "May wipe out one{FF01}enemy, such as undead.{FF00}"
  },
  {
   "id": "0EE8A2",
@@ -723,7 +723,7 @@
   "id": "0EE8FE",
   "kind": "text",
   "jp": "{FF06:E52E:00CE}命中すれば必ず眠らせる{FF00}",
-  "en": "{FF06:E52E:00CE}Always puts to sleep{FF01}if it hits.{FF00}",
+  "en": "{FF06:E52E:00CE}A hit always means sleep.{FF00}",
   "refs": [
    "20C467"
   ]
@@ -741,7 +741,7 @@
   "id": "0EE91E",
   "kind": "text",
   "jp": "単体に強攻撃{FF00}",
-  "en": "Strong attack on one foe.{FF00}"
+  "en": "Strong attack{FF01}on one enemy.{FF00}"
  },
  {
   "id": "0EE92C",
@@ -786,7 +786,7 @@
   "id": "0EE950",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": "Damages enemies on screen.{FF00}"
+  "en": "Damages enemies{FF01}on the screen.{FF00}"
  },
  {
   "id": "0EE968",
@@ -849,7 +849,7 @@
   "id": "0EE9A8",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": "Damages enemies on screen.{FF00}"
+  "en": "Damages enemies{FF01}on the screen.{FF00}"
  },
  {
   "id": "0EE9C0",
@@ -864,7 +864,7 @@
   "id": "0EE9C2",
   "kind": "text",
   "jp": "単体に強攻撃{FF00}",
-  "en": "Strong attack on one foe.{FF00}"
+  "en": "Strong attack{FF01}on one enemy.{FF00}"
  },
  {
   "id": "0EE9D0",
@@ -909,7 +909,7 @@
   "id": "0EE9FC",
   "kind": "text",
   "jp": "一定時間　物理ダメージを返す{FF00}",
-  "en": "Reflects physical damage{FF01}for a while.{FF00}"
+  "en": "Reflects physical{FF01}damage for a while.{FF00}"
  },
  {
   "id": "0EEA1A",
@@ -924,7 +924,7 @@
   "id": "0EEA1C",
   "kind": "text",
   "jp": "一画面内の敵にダメージ{FF00}",
-  "en": "Damages enemies on screen.{FF00}"
+  "en": "Damages enemies{FF01}on the screen.{FF00}"
  },
  {
   "id": "0EEA34",
@@ -984,7 +984,7 @@
   "id": "0EEA64",
   "kind": "text",
   "jp": "味方一人と　自分の場所をいれかえる{FF00}",
-  "en": "Swaps places with one ally.{FF00}"
+  "en": "Swaps places{FF01}with one ally.{FF00}"
  },
  {
   "id": "0EEA88",
@@ -999,7 +999,7 @@
   "id": "0EEA8A",
   "kind": "text",
   "jp": "一画面内の敵に攻撃　マヒさせることもある{FF00}",
-  "en": "Attacks enemies on screen.{FF01}May also paralyze.{FF00}",
+  "en": "Attacks all on screen.{FF01}May also paralyze.{FF00}",
   "refs": [
    "26F0D5"
   ]
@@ -1036,7 +1036,7 @@
   "id": "0EEAE6",
   "kind": "text",
   "jp": "合体攻撃．ソードとアテナで敵単体を氷づけにしダメージ{FF00}",
-  "en": "Combined attack: Sword and{FF01}Athena freeze one foe.{FF00}"
+  "en": "Combined attack: Sword{FF01}and Athena freeze a foe.{FF00}"
  },
  {
   "id": "0EEB1C",
@@ -1446,7 +1446,7 @@
   "id": "0EF07C",
   "kind": "text",
   "jp": "攻撃をかわしやすくなる{FF01}装．ニン系{FF00}",
-  "en": "Easier to dodge attacks.{FF01}Eq: Ninjas{FF00}"
+  "en": "Dodges attacks better.{FF01}Eq: Ninjas{FF00}"
  },
  {
   "id": "0EF0A0",
@@ -1477,7 +1477,7 @@
   "id": "0EF0AE",
   "kind": "text",
   "jp": "クリティカルがでやすくなる{FF01}装．サ系　ニマ　シ{FF00}",
-  "en": "Criticals come more easily.{FF01}Eq: Samurai, N.Master, Sh.M{FF00}"
+  "en": "More crits. Eq: Samurai,{FF01}N.Master, Shadowmaster{FF00}"
  },
  {
   "id": "0EF0DE",
@@ -1600,7 +1600,7 @@
   "id": "0EF1AC",
   "kind": "text",
   "jp": "敵を眠らせることがある{FF01}装．ワル{FF00}",
-  "en": "May put enemies to sleep.{FF01}Eq: Valkyrie{FF00}"
+  "en": "May put foes to sleep.{FF01}Eq: Valkyrie{FF00}"
  },
  {
   "id": "0EF1CE",
@@ -1659,7 +1659,7 @@
   "id": "0EF266",
   "kind": "text",
   "jp": "装．僧系　魔系　ワイ{FF00}",
-  "en": "Eq: Clerics, Mages, Wise Man{FF00}"
+  "en": "Eq: Clerics, Mages,{FF01}Wise Man{FF00}"
  },
  {
   "id": "0EF27C",
@@ -1674,7 +1674,7 @@
   "id": "0EF27E",
   "kind": "text",
   "jp": "クリティカルが　でやすくなる{FF01}装．僧系　ワイ{FF00}",
-  "en": "Criticals come more easily.{FF01}Eq: Clerics, Wise Man{FF00}"
+  "en": "More critical hits.{FF01}Eq: Clerics, Wise Man{FF00}"
  },
  {
   "id": "0EF2AC",
@@ -1758,7 +1758,7 @@
   "id": "0EF33A",
   "kind": "text",
   "jp": "使うとファントムゴアーの効果　{FF01}魔法攻撃を防ぐことがある{FF10:E455:00CE}{FF11}{FF03}",
-  "en": "Use: Phantom Gore effect.{FF01}May block magic attacks.{FF10:E455:00CE}{FF11}{FF03}"
+  "en": "Use: Phantom Gore.{FF01}May block magic attacks.{FF10:E455:00CE}{FF11}{FF03}"
  },
  {
   "id": "0EF37C",
@@ -1846,7 +1846,7 @@
   "id": "0EF41E",
   "kind": "text",
   "jp": "クリティカルが　でやすくなる{FF01}装．陰　屍{FF00}",
-  "en": "Criticals come more easily.{FF01}Eq: Onmyoji, Immortal{FF00}"
+  "en": "More critical hits.{FF01}Eq: Onmyoji, Immortal{FF00}"
  },
  {
   "id": "0EF448",
@@ -2031,7 +2031,7 @@
   "id": "0EF510",
   "kind": "text",
   "jp": "装．戦　ナ系　魔系　僧系　風系{FF00}",
-  "en": "Eq: Warrior, Knights,{FF01}Mages, Clerics, Geomancers{FF00}",
+  "en": "Eq: Warrior, Knights,{FF01}Mages, Clerics, Geom.{FF00}",
   "refs": [
    "2C0B5F"
   ]
@@ -2181,7 +2181,7 @@
   "id": "0EF64E",
   "kind": "text",
   "jp": "ヒーリング効果有{FF01}　装．パ　ド{FF00}",
-  "en": "Has a healing effect.{FF01}Eq: Paladin, Dragon Knight{FF00}"
+  "en": "Has a healing effect.{FF01}Eq: Paladin, D.Knight{FF00}"
  },
  {
   "id": "0EF66E",
@@ -2318,7 +2318,7 @@
   "id": "0EF70E",
   "kind": "text",
   "jp": "攻撃を防ぐことがある{FF01}装．魔系　風系　ワイ{FF00}",
-  "en": "May block attacks.{FF01}Eq: Mages, Geom., Wise Man{FF00}"
+  "en": "May block attacks.{FF01}Eq: Mages, Geom., Wise{FF00}"
  },
  {
   "id": "0EF73A",
@@ -2380,7 +2380,7 @@
   "id": "0EF786",
   "kind": "text",
   "jp": "一回だけサンダーストームが使える{FF00}",
-  "en": "Casts Thunderstorm once.{FF00}"
+  "en": "Casts Thunderstorm{FF01}once.{FF00}"
  },
  {
   "id": "0EF7A8",
@@ -2520,7 +2520,7 @@
   "id": "0EF856",
   "kind": "text",
   "jp": "味方全[03AC]のＨＰ°ＳＰ°バッドステータスを全回復{FF00}",
-  "en": "Fully restores all allies'{FF01}HP and SP, cures ailments.{FF00}"
+  "en": "Fully heals all allies'{FF01}HP, SP and ailments.{FF00}"
  },
  {
   "id": "0EF886",
@@ -2710,7 +2710,7 @@
   "id": "0EF95A",
   "kind": "text",
   "jp": "敵一体を一定時間　移動できなくする{FF00}",
-  "en": "Stops one enemy from moving{FF01}for a while.{FF00}"
+  "en": "Stops one enemy{FF01}from moving for a while.{FF00}"
  },
  {
   "id": "0EF97E",
@@ -3051,7 +3051,7 @@
   "id": "0EFB62",
   "kind": "text",
   "jp": "ニンジャ系が使うと　シャドウマスターに転職{FF00}",
-  "en": "A Ninja who uses it{FF01}becomes a Shadowmaster.{FF00}",
+  "en": "A Ninja using it becomes{FF01}a Shadowmaster.{FF00}",
   "refs": [
    "19B33F"
   ]
@@ -3069,7 +3069,7 @@
   "id": "0EFB90",
   "kind": "text",
   "jp": "ハイ°ウィザードが使うと　スペルマスターに転職{FF00}",
-  "en": "A High Wizard who uses it{FF01}becomes a Spellmaster.{FF00}"
+  "en": "A High Wizard using it{FF01}becomes a Spellmaster.{FF00}"
  },
  {
   "id": "0EFBC0",
@@ -3084,7 +3084,7 @@
   "id": "0EFBC2",
   "kind": "text",
   "jp": "魔術師系か僧侶系が使うと　ワイズマンに転職{FF00}",
-  "en": "A Mage or Cleric using it{FF01}becomes a Wise Man.{FF00}"
+  "en": "A Mage or Cleric using{FF01}it becomes a Wise Man.{FF00}"
  },
  {
   "id": "0EFBEE",
@@ -3100,7 +3100,7 @@
   "id": "0EFBF0",
   "kind": "text",
   "jp": "風水師系が使うと　屍解仙に転職{FF00}",
-  "en": "A Geomancer who uses it{FF01}becomes a Corpse Immortal.{FF00}"
+  "en": "Turns a Geomancer{FF01}into a Corpse Immortal.{FF00}"
  },
  {
   "id": "0EFC10",
@@ -3115,7 +3115,7 @@
   "id": "0EFC12",
   "kind": "text",
   "jp": "一定時間　テティスのまわりをてらし影を見えるようにする{FF00}",
-  "en": "Lights up around Thetis to{FF01}show shadows for a while.{FF00}"
+  "en": "Lights around Thetis to{FF01}show shadows a while.{FF00}"
  },
  {
   "id": "0EFC4A",
@@ -3130,7 +3130,7 @@
   "id": "0EFC4C",
   "kind": "text",
   "jp": "マップクリアまで　テティスのまわりをてらし影を見えるようにする{FF00}",
-  "en": "Lights around Thetis, shows{FF01}shadows till the map clears.{FF00}"
+  "en": "Lights around Thetis to{FF01}show shadows this map.{FF00}"
  },
  {
   "id": "0EFC8C",
@@ -3154,7 +3154,7 @@
   "id": "0EFC8E",
   "kind": "text",
   "jp": "弾丸でつくったネックレス{FF00}",
-  "en": "A necklace made of bullets.{FF00}"
+  "en": "A necklace made{FF01}of bullets.{FF00}"
  },
  {
   "id": "0EFCA8",
@@ -3185,7 +3185,7 @@
   "id": "0EFCCE",
   "kind": "text",
   "jp": "旅のぎんゆうしじんが愛した楽器{FF00}",
-  "en": "The beloved instrument of{FF01}a wandering minstrel.{FF00}"
+  "en": "The beloved instrument{FF01}of a wandering minstrel.{FF00}"
  },
  {
   "id": "0EFCEE",

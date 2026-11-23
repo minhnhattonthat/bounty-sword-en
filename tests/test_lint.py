@@ -60,6 +60,17 @@ def test_engine_b_yes_no_keeps_the_cursor_cells():
     assert seen >= 8
 
 
+def test_description_rows_fit_the_128_px_box():
+    # rom/bounty_item_desc.mss: a 26-letter first row put the counter on row 2, so its {FF01} wrapped to row 1
+    assert batches.desc_problems("Lights around Thetis to{FF01}show shadows a while.{FF00}") == []
+    assert batches.desc_problems("Lights up around Thetis to{FF01}show shadows.{FF00}")      # row 1 > 120 px
+    assert batches.desc_problems("Damages enemies on screen.{FF00}")                         # one row > 128 px
+    # a page opening with a one-row shared piece has one row left; {FF07} ends a piece, {FF03} a page
+    assert batches.desc_problems("{FF06:E52E:00CE}Always puts to sleep{FF01}if it hits.{FF00}")
+    assert batches.desc_problems("{FF06:E52E:00CE}A hit always means sleep.{FF00}") == []
+    assert batches.desc_problems("-born{FF01}who use it...?{FF07}Hits one foe.{FF01}{FF07}{FF03}") == []
+
+
 def test_repo_lint_has_no_keep_or_tag_problems():
     assert batches.keep_problems(batches.index()) == []
     assert batches.tag_problems() == []

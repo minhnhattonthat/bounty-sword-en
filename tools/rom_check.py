@@ -67,6 +67,7 @@ def write_sites(data):
     out.append((*CHECKSUM, "header checksum"))
     out += [(o, o + 2 * n, f"default name {en}") for o, n, _, en in default_names()]
     out += [(o, o + len(new), f"byte patch: {note}") for o, _, new, note in byte_patches() + card_patches()]
+    out += [(o, o + 2, "FF28 tag name operand") for o in FF28_IMM]
     return sorted(out)
 
 
@@ -98,6 +99,27 @@ def put_byte_patches(rom, path=BYTE_PATCHES):
         if rom[off:off + len(old)] != old:
             raise ValueError(f"byte patch at {off:06X} ({note}): ROM holds {rom[off:off + len(old)].hex()}")
         rom[off:off + len(new)] = new
+
+
+# FF28 outside the battle map (C2:5BDE, $010C & 3 == 3: world map, towns) writes テティス into speaker slot 1 as six
+# LDA #imm / STA $1132+n,x pairs (C2:5BFB-5C1C), not from text (user report rom/bounty_map_thetis.mss). The build
+# copies the speakers-table row of テティス (tag codes, written by the text step) into those operands, so the tag is
+# the same pre-rendered "Thetis" and still matches its portrait row.
+FF28_ROW = 0x025EAD                                             # speakers table name field of テティス (6 words)
+FF28_IMM = (0x025BFC, 0x025C02, 0x025C08, 0x025C0E, 0x025C14, 0x025C1A)
+FF28_JP = (0x0196, 0x0196, 0x0173, 0x0189, 0x0000, 0x0000)
+
+
+def put_ff28_tag(rom):
+    """Write the built speakers-table row of テティス into the FF28 immediates of bytearray `rom`."""
+    for op, jp in zip(FF28_IMM, FF28_JP):
+        if rom[op - 1] != 0xA9 or int.from_bytes(rom[op:op + 2], "little") != jp:
+            raise ValueError(f"FF28 name operand at {op:06X}: ROM holds {rom[op - 1:op + 2].hex()}")
+    row = rom[FF28_ROW:FF28_ROW + 12]
+    if row == b"".join(w.to_bytes(2, "little") for w in FF28_JP):
+        raise ValueError("FF28: the speakers table row of テティス is still Japanese")
+    for i, op in enumerate(FF28_IMM):
+        rom[op:op + 2] = row[2 * i:2 * i + 2]
 
 
 DEFAULT_NAMES = ROOT / "script" / "default_names.tsv"

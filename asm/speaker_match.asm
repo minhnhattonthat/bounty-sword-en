@@ -16,6 +16,8 @@ org $C25C9B
     jml SpkUnit         ; was LDA [$48],y / CMP $1132,x ... (RTS at C2:5CD9)
 org $C25CDA
     jml SpkParty        ; was LDA [$48],y / CMP $7FF4E3,x ... (RTS at C2:5D1E)
+org $C25525
+    jml TagSrc          ; was LDA $1132,x / STA $7E378D ... (the tag copy, C2:5525-558C)
 
 ; 6-word compare of [$48],y with <a>,x (abs or long); falls through with Z = equal; X and Y advance.
 macro cmp6(a)
@@ -172,6 +174,113 @@ MapFind:
     rts
 .next:
     ply
+    txa
+    clc
+    adc.w #24
+    tax
+    bra .row
+.none:
+    clc
+    rts
+
+; The name tag (C2:54A5, X = slot offset) copies the matched unit's name ($1132 + slot) into $7E378D and the
+; tag cells at [$7E3781] + centring offset (table C2:55B8 by word count). In JP the unit name is the header; in
+; English it is the unit's letter codes, and a name over 6 letters is packed 2 a word, which the tag (one glyph a
+; word) drew as garbage ("l 村mn" for 老人 "Old Man", user report rom/bounty_village.mss). A slot name that is a
+; value of SpkMap now draws its header's pre-rendered tag codes instead; any other name draws as before.
+; Entry/exit as the original (A/X/Y 16-bit, $20 = 0 on this path); ends at C2:558D, which returns.
+TagSrc:
+    stx $2A
+    lda.l $7E1132,x
+    sta.l $7E378D
+    lda.l $7E1134,x
+    sta.l $7E378F
+    lda.l $7E1136,x
+    sta.l $7E3791
+    lda.l $7E1138,x
+    sta.l $7E3793
+    lda.l $7E113A,x
+    sta.l $7E3795
+    lda.l $7E113C,x
+    sta.l $7E3797
+    jsr RevFind         ; C = found, X = row
+    bcc .place
+    lda.l SpkMap,x
+    sta.l $7E378D
+    lda.l SpkMap+2,x
+    sta.l $7E378F
+    lda.l SpkMap+4,x
+    sta.l $7E3791
+    lda.l SpkMap+6,x
+    sta.l $7E3793
+    lda.l SpkMap+8,x
+    sta.l $7E3795
+    lda.l SpkMap+10,x
+    sta.l $7E3797
+.place:
+    ldx.w #$0000        ; X = 2 * words up to the first 0000 (max 6)
+.cnt:
+    lda.l $7E378D,x
+    beq .counted
+    inx
+    inx
+    cpx.w #12
+    bne .cnt
+.counted:
+    stx $2E
+    lda.l $C255B8,x     ; centring offset for that count
+    tay
+    sep #$20
+    lda.b #$81
+    sta $48
+    lda.b #$37
+    sta $49
+    lda.b #$7E
+    sta $4A
+    rep #$20
+    ldx.w #$0000
+.copy:
+    cpx $2E
+    beq .end
+    lda.l $7E378D,x
+    sta [$48],y
+    inx
+    inx
+    iny
+    iny
+    bra .copy
+.end:
+    stz $2E
+    jml $C2558D
+
+; C = 1 and X = row offset when the 6 words at $7E378D are a value (unit name) of SpkMap.
+RevFind:
+    ldx.w #$0000
+.row:
+    lda.l SpkMap,x
+    cmp.w #$FFFF
+    beq .none
+    lda.l SpkMap+12,x
+    cmp.l $7E378D
+    bne .next
+    lda.l SpkMap+14,x
+    cmp.l $7E378F
+    bne .next
+    lda.l SpkMap+16,x
+    cmp.l $7E3791
+    bne .next
+    lda.l SpkMap+18,x
+    cmp.l $7E3793
+    bne .next
+    lda.l SpkMap+20,x
+    cmp.l $7E3795
+    bne .next
+    lda.l SpkMap+22,x
+    cmp.l $7E3797
+    bne .next
+    sec
+    rts
+.next:
     txa
     clc
     adc.w #24

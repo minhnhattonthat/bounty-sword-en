@@ -37,6 +37,16 @@ def test_default_names_are_english(built):
     assert data[0x10657:0x10663] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Thetis")
 
 
+def test_ff28_thetis_tag_is_the_speakers_table_row(built):
+    # C2:5BFB wrote テティス into speaker slot 1 as immediates (rom/bounty_map_thetis.mss)
+    from rom_check import FF28_IMM, FF28_ROW
+    _, data, _ = built
+    row = data[FF28_ROW:FF28_ROW + 12]
+    assert row[:2] != b"\x96\x01"
+    assert b"".join(data[o:o + 2] for o in FF28_IMM) == row
+    assert all(data[o - 1] == 0xA9 for o in FF28_IMM)
+
+
 def test_name_entry_types_english_letters(built):
     """Name-entry keyboards (D17): each letter cell is one English word ($0F41..), not a packed pair, at the address
     asm/vwf.asm GridLimit checks; the cursor starts right after the default name, not after the JP one."""

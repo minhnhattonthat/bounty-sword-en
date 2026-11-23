@@ -23,7 +23,7 @@ from bps import snes_checksum  # noqa: E402
 from check_rom import check  # noqa: E402
 from font_en import write_bins  # noqa: E402
 from marker import marker_files  # noqa: E402
-from rom_check import (ASM_FILES, allowed_ranges, check_ranges, default_names, put_byte_patches,  # noqa: E402
+from rom_check import (ASM_FILES, allowed_ranges, check_ranges, default_names, put_byte_patches, put_ff28_tag,  # noqa: E402
                        put_default_names, write_sites)
 from rom_text import ROM_EXPANDED, WordCodec, repack  # noqa: E402
 from script_text import OVERFLOW, SCRIPT, TAGS, TextCodec, apply_script, dump, load, strings_tsv  # noqa: E402
@@ -103,6 +103,7 @@ def build(out=OUT, identity=False, marker=False, qa=()):
         if not marker:
             put_default_names(built, TextCodec(True))     # script/default_names.tsv: new-game names in English
             put_byte_patches(built)                       # script/byte_patches.tsv: shop tilemaps etc.
+            put_ff28_tag(built)                           # C2:5BFB: world-map/town FF28 name (Thetis)
         built = bytes(built) + b"\xff" * (ROM_EXPANDED - len(built))
         tf = None if marker else (TAGS[0] if TAGS else TagFont())
         (BUILD / "spk_map.bin").write_bytes(speaker_map(built, tf))

@@ -54,7 +54,7 @@ LIMITS = {"items": ("px", 80), "classes": ("px", 80), "spells": ("px", 80), "uni
           # location label (C0:E1B1, 10 cells) and name tag (C2:5641, 6 cells) draw one char a cell today: phase 7
           # packs two letters a cell there like C1Run (decision D8), so they get the pair budget too.
           "locations": ("px", 80), "speakers": ("px", 48), "move_prompt": ("px", 96),
-          "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("row", 28)}
+          "ceremony": ("row", 28), "short_strings": ("row", 28), "descriptions": ("desc", 128)}
 EXACT = {"objectives"}
 # Shop dialogue (short_strings 1AF585..1AFDC2) draws in the portrait box: 20 cells a row, measured 2026-11-23
 # (`work/qa/w_shopruler`: a ruler row wraps after cell 20 and pushes the Buy/Sell/Quit row back to row 1).
@@ -66,6 +66,29 @@ SHOP_VARS = {"48CD": 16, "48E3": 16, "48F9": 5, "4905": 9, "F569": 16}   # item,
 # Engine B rows elsewhere: {FF06} variables of known longest English width (others count 0). ED2D = guardian spirit
 # (ceremony 1DED5B.., longest "Aphrodite"); 4D1B = hero name (name-entry buffer, 6 cells).
 ROW_VARS = {"ED2D": 9, "4D1B": 6}
+
+
+# Description box (position table C3:C63C, camp/shop Select and spell lists): 2 rows of 16 cells = 128 px a row,
+# 32 cells in all; asm/vwf.asm EngBGlyph counts its cells by ink. An {FF01} goes to the next 16-cell row, so a row
+# before one must end inside cell 15 (<= 120 px): a full row puts the counter on row 2 and the {FF01} wraps to row 1
+# over the text (user report rom/bounty_item_desc.mss, `work/qa/fix_desc_*`). Pages end in {FF03}, shared pieces
+# in {FF07}; a page that opens with a call to one of the one-row pieces (E52E/E53C/E54A) has one row left.
+DESC_ROW, DESC_ROWS = 128, 2
+DESC_PIECES = re.compile(r"\{FF06:(?:E52E|E53C|E54A):00CE\}")
+
+
+def desc_problems(en, row_px=DESC_ROW):
+    out = []
+    for seg in re.split(r"\{FF07\}|\{FF03\}", en):
+        lead = 1 if DESC_PIECES.match(seg) else 0
+        rows = [TOKEN.sub("", r) for r in seg.split("{FF01}")]
+        for i, r in enumerate(rows):
+            lim = row_px - 8 if i < len(rows) - 1 else row_px
+            if text_px(r) > lim:
+                out.append(f"description row over {lim} px ({text_px(r)}): {r!r}")
+        if lead + sum(1 for r in rows if r) > DESC_ROWS:
+            out.append(f"more than {DESC_ROWS} description rows on a page: {TOKEN.sub('', seg)!r}")
+    return out
 
 
 def shop_row_cells(row, variables=SHOP_VARS):
@@ -151,6 +174,8 @@ def width_problems(entry, en):
         plain = TOKEN.sub("", en)
         if text_px(plain) > cells * 8 or len(plain) > 2 * cells:
             return [f"over {cells * 8} px ({text_px(plain)})"]
+    elif kind == "desc":
+        return desc_problems(en, n)
     elif kind == "ch":
         if len(TOKEN.sub("", en)) > (entry.get("width") or n):
             return [f"over {entry.get('width') or n} characters"]
