@@ -27,8 +27,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (`work/qa/w_camp_party_status`), camp and battle-map "Items", item window title "Items" (cells 60-63, clear of the
   page digit), item sub-menu Use/Trade/Drop (`work/qa/w_item_sub/zoom2.png`). Not seen: world map place menu "Info"
   (layout C5:B8A2; camp_map/worldmap scenes are view-only), the trade/take prompts now "Who?" (need 2 members).
-  Left (README known issue, polish line): battle command windows 01CA4B/01CAAB/01CAF0, cancel labels 01C5AA,
-  target prompt 01C60C, unit item window 01C894, sell tabs 01D31B, vault labels in 01CC4A. Release gate: re-run.
+  Battle windows (owner state `rom/bounty_battle_menu.mss`: A on a unit = command window, A on an empty tile =
+  system menu): Orders/Skills/Items/Status + Move/Action/Healing (was "Healin"), system Orders/Flee/Status/
+  Situation (window 7 -> 9 wide), Situation/Map View/Goal; seen with JP side by side (`work/qa/bm1/cmp.png`,
+  `sit_cmp.png`, `sit_en`, `sys_*`). Fixed my own wrong patch: 05BD10 was in the system menu layout, not the camp
+  menu. Left (README known issue, polish line): target prompt 01C60C, unit item window 01C894, sell tabs 01D31B,
+  vault labels in 01CC4A. Release gate: re-run.
 - **Session 2026-11-23aj (user reports, worktree `work/wt` while session ai edited asm/vwf.asm; merged after it):**
   (1) **Bug fixed, wrong boss portrait** (user `rom/bounty_wrong_avatar.mss`, `rom/bounty_en_012.png`: 盗賊のボス
   "Boss" showed Thetis). Battle-map FF15 matches the header against unit names (docs/re/text.md speakers row);

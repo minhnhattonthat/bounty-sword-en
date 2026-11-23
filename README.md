@@ -20,8 +20,9 @@ helps most.
 | Ending and staff roll | Translated text; the real ending has not been reached in the emulator yet |
 
 Known issues (also see [Issues](../../issues)):
-- Some menu labels are still abbreviated (battle command windows "Sts", "Sys.", "Ord"; the vault "Bin", "Wp."):
-  the menus show each label in a fixed two- or three-tile slot. Camp, item and world map menus use full words.
+- A few menu labels are still abbreviated (the vault "Bin", "Wp."; a unit's item window; the shop sell tabs):
+  those menus show each label in a fixed two- or three-tile slot. Camp, battle, item and world map menus use
+  full words.
 
 Tested in Mesen (MesenCE) from a cold boot; start a new game on the patched
 ROM rather than loading a savestate made on the Japanese one.

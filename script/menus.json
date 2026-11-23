@@ -452,7 +452,7 @@
   "width": 31,
   "kind": "text",
   "jp": "作戦指示魔法°技命令道具能力　　移動指示　行動指示　回復指示",
-  "en": "OrdersSkill   Ord[0F7F]ItmSts[0F1F][0010]Move[0F1F][0015]Action   Healing",
+  "en": "Orders[0F7F]Skills[0F1F][0008]Items[0F7F]Move[0F7F]Status[0F1F][0015]Action[0F7F]Healing",
   "refs": [
    "08F0D6"
   ]
@@ -485,7 +485,7 @@
   "width": 19,
   "kind": "text",
   "jp": "　作戦指示離脱能力状況システム　[01F6][01F7][01F8]",
-  "en": "[0F1F][0001]Orders[0F7F]Out[0F7F]StsSit[0F7F]Sys.[0F1F][0010]Flee",
+  "en": "[0F1F][0001]Orders[0F7F]Status[0F1F][000A]Situation[0F7F]Flee",
   "refs": [
    "08F11E"
   ]
@@ -516,7 +516,7 @@
   "width": 20,
   "kind": "text",
   "jp": "　状況全体マップ勝利条件システムきりかえ",
-  "en": "[0F1F][0001]Sit[0F7F]Big Map[0F7F]Goal[0F1F][000C]Sys.[0F1F][0010]Swap",
+  "en": "Situation[0F7F]Map View[0F7F]Goal",
   "refs": [
    "08F144"
   ]

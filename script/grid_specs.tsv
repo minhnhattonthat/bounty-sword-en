@@ -31,12 +31,12 @@
 01C976	1:Spl | 3:Item | 7:SOS Call | 13:KO
 01C9C6	0:Kill Time | 9:Kill Bonus | 16:Time Bonus | 23:Total
 01C9FE	=
-01CA4B	0:Orders | 4:Skill | 8:Ord | 10:Itm | 12:Sts | 16:Move | 21:Action | 26:Healing
+01CA4B	0:Orders | 4:Skills | 8:Items | 12:Move | 16:Status | 21:Action | 25:Healing
 01CA8B	0:HP | 4:% | 5:heal
 01CA9D	0:All Units
-01CAAB	1:Orders | 5:Out | 7:Sts | 9:Sit | 11:Sys. | 16+3:Flee
+01CAAB	1:Orders | 5:Status | 10:Situation | 16+3:Flee
 01CAE0	0:Choose.
-01CAF0	1:Sit | 3:Big Map | 8:Goal | 12:Sys. | 16:Swap
+01CAF0	0:Situation | 6:Map View | 12:Goal
 01CB1A	0:Spell | 3:Skill | 6:Combo | 10:Members
 01CB49	1:Goal
 01CBB8	0:　ＡＤＳＭＷＬＡ
