@@ -31,8 +31,20 @@ Updated at the end of every session. Keep it to what the next session needs; his
   system menu): Orders/Skills/Items/Status + Move/Action/Healing (was "Healin"), system Orders/Flee/Status/
   Situation (window 7 -> 9 wide), Situation/Map View/Goal; seen with JP side by side (`work/qa/bm1/cmp.png`,
   `sit_cmp.png`, `sit_en`, `sys_*`). Fixed my own wrong patch: 05BD10 was in the system menu layout, not the camp
-  menu. Left (README known issue, polish line): target prompt 01C60C, unit item window 01C894, sell tabs 01D31B,
-  vault labels in 01CC4A. Release gate: re-run.
+  menu. (3) Second pass ("fix the other abbreviations"): camp vault (01CC4A) Vault/Store/Weapons/Other Gear and
+  "Who?" as one run, records C5:C16F, C184, C3B7.., C4DA, C4E5 (`d326696`; the font is 8x16 so cell c is tile
+  base + (c//16)*32 + c%16, and the vault list rows draw from tile $106, clear of the string); shop vault (01D31B)
+  Vault/Arms/Gear/Items in its 15 cells, as the shop list rows start at slot $20 and the string is redrawn after
+  them (`7b2cf74`); orders screens 自動回復 "Auto" -> "Action" as on the unit panel (`7a6fdff`). Seen in game:
+  camp vault window, vault list "Weapons 1", Store variant, shop vault window and list "Arms 1", unit and
+  all-units orders (`work/qa/w_vault*`, `w_sv2`, `w_sv3`, `w_bm15`, `w_bm16`). Shop vault Gear/Items list titles
+  and camp Other Gear/Items list titles not seen (need those items in the vault; same records as the seen ones).
+  Vault RAM for tests: the warp to a shop keeps a camp state's vault (`work/states/vault_stored.mss` has Iron
+  Sword stored). Not menu options, left: 01C894 道具倉庫/交換 cells (no layout record draws them; the battle item
+  window shows Gear/Pack/stats/Use/Drop), 01C60C 地形/ユニット (no record; its window draws C1:C656.. instead),
+  status grid Gdr/Elm/Sg. (2-cell slices in screens not mapped yet; D19 keeps stat labels short), constellation
+  names "Sagitt."/"Capri."/"Aquar." (5-cell 40 px field), "S. Lake Despair" (80 px field), objectives (no reader).
+  Release gate: re-run.
 - **Session 2026-11-23aj (user reports, worktree `work/wt` while session ai edited asm/vwf.asm; merged after it):**
   (1) **Bug fixed, wrong boss portrait** (user `rom/bounty_wrong_avatar.mss`, `rom/bounty_en_012.png`: 盗賊のボス
   "Boss" showed Thetis). Battle-map FF15 matches the header against unit names (docs/re/text.md speakers row);

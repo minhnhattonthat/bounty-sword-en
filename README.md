@@ -20,9 +20,8 @@ helps most.
 | Ending and staff roll | Translated text; the real ending has not been reached in the emulator yet |
 
 Known issues (also see [Issues](../../issues)):
-- A few menu labels are still abbreviated (the vault "Bin", "Wp."; a unit's item window; the shop sell tabs):
-  those menus show each label in a fixed two- or three-tile slot. Camp, battle, item and world map menus use
-  full words.
+- The status screen keeps short labels (Atk, Def, AS, Gdr, Sg.) and three long constellation names are cut
+  ("Sagitt.", "Capri.", "Aquar."): those fields are two tiles and five tiles wide. Menus use full words.
 
 Tested in Mesen (MesenCE) from a cold boot; start a new game on the patched
 ROM rather than loading a savestate made on the Japanese one.

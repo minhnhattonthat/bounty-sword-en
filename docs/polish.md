@@ -34,9 +34,11 @@ with the reason; the two engine limits are listed as known issues in README.md.
   strings and DMA them. The tutorial 279CA6 now says "choose 'Inf'" to match the label.
   (session ak, D19: the tilemaps are C5 layout records and the frames C1 window defs, `docs/re/vwf.md` "Widening a
   menu slice". Full words now: camp Party/Formation/Status, Items x3, Use/Trade/Drop, world map Info, battle command
-  01CA4B, system 01CAAB, Situation 01CAF0. Left: target prompt "Fld"/"Unit" 01C60C (no layout found showing those
-  cells), unit item window 01C894, sell tabs 01D31B, the vault jigsaw in 01CC4A (Bin, Wp., No; titles built from
-  の/誰/が cells). Cancel labels 01C5AA: no caller and no layout found, likely unused.)
+  01CA4B, system 01CAAB, Situation 01CAF0; then the camp vault 01CC4A (Vault/Store/Weapons/Other Gear, Who?),
+  shop vault 01D31B (Vault/Arms/Gear/Items) and the orders row "Action". Left, not shown by any layout record found:
+  target prompt "Fld"/"Unit" 01C60C, 01C894 "ItmBin"/"Trd" (the battle item window shows only Gear/Pack/stats/
+  Use/Drop). Cancel labels 01C5AA: no caller and no layout found, likely unused. Status grid Gdr/Elm/Sg. stay short
+  with the stat labels.)
 - [x] Fragment pools 01C60C (target prompt) and 01CC4A (item window sentences): shown in the phase 8 tours and
   textcover (0 failing); the sheets were read ok.
 - [x] Objectives (b059) keep their JP length (no reader found): "SorcGen", "SorcCapt", "M.God 1". Kept until a
