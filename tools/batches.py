@@ -112,7 +112,7 @@ def limit_label(entry):
         return f"{pages.LINE_PX}px x{pages.LINES}"
     lim = LIMITS.get(file_of(entry))
     if not lim:
-        return f"{entry['width']} cells" if entry.get("width") else ""
+        return f"{entry.get('cells') or entry['width']} cells" if entry.get("width") else ""
     return f"{lim[1]}{lim[0]}"
 
 
@@ -138,7 +138,7 @@ def grid_codes(entry, text):
 
 def width_problems(entry, en):
     if file_of(entry) in grid.GRID_FILES and entry.get("width"):
-        return grid.problems(en, entry["width"])
+        return grid.problems(en, entry.get("cells") or entry["width"])   # cells: widened copy (script_text)
     if file_of(entry) in EXACT:     # repacked in place, entries addressed by pointers: one char a word, same count
         n_jp, n_en = len(TOKEN.sub("", entry["jp"])), len(TOKEN.sub("", en))
         return [] if n_en == n_jp else [f"{n_en} characters, the slot holds exactly {n_jp} (pad with spaces)"]

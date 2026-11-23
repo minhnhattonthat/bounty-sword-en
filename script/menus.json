@@ -161,7 +161,7 @@
   "width": 29,
   "kind": "text",
   "jp": "　パーティ作戦道具決意地図を開く作戦指示ファイルコンフィグ",
-  "en": "  Party[0F7F]Tac[0F7F]ItmGo![0F7F]Map[0F1F][0010]OrdersFile[0F1F][0018]Config",
+  "en": "[0F1F][0001]Party[0F7F]Items[0F7F]Go![0F7F]Map[0F1F][0010]Orders[0F7F]File[0F1F][0018]Config",
   "refs": [
    "08EFB4"
   ]
@@ -194,7 +194,7 @@
   "width": 26,
   "kind": "text",
   "jp": "　パーティ道具地図キャンプ　　　マップきりかえ[01F6][01F7][01F8]",
-  "en": "[0F1F][0001]Party[0F7F]Itm[0F7F]Fld[0F7F]Camp[0F1F][0010]Map View[0F1F][0017]Flee",
+  "en": "[0F1F][0001]Party[0F7F]Items[0F7F]Camp[0F1F][0010]Map View[0F1F][0017]Flee",
   "refs": [
    "08ECB6"
   ]

@@ -12,10 +12,10 @@
 01C283	0:[0F41][0F42][0F43][0F44][0F45][0F4E][0F4F][0F50][0F51][0F52][0F61][0F62][0F63][0F64][0F65]　[0F6E][0F6F][0F70][0F71][0F72][0F30][0F31][0F32][0F33][0F34][0F46][0F47][0F48][0F49][0F4A]　[0F53][0F54][0F55][0F56][0F57][0F66][0F67][0F68][0F69][0F6A][0F73][0F74][0F75][0F76][0F77]　[0F35][0F36][0F37][0F38][0F39][0F4B][0F4C][0F4D]　　[0F58][0F59][0F5A]　　　[0F6B][0F6C][0F6D]　　[0F78][0F79][0F7A]　　　　　　　　[0F2E][0F2C][0F27][0F2D][0F26][0F21][0F3F][0F3A][0F2F][0F7E]　　　　　　 | 96:ア | 99:A-Z | 101:←→ | 103:End
 01C359	0:アイウエオカキクケコサシスセソ　タチツテトナニヌネノハヒフヘホ　マミムメモヤ　ユ　ヨラリルレロ　ワヰン　　ガギグゲゴザジズゼゾ　ダヂヅデドバビブベボパピプペポ　ァィゥェォャ　ュ　ョー　ッ　ヴ　 | 96:Aa | 99:A-Z | 101:←→ | 103:End
 01C42F	0:[0F41][0F42][0F43][0F44][0F45][0F46][0F47][0F48][0F49][0F4A][0F4B][0F4C][0F4D][0F4E][0F4F][0F50][0F51][0F52][0F53][0F54][0F55][0F56][0F57][0F58][0F59][0F5A] | 26:Aa | 29:ア | 31:←→ | 33:End
-01C479	1:Party | 5:Tac | 7:Itm | 9:Go! | 11:Map | 16:Orders | 20:File | 24:Config
+01C479	1:Party | 5:Items | 9:Go! | 11:Map | 16:Orders | 20:File | 24:Config
 01C4B5	0:Inf | 2:Go | 4:Close | 10:Travel
 01C4D3	0:Rheinmetall | 16:North Europea | 32:South Europea
-01C535	1:Party | 5:Itm | 7:Fld | 9:Camp | 16:Map View | 23+3:Flee
+01C535	1:Party | 5:Items | 9:Camp | 16:Map View | 23+3:Flee
 01C578	2:now! | 6:Sure? | 16:OK | 18:No | 21+3:Flee
 01C5AA	0:Aim | 4:Skill | 8:Itm | 10:Tac | 12:Rtn | 14:Sts | 17:canceled.
 01C60C	1:Pick a target, press A. | 16:pick | 21:Which | 25:one? | 29:Fld | 31:Unit | 35:/
@@ -40,7 +40,7 @@
 01CB1A	0:Spell | 3:Skill | 6:Combo | 10:Members
 01CB49	1:Goal
 01CBB8	0:　ＡＤＳＭＷＬＡ
-01CC00	1:Set | 3:Sts | 5:Combo | 9:Party
+01CC00	0:Party | 4:Formation | 11:Status
 01CC1C	0:Pick an item to drop.
 01CC3A	0:Can't drop.
 01CC4A	0:Itm | 2:Use | 4:Trd | 6:Drop | 9:Gear | 12:Pack | 17:Who | 20:? | 22:Bin | 24:Take | 28:Wp. | 30:No | 32:Atk | 34:Def | 36:Agi | 38:Int | 40:Spr | 42:Lck | 44:AS | 46:x | 47:+ | 48:One of each | 57:Misc | 60:Items

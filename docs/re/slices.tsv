@@ -26,7 +26,7 @@ battle_status	0BF8D6	0	2	6	22	BG1
 battle_status	01C6EE	23	2	8	22	BG1
 camp	01C479	1	4	3	2	BG1
 camp	01C479	16	4	3	4	BG1
-camp	01C479	7	2	3	6	BG1
+camp	01C479	5	4	3	6	BG1
 camp	01C479	9	2	3	8	BG1
 camp	01C479	11	5	3	10	BG1
 camp	01C479	24	5	3	12	BG1
@@ -62,9 +62,9 @@ camp_items	1AE747	0	10	20	18	BG1
 camp_orders	01CEFE	16	4	3	2	BG1
 camp_orders	01CEFE	20	4	3	4	BG1
 camp_orders	01CEFE	24	4	3	6	BG1
-camp_party	01CC00	9	4	3	2	BG1
-camp_party	01CC00	1	2	3	5	BG1
-camp_party	01CC00	3	2	3	7	BG1
+camp_party	01CC00	0	4	3	2	BG1
+camp_party	01CC00	4	7	3	5	BG1
+camp_party	01CC00	11	5	3	7	BG1
 camp_party_status	01C6EE	1	2	3	12	BG1
 camp_party_status	01C6EE	0	1	7	12	BG1
 camp_party_status	01C6EE	11	2	9	12	BG1
@@ -109,7 +109,7 @@ filemenu	01CCF2	7	3	3	9	BG1
 filemenu	01CCF2	10	2	3	11	BG1
 load_file2	01C479	1	4	3	2	BG1
 load_file2	01C479	16	4	3	4	BG1
-load_file2	01C479	7	2	3	6	BG1
+load_file2	01C479	5	4	3	6	BG1
 load_file2	01C479	9	2	3	8	BG1
 load_file2	01C479	11	5	3	10	BG1
 load_file2	01C479	24	5	3	12	BG1

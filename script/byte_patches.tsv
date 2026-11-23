@@ -12,3 +12,15 @@
 018AA9	a4028003a9f702	4a008003a94900	status gender value (C1:8AA8 `LDA #$02A4 女 / LDA #$02F7 男`, then JSL C1:8EB9 one glyph) -> ♀ 004A / ♂ 0049
 06E368	066e0d000400	066e0d000500	name-entry cursor start (script op 06: object var $0D6E = 4, after フュリス) -> 5, after the default "Furis" (default_names 6E27A)
 06EF2A	066e0d000300	066e0d000500	ceremony name-entry cursor start (op 06: $0D6E = 3, after ソード) -> 5, after the default "Sword" (default_names 6EF1A)
+05C061	408600040209014046010202010140c6010202030100	408600040200014046010702040140c60105020b0100	camp party window slices (string 01CC00 widened to 16 cells, `cells`): Party 0-3, Formation 4-10, Status 11-15 (JP Party 9-12, 編成 1-2, 能力 3-4)
+05C077	408600040209014046010202030100	4086000402000140460105020b0100	camp party window, two-item variant: Party 0-3, Status 11-15
+030343	210001010709	210001010a09	camp party window frame (C3 script op 21 x y w h): 7 -> 10 cells wide for "Formation" (cols 3-9)
+035FAB	210001010707	210001010807	camp party window frame, two-item variant: 7 -> 8 wide for "Status" (cols 3-7)
+01E15D	07094200	0a094200	camp party window def C1:E15B (C3 op 2D; box op C1:977B: w h pos16): 7 -> 10 wide
+01E161	4e0042024e02040015380401050600011138020106000112380e01	540042025402040015380401080600011138020106000112381401	  its corners (top-right 004E -> 0054, bottom-right 024E -> 0254), divider (op 04 tile pos16 n, C1:968F) 5 -> 8 cells, right T (op 06 n tile pos16, C1:96A7) col 7 -> col 10
+05B873	40860102020701	40860104020501	camp menu (string 01C479) 道具 slice: 2 cells from 7 -> 4 cells from 5, "Items" (作戦 cells 5-6 are never shown)
+05BD10	40860102020701	40860104020501	  the same slice in the camp menu variant C5:BD03
+05B3FD	40060102020501	40060104020501	battle map menu (string 01C535, layout C5:B3F6, the only one its window script C8:ECB3 uses) 道具 slice 2 -> 4 cells, "Items" over the unshown 地図 cells 7-8
+05C09D	40880002028000	4084000402ec00	item window title (string 01CC4A at tile $80, window def C1:E1BD): 道具 cell 0, 2 cells at col 4 -> アイテム "Items" cells 60-63 (tile $EC), 4 cells at col 2, clear of the page digit at col 6
+01E180	07074200	08074200	camp party window def C1:E17E (two-item variant): 7 -> 8 wide
+01E184	4e00c201ce01040015380401050600011138020106000112380e01	5000c201d001040015380401060600011138020106000112381001	  its corners (004E -> 0050, 01CE -> 01D0), divider 5 -> 6 cells, right T col 7 -> col 8

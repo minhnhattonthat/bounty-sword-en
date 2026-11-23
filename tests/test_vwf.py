@@ -81,7 +81,7 @@ def test_grid_layout_places_each_word_in_its_cells():
         eid, spec = line.split("\t")
         if spec != "=":
             entry = next(e for f in grid.GRID_FILES for e in load_script()[f + ".json"] if e["id"] == eid)
-            assert entry["en"] == grid.layout(entry["width"], spec), eid
+            assert entry["en"] == grid.layout(entry.get("cells") or entry["width"], spec), eid
 
 
 def test_c1_fields_pack_letter_pairs():

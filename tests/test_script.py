@@ -114,6 +114,7 @@ def test_slice_table_names_real_cells(files):
     """docs/re/slices.tsv (tools/re/slices.py): every slice a screen shows lies inside one script entry, so the
     fit lint can give each slice its own budget (cells x 8 px)."""
     ids = {e["id"]: e for name, es in files.items() if not name.startswith("master_") for e in es}
+    widened = {e["id"]: e["cells"] for es in load().values() for e in es if e.get("cells")}  # script_text.widened
     starts = sorted(ids)
     rows = [ln.split("\t") for ln in (ROOT / "docs" / "re" / "slices.tsv").read_text(encoding="utf8").splitlines()[1:]]
     assert rows
@@ -124,7 +125,7 @@ def test_slice_table_names_real_cells(files):
         if ids[owner]["kind"] == "data":  # digit cells drawn from c8_digits: nothing to translate
             continue
         assert sid in ids, (scene, sid)
-        assert int(first) + int(cells) <= ids[sid]["width"], (scene, sid, first, cells)
+        assert int(first) + int(cells) <= widened.get(sid, ids[sid]["width"]), (scene, sid, first, cells)
 
 
 def test_text_entries_have_en_and_data_has_none(files):

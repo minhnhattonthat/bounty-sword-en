@@ -200,7 +200,7 @@ def side_marker(tag, idx, entry, c1=False):
     letters = label + "abcdefghijklmnopqrstuvwxyz" * 4
     toks = TOKEN.findall(entry["jp"])
     if c1 and "head" in entry:      # window string: label, then a code in every cell
-        return window_marker(label, entry["width"])
+        return window_marker(label, entry.get("cells") or entry["width"])
     if c1 and "width" in entry:     # C1 run: proportional, the field's cells x 8 px (asm/vwf.asm C1Run)
         return fill_line(label, entry["width"] * 8)
     if "width" in entry:

@@ -140,7 +140,7 @@ def test_strings_tsv_keys_are_where_each_string_starts(built):
     in this ROM where that string's bytes start: relocated engine A scripts at their copy, byte tables in bank $FE,
     trampolined engine B entries at their slot (the FF0B jump), the rest in place."""
     import byte_scripts as bs
-    from script_text import C1_TABLES, codec_for, load, side_codecs, side_words, ENGINE_B_TABLES
+    from script_text import C1_TABLES, codec_for, load, side_codecs, side_words, widened, ENGINE_B_TABLES
     _, data, out = built
     keys = dict(line.split("\t") for line in out.with_suffix(".strings.tsv").read_text(encoding="utf-8").splitlines())
     files, sc = load(build.SCRIPT), side_codecs()
@@ -154,7 +154,8 @@ def test_strings_tsv_keys_are_where_each_string_starts(built):
             head = bs.encode_entry(e.get("en") or e["jp"], bs._codec()).data[:4]
         else:
             try:
-                w = side_words(dict(e, jp=e.get("en") or e["jp"]), codec_for(sc, name), pack=name in C1_TABLES)[:2]
+                w = side_words(widened(dict(e, jp=e.get("en") or e["jp"])), codec_for(sc, name),
+                               pack=name in C1_TABLES)[:2]
             except ValueError:      # longer than its field as plain text: a tag-font field (below)
                 w = [0xFFFF]
             head = b"".join(x.to_bytes(2, "little") for x in w)

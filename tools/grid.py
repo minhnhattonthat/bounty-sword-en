@@ -147,7 +147,7 @@ def fill(batch, specs_path):
         try:
             if spec is None:
                 raise ValueError("no spec")
-            out.append(f"{eid}\t{e['jp'] if spec == '=' else layout(e['width'], spec)}")
+            out.append(f"{eid}\t{e['jp'] if spec == '=' else layout(e.get('cells') or e['width'], spec)}")
         except ValueError as err:
             bad.append(f"{eid}: {err}")
     print(*bad, sep="\n")

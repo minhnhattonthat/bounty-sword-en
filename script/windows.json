@@ -23,9 +23,10 @@
   "id": "01CC00",
   "head": "000D",
   "width": 13,
+  "cells": 16,
   "kind": "text",
   "jp": "　編成能力合体攻撃パーティ",
-  "en": "[0F1F][0001]Set[0F7F]StsComboParty",
+  "en": "Party[0F7F]Formation[0F7F]Status",
   "refs": [
    "08F271"
   ]

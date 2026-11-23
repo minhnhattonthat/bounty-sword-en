@@ -337,6 +337,11 @@ def pack_pairs(words):
 RAW_WORD = re.compile(r"(\[[0-9A-Fa-f]{4}\])")
 
 
+def widened(entry):
+    """A grid string with `cells` as its field: the expanded-ROM copy apply_script writes (count word = cells)."""
+    return dict(entry, width=entry["cells"], head="%04X" % entry["cells"]) if entry.get("cells") else entry
+
+
 def side_words(entry, codec, pack=False):
     if pack and "width" in entry:     # only fixed fields: a run with no width keeps its JP length
         # letters typed as text pack in pairs; a [hhhh] word stays one word as written (tools/grid.py words()),
@@ -601,6 +606,17 @@ def apply_script(rom, files, field="jp", tags=False):
                     and not re.search(r"[{\[]", e[field])):
                 src = tag_source(e, r["name"], field, names, TAGS[0])
             codec, pack = codec_for(sc, r["name"]), r["name"] in C1_TABLES
+            if e.get("cells") and field != "jp" and e.get(field):
+                # A window grid string widened past its JP count (`cells`, e.g. camp 01CC00 "Formation"): the copy
+                # [count = cells][words] goes to the expanded ROM and the window script's op 02 pointer(s) at `refs`
+                # follow it; C1Run clears and draws `cells` cells. The JP stays in place, unreached.
+                refs = [int(x, 16) for x in e.get("refs", [])]
+                if not refs or e.get("head") is None or r["name"] not in C1_TABLES:
+                    raise ValueError(f"{r['name']} {e['id']}: `cells` needs a counted C1 string with known refs")
+                body = side_words(widened(src), codec, pack=pack)
+                data["relocs"].append({"id": e["id"], "text": wc.decode(body), "refs": refs, "ids": [(e["id"], 0)]})
+                words += side_words(e, codec, pack=pack)
+                continue
             ADDR[e["id"]] = r["start"] + 2 * len(words)
             try:
                 words += side_words(src, codec, pack=pack)
