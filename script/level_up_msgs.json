@@ -1,0 +1,158 @@
+[
+ {
+  "id": "0414C9",
+  "kind": "text",
+  "jp": "{FF09:0000}{FF12}「{FF1F}{FF20}{FF21}{FF22}{FF23}{FF24}はレベル{FF25:7F70DD}になった！{FF04}{FF03}",
+  "en": "{FF09:0000}{FF12}\"{FF1F}{FF20}{FF21}{FF22}{FF23}{FF24} reached level {FF25:7F70DD}!\"{FF04}{FF03}",
+  "refs": [
+   "0412A1"
+  ]
+ },
+ {
+  "id": "0414F8",
+  "kind": "text",
+  "jp": "{FF26:7F70DF>041521}「最大ＨＰが{FF25:7F70DF}になった！」{FF04}{FF03}",
+  "en": "{FF26:7F70DF>041521}\"Max HP is now {FF25:7F70DF}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041521",
+  "kind": "text",
+  "jp": "{FF26:7F70E1>04154A}「最大ＳＰが{FF25:7F70E1}になった！」{FF04}{FF03}",
+  "en": "{FF26:7F70E1>04154A}\"Max SP is now {FF25:7F70E1}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "04154A",
+  "kind": "text",
+  "jp": "{FF26:7F70E3>041571}「攻撃力が{FF25:7F70E3}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70E3>041571}\"Attack rose by {FF25:7F70E3}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041571",
+  "kind": "text",
+  "jp": "{FF26:7F70E5>041598}「防御力が{FF25:7F70E5}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70E5>041598}\"Defence rose by {FF25:7F70E5}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041598",
+  "kind": "text",
+  "jp": "{FF26:7F70E7>0415BD}「速さが{FF25:7F70E7}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70E7>0415BD}\"Agility rose by {FF25:7F70E7}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0415BD",
+  "kind": "text",
+  "jp": "{FF26:7F70E9>0415E2}「魔力が{FF25:7F70E9}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70E9>0415E2}\"Intelligence rose by {FF25:7F70E9}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0415E2",
+  "kind": "text",
+  "jp": "{FF26:7F70EB>041607}「精神が{FF25:7F70EB}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70EB>041607}\"Spirit rose by {FF25:7F70EB}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041607",
+  "kind": "text",
+  "jp": "{FF26:7F70ED>04162C}「幸運が{FF25:7F70ED}上がった！」{FF04}{FF03}",
+  "en": "{FF26:7F70ED>04162C}\"Luck rose by {FF25:7F70ED}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "04162C",
+  "kind": "text",
+  "jp": "{FF26:7F70EF>041650}「{FF2A:7F70EF}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70EF>041650}\"Learned {FF2A:7F70EF}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041650",
+  "kind": "text",
+  "jp": "{FF26:7F70F1>041674}「{FF2A:7F70F1}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70F1>041674}\"Learned {FF2A:7F70F1}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041674",
+  "kind": "text",
+  "jp": "{FF26:7F70F3>041698}「{FF2A:7F70F3}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70F3>041698}\"Learned {FF2A:7F70F3}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041698",
+  "kind": "text",
+  "jp": "{FF26:7F70F5>0416BC}「{FF2A:7F70F5}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70F5>0416BC}\"Learned {FF2A:7F70F5}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0416BC",
+  "kind": "text",
+  "jp": "{FF26:7F70F7>0416E0}「{FF2A:7F70F7}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70F7>0416E0}\"Learned {FF2A:7F70F7}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0416E0",
+  "kind": "text",
+  "jp": "{FF26:7F70F9>041704}「{FF2A:7F70F9}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70F9>041704}\"Learned {FF2A:7F70F9}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041704",
+  "kind": "text",
+  "jp": "{FF26:7F70FB>041728}「{FF2A:7F70FB}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70FB>041728}\"Learned {FF2A:7F70FB}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041728",
+  "kind": "text",
+  "jp": "{FF26:7F70FD>04174C}「{FF2A:7F70FD}{FF29:7E379F}を覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70FD>04174C}\"Learned {FF2A:7F70FD}{FF29:7E379F}!\"{FF04}{FF03}"
+ },
+ {
+  "id": "04174C",
+  "kind": "text",
+  "jp": "{FF26:7F70FF>041774}「アイスキューブを覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F70FF>041774}\"Learned Ice Cube!\"{FF04}{FF03}"
+ },
+ {
+  "id": "041774",
+  "kind": "text",
+  "jp": "{FF26:7F7101>04179E}「グラビティホールを覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F7101>04179E}\"Learned Gravity Hole!\"{FF04}{FF03}"
+ },
+ {
+  "id": "04179E",
+  "kind": "text",
+  "jp": "{FF26:7F7103>0417C8}「ギガスマッシャーを覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F7103>0417C8}\"Learned Giga Smasher!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0417C8",
+  "kind": "text",
+  "jp": "{FF26:7F7105>0417F0}「モータルリングを覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F7105>0417F0}\"Learned Mortal Ring!\"{FF04}{FF03}"
+ },
+ {
+  "id": "0417F0",
+  "kind": "text",
+  "jp": "{FF26:7F7107>04181E}「アナザディメンションを覚えた！」{FF04}{FF03}",
+  "en": "{FF26:7F7107>04181E}\"Learned Another World!\"{FF04}{FF03}"
+ },
+ {
+  "id": "04181E",
+  "kind": "text",
+  "jp": "{FF26:7F7109>041846}「ツインソニックを覚えた！」{FF04}{FF00}",
+  "en": "{FF26:7F7109>041846}\"Learned Twin Sonic!\"{FF04}{FF00}"
+ },
+ {
+  "id": "041846",
+  "kind": "text",
+  "jp": "{FF00}",
+  "en": ""
+ },
+ {
+  "id": "041848",
+  "kind": "text",
+  "jp": "{FF12}「{FF29:7E379F}を手に入れた！」{FF04}{FF00}",
+  "en": "{FF12}\"Obtained {FF29:7E379F}!\"{FF04}{FF00}",
+  "refs": [
+   "041330"
+  ]
+ }
+]

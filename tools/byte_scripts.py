@@ -46,6 +46,11 @@ BYTE_TABLES = {
     "level_up": ([(0x1AD456, 0x1AD473), (0x1AD4D1, 0x1AD4EE), (0x1AD54C, 0x1AD567), (0x1AD5C5, 0x1AD5E0),
                   (0x1AD641, 0x1AD65C), (0x1AD6BD, 0x1AD6D8), (0x1AD739, 0x1AD758), (0x1AD7A1, 0x1AD7C0)],
                  {"ops": {0x43}}),
+    # The level-up talk in bank C4 (the guide's portrait box after a map: level, stats, spells and skills learnt,
+    # item found), called by `03 ptr24` from the C4 event script (0414C9 by `03 C914C4` at 0x0412A0) and chained by
+    # FF26 skips. Cut out of system_prompts: it was dumped word by word there, out of phase after its first FF25,
+    # so it stayed `data` and Japanese in game (user screenshots 2026-11-23, rom/ss).
+    "level_up_msgs": ([(0x0414C9, 0x041865)], {"ops": {0x03}}),
 }
 # Relocated units: the last bank of the expanded text area (rom_text.EXPANDED_TEXT stops below it).
 BYTE_AREA = (0x3E0000, 0x3F0000)

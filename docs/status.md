@@ -7,6 +7,35 @@ Updated at the end of every session. Keep it to what the next session needs; his
   to the clean dump: sha1 80c0851383f1 = build). Publishing (GitHub release, tag v1.0) is the owner's: never run
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
+  **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23ag (user report, ceremony overlap):** **Bug fixed:** with the spirit Aphrodite, ceremony 1DECAF
+  " Guardian spirit:{FF0E:0002}Aphrodite" filled all 28 cells, wrapped by itself, and its `{FF01}` drew "Dost thou
+  accept it?" over row 1 (user's `rom/bounty_override.mss`, `work/qa/w_aphro2`). The gap is now `{FF0E:0001}` (27 cells),
+  verified from the same state (`work/qa/w_aphro3`). Lint gap closed: engine B rows (`batches.width_problems`) now count
+  `{FF0E:n}` and `{FF06}` variables (`ROW_VARS`: spirit 9, hero name 6) and flag a full row before `{FF01}`. It also
+  flagged 3 descriptions (0EF07C, 0EF510, 0EFBC2) with 28-cell rows before `{FF01}`: shortened. These were not
+  checked in game: the description box is still not measured (docs/re/vwf.md).
+  (b) **Live JP found (user screenshots `rom/ss`):** the guide's level-up talk after a map (「Bはレベル2になった！」,
+  stats, spells/skills learnt, item found) is a byte-phase engine A script at 0x0414C9-0x041865 that system_prompts
+  had dumped word by word (out of phase after FF25, so `data`, so neither lint nor jp_left saw it). Now table
+  **`level_up_msgs`** (`byte_scripts.BYTE_TABLES`, callers `03 ptr24`; system_prompts split around it), 24 lines in
+  English, relocated to $FE:0C24. Seen in game: `msg` warp `MSGPTR=0xFE0C24` + POKE of the stat flags at
+  $7F70DD.. (`work/qa/w_lvl2/sheet.png`: level, HP, SP, 6 stats, a spell from RAM, Ice Cube, Another World; zero
+  flags skip). (c) **Open:** the Battle Report window title 戦果報告 (user `rom/ss/bounty_en_010.png`) is not text
+  in any byte order: a graphic (likely compressed). Its labels are menus 01C9C6 (window list at 0x08F037). Needs a
+  VRAM dump on that screen (no warp scene reaches it yet) + `vramfind.py`.
+  (d) **Why these got through, and the fixes.**
+  - `tools/jp_known.py` had marked every run inside an extracted region as known, by location alone. Its `--write`
+    baseline then hid the live level-up text. Now a run is known only through its entry (translated or keep-listed);
+    anything else is `UNEXPLAINED`, and `--write` refuses to run while any is left.
+  - The skill's `jp_left --le16` only scanned even offsets. It now scans both byte phases (skill repo, uncommitted).
+  - The skill rules now cover: blind-spot lint, a reason per known run, lint rows with variables at their longest
+    value, and a flow checklist for scenes (SKILL.md ground rule, pipeline.md §Checks, emulator-qa.md §Text coverage).
+  - **Open lead from the new rule:** 1 UNEXPLAINED run, エリュシオン at 0x046E5E (in unit_records 046E54, data). It
+    sits in a battle-setup record that pointer slot 0x042D51 points to (entry 264 of the C4:2A39 table), but
+    `tools/re/battle_setup.py` stops at COUNT = 263. More slots past that point into C4 records (0x042E11, 0x042ED1,
+    0x042F91), so the table is probably longer and more name overrides are unread. `docs/jp_known.txt` is not
+    rewritten yet; the release gate still uses the old list.
 - **Session 2026-11-23af (phase 9, story pass + gate to a zip):** (a) **Story pass** 18/18 chapters in an own
   read-only pass (codex out of quota until 2026-11-26): verdicts `work/qa/story/verdicts/`. Fixed: the hero's line
   of ten years ago (295E4C) now repeats 24E502 word for word; Ajax/hero duel words (29C3BA/29C4DA) repeat

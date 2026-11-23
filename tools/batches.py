@@ -61,9 +61,14 @@ SHOP = (0x1AF585, 0x1AFDC2, 20)
 SHOP_VARS = {"48CD": 16, "48E3": 16, "48F9": 5, "4905": 9, "F569": 16}   # item, item, price, unit name, greeting
 
 
-def shop_row_cells(row):
+# Engine B rows elsewhere: {FF06} variables of known longest English width (others count 0). ED2D = guardian spirit
+# (ceremony 1DED5B.., longest "Aphrodite"); 4D1B = hero name (name-entry buffer, 6 cells).
+ROW_VARS = {"ED2D": 9, "4D1B": 6}
+
+
+def shop_row_cells(row, variables=SHOP_VARS):
     n = sum(int(k, 16) for k in re.findall(r"\{FF0E:([0-9A-F]{4})\}", row))
-    n += sum(SHOP_VARS.get(k, 0) for k in re.findall(r"\{FF06:([0-9A-F]{4})", row))
+    n += sum(variables.get(k, 0) for k in re.findall(r"\{FF06:([0-9A-F]{4})", row))
     return n + len(TOKEN.sub("", row))
 NAMES = {"{FF1F}": "HERO", "{FF28}": "FF28", "{FF31}": "FF31"}
 
@@ -159,8 +164,12 @@ def width_problems(entry, en):
             if en.count("{FF01}") > len(jp_rows) - 1 + sum(shop_row_cells(r) > SHOP[2] for r in jp_rows):
                 out.append("more {FF01} rows than the JP shows (the shop box holds 3 rows)")
             return out
-        if any(len(TOKEN.sub("", r)) > n for r in rows):
+        if any(shop_row_cells(r, ROW_VARS) > n for r in rows):
             return [f"a row over {n} characters (break rows with {{FF01}})"]
+        # a full row wraps by itself, so the {FF01} after it lands on a third row and overwrites: "Guardian spirit:
+        # Aphrodite" then "Dost thou accept it?" drew on one row (`work/qa/w_aphro2`, 2026-11-23)
+        return [f"row of {n} cells before {{FF01}} wraps twice: {TOKEN.sub('', r)!r}"
+                for r in rows[:-1] if shop_row_cells(r, ROW_VARS) == n]
     return []
 
 

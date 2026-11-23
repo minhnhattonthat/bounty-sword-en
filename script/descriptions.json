@@ -1446,7 +1446,7 @@
   "id": "0EF07C",
   "kind": "text",
   "jp": "攻撃をかわしやすくなる{FF01}装．ニン系{FF00}",
-  "en": "Attacks are easier to dodge.{FF01}Eq: Ninjas{FF00}"
+  "en": "Easier to dodge attacks.{FF01}Eq: Ninjas{FF00}"
  },
  {
   "id": "0EF0A0",
@@ -2031,7 +2031,7 @@
   "id": "0EF510",
   "kind": "text",
   "jp": "装．戦　ナ系　魔系　僧系　風系{FF00}",
-  "en": "Eq: Warrior, Knights, Mages,{FF01}Clerics, Geomancers{FF00}",
+  "en": "Eq: Warrior, Knights,{FF01}Mages, Clerics, Geomancers{FF00}",
   "refs": [
    "2C0B5F"
   ]
@@ -3084,7 +3084,7 @@
   "id": "0EFBC2",
   "kind": "text",
   "jp": "魔術師系か僧侶系が使うと　ワイズマンに転職{FF00}",
-  "en": "A Mage or Cleric who uses it{FF01}becomes a Wise Man.{FF00}"
+  "en": "A Mage or Cleric using it{FF01}becomes a Wise Man.{FF00}"
  },
  {
   "id": "0EFBEE",

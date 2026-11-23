@@ -10,6 +10,7 @@ with --known docs/jp_known.txt, so only runs that appear after this list was wri
 change; read every new `outside` run before adding it with --write.
 """
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -34,10 +35,39 @@ def runs(built=BUILD, known=None):
     return [(int(m[1], 16), int(m[2]), m[3]) for m in re.finditer(r"^0x([0-9A-F]+)\s+(\d+)B\s+(.*)$", out, re.M)]
 
 
+def _entries():
+    """{table: sorted [(file offset, entry)]} from script/, and the keep_jp ids."""
+    out = {}
+    for path in (ROOT / "script").glob("*.json"):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(doc, list):
+            out[path.stem] = sorted((int(e["id"], 16), e) for e in doc if re.fullmatch(r"[0-9A-F]{6}", e["id"]))
+    keep = {ln.split("\t")[0] for ln in (ROOT / "script" / "keep_jp.txt").read_text(encoding="utf-8").splitlines()
+            if ln and not ln.startswith("#")}
+    return out, keep
+
+
+ENTRIES = None
+
+
 def classify(off):
+    """A run inside an extracted region is known only through its entry: translated (`en` set: the English lives
+    elsewhere, the old bytes are a tail or unreachable) or keep-listed. A run in an untranslated or `data` entry is
+    UNEXPLAINED: the level-up talk 0414C9 sat in system_prompts as data and a region-only rule whitelisted it."""
+    global ENTRIES
+    ENTRIES = ENTRIES or _entries()
+    tables, keep = ENTRIES
     for name, start, end in rom_text.REGIONS:
         if start <= off < end:
-            return f"region {name}"
+            ids = [(o, e) for o, e in tables.get(name, []) if o <= off]
+            if not ids:
+                return f"UNEXPLAINED {name} before its first entry"
+            o, e = ids[-1]
+            if e["id"] in keep:
+                return f"region {name} {e['id']} keep"
+            if e.get("kind", "text") == "text" and e.get("en"):
+                return f"region {name} {e['id']} translated"
+            return f"UNEXPLAINED {name} {e['id']} {e.get('kind', 'text')} without English"
     blocks = sorted(rom_text.MASTER_BLOCKS)
     if blocks[0] <= off < rom_text.MASTER_TABLE or rom_text.MASTER_END <= off < 0x2B0000:
         return "master"
@@ -57,6 +87,11 @@ def main(argv=None):
     for off, n, txt, c in rows:
         if c.startswith(a.show):
             print(f"{off:06X}\t{n}\t{c}\t{txt}")
+    bad = [r for r in rows if r[3].startswith("UNEXPLAINED")]
+    for off, n, txt, c in bad:
+        print(f"{off:06X}\t{n}\t{c}\t{txt}")
+    if a.write and bad:
+        sys.exit(f"{len(bad)} UNEXPLAINED runs: translate, keep-list or re-split them before writing the list")
     if a.write:
         KNOWN.write_text("".join(f"{off:06X}\t{c}\t{txt}\n" for off, n, txt, c in rows), encoding="utf-8",
                          newline="\n")
