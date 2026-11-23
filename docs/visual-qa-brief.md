@@ -32,7 +32,7 @@ Standing non-bugs, `ok`:
 - a map or scene still loading after a warp;
 - anything identical in the original's sheet.
 - Bounty Sword: speaker tags (48 px) and location labels (80 px) use short whole words by ruling D8 ("Captain",
-  "Skull", "General", "D.Knight" for the JP's own Ｄ° cut); name-entry kana grids stay Japanese (D13: they are input
-  characters). Menu labels squeezed into 2-cell slices ("Itm", "Gdr", "Sg.", "Wp.", "Int", "Spr", "Bin", "Trd")
+  "Skull", "General", "D.Knight" for the JP's own Ｄ° cut); the name-entry katakana grid stays Japanese (D13, D17: input
+  characters; the first page is English A-Z a-z 0-9, one letter a cell). Menu labels squeezed into 2-cell slices ("Itm", "Gdr", "Sg.", "Wp.", "Int", "Spr", "Bin", "Trd")
   are a known polish item (`docs/polish.md` "Menu grid strings"): `ok`, noted "2-cell label". Gender shows as ♂/♀.
   Card scenes (card_NN) show a scenario card: "Episode 1" on every warp is the debug select's own (progress not set).

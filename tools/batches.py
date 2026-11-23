@@ -126,11 +126,12 @@ def speaker_of(entry):
 
 
 def grid_codes(entry, text):
-    """C1 grid strings (tools/grid.py): drop the cursor codes and glyph words (< 0x0F00, e.g. [0001] ん) before the
-    control-code comparison: the English places its own cells."""
+    """C1 grid strings (tools/grid.py): drop the cursor codes, glyph words (< 0x0F00, e.g. [0001] ん) and one-letter
+    English words ([0F41] = an unpacked "A": the name-entry keyboards, D17) before the control-code comparison: the
+    English places its own cells."""
     if file_of(entry) not in grid.GRID_FILES:
         return text
-    return re.sub(r"\[0[0-9A-E][0-9A-F]{2}\]", "", grid.CURSOR.sub("", text))
+    return re.sub(r"\[0[0-9A-E][0-9A-F]{2}\]|\[0F[2-7][0-9A-F]\]", "", grid.CURSOR.sub("", text))
 
 
 def width_problems(entry, en):

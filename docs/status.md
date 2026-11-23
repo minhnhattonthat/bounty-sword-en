@@ -8,6 +8,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
   **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23ah (user report, name entry, D17):** **Bugs fixed** (user `rom/bounty_name_input.mss`):
+  (1) the keyboards typed JP full-width codes (Ａ = $00D1) next to the English default ($0F53..), so typed letters
+  drew in the JP font; (2) the cursor started after the JP default's length (ソード 3, フュリス 4), on the "r" of
+  "Sword" / the "s" of "Furis"; (3) no lower case. Now the first page (was hiragana) is English A-Z a-z 0-9 + `.,'-&!?:/~`
+  and the A-Z page types English capitals: one English word a cell (`script/grid_specs.tsv`; asm `GridLimit`/`GridCell`
+  pin each letter word to its cell, centred; `script_text.side_words` no longer packs `[hhhh]` words in pairs; the lint
+  drops `[0F20-0F7E]` words in grid strings). Cursor starts at 5 (byte_patches 06E368, 06EF2A). Katakana kept. Seen
+  in game: `work/qa/ni4`, `ni6` (typed "Fas d", End, ceremony prints "We entrust Fas d to thee."), `ne_t2` ("Furisa"),
+  prologue trace (ceremony cursor var = 5). Test `test_name_entry_types_english_letters`. The release gate needs a re-run.
 - **Session 2026-11-23ag (user report, ceremony overlap):** **Bug fixed:** with the spirit Aphrodite, ceremony 1DECAF
   " Guardian spirit:{FF0E:0002}Aphrodite" filled all 28 cells, wrapped by itself, and its `{FF01}` drew "Dost thou
   accept it?" over row 1 (user's `rom/bounty_override.mss`, `work/qa/w_aphro2`). The gap is now `{FF0E:0001}` (27 cells),

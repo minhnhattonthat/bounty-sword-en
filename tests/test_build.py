@@ -37,6 +37,22 @@ def test_default_names_are_english(built):
     assert data[0x10657:0x10663] == b"".join((0x0F00 + ord(c)).to_bytes(2, "little") for c in "Thetis")
 
 
+def test_name_entry_types_english_letters(built):
+    """Name-entry keyboards (D17): each letter cell is one English word ($0F41..), not a packed pair, at the address
+    asm/vwf.asm GridLimit checks; the cursor starts right after the default name, not after the JP one."""
+    from rom_check import default_names
+    _, data, _ = built
+    word = lambda o, i: int.from_bytes(data[o + 2 + 2 * i:o + 4 + 2 * i], "little")  # noqa: E731
+    assert [word(0x1C42F, i) for i in range(26)] == [0x0F41 + i for i in range(26)]
+    page0 = [word(0x1C283, i) for i in range(96)]
+    assert all(0x0F41 + i in page0 and 0x0F61 + i in page0 for i in range(26))
+    assert all(0x0F30 + i in page0 for i in range(10))
+    names = {off: en for off, _, _, en in default_names()}
+    for op, name in ((0x6E368, 0x6E27A), (0x6EF2A, 0x6EF1A)):       # script op 06: $0D6E = start cell
+        assert data[op:op + 4] == bytes.fromhex("066e0d00")
+        assert int.from_bytes(data[op + 4:op + 6], "little") == min(len(names[name]), 5), hex(op)
+
+
 def test_shop_tilemaps_point_at_the_english_cells(built):
     """script/byte_patches.tsv: each shop map shows whole English words of glyph set 01D2B7 (Arms = tiles C0-C2, at
     the JP header's own column so "Arms 1" stays centred: docs/inkbox.tsv shop_header)."""

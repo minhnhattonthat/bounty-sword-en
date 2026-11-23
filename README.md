@@ -16,7 +16,7 @@ helps most.
 | Dialogue / story (2,335 messages) | Translated |
 | Menus, items, spells, classes, shops, battle and system messages | Translated |
 | Title screen, scenario cards, graphics with text | Translated (the title logo was already English) |
-| Name entry | Translated (English keyboard, default names Sword / Thetis) |
+| Name entry | Translated (English keyboard with upper and lower case, digits and punctuation; katakana page kept; default names Sword / Thetis) |
 | Ending and staff roll | Translated text; the real ending has not been reached in the emulator yet |
 
 Known issues (also see [Issues](../../issues)):

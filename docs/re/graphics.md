@@ -12,7 +12,7 @@ status/unit menus, game over, ending and credits are not toured yet (phase-2 deb
 | File menu | ファイル / 最初から / ロード / コピー / 消去 / 未使用 | yes | font, C1 menu strings | text |
 | Ceremony | dialogue box, はい/いいえ | yes | font (engine B) | text |
 | Ceremony | stat sheet (unit stats grid) | yes | font? | check in the phase-5 marker build |
-| Name entry | kana grid, カナ / 英字 / 終わり | yes | font: the grid is the C1 string at 0x1C285 (あいうえおか…), カナ…終わり follows it | text (verified by string) |
+| Name entry | kana grid, カナ / 英字 / 終わり | yes | font: the grid is the C1 string at 0x1C285 (あいうえおか…), カナ…終わり follows it. The typed character is the grid word at the cursor index (C6:F139, page table C6:F16A); 96 cells = 6 groups of 16 words, each 3 rows of 5 + 1 unused (row k at word (k//3)*16+(k%3)*5; screen blocks of 5 rows). Cursor start: script op `06 6e0d00 nnnn` at 0x6E368 / 0x6EF2A. English since D17 | text (verified by string) |
 | Name entry | NAME label | no, English | tiles | ok |
 | Town scene | portrait name plate | yes | font, drawn by `C2:565E` into `$7E:AC00` | text |
 | Town scene | speech bubble frame | no | tiles | ok |

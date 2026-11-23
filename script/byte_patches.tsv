@@ -10,3 +10,5 @@
 05B298	40ee020302e700	40ee020302ed00	sell screen tab 所持品 -> "Pack" (cells 29-31)
 01D33B	e0e1c0c1cdf0f1d0d1dde0e1c2c3cdf0f1d2d3dde0eaebedcdf0fafbfddd	e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9e5e6e7e8e9f5f6f7f8f9	prompts 誰が買う？ 誰が売る？ 誰と話の？ (5x2 maps, op 18 at C5:B2F0..) -> "Who?" (cells 21-25)
 018AA9	a4028003a9f702	4a008003a94900	status gender value (C1:8AA8 `LDA #$02A4 女 / LDA #$02F7 男`, then JSL C1:8EB9 one glyph) -> ♀ 004A / ♂ 0049
+06E368	066e0d000400	066e0d000500	name-entry cursor start (script op 06: object var $0D6E = 4, after フュリス) -> 5, after the default "Furis" (default_names 6E27A)
+06EF2A	066e0d000300	066e0d000500	ceremony name-entry cursor start (op 06: $0D6E = 3, after ソード) -> 5, after the default "Sword" (default_names 6EF1A)

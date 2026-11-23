@@ -30,6 +30,7 @@ hirom
 !C1I = $FFAE            ; byte index of the next word
 !C1LEN = $FFB0          ; field length in bytes
 !C1PAIR = $FFB2         ; second letter of a packed pair still to draw (0 = none)
+!C1GRID = $FFB4         ; C1 run on a name-entry keyboard: !C1I below this is a letter cell (0 = not a keyboard)
 
 !TAB = $0F7F            ; C1 runs: move to the next cell boundary (blank glyph elsewhere)
 !SETX = $0F1F           ; C1 runs: the next word is a cell number, PX = cell * 8 (tools/grid.py)
@@ -633,6 +634,7 @@ C1Run:
     stz.w !PX
     stz.w !C1I
     stz.w !C1PAIR
+    jsr GridLimit
 .loop:
     lda.w !C1PAIR
     beq +
@@ -646,6 +648,10 @@ C1Run:
     iny
     iny
     sty.w !C1I
+    cpy.w !C1GRID
+    bcs +
+    jsr GridCell
++
     cmp.w #!TAB
     bne +
     lda.w !PX           ; next cell after the ink: ceil((PX-1)/8)*8 (a glyph's last, blank column may spill;
@@ -756,6 +762,62 @@ C1IsEn:
     rts
 .yes:
     sec
+    rts
+
+; Name-entry keyboards (C6:F16A pages: C1:C283 Aa, C1:C359 katakana, C1:C42F A-Z; script/grid_specs.tsv): the
+; typed character is the grid word at the cursor index, so each letter is one English word ($0F41..) and must sit
+; in its own cell, not packed by the VWF. The last 10 words are the page keys (laid out with TAB/SETX as usual).
+; [$34] = the run's words (C1Run40: count word + 2). Sets !C1GRID = byte index limit + 2 (as !C1I after the read).
+GridLimit:
+    stz.w !C1GRID
+    lda $36
+    and.w #$00FF
+    cmp.w #$00C1
+    bne .no
+    lda $34
+    cmp.w #$C285
+    beq .yes
+    cmp.w #$C35B
+    beq .yes
+    cmp.w #$C431
+    bne .no
+.yes:
+    lda.w !C1LEN
+    sec
+    sbc.w #18           ; 10 key words, +2 for the post-increment
+    sta.w !C1GRID
+.no:
+    rts
+
+; A = a keyboard letter-cell word (kept), Y = !C1I after it: PX = its cell * 8, an English glyph centred in the cell
+GridCell:
+    pha
+    tya
+    dec
+    dec
+    asl
+    asl
+    sta.w !PX
+    lda 1,s
+    cmp.w #!EN_BASE
+    bcc .out
+    cmp.w #!TAB
+    bcs .out
+    sec
+    sbc.w #!EN_BASE
+    tax
+    lda.l EnWidth,x     ; advance = ink + 1 blank column: offset (8 - ink) / 2 = (9 - advance) / 2
+    and.w #$00FF
+    eor.w #$FFFF
+    sec
+    adc.w #$0009
+    bmi .out
+    lsr
+    clc
+    adc.w !PX
+    sta.w !PX
+.out:
+    pla
     rts
 
 ; A = cell k of the run -> A = its slot: (start & $FFF0) + (t >> 4) * $20 + (t & $F), t = (start & $F) + k

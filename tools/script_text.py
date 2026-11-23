@@ -334,10 +334,19 @@ def pack_pairs(words):
     return out
 
 
+RAW_WORD = re.compile(r"(\[[0-9A-Fa-f]{4}\])")
+
+
 def side_words(entry, codec, pack=False):
-    w = codec.encode(entry["jp"])
     if pack and "width" in entry:     # only fixed fields: a run with no width keeps its JP length
-        w = pack_pairs(w)
+        # letters typed as text pack in pairs; a [hhhh] word stays one word as written (tools/grid.py words()),
+        # e.g. the name-entry keyboards' one-letter cells (asm/vwf.asm GridCell)
+        w = []
+        for piece in RAW_WORD.split(entry["jp"]):
+            if piece:
+                w += codec.encode(piece) if RAW_WORD.fullmatch(piece) else pack_pairs(codec.encode(piece))
+    else:
+        w = codec.encode(entry["jp"])
     if "width" in entry:
         if len(w) > entry["width"]:
             raise ValueError(f"{entry['id']}: {len(w)} words, field is {entry['width']}")
