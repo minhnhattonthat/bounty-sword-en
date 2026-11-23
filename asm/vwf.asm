@@ -31,6 +31,12 @@ hirom
 !C1LEN = $FFB0          ; field length in bytes
 !C1PAIR = $FFB2         ; second letter of a packed pair still to draw (0 = none)
 !C1GRID = $FFB4         ; C1 run on a name-entry keyboard: !C1I below this is a letter cell (0 = not a keyboard)
+!PXB = $FFB6            ; engine B (mode 3): PX of its run, kept apart from engine A's
+!BASEB = $FFB8          ; engine B: cell index ($7E4A27 value) where the run starts
+!LASTB = $FFBA          ; engine B: the $7E4A27 value expected at the next glyph of the run (cell + 1)
+!BSTART = $FFBC         ; engine B: cell index of the last English glyph's first cell (for its DMA)
+!BEND = $FFBE           ; engine B: its last cell (BSTART, or BSTART + 1 when it spilled)
+!BFLAG = $FFC0          ; engine B: nonzero when the glyph just drawn was English (EngBDma uploads BSTART..BEND)
 
 !TAB = $0F7F            ; C1 runs: move to the next cell boundary (blank glyph elsewhere)
 !SETX = $0F1F           ; C1 runs: the next word is a cell number, PX = cell * 8 (tools/grid.py)
@@ -73,6 +79,17 @@ org $C18F13
 ; English names come packed two letters a word from the C1 tables, so each letter goes to the VWF on its own ----
 org $C263FB
     jml Ff29Loop
+
+; ---- engine B (ceremony, shop box, descriptions; interpreter C3:C6BF): each character went to its own 8-px cell
+; (JSL C1:98D5 into tile slot C3:C823[$7E4A27] of the buffer $7F:1800, then C3:C78E queued that one cell's DMA).
+; English goes through the VWF core (mode 3) instead; $7E4A27 still steps one cell a character, so FF01/FF0E/FF09
+; layouts and the 28-cell row check are unchanged, only the ink is packed. Typewriter path and FF05 instant path ----
+org $C3C71E
+    jml EngBTyp         ; was JSL C1:98D5
+org $C3C722
+    jml EngBTypDma      ; was JSL C3:C78E
+org $C3C99A
+    jml EngBIns         ; was JSL C1:98D5
 
 ; The English font sits where the game's 16-bit glyph-offset formula puts codes $0F20-$0F7F when the base is
 ; $FF:0000 (tools/font_en.py font_block): offset(c) = ((c & $FFF0) << 5) + ((c & $F) << 4), truncated to 16 bits.
@@ -324,6 +341,10 @@ VwfCommon:
     bne +
     jmp .c1pos
 +
+    cmp.w #$0003
+    bne +
+    jmp .engbpos
++
     lda.w !MODE
     bne +
     lda.l $7E3729
@@ -477,8 +498,8 @@ VwfCommon:
     sta.w !PX
     ldx.w !MODE
     cpx.w #$0002
-    bne +
-    plb                 ; mode 2: back to C1Run (JSR'd through C1Glyph1)
+    bcc +
+    plb                 ; modes 2 and 3: back to C1Run / EngBGlyph (JSR'd through C1Glyph1)
     plp
     rts
 +
@@ -537,6 +558,258 @@ VwfCommon:
     inc.w !SPILL
 +
     jmp .rows
+
+; mode 3 (engine B): cell = BASE + PX / 8, its tile slot from the engine's table C3:C823, buffer $7F:1800 reached as
+; $7E:A000 + $7800 (long indexed addressing carries into the bank). Cells are cleared as in mode 0.
+.engbpos:
+    lda.w !PX
+    and.w #$0007
+    sta.w !S
+    lda.w !PX
+    lsr
+    lsr
+    lsr
+    clc
+    adc.w !BASE
+    sta.w !BSTART
+    sta.w !BEND
+    jsr EngBOff
+    sta.w !D0
+    lda.w !BSTART
+    inc
+    jsr EngBOff
+    sta.w !D1
+    stz.w !SPILL
+    lda.w !S
+    clc
+    adc.w !W
+    cmp.w #$0009
+    bcc +
+    inc.w !SPILL
+    inc.w !BEND
+    ldx.w !D1
+    jsr ClearCell
++
+    lda.w !S
+    bne +
+    ldx.w !D0
+    jsr ClearCell
++
+    jmp .rows
+
+; A = engine B cell index -> A = slot * 32 + $7800 (offset of its top tile from $7E:A000)
+EngBOff:
+    jsr EngBSlot
+    asl
+    asl
+    asl
+    asl
+    asl
+    clc
+    adc.w #$7800
+    rts
+
+; A = engine B cell index -> A = its tile slot (C3:C823, one byte a cell)
+EngBSlot:
+    tax
+    lda.l $C3C823,x
+    and.w #$00FF
+    rts
+
+; The engine B hook sites were 4-byte JSLs: each jumps here, calls, and returns to the next instruction.
+EngBTyp:
+    jsl EngBGlyph
+    jml $C3C722
+EngBTypDma:
+    jsl EngBDma
+    jml $C3C726
+EngBIns:
+    jsl EngBGlyph
+    jml $C3C99E
+
+; Replaces JSL C1:98D5 at C3:C71E (typewriter) and C3:C99A (FF05): A = code, $2E = slot of cell $7E4A27.
+; The game's digits $00C0-$00C9 (prices, dates) draw as English 0-9 so they join the run.
+EngBGlyph:
+    cmp.w #$00C0
+    bcc +
+    cmp.w #$00CA
+    bcs +
+    clc
+    adc.w #$0F30-$00C0
++
+    cmp.w #!EN_BASE
+    bcc .orig0
+    cmp.w #!EN_END
+    bcc +
+.orig0:
+    jmp .orig
++
+    pha                 ; the name-entry field (ceremony 1DF04F, FF06 at $7E:4D19) stays one letter a cell: the
+    lda.l $7E4A37       ; keyboard edits its cells one by one (dialogue reads the same name at $4D1B, packed)
+    cmp.w #$4D19
+    bne +
+    lda.l $7E4A39
+    and.w #$00FF
+    cmp.w #$007E
+    bne +
+    pla
+    jmp .orig
++
+    pla
+    php
+    phb
+    rep #$30
+    phx
+    phy
+    pea $7F7F
+    plb
+    plb
+    pha                 ; the code
+    lda $2E
+    pha
+    lda.w !PX           ; engine A's run state stays as it was
+    pha
+    lda.w !BASE
+    pha
+    lda.l $7E4A27
+    cmp.w !LASTB
+    beq +
+    sta.w !BASEB        ; the engine moved the cursor (new box, FF01, FF0E, a JP glyph): a new run starts here
+    stz.w !PXB
++
+    inc
+    sta.w !LASTB
+    lda.w !BASEB
+    sta.w !BASE
+    lda.w !PXB
+    sta.w !PX
+    lda 7,s
+    sta $2E
+    jsr .vwf
+    lda.w !PX
+    sta.w !PXB
+    lda.w #$0001
+    sta.w !BFLAG
+    pla
+    sta.w !BASE
+    pla
+    sta.w !PX
+    pla
+    sta $2E
+    pla
+    ply
+    plx
+    plb
+    plp
+    rtl
+.vwf:                   ; $2E = code: the VWF core in mode 3 (DB = $7F, 16-bit), back here through its RTS
+    php
+    phb
+    lda.w #$0003
+    sta.w !MODE
+    jmp VwfCommon
+.orig:
+    pha
+    lda.w #$0000
+    sta.l $7F0000+!BFLAG
+    pla
+    jml $C198D5
+
+; Replaces JSL C3:C78E at C3:C722 (queue the DMA of cell $7E4A27, top tile from $7F:1800 and bottom from $7F:1A00).
+; After an English glyph: one DMA a half from cell BSTART's slot through BEND's. The buffer and VRAM are laid out
+; alike (position tables C3:7447/C3:9911/C6:FEB9 = slot * 16 words), so the slots in between go up unchanged.
+EngBDma:
+    lda.l $7F0000+!BFLAG
+    bne +
+    jml $C3C78E
++
+    php
+    phb
+    rep #$30
+    phx
+    phy
+    pea $7F7F
+    plb
+    plb
+    stz.w !BFLAG
+    lda.w !BEND
+    jsr EngBSlot
+    pha
+    lda.w !BSTART
+    jsr EngBSlot
+    sta.w !T
+    pla
+    sec
+    sbc.w !T
+    inc
+    asl
+    asl
+    asl
+    asl
+    asl
+    pha                 ; size in bytes
+    lda.w !BSTART
+    asl
+    tay
+    lda.l $7E4A3D       ; VRAM word address of cell BSTART: position table [$7E4A3D] + $7E4A3B
+    sta $48
+    lda.l $7E4A3F
+    sta $4A
+    lda [$48],y
+    clc
+    adc.l $7E4A3B
+    pha                 ; VRAM address
+    lda.w !T
+    asl
+    asl
+    asl
+    asl
+    asl
+    clc
+    adc.w #$1800
+    pha                 ; source (top tiles)
+    ldx.w #$0000        ; top half: record $7E:465B, queue item $8042
+    jsr .rec
+    lda 1,s
+    clc
+    adc.w #$0200
+    sta 1,s
+    lda 3,s
+    clc
+    adc.w #$0100
+    sta 3,s
+    ldx.w #$0010        ; bottom half: record $7E:466B, queue item $8045
+    jsr .rec
+    pla
+    pla
+    pla
+    ply
+    plx
+    plb
+    plp
+    rtl
+.rec:                   ; X = record offset from $7E:465B; 3,s = source, 5,s = VRAM, 7,s = size (after the JSR)
+    sep #$20
+    lda.b #$01
+    sta.l $7E465B,x
+    lda.b #$7F
+    sta.l $7E465E,x
+    rep #$20
+    lda 3,s
+    sta.l $7E465C,x
+    lda 5,s
+    sta.l $7E465F,x
+    lda 7,s
+    sta.l $7E4661,x
+    lda.w #$0800
+    sta.l $7E4663,x
+    lda.w #$8042
+    cpx.w #$0000
+    beq +
+    lda.w #$8045
++
+    jsl $C0967F
+    rts
 
 ; X = buffer offset of a cell: fill both tiles with background (colour 14: planes 0/1 = 00/FF, planes 2/3 = FF/FF).
 ClearCell:

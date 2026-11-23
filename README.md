@@ -22,7 +22,6 @@ helps most.
 Known issues (also see [Issues](../../issues)):
 - Some menu labels are abbreviated ("Itm", "Fld", "Inf", "Sts"...): the menus show each label in a fixed two- or
   three-tile slot.
-- The shop and class-change boxes draw one letter per tile, so narrow letters leave small gaps ("Wel come").
 
 Tested in Mesen (MesenCE) from a cold boot; start a new game on the patched
 ROM rather than loading a savestate made on the Japanese one.

@@ -8,6 +8,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `gh release create` or change repo visibility without the user. Any text change after this needs the whole gate
   again (tour + verdicts, story chapters + `fixed` lines, stress, textcover_all, release.py).
   **Stale since session ag** (build 2f517c86d916): the gate has not been re-run and the v1.0 zip predates the fix below.
+- **Session 2026-11-23ai (user report, engine B VWF, D18):** the owner's screenshot (`rom/bounty_en_011.png`,
+  ceremony "Guardian spirit: Aphrodite") showed engine B's one-letter-a-cell gaps. **Engine B is now VWF**
+  (`asm/vwf.asm` EngBGlyph/EngBDma, core mode 3; hooks C3:C71E/C722/C99A; `docs/re/vwf.md`). The cell counter
+  `$7E4A27` is untouched, so FF0E/FF09 layouts and the 28-cell row lint hold. Script: guardian line 1DECAF uses a
+  space for `{FF0E:0001}` and drops the row-2 indent; date rows 1DEF71/1DEFA7/1DEFD1 place DAY./OK?/YES/NO with
+  `{FF0E:n}` + `{FF05}` (`batches.FREE` now has `{FF05}`). Shop digits ($00C0-) join the run ("Trade-in: 144G.").
+  Seen in game: `work/qa/engb1` (ceremony), `engb_ov2` (Aphrodite), `engb_date` (Yes/No cursor), `engb_ne` (name
+  entry type/delete, field kept on the grid), `engb_shop_*`/`engb_trade2`, `engb_desc` (item description).
+  README known issue removed. The release gate (tour verdicts, stress, textcover, release.py) needs a re-run.
 - **Session 2026-11-23ah (user report, name entry, D17):** **Bugs fixed** (user `rom/bounty_name_input.mss`):
   (1) the keyboards typed JP full-width codes (Ａ = $00D1) next to the English default ($0F53..), so typed letters
   drew in the JP font; (2) the cursor started after the JP default's length (ソード 3, フュリス 4), on the "r" of

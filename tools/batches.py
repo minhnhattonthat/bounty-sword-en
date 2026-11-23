@@ -31,7 +31,9 @@ MAX_ENTRIES = 150
 
 # ---- ADAPTER: this game's text format ----
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{4}\]")
-FREE = {"{FF01}", "[00AB]"}  # engine B row break (the English places its own, 28 cells a row); 00AB = 岬 (unread kanji)
+# engine B row break (the English places its own, 28 cells a row) and FF05 "print instantly to the next FFxx" (the
+# English repeats it after each {FF0E:n} cell jump of a VWF layout row, ceremony 1DEFD1); 00AB = 岬 (unread kanji)
+FREE = {"{FF01}", "{FF05}", "[00AB]"}
 
 
 def free_token(t):

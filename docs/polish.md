@@ -58,7 +58,8 @@ with the reason; the two engine limits are listed as known issues in README.md.
 - [x] Phase 6 review: the old woman's lines (215E30, 216008, 2AAF72) get "dearie" / "so they say" / "you see";
   25F62E "Mister Small-Time Bounty Chaser!" (capitalised like the others)
 - [x] Engine B rows (shop box, ceremony) are one char a cell: narrow letters leave gaps ("Wel come", "Qui t").
-  Deferred as a known issue (README): it needs a proportional mode in engine B.
+  Deferred as a known issue (README): it needs a proportional mode in engine B. **Fixed 2026-11-23 (D18)**: engine
+  B VWF (`docs/re/vwf.md`), README line removed.
 - [x] jp_left C4 names (done, session ae: a whole-ROM scan for op 16/64 + a 6-word name found 11 such records, among
   them 043F2F 海兵隊長 and 04E8B3 ロブン; all 11 written in English through `script/default_names.tsv`; jp_left 0)
 - [x] Story pass (session af, read-only self review, 18 chapters): 295E4C hero repeats his line of ten years ago;
